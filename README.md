@@ -1,2 +1,3 @@
 # geme-build-public
-The static build of GEME.bio
+
+The static build of GEME.bio.
