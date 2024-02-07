@@ -30,7 +30,7 @@ export const StorySecondLife: StoryObj<typeof SecondLife> = {
 }
 
 export const StoryUiCompost: StoryObj<typeof UiCompost> = {
-  render: () => <UiCompost />,
+  render: () => <UiCompost progress={0.5} />,
   name: 'UiCompost',
   args: {},
 }

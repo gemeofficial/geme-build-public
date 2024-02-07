@@ -286,7 +286,9 @@
 }
 
 .ui-second-life-article:nth-child(2) {
-  margin-left: 54.2824074074vw;
+  /* margin-left: 54.2824074074vw; */
+  /* Modified by Alex manually */
+  margin-left: 58.2824074074vw;
 }
 
 .ui-second-life-article:nth-child(3) {
@@ -295,11 +297,30 @@
 
 @media (min-width: 1280px) {
   .ui-second-life-article:nth-child(2) {
-    margin-left: 60%;
+    /* margin-left: 60%; */
+    /* Modified by Alex manually */
+    margin-left: 63%;
   }
 
   .ui-second-life-article:nth-child(3) {
-    margin-left: 15%;
+    /* margin-left: 15%; */
+    /* Modified by Alex manually */
+    margin-left: 7%;
+  }
+}
+
+/* Added by Alex manually */
+@media (min-width: 1440px) {
+  .ui-second-life-article:nth-child(2) {
+    margin-left: 850px;
+  }
+
+  .ui-second-life-article:nth-child(3) {
+    margin-left: 0;
+  }
+
+  .ui-second-life-article {
+    max-width: 430px;
   }
 }
 

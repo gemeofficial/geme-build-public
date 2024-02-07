@@ -9,10 +9,8 @@ import {
   SvgNoiseCompare,
   SvgNoiseCompareLarge,
   SvgOxygen,
-  SvgOxygenCycleProgress,
   SvgWasteToGeme,
   SvgWasteToGemeLarge,
-  featureIcons,
   usingCompostIcons,
 } from './pdp-intro-svgs'
 import { IconCycleArrow } from './icons'
@@ -93,64 +91,6 @@ function PdpIntroSection1({
               )
             })}
         </div>
-      </div>
-    </div>
-  )
-}
-
-interface IPdpIntroSection2Props {
-  title?: ReactNode
-  progresses?: {
-    minProgress: number
-    content?: ReactNode
-  }[]
-}
-
-const pdpIntroSection2Props: IPdpIntroSection2Props = {
-  title: 'At the compost plant, everything is ready to convert the organic',
-  progresses: [
-    {
-      minProgress: 100,
-      content: (
-        <>
-          <SvgOxygen className=" w-8 h-8 md:w-16 md:h-16 " />
-          <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Plenty of oxygen
-          </h3>
-          <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            How to get the right recipe? By giving air to microbes! First, mix
-            the organic material with a carbon source, such as wood chips. Then
-            they are arranged and worked mechanically, allowing air to circulate
-            and nature to work.
-          </p>
-        </>
-      ),
-    },
-  ],
-}
-
-function PdpIntroSection2({ title, progresses }: IPdpIntroSection2Props) {
-  const curProgressValue: number = 10
-  const curProgressData = progresses?.find(
-    (p) => curProgressValue < p.minProgress,
-  )
-
-  return (
-    <div className=" px-4 md:px-8 lg:max-w-7xl lg:mx-auto lg:py-20 ">
-      {title && (
-        <h2 className=" v2311-font-h2 md:v2311-font-h1 text-v2311-primary text-center ">
-          {title}
-        </h2>
-      )}
-      <div className=" mt-8 md:mt-16 lg:max-w-3xl lg:mx-auto relative ">
-        <div className=" px-8 md:px-16 mx-auto ">
-          <SvgOxygenCycleProgress progress={curProgressValue} />
-        </div>
-        {curProgressData?.content != null && (
-          <div className=" absolute top-0 bottom-0 flex flex-col items-center px-24 md:px-40 lg:px-48 mt-10 md:mt-16 lg:mt-20 mx-auto">
-            {curProgressData.content}
-          </div>
-        )}
       </div>
     </div>
   )
@@ -622,7 +562,6 @@ function PdpIntroSection8({
 
 const EXAMPLE_PDP_INTRO_SECTION_PROPS = {
   pdpIntroSection1Props,
-  pdpIntroSection2Props,
   pdpIntroSection3Props,
   pdpIntroSection5Props,
   pdpIntroSection6Props,
@@ -632,7 +571,6 @@ const EXAMPLE_PDP_INTRO_SECTION_PROPS = {
 
 export {
   PdpIntroSection1,
-  PdpIntroSection2,
   PdpIntroSection3,
   PdpIntroSection4,
   PdpIntroSection5,
@@ -644,7 +582,6 @@ export {
 
 export type {
   IPdpIntroSection1Props,
-  IPdpIntroSection2Props,
   IPdpIntroSection3Props,
   IPdpIntroSection5Props,
   IPdpIntroSection6Props,

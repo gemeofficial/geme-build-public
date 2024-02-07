@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import {
   PdpIntroSection1,
-  PdpIntroSection2,
   PdpIntroSection3,
   PdpIntroSection4,
   PdpIntroSection5,
@@ -36,16 +35,6 @@ export const StoryPdpIntroSection1: StoryObj<typeof PdpIntroSection1> = {
       { id: 3, description: 'Compost Pile in Box' },
     ],
   },
-}
-export const StoryPdpIntroSection2: StoryObj<typeof PdpIntroSection2> = {
-  render: (props) => (
-    <PdpIntroSection2
-      {...EXAMPLE_PDP_INTRO_SECTION_PROPS.pdpIntroSection2Props}
-      {...props}
-    />
-  ),
-  name: 'PdpIntroSection2',
-  args: {},
 }
 
 export const StoryPdpIntroSection3: StoryObj<typeof PdpIntroSection3> = {

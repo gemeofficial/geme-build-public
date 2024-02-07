@@ -6,6 +6,7 @@ import {
   ScrollTriggeredAnimatedHeadlineTop,
   ScrollTriggeredAnimatedHeadlineBottom,
 } from './scroll-triggered-animated-headline'
+import { ScrollTriggeredAnimatedUiCompost } from '../ui-compost'
 
 function UiSectionsDecomposition() {
   return (
@@ -39,7 +40,7 @@ function UiSectionsSecondLife({
       className="ui-sections-second-life bg--green-2"
       data-anchor="les-resultats"
     >
-      <div className="ui-fragments-title xl:max-w-7xl xl:mx-auto">
+      <div className="ui-fragments-title xl:max-w-7xl xl:mx-auto !px-4 !py-8 md:!px-8 md:!py-16 xl:!py-[80px]">
         <h2 className="sr-only">
           {titleLeftPart} {titleRightPart}
         </h2>
@@ -53,8 +54,8 @@ function UiSectionsSecondLife({
           />
         </p>
       </div>
-      <div className="ui-fragments-headline xl:max-w-7xl xl:mx-auto">
-        <div className="line">
+      <div className="ui-fragments-headline xl:max-w-7xl xl:mx-auto !px-4 !py-8 md:!px-8 md:!py-16 xl:!py-[80px]">
+        <div className="line !w-auto">
           <div className="ui-fragments-line rtl animate">
             <div className="line-container">
               <div className="dot" />
@@ -62,13 +63,13 @@ function UiSectionsSecondLife({
             </div>
           </div>
         </div>
-        <div className="container">
+        <div className="container !w-auto">
           <p className=" v2311-font-body text-v2311-fg-dark-black ">
             {description}
           </p>
         </div>
       </div>
-      <div className="articles xl:max-w-7xl xl:mx-auto">
+      <div className="articles xl:max-w-7xl xl:mx-auto !px-4 !py-8 md:!px-8 md:!py-16 xl:!py-[80px]">
         {articles?.map(({ id, title, description, image }) => {
           return (
             <article key={id} className="ui-second-life-article isShown">
@@ -94,8 +95,8 @@ function UiSectionsEnd({
   endTitleRightPart,
 }: ISecondLifeProps) {
   return (
-    <section className="ui-sections-end bg--green-3">
-      <div className="ui-fragments-title xl:max-w-7xl xl:mx-auto">
+    <section className="ui-sections-end bg--green-3 -mt-px md:mt-auto">
+      <div className="ui-fragments-title xl:max-w-7xl xl:mx-auto !pb-0 !px-4 !pt-8 md:!px-8 md:!pt-16 xl:!pt-[80px]">
         <h2 className="sr-only">
           {endTitleLeftPart} {endTitleRightPart}
         </h2>
@@ -131,7 +132,7 @@ interface ISecondLifeProps {
 
 const secondLifeProps: ISecondLifeProps = {
   titleLeftPart: 'Compost',
-  titleRightPart: 'Compost New Life for Waste',
+  titleRightPart: 'New Life for Waste',
   description:
     'You can reduce 100kg to 300kg CO2 emissions. If you recycle all your food waste via composting.',
 
@@ -214,11 +215,12 @@ const secondLifeProps: ISecondLifeProps = {
 
 function SecondLife(props: ISecondLifeProps) {
   return (
-    <>
+    <div className=" relative ">
       <UiSectionsDecomposition />
       <UiSectionsSecondLife {...props} />
       <UiSectionsEnd {...props} />
-    </>
+      <ScrollTriggeredAnimatedUiCompost />
+    </div>
   )
 }
 

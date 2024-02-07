@@ -3,6 +3,7 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 import typography from '@tailwindcss/typography'
 import aspectRatio from '@tailwindcss/aspect-ratio'
 import forms from '@tailwindcss/forms'
+import v2311FontsPlugin from './v2311-fonts-plugin'
 
 const tailwindPreset: Config = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
@@ -33,7 +34,7 @@ const tailwindPreset: Config = {
       },
     },
   },
-  plugins: [typography, aspectRatio, forms],
+  plugins: [v2311FontsPlugin, typography, aspectRatio, forms],
 }
 
 export default tailwindPreset
