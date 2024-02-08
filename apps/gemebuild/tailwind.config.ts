@@ -1,10 +1,12 @@
 import type { Config } from 'tailwindcss'
+import { tailwindPreset } from 'tailwind-config'
 
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    '../../packages/ui/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -16,5 +18,6 @@ const config: Config = {
     },
   },
   plugins: [],
+  presets: [tailwindPreset],
 }
 export default config
