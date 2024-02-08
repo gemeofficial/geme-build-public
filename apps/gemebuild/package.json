@@ -6,26 +6,37 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storybook": "sb dev -p 6006",
+    "build-storybook": "sb build"
   },
   "dependencies": {
+    "next": "^13.5.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "next": "^13.5.2"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "typescript": "5.2.2",
-    "tsconfig": "workspace:*",
-    "eslint-config-custom": "workspace:*",
-    "ui": "workspace:*",
-    "tailwind-config": "workspace:*",
+    "@storybook/addon-essentials": "^7.4.0",
+    "@storybook/addon-interactions": "^7.6.13",
+    "@storybook/addon-links": "^7.4.0",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/blocks": "^7.6.13",
+    "@storybook/cli": "^7.6.13",
+    "@storybook/nextjs": "^7.6.13",
+    "@storybook/react": "^7.4.0",
+    "@storybook/test": "^7.6.13",
     "@types/node": "^20.6.0",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "autoprefixer": "^10.4.15",
-    "postcss": "^8.4.29",
-    "tailwindcss": "^3.3.3",
     "eslint": "^8.49.0",
-    "eslint-config-next": "^13.5.2"
+    "eslint-config-custom": "workspace:*",
+    "eslint-config-next": "^13.5.2",
+    "postcss": "^8.4.29",
+    "tailwind-config": "workspace:*",
+    "tailwindcss": "^3.3.3",
+    "tsconfig": "workspace:*",
+    "typescript": "5.2.2",
+    "ui": "workspace:*"
   }
 }
