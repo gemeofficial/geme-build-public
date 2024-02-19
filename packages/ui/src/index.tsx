@@ -12,7 +12,7 @@ export * from './pdp-intro-sections'
 export * from './pdp-intro-svgs'
 export * from './tabs'
 export * from './video-inline-player'
-export * from './second-life-demo'
+// export * from './second-life-demo' // modify by athom, it will override the second-life
 export * from './second-life'
 export * from './ui-compost'
 export * from './pdp-user-story-sections'

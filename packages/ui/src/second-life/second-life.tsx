@@ -139,13 +139,12 @@ const secondLifeProps: ISecondLifeProps = {
   articles: [
     {
       id: 1,
-      title: 'Protect the water',
-      description:
-        'Compost makes sure good quality water in the soil, let your seed grow better.',
+      title: 'Prevent Water Lost',
+      description: 'Compost can absorb water, let your seeds grow better.',
       image: {
         width: 1200,
         height: 800,
-        alt: 'Protect the water',
+        alt: 'Prevent Water Lost',
         src: 'https://www.datocms-assets.com/79468/1666986512-moins_eau.jpg?w=10',
         srcSetData: {
           '100w':
@@ -163,12 +162,12 @@ const secondLifeProps: ISecondLifeProps = {
     },
     {
       id: 2,
-      title: 'Make good soil',
-      description: "Compost can improve the soild's quality grows better pants",
+      title: 'Make Good Soil',
+      description: 'Compost can nourish garden soil, let plants grow bigger.',
       image: {
         width: 1200,
         height: 800,
-        alt: 'Protect the water',
+        alt: 'Prevent Water Lost',
         src: 'https://www.datocms-assets.com/79468/1666986527-sols_riches.jpg?w=10',
         srcSetData: {
           '100w':
@@ -186,12 +185,12 @@ const secondLifeProps: ISecondLifeProps = {
     },
     {
       id: 3,
-      title: 'Fight climate change',
-      description: 'Compost reduce landfiling for food waste, saves the earth.',
+      title: 'Fight Climate Change',
+      description: 'Compost can reduce landfill, let our plannet turn greener.',
       image: {
         width: 1200,
         height: 800,
-        alt: 'Protect the water',
+        alt: 'Prevent Water Lost',
         src: 'https://www.datocms-assets.com/79468/1666986537-changements_climatiques.jpg?w=10',
         srcSetData: {
           '100w':
@@ -209,8 +208,8 @@ const secondLifeProps: ISecondLifeProps = {
     },
   ],
 
-  endTitleLeftPart: "That's it!",
-  endTitleRightPart: 'Let life continue!',
+  endTitleLeftPart: 'Waste Reborn',
+  endTitleRightPart: 'Life Continue!',
 }
 
 function SecondLife(props: ISecondLifeProps) {

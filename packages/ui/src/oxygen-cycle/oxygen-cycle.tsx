@@ -10,7 +10,7 @@ interface IOxygenCycleProps {
 }
 
 const exampleOxygenCycleProps: IOxygenCycleProps = {
-  title: 'At the compost plant, everything is ready to convert the organic',
+  title: 'Necessary Steps for Real Composting Process',
   progresses: [
     {
       minProgress: 15,

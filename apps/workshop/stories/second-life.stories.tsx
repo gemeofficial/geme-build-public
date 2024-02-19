@@ -1,10 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import {
-  SecondLifeDemo,
-  EXAMPLE_SECOND_LIFE_PROPS,
-  SecondLife,
-  UiCompost,
-} from 'ui'
+import { EXAMPLE_SECOND_LIFE_PROPS, SecondLife, UiCompost } from 'ui'
+import { SecondLifeDemo } from 'ui/src/second-life-demo/second-life-demo'
 
 const meta: Meta = {
   title: 'second-life',

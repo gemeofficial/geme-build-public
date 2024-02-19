@@ -20,7 +20,7 @@ function ScrollTriggeredAnimatedOxygenCycle(props: IOxygenCycleProps) {
   return (
     <ScrollTrigger
       trigger={containerRef.current}
-      start="top top+=20%"
+      start="top top+=12%"
       end="bottom center-=10%"
       pin={true}
       pinnedContainer=".sb-show-main"

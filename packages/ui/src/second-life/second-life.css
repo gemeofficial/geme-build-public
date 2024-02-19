@@ -288,11 +288,12 @@
 .ui-second-life-article:nth-child(2) {
   /* margin-left: 54.2824074074vw; */
   /* Modified by Alex manually */
-  margin-left: 58.2824074074vw;
+  margin-left: 64.2824074074vw;
 }
 
 .ui-second-life-article:nth-child(3) {
-  margin-left: 7.7546296296vw;
+  /*margin-left: 7.7546296296vw;*/
+  /* Modified by Athom manually */
 }
 
 @media (min-width: 1280px) {
@@ -305,7 +306,8 @@
   .ui-second-life-article:nth-child(3) {
     /* margin-left: 15%; */
     /* Modified by Alex manually */
-    margin-left: 7%;
+    /*margin-left: 7%;*/
+    /* Modified by Athom manually */
   }
 }
 

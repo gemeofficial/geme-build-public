@@ -12,6 +12,11 @@ import {
   PdpIntroSection8,
   usingCompostIcons,
   SvgOxygen,
+  SvgFoodWaste,
+  SvgWood,
+  SvgWaterDrop,
+  SvgTemperature,
+  SvgMicrobe,
 } from 'ui'
 import type {
   IPdpIntroSection1Props,
@@ -40,21 +45,145 @@ const pdpIntroSection1Props: IPdpIntroSection1Props = {
 }
 
 const oxygenCycleProps: IOxygenCycleProps = {
-  title: 'At the compost plant, everything is ready to convert the organic',
+  title: 'Necessary Steps for Real Composting Process',
   progresses: [
     {
-      minProgress: 100,
+      minProgress: 12.5,
+      content: (
+        <>
+          <SvgFoodWaste className=" w-8 h-8 md:w-16 md:h-16 " />
+          <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+            Nutrients(Food Waste)
+          </h3>
+          <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2">
+            Micro-organisms require C, N, phosphorus (P) and potassium (K) as
+            the primary nutrients. Of particular importance is the C:N ratio of
+            raw materials. The optimal C:N ratio of raw materials is between
+            25:1 and 30:1 although ratios between 20:1 and 40:1 are also
+            acceptable. Where the ratio is too high, the growth of
+            micro-organisms is limited, resulting in a longer composting time. A
+            C:N ratio of less than 20:1 leads to underutilization of N and odour
+            can be a problem.
+          </p>
+          <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
+            GEME Composter and GEME Kobold will take care of the C:N ratio
+            automatically for you.
+          </p>
+        </>
+      ),
+    },
+    {
+      minProgress: 25,
       content: (
         <>
           <SvgOxygen className=" w-8 h-8 md:w-16 md:h-16 " />
           <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Plenty of oxygen
+            Aeration(Oxygen)
           </h3>
           <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            How to get the right recipe? By giving air to microbes! First, mix
-            the organic material with a carbon source, such as wood chips. Then
-            they are arranged and worked mechanically, allowing air to circulate
-            and nature to work.
+            Aerobic composting takes place in the presence of ample O. In this
+            process, aerobic microorganisms break down organic matter and
+            produce carbon dioxide (CO2), ammonia, water, heat and humus, the
+            relatively stable organic end product.
+          </p>
+          <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
+            GEME Composter provide an airflow exchange system to make this
+            happen inside a box placed indoor.
+          </p>
+        </>
+      ),
+    },
+    {
+      minProgress: 40,
+      content: (
+        <>
+          <SvgWood className=" w-8 h-8 md:w-16 md:h-16 " />
+          <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+            Lignin Content(Brown Stuff)
+          </h3>
+          <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
+            Lignin is one of the main constituents of plant cell walls, and its
+            complex chemical structure makes it highly resistant to microbial
+            degradation (Richard, 1996). This nature of lignin has two
+            implications. One is that lignin reduces the bioavailability of the
+            other cell-wall constituents, making the actual C:N ratio (viz.
+            ratio of biodegradable C to N) lower than the one normally cited.
+            The other is that lignin serves as a porosity enhancer, which
+            creates favourable conditions for aerobic composting.
+          </p>
+          <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
+            GEME Kobold starter contains such material and well configured for
+            you.
+          </p>
+        </>
+      ),
+    },
+    {
+      minProgress: 60,
+      content: (
+        <>
+          <SvgWaterDrop className=" w-8 h-8 md:w-16 md:h-16 " />
+          <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+            Moisture
+          </h3>
+          <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
+            Moisture is necessary to support the metabolic activity of the
+            micro-organisms. Composting materials should maintain a moisture
+            content of 40-65 percent. Where the pile is too dry, composting
+            occurs more slowly, while a moisture content in excess of 65 percent
+            develops anaerobic conditions. In practice, it is advisable to start
+            the pile with a moisture content of 50-60 percent, finishing at
+            about 30 percent.
+          </p>
+          <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
+            GEME Composter is water proof and it allows adding water and
+            dehumidify when over wet.
+          </p>
+        </>
+      ),
+    },
+    {
+      minProgress: 78,
+      content: (
+        <>
+          <SvgTemperature className=" w-8 h-8 md:w-16 md:h-16 " />
+          <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+            Temperature
+          </h3>
+          <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
+            The process of composting involves two temperature ranges:
+            mesophilic and thermophilic. While the ideal temperature for the
+            initial composting stage is 20-45 °C, at subsequent stages with the
+            thermophilic organisms taking over, a temperature range of 50-70 °C
+            may be ideal. High temperatures characterize the aerobic composting
+            process and serve as signs of vigorous microbial activities.
+            Pathogens are normally destroyed at 55 °C and above, while the
+            critical point for elimination of weed seeds is 62 °C. Turnings and
+            aeration can be used to regulate temperature.
+          </p>
+        </>
+      ),
+    },
+    {
+      minProgress: 100,
+      content: (
+        <>
+          <SvgMicrobe className=" w-8 h-8 md:w-16 md:h-16 " />
+          <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+            Microbes(GEME Kobold)
+          </h3>
+          <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
+            While some composters find improved aeration enough for enhanced
+            microbial activities, others may need inoculation of
+            micro-organisms. Inoculum organisms utilized for composting are
+            mainly fungi such as Trichoderma and Pleurotus. This publication
+            also features 'effective micro-organisms' (EMs).
+          </p>
+          <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
+            GEME Kobold is a set of microbiota, which is the world's only
+            previously discovered and validated high-temperature resistant
+            composite microbiota. It works 100x faster than ordinary bacteria in
+            natural.
           </p>
         </>
       ),
