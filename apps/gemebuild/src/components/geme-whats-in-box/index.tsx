@@ -45,4 +45,4 @@ function GemeWhatsInBox(props: IGemeWhatsInBoxProps) {
 }
 
 export default GemeWhatsInBox
-export { gemeWhatsInBoxPropsExample }
+export { gemeWhatsInBoxPropsExample, type IGemeWhatsInBoxProps }

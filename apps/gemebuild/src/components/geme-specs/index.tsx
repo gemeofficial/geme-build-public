@@ -98,4 +98,4 @@ function GemeSpecs({ title, specs }: IGemeSpecsProps) {
 }
 
 export default GemeSpecs
-export { gemeSpecsExampleProps }
+export { gemeSpecsExampleProps, type IGemeSpecsProps }
