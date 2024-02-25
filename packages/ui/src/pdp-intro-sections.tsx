@@ -266,7 +266,7 @@ function PdpIntroSection6({
           </p>
         )}
       </div>
-      <div className="mt-4 md:mt-8 w-full grid grid-cols-2 grid-rows-2 xl:grid-cols-10 xl:grid-rows-6 xl:gap-4 xl:max-w-4xl xl:mx-auto">
+      <div className="mt-4 md:mt-8 w-full grid xl:grid-cols-10 xl:grid-rows-6 xl:gap-4 xl:max-w-4xl xl:mx-auto">
         {items?.map((item) => {
           return (
             <div
@@ -306,7 +306,7 @@ function PdpIntroSection6({
                     className={classNames(
                       item.featured
                         ? ' aspect-[156/99] flex-1'
-                        : 'aspect-1 md:min-w-[120px]',
+                        : 'aspect-1 md:min-w-[120px] flex-[2]',
                     )}
                   >
                     <img
@@ -324,10 +324,10 @@ function PdpIntroSection6({
                 {item?.features && (
                   <ul
                     className={classNames(
-                      'v2311-font-body flex-1 xl:v2311-font-h3 xl:font-normal',
+                      'v2311-font-body xl:v2311-font-h3 xl:font-normal',
                       item.featured
-                        ? ''
-                        : ' text-[8px] md:v2311-font-img-desc xl:v2311-font-body mr-2 md:mr-4',
+                        ? 'flex-1'
+                        : ' text-[8px] md:v2311-font-img-desc xl:v2311-font-body mr-2 md:mr-4 flex-[3]',
                     )}
                   >
                     {item?.features.map((feature, idx) => {
