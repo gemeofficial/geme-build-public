@@ -10,6 +10,9 @@ importers:
 
   apps/gemebuild:
     dependencies:
+      '@heroicons/react':
+        specifier: ^2.0.18
+        version: 2.1.1(react@18.2.0)
       d3-fetch:
         specifier: ^3.0.1
         version: 3.0.1
