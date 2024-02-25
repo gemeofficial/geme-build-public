@@ -19,6 +19,9 @@ importers:
       lodash.sortby:
         specifier: ^4.7.0
         version: 4.7.0
+      mixpanel-browser:
+        specifier: ^2.47.0
+        version: 2.49.0
       next:
         specifier: 13.5.2
         version: 13.5.2(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)
@@ -10600,6 +10603,10 @@ packages:
       minipass: 3.3.6
       yallist: 4.0.0
     dev: true
+
+  /mixpanel-browser@2.49.0:
+    resolution: {integrity: sha512-RZJCO7XXuuHBAWG5fd9Mavz994M7v7W3Qiaq8NzmN631pa4BQ0vNZQtRFqKcCCOBn4xqOZbX2GkuC7ZkQoL4cQ==}
+    dev: false
 
   /mkdirp-classic@0.5.3:
     resolution: {integrity: sha512-gKLcREMhtuZRwRAfqP3RFW+TK4JqApVBtOIftVgjuABpAtpxhPGaDcfvbhNvD0B8iD1oUr/txX35NjcaY6Ns/A==}

@@ -1,8 +1,8 @@
 'use client'
 
 import { ReactNode } from 'react'
-import { ProportionalSymbolMap } from '@/components/map-charts'
-import type { IProportionalSymbolMapProps } from '@/components/map-charts'
+import { ProportionalSymbolMap } from '../map-charts'
+import type { IProportionalSymbolMapProps } from '../map-charts'
 
 interface IFootprintsProps {
   grayBackground?: boolean
