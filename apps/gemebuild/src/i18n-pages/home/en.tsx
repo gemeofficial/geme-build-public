@@ -27,7 +27,8 @@ import type {
   IContentSection6FixedProps,
   ISecondLifeProps,
 } from 'ui'
-// import Footprints from '@containers/product/Footprints'
+import { Footprints } from '@/components/footprints'
+import type { IFootprintsProps } from '@/components/footprints'
 import Link from 'next/link'
 
 const heroSection1Props: IHeroSection1Props = {
@@ -385,6 +386,16 @@ const contentSection5Props: IContentSection5Props = {
   ),
 }
 
+const footprintsProps: IFootprintsProps = {
+  grayBackground: false,
+  title: "GEME's Green Footprints in the World",
+  description:
+    'Thanks for backing GEME and bring more green to the world. Be the first one to spread to your place!',
+  proportionalSymbolMapProps: {
+    recentOrderedFrom: 'People from {city} back GEME with their love.',
+  },
+}
+
 const actionSection1Props: IActionSection1Props = {
   title: 'Join the Movement',
   description: (
@@ -422,7 +433,7 @@ export default function HomeEn() {
         <ContentSection5 {...contentSection5Props} />
       </div>
 
-      {/* <Footprints grayBackground={false} /> */}
+      <Footprints {...footprintsProps} />
 
       <ActionSection1 {...actionSection1Props} />
       {/* <ActionSection />

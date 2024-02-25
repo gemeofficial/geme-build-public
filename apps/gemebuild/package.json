@@ -13,9 +13,13 @@
   "main": "./src/i18n-pages/index.ts",
   "types": "./src/i18n-pages/index.ts",
   "dependencies": {
+    "d3-fetch": "^3.0.1",
+    "d3-scale": "^4.0.2",
+    "lodash.sortby": "^4.7.0",
     "next": "13.5.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-simple-maps": "^3.0.0"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.4.0",
@@ -27,6 +31,9 @@
     "@storybook/nextjs": "^7.6.13",
     "@storybook/react": "^7.4.0",
     "@storybook/test": "^7.6.13",
+    "@types/d3-fetch": "^3.0.3",
+    "@types/d3-scale": "^4.0.4",
+    "@types/lodash.sortby": "^4.7.7",
     "@types/node": "^20.6.0",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
@@ -35,9 +42,11 @@
     "eslint-config-custom": "workspace:*",
     "eslint-config-next": "^13.5.2",
     "postcss": "^8.4.29",
+    "react-simple-maps": "^3.0.0",
     "tailwind-config": "workspace:*",
     "tailwindcss": "^3.3.3",
     "tsconfig": "workspace:*",
+    "tsconfig-paths-webpack-plugin": "^4.1.0",
     "typescript": "5.2.2",
     "ui": "workspace:*"
   }
