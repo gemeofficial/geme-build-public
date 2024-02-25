@@ -327,7 +327,7 @@ const pdpIntroSection7Props: IPdpIntroSection7Props = {
 }
 
 const contentSection23Props: IContentSection2Props = {
-  title: 'Up to 19L volume and 4.4lbs/2kg daily processing capacity ',
+  title: 'Up to 19L volume and 11lbs/5kg daily processing capacity ',
   description: (
     <>
       ·&nbsp;&nbsp;10+ people family daily using <br />
