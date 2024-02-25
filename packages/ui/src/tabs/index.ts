@@ -1,0 +1,5 @@
+export * from './tabs-demo'
+export * from './example-tabs-props'
+export * from './pdp-tabs'
+export * from './pdp-tabs-with-hash'
+export * from './scrollable-pdp-tabs'

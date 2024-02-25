@@ -1,0 +1,25 @@
+{
+  "name": "geme-build-public",
+  "version": "0.0.1",
+  "author": "service@geme.bio",
+  "license": "MIT",
+  "private": true,
+  "description": "The static build of GEME.bio.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gemeofficial/geme-build-public"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "GEME",
+    "geme.bio",
+    "GEME.bio"
+  ],
+  "packageManager": "pnpm@8.7.5",
+  "engines": {
+    "node": ">=18.16.1"
+  }
+}

@@ -1,0 +1,42 @@
+rank,country_code,country,city_code,city,lat,lng,population
+1,840,United States,1,California,36.778259,-119.417931,9
+2,702,Singapore,2,Singapore,1.352083,103.819839,4
+3,840,United States,1,Colorado,39.550053,-105.782066,3
+4,840,United States,1,Washington,47.751076,-120.740135,3
+5,840,United States,1,Illinois,40.633125,-89.398529,3
+6,840,United States,1,Virginia,37.431572,-78.65689,2
+7,840,United States,1,Texas,31.968599,-99.901810,2
+8,840,United States,1,Florida,27.994402,-81.760254,2
+9,840,United States,1,Indiana,40.3270127,-86.1746933,2
+10,840,United States,1,Marietta,33.9528472,-84.5496148,1
+11,840,United States,1,Massachusetts,42.3788774,-72.032366,1
+12,840,United States,1,Missouri,38.7604815,-92.5617875,1
+13,840,United States,1,Nevada,39.5158825,-116.8537227,1
+14,840,United States,1,New Jersey,40.0757384,-74.4041622,1
+15,840,United States,1,New York,40.0757384,-74.4041622,2
+16,840,United States,1,North Carolina,35.6729639,-79.0392919,1
+17,840,United States,1,Pennsylvania,40.9699889,-77.7278831,1
+18,840,United States,1,Roseville,38.7521235,-121.2880059,1
+19,380,Italy,3,Campogalliano,44.6905118,10.8407336,1
+20,380,Italy,3,Piscina,44.9194418,7.4262115,1
+21,380,Italy,3,Siena,43.1672254,11.4671812,1
+22,380,Italy,3,Firenze,43.1672254,11.4671812,1
+23,724,Spain,4,Spain,39.3260685,-4.8379791,1
+24,764,Thailand,5,Bangkok,13.7524938,100.4935089,3
+25,764,Netherlands,6,Bangkok,52.2434979,5.6343227,3
+26,276,Germany,7,Saxony,50.9295798,13.4585052,2
+27,124,Canada,8,Ontario,50.000678,-86.000977,2
+28,348,Hungary,9,Budapest,47.4979937,19.0403594,1
+29,152,Chile,10,Santiago,-35,-70,1
+30,196,Cyprus,11,Limassol,34.6852901,33.0332657,1
+31,197,AE,12,DUBAI,25.0742823,55.1885387,1
+32,060,Bermuda,13,Hamilton,32.30382,-64.7561647,1
+33,826,Great Britain,14,London,51.5073359,-0.12765,2
+34,306,Australia,15,Melbourne,-37.8142176,144.9631608,2
+35,484,Mexico,16,Mexico,23.6585116,-102.0077097,1
+36,620,Portugal,16,Portugal,39.6621648,-8.1353519,1
+37,642,Romania,16,Bucureşti,45.9852129,24.6859225,1
+38,752,Swedeb,17,Skåne län,55.8479416,13.6337117,1
+39,356,India,17,Hyderabad,17.385044,78.486671,1
+40,840,United States,1,Alaska,64.5605,-147.0356,3
+41,398,Kazakhstan,18,Almaty,43.2220,76.8512,1
