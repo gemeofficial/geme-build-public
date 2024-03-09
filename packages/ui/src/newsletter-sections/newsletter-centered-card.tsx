@@ -5,6 +5,12 @@ interface INewsletterCenteredCardProps {
   description?: ReactNode
   linkText?: ReactNode
   linkUrl?: string
+
+  onSubmit?: (event: React.FormEvent<HTMLFormElement>) => void
+  emailInputName?: string
+  emailLabel?: string
+  emailPlaceholder?: string
+  submitButtonLabel?: string
 }
 
 const newsletterCenteredCardProps: INewsletterCenteredCardProps = {
@@ -12,15 +18,24 @@ const newsletterCenteredCardProps: INewsletterCenteredCardProps = {
   description: (
     <>A new approach to the world&apos;s waste problem begins with each of us</>
   ),
-  linkText: 'GET GEME',
-  linkUrl: '/product/geme',
+  onSubmit: (evt) => {
+    console.log('Form submitted')
+    evt.preventDefault()
+  },
+  emailInputName: 'email-address',
+  emailLabel: 'Email address',
+  emailPlaceholder: 'Enter your email',
+  submitButtonLabel: 'Subscribe',
 }
 
 function NewsletterCenteredCard({
   title,
   description,
-  linkText,
-  linkUrl,
+  onSubmit,
+  emailInputName = 'email-address',
+  emailLabel,
+  emailPlaceholder,
+  submitButtonLabel,
 }: INewsletterCenteredCardProps) {
   return (
     <div className="bg-v2311-bg-dark-green ">
@@ -31,14 +46,30 @@ function NewsletterCenteredCard({
             {description}
           </p>
         )}
-        {linkText && linkUrl && (
-          <a
-            className=" v2311-font-h2 text-white w-full xl:w-auto flex items-center justify-center mt-4 md:mt-8 border-solid border-2 border-white rounded-xl py-1 md:py-2 xl:px-4"
-            href={linkUrl}
+
+        <form
+          onSubmit={onSubmit}
+          className="w-full max-w-sm md:max-w-lg lg:max-w-xl flex items-center justify-center gap-x-2 md:gap-x-4 mt-4 md:mt-8 py-1 md:py-2 xl:px-4"
+        >
+          <label className="sr-only" htmlFor="email-address">
+            {emailLabel}
+          </label>
+          <input
+            className=" flex-auto v2311-font-body xl:v2311-font-h3 xl:font-normal text-v2311-fg-dark-black border-solid border-2 border-white rounded-xl py-1 md:py-2 xl:px-4  focus:border-v2311-bg-light-green focus:ring-v2311-bg-light-green"
+            id="email-address"
+            name={emailInputName}
+            type="email"
+            placeholder={emailPlaceholder}
+            autoComplete="email"
+            required
+          />
+          <button
+            className=" v2311-font-body font-bold xl:v2311-font-h3 text-white border-solid border-2 border-white rounded-xl px-4 py-1 md:py-2  focus:border-v2311-bg-light-green focus:ring-v2311-bg-light-green"
+            type="submit"
           >
-            {linkText}
-          </a>
-        )}
+            {submitButtonLabel}
+          </button>
+        </form>
       </section>
     </div>
   )

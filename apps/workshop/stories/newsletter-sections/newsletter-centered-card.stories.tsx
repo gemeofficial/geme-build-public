@@ -25,7 +25,16 @@ export const StoryNewsletterCenteredCard: StoryObj<
     title: 'Join the Movement',
     description:
       "A new approach to the world's waste problem begins with each of us, effortless in daily life",
-    linkText: 'GET GEME',
-    linkUrl: '/product/geme',
+    onSubmit: (evt) => {
+      evt.preventDefault()
+      console.log(
+        'Form submitted:',
+        new FormData(evt.currentTarget).get('email-address'),
+      )
+    },
+    emailInputName: 'email-address',
+    emailLabel: 'Email address',
+    emailPlaceholder: 'Enter your email',
+    submitButtonLabel: 'Subscribe',
   },
 }
