@@ -10,8 +10,6 @@ import {
   CompostStep2,
   CompostStep3,
   SecondLife,
-  NewsletterCenteredCard,
-  SuccessNotice,
 } from 'ui'
 import type {
   IHeroSection1Props,
@@ -22,10 +20,9 @@ import type {
   IContentSection5Props,
   IContentSection6FixedProps,
   ISecondLifeProps,
-  INewsletterCenteredCardProps,
-  ISuccessNoticeProps,
 } from 'ui'
 import { Footprints, type IFootprintsProps } from '../../components/footprints'
+import { Newsletter, INewsletterProps } from './containers/newsletter'
 import Link from 'next/link'
 import mixpanel from 'mixpanel-browser'
 
@@ -397,24 +394,24 @@ const footprintsProps: IFootprintsProps = {
   },
 }
 
-const newsletterCenteredCardProps: INewsletterCenteredCardProps = {
-  title: 'Join the Movement',
-  description: (
-    <>
-      A new approach to the world&apos;s waste problem begins with each of us,
-      effortless in daily life
-    </>
-  ),
-  emailInputName: 'email-address',
-  emailLabel: 'Email address',
-  emailPlaceholder: 'Enter your email',
-  submitButtonLabel: 'Subscribe',
-}
-
-const newsletterSuccessNoticeProps: ISuccessNoticeProps = {
-  title: 'Thank you for subscribing!',
-  description: 'We will keep you updated with the latest news.',
-  open: false,
+const newsltterProps: INewsletterProps = {
+  newsletterCenteredCardProps: {
+    title: 'Join the Movement',
+    description: (
+      <>
+        A new approach to the world&apos;s waste problem begins with each of us,
+        effortless in daily life
+      </>
+    ),
+    emailInputName: 'email-address',
+    emailLabel: 'Email address',
+    emailPlaceholder: 'Enter your email',
+    submitButtonLabel: 'Subscribe',
+  },
+  successNoticeProps: {
+    title: 'Thank you for subscribing!',
+    description: 'We will keep you updated with the latest news.',
+  },
 }
 
 export default function HomeEn() {
@@ -440,10 +437,7 @@ export default function HomeEn() {
 
       <Footprints {...footprintsProps} />
 
-      {/* Newsletter =start */}
-      <NewsletterCenteredCard {...newsletterCenteredCardProps} />
-      <SuccessNotice {...newsletterSuccessNoticeProps} />
-      {/* Newsletter =end */}
+      <Newsletter {...newsltterProps} />
     </>
   )
 }
