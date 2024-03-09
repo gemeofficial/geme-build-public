@@ -9,7 +9,7 @@ import {
   CompostStep2,
   CompostStep3,
   ContentSection6Fixed,
-  ActionSection1,
+  NewsletterCenteredCard,
 } from 'ui'
 import type {
   IHeroSection1Props,
@@ -19,7 +19,7 @@ import type {
   ISecondLifeProps,
   IContentSection5Props,
   IContentSection6FixedProps,
-  IActionSection1Props,
+  INewsletterCenteredCardProps,
 } from 'ui'
 
 const heroSection1Props: IHeroSection1Props = {
@@ -317,13 +317,22 @@ const contentSection5Props: IContentSection5Props = {
   ),
 }
 
-const actionSection1Props: IActionSection1Props = {
+const newsletterCenteredCardProps: INewsletterCenteredCardProps = {
   title: 'Join the movement',
   description: (
     <>A new approach to the world&apos;s waste problem begins with each of us</>
   ),
-  linkText: 'GET GEME',
-  linkUrl: '/product/geme',
+  onSubmit: (evt) => {
+    evt.preventDefault()
+    console.log(
+      'Form submitted:',
+      new FormData(evt.currentTarget).get('email-address'),
+    )
+  },
+  emailInputName: 'email-address',
+  emailLabel: 'Email address',
+  emailPlaceholder: 'Enter your email',
+  submitButtonLabel: 'Subscribe',
 }
 
 function HomeV2311(): JSX.Element {
@@ -349,7 +358,7 @@ function HomeV2311(): JSX.Element {
 
       {/* placeholder for Footprints */}
 
-      <ActionSection1 {...actionSection1Props} />
+      <NewsletterCenteredCard {...newsletterCenteredCardProps} />
 
       {/* placeholder for other sections */}
     </main>
