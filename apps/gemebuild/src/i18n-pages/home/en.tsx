@@ -9,12 +9,10 @@ import {
   CompostStep1,
   CompostStep2,
   CompostStep3,
-  ActionSection1,
   SecondLife,
 } from 'ui'
 import type {
   IHeroSection1Props,
-  IActionSection1Props,
   IContentSection1Props,
   IContentSection2Props,
   IContentSection3Props,
@@ -24,6 +22,7 @@ import type {
   ISecondLifeProps,
 } from 'ui'
 import { Footprints, type IFootprintsProps } from '../../components/footprints'
+import { Newsletter, INewsletterProps } from './containers/newsletter'
 import Link from 'next/link'
 import mixpanel from 'mixpanel-browser'
 
@@ -395,16 +394,24 @@ const footprintsProps: IFootprintsProps = {
   },
 }
 
-const actionSection1Props: IActionSection1Props = {
-  title: 'Join the Movement',
-  description: (
-    <>
-      A new approach to the world&apos;s waste problem begins with each of us,
-      effortless in daily life
-    </>
-  ),
-  linkText: 'GET GEME',
-  linkUrl: '/product/geme',
+const newsltterProps: INewsletterProps = {
+  newsletterCenteredCardProps: {
+    title: 'Join the Movement',
+    description: (
+      <>
+        A new approach to the world&apos;s waste problem begins with each of us,
+        effortless in daily life
+      </>
+    ),
+    emailInputName: 'email-address',
+    emailLabel: 'Email address',
+    emailPlaceholder: 'Enter your email',
+    submitButtonLabel: 'Subscribe',
+  },
+  successNoticeProps: {
+    title: 'Thank you for subscribing!',
+    description: 'We will keep you updated with the latest news.',
+  },
 }
 
 export default function HomeEn() {
@@ -430,7 +437,7 @@ export default function HomeEn() {
 
       <Footprints {...footprintsProps} />
 
-      <ActionSection1 {...actionSection1Props} />
+      <Newsletter {...newsltterProps} />
     </>
   )
 }
