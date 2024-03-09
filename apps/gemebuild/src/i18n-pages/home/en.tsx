@@ -9,12 +9,12 @@ import {
   CompostStep1,
   CompostStep2,
   CompostStep3,
-  ActionSection1,
   SecondLife,
+  NewsletterCenteredCard,
+  SuccessNotice,
 } from 'ui'
 import type {
   IHeroSection1Props,
-  IActionSection1Props,
   IContentSection1Props,
   IContentSection2Props,
   IContentSection3Props,
@@ -22,6 +22,8 @@ import type {
   IContentSection5Props,
   IContentSection6FixedProps,
   ISecondLifeProps,
+  INewsletterCenteredCardProps,
+  ISuccessNoticeProps,
 } from 'ui'
 import { Footprints, type IFootprintsProps } from '../../components/footprints'
 import Link from 'next/link'
@@ -395,7 +397,7 @@ const footprintsProps: IFootprintsProps = {
   },
 }
 
-const actionSection1Props: IActionSection1Props = {
+const newsletterCenteredCardProps: INewsletterCenteredCardProps = {
   title: 'Join the Movement',
   description: (
     <>
@@ -403,8 +405,16 @@ const actionSection1Props: IActionSection1Props = {
       effortless in daily life
     </>
   ),
-  linkText: 'GET GEME',
-  linkUrl: '/product/geme',
+  emailInputName: 'email-address',
+  emailLabel: 'Email address',
+  emailPlaceholder: 'Enter your email',
+  submitButtonLabel: 'Subscribe',
+}
+
+const newsletterSuccessNoticeProps: ISuccessNoticeProps = {
+  title: 'Thank you for subscribing!',
+  description: 'We will keep you updated with the latest news.',
+  open: false,
 }
 
 export default function HomeEn() {
@@ -430,7 +440,10 @@ export default function HomeEn() {
 
       <Footprints {...footprintsProps} />
 
-      <ActionSection1 {...actionSection1Props} />
+      {/* Newsletter =start */}
+      <NewsletterCenteredCard {...newsletterCenteredCardProps} />
+      <SuccessNotice {...newsletterSuccessNoticeProps} />
+      {/* Newsletter =end */}
     </>
   )
 }
