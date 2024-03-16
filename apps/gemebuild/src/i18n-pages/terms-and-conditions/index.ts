@@ -1,0 +1,1 @@
+export { TermsAndConditionsPageEn } from './en'
