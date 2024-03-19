@@ -495,8 +495,6 @@ function ContentSection6({ steps }: IContentSection6Props): JSX.Element {
     <div className="px-4 pb-8 mx-auto md:px-8 md:pb-16 xl:p-0 flex">
       {steps?.map((step) => (
         <div key={step.id} className=" flex-1 flex flex-col items-center ">
-          {/* <step.Icon className=" w-[80px] h-[80px] md:w-[172px] md:h-[172px] xl:w-[144px] xl:h-[144px] " /> */}
-          {/* <img src="/assets/" alt="" /> */}
           <p className="v2311-font-img-desc text-v2311-fg-black text-center mt-4 md:mt-8 xl:mt-4">
             {step.description}
           </p>
