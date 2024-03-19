@@ -1,16 +1,16 @@
-import { ReactNode, SVGProps } from 'react';
-import { CompostStep1, CompostStep2, CompostStep3 } from './compost-steps';
-import classNames from './lib/classNames';
-import VideoInlinePlayer from './video-inline-player';
-import { IImgProps, Img } from './image';
-import { IVideoPlayerProps, VideoPlayer } from './video';
+import { ReactNode, SVGProps } from 'react'
+import { CompostStep1, CompostStep2, CompostStep3 } from './compost-steps'
+import classNames from './lib/classNames'
+import VideoInlinePlayer from './video-inline-player'
+import { IImgProps, Img } from './image'
+import { IVideoPlayerProps, VideoPlayer } from './video'
 
 interface IContentSection1Props {
-  title?: ReactNode;
-  description?: ReactNode;
-  imageSrc?: string;
-  imageAlt?: string;
-  isDisplayTextOnLeft?: boolean;
+  title?: ReactNode
+  description?: ReactNode
+  imageSrc?: string
+  imageAlt?: string
+  isDisplayTextOnLeft?: boolean
 }
 
 const contentSection1Props: IContentSection1Props = {
@@ -25,7 +25,7 @@ const contentSection1Props: IContentSection1Props = {
   ),
   imageSrc: 'https://placehold.co/358x202',
   imageAlt: 'food waste picture',
-};
+}
 
 // 图文模板1_标题+正文+图片
 // cf: https://www.figma.com/file/7xuAjF5e9ybdZpbePoDFpG/%E8%BE%93%E5%87%BA?type=design&node-id=264%3A287314&mode=dev
@@ -63,15 +63,15 @@ function ContentSection1({
         )}
       </div>
     </section>
-  );
+  )
 }
 
 interface IContentSection2Props {
-  title?: ReactNode;
-  description?: ReactNode;
-  imageSrc?: string;
-  imageAlt?: string;
-  isDisplayTextOnLeft?: boolean;
+  title?: ReactNode
+  description?: ReactNode
+  imageSrc?: string
+  imageAlt?: string
+  isDisplayTextOnLeft?: boolean
 }
 
 const contentSection2Props: IContentSection2Props = {
@@ -85,7 +85,7 @@ const contentSection2Props: IContentSection2Props = {
   ),
   imageSrc: 'https://placehold.co/358x202',
   imageAlt: 'food waste picture',
-};
+}
 
 // 图文模板2_标题+正文（文本左对齐 - 位置居中）+图片
 // https://www.figma.com/file/7xuAjF5e9ybdZpbePoDFpG/%E8%BE%93%E5%87%BA?type=design&node-id=264%3A286824&mode=dev
@@ -125,18 +125,18 @@ function ContentSection2({
         )}
       </div>
     </section>
-  );
+  )
 }
 
 interface IContentSection3Props {
-  title?: ReactNode;
-  description?: ReactNode;
+  title?: ReactNode
+  description?: ReactNode
   items?: {
-    id: number;
-    description?: ReactNode;
-    imageSrc?: string;
-    imageAlt?: string;
-  }[];
+    id: number
+    description?: ReactNode
+    imageSrc?: string
+    imageAlt?: string
+  }[]
 }
 
 const contentSection3Props: IContentSection3Props = {
@@ -197,7 +197,7 @@ const contentSection3Props: IContentSection3Props = {
       imageAlt: 'item 4',
     },
   ],
-};
+}
 
 // 图文模版3_标题+正文+2列图文（图片+文字描述【可增减】）
 // https://www.figma.com/file/7xuAjF5e9ybdZpbePoDFpG/%E8%BE%93%E5%87%BA?type=design&node-id=264%3A286844&mode=dev
@@ -231,28 +231,28 @@ function ContentSection3({
                 {item.description}
               </p>
             </div>
-          );
+          )
         })}
       </div>
     </section>
-  );
+  )
 }
 
 interface IContentSection4Props {
-  title?: ReactNode;
-  description?: ReactNode;
+  title?: ReactNode
+  description?: ReactNode
 
   withMp4VideoOrYoutubeVideo?:
     | {
-        type: 'mp4';
-        videoPosterUrl?: string;
-        videoSrcUrl?: string;
+        type: 'mp4'
+        videoPosterUrl?: string
+        videoSrcUrl?: string
       }
     | {
-        type: 'youtube';
-        videoPosterImage?: IImgProps;
-        videoSrcUrl?: string;
-      };
+        type: 'youtube'
+        videoPosterImage?: IImgProps
+        videoSrcUrl?: string
+      }
 }
 
 const contentSection4Props: IContentSection4Props = {
@@ -278,7 +278,7 @@ const contentSection4Props: IContentSection4Props = {
     },
     videoSrcUrl: 'https://www.youtube.com/embed/v1Z4fg6MmlI',
   },
-};
+}
 
 // FIXME: should replace the img with MP4 video player
 // 图文模板4_标题+正文+MP4视频自动播放
@@ -342,19 +342,19 @@ function ContentSection4({
           )}
       </div>
     </section>
-  );
+  )
 }
 
 interface IContentSection5Props {
-  title?: ReactNode;
-  description?: ReactNode;
+  title?: ReactNode
+  description?: ReactNode
   images?: {
-    id?: number;
-    stepText?: string;
-    imageSrc?: string;
-    imageAlt?: string;
-  }[];
-  bottomDescription?: ReactNode;
+    id?: number
+    stepText?: string
+    imageSrc?: string
+    imageAlt?: string
+  }[]
+  bottomDescription?: ReactNode
 }
 
 const contentSection5Props: IContentSection5Props = {
@@ -390,7 +390,7 @@ const contentSection5Props: IContentSection5Props = {
       fed well.
     </>
   ),
-};
+}
 
 // 图文模板5_标题+正文+图文（图片+文字描述【可增减】）
 // https://www.figma.com/file/7xuAjF5e9ybdZpbePoDFpG/%E8%BE%93%E5%87%BA?type=design&node-id=264%3A286878&mode=dev
@@ -433,7 +433,7 @@ function ContentSection5({
                 alt={imageAlt}
               />
             </div>
-          );
+          )
         })}
       </div>
       {bottomDescription && (
@@ -442,15 +442,15 @@ function ContentSection5({
         </p>
       )}
     </section>
-  );
+  )
 }
 
 interface IContentSection6Props {
   steps?: {
-    id: number;
-    Icon: (props: SVGProps<SVGSVGElement>) => JSX.Element;
-    description?: ReactNode;
-  }[];
+    id: number
+    Icon: (props: SVGProps<SVGSVGElement>) => JSX.Element
+    description?: ReactNode
+  }[]
 }
 
 const contentSection6Props: IContentSection6Props = {
@@ -486,7 +486,7 @@ const contentSection6Props: IContentSection6Props = {
       ),
     },
   ],
-};
+}
 
 // 图文模块6（图片+文字描述【1列 - 可增减】）
 // https://www.figma.com/file/7xuAjF5e9ybdZpbePoDFpG/%E8%BE%93%E5%87%BA?type=design&node-id=264%3A287628&mode=dev
@@ -503,31 +503,31 @@ function ContentSection6({ steps }: IContentSection6Props): JSX.Element {
         </div>
       ))}
     </div>
-  );
+  )
 }
 
 interface IContentSection6FixedProps {
-  title?: ReactNode;
-  videoPosterUrl?: string;
-  videoSrcUrl?: string;
-  isDisplayTextOnLeft?: boolean;
+  title?: ReactNode
+  videoPosterUrl?: string
+  videoSrcUrl?: string
+  isDisplayTextOnLeft?: boolean
   steps?: [
     {
-      id: number;
-      Icon: (props: SVGProps<SVGSVGElement>) => JSX.Element;
-      description?: ReactNode;
+      id: number
+      Icon: (props: SVGProps<SVGSVGElement>) => JSX.Element
+      description?: ReactNode
     },
     {
-      id: number;
-      Icon: (props: SVGProps<SVGSVGElement>) => JSX.Element;
-      description?: ReactNode;
+      id: number
+      Icon: (props: SVGProps<SVGSVGElement>) => JSX.Element
+      description?: ReactNode
     },
     {
-      id: number;
-      Icon: (props: SVGProps<SVGSVGElement>) => JSX.Element;
-      description?: ReactNode;
+      id: number
+      Icon: (props: SVGProps<SVGSVGElement>) => JSX.Element
+      description?: ReactNode
     },
-  ];
+  ]
 }
 
 const contentSection6FixedProps: IContentSection6FixedProps = {
@@ -567,7 +567,7 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       ),
     },
   ],
-};
+}
 
 // Alex: this is a fixed of ContentSection6 to make it looks like same as the design
 // cf: https://www.figma.com/file/7xuAjF5e9ybdZpbePoDFpG/%E8%BE%93%E5%87%BA?type=design&node-id=322%3A253319&mode=dev
@@ -630,24 +630,24 @@ function ContentSection6Fixed({
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 interface IContentSection7Props {
-  title?: ReactNode;
-  description?: ReactNode;
-  isDisplayTextOnLeft?: boolean;
-  bottomContent?: ReactNode;
+  title?: ReactNode
+  description?: ReactNode
+  isDisplayTextOnLeft?: boolean
+  bottomContent?: ReactNode
   withImageOrVideo?:
     | {
-        type: 'image';
-        imageSrc?: string;
-        imageAlt?: string;
+        type: 'image'
+        imageSrc?: string
+        imageAlt?: string
       }
     | {
-        type: 'video';
-        videoProps?: IVideoPlayerProps;
-      };
+        type: 'video'
+        videoProps?: IVideoPlayerProps
+      }
 }
 
 const contentSection7Props: IContentSection7Props = {
@@ -660,7 +660,7 @@ const contentSection7Props: IContentSection7Props = {
     imageAlt: 'food waste picture',
   },
   bottomContent: <div className=" h-80 bg-orange-500 ">This a placeholder</div>,
-};
+}
 
 // Alex: ContentSection7 is a extended version of ContentSection6Fixed, it does:
 // - add description
@@ -731,17 +731,17 @@ function ContentSection7({
         )}
       </div>
     </section>
-  );
+  )
 }
 
 interface IContentSection8Props {
-  title?: ReactNode;
-  description?: ReactNode;
+  title?: ReactNode
+  description?: ReactNode
   items?: {
-    id: number;
-    imageSrc?: string;
-    imageAlt?: string;
-  }[];
+    id: number
+    imageSrc?: string
+    imageAlt?: string
+  }[]
 }
 
 const contentSection8Props: IContentSection8Props = {
@@ -760,7 +760,7 @@ const contentSection8Props: IContentSection8Props = {
       imageAlt: 'item 2',
     },
   ],
-};
+}
 
 // From PDP Intro section 12. Title + Description + Images (2 columns)
 // cf: https://www.figma.com/file/7xuAjF5e9ybdZpbePoDFpG/%E8%BE%93%E5%87%BA?type=design&node-id=244-37286&mode=dev
@@ -791,7 +791,7 @@ function ContentSection8({
                 alt={item.imageAlt}
               />
             </div>
-          );
+          )
         })}
       </div>
       {description && (
@@ -800,7 +800,7 @@ function ContentSection8({
         </p>
       )}
     </section>
-  );
+  )
 }
 
 const EXAMPLE_CONTENT_SECTION_PROPS = {
@@ -813,7 +813,7 @@ const EXAMPLE_CONTENT_SECTION_PROPS = {
   contentSection6FixedProps,
   contentSection7Props,
   contentSection8Props,
-};
+}
 
 export {
   ContentSection1,
@@ -826,7 +826,7 @@ export {
   ContentSection7,
   ContentSection8,
   EXAMPLE_CONTENT_SECTION_PROPS,
-};
+}
 
 export type {
   IContentSection1Props,
@@ -838,4 +838,4 @@ export type {
   IContentSection6FixedProps,
   IContentSection7Props,
   IContentSection8Props,
-};
+}
