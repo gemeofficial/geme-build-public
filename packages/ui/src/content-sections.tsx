@@ -1,9 +1,9 @@
-import { ReactNode, SVGProps } from "react";
-import { CompostStep1, CompostStep2, CompostStep3 } from "./compost-steps";
-import classNames from "./lib/classNames";
-import VideoInlinePlayer from "./video-inline-player";
-import { IImgProps, Img } from "./image";
-import { IVideoPlayerProps, VideoPlayer } from "./video";
+import { ReactNode, SVGProps } from 'react';
+import { CompostStep1, CompostStep2, CompostStep3 } from './compost-steps';
+import classNames from './lib/classNames';
+import VideoInlinePlayer from './video-inline-player';
+import { IImgProps, Img } from './image';
+import { IVideoPlayerProps, VideoPlayer } from './video';
 
 interface IContentSection1Props {
   title?: ReactNode;
@@ -14,7 +14,7 @@ interface IContentSection1Props {
 }
 
 const contentSection1Props: IContentSection1Props = {
-  title: "Terrible Food Waste Experience?",
+  title: 'Terrible Food Waste Experience?',
   description: (
     <>
       Does your food scrap garbage ever ... <br />
@@ -23,8 +23,8 @@ const contentSection1Props: IContentSection1Props = {
       Attract annoying flies
     </>
   ),
-  imageSrc: "https://placehold.co/358x202",
-  imageAlt: "food waste picture",
+  imageSrc: 'https://placehold.co/358x202',
+  imageAlt: 'food waste picture',
 };
 
 // 图文模板1_标题+正文+图片
@@ -39,8 +39,8 @@ function ContentSection1({
   return (
     <section
       className={classNames(
-        "px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 ",
-        isDisplayTextOnLeft ? "xl:flex-row" : "xl:flex-row-reverse",
+        'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 ',
+        isDisplayTextOnLeft ? 'xl:flex-row' : 'xl:flex-row-reverse',
       )}
     >
       <div className=" text-center xl:flex-1 xl:text-left ">
@@ -75,7 +75,7 @@ interface IContentSection2Props {
 }
 
 const contentSection2Props: IContentSection2Props = {
-  title: "Just keep throwing your garbage GEME take care of the rest",
+  title: 'Just keep throwing your garbage GEME take care of the rest',
   description: (
     <>
       ·&nbsp;&nbsp;Add waste at anytime <br />
@@ -83,8 +83,8 @@ const contentSection2Props: IContentSection2Props = {
       ·&nbsp;&nbsp;No need to wait cycles
     </>
   ),
-  imageSrc: "https://placehold.co/358x202",
-  imageAlt: "food waste picture",
+  imageSrc: 'https://placehold.co/358x202',
+  imageAlt: 'food waste picture',
 };
 
 // 图文模板2_标题+正文（文本左对齐 - 位置居中）+图片
@@ -99,8 +99,8 @@ function ContentSection2({
   return (
     <section
       className={classNames(
-        "px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16",
-        isDisplayTextOnLeft ? "xl:flex-row" : "xl:flex-row-reverse",
+        'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16',
+        isDisplayTextOnLeft ? 'xl:flex-row' : 'xl:flex-row-reverse',
       )}
     >
       <div className=" text-center xl:flex-1 xl:text-left ">
@@ -140,9 +140,9 @@ interface IContentSection3Props {
 }
 
 const contentSection3Props: IContentSection3Props = {
-  title: "Time To Change Your Trash Bin",
+  title: 'Time To Change Your Trash Bin',
   description:
-    "GEME uses industrial filters with the most advanced deodorization technology.",
+    'GEME uses industrial filters with the most advanced deodorization technology.',
   items: [
     {
       id: 1,
@@ -153,8 +153,8 @@ const contentSection3Props: IContentSection3Props = {
           leaky garbage
         </>
       ),
-      imageSrc: "https://placehold.co/171x228",
-      imageAlt: "item 1",
+      imageSrc: 'https://placehold.co/171x228',
+      imageAlt: 'item 1',
     },
     {
       id: 2,
@@ -165,8 +165,8 @@ const contentSection3Props: IContentSection3Props = {
           lawn, or plants
         </>
       ),
-      imageSrc: "https://placehold.co/171x228",
-      imageAlt: "item 2",
+      imageSrc: 'https://placehold.co/171x228',
+      imageAlt: 'item 2',
     },
     {
       id: 3,
@@ -179,8 +179,8 @@ const contentSection3Props: IContentSection3Props = {
           placed anywhere
         </>
       ),
-      imageSrc: "https://placehold.co/171x228",
-      imageAlt: "item 3",
+      imageSrc: 'https://placehold.co/171x228',
+      imageAlt: 'item 3',
     },
     {
       id: 4,
@@ -193,8 +193,8 @@ const contentSection3Props: IContentSection3Props = {
           placed anywhere
         </>
       ),
-      imageSrc: "https://placehold.co/171x228",
-      imageAlt: "item 4",
+      imageSrc: 'https://placehold.co/171x228',
+      imageAlt: 'item 4',
     },
   ],
 };
@@ -244,12 +244,12 @@ interface IContentSection4Props {
 
   withMp4VideoOrYoutubeVideo?:
     | {
-        type: "mp4";
+        type: 'mp4';
         videoPosterUrl?: string;
         videoSrcUrl?: string;
       }
     | {
-        type: "youtube";
+        type: 'youtube';
         videoPosterImage?: IImgProps;
         videoSrcUrl?: string;
       };
@@ -262,21 +262,21 @@ const contentSection4Props: IContentSection4Props = {
       Start composting
     </>
   ),
-  description: "Let GEME grow your seed with the food waste recycled.",
+  description: 'Let GEME grow your seed with the food waste recycled.',
   withMp4VideoOrYoutubeVideo: {
-    type: "youtube",
+    type: 'youtube',
     videoPosterImage: {
-      src: "https://placehold.co/160x900",
-      alt: "image alt",
+      src: 'https://placehold.co/160x900',
+      alt: 'image alt',
       width: 1600,
       height: 900,
       srcSetData: {
-        "160w": "https://placehold.co/160x900",
-        "1200w": "https://placehold.co/1200x675",
-        "1600w": "https://placehold.co/1600x900",
+        '160w': 'https://placehold.co/160x900',
+        '1200w': 'https://placehold.co/1200x675',
+        '1600w': 'https://placehold.co/1600x900',
       },
     },
-    videoSrcUrl: "https://www.youtube.com/embed/v1Z4fg6MmlI",
+    videoSrcUrl: 'https://www.youtube.com/embed/v1Z4fg6MmlI',
   },
 };
 
@@ -291,7 +291,7 @@ function ContentSection4({
   return (
     <section
       className={classNames(
-        "px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 ",
+        'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 ',
       )}
     >
       <div className=" text-center xl:flex-1">
@@ -305,7 +305,7 @@ function ContentSection4({
         )}
       </div>
       <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">
-        {withMp4VideoOrYoutubeVideo?.type === "mp4" &&
+        {withMp4VideoOrYoutubeVideo?.type === 'mp4' &&
           withMp4VideoOrYoutubeVideo?.videoSrcUrl != null && (
             <video
               autoPlay
@@ -322,11 +322,11 @@ function ContentSection4({
             </video>
           )}
 
-        {withMp4VideoOrYoutubeVideo?.type === "youtube" &&
+        {withMp4VideoOrYoutubeVideo?.type === 'youtube' &&
           withMp4VideoOrYoutubeVideo?.videoSrcUrl != null && (
             <div
               className={classNames(
-                "relative w-full aspect-w-16 aspect-h-9 overflow-hidden rounded-lg bg-white",
+                'relative w-full aspect-w-16 aspect-h-9 overflow-hidden rounded-lg bg-white',
               )}
             >
               <VideoInlinePlayer
@@ -358,7 +358,7 @@ interface IContentSection5Props {
 }
 
 const contentSection5Props: IContentSection5Props = {
-  title: "Turn food scraps into organic compost",
+  title: 'Turn food scraps into organic compost',
   description: (
     <>
       GEME Kobold, the microorganisms that breakdown your food waste, no matter
@@ -370,18 +370,18 @@ const contentSection5Props: IContentSection5Props = {
   images: [
     {
       id: 1,
-      imageSrc: "https://placehold.co/358x202",
-      imageAlt: "food waste picture",
+      imageSrc: 'https://placehold.co/358x202',
+      imageAlt: 'food waste picture',
     },
     {
       id: 2,
-      imageSrc: "https://placehold.co/358x202",
-      imageAlt: "food waste picture",
+      imageSrc: 'https://placehold.co/358x202',
+      imageAlt: 'food waste picture',
     },
     {
       id: 3,
-      imageSrc: "https://placehold.co/358x202",
-      imageAlt: "food waste picture",
+      imageSrc: 'https://placehold.co/358x202',
+      imageAlt: 'food waste picture',
     },
   ],
   bottomDescription: (
@@ -422,7 +422,7 @@ function ContentSection5({
               <div className="absolute top-4 md:top-8 left-4 md:left-8 w-7 md:w-16 h-7 md:h-16 flex items-center justify-center bg-v2311-bg-dark-green  border-2 border-v2311-bg-dark-green rounded-full text-center  font-v2311 font-bold text-white text-[24px] md:text-[48px] xl:static xl:rounded-none xl:w-auto xl:h-auto xl:bg-transparent xl:border-none xl:text-[#105133] xl:text-[64px] xl:font-bold">
                 {id}
                 <span className="absolute invisible xl:visible ml-4 -mb-4 flex align-bottom rounded-full font-v2311 text-white text-[28px] xl:static xl:w-auto xl:h-auto xl:bg-transparent xl:text-[#808080]">
-                  {" "}
+                  {' '}
                   {stepText}
                 </span>
               </div>
@@ -531,10 +531,10 @@ interface IContentSection6FixedProps {
 }
 
 const contentSection6FixedProps: IContentSection6FixedProps = {
-  title: "The Easiest Way to Get Compost",
-  videoPosterUrl: "https://placehold.co/358x202/3B806F/white?text=poster",
+  title: 'The Easiest Way to Get Compost',
+  videoPosterUrl: 'https://placehold.co/358x202/3B806F/white?text=poster',
   videoSrcUrl:
-    "https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-banner.mp4",
+    'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-banner.mp4',
   steps: [
     {
       id: 1,
@@ -581,8 +581,8 @@ function ContentSection6Fixed({
   return (
     <section
       className={classNames(
-        "px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col xl:gap-16 ",
-        isDisplayTextOnLeft ? "xl:flex-row-reverse" : "xl:flex-row",
+        'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col xl:gap-16 ',
+        isDisplayTextOnLeft ? 'xl:flex-row-reverse' : 'xl:flex-row',
       )}
     >
       <div className=" text-center xl:hidden ">
@@ -640,24 +640,24 @@ interface IContentSection7Props {
   bottomContent?: ReactNode;
   withImageOrVideo?:
     | {
-        type: "image";
+        type: 'image';
         imageSrc?: string;
         imageAlt?: string;
       }
     | {
-        type: "video";
+        type: 'video';
         videoProps?: IVideoPlayerProps;
       };
 }
 
 const contentSection7Props: IContentSection7Props = {
-  title: "The Easiest Way to Get Compost",
+  title: 'The Easiest Way to Get Compost',
   description:
     "Let's talk about the little guys that make a big difference microbesJust like the friendly microbes in your gut aid digestion, along with optimal conditions and bin rotation swiftly convert food scraps into organic compost",
   withImageOrVideo: {
-    type: "image",
-    imageSrc: "https://placehold.co/358x202",
-    imageAlt: "food waste picture",
+    type: 'image',
+    imageSrc: 'https://placehold.co/358x202',
+    imageAlt: 'food waste picture',
   },
   bottomContent: <div className=" h-80 bg-orange-500 ">This a placeholder</div>,
 };
@@ -680,8 +680,8 @@ function ContentSection7({
   return (
     <section
       className={classNames(
-        "px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 ",
-        isDisplayTextOnLeft ? "xl:flex-row-reverse" : "xl:flex-row",
+        'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 ',
+        isDisplayTextOnLeft ? 'xl:flex-row-reverse' : 'xl:flex-row',
       )}
     >
       <div className=" text-center xl:hidden ">
@@ -695,7 +695,7 @@ function ContentSection7({
         )}
       </div>
       <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">
-        {withImageOrVideo?.type === "image" &&
+        {withImageOrVideo?.type === 'image' &&
           withImageOrVideo?.imageSrc != null && (
             <img
               className=" max-w-full w-full rounded-2xl"
@@ -704,7 +704,7 @@ function ContentSection7({
             />
           )}
 
-        {withImageOrVideo?.type === "video" &&
+        {withImageOrVideo?.type === 'video' &&
           withImageOrVideo?.videoProps != null && (
             <VideoPlayer
               {...withImageOrVideo?.videoProps}
@@ -745,19 +745,19 @@ interface IContentSection8Props {
 }
 
 const contentSection8Props: IContentSection8Props = {
-  title: "Odorless",
+  title: 'Odorless',
   description:
-    "GEME uses industrial filters with the most advanced deodorization technology.",
+    'GEME uses industrial filters with the most advanced deodorization technology.',
   items: [
     {
       id: 1,
-      imageSrc: "https://placehold.co/300x400",
-      imageAlt: "item 1",
+      imageSrc: 'https://placehold.co/300x400',
+      imageAlt: 'item 1',
     },
     {
       id: 2,
-      imageSrc: "https://placehold.co/300x400",
-      imageAlt: "item 2",
+      imageSrc: 'https://placehold.co/300x400',
+      imageAlt: 'item 2',
     },
   ],
 };
