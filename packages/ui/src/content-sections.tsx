@@ -40,7 +40,7 @@ function ContentSection1({
     <section
       className={classNames(
         "px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 ",
-        isDisplayTextOnLeft ? "xl:flex-row" : "xl:flex-row-reverse"
+        isDisplayTextOnLeft ? "xl:flex-row" : "xl:flex-row-reverse",
       )}
     >
       <div className=" text-center xl:flex-1 xl:text-left ">
@@ -100,7 +100,7 @@ function ContentSection2({
     <section
       className={classNames(
         "px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16",
-        isDisplayTextOnLeft ? "xl:flex-row" : "xl:flex-row-reverse"
+        isDisplayTextOnLeft ? "xl:flex-row" : "xl:flex-row-reverse",
       )}
     >
       <div className=" text-center xl:flex-1 xl:text-left ">
@@ -291,7 +291,7 @@ function ContentSection4({
   return (
     <section
       className={classNames(
-        "px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 "
+        "px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 ",
       )}
     >
       <div className=" text-center xl:flex-1">
@@ -326,7 +326,7 @@ function ContentSection4({
           withMp4VideoOrYoutubeVideo?.videoSrcUrl != null && (
             <div
               className={classNames(
-                "relative w-full aspect-w-16 aspect-h-9 overflow-hidden rounded-lg bg-white"
+                "relative w-full aspect-w-16 aspect-h-9 overflow-hidden rounded-lg bg-white",
               )}
             >
               <VideoInlinePlayer
@@ -526,7 +526,7 @@ interface IContentSection6FixedProps {
       id: number;
       Icon: (props: SVGProps<SVGSVGElement>) => JSX.Element;
       description?: ReactNode;
-    }
+    },
   ];
 }
 
@@ -582,7 +582,7 @@ function ContentSection6Fixed({
     <section
       className={classNames(
         "px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col xl:gap-16 ",
-        isDisplayTextOnLeft ? "xl:flex-row-reverse" : "xl:flex-row"
+        isDisplayTextOnLeft ? "xl:flex-row-reverse" : "xl:flex-row",
       )}
     >
       <div className=" text-center xl:hidden ">
@@ -681,7 +681,7 @@ function ContentSection7({
     <section
       className={classNames(
         "px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 ",
-        isDisplayTextOnLeft ? "xl:flex-row-reverse" : "xl:flex-row"
+        isDisplayTextOnLeft ? "xl:flex-row-reverse" : "xl:flex-row",
       )}
     >
       <div className=" text-center xl:hidden ">
