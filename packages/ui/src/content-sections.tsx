@@ -1,20 +1,20 @@
-import { ReactNode, SVGProps } from 'react'
-import { CompostStep1, CompostStep2, CompostStep3 } from './compost-steps'
-import classNames from './lib/classNames'
-import VideoInlinePlayer from './video-inline-player'
-import { IImgProps, Img } from './image'
-import { IVideoPlayerProps, VideoPlayer } from './video'
+import { ReactNode, SVGProps } from "react";
+import { CompostStep1, CompostStep2, CompostStep3 } from "./compost-steps";
+import classNames from "./lib/classNames";
+import VideoInlinePlayer from "./video-inline-player";
+import { IImgProps, Img } from "./image";
+import { IVideoPlayerProps, VideoPlayer } from "./video";
 
 interface IContentSection1Props {
-  title?: ReactNode
-  description?: ReactNode
-  imageSrc?: string
-  imageAlt?: string
-  isDisplayTextOnLeft?: boolean
+  title?: ReactNode;
+  description?: ReactNode;
+  imageSrc?: string;
+  imageAlt?: string;
+  isDisplayTextOnLeft?: boolean;
 }
 
 const contentSection1Props: IContentSection1Props = {
-  title: 'Terrible Food Waste Experience?',
+  title: "Terrible Food Waste Experience?",
   description: (
     <>
       Does your food scrap garbage ever ... <br />
@@ -23,9 +23,9 @@ const contentSection1Props: IContentSection1Props = {
       Attract annoying flies
     </>
   ),
-  imageSrc: 'https://placehold.co/358x202',
-  imageAlt: 'food waste picture',
-}
+  imageSrc: "https://placehold.co/358x202",
+  imageAlt: "food waste picture",
+};
 
 // 图文模板1_标题+正文+图片
 // cf: https://www.figma.com/file/7xuAjF5e9ybdZpbePoDFpG/%E8%BE%93%E5%87%BA?type=design&node-id=264%3A287314&mode=dev
@@ -39,8 +39,8 @@ function ContentSection1({
   return (
     <section
       className={classNames(
-        'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 ',
-        isDisplayTextOnLeft ? 'xl:flex-row' : 'xl:flex-row-reverse',
+        "px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 ",
+        isDisplayTextOnLeft ? "xl:flex-row" : "xl:flex-row-reverse"
       )}
     >
       <div className=" text-center xl:flex-1 xl:text-left ">
@@ -63,19 +63,19 @@ function ContentSection1({
         )}
       </div>
     </section>
-  )
+  );
 }
 
 interface IContentSection2Props {
-  title?: ReactNode
-  description?: ReactNode
-  imageSrc?: string
-  imageAlt?: string
-  isDisplayTextOnLeft?: boolean
+  title?: ReactNode;
+  description?: ReactNode;
+  imageSrc?: string;
+  imageAlt?: string;
+  isDisplayTextOnLeft?: boolean;
 }
 
 const contentSection2Props: IContentSection2Props = {
-  title: 'Just keep throwing your garbage GEME take care of the rest',
+  title: "Just keep throwing your garbage GEME take care of the rest",
   description: (
     <>
       ·&nbsp;&nbsp;Add waste at anytime <br />
@@ -83,9 +83,9 @@ const contentSection2Props: IContentSection2Props = {
       ·&nbsp;&nbsp;No need to wait cycles
     </>
   ),
-  imageSrc: 'https://placehold.co/358x202',
-  imageAlt: 'food waste picture',
-}
+  imageSrc: "https://placehold.co/358x202",
+  imageAlt: "food waste picture",
+};
 
 // 图文模板2_标题+正文（文本左对齐 - 位置居中）+图片
 // https://www.figma.com/file/7xuAjF5e9ybdZpbePoDFpG/%E8%BE%93%E5%87%BA?type=design&node-id=264%3A286824&mode=dev
@@ -99,8 +99,8 @@ function ContentSection2({
   return (
     <section
       className={classNames(
-        'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16',
-        isDisplayTextOnLeft ? 'xl:flex-row' : 'xl:flex-row-reverse',
+        "px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16",
+        isDisplayTextOnLeft ? "xl:flex-row" : "xl:flex-row-reverse"
       )}
     >
       <div className=" text-center xl:flex-1 xl:text-left ">
@@ -125,24 +125,24 @@ function ContentSection2({
         )}
       </div>
     </section>
-  )
+  );
 }
 
 interface IContentSection3Props {
-  title?: ReactNode
-  description?: ReactNode
+  title?: ReactNode;
+  description?: ReactNode;
   items?: {
-    id: number
-    description?: ReactNode
-    imageSrc?: string
-    imageAlt?: string
-  }[]
+    id: number;
+    description?: ReactNode;
+    imageSrc?: string;
+    imageAlt?: string;
+  }[];
 }
 
 const contentSection3Props: IContentSection3Props = {
-  title: 'Time To Change Your Trash Bin',
+  title: "Time To Change Your Trash Bin",
   description:
-    'GEME uses industrial filters with the most advanced deodorization technology.',
+    "GEME uses industrial filters with the most advanced deodorization technology.",
   items: [
     {
       id: 1,
@@ -153,8 +153,8 @@ const contentSection3Props: IContentSection3Props = {
           leaky garbage
         </>
       ),
-      imageSrc: 'https://placehold.co/171x228',
-      imageAlt: 'item 1',
+      imageSrc: "https://placehold.co/171x228",
+      imageAlt: "item 1",
     },
     {
       id: 2,
@@ -165,8 +165,8 @@ const contentSection3Props: IContentSection3Props = {
           lawn, or plants
         </>
       ),
-      imageSrc: 'https://placehold.co/171x228',
-      imageAlt: 'item 2',
+      imageSrc: "https://placehold.co/171x228",
+      imageAlt: "item 2",
     },
     {
       id: 3,
@@ -179,8 +179,8 @@ const contentSection3Props: IContentSection3Props = {
           placed anywhere
         </>
       ),
-      imageSrc: 'https://placehold.co/171x228',
-      imageAlt: 'item 3',
+      imageSrc: "https://placehold.co/171x228",
+      imageAlt: "item 3",
     },
     {
       id: 4,
@@ -193,11 +193,11 @@ const contentSection3Props: IContentSection3Props = {
           placed anywhere
         </>
       ),
-      imageSrc: 'https://placehold.co/171x228',
-      imageAlt: 'item 4',
+      imageSrc: "https://placehold.co/171x228",
+      imageAlt: "item 4",
     },
   ],
-}
+};
 
 // 图文模版3_标题+正文+2列图文（图片+文字描述【可增减】）
 // https://www.figma.com/file/7xuAjF5e9ybdZpbePoDFpG/%E8%BE%93%E5%87%BA?type=design&node-id=264%3A286844&mode=dev
@@ -231,28 +231,28 @@ function ContentSection3({
                 {item.description}
               </p>
             </div>
-          )
+          );
         })}
       </div>
     </section>
-  )
+  );
 }
 
 interface IContentSection4Props {
-  title?: ReactNode
-  description?: ReactNode
+  title?: ReactNode;
+  description?: ReactNode;
 
   withMp4VideoOrYoutubeVideo?:
     | {
-        type: 'mp4'
-        videoPosterUrl?: string
-        videoSrcUrl?: string
+        type: "mp4";
+        videoPosterUrl?: string;
+        videoSrcUrl?: string;
       }
     | {
-        type: 'youtube'
-        videoPosterImage?: IImgProps
-        videoSrcUrl?: string
-      }
+        type: "youtube";
+        videoPosterImage?: IImgProps;
+        videoSrcUrl?: string;
+      };
 }
 
 const contentSection4Props: IContentSection4Props = {
@@ -262,23 +262,23 @@ const contentSection4Props: IContentSection4Props = {
       Start composting
     </>
   ),
-  description: 'Let GEME grow your seed with the food waste recycled.',
+  description: "Let GEME grow your seed with the food waste recycled.",
   withMp4VideoOrYoutubeVideo: {
-    type: 'youtube',
+    type: "youtube",
     videoPosterImage: {
-      src: 'https://placehold.co/160x900',
-      alt: 'image alt',
+      src: "https://placehold.co/160x900",
+      alt: "image alt",
       width: 1600,
       height: 900,
       srcSetData: {
-        '160w': 'https://placehold.co/160x900',
-        '1200w': 'https://placehold.co/1200x675',
-        '1600w': 'https://placehold.co/1600x900',
+        "160w": "https://placehold.co/160x900",
+        "1200w": "https://placehold.co/1200x675",
+        "1600w": "https://placehold.co/1600x900",
       },
     },
-    videoSrcUrl: 'https://www.youtube.com/embed/v1Z4fg6MmlI',
+    videoSrcUrl: "https://www.youtube.com/embed/v1Z4fg6MmlI",
   },
-}
+};
 
 // FIXME: should replace the img with MP4 video player
 // 图文模板4_标题+正文+MP4视频自动播放
@@ -291,7 +291,7 @@ function ContentSection4({
   return (
     <section
       className={classNames(
-        'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 ',
+        "px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 "
       )}
     >
       <div className=" text-center xl:flex-1">
@@ -305,7 +305,7 @@ function ContentSection4({
         )}
       </div>
       <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">
-        {withMp4VideoOrYoutubeVideo?.type === 'mp4' &&
+        {withMp4VideoOrYoutubeVideo?.type === "mp4" &&
           withMp4VideoOrYoutubeVideo?.videoSrcUrl != null && (
             <video
               autoPlay
@@ -322,11 +322,11 @@ function ContentSection4({
             </video>
           )}
 
-        {withMp4VideoOrYoutubeVideo?.type === 'youtube' &&
+        {withMp4VideoOrYoutubeVideo?.type === "youtube" &&
           withMp4VideoOrYoutubeVideo?.videoSrcUrl != null && (
             <div
               className={classNames(
-                'relative w-full aspect-w-16 aspect-h-9 overflow-hidden rounded-lg bg-white',
+                "relative w-full aspect-w-16 aspect-h-9 overflow-hidden rounded-lg bg-white"
               )}
             >
               <VideoInlinePlayer
@@ -342,23 +342,23 @@ function ContentSection4({
           )}
       </div>
     </section>
-  )
+  );
 }
 
 interface IContentSection5Props {
-  title?: ReactNode
-  description?: ReactNode
+  title?: ReactNode;
+  description?: ReactNode;
   images?: {
-    id?: number
-    stepText?: string
-    imageSrc?: string
-    imageAlt?: string
-  }[]
-  bottomDescription?: ReactNode
+    id?: number;
+    stepText?: string;
+    imageSrc?: string;
+    imageAlt?: string;
+  }[];
+  bottomDescription?: ReactNode;
 }
 
 const contentSection5Props: IContentSection5Props = {
-  title: 'Turn food scraps into organic compost',
+  title: "Turn food scraps into organic compost",
   description: (
     <>
       GEME Kobold, the microorganisms that breakdown your food waste, no matter
@@ -370,18 +370,18 @@ const contentSection5Props: IContentSection5Props = {
   images: [
     {
       id: 1,
-      imageSrc: 'https://placehold.co/358x202',
-      imageAlt: 'food waste picture',
+      imageSrc: "https://placehold.co/358x202",
+      imageAlt: "food waste picture",
     },
     {
       id: 2,
-      imageSrc: 'https://placehold.co/358x202',
-      imageAlt: 'food waste picture',
+      imageSrc: "https://placehold.co/358x202",
+      imageAlt: "food waste picture",
     },
     {
       id: 3,
-      imageSrc: 'https://placehold.co/358x202',
-      imageAlt: 'food waste picture',
+      imageSrc: "https://placehold.co/358x202",
+      imageAlt: "food waste picture",
     },
   ],
   bottomDescription: (
@@ -390,7 +390,7 @@ const contentSection5Props: IContentSection5Props = {
       fed well.
     </>
   ),
-}
+};
 
 // 图文模板5_标题+正文+图文（图片+文字描述【可增减】）
 // https://www.figma.com/file/7xuAjF5e9ybdZpbePoDFpG/%E8%BE%93%E5%87%BA?type=design&node-id=264%3A286878&mode=dev
@@ -422,7 +422,7 @@ function ContentSection5({
               <div className="absolute top-4 md:top-8 left-4 md:left-8 w-7 md:w-16 h-7 md:h-16 flex items-center justify-center bg-v2311-bg-dark-green  border-2 border-v2311-bg-dark-green rounded-full text-center  font-v2311 font-bold text-white text-[24px] md:text-[48px] xl:static xl:rounded-none xl:w-auto xl:h-auto xl:bg-transparent xl:border-none xl:text-[#105133] xl:text-[64px] xl:font-bold">
                 {id}
                 <span className="absolute invisible xl:visible ml-4 -mb-4 flex align-bottom rounded-full font-v2311 text-white text-[28px] xl:static xl:w-auto xl:h-auto xl:bg-transparent xl:text-[#808080]">
-                  {' '}
+                  {" "}
                   {stepText}
                 </span>
               </div>
@@ -433,7 +433,7 @@ function ContentSection5({
                 alt={imageAlt}
               />
             </div>
-          )
+          );
         })}
       </div>
       {bottomDescription && (
@@ -442,15 +442,15 @@ function ContentSection5({
         </p>
       )}
     </section>
-  )
+  );
 }
 
 interface IContentSection6Props {
   steps?: {
-    id: number
-    Icon: (props: SVGProps<SVGSVGElement>) => JSX.Element
-    description?: ReactNode
-  }[]
+    id: number;
+    Icon: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+    description?: ReactNode;
+  }[];
 }
 
 const contentSection6Props: IContentSection6Props = {
@@ -486,7 +486,7 @@ const contentSection6Props: IContentSection6Props = {
       ),
     },
   ],
-}
+};
 
 // 图文模块6（图片+文字描述【1列 - 可增减】）
 // https://www.figma.com/file/7xuAjF5e9ybdZpbePoDFpG/%E8%BE%93%E5%87%BA?type=design&node-id=264%3A287628&mode=dev
@@ -495,45 +495,46 @@ function ContentSection6({ steps }: IContentSection6Props): JSX.Element {
     <div className="px-4 pb-8 mx-auto md:px-8 md:pb-16 xl:p-0 flex">
       {steps?.map((step) => (
         <div key={step.id} className=" flex-1 flex flex-col items-center ">
-          <step.Icon className=" w-[80px] h-[80px] md:w-[172px] md:h-[172px] xl:w-[144px] xl:h-[144px] " />
+          {/* <step.Icon className=" w-[80px] h-[80px] md:w-[172px] md:h-[172px] xl:w-[144px] xl:h-[144px] " /> */}
+          {/* <img src="/assets/" alt="" /> */}
           <p className="v2311-font-img-desc text-v2311-fg-black text-center mt-4 md:mt-8 xl:mt-4">
             {step.description}
           </p>
         </div>
       ))}
     </div>
-  )
+  );
 }
 
 interface IContentSection6FixedProps {
-  title?: ReactNode
-  videoPosterUrl?: string
-  videoSrcUrl?: string
-  isDisplayTextOnLeft?: boolean
+  title?: ReactNode;
+  videoPosterUrl?: string;
+  videoSrcUrl?: string;
+  isDisplayTextOnLeft?: boolean;
   steps?: [
     {
-      id: number
-      Icon: (props: SVGProps<SVGSVGElement>) => JSX.Element
-      description?: ReactNode
+      id: number;
+      Icon: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+      description?: ReactNode;
     },
     {
-      id: number
-      Icon: (props: SVGProps<SVGSVGElement>) => JSX.Element
-      description?: ReactNode
+      id: number;
+      Icon: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+      description?: ReactNode;
     },
     {
-      id: number
-      Icon: (props: SVGProps<SVGSVGElement>) => JSX.Element
-      description?: ReactNode
-    },
-  ]
+      id: number;
+      Icon: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+      description?: ReactNode;
+    }
+  ];
 }
 
 const contentSection6FixedProps: IContentSection6FixedProps = {
-  title: 'The Easiest Way to Get Compost',
-  videoPosterUrl: 'https://placehold.co/358x202/3B806F/white?text=poster',
+  title: "The Easiest Way to Get Compost",
+  videoPosterUrl: "https://placehold.co/358x202/3B806F/white?text=poster",
   videoSrcUrl:
-    'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-banner.mp4',
+    "https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-banner.mp4",
   steps: [
     {
       id: 1,
@@ -566,7 +567,7 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       ),
     },
   ],
-}
+};
 
 // Alex: this is a fixed of ContentSection6 to make it looks like same as the design
 // cf: https://www.figma.com/file/7xuAjF5e9ybdZpbePoDFpG/%E8%BE%93%E5%87%BA?type=design&node-id=322%3A253319&mode=dev
@@ -580,8 +581,8 @@ function ContentSection6Fixed({
   return (
     <section
       className={classNames(
-        'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col xl:gap-16 ',
-        isDisplayTextOnLeft ? 'xl:flex-row-reverse' : 'xl:flex-row',
+        "px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col xl:gap-16 ",
+        isDisplayTextOnLeft ? "xl:flex-row-reverse" : "xl:flex-row"
       )}
     >
       <div className=" text-center xl:hidden ">
@@ -612,9 +613,15 @@ function ContentSection6Fixed({
         )}
 
         <div className="mt-8 md:mt-16 xl:mt-8 flex items-start">
-          {steps?.map((step) => (
+          {steps?.map((step, index) => (
             <div key={step.id} className=" flex-1 flex flex-col items-center">
-              <step.Icon className=" w-[80px] h-[80px] md:w-[172px] md:h-[172px] xl:w-[144px] xl:h-[144px] " />
+              {/* 将SVG组件修改为img渲染 */}
+              {/* <step.Icon className=" w-[80px] h-[80px] md:w-[172px] md:h-[172px] xl:w-[144px] xl:h-[144px] " /> */}
+              <img
+                src={`/assets/images/home-v2311/compost-step-${index + 1}.svg`}
+                alt={`compost-step-${index + 1}`}
+                className="w-[80px] h-[80px] md:w-[172px] md:h-[172px] xl:w-[144px] xl:h-[144px] "
+              />
               <p className="v2311-font-img-desc text-v2311-fg-black text-center mt-4 md:mt-8 xl:mt-4">
                 {step.description}
               </p>
@@ -623,37 +630,37 @@ function ContentSection6Fixed({
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 interface IContentSection7Props {
-  title?: ReactNode
-  description?: ReactNode
-  isDisplayTextOnLeft?: boolean
-  bottomContent?: ReactNode
+  title?: ReactNode;
+  description?: ReactNode;
+  isDisplayTextOnLeft?: boolean;
+  bottomContent?: ReactNode;
   withImageOrVideo?:
     | {
-        type: 'image'
-        imageSrc?: string
-        imageAlt?: string
+        type: "image";
+        imageSrc?: string;
+        imageAlt?: string;
       }
     | {
-        type: 'video'
-        videoProps?: IVideoPlayerProps
-      }
+        type: "video";
+        videoProps?: IVideoPlayerProps;
+      };
 }
 
 const contentSection7Props: IContentSection7Props = {
-  title: 'The Easiest Way to Get Compost',
+  title: "The Easiest Way to Get Compost",
   description:
     "Let's talk about the little guys that make a big difference microbesJust like the friendly microbes in your gut aid digestion, along with optimal conditions and bin rotation swiftly convert food scraps into organic compost",
   withImageOrVideo: {
-    type: 'image',
-    imageSrc: 'https://placehold.co/358x202',
-    imageAlt: 'food waste picture',
+    type: "image",
+    imageSrc: "https://placehold.co/358x202",
+    imageAlt: "food waste picture",
   },
   bottomContent: <div className=" h-80 bg-orange-500 ">This a placeholder</div>,
-}
+};
 
 // Alex: ContentSection7 is a extended version of ContentSection6Fixed, it does:
 // - add description
@@ -673,8 +680,8 @@ function ContentSection7({
   return (
     <section
       className={classNames(
-        'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 ',
-        isDisplayTextOnLeft ? 'xl:flex-row-reverse' : 'xl:flex-row',
+        "px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 ",
+        isDisplayTextOnLeft ? "xl:flex-row-reverse" : "xl:flex-row"
       )}
     >
       <div className=" text-center xl:hidden ">
@@ -688,7 +695,7 @@ function ContentSection7({
         )}
       </div>
       <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">
-        {withImageOrVideo?.type === 'image' &&
+        {withImageOrVideo?.type === "image" &&
           withImageOrVideo?.imageSrc != null && (
             <img
               className=" max-w-full w-full rounded-2xl"
@@ -697,7 +704,7 @@ function ContentSection7({
             />
           )}
 
-        {withImageOrVideo?.type === 'video' &&
+        {withImageOrVideo?.type === "video" &&
           withImageOrVideo?.videoProps != null && (
             <VideoPlayer
               {...withImageOrVideo?.videoProps}
@@ -724,36 +731,36 @@ function ContentSection7({
         )}
       </div>
     </section>
-  )
+  );
 }
 
 interface IContentSection8Props {
-  title?: ReactNode
-  description?: ReactNode
+  title?: ReactNode;
+  description?: ReactNode;
   items?: {
-    id: number
-    imageSrc?: string
-    imageAlt?: string
-  }[]
+    id: number;
+    imageSrc?: string;
+    imageAlt?: string;
+  }[];
 }
 
 const contentSection8Props: IContentSection8Props = {
-  title: 'Odorless',
+  title: "Odorless",
   description:
-    'GEME uses industrial filters with the most advanced deodorization technology.',
+    "GEME uses industrial filters with the most advanced deodorization technology.",
   items: [
     {
       id: 1,
-      imageSrc: 'https://placehold.co/300x400',
-      imageAlt: 'item 1',
+      imageSrc: "https://placehold.co/300x400",
+      imageAlt: "item 1",
     },
     {
       id: 2,
-      imageSrc: 'https://placehold.co/300x400',
-      imageAlt: 'item 2',
+      imageSrc: "https://placehold.co/300x400",
+      imageAlt: "item 2",
     },
   ],
-}
+};
 
 // From PDP Intro section 12. Title + Description + Images (2 columns)
 // cf: https://www.figma.com/file/7xuAjF5e9ybdZpbePoDFpG/%E8%BE%93%E5%87%BA?type=design&node-id=244-37286&mode=dev
@@ -784,7 +791,7 @@ function ContentSection8({
                 alt={item.imageAlt}
               />
             </div>
-          )
+          );
         })}
       </div>
       {description && (
@@ -793,7 +800,7 @@ function ContentSection8({
         </p>
       )}
     </section>
-  )
+  );
 }
 
 const EXAMPLE_CONTENT_SECTION_PROPS = {
@@ -806,7 +813,7 @@ const EXAMPLE_CONTENT_SECTION_PROPS = {
   contentSection6FixedProps,
   contentSection7Props,
   contentSection8Props,
-}
+};
 
 export {
   ContentSection1,
@@ -819,7 +826,7 @@ export {
   ContentSection7,
   ContentSection8,
   EXAMPLE_CONTENT_SECTION_PROPS,
-}
+};
 
 export type {
   IContentSection1Props,
@@ -831,4 +838,4 @@ export type {
   IContentSection6FixedProps,
   IContentSection7Props,
   IContentSection8Props,
-}
+};
