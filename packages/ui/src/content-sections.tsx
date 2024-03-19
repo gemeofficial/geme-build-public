@@ -612,9 +612,15 @@ function ContentSection6Fixed({
         )}
 
         <div className="mt-8 md:mt-16 xl:mt-8 flex items-start">
-          {steps?.map((step) => (
+          {steps?.map((step, index) => (
             <div key={step.id} className=" flex-1 flex flex-col items-center">
-              <step.Icon className=" w-[80px] h-[80px] md:w-[172px] md:h-[172px] xl:w-[144px] xl:h-[144px] " />
+              {/* 将SVG组件修改为img渲染 */}
+              {/* <step.Icon className=" w-[80px] h-[80px] md:w-[172px] md:h-[172px] xl:w-[144px] xl:h-[144px] " /> */}
+              <img
+                src={`/assets/images/home-v2311/compost-step-${step.id}.svg`}
+                alt={`compost-step-${index + 1}`}
+                className="w-[80px] h-[80px] md:w-[172px] md:h-[172px] xl:w-[144px] xl:h-[144px] "
+              />
               <p className="v2311-font-img-desc text-v2311-fg-black text-center mt-4 md:mt-8 xl:mt-4">
                 {step.description}
               </p>
