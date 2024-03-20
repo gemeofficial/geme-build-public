@@ -81,7 +81,7 @@ const warrantyProps: IWarrantyProps = {
         <li class="mb-5">
         La période de garantie GEME BIO-WASTE COMPOSTER court à compter de la date d’achat par le consommateur. La période de garantie est de 12 mois, lorsque et seulement lorsque la garantie est utilisée gratuitement comme décrit ici lors d'un usage domestique.
         <br /> <br />
-        La période de garantie d'un an est suspendue lors d'une réparation ou d'un remplacement. A l'issue de cette période, le consommateur n'a pas droit à une nouvelle garantie d'un an, mais la période de garantie commencée est rétablie à compter du remplacement ou de la fin de la réparation.
+        La période de garantie deux an est suspendue lors d'une réparation ou d'un remplacement. A l'issue de cette période, le consommateur n'a pas droit à une nouvelle garantie deux an, mais la période de garantie commencée est rétablie à compter du remplacement ou de la fin de la réparation.
         </li>
         <li>
         Pour les équipements commerciaux, la période de garantie est régie par les termes du contrat de vente.
