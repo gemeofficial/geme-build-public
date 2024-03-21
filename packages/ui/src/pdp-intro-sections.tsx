@@ -3,8 +3,6 @@ import classNames from './lib/classNames'
 import {
   IconCheckCycle,
   IconXCycle,
-  SvgDeviceCompare,
-  SvgDeviceCompareLarge,
   SvgGreenArrow,
   usingCompostIcons,
 } from './pdp-intro-svgs'
@@ -148,8 +146,16 @@ function PdpIntroSection5({ title, leftNotes }: IPdpIntroSection5Props) {
         {/* <SvgWasteToGeme className=" z-0 xl:hidden" />
         <SvgWasteToGemeLarge className=" z-0 hidden xl:block " /> */}
 
-        <img src="/assets/images/pdp-v2311/introduction/waste-to-geme.svg" alt="introduction waste to geme" className=" z-0 xl:hidden" />
-        <img src="/assets/images/pdp-v2311/introduction/waste-to-geme-large.svg" alt="introduction waste to geme" className=" z-0 hidden xl:block "/>
+        <img
+          src="/assets/images/pdp-v2311/introduction/waste-to-geme.svg"
+          alt="introduction waste to geme"
+          className=" z-0 xl:hidden"
+        />
+        <img
+          src="/assets/images/pdp-v2311/introduction/waste-to-geme-large.svg"
+          alt="introduction waste to geme"
+          className=" z-0 hidden xl:block "
+        />
 
         <div className=" absolute z-10 inset-0 flex flex-col items-center justify-end xl:max-w-7xl  xl:mx-auto">
           <div className=" w-full mb-16 pl-8 md:mb-24 md:pl-20 lg:mb-72 xl:mb-32 xl:pl-80">
@@ -382,8 +388,19 @@ function PdpIntroSection7({
   return (
     <div className=" py-8 md:py-16 xl:p-0">
       <div className=" relative ">
-        <SvgDeviceCompare className=" xl:hidden " />
-        <SvgDeviceCompareLarge className=" hidden xl:block " />
+        {/*<SvgDeviceCompare className=" xl:hidden " />*/}
+        {/*<SvgDeviceCompareLarge className=" hidden xl:block " />*/}
+        <img
+          src="/assets/images/pdp-v2311/introduction/device-compare.svg"
+          alt="Introduction GEME Composter Super Large Volume"
+          className=" z-0 xl:hidden"
+        />
+        <img
+          src="/assets/images/pdp-v2311/introduction/device-compare-large.svg"
+          alt="Introduction GEME Composter Super Large Volume"
+          className=" z-0 hidden xl:block "
+        />
+
         <div className=" absolute top-0 w-full h-full flex flex-col xl:flex-row items-center justify-between xl:items-start">
           <div className="hidden xl:block xl:flex-1"></div>
           <div className=" px-4 pt-8 md:px-8 md:pt-16 xl:px-0 xl:pt-[12%] text-center xl:text-left xl:flex-1">
