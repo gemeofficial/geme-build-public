@@ -258,31 +258,37 @@ const pdpIntroSection8Props: IPdpIntroSection8Props = {
     {
       id: 1,
       Icon: usingCompostIcons.SvgPlantOnHandIcon,
+      imgSrc: '/assets/images/pdp-v2311/introduction/icon-plant-on-hand.svg',
       feature: 'indoor plan',
     },
     {
       id: 2,
       Icon: usingCompostIcons.SvgFlowerOnHandIcon,
+      imgSrc: '/assets/images/pdp-v2311/introduction/icon-flower-on-hand.svg',
       feature: 'bonsai',
     },
     {
       id: 3,
       Icon: usingCompostIcons.SvgRiceOnHandIcon,
+      imgSrc: '/assets/images/pdp-v2311/introduction/icon-rice-on-hand.svg',
       feature: 'vegetable bed',
     },
     {
       id: 4,
       Icon: usingCompostIcons.SvgGardenCareIcon,
+      imgSrc: '/assets/images/pdp-v2311/introduction/icon-garden-care.svg',
       feature: 'garden care',
     },
     {
       id: 5,
       Icon: usingCompostIcons.SvgGiftIcon,
+      imgSrc: '/assets/images/pdp-v2311/introduction/icon-gift.svg',
       feature: 'share it',
     },
     {
       id: 6,
       Icon: usingCompostIcons.SvgWaterIcon,
+      imgSrc: '/assets/images/pdp-v2311/introduction/icon-water.svg',
       feature: 'purify water',
     },
   ],
