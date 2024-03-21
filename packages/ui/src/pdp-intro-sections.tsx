@@ -6,11 +6,6 @@ import {
   SvgDeviceCompare,
   SvgDeviceCompareLarge,
   SvgGreenArrow,
-  SvgNoiseCompare,
-  SvgNoiseCompareLarge,
-  SvgOxygen,
-  SvgWasteToGeme,
-  SvgWasteToGemeLarge,
   usingCompostIcons,
 } from './pdp-intro-svgs'
 import { IconCycleArrow } from './icons'
@@ -149,8 +144,12 @@ function PdpIntroSection5({ title, leftNotes }: IPdpIntroSection5Props) {
   return (
     <div className="py-8 md:px-16">
       <div className=" bg-v2311-bg-light-green relative rounded-lg ">
-        <SvgWasteToGeme className=" z-0 xl:hidden" />
-        <SvgWasteToGemeLarge className=" z-0 hidden xl:block " />
+        {/* 修复SEO ERROR 将SVG替换成图片渲染 */}
+        {/* <SvgWasteToGeme className=" z-0 xl:hidden" />
+        <SvgWasteToGemeLarge className=" z-0 hidden xl:block " /> */}
+
+        <img src="/assets/images/pdp-v2311/introduction/waste-to-geme.svg" alt="introduction waste to geme" className=" z-0 xl:hidden" />
+        <img src="/assets/images/pdp-v2311/introduction/waste-to-geme-large.svg" alt="introduction waste to geme" className=" z-0 hidden xl:block "/>
 
         <div className=" absolute z-10 inset-0 flex flex-col items-center justify-end xl:max-w-7xl  xl:mx-auto">
           <div className=" w-full mb-16 pl-8 md:mb-24 md:pl-20 lg:mb-72 xl:mb-32 xl:pl-80">
