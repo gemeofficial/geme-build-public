@@ -191,7 +191,7 @@ const warrantyProps: IWarrantyProps = {
   return (
     <>
       <link rel="canonical" href="https://www.geme.bio/warranty" />
-      <h1 className="sr-only">GEME Product Warranty Information</h1>
+      <h1 className="sr-only">Informations sur la garantie du produit GEME</h1>
       <SiteHelpTabs {...siteHelpTabsProps} />
       <Warranty {...warrantyProps}/>
     </>

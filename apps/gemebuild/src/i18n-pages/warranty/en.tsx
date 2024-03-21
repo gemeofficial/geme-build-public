@@ -2,7 +2,7 @@ import { Warranty } from './components'
 import type { IWarrantyProps } from './components'
 import { SiteHelpTabs, ISiteHelpTabsProps } from '../../components/tabs'
 
-
+// 静态页面的navBar内容 配置文件 En版
 const siteHelpTabsProps: ISiteHelpTabsProps = {
   tabs: [
     {
