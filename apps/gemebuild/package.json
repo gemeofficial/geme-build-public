@@ -44,7 +44,7 @@
     "eslint": "^8.49.0",
     "eslint-config-custom": "workspace:*",
     "eslint-config-next": "^13.5.2",
-    "postcss": "^8.4.29",
+    "postcss": "^8.4.35",
     "react-simple-maps": "^3.0.0",
     "tailwind-config": "workspace:*",
     "tailwindcss": "^3.3.3",
