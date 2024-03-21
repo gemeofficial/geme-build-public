@@ -295,7 +295,7 @@ function TermsAndConditionsPageFr() {
   return (
     <>
       <link rel="canonical" href="https://www.geme.bio/terms-and-conditions" />
-      <h1 className="sr-only">GEME Terms and Conditions</h1>
+      <h1 className="sr-only">Termes et Conditions GEME</h1>
       <SiteHelpTabs {...siteHelpTabsProps} />
       <TermsAndConditions {...termsAndConditionsProps} />
     </>
