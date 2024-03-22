@@ -195,7 +195,7 @@ function ReturnPolicyPageFr() {
   return (
     <>
       <link rel="canonical" href={url} />
-      <h1 className="sr-only">GEME Return Policy</h1>
+      <h1 className="sr-only">GAME-Rückgabebedingungen</h1>
       <SiteHelpTabs {...siteHelpTabsProps} />
       <ReturnPolicy {...childProps} />
     </>
