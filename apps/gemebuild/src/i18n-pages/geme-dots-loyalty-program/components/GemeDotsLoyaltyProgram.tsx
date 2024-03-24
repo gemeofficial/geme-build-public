@@ -1,4 +1,4 @@
-import Link from '@/components/link'
+import Link from '../../../components/link'
 import { QuestionMarkCircleIcon } from '@heroicons/react/24/solid'
 
 interface IQAType {
