@@ -6,6 +6,7 @@ export * from './warranty'
 export * from './warranty-extend'
 export * from './privacy-policy'
 export * from './return-policy'
+export * from './geme-dots-loyalty-program'
 
 // contexts
 export * from '../contexts/link-context'

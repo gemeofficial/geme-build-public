@@ -22,7 +22,9 @@
     "react-dom": "^18.2.0",
     "react-simple-maps": "^3.0.0",
     "mixpanel-browser": "^2.47.0",
-    "@heroicons/react": "^2.0.18"
+    "@heroicons/react": "^2.0.18",
+    "next-intl": "3.0.0-beta.19",
+    "clsx": "^2.0.0"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.4.0",

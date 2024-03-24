@@ -187,14 +187,14 @@ const warrantyProps: IWarrantyProps = {
   },
 }
 
- function WarrantyPageEn() {
+function WarrantyPageEn() {
   return (
     <>
       <link rel="canonical" href="https://www.geme.bio/warranty" />
       <h1 className="sr-only">GEME Product Warranty Information</h1>
       <SiteHelpTabs {...siteHelpTabsProps} />
-      <Warranty {...warrantyProps}/>
+      <Warranty {...warrantyProps} />
     </>
   )
 }
- export {WarrantyPageEn}
+export { WarrantyPageEn }
