@@ -1,2 +1,2 @@
-export {  WarrantyPageEn} from './en'
+export { WarrantyPageEn } from './en'
 export { WarrantyPageFr } from './fr'
