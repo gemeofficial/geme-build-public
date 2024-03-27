@@ -2,6 +2,7 @@ import { ReactNode } from 'react'
 import './second-life.css'
 import { Img } from '../image'
 import type { IImgProps } from '../image'
+
 import {
   ScrollTriggeredAnimatedHeadlineTop,
   ScrollTriggeredAnimatedHeadlineBottom,
@@ -70,9 +71,14 @@ function UiSectionsSecondLife({
         </div>
       </div>
       <div className="articles xl:max-w-7xl xl:mx-auto !px-4 !py-8 md:!px-8 md:!py-16 xl:!py-[80px]">
-        {articles?.map(({ id, title, description, image }) => {
+        {articles?.map(({ id, title, description, image }, index) => {
           return (
-            <article key={id} className="ui-second-life-article isShown">
+            <article
+              key={id}
+              className={`ui-second-life-article isShown ${
+                index === 1 ? `flex items-end flex-col` : ''
+              }`}
+            >
               <picture className="ui-fragments-image isLoaded b-r">
                 <Img {...image} />
               </picture>
