@@ -6,6 +6,7 @@ on:
       - 'pnpm-lock.yaml'
       - 'apps/gemebuild/**'
       - 'packages/**'
+      - '.github/workflows/gemebuild-ci.yml'
   workflow_dispatch:
 
 jobs:

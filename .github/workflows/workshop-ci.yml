@@ -6,6 +6,7 @@ on:
       - 'pnpm-lock.yaml'
       - 'apps/workshop/**'
       - 'packages/**'
+      - '.github/workflows/workshop-ci.yml'
   workflow_dispatch:
 
 jobs:
