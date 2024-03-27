@@ -76,7 +76,10 @@ importers:
         version: 7.6.13(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)
       '@storybook/test':
         specifier: ^7.6.13
-        version: 7.6.13
+        version: 7.6.13(jest@29.7.0)
+      '@storybook/test-runner':
+        specifier: ^0.16.0
+        version: 0.16.0(@types/node@20.11.16)
       '@types/d3-fetch':
         specifier: ^3.0.3
         version: 3.0.7
@@ -98,6 +101,9 @@ importers:
       autoprefixer:
         specifier: ^10.4.15
         version: 10.4.17(postcss@8.4.34)
+      concurrently:
+        specifier: ^8.2.2
+        version: 8.2.2
       eslint:
         specifier: ^8.49.0
         version: 8.56.0
@@ -107,6 +113,9 @@ importers:
       eslint-config-next:
         specifier: ^13.5.2
         version: 13.5.6(eslint@8.56.0)(typescript@5.2.2)
+      http-server:
+        specifier: ^14.1.1
+        version: 14.1.1
       postcss:
         specifier: ^8.4.29
         version: 8.4.34
@@ -128,6 +137,9 @@ importers:
       ui:
         specifier: workspace:*
         version: link:../../packages/ui
+      wait-on:
+        specifier: ^7.2.0
+        version: 7.2.0
 
   apps/workshop:
     dependencies:
@@ -164,7 +176,7 @@ importers:
         version: 7.6.12(react-dom@18.2.0)(react@18.2.0)(typescript@5.2.2)(vite@4.5.2)
       '@storybook/test-runner':
         specifier: ^0.16.0
-        version: 0.16.0
+        version: 0.16.0(@types/node@20.11.16)
       '@types/react':
         specifier: ^18.2.0
         version: 18.2.55
@@ -4671,7 +4683,7 @@ packages:
       - supports-color
     dev: true
 
-  /@storybook/test-runner@0.16.0:
+  /@storybook/test-runner@0.16.0(@types/node@20.11.16):
     resolution: {integrity: sha512-LDmNbKFoEDW/VS9o6KR8e1r5MnbCc5ZojUfi5yqLdq80gFD7BvilgKgV0lUh/xWHryzoy+Ids5LYgrPJZmU2dQ==}
     engines: {node: ^16.10.0 || ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -4691,7 +4703,7 @@ packages:
       commander: 9.5.0
       expect-playwright: 0.8.0
       glob: 10.3.10
-      jest: 29.7.0
+      jest: 29.7.0(@types/node@20.11.16)
       jest-circus: 29.7.0
       jest-environment-node: 29.7.0
       jest-junit: 16.0.0
@@ -4715,7 +4727,7 @@ packages:
       - ts-node
     dev: true
 
-  /@storybook/test@7.6.13:
+  /@storybook/test@7.6.13(jest@29.7.0):
     resolution: {integrity: sha512-us/u3knKx/WeO9UbwnP77x6S/Yf37AUG83VU7HOEPm5rL/sUO9NAkpLFbDCEPr7ctPT00ucxJISDjTWuScnkmA==}
     dependencies:
       '@storybook/client-logger': 7.6.13
@@ -4723,7 +4735,7 @@ packages:
       '@storybook/instrumenter': 7.6.13
       '@storybook/preview-api': 7.6.13
       '@testing-library/dom': 9.3.4
-      '@testing-library/jest-dom': 6.4.2
+      '@testing-library/jest-dom': 6.4.2(jest@29.7.0)
       '@testing-library/user-event': 14.3.0(@testing-library/dom@9.3.4)
       '@types/chai': 4.3.11
       '@vitest/expect': 0.34.7
@@ -4993,7 +5005,7 @@ packages:
       pretty-format: 27.5.1
     dev: true
 
-  /@testing-library/jest-dom@6.4.2:
+  /@testing-library/jest-dom@6.4.2(jest@29.7.0):
     resolution: {integrity: sha512-CzqH0AFymEMG48CpzXFriYYkOjk6ZGPCLMhW9e9jg3KMCn5OfJecF8GtGW7yGfR/IgCe3SX8BSwjdzI6BBbZLw==}
     engines: {node: '>=14', npm: '>=6', yarn: '>=1'}
     peerDependencies:
@@ -5020,6 +5032,7 @@ packages:
       chalk: 3.0.0
       css.escape: 1.5.1
       dom-accessibility-api: 0.6.3
+      jest: 29.7.0(@types/node@20.11.16)
       lodash: 4.17.21
       redent: 3.0.0
     dev: true
@@ -7321,7 +7334,7 @@ packages:
       sha.js: 2.4.11
     dev: true
 
-  /create-jest@29.7.0:
+  /create-jest@29.7.0(@types/node@20.11.16):
     resolution: {integrity: sha512-Adz2bdH0Vq3F53KEMJOoftQFutWCukm6J24wbPWRO4k1kMY7gS7ds/uoJkNuV8wDCtWWnuwGcJwpWcih+zEW1Q==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
@@ -10592,7 +10605,7 @@ packages:
       - supports-color
     dev: true
 
-  /jest-cli@29.7.0:
+  /jest-cli@29.7.0(@types/node@20.11.16):
     resolution: {integrity: sha512-OVVobw2IubN/GSYsxETi+gOe7Ka59EFMR/twOU3Jb2GnKKeMGJB5SGUUrEz3SFVmJASUdZUzy83sLNNQ2gZslg==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
@@ -10606,7 +10619,7 @@ packages:
       '@jest/test-result': 29.7.0
       '@jest/types': 29.6.3
       chalk: 4.1.2
-      create-jest: 29.7.0
+      create-jest: 29.7.0(@types/node@20.11.16)
       exit: 0.1.2
       import-local: 3.1.0
       jest-config: 29.7.0(@types/node@20.11.16)
@@ -10793,7 +10806,7 @@ packages:
       jest-runner: ^29.3.1
     dependencies:
       expect-playwright: 0.8.0
-      jest: 29.7.0
+      jest: 29.7.0(@types/node@20.11.16)
       jest-circus: 29.7.0
       jest-environment-node: 29.7.0
       jest-process-manager: 0.4.0
@@ -10992,7 +11005,7 @@ packages:
     dependencies:
       ansi-escapes: 6.2.1
       chalk: 5.3.0
-      jest: 29.7.0
+      jest: 29.7.0(@types/node@20.11.16)
       jest-regex-util: 29.6.3
       jest-watcher: 29.7.0
       slash: 5.1.0
@@ -11033,7 +11046,7 @@ packages:
       supports-color: 8.1.1
     dev: true
 
-  /jest@29.7.0:
+  /jest@29.7.0(@types/node@20.11.16):
     resolution: {integrity: sha512-NIy3oAFp9shda19hy4HK0HRTWKtPJmGdnvywu01nOqNC2vZg+Z+fvJDxpMQA88eb2I9EcafcdjYgsDthnYTvGw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
@@ -11046,7 +11059,7 @@ packages:
       '@jest/core': 29.7.0
       '@jest/types': 29.6.3
       import-local: 3.1.0
-      jest-cli: 29.7.0
+      jest-cli: 29.7.0(@types/node@20.11.16)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
