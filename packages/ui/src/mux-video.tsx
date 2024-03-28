@@ -18,6 +18,7 @@ const MuxVideoPlayer: FC<IMuxVideoPlayerProps> = ({
   sources = [],
   ...props
 }) => {
+  const [isCanPlay, setIsCanPlay] = useState(false)
   const [currentPlaybackId, setCurrentPlaybackId] = useState<string>('')
   const [currentPosterUrl, setCurrentPosterUrl] = useState<string>('')
 
@@ -56,25 +57,37 @@ const MuxVideoPlayer: FC<IMuxVideoPlayerProps> = ({
   }, [sources]) // 依赖项为sources数组
 
   return (
-    <MuxPlayer
-      streamType="on-demand"
-      playbackId={currentPlaybackId}
-      poster={currentPosterUrl}
-      // metadataVideoTitle="Placeholder (optional)"
-      // metadataViewerUserId="Placeholder (optional)"
-      // primaryColor="#FFFFFF"
-      // secondaryColor="#000000"
-      autoPlay="muted"
-      className="relative w-full h-full overflow-hidden object-cover"
-      style={{
-        // @ts-ignore
-        '--controls': 'none', // 隐藏控件
-        '--media-object-fit': 'cover',
-      }}
-      nohotkeys={true}
-      loop={true}
-      {...props}
-    />
+    <>
+      <img
+        src="/assets/images/home-v2311/hero-blurred.jpg"
+        alt="videoPicture"
+        className={`w-full h-full object-cover ${
+          isCanPlay ? 'hidden' : 'block'
+        }`}
+      />
+
+      <MuxPlayer
+        streamType="on-demand"
+        playbackId={currentPlaybackId}
+        poster={currentPosterUrl}
+        // metadataVideoTitle="Placeholder (optional)"
+        // metadataViewerUserId="Placeholder (optional)"
+        // primaryColor="#FFFFFF"
+        // secondaryColor="#000000"
+        autoPlay="muted"
+        className={`relative w-full h-full overflow-hidden object-cover
+        ${isCanPlay ? 'block' : 'hidden'}`}
+        style={{
+          // @ts-ignore
+          '--controls': 'none', // 隐藏控件
+          '--media-object-fit': 'cover',
+        }}
+        nohotkeys={true}
+        loop={true}
+        {...props}
+        onPlaying={() => setIsCanPlay(true)}
+      />
+    </>
   )
 }
 
