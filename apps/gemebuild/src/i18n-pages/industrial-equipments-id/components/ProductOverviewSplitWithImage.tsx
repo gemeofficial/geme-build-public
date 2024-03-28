@@ -1,13 +1,10 @@
 'use client'
 import { ReactNode } from 'react'
-import {
-  StarIcon,
-} from '@heroicons/react/20/solid'
+import { StarIcon } from '@heroicons/react/20/solid'
 import { RadioGroup } from '@headlessui/react'
 import clsx from 'clsx'
 
-// import Link from '../../../components/link'
-import Link from 'next/link'
+import { useLink } from '../../../contexts/link-context'
 
 const reviews = { average: 4, totalCount: 1624 }
 
@@ -18,6 +15,8 @@ function ProductOverviewSplitWithImage({
   productImageAspectRadioClassName,
   ctaSection,
 }: IProductOverviewSplitWithImageProps) {
+  const Link = useLink()
+
   return (
     <div className="bg-gray-50">
       <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
@@ -99,10 +98,7 @@ function ProductOverviewSplitWithImage({
             )}
 
             <div
-              className={clsx(
-                'space-y-6',
-                product.price != null ? 'mt-4' : '',
-              )}
+              className={clsx('space-y-6', product.price != null ? 'mt-4' : '')}
             >
               {product.description && (
                 <div className="text-base text-gray-500">
@@ -154,7 +150,7 @@ function ProductOverviewSplitWithImage({
                   sizes={product.sizes}
                 />
               )}
-              
+
               {/* 渲染按钮组 */}
               {ctaSection}
             </form>

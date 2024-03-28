@@ -1,10 +1,11 @@
+'use client'
+
 import ProductOverviewSplitWithImage from './ProductOverviewSplitWithImage'
 import EquipmentFeatures, { IEquipmentFeaturesProps } from './EquipmentFeatures'
 import type { IProductOverviewSplitWithImageProps } from './ProductOverviewSplitWithImage'
 import { TEquipment } from '../../../helpers/industrial-equipments/data/data-en'
 import clsx from 'clsx'
-// import Link from '../../../components/link'
-import Link from 'next/link'
+import { useLink } from '../../../contexts/link-context'
 
 export interface IEquipmentViewProps {
   equipment: TEquipment
@@ -20,7 +21,8 @@ export interface IProductOverviewSplitWithImageOtherProps {
 
 function equipmentToViewProps(
   equipment: TEquipment,
-  otherContent: IProductOverviewSplitWithImageOtherProps
+  otherContent: IProductOverviewSplitWithImageOtherProps,
+  Link: ReturnType<typeof useLink>,
 ): IProductOverviewSplitWithImageProps {
   return {
     product: {
@@ -60,7 +62,7 @@ function equipmentToViewProps(
                   'flex w-full items-center justify-center rounded-md border border-transparent',
                   'py-3 px-8 text-base font-medium',
                   'bg-emerald-600  text-white hover:bg-emerald-700',
-                  'focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-gray-50'
+                  'focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-gray-50',
                 )}
               >
                 {otherContent.btn1Label}
@@ -74,7 +76,7 @@ function equipmentToViewProps(
                   'flex w-full items-center justify-center rounded-md border border-transparent',
                   'py-3 px-8 text-base font-medium',
                   'bg-white text-emerald-600 hover:bg-gray-50',
-                  'focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-gray-50'
+                  'focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-gray-50',
                 )}
               >
                 {otherContent.btn2Label}
@@ -94,9 +96,12 @@ function EquipmentView(props: IEquipmentViewProps) {
     equipmentFeaturesProps,
   } = props
 
+  const Link = useLink()
+
   const productOverviewSplitWithImageProps = equipmentToViewProps(
     equipment,
-    productOverviewSplitWithImageOtherProps
+    productOverviewSplitWithImageOtherProps,
+    Link,
   )
 
   return (

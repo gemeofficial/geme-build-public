@@ -1,7 +1,7 @@
+'use client'
 import clsx from 'clsx'
-// import Link from '../../../components/link'
-import Link from 'next/link'
 import Image from 'next/legacy/image'
+import { useLink } from '../../../contexts/link-context'
 
 export interface IProductListsWithTallImagesProps {
   title: string
@@ -23,7 +23,6 @@ export interface IProductListsWithTallImagesProps {
   productsContainerClassName?: string
 }
 
-
 function EquipmentList({
   title,
   description,
@@ -31,6 +30,8 @@ function EquipmentList({
   productImageAspectRadioClassName,
   productsContainerClassName,
 }: IProductListsWithTallImagesProps) {
+  const Link = useLink()
+
   return (
     <div className="bg-white">
       <div className="py-24 sm:py-32 xl:mx-auto xl:max-w-7xl px-4 sm:px-6 lg:px-8 xl:px-8">
@@ -92,6 +93,5 @@ function EquipmentList({
     </div>
   )
 }
-
 
 export default EquipmentList
