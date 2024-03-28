@@ -1,15 +1,14 @@
+'use client'
 import clsx from 'clsx'
 import type { LinkProps } from 'next/link'
 
-// import Link from '../../../components/link'
-import Link from 'next/link'
-
-import * as React from 'react'
+import { ReactNode } from 'react'
 import Image from 'next/legacy/image'
+import { useLink } from '../../../contexts/link-context'
 
 export interface IHeroWithImageTilesProps {
   title: string
-  description?: React.ReactNode
+  description?: ReactNode
   primaryButtonLabel?: string
   primaryButtonProps?: LinkProps
   decorativeImageGroups?: {
@@ -20,7 +19,6 @@ export interface IHeroWithImageTilesProps {
   }[][]
 }
 
-
 export default function Hero({
   title,
   description,
@@ -28,6 +26,8 @@ export default function Hero({
   primaryButtonProps,
   decorativeImageGroups,
 }: IHeroWithImageTilesProps) {
+  const Link = useLink()
+
   return (
     <div className="relative overflow-hidden">
       <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
@@ -64,7 +64,7 @@ export default function Hero({
                                 key={`image-group-${idx}-${imageIdx}`}
                                 className={clsx(
                                   'overflow-hidden rounded-lg',
-                                  image.imageContainerClassName || ''
+                                  image.imageContainerClassName || '',
                                 )}
                               >
                                 <Image
