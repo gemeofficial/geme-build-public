@@ -82,13 +82,14 @@ const heroSection1Props: IHeroSection1Props = {
 
 const contentSection2Props: IContentSection2Props = {
   // title: 'Terrible Food Waste Experience?',
-  title: 'Are You Still Get Terrible Food Waste Experience?',
+  title: 'Still Get Terrible Experience of Food Waste?',
   description: (
     <>
-      Food scraps get messy. <br />
-      Garbage disposal get clogged, sometimes house wet and dirty. <br />
-      Create bad smell, attracting annoying noisy flies, animals? <br />
-      Eventually go to landfill.
+      Food scraps can be messy and nasty. <br />
+      It creates smell, attracts noisy flies, annoying raccoons. <br />
+      Your garbage disposal is clogged, kitchen gets wet and dirty? <br />
+      60% food waste goes to landfill eventually. <br />
+      You can stop it.
     </>
   ),
   // imageSrc: '/assets/images/home-v2311/waste-food.jpeg',
@@ -97,7 +98,7 @@ const contentSection2Props: IContentSection2Props = {
 }
 
 const contentSection3Props: IContentSection3Props = {
-  title: 'Time to Change Your Trash Bin',
+  title: 'Food Waste to Plant Feed Magic Trash Bin',
   items: [
     {
       id: 1,
@@ -270,7 +271,7 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep1,
       description: (
         <>
-          no slow wait time
+          no slow waiting time
           <br />
           easy maintenance
         </>
@@ -281,8 +282,8 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep2,
       description: (
         <>
-          no dirty and smelly <br />
-          no rats and bugs
+          no mess and smell <br />
+          clean and odorless
         </>
       ),
     },
@@ -354,7 +355,7 @@ const contentSection5Props: IContentSection5Props = {
     <>
       GEME Kobold is a microorganism reproducing when well fed.
       <br />
-      It breakdown your food waste, no matter how salty or acidic.
+      It breaks down your food waste, no matter how salty or acidic.
       <br />
       The result? Ready-to-use, homemade organic compost for plants.
     </>
