@@ -329,8 +329,7 @@
 .ui-second-life-article .ui-fragments-image {
   opacity: 0;
   transform: scale(0);
-  transition:
-    transform 0.75s cubic-bezier(0.32, 0.94, 0.6, 1),
+  transition: transform 0.75s cubic-bezier(0.32, 0.94, 0.6, 1),
     opacity 0.75s cubic-bezier(0.32, 0.94, 0.6, 1);
 }
 
@@ -339,8 +338,7 @@
 .ui-second-life-article h3 {
   opacity: 0;
   transform: translateY(50px);
-  transition:
-    transform 0.75s cubic-bezier(0.32, 0.94, 0.6, 1),
+  transition: transform 0.75s cubic-bezier(0.32, 0.94, 0.6, 1),
     opacity 0.75s cubic-bezier(0.32, 0.94, 0.6, 1);
 }
 
@@ -578,8 +576,6 @@
 }
 
 .ui-sections-decomposition {
-  padding-bottom: 24.3055555556vw;
-  padding-top: 6.9444444444vw;
   position: relative;
 }
 
@@ -592,12 +588,7 @@
   position: relative;
 }
 
-@media (max-width: 1000px) {
-  .ui-sections-decomposition {
-    padding-bottom: 93.3333333333vw;
-    padding-top: 0;
-  }
-
+@media (max-width: 480px) {
   .ui-sections-decomposition .outro {
     padding: 8vw;
   }
@@ -606,3 +597,4 @@
     bottom: -13.3333333333vw;
   }
 }
+
