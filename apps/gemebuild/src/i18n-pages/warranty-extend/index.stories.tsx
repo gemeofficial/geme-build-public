@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { WarrantyExtendPageEn, WarrantyExtendPageFr } from '.'
+import { WarrantyExtendPageDe, WarrantyExtendPageEn, WarrantyExtendPageFr } from '.'
 
 const meta = {
   title: 'Pages/warranty-extend',
@@ -17,4 +17,10 @@ export const En: Story = {
 export const Fr: Story = {
   name: 'fr',
   render: () => <WarrantyExtendPageFr />,
+}
+
+
+export const De: Story = {
+  name: 'de',
+  render: () => <WarrantyExtendPageDe />,
 }
