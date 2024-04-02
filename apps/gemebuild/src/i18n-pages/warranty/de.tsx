@@ -2,11 +2,11 @@ import { Warranty } from './components'
 import type { IWarrantyProps } from './components'
 import { SiteHelpTabs, ISiteHelpTabsProps } from '../../components/tabs'
 
-// 静态页面的navbar内容 配置文件 Fr版
+// 静态页面的navBar内容 配置文件 De版
 const siteHelpTabsProps: ISiteHelpTabsProps = {
   tabs: [
     {
-      title: "Conditions Générales d'Utilisation",
+      title: 'Bedingungen und Konditionen der Dienstleistungsvereinbarung',
       id: 'terms-and-conditions',
     },
     {
@@ -14,48 +14,48 @@ const siteHelpTabsProps: ISiteHelpTabsProps = {
       id: 'warranty',
     },
     {
-      title: 'Extension de Garantie',
+      title: 'Garantieverlängerung',
       id: 'warranty-extend',
     },
     {
-      title: 'Politique de Retour',
+      title: 'Rückgaberecht',
       id: 'return-policy',
     },
     {
-      title: 'Politique de Confidentialité',
+      title: 'Datenschutzrichtlinie',
       id: 'privacy-policy',
     },
     {
-      title: 'Programme de Fidélité GEME Dots',
+      title: 'GEME Dots-Treueprogramm',
       id: 'geme-dots-loyalty-program',
     },
   ],
   currentTabId: 'warranty',
 }
 
-// 静态页面的内容 配置文件 Fr版
+// 静态页面的内容 配置文件 De版
 const warrantyProps: IWarrantyProps = {
   title: 'Garantie',
   forward: {
-    title: 'Avant-propos',
+    title: 'Foreword',
     description: `
-      Les appareils électriques ROKH SRL sont fabriqués selon des normes très élevées
-      normes de qualité. Néanmoins, des échecs sont toujours possibles.
-      Dans de tels cas, les réparations peuvent être effectuées rapidement et
-      professionnellement pendant ou après la période de garantie, sans
-      affectant la durée de vie de l'équipement.
+      ROKH SRL Elektrogeräte werden nach sehr hohen Qualitätsstandards hergestellt.
+      Qualitätsstandards hergestellt. Dennoch sind Ausfälle immer möglich.
+      In solchen Fällen können Reparaturen schnell und professionell durchgeführt werden
+      während oder nach der Garantiezeit schnell und professionell durchgeführt werden, ohne
+      ohne die Lebensdauer des Geräts zu beeinträchtigen.
       <br />
       <br />
-      Les conditions de garantie ROKH SRL sont établies conformément
-       à la directive européenne 99/44/CE et à la législation nationale applicable ;
-       ils ne portent aucune atteinte aux droits qu'ils confèrent au
-       consommateur.
+      Die Garantiebedingungen der ROKH SRL werden in Übereinstimmung mit
+      der EU-Richtlinie 99/44/EG und der geltenden nationalen Gesetzgebung festgelegt;
+      Sie berühren in keiner Weise die Rechte, die sie dem Verbraucher einräumen
+      Verbraucher.
     `,
     imgSrc: '/assets/images/warranty/1.png',
   },
   items: [
     {
-      name: 'Début et durée de la période de garantie',
+      name: 'Beginn und Dauer der Garantiezeit',
       svgSrc: (
         <svg
           className="w-16 h-16"
@@ -79,18 +79,18 @@ const warrantyProps: IWarrantyProps = {
       description: `
       <ul class="my-5 list-inside list-disc">
         <li class="mb-5">
-        La période de garantie GEME BIO-WASTE COMPOSTER court à compter de la date d’achat par le consommateur. La période de garantie est de 12 mois, lorsque et seulement lorsque la garantie est utilisée gratuitement comme décrit ici lors d'un usage domestique.
+        Die Garantiezeit für den GEME BIO-WASTE COMPOSTER beginnt mit dem Datum des Kaufs durch den Verbraucher. Die Garantiezeit beträgt 12 Monate, wenn und nur wenn der GEME BIO-WASTE COMPOSTER wie hier beschrieben kostenlos für den Hausgebrauch verwendet wird.
         <br /> <br />
-        La période de garantie deux an est suspendue lors d'une réparation ou d'un remplacement. A l'issue de cette période, le consommateur n'a pas droit à une nouvelle garantie deux an, mais la période de garantie commencée est rétablie à compter du remplacement ou de la fin de la réparation.
+        Die 2-Jahres-Garantiezeit wird während der Reparatur oder des Austauschs ausgesetzt. Am Ende dieser Periode hat der Verbraucher keinen Anspruch auf eine neue 2-Jahres-Garantie, aber die begonnene Garantiezeit wird ab dem Zeitpunkt des Austauschs oder der Fertigstellung der Reparatur wieder aufgenommen.
         </li>
         <li>
-        Pour les équipements commerciaux, la période de garantie est régie par les termes du contrat de vente.
+        Bei gewerblichen Geräten richtet sich die Garantiezeit nach den Bestimmungen des Kaufvertrags.
         </li>
       </ul>
       `,
     },
     {
-      name: 'Contenu et couverture de la garantie',
+      name: 'Inhalt und Geltungsbereich der Garantie',
       svgSrc: (
         <svg
           className="w-16 h-16"
@@ -110,14 +110,14 @@ const warrantyProps: IWarrantyProps = {
         </svg>
       ),
       description: `
-      <p class="mb-5">ROKH SRL s'engage à réparer ou à remplacer gratuitement les pièces défectueuses si le défaut initial survient pendant la période de garantie ou si la panne survient lors d'une utilisation correcte.</p>
-      <p class="mb-5">Les pièces remplacées restent la propriété de ROKH SRL. Si le même défaut survient plusieurs fois pendant la période de garantie, ou si le coût de la réparation est jugé disproportionné par rapport à la valeur du matériel, un remplacement par le matériel équivalent sera proposé au consommateur après concertation avec lui. Dans de tels cas, ROKH SRL se réserve le droit de facturer au consommateur un montant basé sur la période d'utilisation.</p>
-      <p class="mb-5">Tout défaut doit être signalé immédiatement pour éviter des dommages plus graves.</p>
-      <p class="mb-5">Pour les appareils difficiles à transporter et les appareils encastrables, la réparation sera effectuée au domicile du consommateur. Les appareils facilement transportables seront livrés ou envoyés au service après-vente de ROKH SRL, soit directement, soit par l'intermédiaire d'un revendeur.</p>
+      <p class="mb-5">Die ROKH SRL verpflichtet sich, defekte Teile kostenlos zu reparieren oder zu ersetzen, wenn der ursprüngliche Defekt während der Garantiezeit auftritt oder wenn der Fehler bei ordnungsgemäßem Gebrauch auftritt.</p>
+      <p class="mb-5">Die ersetzten Teile bleiben Eigentum der ROKH SRL. Tritt derselbe Mangel während der Garantiezeit mehrmals auf oder stehen die Reparaturkosten in keinem Verhältnis zum Wert des Geräts, wird dem Verbraucher nach Rücksprache mit ihm ein gleichwertiges Gerät als Ersatz angeboten. In solchen Fällen behält sich die ROKH SRL das Recht vor, dem Verbraucher einen von der Nutzungsdauer abhängigen Betrag in Rechnung zu stellen.</p>
+      <p class="mb-5">Alle Mängel müssen sofort gemeldet werden, um größere Schäden zu vermeiden.</p>
+      <p class="mb-5">Bei schwer zu transportierenden Geräten und Einbaugeräten wird die Reparatur beim Verbraucher zu Hause durchgeführt. Leicht zu transportierende Geräte werden entweder direkt oder über einen Einzelhändler an den Kundendienst der ROKH SRL geliefert oder geschickt.</p>
       `,
     },
     {
-      name: 'Limitation de la garantie',
+      name: 'Einschränkung der Garantie',
       svgSrc: (
         <svg
           className="w-16 h-16"
@@ -137,64 +137,64 @@ const warrantyProps: IWarrantyProps = {
         </svg>
       ),
       description: `
-      <p class="mb-5">La garantie ne s'applique pas dans les cas suivants.</p>
+      <p class="mb-5">Die Garantie gilt nicht in den folgenden Fällen.</p>
       <ul class="my-5 list-inside list-disc">
-        <li class="mb-5">Des écarts mineurs liés à la qualité attendue, qui n'altèrent pas la valeur ou le bon fonctionnement du matériel.</li>
-        <li class="mb-5">Modifications de construction ou d'exécution apportées avant l'exécution de la commande et n'affectant pas la valeur et le bon fonctionnement du matériel.</li>
-        <li class="mb-5">Défauts dus à un assemblage ou une installation incorrecte.</li>
-        <li class="mb-5">Conséquences de facteurs externes, tels que : les dommages causés par le transport ; une utilisation non conforme pouvant endommager certains composants sensibles, tels que les pièces synthétiques, le caoutchouc ; réactions chimiques ou électrochimiques provoquées par l'eau ; conditions météorologiques; stress environnementaux anormaux.</li>
-        <li class="mb-5">Conditions d'utilisation ou de fonctionnement inappropriées.</li>
-        <li class="mb-5">Réparations ou modifications effectuées par des tiers non professionnellement qualifiés.</li>
-        <li class="mb-5">Numéros d'identification de l'équipement manquants.</li>
-        <li class="mb-5">Matériel acheté hors de l'Union européenne, de Norvège ou de Suisse, hors des États-Unis et qui, en raison de ses spécifications techniques, est inutilisable ou dans une certaine mesure inutilisable.</li>
-        <li class="mb-5">Usure inévitable due à l'utilisation de pièces ou à des processus naturels qui, selon le manuel d'utilisation, doivent être remplacées régulièrement, par ex. Lampes UV-UV.</li>
-        <li class="mb-5">Entretien inadéquat (par exemple, non-élimination des déchets non biologiques comme requis ou surcharge de fonctionnement) et/ou mauvaise exécution (par exemple, utilisation de produits de nettoyage agressifs).</li>
-        <li class="mb-5">Utilisation d'accessoires ou de pièces non originales.</li>
+        <li class="mb-5">Geringfügige Abweichungen von der erwarteten Qualität, die den Wert oder das ordnungsgemäße Funktionieren des Geräts nicht beeinträchtigen.</li>
+        <li class="mb-5">Vor der Ausführung des Auftrags vorgenommene Konstruktions- oder Ausführungsänderungen, die den Wert und das gute Funktionieren des Geräts nicht beeinträchtigen.</li>
+        <li class="mb-5">Defekte durch unsachgemäße Montage oder Installation.</li>
+        <li class="mb-5">Folgen äußerer Faktoren, wie z. B.: Transportschäden; nicht bestimmungsgemäßer Gebrauch, der bestimmte empfindliche Komponenten wie Kunststoffteile oder Gummi beschädigen kann; chemische oder elektrochemische Reaktionen durch Wasser; Witterungsbedingungen; anormale Umweltbelastungen.</li>
+        <li class="mb-5">Ungeeignete Einsatz- oder Betriebsbedingungen.</li>
+        <li class="mb-5">Reparaturen oder Änderungen, die von nicht fachlich qualifizierten Dritten durchgeführt werden.</li>
+        <li class="mb-5">Fehlende Identifikationsnummern der Ausrüstung.</li>
+        <li class="mb-5">Außerhalb der Europäischen Union, Norwegens oder der Schweiz, außerhalb der Vereinigten Staaten erworbene Geräte, die aufgrund ihrer technischen Spezifikationen unbrauchbar oder in gewissem Umfang unbrauchbar sind.</li>
+        <li class="mb-5">Unvermeidliche Abnutzung durch den Gebrauch von Teilen oder natürliche Prozesse, die laut Gebrauchsanweisung regelmäßig ausgetauscht werden müssen, z. B. UV-Lampen.</li>
+        <li class="mb-5">Unzureichende Wartung (z. B. nicht ordnungsgemäße Entsorgung von nicht-biologischen Abfällen oder Überlastung des Betriebs) und/oder unsachgemäße Ausführung (z. B. Verwendung aggressiver Reinigungsmittel).</li>
+        <li class="mb-5">Verwendung von nicht-originalem Zubehör oder Teilen.</li>
       </ul>
       `,
     },
   ],
   additionalProvisions: {
-    title: 'Dispositions supplémentaires',
+    title: 'Zusätzliche Bestimmungen',
     description: `
-    Réclamations pour annulation de la vente, perte de valeur ou dommages
-    ne sont pas couverts, sauf dans les cas prévus par la loi au présent
-    champ. En cas de recours, l'indemnisation ne peut excéder le montant
-    valeur du matériel.
+    Ansprüche auf Rückgängigmachung des Verkaufs, Wertminderung oder Schadenersatz
+    sind nicht gedeckt, außer in den gesetzlich vorgesehenen Fällen in diesem
+    Bereich vorgesehen sind. Im Falle eines Rechtsbehelfs kann die Entschädigung nicht höher sein als der
+    Wert des Geräts nicht überschreiten.
     <br />
     <br />
-    Les conditions de garantie s'appliquent au matériel acheté et utilisé dans
-    Belgique. En cas d'utilisation à l'étranger de matériel acheté en
-    Belgique, ou en cas d'utilisation en Belgique du matériel acheté
-    à l'étranger, le consommateur devra s'assurer que le matériel est conforme aux
-    les conditions techniques du lieu d'utilisation (électricité
-    indicateurs, fréquence électrique, normes d'installation, climatiques
-    conditions). Les défauts résultant du non-respect des
-    équipement avec ces exigences et modifications apportées pour apporter
-    sa conformité ne sont pas couverts par la garantie.
+    Die Garantiebedingungen gelten für Geräte, die in Belgien gekauft und verwendet werden.
+    Belgien. Im Falle der Verwendung von in Belgien gekauften Geräten im Ausland
+    Belgien gekauften Geräte im Ausland oder im Falle der Nutzung von in Belgien
+    im Ausland gekaufte Geräte, muss der Verbraucher sicherstellen, dass die Geräte den
+    den technischen Bedingungen des Einsatzortes (elektrische
+    Indikatoren, elektrische Frequenz, Installationsnormen, klimatische
+    Bedingungen). Mängel, die sich aus der Nichtübereinstimmung des
+    Geräte mit diesen Anforderungen nicht übereinstimmen, sowie
+    um die Konformität herzustellen, fallen nicht unter die Garantie.
     <br />
     <br />
-    S'il faut plus de 30 minutes pour accéder à l'équipement et
-    remettez-le dans sa position d'origine pour terminer la réparation, le
-    les frais encourus pour le temps supplémentaire seront facturés. Tout dommage
-    pouvant résulter d'une telle manipulation relève également de la responsabilité de
-    le consommateur.
+    Wenn es mehr als 30 Minuten dauert, das Gerät zu erreichen und
+    wieder in die ursprüngliche Position zu bringen, um die Reparatur abzuschließen, werden die
+    werden die Kosten für die zusätzliche Zeit in Rechnung gestellt. Jede Beschädigung
+    Schäden, die durch eine solche Handhabung entstehen, gehen ebenfalls zu Lasten des
+    der Verbraucher.
     <br />
     <br />
-    Pour tout litige ou désaccord, les tribunaux de la Région Wallonne
-    sera compétent.
+    Für alle Streitigkeiten oder Meinungsverschiedenheiten sind die Gerichte der Region Wallonien
+    zuständig.
     `,
   },
 }
 
- function WarrantyPageFr() {
+function WarrantyPageDe() {
   return (
     <>
-      <link rel="canonical" href="https://www.geme.bio/fr/warranty" />
-      <h1 className="sr-only">Informations sur la garantie du produit GEME</h1>
+      <link rel="canonical" href="https://www.geme.bio/de/warranty" />
+      <h1 className="sr-only">GEME Produkt-Garantie-Informationen</h1>
       <SiteHelpTabs {...siteHelpTabsProps} />
-      <Warranty {...warrantyProps}/>
+      <Warranty {...warrantyProps} />
     </>
   )
 }
- export {WarrantyPageFr}
+export { WarrantyPageDe }
