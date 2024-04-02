@@ -185,7 +185,7 @@ const returnPolicyEndProps: IReturnPolicyEndProps = {
 }
 
 function ReturnPolicyPageFr() {
-  const url = 'https://www.geme.bio/return-policy'
+  const url = 'https://www.geme.bio/fr/return-policy'
 
   const childProps: IReturnPolicyProps = {
     current: returnPolicyCurrentProps,

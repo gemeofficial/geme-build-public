@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { ReturnPolicyPageEn,ReturnPolicyPageFr } from '.'
+import { ReturnPolicyPageDe, ReturnPolicyPageEn, ReturnPolicyPageFr } from '.'
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -18,4 +18,9 @@ export const En: Story = {
 export const Fr: Story = {
   name: 'fr',
   render: () => <ReturnPolicyPageFr />,
+}
+
+export const De: Story = {
+  name: 'de',
+  render: () => <ReturnPolicyPageDe />,
 }
