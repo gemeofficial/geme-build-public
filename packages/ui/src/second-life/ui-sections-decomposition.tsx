@@ -15,9 +15,13 @@ export default function UiSectionsDecomposition() {
     [414, 100],
     [450, 90],
     [500, 80],
+    [550, 75],
     [600, 70],
+    [650, 65],
     [700, 60],
+    [750, 55],
     [800, 50],
+    [850, 45],
     [900, 40],
     [1000, 35],
     [1100, 30],
@@ -36,7 +40,7 @@ export default function UiSectionsDecomposition() {
     [3100, 1],
   ])
 
-  let prevValue = widthToPaddingBottomMap.get(375)!
+  let prevValue = widthToPaddingBottomMap.get(280)!
 
   /**
    * 获取不同屏幕宽度对应的paddingBottom
@@ -50,12 +54,10 @@ export default function UiSectionsDecomposition() {
 
     // 应该取的是当前key的上一个value，原因：width >= 375 && width <= 414时 value应该为110 而不是100
     for (let [key, value] of widthToPaddingBottomMap) {
-      if (width <= key) {
-        prevValue = value
-        break
-      }
-    }
+      if (width < key) break
 
+      prevValue = value
+    }
     return prevValue
   }
 
