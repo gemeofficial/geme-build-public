@@ -274,6 +274,7 @@ function SelfRepairPageEn() {
   return (
     <>
       <link rel="canonical" href="https://www.geme.bio/self-repair" />
+      <h1 className="sr-only">GEME Self Repair</h1>
       <SelfRepairView {...props} />
     </>
   )
