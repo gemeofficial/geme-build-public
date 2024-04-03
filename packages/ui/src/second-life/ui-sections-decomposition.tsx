@@ -1,6 +1,6 @@
-"use client"
+'use client'
 
-import {  useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { throttle } from 'ts-debounce-throttle'
 
 export default function UiSectionsDecomposition() {
@@ -8,7 +8,9 @@ export default function UiSectionsDecomposition() {
 
   // 不同屏幕宽度下对应的paddingBottom边距大小的Map数据组
   // [375, 110] => 屏幕宽度375px > 对应110vw的paddingBottom
+  // [280,150] 适配Galaxy Fold超小分辨率机型
   const widthToPaddingBottomMap = new Map([
+    [280,150],
     [375, 110],
     [414, 100],
     [450, 90],
@@ -42,8 +44,9 @@ export default function UiSectionsDecomposition() {
    * @returns newPaddingBottom
    */
   function getPaddingBottomValue(width: number) {
-    // 避免超大屏幕下不必要的循环
-    if (width > 3000) return 1
+    // 避免超大/超小屏幕下不必要的循环
+    if (width > 3000) return widthToPaddingBottomMap.get(3000)!
+    if (width < 280) return widthToPaddingBottomMap.get(280)!
 
     // 应该取的是当前key的上一个value，原因：width >= 375 && width <= 414时 value应该为110 而不是100
     for (let [key, value] of widthToPaddingBottomMap) {
@@ -74,7 +77,7 @@ export default function UiSectionsDecomposition() {
     return () => {
       window.removeEventListener('resize', updateDotsPaddingBottom)
     }
-  }, [window?.innerWidth])
+  }, [])
 
   return (
     <section
