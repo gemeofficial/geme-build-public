@@ -8,7 +8,27 @@ import {
   ScrollTriggeredAnimatedHeadlineBottom,
 } from './scroll-triggered-animated-headline'
 import { ScrollTriggeredAnimatedUiCompost } from '../ui-compost'
-import UiSectionsDecomposition from './ui-sections-decomposition'
+
+function UiSectionsDecomposition() {
+  return (
+    <section
+      className="ui-sections-decomposition bg--green-1"
+      data-anchor="le-processus"
+    >
+      <div className="ui-fragments-dots">
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+      </div>
+    </section>
+  )
+}
 
 function UiSectionsSecondLife({
   titleLeftPart,
