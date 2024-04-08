@@ -35,8 +35,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "ts-debounce-throttle": "^1.0.0"
   }
 }
