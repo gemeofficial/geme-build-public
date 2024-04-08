@@ -12,7 +12,7 @@ import { ScrollTriggeredAnimatedUiCompost } from '../ui-compost'
 function UiSectionsDecomposition() {
   return (
     <section
-      className="ui-sections-decomposition bg--green-1"
+      className="ui-sections-decomposition bg--green-1 "
       data-anchor="le-processus"
     >
       <div className="ui-fragments-dots">
