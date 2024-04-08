@@ -26,34 +26,37 @@ import { Newsletter, INewsletterProps } from './containers/newsletter'
 import Link from 'next/link'
 import mixpanel from 'mixpanel-browser'
 
-// 首页video部分的内容数据配置 En
+// 首页video部分的内容数据配置 Fr
 const heroSection1Props: IHeroSection1Props = {
   title: (
     <>
       <span className="hidden xl:inline">
-        World&apos;s First Bio Waste Composter
+        Le premier composteur <br/>
+        <span className='indent-36 block'>de biodéchets au monde</span>
       </span>
-      <span className="xl:hidden">World&apos;s First Bio Waste Composter</span>
+      <span className="xl:hidden">
+        Le premier composteur de biodéchets au monde
+      </span>
     </>
   ),
   description: (
     <>
       <span className=" hidden xl:inline ">
-        Meet GEME, the modern electric composter for home
+        Découvrez GEME, le composteur électrique moderne pour la maison
         <br />
-        Turn your daily food waste into organic compost
+        Transformez vos déchets alimentaires quotidiens en compost organique
         <br />
-        Less landfill, more garden soil.
+        Moins de décharges, plus de terre de jardin.
       </span>
       <span className=" xl:hidden ">
-        Meet GEME, the modern electric home composter <br />
-        Turn your daily food waste into organic compost
+        Découvrez GEME, le composteur domestique électrique moderne <br />
+        Transformez vos déchets alimentaires quotidiens en compost organique
         <br />
-        Less landfill, more gardening.
+        Moins de décharges, plus de jardinage.
       </span>
     </>
   ),
-  linkText: 'Shop Now',
+  linkText: 'Achetez maintenant',
   linkUrl: '/product/geme',
   linkClickedTrack: () => {
     mixpanel.track('Go Product Page', {
@@ -81,58 +84,61 @@ const heroSection1Props: IHeroSection1Props = {
   },
 }
 
-// 首页第二部分的内容数据配置 En
+// 首页第二部分的内容数据配置 Fr
 const contentSection2Props: IContentSection2Props = {
-  title: 'Still Get Terrible Experience of Food Waste?',
+  title:
+    'Vous ressentez toujours la terrible expérience du gaspillage alimentaire ?',
   description: (
     <>
-      Food scraps can be messy and nasty. <br />
-      It creates smell, attracts noisy flies, annoying raccoons. <br />
-      Your garbage disposal is clogged, kitchen gets wet and dirty? <br />
-      60% food waste goes to landfill eventually. <br />
-      You can stop it.
+      Les restes de nourriture peuvent être salissants et désagréables. <br />
+      Il crée des odeurs, attire les mouches bruyantes et les ratons laveurs
+      agaçants. <br />
+      Votre poubelle est bouchée, la cuisine est mouillée et sale ? <br />
+      60 % des déchets alimentaires finissent par être mis en décharge. <br />
+      Vous pouvez l&apos;arrêter.
     </>
   ),
   // imageSrc: '/assets/images/home-v2311/waste-food.jpeg',
   imageSrc: '/assets/images/home-v2311/food-waste-experience.jpg',
-  imageAlt: 'food waste picture',
+  imageAlt: 'photo de gaspillage alimentaire',
 }
 
-// 首页第三部分的内容数据配置 En
+// 首页第三部分的内容数据配置 Fr
 const contentSection3Props: IContentSection3Props = {
-  title: 'Food Waste to Plant Feed Magic Trash Bin',
+  title: 'Déchets alimentaires pour nourrir les plantes Poubelle magique',
   items: [
     {
       id: 1,
       description: (
         <>
-          Throw all kinds of waste
+          Jetez toutes sortes de déchets
           <br />
-          Add food waste anytime
+          Ajoutez des déchets alimentaires à tout moment
         </>
       ),
       imageSrc: '/assets/images/home-v2311/put-food-in-geme.jpg',
-      imageAlt: 'put food waste in GEME composter',
+      imageAlt: 'mettre les déchets alimentaires dans le composteur GEME',
     },
     {
       id: 2,
       description: (
         <>
-          Composting continuously
+          Composter en continu
           <br />
-          Waste get reduced in a box
+          Les déchets sont réduits dans une boîte
         </>
       ),
       imageSrc: '/assets/images/home-v2311/geme-is-running.jpg',
-      imageAlt: 'wait food waste composting when GEME is running',
+      imageAlt:
+        'attendre le compostage des déchets alimentaires lorsque GEME fonctionne',
     },
     {
       id: 3,
       description: (
         <>
-          Turn waste into compost
+          Transformez les déchets en compost
           <br />
-          Just take out easily and use
+          Il suffit de le retirer facilement et de l&apos;utiliser
         </>
       ),
       imageSrc: '/assets/images/home-v2311/get-compost-from-geme.jpg',
@@ -153,17 +159,16 @@ const contentSection3Props: IContentSection3Props = {
   ],
 }
 
-// 首页第四部分（youtube视频）的内容数据配置 En
+// 首页第四部分（youtube视频）的内容数据配置 Fr
 const contentSection4Props: IContentSection4Props = {
   title: (
     <>
-      Stop Landfilling
+      Arrêtez la mise en décharge
       <br />
-      Start Composting
+      Commencer le compostage
     </>
   ),
-  description:
-    'GEME helps every family eliminate daily food waste, create nourished soil, build a healthy garden, reduce carbon footprint, and avoid landfilling and incineration.',
+  description: `GEME aide chaque famille à éliminer le gaspillage alimentaire quotidien, à créer un sol nourri, à construire un jardin sain, à réduire l'empreinte carbone et à éviter la mise en décharge et l'incinération.`,
   withMp4VideoOrYoutubeVideo: {
     type: 'youtube',
     videoPosterImage: {
@@ -181,22 +186,22 @@ const contentSection4Props: IContentSection4Props = {
   },
 }
 
-// 首页第五部分（滚动动画部分）的内容数据配置 En
+// 首页第五部分（滚动动画部分）的内容数据配置 Fr
 const secondLifeProps: ISecondLifeProps = {
   titleLeftPart: 'Compost',
-  titleRightPart: 'New Life for Waste',
+  titleRightPart: 'Une nouvelle vie pour les déchets',
   description:
-    'You can reduce 100kg to 300kg CO2 emissions. If you recycle all your food waste via composting.',
+    'Vous pouvez réduire de 100 kg à 300 kg les émissions de CO2. Si vous recyclez tous vos déchets alimentaires via le compostage.',
 
   articles: [
     {
       id: 1,
-      title: 'Prevent Water Lost',
-      description: 'Compost can absorb water, let your seeds grow better.',
+      title: `Prévenir la perte d'eau`,
+      description: `Le compost peut absorber l'eau, permettant à vos graines de mieux pousser.`,
       image: {
         width: 1200,
         height: 800,
-        alt: 'Prevent Water Lost',
+        alt: `Prévenir la perte d'eau`,
         src: 'https://www.datocms-assets.com/79468/1666986512-moins_eau.jpg?w=10',
         srcSetData: {
           '100w':
@@ -214,12 +219,13 @@ const secondLifeProps: ISecondLifeProps = {
     },
     {
       id: 2,
-      title: 'Make Good Soil',
-      description: 'Compost can nourish garden soil, let plants grow bigger.',
+      title: 'Faire du bon sol',
+      description:
+        'Le compost peut nourrir la terre du jardin et permettre aux plantes de grandir.',
       image: {
         width: 1200,
         height: 800,
-        alt: 'Prevent Water Lost',
+        alt: `Prévenir la perte d'eau`,
         src: 'https://www.datocms-assets.com/79468/1666986527-sols_riches.jpg?w=10',
         srcSetData: {
           '100w':
@@ -237,12 +243,13 @@ const secondLifeProps: ISecondLifeProps = {
     },
     {
       id: 3,
-      title: 'Fight Climate Change',
-      description: 'Compost can reduce landfill, let our plannet turn greener.',
+      title: 'Combattre le changement climatique',
+      description:
+        'Le compost peut réduire la mise en décharge et permettre à notre planète de devenir plus verte.',
       image: {
         width: 1200,
         height: 800,
-        alt: 'Prevent Water Lost',
+        alt: `Prévenir la perte d'eau`,
         src: 'https://www.datocms-assets.com/79468/1666986537-changements_climatiques.jpg?w=10',
         srcSetData: {
           '100w':
@@ -260,13 +267,13 @@ const secondLifeProps: ISecondLifeProps = {
     },
   ],
 
-  endTitleLeftPart: 'Waste Reborn',
-  endTitleRightPart: 'Life Continue!',
+  endTitleLeftPart: 'Les déchets renaîtront',
+  endTitleRightPart: 'La vie continue !',
 }
 
-// 首页第六部分的内容数据配置 En
+// 首页第六部分的内容数据配置 Fr
 const contentSection6FixedProps: IContentSection6FixedProps = {
-  title: 'The Easiest Way to Get Compost',
+  title: `Le moyen le plus simple d'obtenir du compost`,
   videoPosterUrl: '/assets/images/home-v2311/use-compost-cover.jpg',
   videoSrcUrl:
     'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-genereate-compost-12s-480p.mp4',
@@ -276,9 +283,9 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep1,
       description: (
         <>
-          no slow waiting time
+          pas de temps d&apos;attente lent
           <br />
-          easy maintenance
+          entretien facile
         </>
       ),
     },
@@ -287,8 +294,8 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep2,
       description: (
         <>
-          no mess and smell <br />
-          clean and odorless
+          pas de gâchis ni d&apos;odeur <br />
+          propre et sans odeur
         </>
       ),
     },
@@ -297,135 +304,136 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep3,
       description: (
         <>
-          no need to turn over <br />
-          work in any weather
+          pas besoin de se retourner <br />
+          travailler par tous les temps
         </>
       ),
     },
   ],
 }
 
-// 首页第七部分的内容数据配置 En
+// 首页第七部分的内容数据配置 Fr
 const contentSection1Props2: IContentSection1Props = {
   title: (
     <>
-      Real Compost <br />
-      Not Dehydrated Waste
+      Du vrai compost <br />
+      Déchets non déshydratés
     </>
   ),
   description: (
     <>
-      Keep in mind that most other &quot;composters&quot; are actually
-      dehydrators;
+      Gardez à l’esprit que la plupart des autres « composteurs » sont en fait
+      des déshydrateurs;
       <br />
-      they simply cook and dry the food into pieces that look like soil.
+      ils cuisent et sèchent simplement les aliments en morceaux qui ressemblent
+      à de la terre.
       <br />
-      In contrast, GEME uses microbe bio-technology to enhance natural aerobic
-      fermentation, making it a genuine composting process.
+      En revanche, GAME utilise la biotechnologie microbienne pour améliorer la
+      fermentation aérobie naturelle, ce qui en fait un véritable processus de
+      compostage.
     </>
   ),
   imageSrc: '/assets/images/home-v2311/the-man-get-compost-from-geme.jpg',
-  imageAlt: 'the man get compost from GEME',
+  imageAlt: `l'homme récupère le compost de GAME`,
 }
 
-// 首页第八部分的内容数据配置 En
+// 首页第八部分的内容数据配置 Fr
 const contentSection1Props3: IContentSection1Props = {
   title: (
     <>
-      Powered by BioTech
+      Propulsé par BioTech
       <br />
-      and Modern Manufacture
+      et fabrication moderne
     </>
   ),
   description: (
     <>
-      Our science team has tested this technology extensively over the past 50
-      years in treating biowaste, soil, and polluted water. They have refined
-      the core technology, leading to the creation of GEME Kobold.
+      Notre équipe scientifique a testé cette technologie de manière approfondie au cours des 50 dernières années.
+       années dans le traitement des biodéchets, des sols et des eaux polluées. Ils ont affiné
+       la technologie de base, menant à la création de GEME Kobold.
       <br />
       <br />
-      Our engineering team possesses extensive experience in designing and
-      manufacturing trash compactors. They have recently developed the GEME
-      Composter.
+      Notre équipe d&apos;ingénieurs possède une vaste expérience dans la conception et
+       fabrication de compacteurs de déchets. Ils ont récemment développé le GEME
+       Composteur.
       <br />
       <br />
-      GEME Kobold and GEME Composter ignite a revolution.
+      GEME Kobold et GEME Composter déclenchent une révolution.
     </>
   ),
   imageSrc: '/assets/images/home-v2311/observe-the-plants.jpg',
-  imageAlt: 'observe the plants',
+  imageAlt: 'observer les plantes',
 }
 
-// 首页第九部分（三动图）的内容数据配置 En
+// 首页第九部分（三动图）的内容数据配置 Fr
 const contentSection5Props: IContentSection5Props = {
-  title: 'Turn Food Scraps into Organic Compost',
+  title: 'Transformez les restes de nourriture en compost organique',
   description: (
     <>
-      GEME Kobold is a microorganism reproducing when well fed.
+      GEME Kobold est un micro-organisme qui se reproduit lorsqu&apos;il est bien nourri.
       <br />
-      It breaks down your food waste, no matter how salty or acidic.
+      Il décompose vos déchets alimentaires, qu&apos;ils soient salés ou acides.
       <br />
-      The result? Ready-to-use, homemade organic compost for plants.
+      Le résultat? Compost organique maison prêt à l&apos;emploi pour plantes.
     </>
   ),
   images: [
     {
       id: 1,
-      stepText: 'Put Waste In',
+      stepText: 'Mettre des déchets',
       imageSrc: '/assets/images/home-v2311/compost-step-1.gif',
-      imageAlt: 'food waste picture',
+      imageAlt: 'photo de gaspillage alimentaire',
     },
     {
       id: 2,
-      stepText: 'Wait Few Days',
+      stepText: 'Attendez ',
       imageSrc: '/assets/images/home-v2311/compost-step-2.gif',
-      imageAlt: 'food waste picture',
+      imageAlt: 'photo de gaspillage alimentaire',
     },
     {
       id: 3,
-      stepText: 'Take Compost Out',
+      stepText: 'Sortez le compost',
       imageSrc: '/assets/images/home-v2311/compost-step-3.gif',
-      imageAlt: 'food waste picture',
+      imageAlt: 'photo de gaspillage alimentaire',
     },
   ],
   bottomDescription: (
-    <>Only 3 steps make it the easiest way to fight with climate changing.</>
+    <>Seulement 3 étapes en font le moyen le plus simple de lutter contre le changement climatique.</>
   ),
 }
 
-// 首页第十部分（地图）的内容数据配置 En
+// 首页第十部分（地图）的内容数据配置 Fr
 const footprintsProps: IFootprintsProps = {
   grayBackground: false,
-  title: "GEME's Green Footprints in the World",
+  title: "Empreintes vertes de GEME dans le monde",
   description:
-    'Thanks for backing GEME and bring more green to the world. Be the first one to spread to your place!',
+    `Merci de soutenir GEME et d'apporter plus de vert au monde. Soyez le premier à vous propager chez vous !`,
   proportionalSymbolMapProps: {
-    recentOrderedFrom: 'People from {city} back GEME with their love.',
+    recentOrderedFrom: 'Les gens de {city} soutiennent GEME avec leur amour.',
   },
 }
 
-// 首页最后一个部分（加入我们）的内容数据配置 En
+// 首页最后一个部分（加入我们）的内容数据配置 Fr
 const newsltterProps: INewsletterProps = {
   newsletterCenteredCardProps: {
-    title: 'Join the Movement',
+    title: 'Rejoignez le mouvement',
     description: (
       <>
-        A new approach to the world&apos;s waste problem begins with each of us,
-        effortless in daily life
+        Une nouvelle approche du problème mondial des déchets commence avec chacun de nous, sans effort dans la vie quotidienne
       </>
     ),
     emailInputName: 'email-address',
-    emailLabel: 'Email address',
-    emailPlaceholder: 'Enter your email',
-    submitButtonLabel: 'Subscribe',
+    emailLabel: 'Adresse e-mail',
+    emailPlaceholder: 'Entrer votre Email',
+    submitButtonLabel: `S'abonner`,
   },
   successNoticeProps: {
-    title: 'Thank you for subscribing!',
-    description: 'We will keep you updated with the latest news.',
+    title: 'Merci de vous être abonné!',
+    description: 'Nous vous tiendrons au courant des dernières nouvelles.',
   },
 }
 
-function HomePageEn() {
+function HomePageFr() {
   return (
     <>
       <HeroSection1 {...heroSection1Props} />
@@ -453,4 +461,4 @@ function HomePageEn() {
   )
 }
 
-export { HomePageEn }
+export { HomePageFr }
