@@ -1,6 +1,5 @@
 import ManualsDownload from './components/ManualsDownload'
 import type { IManualsDownloadProps } from './components/ManualsDownload'
-import { unstable_setRequestLocale } from 'next-intl/server'
 
 // 静态页面的内容 配置文件 De版
 const manualsDownloadProps: IManualsDownloadProps = {
