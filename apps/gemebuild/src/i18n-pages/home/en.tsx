@@ -26,6 +26,7 @@ import { Newsletter, INewsletterProps } from './containers/newsletter'
 import Link from 'next/link'
 import mixpanel from 'mixpanel-browser'
 
+// 首页video部分的内容数据配置 En
 const heroSection1Props: IHeroSection1Props = {
   title: (
     <>
@@ -80,8 +81,8 @@ const heroSection1Props: IHeroSection1Props = {
   },
 }
 
+// 首页第二部分的内容数据配置 En
 const contentSection2Props: IContentSection2Props = {
-  // title: 'Terrible Food Waste Experience?',
   title: 'Still Get Terrible Experience of Food Waste?',
   description: (
     <>
@@ -97,6 +98,7 @@ const contentSection2Props: IContentSection2Props = {
   imageAlt: 'food waste picture',
 }
 
+// 首页第三部分的内容数据配置 En
 const contentSection3Props: IContentSection3Props = {
   title: 'Food Waste to Plant Feed Magic Trash Bin',
   items: [
@@ -151,6 +153,7 @@ const contentSection3Props: IContentSection3Props = {
   ],
 }
 
+// 首页第四部分（youtube视频）的内容数据配置 En
 const contentSection4Props: IContentSection4Props = {
   title: (
     <>
@@ -178,6 +181,7 @@ const contentSection4Props: IContentSection4Props = {
   },
 }
 
+// 首页第五部分（滚动动画部分）的内容数据配置 En
 const secondLifeProps: ISecondLifeProps = {
   titleLeftPart: 'Compost',
   titleRightPart: 'New Life for Waste',
@@ -260,6 +264,7 @@ const secondLifeProps: ISecondLifeProps = {
   endTitleRightPart: 'Life Continue!',
 }
 
+// 首页第六部分的内容数据配置 En
 const contentSection6FixedProps: IContentSection6FixedProps = {
   title: 'The Easiest Way to Get Compost',
   videoPosterUrl: '/assets/images/home-v2311/use-compost-cover.jpg',
@@ -300,6 +305,7 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
   ],
 }
 
+// 首页第七部分的内容数据配置 En
 const contentSection1Props2: IContentSection1Props = {
   title: (
     <>
@@ -322,6 +328,7 @@ const contentSection1Props2: IContentSection1Props = {
   imageAlt: 'the man get compost from GEME',
 }
 
+// 首页第八部分的内容数据配置 En
 const contentSection1Props3: IContentSection1Props = {
   title: (
     <>
@@ -349,6 +356,7 @@ const contentSection1Props3: IContentSection1Props = {
   imageAlt: 'observe the plants',
 }
 
+// 首页第九部分（三动图）的内容数据配置 En
 const contentSection5Props: IContentSection5Props = {
   title: 'Turn Food Scraps into Organic Compost',
   description: (
@@ -385,6 +393,7 @@ const contentSection5Props: IContentSection5Props = {
   ),
 }
 
+// 首页第十部分（地图）的内容数据配置 En
 const footprintsProps: IFootprintsProps = {
   grayBackground: false,
   title: "GEME's Green Footprints in the World",
@@ -395,6 +404,7 @@ const footprintsProps: IFootprintsProps = {
   },
 }
 
+// 首页最后一个部分（加入我们）的内容数据配置 En
 const newsltterProps: INewsletterProps = {
   newsletterCenteredCardProps: {
     title: 'Join the Movement',
@@ -415,7 +425,7 @@ const newsltterProps: INewsletterProps = {
   },
 }
 
-export default function HomeEn() {
+function HomeEn() {
   return (
     <>
       <HeroSection1 {...heroSection1Props} />
@@ -442,3 +452,5 @@ export default function HomeEn() {
     </>
   )
 }
+
+export { HomeEn }
