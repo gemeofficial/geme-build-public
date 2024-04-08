@@ -570,7 +570,7 @@ const privacyPolicyProps: IPrivacyPolicyProps = {
 }
 
 function PrivacyPolicyPageFr() {
-  const url = 'https://www.geme.bio/privacy-policy'
+  const url = 'https://www.geme.bio/fr/privacy-policy'
 
   return (
     <>

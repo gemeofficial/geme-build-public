@@ -4,11 +4,11 @@ import {
 } from './components'
 import { SiteHelpTabs, ISiteHelpTabsProps } from '../../components/tabs'
 
-// 静态页面的navBar内容 配置文件 Fr版
+// 静态页面的navBar内容 配置文件 De版
 const siteHelpTabsProps: ISiteHelpTabsProps = {
   tabs: [
     {
-      title: "Conditions Générales d'Utilisation",
+      title: 'Bedingungen und Konditionen der Dienstleistungsvereinbarung',
       id: 'terms-and-conditions',
     },
     {
@@ -16,41 +16,41 @@ const siteHelpTabsProps: ISiteHelpTabsProps = {
       id: 'warranty',
     },
     {
-      title: 'Extension de Garantie',
+      title: 'Garantieverlängerung',
       id: 'warranty-extend',
     },
     {
-      title: 'Politique de Retour',
+      title: 'Rückgaberecht',
       id: 'return-policy',
     },
     {
-      title: 'Politique de Confidentialité',
+      title: 'Datenschutzrichtlinie',
       id: 'privacy-policy',
     },
     {
-      title: 'Programme de Fidélité GEME Dots',
+      title: 'GEME Dots-Treueprogramm',
       id: 'geme-dots-loyalty-program',
     },
   ],
   currentTabId: 'terms-and-conditions',
 }
 
-// 静态页面的内容 配置文件 Fr版
+// 静态页面的内容 配置文件 De版
 const termsAndConditionsProps: ITermsAndConditionsProps = {
-  title: 'Conditions Générales du Magasin ROKH',
+  title: 'Allgemeine Geschäftsbedingungen des ROKH Shops',
   forward: {
     description: `
-    <p class="mb-5">À travers la boutique en ligne ROKH SRL, ROKH SRL souhaite offrir à l'utilisateur final des accessoires et des pièces de rechange pour les appareils ROKH SRL ainsi que certains appareils ROKH SRL. Nous vous remercions de votre confiance et nous valorisons vos droits. Les conditions générales de vente suivantes indiquent clairement votre situation légale. En accédant à la boutique en ligne ROKH SRL, vous acceptez l'engagement légal et acceptez de respecter les termes et conditions suivants.</p>
-    <p class="mb-5"><b>Numéro d'organisation</b> : <a class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150">0719-978-144</a>.</p>
-    <p class="mb-5"><b>Nom de l'entreprise</b> : ROKH SRL</p>
-    <p class="mb-5"><b>E-mail</b> : <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a></p>
-    <p class="mb-5"><b>Heures d'ouverture</b> : de 9h à 17h (CET) en semaine</p>
-          `,
+        <p class="mb-5">Über den ROKH SRL Online Shop möchte ROKH SRL dem Endverbraucher Zubehör und Ersatzteile für ROKH SRL Geräte und bestimmte ROKH SRL Geräte anbieten. Wir danken Ihnen für Ihr Vertrauen in uns und schätzen Ihre Rechte. Die folgenden allgemeinen Verkaufsbedingungen zeigen Ihre rechtliche Situation deutlich auf. Indem Sie den Zugang zum ROKH SRL Online Shop ermöglichen, akzeptieren Sie die rechtliche Verpflichtung und stimmen zu, die folgenden Bedingungen einzuhalten.</p>
+        <p class="mb-5"><b>Nummer der Organisation</b>: <a class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150">0719-978-144</a>.</p>
+        <p class="mb-5"><b>Name des Unternehmens</b>: ROKH SRL</p>
+        <p class="mb-5"><b>E-mail</b>: <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a></p>
+        <p class="mb-5"><b>Arbeitszeit</b>: 9.00 bis 17.00 Uhr (CET) werktags</p>
+        `,
     imgSrc: '/assets/images/terms-and-conditions/general-terms.png',
   },
   items: [
     {
-      name: 'Produits proposés sur notre site web',
+      name: 'Auf unserer Website angebotene Produkte',
       svgSrc: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -68,11 +68,11 @@ const termsAndConditionsProps: ITermsAndConditionsProps = {
         </svg>
       ),
       description: `
-      <p class="mb-5">Tous les produits vendus dans la boutique en ligne ROKH SRL sont décrits de manière aussi complète et précise que possible. Les offres et les prix sont valables à la date à laquelle ils sont mis à disposition sur le site. Les prix mentionnés incluent la TVA et peuvent inclure des contributions de recyclage. Nous proposons nos produits dans la boutique en ligne jusqu'à épuisement des stocks. En règle générale, tous les produits proposés sont toujours en stock et seront expédiés immédiatement. Cependant, il peut arriver qu'un article ne soit plus disponible. Nous veillons alors à ce que le produit soit livré dès que possible. Vous pouvez annuler votre commande à tout moment à votre discrétion. Pour plus d'informations sur les garanties, voir "Garanties" ci-dessous.</a> </p>
-            `,
+          <p class="mb-5">Alle im Online-Shop von ROKH SRL verkauften Produkte werden so vollständig und genau wie möglich beschrieben. Angebote und Preise gelten ab dem Datum ihrer Veröffentlichung auf der Website. Die genannten Preise verstehen sich inklusive Mehrwertsteuer und können Recyclingbeiträge enthalten. Wir bieten unsere Produkte im Online-Shop an, solange der Vorrat reicht. In der Regel sind alle angebotenen Produkte immer auf Lager und werden sofort versendet. Es kann jedoch vorkommen, dass ein Artikel nicht mehr verfügbar ist. Wir sorgen dann dafür, dass das Produkt so schnell wie möglich geliefert wird. Sie können Ihre Bestellung jederzeit nach eigenem Ermessen stornieren. Weitere Informationen zu Garantien finden Sie unter <a href="#warranty">„Garantien“ weiter unten.</a> </p>
+          `,
     },
     {
-      name: 'Accord entre vous et ROKH SRL',
+      name: 'Vereinbarung zwischen Ihnen und ROKH SRL',
       svgSrc: (
         <svg
           className="w-16 h-16"
@@ -88,11 +88,11 @@ const termsAndConditionsProps: ITermsAndConditionsProps = {
         </svg>
       ),
       description: `
-      <p class="mb-5">Un accord contraignant entre vous et ROKH SRL existe lorsque ROKH SRL reçoit votre commande dans la boutique en ligne. Notre confirmation de commande est un résumé de votre commande et contient un lien vers ces termes et conditions. Cependant, ROKH SRL peut décider de soumettre la validité de l'accord à d'autres conditions, telles que les commandes importantes, les commandes passées par des mineurs, les commandes incomplètes ou inexactes, ou les commandes antérieures qui n'ont pas été payées. Selon la Loi sur les Pratiques Commerciales, la perte/dommage est la responsabilité du vendeur. Cependant, il nous a alertés dans un délai acceptable (10 jours après la passation de la commande). ROKH SRL se réserve le droit de refuser votre demande si elle n'est pas livrée dans ce délai.</p>
-            `,
+          <p class="mb-5">Ein verbindlicher Vertrag zwischen Ihnen und ROKH SRL kommt zustande, wenn ROKH SRL Ihre Bestellung im Online-Shop erhält. Unsere Bestellbestätigung ist eine Zusammenfassung Ihrer Bestellung und enthält einen Link zu diesen Allgemeinen Geschäftsbedingungen. ROKH SRL kann jedoch beschließen, die Gültigkeit der Vereinbarung von anderen Bedingungen abhängig zu machen, wie z. B. Großbestellungen, Bestellungen von Minderjährigen, unvollständige oder ungenaue Bestellungen oder nicht bezahlte frühere Bestellungen. Gemäß dem Trade Practices Act liegt die Verantwortung für Verluste/Schäden beim Verkäufer. Er hat uns jedoch innerhalb einer akzeptablen Frist (10 Tage nach Auftragserteilung) darauf aufmerksam gemacht. ROKH SRL behält sich das Recht vor, Ihre Anfrage abzulehnen, wenn sie nicht innerhalb dieser Frist geliefert wird.</p>
+          `,
     },
     {
-      name: 'Votre droit de retourner les marchandises dans les 30 jours suivant la réception',
+      name: 'Ihr Recht, die Ware innerhalb von 30 Tagen nach Erhalt zurückzugeben',
       svgSrc: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -110,14 +110,14 @@ const termsAndConditionsProps: ITermsAndConditionsProps = {
         </svg>
       ),
       description: `
-      <p class="mb-5">La loi belge sur les pratiques commerciales et l'information et la protection des consommateurs permet à l'acheteur d'informer le vendeur qu'il abandonnera l'achat dans les 30 jours suivant la réception du produit. Les marchandises doivent être suivies dans un délai acceptable (7 jours) après la réception des marchandises et sans les ouvrir pour utilisation. Nous recommandons de conserver les marchandises dans leur emballage et condition d'origine autant que possible afin que vous ne soyez pas obligé d'être responsable de toute dévaluation des marchandises résultant de leur disposition.</p>
-      <p class="mb-5">Vous pouvez envoyer un formulaire de retrait par <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a> pour nous informer que vous abandonnez votre achat. Vous devez ensuite retourner les marchandises par la poste normale à l'adresse que nous avons demandée avec suffisamment d'affranchissement et une copie de la facture.</p>
-      <p class="mb-5">Pour que nous puissions émettre un remboursement, veuillez également nous fournir votre numéro de compte. À la réception de votre retour, nous émettrons un avoir et rembourserons le montant payé dans les 14 jours. Il n'y a pas d'exceptions au formulaire d'annulation.</p>
-      <p class="mb-5">Si vous recevez un produit qui n'est pas ce que vous avez commandé ou qui est endommagé, vous devez alors nous en informer de la même manière et retourner le produit de la même manière. Cependant, dans ce cas, nous vous rembourserons également les frais de port envoyés par courrier ordinaire.</p>
-      `,
+          <p class="mb-5">Das belgische Gesetz über Handelspraktiken sowie Verbraucherinformation und -schutz ermöglicht es dem Käufer, den Verkäufer innerhalb von 30 Tagen nach Erhalt des Produkts darüber zu informieren, dass er den Kauf abbrechen wird. Die Nachverfolgung der Ware muss innerhalb einer angemessenen Frist (7 Tage) nach Erhalt der Ware und ohne Öffnung zur Nutzung erfolgen. Wir empfehlen Ihnen, die Ware möglichst in der Originalverpackung und im Originalzustand aufzubewahren, damit Sie nicht für eine etwaige Wertminderung der Ware durch deren Entsorgung verantwortlich gemacht werden müssen.</p>
+          <p class="mb-5">Sie können ein Widerrufsformular an <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 Transition Easy-In-Out Duration-150 Underline">info@ senden. geme.bio</a>, um uns mitzuteilen, dass Sie Ihren Kauf abbrechen. Anschließend müssen Sie die Ware ausreichend frankiert und mit einer Rechnungskopie auf dem normalen Postweg an die von uns angegebene Adresse zurücksenden.</p>
+          <p class="mb-5">Damit wir eine Rückerstattung veranlassen können, teilen Sie uns bitte auch Ihre Kontonummer mit. Nach Erhalt Ihrer Rücksendung erstellen wir eine Gutschrift und erstatten Ihnen den gezahlten Betrag innerhalb von 14 Tagen. Von der Widerrufsbelehrung gibt es keine Ausnahmen.</p>
+          <p class="mb-5">Wenn Sie ein Produkt erhalten, das nicht Ihrer Bestellung entspricht oder beschädigt ist, müssen Sie uns auf die gleiche Weise informieren und das Produkt auf die gleiche Weise zurücksenden. Allerdings erstatten wir Ihnen in diesem Fall auch die Versandkosten für den postalischen Versand.</p>
+          `,
     },
     {
-      name: 'Livraisons',
+      name: 'Lieferungen',
       svgSrc: (
         <svg
           className="w-16 h-16"
@@ -136,12 +136,12 @@ const termsAndConditionsProps: ITermsAndConditionsProps = {
         </svg>
       ),
       description: `
-      <p class="mb-5">Nous livrons des accessoires et petits appareils par service de messagerie. Le délai de livraison final est en principe de 30 jours. Pour les commandes jusqu'à 50 euros, vous devrez payer des frais de livraison de 5 euros. À partir de 50 €, la livraison est gratuite. ROKH SRL offre la livraison uniquement en Belgique. Pour les livraisons dans d'autres pays/régions, veuillez visiter notre site web international www.geme.bio. Le lieu de livraison est celui que vous spécifiez dans votre commande. Si vous n'êtes pas présent au moment de la livraison, votre colis réapparaîtra. Le colis est alors renvoyé chez nous par le prestataire de service d'expédition.</p>
-      <p class="mb-5">Lorsque nous livrons le nouvel équipement, nous pouvons emporter gratuitement votre ancien équipement si vous le souhaitez. Cela doit être convenu dans le contact par e-mail.</p>
-      `,
+          <p class="mb-5">Wir liefern Zubehör und Kleingeräte per Kurierdienst. Die endgültige Lieferzeit beträgt grundsätzlich 30 Tage. Bei Bestellungen bis 50 Euro fällt eine Versandkostenpauschale von 5 Euro an. Ab 50 € erfolgt die Lieferung versandkostenfrei. ROKH SRL bietet Lieferungen nur in Belgien an. Für Lieferungen in andere Länder/Regionen besuchen Sie bitte unsere internationale Website www.geme.bio. Der Lieferort ist derjenige, den Sie in Ihrer Bestellung angeben. Wenn Sie zum Zeitpunkt der Zustellung nicht anwesend sind, wird Ihr Paket erneut angezeigt. Das Paket wird dann vom Versanddienstleister an uns zurückgesendet.</p>
+          <p class="mb-5">Bei der Anlieferung der Neugeräte nehmen wir Ihre Altgeräte auf Wunsch kostenfrei mit. Dies sollte im E-Mail-Kontakt vereinbart werden.</p>
+          `,
     },
     {
-      name: 'Paiement',
+      name: 'Zahlung',
       svgSrc: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -158,10 +158,10 @@ const termsAndConditionsProps: ITermsAndConditionsProps = {
           />
         </svg>
       ),
-      description: `<p>Vous pouvez payer en ligne avec Visa, Mastercard ou Bancontact. Commander chez ROKH SRL est totalement sécurisé. Pour tous les paiements en ligne, ROKH SRL travaille avec Strips, l'un des leaders mondiaux du marché des paiements en ligne. Vous pouvez saisir vos données de paiement lors de la commande et vos données seront envoyées de manière sécurisée via Strips.</p>`,
+      description: `<p>Sie können online mit Visa, Mastercard oder Bancontact bezahlen. Die Bestellung bei ROKH SRL ist 100 % sicher. Für alle Online-Zahlungen arbeitet ROKH SRL mit Strips zusammen, einem der weltweiten Marktführer für Online-Zahlungen. Sie können bei der Bestellung Ihre Zahlungsdaten eingeben und Ihre Daten werden sicher über Strips versendet.</p>`,
     },
     {
-      name: 'Avertissement et Limitation de Responsabilité',
+      name: 'Haftungsausschluss und Haftungsbeschränkung',
       svgSrc: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -178,10 +178,10 @@ const termsAndConditionsProps: ITermsAndConditionsProps = {
           />
         </svg>
       ),
-      description: `<p>ROKH SRL n'est pas responsable des défauts techniques du site web et ne garantit pas les résultats qui peuvent être obtenus par l'utilisation du site. Ce site est fourni par ROKH SRL "tel quel" et "selon la disponibilité". ROKH SRL ne fait aucune déclaration ni garantie, expresse ou implicite, quant au fonctionnement du site, aux informations, au contenu, aux matériaux ou aux produits présentés sur le site. Toutes les offres sont disponibles jusqu'à épuisement des stocks. ROKH SRL ne sera pas responsable des dommages résultant de l'utilisation de ce site.</p>`,
+      description: `<p>ROKH SRL ist nicht verantwortlich für technische Mängel der Website und ROKH SRL übernimmt keine Garantie für die Ergebnisse, die durch die Nutzung der Website erzielt werden können. Diese Website wird von ROKH SRL „wie besehen“ und „wie verfügbar“ bereitgestellt. ROKH SRL gibt keine Zusicherungen oder Gewährleistungen, weder ausdrücklich noch stillschweigend, hinsichtlich des Betriebs der Website, der Informationen, Inhalte, Materialien oder Produkte, die auf der Website erscheinen. Alle Angebote gelten solange der Vorrat reicht. ROKH SRL haftet nicht für Schäden, die aus der Nutzung dieser Website entstehen.</p>`,
     },
     {
-      name: 'Lutte contre la Contrefaçon',
+      name: 'Anti-Fälschungen',
       svgSrc: (
         <svg
           className="w-16 h-16"
@@ -197,10 +197,10 @@ const termsAndConditionsProps: ITermsAndConditionsProps = {
           ></path>
         </svg>
       ),
-      description: `<p>L'entrepreneur ne proposera que des produits qu'il a achetés auprès du fabricant original et de son grossiste, ou qu'il a fabriqués lui-même à tout moment. En cas de doute sur l'authenticité des produits, ou si une infraction est soupçonnée, les consommateurs peuvent toujours déposer des plaintes via <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a> pour déposer une plainte.</p>`,
+      description: `<p>Der Unternehmer wird nur Produkte anbieten, die er beim Originalhersteller und seinem Großhändler erworben hat oder die er zu irgendeinem Zeitpunkt selbst hergestellt hat. Bei Zweifeln an der Echtheit der Produkte oder bei Verdacht auf einen Verstoß können Verbraucher jederzeit Beschwerden über <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent" einreichen -9 Übergangsdauer – 150 Unterstreichen Sie „info@geme.bio“, um eine Beschwerde einzureichen.</p>`,
     },
     {
-      name: 'Clause de compensation',
+      name: 'Entschädigungsklausel',
       svgSrc: (
         <svg
           className="w-16 h-16"
@@ -221,10 +221,10 @@ const termsAndConditionsProps: ITermsAndConditionsProps = {
           ></path>
         </svg>
       ),
-      description: `<p>En cas de non-paiement à la date d'échéance, le prix convenu sera augmenté d'une compensation égale à 15 %. De plus, des intérêts de retard sont facturés à raison de 1 % par mois.</p>`,
+      description: `<p>Bei Nichtzahlung am Fälligkeitstag erhöht sich der vereinbarte Preis um eine Entschädigung in Höhe von 15 %. Darüber hinaus werden Verzugszinsen in Höhe von 1 % pro Monat berechnet.</p>`,
     },
     {
-      name: 'Réclamations',
+      name: 'Beschwerden',
       svgSrc: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -242,12 +242,12 @@ const termsAndConditionsProps: ITermsAndConditionsProps = {
         </svg>
       ),
       description: `
-      <p class="md-5">Si vous avez des réclamations, vous pouvez toujours envoyer un e-mail à <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a>.</p>
-      <p class="md-5">Pour le règlement extrajudiciaire des litiges de consommation, l'UE a créé une plateforme en ligne ("Plateforme ODR") où vous pouvez vous renseigner par vous-même. Vous pouvez la trouver à <a href="http://ec.europa.eu/consumers/odr/" target="_blank" class="underline">http://ec.europa.eu/consumers/odr/</a></p>
-    `,
+          <p class="md-5">Wenn Sie Beschwerden haben, können Sie jederzeit eine E-Mail an senden <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a>.</p>
+          <p class="md-5">Zur außergerichtlichen Beilegung verbraucherrechtlicher Streitigkeiten hat die EU eine Online-Plattform („ODR-Plattform“) geschaffen, auf der Sie sich selbst informieren können. Sie finden es unter <a href="http://ec.europa.eu/consumers/odr/" target="_blank" class="underline">http://ec.europa.eu/consumers/odr/</a></p>
+          `,
     },
     {
-      name: 'Législation applicable et juridiction',
+      name: 'Anwendbare Gesetzgebung und Gerichtsstand',
       svgSrc: (
         <svg
           className="w-16 h-16"
@@ -269,11 +269,11 @@ const termsAndConditionsProps: ITermsAndConditionsProps = {
         </svg>
       ),
       description: `
-      <p class="md-5">Le droit belge est applicable et les tribunaux de la Région wallonne ont compétence.</p>
-            `,
+            <p class="md-5">Es gilt belgisches Recht und die Gerichte der Wallonischen Region sind zuständig.</p>
+          `,
     },
     {
-      name: "Langue de l'Accord",
+      name: 'Sprache der Vereinbarung',
       svgSrc: (
         <svg
           className="w-16 h-16"
@@ -288,20 +288,20 @@ const termsAndConditionsProps: ITermsAndConditionsProps = {
         </svg>
       ),
       description: `
-      <p class="md-5">ROKH SRL est disponible en plusieurs langues. Vous pouvez faire votre choix en cliquant sur une langue lors de votre première visite. La langue que vous choisissez est également la langue dans laquelle vous effectuerez vos transactions et vos communications ultérieures avec ROKH SRL.</p>
-            `,
+            <p class="md-5">ROKH SRL ist in mehreren Sprachen verfügbar. Sie können Ihre Wahl treffen, indem Sie bei Ihrem ersten Besuch auf eine Sprache klicken. Die von Ihnen gewählte Sprache ist auch die Sprache, die Sie für Ihre Transaktionen und die anschließende Kommunikation mit ROKH SRL verwenden.</p>
+          `,
     },
   ],
 }
-function TermsAndConditionsPageFr() {
+function TermsAndConditionsPageDe() {
   return (
     <>
-      <link rel="canonical" href="https://www.geme.bio/fr/terms-and-conditions" />
-      <h1 className="sr-only">Termes et Conditions GEME</h1>
+      <link rel="canonical" href="https://www.geme.bio/de/terms-and-conditions" />
+      <h1 className="sr-only">Allgemeine Geschäftsbedingungen von GEME</h1>
       <SiteHelpTabs {...siteHelpTabsProps} />
       <TermsAndConditions {...termsAndConditionsProps} />
     </>
   )
 }
 
-export { TermsAndConditionsPageFr }
+export { TermsAndConditionsPageDe }
