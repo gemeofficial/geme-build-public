@@ -32,6 +32,7 @@ function ManualsDownloadPageDe() {
   return (
     <>
       <link rel="canonical" href={url} />
+      <h1 className="sr-only">GAME-Handbücher herunterladen</h1>
       <ManualsDownload {...manualsDownloadProps} />
     </>
   )

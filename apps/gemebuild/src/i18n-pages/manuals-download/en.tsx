@@ -33,6 +33,7 @@ function ManualsDownloadPageEn() {
   return (
     <>
       <link rel="canonical" href={url} />
+      <h1 className="sr-only">GEME Manuals Download</h1>
       <ManualsDownload {...manualsDownloadProps} />
     </>
   )
