@@ -10,6 +10,7 @@ export * from './geme-dots-loyalty-program'
 export * from './self-repair'
 export * from './industrial-equipments'
 export * from './industrial-equipments-id'
+export * from './manuals-download'
 
 // contexts
 export * from '../contexts/link-context'

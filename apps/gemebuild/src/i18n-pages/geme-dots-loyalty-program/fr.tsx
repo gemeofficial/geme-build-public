@@ -70,7 +70,8 @@ const gemeDotsProps: IGemeDotsProps = {
           'Vous pouvez vous inscrire facilement sur <a href="https://www.geme.bio/signup" class="underline">https://www.geme.bio/signup</a>. Vous pouvez utiliser les données de votre compte client si vous êtes déjà client.',
       },
       {
-        question: 'La participation au programme de fidélité GEME Dots est-elle payante ?',
+        question:
+          'La participation au programme de fidélité GEME Dots est-elle payante ?',
         answer:
           "L'adhésion au programme de fidélité GEME Dots est entièrement gratuite.",
       },
@@ -99,7 +100,8 @@ const gemeDotsProps: IGemeDotsProps = {
             `,
       },
       {
-        question: 'Combien de points GEME de fidélité puis-je utiliser par commande ? ',
+        question:
+          'Combien de points GEME de fidélité puis-je utiliser par commande ? ',
         answer: `<p>
         La valeur des Game Dots que vous échangez ne peut pas dépasser la valeur de votre commande. De plus, vous pouvez échanger jusqu'à 40 000 GAME Dots par achat, soit une réduction immédiate de 40 €.
             </p>`,
@@ -107,15 +109,18 @@ const gemeDotsProps: IGemeDotsProps = {
       {
         question:
           'Certains produits de cette gamme sont-ils exclus du programme de fidélité GEME Dots ? ',
-        answer: "Oui, pour des raisons légales, la réduction ne s'applique pas aux livres.",
+        answer:
+          "Oui, pour des raisons légales, la réduction ne s'applique pas aux livres.",
       },
       {
         question: 'Comment puis-je échanger mes points GEME ? ',
-        answer:"Les GEME Dots collectés lors de la commande peuvent être convertis en bon d'achat. Les GEME Dots seront convertis en un montant qui sera déduit du montant de votre facture. Vous pouvez décider au niveau du panier lors de chaque commande si vous souhaitez échanger vos GEME Dots ou continuer à les collecter.",
+        answer:
+          "Les GEME Dots collectés lors de la commande peuvent être convertis en bon d'achat. Les GEME Dots seront convertis en un montant qui sera déduit du montant de votre facture. Vous pouvez décider au niveau du panier lors de chaque commande si vous souhaitez échanger vos GEME Dots ou continuer à les collecter.",
       },
       {
         question: 'Mes points GEME vont-ils expirer ?',
-        answer:"Oui, vos GEME Dots expireront si vos GEME Dots n'ont pas été utilisés depuis trois ans ou si vous n'avez pas passé de commande sur un compte lié depuis 12 mois.",
+        answer:
+          "Oui, vos GEME Dots expireront si vos GEME Dots n'ont pas été utilisés depuis trois ans ou si vous n'avez pas passé de commande sur un compte lié depuis 12 mois.",
       },
     ],
   },
@@ -127,10 +132,7 @@ const gemeDotsProps: IGemeDotsProps = {
         description: `
           <p>
           Le responsable du programme de fidélité GEME Dots est
-           ROKH SRL<br /><br />
-<!--          Rue de Sart 38<br /><br />-->
-<!--          1457 Walhain<br /><br />-->
-<!--          Belgique<br /><br />-->
+          ROKH SRL<br /><br />
           Avenue Louis Schmidt 29，<br /><br />
           1040 Etterbeek, <br /><br />
           Bruxelles, <br /><br />

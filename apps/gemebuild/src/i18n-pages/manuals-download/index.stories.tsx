@@ -1,26 +1,26 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { ReturnPolicyPageDe, ReturnPolicyPageEn, ReturnPolicyPageFr } from '.'
+import { ManualsDownloadPageDe, ManualsDownloadPageEn,ManualsDownloadPageFr } from '.'
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Pages/return-policy',
-} satisfies Meta<typeof ReturnPolicyPageEn>
+  title: 'Pages/maunals-download',
+} satisfies Meta<typeof ManualsDownloadPageEn>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const En: Story = {
   name: 'en',
-  render: () => <ReturnPolicyPageEn />,
+  render: () => <ManualsDownloadPageEn />,
 }
 
 export const Fr: Story = {
   name: 'fr',
-  render: () => <ReturnPolicyPageFr />,
+  render: () => <ManualsDownloadPageFr />,
 }
 
 export const De: Story = {
   name: 'de',
-  render: () => <ReturnPolicyPageDe />,
+  render: () => <ManualsDownloadPageDe />,
 }

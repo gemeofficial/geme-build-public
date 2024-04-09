@@ -1,9 +1,10 @@
 import {
   TermsAndConditions,
   ITermsAndConditionsProps,
-} from './terms-and-conditions'
+} from './components'
 import { SiteHelpTabs, ISiteHelpTabsProps } from '../../components/tabs'
 
+// 静态页面的navBar内容 配置文件 En版
 const siteHelpTabsProps: ISiteHelpTabsProps = {
   tabs: [
     {
@@ -34,6 +35,7 @@ const siteHelpTabsProps: ISiteHelpTabsProps = {
   currentTabId: 'terms-and-conditions',
 }
 
+// 静态页面的内容 配置文件 En版
 const termsAndConditionsProps: ITermsAndConditionsProps = {
   title: 'ROKH Shop General Terms and Conditions',
   forward: {
@@ -291,6 +293,7 @@ const termsAndConditionsProps: ITermsAndConditionsProps = {
     },
   ],
 }
+
 function TermsAndConditionsPageEn() {
   return (
     <>

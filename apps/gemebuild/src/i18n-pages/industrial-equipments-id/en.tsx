@@ -3,7 +3,7 @@ import EquipmentView, {
   IProductOverviewSplitWithImageOtherProps,
 } from './components/EquipmentView'
 
-// 翻译其他语言版本需要将Data中的数据一并翻译
+// 1.翻译其他语言版本需要将Data中的数据一并翻译
 import { items } from '../../helpers/industrial-equipments/data/data-en'
 import type { TEquipment } from '../../helpers/industrial-equipments/data/data-en'
 
@@ -24,7 +24,7 @@ interface IPageProps {
   searchParams?: Record<string, string | undefined>
 }
 
-//  productOverviewSplitWithImage组件内容的配置数据  En版
+//  2.productOverviewSplitWithImage组件内容的配置数据  En版
 const productOverviewSplitWithImageOtherProps: IProductOverviewSplitWithImageOtherProps =
   {
     firstBreadcrumbsName: 'All equipments',
@@ -32,7 +32,7 @@ const productOverviewSplitWithImageOtherProps: IProductOverviewSplitWithImageOth
     btn2Label: `Get in touch`,
   }
 
-//  EquipmentFeatures组件内容的配置数据  En版
+//  3.EquipmentFeatures组件内容的配置数据  En版
 function generateEquipmentFeaturesProps(equipment: TEquipment): IEquipmentFeaturesProps {
   return {
     equipment,
@@ -86,6 +86,7 @@ function IndustrialEquipmentsIdPageEn({ params }: IPageProps) {
   return (
     <>
       <link rel="canonical" href={equipmentCanonicalUrl(equipment)} />
+      <h1 className="sr-only">GEME Industrial Equipments Detail</h1>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={industrialEquipmentXJsonLd(

@@ -272,7 +272,8 @@ function SelfRepairPageFr() {
   const props = { faqGroups, heroProps }
   return (
     <>
-      <link rel="canonical" href="https://www.geme.bio/self-repair" />
+      <link rel="canonical" href="https://www.geme.bio/fr/self-repair" />
+      <h1 className="sr-only">GEME Auto-Réparation</h1>
       <SelfRepairView {...props} />
     </>
   )

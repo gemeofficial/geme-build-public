@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { SelfRepairPageEn, SelfRepairPageFr } from '.'
+import { SelfRepairPageDe, SelfRepairPageEn, SelfRepairPageFr } from '.'
 
 const meta = {
   title: 'Pages/self-repair',
@@ -17,4 +17,9 @@ export const En: Story = {
 export const Fr: Story = {
   name: 'fr',
   render: () => <SelfRepairPageFr />,
+}
+
+export const De: Story = {
+  name: 'de',
+  render: () => <SelfRepairPageDe />,
 }
