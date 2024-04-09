@@ -32,7 +32,7 @@ const heroSection1Props: IHeroSection1Props = {
     <>
       <span className="hidden xl:inline">
         Le premier composteur <br />
-        <span className="indent-36 block">de biodéchets au monde</span>
+        <span className="ml-24 block">de biodéchets au monde</span>
       </span>
       <span className="xl:hidden">
         Le premier composteur de biodéchets au monde
