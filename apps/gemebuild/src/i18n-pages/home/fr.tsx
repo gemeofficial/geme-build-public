@@ -31,8 +31,8 @@ const heroSection1Props: IHeroSection1Props = {
   title: (
     <>
       <span className="hidden xl:inline">
-        Le premier composteur <br/>
-        <span className='indent-36 block'>de biodéchets au monde</span>
+        Le premier composteur <br />
+        <span className="indent-36 block">de biodéchets au monde</span>
       </span>
       <span className="xl:hidden">
         Le premier composteur de biodéchets au monde
@@ -283,9 +283,9 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep1,
       description: (
         <>
-          pas de temps d&apos;attente lent
+          pas de temps d&apos;attente
           <br />
-          entretien facile
+          lents et maintenance facile
         </>
       ),
     },
@@ -294,8 +294,8 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep2,
       description: (
         <>
-          pas de gâchis ni d&apos;odeur <br />
-          propre et sans odeur
+          pas de salissures <br />
+          odeur propre et inodore
         </>
       ),
     },
@@ -304,8 +304,8 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep3,
       description: (
         <>
-          pas besoin de se retourner <br />
-          travailler par tous les temps
+          pas besoin de transférer <br />
+          le travail par tous les temps
         </>
       ),
     },
@@ -348,14 +348,15 @@ const contentSection1Props3: IContentSection1Props = {
   ),
   description: (
     <>
-      Notre équipe scientifique a testé cette technologie de manière approfondie au cours des 50 dernières années.
-       années dans le traitement des biodéchets, des sols et des eaux polluées. Ils ont affiné
-       la technologie de base, menant à la création de GEME Kobold.
+      Notre équipe scientifique a testé cette technologie de manière approfondie
+      au cours des 50 dernières années. années dans le traitement des
+      biodéchets, des sols et des eaux polluées. Ils ont affiné la technologie
+      de base, menant à la création de GEME Kobold.
       <br />
       <br />
-      Notre équipe d&apos;ingénieurs possède une vaste expérience dans la conception et
-       fabrication de compacteurs de déchets. Ils ont récemment développé le GEME
-       Composteur.
+      Notre équipe d&apos;ingénieurs possède une vaste expérience dans la
+      conception et fabrication de compacteurs de déchets. Ils ont récemment
+      développé le GEME Composteur.
       <br />
       <br />
       GEME Kobold et GEME Composter déclenchent une révolution.
@@ -370,7 +371,8 @@ const contentSection5Props: IContentSection5Props = {
   title: 'Transformez les restes de nourriture en compost organique',
   description: (
     <>
-      GEME Kobold est un micro-organisme qui se reproduit lorsqu&apos;il est bien nourri.
+      GEME Kobold est un micro-organisme qui se reproduit lorsqu&apos;il est
+      bien nourri.
       <br />
       Il décompose vos déchets alimentaires, qu&apos;ils soient salés ou acides.
       <br />
@@ -386,7 +388,7 @@ const contentSection5Props: IContentSection5Props = {
     },
     {
       id: 2,
-      stepText: 'Attendez ',
+      stepText: 'Attendez quelques jours',
       imageSrc: '/assets/images/home-v2311/compost-step-2.gif',
       imageAlt: 'photo de gaspillage alimentaire',
     },
@@ -398,16 +400,18 @@ const contentSection5Props: IContentSection5Props = {
     },
   ],
   bottomDescription: (
-    <>Seulement 3 étapes en font le moyen le plus simple de lutter contre le changement climatique.</>
+    <>
+      Seulement 3 étapes en font le moyen le plus simple de lutter contre le
+      changement climatique.
+    </>
   ),
 }
 
 // 首页第十部分（地图）的内容数据配置 Fr
 const footprintsProps: IFootprintsProps = {
   grayBackground: false,
-  title: "Empreintes vertes de GEME dans le monde",
-  description:
-    `Merci de soutenir GEME et d'apporter plus de vert au monde. Soyez le premier à vous propager chez vous !`,
+  title: 'Empreintes vertes de GEME dans le monde',
+  description: `Merci de soutenir GEME et d'apporter plus de vert au monde. Soyez le premier à vous propager chez vous !`,
   proportionalSymbolMapProps: {
     recentOrderedFrom: 'Les gens de {city} soutiennent GEME avec leur amour.',
   },
@@ -419,7 +423,8 @@ const newsltterProps: INewsletterProps = {
     title: 'Rejoignez le mouvement',
     description: (
       <>
-        Une nouvelle approche du problème mondial des déchets commence avec chacun de nous, sans effort dans la vie quotidienne
+        Une nouvelle approche du problème mondial des déchets commence avec
+        chacun de nous, sans effort dans la vie quotidienne
       </>
     ),
     emailInputName: 'email-address',

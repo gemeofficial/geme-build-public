@@ -108,7 +108,7 @@ const contentSection3Props: IContentSection3Props = {
       id: 1,
       description: (
         <>
-          Werfen Sie alle Arten von Abfällen weg
+          Wirf alle möglichen Abfälle weg
           <br />
           Fügen Sie jederzeit Lebensmittelabfälle hinzu
         </>
@@ -283,7 +283,7 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
         <>
           keine lange Wartezeit
           <br />
-          einfache Wartung
+          und einfache Wartung
         </>
       ),
     },
@@ -292,7 +292,8 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep2,
       description: (
         <>
-          keine stinken und <br />
+          kein Schmutz riecht
+          <br />
           sauber und geruchlos
         </>
       ),
@@ -302,8 +303,8 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep3,
       description: (
         <>
-          kein Umdrehen nötig <br />
-          Arbeiten bei jedem Wetter
+          keine Übergabe der <br />
+          arbeit bei jedem Wetter
         </>
       ),
     },
@@ -386,7 +387,7 @@ const contentSection5Props: IContentSection5Props = {
     },
     {
       id: 2,
-      stepText: 'Warten Sie ein paar Tage',
+      stepText: 'warte ein paar Tage',
       imageSrc: '/assets/images/home-v2311/compost-step-2.gif',
       imageAlt: 'Bild der Lebensmittelverschwendung',
     },
@@ -433,7 +434,8 @@ const newsltterProps: INewsletterProps = {
   },
   successNoticeProps: {
     title: 'Danke fürs Abonnieren!',
-    description: 'Wir halten Sie mit den neuesten Nachrichten auf dem Laufenden.',
+    description:
+      'Wir halten Sie mit den neuesten Nachrichten auf dem Laufenden.',
   },
 }
 
