@@ -30,7 +30,7 @@ import mixpanel from 'mixpanel-browser'
 const heroSection1Props: IHeroSection1Props = {
   title: (
     <>
-      <span className="hidden xl:inline text-nowrap">
+      <span className="hidden xl:inline whitespace-nowrap">
         Der erste Bioabfallkomposter der Welt
       </span>
       <span className="xl:hidden">Der erste Bioabfallkomposter der Welt</span>
