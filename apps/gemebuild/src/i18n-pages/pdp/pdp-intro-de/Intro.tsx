@@ -446,7 +446,7 @@ const pdpIntroSection8Props: IPdpIntroSection8Props = {
   bgDesktopImageSrc:
     '/assets/images/pdp-v2311/dividers/use-geme-compost-in-a-garden.jpeg',
 
-  linkText: 'GET GEME',
+  linkText: 'ERHALTEN GEME',
   linkUrl: '/product/geme',
 }
 
