@@ -9,7 +9,7 @@ import { mapItemsToProducts } from '../../helpers/industrial-equipments/tool'
 
 // Hero组件内容的配置数据  Fr版
 const heroConfigProps: IHeroWithImageTilesProps = {
-  title: 'JEU pour les entreprises',
+  title: 'GEME pour le business',
   description: `Partout où des biodéchets sont générés, c'est là que GEME change le monde.
   Différentes tailles de GEME sont largement utilisées dans les communautés, les écoles, les hôpitaux, les immeubles de bureaux, les centres commerciaux, les attractions touristiques, les centres de villégiature, les restaurants, les hôtels, etc.`,
   primaryButtonLabel: 'Contactez-nous',
