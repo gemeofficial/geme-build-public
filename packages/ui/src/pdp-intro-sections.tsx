@@ -11,7 +11,7 @@ interface IPdpIntroSection1Props {
   title?: ReactNode
   description?: ReactNode
   bgImageSrc?: string
-
+  comparisonText?: { brfore: string; after: string }
   bottomItems?: [
     {
       id: number
@@ -24,7 +24,7 @@ interface IPdpIntroSection1Props {
     {
       id: number
       description?: ReactNode
-    },
+    }
   ]
 }
 
@@ -43,12 +43,13 @@ function PdpIntroSection1({
   title,
   description,
   bgImageSrc,
+  comparisonText,
   bottomItems,
 }: IPdpIntroSection1Props) {
   return (
     <div
       className={classNames(
-        ' h-[534px] md:h-[1060px] bg-cover bg-center bg-no-repeat',
+        ' h-[534px] md:h-[1060px] bg-cover bg-center bg-no-repeat'
       )}
       style={{ backgroundImage: `url(${bgImageSrc})` }}
     >
@@ -61,12 +62,12 @@ function PdpIntroSection1({
         </div>
         <div className=" pb-4 sm:pb-0 md:pb-[12px] xl:pb-[12px] flex-1 flex items-end justify-around xl:gap-[320px] xl:justify-center v2311-font-h2 md:v2311-font-body xl:v2311-font-h2 text-v2311-primary text-center">
           <div>
-            Before
+            {comparisonText?.brfore || 'Before'}
             <br />
             100%
           </div>
           <div>
-            After
+            {comparisonText?.after || 'After'}
             <br />
             5%
           </div>
@@ -202,7 +203,7 @@ interface IPdpIntroSection6Props {
       features?: ReactNode[]
       imageSrc?: string
       imageAlt?: string
-    },
+    }
   ]
 }
 
@@ -258,7 +259,7 @@ function PdpIntroSection6({
   return (
     <section
       className={classNames(
-        'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl',
+        'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl'
       )}
     >
       <div className=" text-center">
@@ -283,7 +284,7 @@ function PdpIntroSection6({
                   : ' text-v2311-primary xl:rounded-3xl xl:col-span-3 xl:row-span-5 xl:text-white xl:p-8 xl:pt-4',
 
                 item.id === 2 ? 'xl:bg-[#80AB9D]' : '',
-                item.id === 3 ? 'xl:bg-[#578F75]' : '',
+                item.id === 3 ? 'xl:bg-[#578F75]' : ''
               )}
             >
               {item?.title && (
@@ -292,7 +293,7 @@ function PdpIntroSection6({
                     'text-center xl:text-left',
                     item.featured
                       ? 'v2311-font-h2'
-                      : 'v2311-font-body text-v2311-fg-black xl:text-white mt-4',
+                      : 'v2311-font-body text-v2311-fg-black xl:text-white mt-4'
                   )}
                 >
                   {item?.title}
@@ -303,7 +304,7 @@ function PdpIntroSection6({
                   'flex flex-row xl:flex-col items-center justify-center w-full xl:items-stretch',
                   item.featured
                     ? 'mt-4 md:mt-8 xl:mt-4 gap-4 md:gap-8 xl:gap-8'
-                    : 'mt-2 md:mt-4 gap-2 md:gap-4',
+                    : 'mt-2 md:mt-4 gap-2 md:gap-4'
                 )}
               >
                 {item?.imageSrc && (
@@ -311,7 +312,7 @@ function PdpIntroSection6({
                     className={classNames(
                       item.featured
                         ? ' aspect-[156/99] flex-1'
-                        : 'aspect-1 md:min-w-[120px] flex-[2]',
+                        : 'aspect-1 md:min-w-[120px] flex-[2]'
                     )}
                   >
                     <img
@@ -319,7 +320,7 @@ function PdpIntroSection6({
                         'w-full',
                         item.featured
                           ? 'rounded-2xl flex-1'
-                          : '  rounded-full xl:rounded-2xl ',
+                          : '  rounded-full xl:rounded-2xl '
                       )}
                       src={item?.imageSrc}
                       alt={item?.imageAlt}
@@ -332,7 +333,7 @@ function PdpIntroSection6({
                       'v2311-font-body xl:v2311-font-h3 xl:font-normal',
                       item.featured
                         ? 'flex-1'
-                        : ' text-[8px] md:v2311-font-img-desc xl:v2311-font-body mr-2 md:mr-4 flex-[3]',
+                        : ' text-[8px] md:v2311-font-img-desc xl:v2311-font-body mr-2 md:mr-4 flex-[3]'
                     )}
                   >
                     {item?.features.map((feature, idx) => {
@@ -341,7 +342,7 @@ function PdpIntroSection6({
                           key={`${feature}_${idx}`}
                           className={classNames(
                             'flex items-center mb-1 md:mb-2 ',
-                            item.featured ? 'xl:mb-2' : 'xl:mb-1',
+                            item.featured ? 'xl:mb-2' : 'xl:mb-1'
                           )}
                         >
                           {item.featured ? (
@@ -519,7 +520,7 @@ function PdpIntroSection8({
     <div className="bg-[#E1EBE7] 2xl:bg-transparent relative">
       <div
         className={classNames(
-          ' px-4 py-8 md:px-8 md:py-16 xl:p-0 xl:min-h-[850px] flex flex-col items-center justify-center ',
+          ' px-4 py-8 md:px-8 md:py-16 xl:p-0 xl:min-h-[850px] flex flex-col items-center justify-center '
         )}
       >
         {bgImageSrc && (

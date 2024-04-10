@@ -38,6 +38,10 @@ const pdpIntroSection1Props: IPdpIntroSection1Props = {
     'Use microbiota to breakdown food waste quickly, 100x faster than traditional composting, completely different than countertop dehydrating electric "composters".',
   bgImageSrc:
     '/assets/images/pdp-v2311/dividers/geme-with-compost-background.jpg',
+  comparisonText:{
+    brfore:'Brfore',
+    after:'After'
+  },
   bottomItems: [
     { id: 1, description: 'Breakdown by Microbes' },
     { id: 2, description: 'Not by Dehydration' },

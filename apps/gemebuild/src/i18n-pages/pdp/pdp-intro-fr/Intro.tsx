@@ -38,6 +38,10 @@ const pdpIntroSection1Props: IPdpIntroSection1Props = {
     'Utilisez le microbiote pour décomposer rapidement les déchets alimentaires, 100 fois plus rapide que le compostage traditionnel, complètement différent des « composteurs » électriques déshydratants de comptoir.',
   bgImageSrc:
     '/assets/images/pdp-v2311/dividers/geme-with-compost-background.jpg',
+  comparisonText: {
+    brfore: 'Avant',
+    after: 'Après',
+  },
   bottomItems: [
     { id: 1, description: 'Répartition par microbes' },
     { id: 2, description: 'Pas par déshydratation' },

@@ -33,11 +33,15 @@ import type {
 } from 'ui'
 
 const pdpIntroSection1Props: IPdpIntroSection1Props = {
-  title: "Der weltweit erste Komposter für Bioabfälle",
+  title: 'Der weltweit erste Komposter für Bioabfälle',
   description:
     'Nutzen Sie Mikrobiota, um Lebensmittelabfälle schnell abzubauen, 100x schneller als herkömmliche Kompostierung, völlig anders als elektrische „Komposter“ mit Dörrfunktion auf der Arbeitsplatte.',
   bgImageSrc:
     '/assets/images/pdp-v2311/dividers/geme-with-compost-background.jpg',
+  comparisonText: {
+    brfore: 'Vor',
+    after: 'Nach',
+  },
   bottomItems: [
     { id: 1, description: 'Aufschlüsselung nach Mikroben' },
     { id: 2, description: 'Nicht durch Dehydrierung' },
@@ -54,21 +58,23 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgFoodWaste className=" w-8 h-8 md:w-16 md:h-16 " />
           <h3 className="v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-          Nährstoffe (Lebensmittelabfälle)
+            Nährstoffe (Lebensmittelabfälle)
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2">
-          Mikroorganismen benötigen C, N, Phosphor (P) und Kalium (K).
-             die primären Nährstoffe. Das C:N-Verhältnis der Rohstoffe ist wichtig. Der
-             Das optimale C:N-Verhältnis der Rohstoffe liegt zwischen 25:1 und 30:1.
+            Mikroorganismen benötigen C, N, Phosphor (P) und Kalium (K). die
+            primären Nährstoffe. Das C:N-Verhältnis der Rohstoffe ist wichtig.
+            Der Das optimale C:N-Verhältnis der Rohstoffe liegt zwischen 25:1
+            und 30:1.
           </p>
           <p className="hidden xl:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2">
-          Wenn das Verhältnis zu hoch ist, kommt es zu einem Wachstum von Mikroorganismen
-             begrenzt, was zu einer längeren Kompostierungszeit führt. Ein geringeres C:N-Verhältnis
-             führt zu einer Unterausnutzung von N und Geruch kann ein Problem sein.
+            Wenn das Verhältnis zu hoch ist, kommt es zu einem Wachstum von
+            Mikroorganismen begrenzt, was zu einer längeren Kompostierungszeit
+            führt. Ein geringeres C:N-Verhältnis führt zu einer Unterausnutzung
+            von N und Geruch kann ein Problem sein.
           </p>
           <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-          GEME Composter und GEME Kobold kümmern sich um das C:N-Verhältnis
-             automatisch für Sie.
+            GEME Composter und GEME Kobold kümmern sich um das C:N-Verhältnis
+            automatisch für Sie.
           </p>
         </>
       ),
@@ -79,17 +85,17 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgOxygen className=" w-8 h-8 md:w-16 md:h-16 " />
           <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-          Belüftung (Sauerstoff)
+            Belüftung (Sauerstoff)
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-          Die aerobe Kompostierung erfolgt in Gegenwart von reichlich O2. In diesem
-             Bei diesem Prozess bauen aerobe Mikroorganismen organische Stoffe ab und
-             produzieren Ammoniak, Wasser, Wärme und Humus, die relativ stabil sind
-             Bio-Endprodukt.
+            Die aerobe Kompostierung erfolgt in Gegenwart von reichlich O2. In
+            diesem Bei diesem Prozess bauen aerobe Mikroorganismen organische
+            Stoffe ab und produzieren Ammoniak, Wasser, Wärme und Humus, die
+            relativ stabil sind Bio-Endprodukt.
           </p>
           <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-          GEME Composter bietet ein Luftaustauschsystem, um dies zu ermöglichen
-             in einer Kiste.
+            GEME Composter bietet ein Luftaustauschsystem, um dies zu
+            ermöglichen in einer Kiste.
           </p>
         </>
       ),
@@ -100,24 +106,25 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgWood className=" w-8 h-8 md:w-16 md:h-16 " />
           <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-          Ligningehalt (braunes Zeug)
+            Ligningehalt (braunes Zeug)
           </h3>
           <p className="hidden lg:block  v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-          Lignin ist einer der Hauptbestandteile pflanzlicher Zellwände
-             Die komplexe chemische Struktur macht es äußerst resistent gegen Mikroben
-             Degradierung.
+            Lignin ist einer der Hauptbestandteile pflanzlicher Zellwände Die
+            komplexe chemische Struktur macht es äußerst resistent gegen
+            Mikroben Degradierung.
           </p>
           <p className="hidden xl:block  v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-          Diese Art von Lignin hat zwei Auswirkungen. Eines davon ist Lignin
-             verringert die Bioverfügbarkeit der anderen Zellwandbestandteile,
-             Ermittlung des tatsächlichen C:N-Verhältnisses (d. h. Verhältnis von biologisch abbaubarem C zu N)
-             niedriger als der normalerweise angegebene Wert. Das andere ist, dass Lignin dient
-             als Porositätsverstärker, der günstige Bedingungen schafft
-             aerobe Kompostierung.
+            Diese Art von Lignin hat zwei Auswirkungen. Eines davon ist Lignin
+            verringert die Bioverfügbarkeit der anderen Zellwandbestandteile,
+            Ermittlung des tatsächlichen C:N-Verhältnisses (d. h. Verhältnis von
+            biologisch abbaubarem C zu N) niedriger als der normalerweise
+            angegebene Wert. Das andere ist, dass Lignin dient als
+            Porositätsverstärker, der günstige Bedingungen schafft aerobe
+            Kompostierung.
           </p>
           <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-          Der GEME Kobold-Starter enthält solches Material und ist dafür gut konfiguriert
-             Du.
+            Der GEME Kobold-Starter enthält solches Material und ist dafür gut
+            konfiguriert Du.
           </p>
         </>
       ),
@@ -128,22 +135,23 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgWaterDrop className=" w-8 h-8 md:w-16 md:h-16 " />
           <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-          Feuchtigkeit
+            Feuchtigkeit
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-          Feuchtigkeit ist notwendig, um die Stoffwechselaktivität des Körpers zu unterstützen
-             Mikroorganismen. Kompostierungsmaterialien sollten die Feuchtigkeit aufrechterhalten
-             Gehalt von 40-65 Prozent.
+            Feuchtigkeit ist notwendig, um die Stoffwechselaktivität des Körpers
+            zu unterstützen Mikroorganismen. Kompostierungsmaterialien sollten
+            die Feuchtigkeit aufrechterhalten Gehalt von 40-65 Prozent.
           </p>
           <p className="hidden xl:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-          Wenn der Haufen zu trocken ist, erfolgt die Kompostierung langsamer, während a
-             Feuchtigkeitsgehalt über 65 Prozent entwickelt sich anaerob
-             Bedingungen. In der Praxis empfiehlt es sich, den Stapel mit a zu beginnen
-             Feuchtigkeitsgehalt von 50-60 Prozent, am Ende etwa 30 Prozent.
+            Wenn der Haufen zu trocken ist, erfolgt die Kompostierung langsamer,
+            während a Feuchtigkeitsgehalt über 65 Prozent entwickelt sich
+            anaerob Bedingungen. In der Praxis empfiehlt es sich, den Stapel mit
+            a zu beginnen Feuchtigkeitsgehalt von 50-60 Prozent, am Ende etwa 30
+            Prozent.
           </p>
           <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-          GEME Composter ist wasserdicht und ermöglicht die Zugabe von Wasser und
-             entfeuchten, wenn es zu nass ist.
+            GEME Composter ist wasserdicht und ermöglicht die Zugabe von Wasser
+            und entfeuchten, wenn es zu nass ist.
           </p>
         </>
       ),
@@ -154,21 +162,23 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgTemperature className=" w-8 h-8 md:w-16 md:h-16 " />
           <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-          Temperatur
+            Temperatur
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-          Der Kompostierungsprozess umfasst zwei Temperaturbereiche:
-             mesophil und thermophil.
+            Der Kompostierungsprozess umfasst zwei Temperaturbereiche: mesophil
+            und thermophil.
           </p>
           <p className="hidden xl:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-          Während die ideale Temperatur für die erste Kompostierungsphase ist
-             20-45 °C, in weiteren Stadien mit den thermophilen Organismen
-             Bei der Übernahme kann ein Temperaturbereich von 50–70 °C ideal sein. Hoch
-             Temperaturen charakterisieren den aeroben Kompostierungsprozess und dienen dazu
-             als Zeichen starker mikrobieller Aktivität.
+            Während die ideale Temperatur für die erste Kompostierungsphase ist
+            20-45 °C, in weiteren Stadien mit den thermophilen Organismen Bei
+            der Übernahme kann ein Temperaturbereich von 50–70 °C ideal sein.
+            Hoch Temperaturen charakterisieren den aeroben Kompostierungsprozess
+            und dienen dazu als Zeichen starker mikrobieller Aktivität.
           </p>
           <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-          GEME Composter verfügt über einen intelligenten Temperaturregler, der die Temperatur so regelt, dass der GAME Kobold in den besten Zustand passt.
+            GEME Composter verfügt über einen intelligenten Temperaturregler,
+            der die Temperatur so regelt, dass der GAME Kobold in den besten
+            Zustand passt.
           </p>
         </>
       ),
@@ -179,22 +189,22 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgMicrobe className=" w-8 h-8 md:w-16 md:h-16 " />
           <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-          Mikroben (GEME Kobold)
+            Mikroben (GEME Kobold)
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-          Um die Effizienz zu verbessern, könnte die Beimpfung von Mikroorganismen erfolgen
-             eingeführt.
+            Um die Effizienz zu verbessern, könnte die Beimpfung von
+            Mikroorganismen erfolgen eingeführt.
           </p>
           <p className="hidden xl:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-          Bei den für die Kompostierung verwendeten Inokulumorganismen handelt es sich hauptsächlich um Pilze wie z
-             Trichoderma und Pleurotus. Einige verfügen auch über „effektive“.
-             Mikroorganismen“ (EMs).
+            Bei den für die Kompostierung verwendeten Inokulumorganismen handelt
+            es sich hauptsächlich um Pilze wie z Trichoderma und Pleurotus.
+            Einige verfügen auch über „effektive“. Mikroorganismen“ (EMs).
           </p>
           <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-          GEME Kobold ist ein Mikrobiota-Set, das weltweit einzigartig ist
-             zuvor entdeckte und validierte Hochtemperaturbeständigkeit
-             zusammengesetzte Mikrobiota. Es wirkt 100x schneller als gewöhnliche Bakterien
-             natürlich.
+            GEME Kobold ist ein Mikrobiota-Set, das weltweit einzigartig ist
+            zuvor entdeckte und validierte Hochtemperaturbeständigkeit
+            zusammengesetzte Mikrobiota. Es wirkt 100x schneller als gewöhnliche
+            Bakterien natürlich.
           </p>
         </>
       ),
@@ -209,7 +219,7 @@ const pdpIntroSection3Props: IPdpIntroSection3Props = {
 const contentSection71Props: IContentSection7Props = {
   title: 'Von der Verschwendung zum Wunder',
   description:
-    "Tauchen wir ein in die winzigen Superhelden, die eine bedeutende Wirkung haben: Mikroben (GEME Kobold). Ähnlich wie die freundlichen Mikroben, die die Verdauung in Ihrem Darm unterstützen, verwandeln sie bei idealen Bedingungen und regelmäßiger Rotationsmischung Speisereste schnell in organischen Kompost.",
+    'Tauchen wir ein in die winzigen Superhelden, die eine bedeutende Wirkung haben: Mikroben (GEME Kobold). Ähnlich wie die freundlichen Mikroben, die die Verdauung in Ihrem Darm unterstützen, verwandeln sie bei idealen Bedingungen und regelmäßiger Rotationsmischung Speisereste schnell in organischen Kompost.',
 
   withImageOrVideo: {
     type: 'video',
@@ -242,7 +252,8 @@ const contentSection21Props: IContentSection2Props = {
   title: 'Wirf weiterhin Müll, GEME kümmert sich um den Rest',
   description: (
     <>
-      🫳&nbsp;&nbsp;Fügen Sie jederzeit Abfall hinzu<br />
+      🫳&nbsp;&nbsp;Fügen Sie jederzeit Abfall hinzu
+      <br />
       🫷&nbsp;&nbsp;Es ist nicht nötig, Knöpfe zu drücken <br />
       🕓&nbsp;&nbsp;Keine Wartezeiten erforderlich <br />
       🤗&nbsp;&nbsp;Keine Lernkurve <br />
@@ -256,7 +267,8 @@ const contentSection21Props: IContentSection2Props = {
 }
 
 const contentSection22Props: IContentSection2Props = {
-  title: 'Innovative mikrobenbasierte Müllentsorgung, funktioniert schnell und sicher',
+  title:
+    'Innovative mikrobenbasierte Müllentsorgung, funktioniert schnell und sicher',
   description: (
     <>
       🔥&nbsp;&nbsp;Es entwässert nicht, es ist echte Kompostierung <br />
@@ -358,13 +370,13 @@ const contentSection24Props: IContentSection2Props = {
   title: 'Kein Filterwechsel erforderlich',
   description: (
     <>
-      Das weltweit einzige Modell, das den fortschrittlichsten Industriefilter verwendet,
-       mit <b>katalytischer Metallionenoxidation</b> Reinigung.
+      Das weltweit einzige Modell, das den fortschrittlichsten Industriefilter
+      verwendet, mit <b>katalytischer Metallionenoxidation</b> Reinigung.
       <br />
       Diese Technologie ist leistungsstark und erfordert keinerlei Austausch.
       <br />
-      Andere „Komposter“ müssen den Filter alle 3 Monate austauschen, große Teile sind versteckt
-       kosten!
+      Andere „Komposter“ müssen den Filter alle 3 Monate austauschen, große
+      Teile sind versteckt kosten!
       <br />
       <br />
       👃🏻&nbsp;&nbsp;Kein Geruch <br />
@@ -385,7 +397,8 @@ const contentSection8Props: IContentSection8Props = {
     {
       id: 1,
       imageSrc: '/assets/images/pdp-v2311/introduction/no-smell-before.jpg',
-      imageAlt: 'Nehmen Sie den Geruch wahr, bevor Sie den GEME-Komposter verwenden',
+      imageAlt:
+        'Nehmen Sie den Geruch wahr, bevor Sie den GEME-Komposter verwenden',
     },
     {
       id: 2,
@@ -399,7 +412,9 @@ const pdpIntroSection8Props: IPdpIntroSection8Props = {
   title: 'Kompost verwenden',
   description: (
     <>
-      Lebensmittelabfälle werden durch Mikrobiota zersetzt, nicht durch den Strom. Der Strom dient lediglich der Aufrechterhaltung der besten Umgebung, damit die Mikrobiota effizient arbeiten kann.
+      Lebensmittelabfälle werden durch Mikrobiota zersetzt, nicht durch den
+      Strom. Der Strom dient lediglich der Aufrechterhaltung der besten
+      Umgebung, damit die Mikrobiota effizient arbeiten kann.
     </>
   ),
   features: [
