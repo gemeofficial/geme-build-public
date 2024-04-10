@@ -1,5 +1,5 @@
-import { HomeEn } from '../i18n-pages/home'
+import { HomePageEn } from '../i18n-pages/home'
 
 export default function Home() {
-  return <HomeEn />
+  return <HomePageEn />
 }
