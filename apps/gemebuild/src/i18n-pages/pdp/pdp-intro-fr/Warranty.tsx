@@ -4,35 +4,35 @@ import {
   ChatBubbleLeftRightIcon,
 } from '@heroicons/react/24/solid'
 
-const title = 'Buy with Confident'
-const description = `We know you will feel expensive, but we make sure it worth. 
-Your money wont gone, it turns into the a better life style and good service around you.`
+const title = 'Achetez en toute confiance'
+const description = `Nous savons que vous vous sentirez cher, mais nous veillons à ce que cela en vaille la peine.
+Votre argent ne disparaîtra pas, il se transformera en un meilleur style de vie et un bon service autour de vous.`
 
 const features = [
   {
-    name: '30 Days Free Trial',
+    name: `30 jours d'essai gratuit`,
     description:
-      'Free shipping(US mainland), Free trial, No return fee charged. Ask us any questions during your trial, innovative product lovers deserved encouraged!',
+      `Livraison gratuite (continent américain), essai gratuit, aucun frais de retour facturé. Posez-nous toutes vos questions lors de votre essai, les amateurs de produits innovants méritent d'être encouragés !`,
     href: '/return-policy',
     icon: TruckIcon,
   },
   {
-    name: '1 Year Warranty',
+    name: '2 ans de garantie',
     description:
-      'We will undertakes to repair or replace defective parts free of charge if the initial defect occurs during the warranty period.',
+      'Nous nous engageons à réparer ou à remplacer gratuitement les pièces défectueuses si le défaut initial survient pendant la période de garantie.',
     href: '/warranty',
     icon: ShieldCheckIcon,
   },
   {
-    name: '100% Customer Reply Rate',
+    name: 'Taux de réponse client de 100%',
     description:
-      'Experience worry-free composting with our comprehensive warranty. Your GEME Composter, our commitment.',
+      `Faites l'expérience d'un compostage sans souci grâce à notre garantie complète. Votre Composteur GEME, notre engagement.`,
     href: '/contact',
     icon: ChatBubbleLeftRightIcon,
   },
 ]
 
-const btnText = 'Learn more'
+const btnText = 'Apprendre encore plus'
 
 function Warranty() {
   return (

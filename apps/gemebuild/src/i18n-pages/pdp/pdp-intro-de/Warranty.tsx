@@ -4,35 +4,35 @@ import {
   ChatBubbleLeftRightIcon,
 } from '@heroicons/react/24/solid'
 
-const title = 'Buy with Confident'
-const description = `We know you will feel expensive, but we make sure it worth. 
-Your money wont gone, it turns into the a better life style and good service around you.`
+const title = 'Kaufen Sie mit Vertrauen'
+const description = `Wir wissen, dass Sie sich teuer fühlen werden, aber wir sorgen dafür, dass es sich lohnt.
+Ihr Geld geht nicht verloren, es verwandelt sich in einen besseren Lebensstil und guten Service um Sie herum.`
 
 const features = [
   {
-    name: '30 Days Free Trial',
+    name: '30 Tage kostenlose Testversion',
     description:
-      'Free shipping(US mainland), Free trial, No return fee charged. Ask us any questions during your trial, innovative product lovers deserved encouraged!',
+      'Kostenloser Versand (US-Festland), kostenlose Testversion, keine Rücksendegebühr. Stellen Sie uns während Ihrer Testversion Fragen, Liebhaber innovativer Produkte werden ermutigt!',
     href: '/return-policy',
     icon: TruckIcon,
   },
   {
-    name: '1 Year Warranty',
+    name: '2 Jahre Garantie',
     description:
       'We will undertakes to repair or replace defective parts free of charge if the initial defect occurs during the warranty period.',
     href: '/warranty',
     icon: ShieldCheckIcon,
   },
   {
-    name: '100% Customer Reply Rate',
+    name: '100 % Kundenantwortrate',
     description:
-      'Experience worry-free composting with our comprehensive warranty. Your GEME Composter, our commitment.',
+      'Erleben Sie eine sorgenfreie Kompostierung mit unserer umfassenden Garantie. Ihr GEME-Komposter, unsere Verpflichtung.',
     href: '/contact',
     icon: ChatBubbleLeftRightIcon,
   },
 ]
 
-const btnText = 'Learn more'
+const btnText = 'Mehr erfahren'
 
 function Warranty() {
   return (
