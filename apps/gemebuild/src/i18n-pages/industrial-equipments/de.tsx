@@ -9,7 +9,7 @@ import { mapItemsToProducts } from '../../helpers/industrial-equipments/tool'
 
 // Hero组件内容的配置数据  De版
 const heroConfigProps: IHeroWithImageTilesProps = {
-  title: 'SPIEL für Unternehmen',
+  title: 'GEME für das Geschäft',
   description: `Überall dort, wo Biomüll entsteht, verändert GEME die Welt.
   GEME unterschiedlicher Größe wird häufig in Gemeinden, Schulen, Krankenhäusern, Bürogebäuden, Einkaufszentren, Touristenattraktionen, Resorts, Restaurants, Hotels usw. eingesetzt.`,
   primaryButtonLabel: 'Kontaktiere uns',
