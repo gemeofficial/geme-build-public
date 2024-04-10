@@ -102,7 +102,7 @@ const contentSection2Props: IContentSection2Props = {
 
 // 首页第三部分的内容数据配置 De
 const contentSection3Props: IContentSection3Props = {
-  title: 'Food Waste to Plant Feed Magic Trash Bin',
+  title: 'Lebensmittelabfälle werden in den magischen Mülleimer für Pflanzenfutter umgewandelt',
   items: [
     {
       id: 1,
