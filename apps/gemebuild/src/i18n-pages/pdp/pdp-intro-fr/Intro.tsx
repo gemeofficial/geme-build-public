@@ -33,20 +33,20 @@ import type {
 } from 'ui'
 
 const pdpIntroSection1Props: IPdpIntroSection1Props = {
-  title: "World's First Bio Waste Composter",
+  title: 'Le premier composteur de biodéchets au monde',
   description:
-    'Use microbiota to breakdown food waste quickly, 100x faster than traditional composting, completely different than countertop dehydrating electric "composters".',
+    'Utilisez le microbiote pour décomposer rapidement les déchets alimentaires, 100 fois plus rapide que le compostage traditionnel, complètement différent des « composteurs » électriques déshydratants de comptoir.',
   bgImageSrc:
     '/assets/images/pdp-v2311/dividers/geme-with-compost-background.jpg',
   bottomItems: [
-    { id: 1, description: 'Breakdown by Microbes' },
-    { id: 2, description: 'Not by Dehydration' },
-    { id: 3, description: 'Compost Pile in Box' },
+    { id: 1, description: 'Répartition par microbes' },
+    { id: 2, description: 'Pas par déshydratation' },
+    { id: 3, description: 'Tas de compost dans la boîte' },
   ],
 }
 
 const oxygenCycleProps: IOxygenCycleProps = {
-  title: 'Necessary Steps for Real Composting Process',
+  title: 'Étapes nécessaires pour un véritable processus de compostage',
   progresses: [
     {
       minProgress: 12.5,
@@ -54,21 +54,23 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgFoodWaste className=" w-8 h-8 md:w-16 md:h-16 " />
           <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Nutrients(Food Waste)
+            Nutriments (déchets alimentaires)
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2">
-            Micro-organisms require C, N, phosphorus (P) and potassium (K) as
-            the primary nutrients. C:N ratio of raw materials is important. The
-            optimal C:N ratio of raw materials is between 25:1 and 30:1.
+            Les micro-organismes ont besoin de C, N, de phosphore (P) et de
+            potassium (K) comme principaux nutriments. Le rapport C:N des
+            matières premières est important. Le rapport C:N optimal des
+            matières premières se situe entre 25:1 et 30:1.
           </p>
           <p className="hidden xl:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2">
-            Where the ratio is too high, the growth of micro-organisms is
-            limited, resulting in a longer composting time. A less C:N ratio
-            leads to underutilization of N and odour can be a problem.
+            Lorsque le ratio est trop élevé, la croissance des micro-organismes
+            est limitée, ce qui entraîne un temps de compostage plus long. Un
+            rapport C:N inférieur conduit à une sous-utilisation de N et les
+            odeurs peuvent être un problème.
           </p>
           <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            GEME Composter and GEME Kobold will take care of the C:N ratio
-            automatically for you.
+            GEME Composter et GEME Kobold s'occupent automatiquement du rapport
+            C:N pour vous.
           </p>
         </>
       ),
@@ -79,17 +81,18 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgOxygen className=" w-8 h-8 md:w-16 md:h-16 " />
           <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Aeration(Oxygen)
+            Aération (oxygène)
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            Aerobic composting takes place in the presence of ample O2. In this
-            process, aerobic microorganisms break down organic matter and
-            produce ammonia, water, heat and humus, the relatively stable
-            organic end product.
+            Le compostage aérobie a lieu en présence d'une grande quantité d'O2.
+            Au cours de ce processus, les micro-organismes aérobies décomposent
+            la matière organique et produisent de l'ammoniac, de l'eau, de la
+            chaleur et de l'humus, le produit final organique relativement
+            stable.
           </p>
           <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            GEME Composter provide an air exchange system to make this happen
-            inside a box.
+            GEME Composter fournit un système d'échange d'air pour que cela se
+            produise à l'intérieur d'une boîte.
           </p>
         </>
       ),
@@ -100,24 +103,24 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgWood className=" w-8 h-8 md:w-16 md:h-16 " />
           <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Lignin Content(Brown Stuff)
+            Teneur en lignine (trucs bruns)
           </h3>
           <p className="hidden lg:block  v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            Lignin is one of the main constituents of plant cell walls, and its
-            complex chemical structure makes it highly resistant to microbial
-            degradation.
+            La lignine est l’un des principaux constituants des parois
+            cellulaires végétales et sa structure chimique complexe la rend très
+            résistante à la dégradation microbienne.
           </p>
           <p className="hidden xl:block  v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            This nature of lignin has two implications. One is that lignin
-            reduces the bioavailability of the other cell-wall constituents,
-            making the actual C:N ratio (viz. ratio of biodegradable C to N)
-            lower than the one normally cited. The other is that lignin serves
-            as a porosity enhancer, which creates favourable conditions for
-            aerobic composting.
+            Cette nature de la lignine a deux implications. La première est que
+            la lignine réduit la biodisponibilité des autres constituants de la
+            paroi cellulaire, ce qui rend le rapport C:N réel (c'est-à-dire le
+            rapport C/N biodégradable) inférieur à celui normalement cité.
+            L’autre est que la lignine sert d’amplificateur de porosité, ce qui
+            crée des conditions favorables au compostage aérobie.
           </p>
           <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            GEME Kobold starter contains such material and well configured for
-            you.
+            Le démarreur GEME Kobold contient un tel matériel et est bien
+            configuré pour vous.
           </p>
         </>
       ),
@@ -128,22 +131,23 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgWaterDrop className=" w-8 h-8 md:w-16 md:h-16 " />
           <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Moisture
+            Humidité
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            Moisture is necessary to support the metabolic activity of the
-            micro-organisms. Composting materials should maintain a moisture
-            content of 40-65 percent.
+            L'humidité est nécessaire pour soutenir l'activité métabolique des
+            micro-organismes. Les matériaux de compostage doivent maintenir une
+            teneur en humidité de 40 à 65 pour cent.
           </p>
           <p className="hidden xl:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            Where the pile is too dry, composting occurs more slowly, while a
-            moisture content in excess of 65 percent develops anaerobic
-            conditions. In practice, it is advisable to start the pile with a
-            moisture content of 50-60 percent, finishing at about 30 percent.
+            Lorsque le tas est trop sec, le compostage se produit plus
+            lentement, tandis qu'une teneur en humidité supérieure à 65 pour
+            cent développe des conditions anaérobies. En pratique, il est
+            conseillé de commencer le tas avec une teneur en humidité de 50 à 60
+            pour cent et de finir à environ 30 pour cent.
           </p>
           <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            GEME Composter is water proof and it allows adding water and
-            dehumidify when over wet.
+            GEME Composter est étanche à l'eau et permet d'ajouter de l'eau et
+            de déshumidifier lorsqu'il est trop mouillé.
           </p>
         </>
       ),
@@ -154,22 +158,24 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgTemperature className=" w-8 h-8 md:w-16 md:h-16 " />
           <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Temperature
+            Température
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            The process of composting involves two temperature ranges:
-            mesophilic and thermophilic.
+            Le processus de compostage implique deux plages de température :
+            mésophile et thermophile.
           </p>
           <p className="hidden xl:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            While the ideal temperature for the initial composting stage is
-            20-45 °C, at subsequent stages with the thermophilic organisms
-            taking over, a temperature range of 50-70 °C may be ideal. High
-            temperatures characterize the aerobic composting process and serve
-            as signs of vigorous microbial activities.
+            Alors que la température idéale pour l'étape initiale de compostage
+            est de 20 à 45 °C, aux étapes suivantes, lorsque les organismes
+            thermophiles prennent le relais, une plage de température de 50 à 70
+            °C peut être idéale. Des températures élevées caractérisent le
+            processus de compostage aérobie et sont le signe d'activités
+            microbiennes vigoureuses.
           </p>
           <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            GEME Composter gets a smart temperature controller, manage the
-            temperature to fit the GEME Kobold in the best condition.
+            GEME Composter dispose d'un contrôleur de température intelligent,
+            gère la température pour s'adapter au GAME Kobold dans les
+            meilleures conditions.
           </p>
         </>
       ),
@@ -183,19 +189,20 @@ const oxygenCycleProps: IOxygenCycleProps = {
             Microbes(GEME Kobold)
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            To improve the efficiency, inoculation of micro-organisms could be
-            introduced.
+            Pour améliorer l'efficacité, l'inoculation de micro-organismes
+            pourrait être introduite.
           </p>
           <p className="hidden xl:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            Inoculum organisms utilized for composting are mainly fungi such as
-            Trichoderma and Pleurotus. Some also features 'effective
-            micro-organisms' (EMs).
+            Les organismes inoculums utilisés pour le compostage sont
+            principalement des champignons tels que Trichoderma et Pleurotus.
+            Certains contiennent également des « micro-organismes efficaces »
+            (EM).
           </p>
           <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            GEME Kobold is a set of microbiota, which is the world's only
-            previously discovered and validated high-temperature resistant
-            composite microbiota. It works 100x faster than ordinary bacteria in
-            natural.
+            GEME Kobold est un ensemble de microbiotes, qui est le seul
+            microbiote composite résistant aux hautes températures découvert et
+            validé au monde. Il agit 100 fois plus vite que les bactéries
+            ordinaires dans la nature.
           </p>
         </>
       ),
@@ -204,33 +211,20 @@ const oxygenCycleProps: IOxygenCycleProps = {
 }
 
 const pdpIntroSection3Props: IPdpIntroSection3Props = {
-  title: '6-8 Hours',
+  title: '6-8 heures',
 }
 
 const contentSection71Props: IContentSection7Props = {
-  title: 'From Waste To Wonder',
+  title: 'Du déchet à l’émerveillement',
   description:
-    "Let's dive into the tiny superheroes that create a significant impact: microbes (GEME Kobold). Similar to the friendly microbes aiding digestion in your gut, with ideal conditions and regular rotation mixing, they quickly transform food scraps into organic compost.",
-  // withImageOrVideo: {
-  //   type: 'image',
-  //   imageSrc: '/assets/images/pdp-v2311/how-geme-kobold-eat-food-waste.gif',
-  // },
+    'Plongeons-nous dans les petits super-héros qui créent un impact significatif : les microbes (GEME Kobold). Semblables aux microbes amicaux facilitant la digestion dans votre intestin, avec des conditions idéales et un mélange régulier, ils transforment rapidement les restes de nourriture en compost organique.',
+
   withImageOrVideo: {
     type: 'video',
     videoProps: {
-      // FIXME: @yeer to add a proper poster image
-      // videoPosterUrl: 'https://placehold.co/358x202',
       sources: [
-        // for pc
-        // {
-        //   minWidth: 1280,
-        //   src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/how-microbes-works.mp4',
-        // },
-        // for mobile/tablet
         {
           minWidth: 0,
-          // 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/how-geme-kobold-works.mp4',
-          // 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/how-geme-kobold-eat-food-waste-1080p.mp4',
           src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/how-geme-kobold-eat-food-waste-480p.mp4',
         },
       ],
@@ -241,62 +235,63 @@ const contentSection71Props: IContentSection7Props = {
 }
 
 const contentSection72Props: IContentSection7Props = {
-  title: 'Silent Operation',
+  title: 'Fonctionnement silencieux',
   description:
-    'GEME Sound level around 35-45 dB, the quietest composter on the marketing.',
+    'GAME Niveau sonore autour de 35-45 dB, le composteur le plus silencieux du marché.',
   withImageOrVideo: {
     type: 'image',
     imageSrc: '/assets/images/pdp-v2311/introduction/geme-silent.jpg',
-    imageAlt: 'food waste picture',
+    imageAlt: 'photo de gaspillage alimentaire',
   },
   bottomContent: <PdpIntroSection4 />,
 }
 
 const contentSection21Props: IContentSection2Props = {
-  title: 'Keep Throwing Garbage, GEME Take Care of the Rest',
+  title: `Continuez à jeter les déchets, GEME s'occupe du reste`,
   description: (
     <>
-      🫳&nbsp;&nbsp;Add waste at anytime <br />
-      🫷&nbsp;&nbsp;No need to push buttons <br />
-      🕓&nbsp;&nbsp;No need to wait cycles <br />
-      🤗&nbsp;&nbsp;Zero learning curve <br />
-      🚮&nbsp;&nbsp;Just like regular trash bin
+      🫳&nbsp;&nbsp;Ajoutez des déchets à tout moment <br />
+      🫷&nbsp;&nbsp;Pas besoin d'appuyer sur des boutons <br />
+      🕓&nbsp;&nbsp;Pas besoin d'attendre des cycles <br />
+      🤗&nbsp;&nbsp;Courbe d'apprentissage nulle <br />
+      🚮&nbsp;&nbsp;Comme une poubelle ordinaire
     </>
   ),
   imageSrc:
     '/assets/images/pdp-v2311/introduction/geme-take-care-of-the-rest.jpg',
-  imageAlt: 'GEME take care of your food waste',
+  imageAlt: 'GEME prend soin de votre gaspillage alimentaire',
   isDisplayTextOnLeft: true,
 }
 
 const contentSection22Props: IContentSection2Props = {
-  title: 'Innovative Microbes Based Garbage Disposal, Work Quickly & Safely',
+  title:
+    'Élimination des déchets innovante basée sur des microbes, fonctionne rapidement et en toute sécurité',
   description: (
     <>
-      🔥&nbsp;&nbsp;Not dehydrating, it's real composting <br />
-      🚰&nbsp;&nbsp;Not shredding, no more clogged sink
+      🔥&nbsp;&nbsp;Pas de déshydratation, c'est du vrai compostage <br />
+      🚰&nbsp;&nbsp;Pas de déchiquetage, plus d'évier bouché
       <br />
-      🌿&nbsp;&nbsp;Not green washing, true eco-friendly solution
+      🌿&nbsp;&nbsp;Pas de green washing, une véritable solution écologique
     </>
   ),
   imageSrc: '/assets/images/pdp-v2311/introduction/geme-garbage-disposal.jpg',
-  imageAlt: 'food waste picture',
+  imageAlt: 'photo de gaspillage alimentaire',
 }
 
 const pdpIntroSection5Props: IPdpIntroSection5Props = {
-  title: 'Almost All Of Waste Can Go into GEME',
+  title: 'Presque tous les déchets peuvent aller dans le JEU',
   leftNotes: (
     <>
       <strong>400+</strong>
       <br />
-      kinds of waste
+      types de déchets
     </>
   ),
 }
 
 const pdpIntroSection6Props: IPdpIntroSection6Props = {
-  title: 'Composting Made Easy',
-  description: 'Loved by 100k+ gardeners',
+  title: 'Le compostage simplifié',
+  description: 'Apprécié par plus de 100 000 jardiniers',
   items: [
     {
       id: 1,
@@ -306,48 +301,48 @@ const pdpIntroSection6Props: IPdpIntroSection6Props = {
         '/assets/images/pdp-v2311/introduction/section-comparison-geme.jpeg',
       imageAlt: 'GEME compose',
       features: [
-        'Real Compost',
-        'Aerobic Fermentation',
-        'Odorless & Quiet',
-        'Energy Saving',
+        'Du vrai compost',
+        'Fermentation aérobie',
+        'Inodore et silencieux',
+        `Économie d'énergie`,
       ],
     },
     {
       id: 2,
-      title: 'Dehydrator',
+      title: 'Déshydrateur',
       imageSrc:
         '/assets/images/pdp-v2311/introduction/section-comparison-dehydrator.jpeg',
-      imageAlt: 'Dehydrator',
+      imageAlt: 'Déshydrateur',
       features: [
-        'Fake Compost',
-        'Cook & Dry',
-        'Smelly & Noisy',
-        'Energy Costly',
+        'Faux compost',
+        'Cuire et sécher',
+        'Malodorant et bruyant',
+        'Énergie coûteuse',
       ],
     },
     {
       id: 3,
-      title: 'Compost Pile',
+      title: 'Tas de compost',
       imageSrc:
         '/assets/images/pdp-v2311/introduction/section-comparison-pile.jpeg',
-      imageAlt: 'Compost Pile',
+      imageAlt: 'Tas de compost',
       features: [
-        'Wait Long Time',
-        'Dirty & Messy',
-        'Often Turn Over',
-        'Attract Animals',
+        'Attendre longtemps',
+        'Sale et salissant',
+        'Se retourne souvent',
+        'Attirer les animaux',
       ],
     },
   ],
 }
 
 const pdpIntroSection7Props: IPdpIntroSection7Props = {
-  title: 'Big, More & Long Term',
-  description: 'Work 7x24 But Energy Saving',
+  title: 'Grand, plus et à long terme',
+  description: `Travail 7x24 mais économie d'énergie`,
   features: [
-    '😄 10+ people family daily using',
-    '📅 3 months no cleaning required',
-    '💰 Worth the price',
+    '😄 10+ famille de personnes utilisant quotidiennement',
+    '📅 3 mois pas de nettoyage nécessaire',
+    '💰 Le prix en vaut la peine',
   ],
 }
 
@@ -356,66 +351,67 @@ const contentSection23Props: IContentSection2Props = {
   title: 'Imaging A Life, No Need to Throw Food Waste Any More',
   description: (
     <>
-      👪&nbsp;&nbsp;10+ people family daily using <br />
-      📅&nbsp;&nbsp;3+ months no cleaning required <br />
-      💰&nbsp;&nbsp;Worth the price for such a big guy <br />
-      🐳&nbsp;&nbsp;19L volume, 11£/5kg daily feed capacity <br />
-      🐘&nbsp;&nbsp;45.5x32x66.5(cm) 18x12.6x26.2 (inch)
+      👪&nbsp;&nbsp;10+ famille de personnes utilisant quotidiennement <br />
+      📅&nbsp;&nbsp;3+ mois pas de nettoyage nécessaire <br />
+      💰&nbsp;&nbsp;Le prix en vaut la peine pour un si grand homme <br />
+      🐳&nbsp;&nbsp;Volume de 19 L, capacité d'alimentation quotidienne de 11
+      £/5 kg <br />
+      🐘&nbsp;&nbsp;45,5x32x66,5 (cm) 18x12,6x26,2 (pouces)
     </>
   ),
   imageSrc: '/assets/images/pdp-v2311/introduction/geme-composter-size-v2.jpeg',
-  imageAlt: 'Big Size for GEME Composter',
+  imageAlt: 'Grand format pour composteur GEME',
   isDisplayTextOnLeft: true,
 }
 
 const contentSection24Props: IContentSection2Props = {
-  title: 'No Need to Change Filter',
+  title: 'Pas besoin de changer de filtre',
   description: (
     <>
-      The world&apos;s only model that uses the most advanced industrial filter,
-      with <b>metal ion catalytic oxidation</b> purification.
+      Le seul modèle au monde qui utilise le filtre industriel le plus avancé,
+      avec purification par <b>oxydation catalytique des ions métalliques</b>.
       <br />
-      This technology is powerful and requires no replacement at all.
+      Cette technologie est puissante et ne nécessite aucun remplacement.
       <br />
-      Other "composter" needs to replace filter every 3 months, large hidden
-      cost!
+      Les autres « composteurs » doivent remplacer le filtre tous les 3 mois,
+      gros coût caché !
       <br />
       <br />
-      👃🏻&nbsp;&nbsp;No smell <br />
-      💰&nbsp;&nbsp;No additional hidden cost
+      👃🏻&nbsp;&nbsp;Pas d'odeur <br />
+      💰&nbsp;&nbsp;Aucun coût caché supplémentaire
       <br />
-      🔨&nbsp;&nbsp;No replace errands
+      🔨&nbsp;&nbsp;Pas de courses de remplacement
     </>
   ),
   imageSrc: '/assets/images/pdp-v2311/introduction/no-filters.jpg',
-  imageAlt: 'GEME requires no filter replacing',
+  imageAlt: 'GAME ne nécessite aucun remplacement de filtre',
 }
 
 const contentSection8Props: IContentSection8Props = {
-  title: 'No Smell Composting At Home',
+  title: 'Compostage sans odeur à la maison',
   description:
-    'GEME uses industrial filters with the most advanced deodorization technology. Enjoy the high tech clean modern composting, enjoy the zero waste life style.',
+    'GEME utilise des filtres industriels dotés de la technologie de désodorisation la plus avancée. Profitez du compostage moderne et propre de haute technologie, profitez du style de vie zéro déchet.',
   items: [
     {
       id: 1,
       imageSrc: '/assets/images/pdp-v2311/introduction/no-smell-before.jpg',
-      imageAlt: 'Get Smell before using GEME Composter',
+      imageAlt: `Obtenez l'odeur avant d'utiliser GEME Composter`,
     },
     {
       id: 2,
       imageSrc: '/assets/images/pdp-v2311/introduction/no-smell-after.jpg',
-      imageAlt: 'No Smell after using GEME Composter',
+      imageAlt: 'Aucune odeur après avoir utilisé GEME Composter',
     },
   ],
 }
 
 const pdpIntroSection8Props: IPdpIntroSection8Props = {
-  title: 'Using Compost',
+  title: 'Utiliser le compost',
   description: (
     <>
-      Food waste is breakdown by microbita, not by the electricity power, the
-      power is just for mantaining the best environment for the microbiota to
-      work efficiently.
+      Le gaspillage alimentaire est décomposé par le microbiote, et non par
+      l’énergie électrique, l’énergie sert simplement à maintenir le meilleur
+      environnement pour que le microbiote fonctionne efficacement.
     </>
   ),
   features: [
@@ -423,48 +419,46 @@ const pdpIntroSection8Props: IPdpIntroSection8Props = {
       id: 1,
       Icon: usingCompostIcons.SvgPlantOnHandIcon,
       imgSrc: '/assets/images/pdp-v2311/introduction/icon-plant-on-hand.svg',
-      feature: 'indoor plan',
+      feature: 'plan intérieur',
     },
     {
       id: 2,
       Icon: usingCompostIcons.SvgFlowerOnHandIcon,
       imgSrc: '/assets/images/pdp-v2311/introduction/icon-flower-on-hand.svg',
-      feature: 'bonsai',
+      feature: 'bonsaï',
     },
     {
       id: 3,
       Icon: usingCompostIcons.SvgRiceOnHandIcon,
       imgSrc: '/assets/images/pdp-v2311/introduction/icon-rice-on-hand.svg',
-      feature: 'vegetable bed',
+      feature: 'lit de légumes',
     },
     {
       id: 4,
       Icon: usingCompostIcons.SvgGardenCareIcon,
       imgSrc: '/assets/images/pdp-v2311/introduction/icon-garden-care.svg',
-      feature: 'garden care',
+      feature: 'entretien du jardin',
     },
     {
       id: 5,
       Icon: usingCompostIcons.SvgGiftIcon,
       imgSrc: '/assets/images/pdp-v2311/introduction/icon-gift.svg',
-      feature: 'share it',
+      feature: 'partagez-le',
     },
     {
       id: 6,
       Icon: usingCompostIcons.SvgWaterIcon,
       imgSrc: '/assets/images/pdp-v2311/introduction/icon-water.svg',
-      feature: 'purify water',
+      feature: `purifier l'eau`,
     },
   ],
 
-  // bgImageSrc: '/assets/images/pdp-v2311/use-geme-compost-in-a-garden.jpeg',
-  // Use cropped one without the white lines.
   bgImageSrc:
     '/assets/images/pdp-v2311/dividers/use-geme-compost-in-a-garden-cropped.jpg',
   bgDesktopImageSrc:
     '/assets/images/pdp-v2311/dividers/use-geme-compost-in-a-garden.jpeg',
 
-  linkText: 'ERHALTEN GEME',
+  linkText: 'OBTENIR GEME',
   linkUrl: '/product/geme',
 }
 
