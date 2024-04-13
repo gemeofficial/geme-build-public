@@ -3,7 +3,7 @@ import { EXAMPLE_SECOND_LIFE_PROPS, SecondLife, UiCompost } from 'ui'
 import { SecondLifeDemo } from 'ui/src/second-life-demo/second-life-demo'
 
 const meta: Meta = {
-  title: 'second-life',
+  title: 'components/second-life',
   argTypes: {},
 }
 

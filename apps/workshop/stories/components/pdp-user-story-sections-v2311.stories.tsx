@@ -6,7 +6,7 @@ import {
 } from 'ui'
 
 const meta: Meta = {
-  title: 'pdp-user-story-sections',
+  title: 'components/pdp-user-story-sections',
   argTypes: {},
 }
 

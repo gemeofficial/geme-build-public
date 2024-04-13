@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { ActionSection1, EXAMPLE_ACTION_SECTION_PROPS } from 'ui'
 
 const meta: Meta = {
-  title: 'action-sections',
+  title: 'components/action-sections',
   argTypes: {},
 }
 

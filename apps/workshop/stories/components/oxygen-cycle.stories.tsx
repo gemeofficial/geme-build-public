@@ -6,7 +6,7 @@ import {
 } from 'ui'
 
 const meta: Meta = {
-  title: 'oxygen-cycle',
+  title: 'components/oxygen-cycle',
   argTypes: {},
 }
 

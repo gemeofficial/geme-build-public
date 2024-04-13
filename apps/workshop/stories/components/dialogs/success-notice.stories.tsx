@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { SuccessNotice, EXAMPLE_SUCCESS_NOTICE_PROPS } from 'ui'
 
 const meta: Meta = {
-  title: 'dialogs',
+  title: 'components/dialogs',
   argTypes: {},
 }
 

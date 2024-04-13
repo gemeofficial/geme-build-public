@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { ColorsV2311, FontsV2311 } from 'ui'
 
 const meta: Meta = {
-  title: 'atoms',
+  title: 'atoms/atoms',
   argTypes: {},
 }
 

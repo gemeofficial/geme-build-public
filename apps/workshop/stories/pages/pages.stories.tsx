@@ -4,7 +4,7 @@ import PdpIntroV2311 from './pdp-intro-v2311'
 import PdpUserStoryV2311 from './pdp-user-story-v2311'
 
 const meta: Meta = {
-  title: 'pages',
+  title: 'pages/pathes',
   argTypes: {},
 }
 

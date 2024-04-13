@@ -8,7 +8,7 @@ import {
 } from 'ui'
 
 const meta: Meta = {
-  title: 'tabs',
+  title: 'components/tabs',
   argTypes: {},
 }
 
