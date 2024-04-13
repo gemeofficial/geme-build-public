@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { SvgOxygenCycleProgress } from 'ui'
 
 const meta: Meta = {
-  title: 'animition-sections',
+  title: 'components/animition-sections',
   argTypes: {},
 }
 

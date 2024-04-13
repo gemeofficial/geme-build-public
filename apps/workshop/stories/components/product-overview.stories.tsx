@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { ProductOverviewV2311, EXAMPLE_PRODUCT_OVERVIEW_PROPS } from 'ui'
 
 const meta: Meta = {
-  title: 'product-overview',
+  title: 'components/product-overview',
   argTypes: {},
 }
 

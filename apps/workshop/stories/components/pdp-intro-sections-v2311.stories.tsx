@@ -11,7 +11,7 @@ import {
 } from 'ui'
 
 const meta: Meta = {
-  title: 'pdp-intro-sections',
+  title: 'components/pdp-intro-sections',
   argTypes: {},
 }
 

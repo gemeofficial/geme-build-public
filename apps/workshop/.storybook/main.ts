@@ -35,8 +35,10 @@ const config = {
   },
 
   docs: {
-    autodocs: true,
+    autodocs: 'tag',
   },
+
+  staticDirs: ['../../gemebuild/public'], //👈 Configures the static asset folder in Storybook
 }
 
 export default config

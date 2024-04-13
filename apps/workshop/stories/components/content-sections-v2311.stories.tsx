@@ -13,7 +13,7 @@ import {
 } from 'ui'
 
 const meta: Meta = {
-  title: 'content-sections',
+  title: 'components/content-sections',
   argTypes: {},
 }
 

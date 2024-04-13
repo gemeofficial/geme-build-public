@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { HeroSection1, EXAMPLE_HERO_SECTION_PROPS } from 'ui'
 
 const meta: Meta = {
-  title: 'hero-sections',
+  title: 'components/hero-sections',
   argTypes: {},
 }
 

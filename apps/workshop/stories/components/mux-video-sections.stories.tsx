@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { ExampleMuxVideoPlayer } from 'ui'
 
 const meta: Meta = {
-  title: 'mux-video-sections',
+  title: 'components/mux-video-sections',
   argTypes: {},
 }
 

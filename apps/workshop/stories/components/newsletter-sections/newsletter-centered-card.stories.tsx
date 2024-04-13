@@ -5,7 +5,7 @@ import {
 } from 'ui'
 
 const meta: Meta = {
-  title: 'newsletter-sections',
+  title: 'components/newsletter-sections',
   argTypes: {},
 }
 
