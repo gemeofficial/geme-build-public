@@ -51,17 +51,20 @@ const heroSection1Props: IHeroSection1Props = {
   linkText: 'Shop Now',
   linkUrl: '/product/geme',
   videoProps: {
-    videoPosterUrl: 'https://placehold.co/430x932/3B806F/white?text=poster',
     sources: [
       // for pc
       {
         minWidth: 1280,
-        src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-banner.mp4',
+        src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-bio-home-hero-backgruond-video-1080p.mp4',
+        playbackId: 'PHDmho81odHhv3yvvm4WLQjqUFpKqwAR01gJwEVEUcXo',
+        posterUrl:
+          'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/cover-v2.jpg',
       },
       // for mobile/tablet
       {
         minWidth: 0,
-        src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-banner.mp4',
+        src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-bio-home-background-video-no-sound-480p.mp4',
+        playbackId: 'WcYd7fIP97ciG1zR5Hkq9dEmqLeQpsoX5iIZdMQn8Lc',
       },
     ],
   },
@@ -393,7 +396,7 @@ function HomeV2311(): JSX.Element {
       <NewsletterCenteredCard
         {...newsletterCenteredCardProps}
         onSubmit={(evt) => {
-          newsletterCenteredCardProps.onSubmit(evt)
+          newsletterCenteredCardProps.onSubmit?.(evt)
           setNewsletterSuccessNoticeOpen(true)
         }}
       />
