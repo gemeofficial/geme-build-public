@@ -115,7 +115,7 @@ interface IPdpUserStoryTeamSectionsProps {
     imageUrl?: string
     image?: IImgProps
     bio?: ReactNode
-    quote?: string,
+    quote?: string
   }[]
 }
 
@@ -192,14 +192,17 @@ function PdpUserStoryTeamSections({
         {people?.map((person) => {
           return (
             <div
+              style={{
+                boxShadow:
+                  '0 0px 10px 2px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
+              }}
               key={person.id}
+              className="shadow-md p-4 rounded-2xl"
             >
-                <div
-                  className="flex flex-col gap-4 md:gap-8 xl:flex-row"
-                >
+              <div className="flex md:flex-col xl:flex-row gap-4 md:gap-8">
                 <Img
                   {...person.image}
-                  className=" aspect-[4/5] rounded-2xl object-cover w-52"
+                  className=" aspect-[4/5] rounded-2xl object-cover w-32 md:w-52"
                 />
 
                 <div className="flex-auto">
@@ -210,10 +213,11 @@ function PdpUserStoryTeamSections({
                     {person.role}
                   </p>
 
-                  {person.quote && <p className=" v2311-font-body text-gray-400 mt-4 md:mt-8">
-                    "{person.quote}"
-                  </p>
-                  }
+                  {person.quote && (
+                    <p className=" v2311-font-body text-gray-400 mt-4 md:mt-8">
+                      "{person.quote}"
+                    </p>
+                  )}
                 </div>
               </div>
 
@@ -222,7 +226,6 @@ function PdpUserStoryTeamSections({
                   {person.bio}
                 </p>
               </div>
-
             </div>
           )
         })}
