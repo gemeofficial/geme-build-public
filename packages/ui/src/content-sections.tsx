@@ -123,8 +123,8 @@ function ContentSection2({
           <Image
             className=" max-w-full w-full rounded-2xl"
             alt={imageAlt || ''}
-            width={358}
-            height={202}
+            width={589}
+            height={428}
             src={imageSrc}
           />
         )}
@@ -231,8 +231,8 @@ function ContentSection3({
                 className=" max-w-full w-full rounded-xl "
                 src={item.imageSrc || ''}
                 alt={item.imageAlt || ''}
-                width={171}
-                height={228}
+                width={280}
+                height={373}
               />
               <p className="v2311-font-body text-v2311-fg-black text-left mt-2 md:mt-4">
                 {item.description}
@@ -445,8 +445,8 @@ function ContentSection5({
                 className=" max-w-full w-full rounded-2xl "
                 src={imageSrc || ''}
                 alt={imageAlt || ''}
-                width={358}
-                height={202}
+                width={608}
+                height={343}
               />
             </div>
           )
@@ -717,8 +717,8 @@ function ContentSection7({
           withImageOrVideo?.imageSrc != null && (
             <Image
               className=" max-w-full w-full rounded-2xl"
-              width={358}
-              height={202}
+              width={608}
+              height={343}
               alt={withImageOrVideo?.imageAlt || ''}
               src={withImageOrVideo?.imageSrc || ''}
             />
@@ -804,13 +804,13 @@ function ContentSection8({
       <div className="mt-4 md:mt-8 grid grid-cols-2 gap-4 md:gap-8 xl:max-w-4xl xl:mx-auto">
         {items?.map((item) => {
           return (
-            <div key={item.id} className="aspect-w-3 aspect-h-4">
+            <div key={item.id} className="aspect-w-2 aspect-h-3">
               <Image
                 className=" rounded-xl "
                 src={item.imageSrc || ''}
                 alt={item.imageAlt || ''}
                 width={300}
-                height={400}
+                height={450}
               />
             </div>
           )

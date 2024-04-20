@@ -37,7 +37,7 @@ const pdpIntroSection1Props: IPdpIntroSection1Props = {
   description:
     'Nutzen Sie Mikrobiota, um Lebensmittelabfälle schnell abzubauen, 100x schneller als herkömmliche Kompostierung, völlig anders als elektrische „Komposter“ mit Dörrfunktion auf der Arbeitsplatte.',
   bgImageSrc:
-    '/assets/images/pdp-v2311/dividers/geme-with-compost-background.jpg',
+    '/assets/images/pdp-v2311/dividers/geme-with-compost-background-min.jpg',
   comparisonText: {
     brfore: 'Vor',
     after: 'Nach',
