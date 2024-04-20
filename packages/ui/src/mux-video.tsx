@@ -2,6 +2,7 @@
 
 import MuxPlayer from '@mux/mux-player-react'
 import { FC, useState, useEffect, VideoHTMLAttributes } from 'react'
+import Image from 'next/image'
 
 interface IMuxVideoSource {
   minWidth: number // 屏幕最小宽度
@@ -58,9 +59,10 @@ const MuxVideoPlayer: FC<IMuxVideoPlayerProps> = ({
 
   return (
     <>
-      <img
+      <Image
         src="/assets/images/home-v2311/hero-blurred.jpg"
         alt="videoPicture"
+        layout="fill"
         className={`w-full h-full object-cover ${
           isCanPlay ? 'hidden' : 'block'
         }`}

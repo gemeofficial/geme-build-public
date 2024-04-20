@@ -4,6 +4,7 @@ import classNames from './lib/classNames'
 import VideoInlinePlayer from './video-inline-player'
 import { IImgProps, Img } from './image'
 import { IVideoPlayerProps, VideoPlayer } from './video'
+import Image from 'next/image'
 
 interface IContentSection1Props {
   title?: ReactNode
@@ -55,9 +56,11 @@ function ContentSection1({
       </div>
       <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">
         {imageSrc && (
-          <img
+          <Image
             className=" max-w-full w-full rounded-2xl"
-            alt={imageAlt}
+            alt={imageAlt || ''}
+            width={358}
+            height={202}
             src={imageSrc}
           />
         )}
@@ -117,9 +120,11 @@ function ContentSection2({
       </div>
       <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">
         {imageSrc && (
-          <img
+          <Image
             className=" max-w-full w-full rounded-2xl"
-            alt={imageAlt}
+            alt={imageAlt || ''}
+            width={358}
+            height={202}
             src={imageSrc}
           />
         )}
@@ -222,10 +227,12 @@ function ContentSection3({
         {items?.map((item) => {
           return (
             <div key={item.id}>
-              <img
+              <Image
                 className=" max-w-full w-full rounded-xl "
-                src={item.imageSrc}
-                alt={item.imageAlt}
+                src={item.imageSrc || ''}
+                alt={item.imageAlt || ''}
+                width={171}
+                height={228}
               />
               <p className="v2311-font-body text-v2311-fg-black text-left mt-2 md:mt-4">
                 {item.description}
@@ -333,8 +340,15 @@ function ContentSection4({
                 videoUrl={withMp4VideoOrYoutubeVideo?.videoSrcUrl}
                 description="Watch our video to learn more"
               >
-                <Img
-                  {...withMp4VideoOrYoutubeVideo?.videoPosterImage}
+                <Image
+                  src={withMp4VideoOrYoutubeVideo?.videoPosterImage?.src || ''}
+                  alt={withMp4VideoOrYoutubeVideo?.videoPosterImage?.alt || ''}
+                  width={
+                    withMp4VideoOrYoutubeVideo?.videoPosterImage?.width || 1600
+                  }
+                  height={
+                    withMp4VideoOrYoutubeVideo?.videoPosterImage?.width || 900
+                  }
                   className="absolute inset-0 h-full w-full object-cover"
                 />
               </VideoInlinePlayer>
@@ -427,10 +441,12 @@ function ContentSection5({
                 </span>
               </div>
 
-              <img
+              <Image
                 className=" max-w-full w-full rounded-2xl "
-                src={imageSrc}
-                alt={imageAlt}
+                src={imageSrc || ''}
+                alt={imageAlt || ''}
+                width={358}
+                height={202}
               />
             </div>
           )
@@ -592,6 +608,7 @@ function ContentSection6Fixed({
       <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">
         {videoSrcUrl && videoPosterUrl && (
           <video
+            preload="none"
             autoPlay
             playsInline
             muted
@@ -616,9 +633,11 @@ function ContentSection6Fixed({
             <div key={step.id} className=" flex-1 flex flex-col items-center">
               {/* 将SVG组件修改为img渲染 */}
               {/* <step.Icon className=" w-[80px] h-[80px] md:w-[172px] md:h-[172px] xl:w-[144px] xl:h-[144px] " /> */}
-              <img
+              <Image
                 src={`/assets/images/home-v2311/compost-step-${step.id}.svg`}
                 alt={`compost-step-${index + 1}`}
+                width={80}
+                height={80}
                 className="w-[80px] h-[80px] md:w-[172px] md:h-[172px] xl:w-[144px] xl:h-[144px] "
               />
               <p className="v2311-font-img-desc text-v2311-fg-black text-center mt-4 md:mt-8 xl:mt-4">
@@ -696,10 +715,12 @@ function ContentSection7({
       <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">
         {withImageOrVideo?.type === 'image' &&
           withImageOrVideo?.imageSrc != null && (
-            <img
+            <Image
               className=" max-w-full w-full rounded-2xl"
-              alt={withImageOrVideo?.imageAlt}
-              src={withImageOrVideo?.imageSrc}
+              width={358}
+              height={202}
+              alt={withImageOrVideo?.imageAlt || ''}
+              src={withImageOrVideo?.imageSrc || ''}
             />
           )}
 
@@ -784,10 +805,12 @@ function ContentSection8({
         {items?.map((item) => {
           return (
             <div key={item.id} className="aspect-w-3 aspect-h-4">
-              <img
+              <Image
                 className=" rounded-xl "
-                src={item.imageSrc}
-                alt={item.imageAlt}
+                src={item.imageSrc || ''}
+                alt={item.imageAlt || ''}
+                width={300}
+                height={400}
               />
             </div>
           )
