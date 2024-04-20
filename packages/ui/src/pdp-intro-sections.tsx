@@ -7,7 +7,7 @@ import {
   usingCompostIcons,
 } from './pdp-intro-svgs'
 import { IconCycleArrow } from './icons'
-import Image, { unstable_getImgProps } from 'next/image'
+import Image from 'next/image'
 interface IPdpIntroSection1Props {
   title?: ReactNode
   description?: ReactNode
@@ -40,17 +40,6 @@ const pdpIntroSection1Props: IPdpIntroSection1Props = {
   ],
 }
 
-function getBackgroundImage(srcSet = '') {
-  const imageSet = srcSet
-    .split(', ')
-    .map((str) => {
-      const [url, dpi] = str.split(' ')
-      return `url("${url}") ${dpi}`
-    })
-    .join(', ')
-  return `image-set(${imageSet})`
-}
-
 function PdpIntroSection1({
   title,
   description,
@@ -58,23 +47,12 @@ function PdpIntroSection1({
   comparisonText,
   bottomItems,
 }: IPdpIntroSection1Props) {
-  const {
-    props: { srcSet },
-  } = unstable_getImgProps({
-    alt: '',
-    width: 1920,
-    height: 850,
-    src: bgImageSrc || '',
-  })
-
-  const backgroundImage = getBackgroundImage(srcSet)
-
   return (
     <div
       className={classNames(
         ' h-[534px] md:h-[1060px] bg-cover bg-center bg-no-repeat',
       )}
-      style={{ backgroundImage }}
+      style={{ backgroundImage: `url(${bgImageSrc})` }}
     >
       <div className="px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl h-full flex flex-col">
         <div className=" text-center ">
@@ -555,26 +533,6 @@ function PdpIntroSection8({
   linkText,
   linkUrl,
 }: IPdpIntroSection8Props) {
-  const {
-    props: { srcSet: bgImageSrcSet },
-  } = unstable_getImgProps({
-    alt: '',
-    width: 834,
-    height: 607,
-    src: bgImageSrc || '',
-  })
-  const {
-    props: { srcSet: bgDesktopImageSrcSet },
-  } = unstable_getImgProps({
-    alt: '',
-    width: 1920,
-    height: 850,
-    src: bgDesktopImageSrc || '',
-  })
-
-  const bgImage = getBackgroundImage(bgImageSrcSet)
-  const bgDesktopImage = getBackgroundImage(bgDesktopImageSrcSet)
-
   return (
     <div className="bg-[#E1EBE7] 2xl:bg-transparent relative">
       <div
@@ -585,13 +543,13 @@ function PdpIntroSection8({
         {bgImageSrc && (
           <div
             className=" absolute top-0 xl:top-0 left-0 w-full h-full object-cover z-0 bg-center bg-contain bg-no-repeat mx-auto xl:hidden "
-            style={{ backgroundImage: bgImage }}
+            style={{ backgroundImage: `url(${bgImageSrc})` }}
           ></div>
         )}
         {bgDesktopImageSrc && (
           <div
             className=" absolute top-0 xl:top-0 left-0 w-full h-full object-cover z-0 bg-center bg-contain bg-no-repeat mx-auto hidden xl:block "
-            style={{ backgroundImage: bgDesktopImage }}
+            style={{ backgroundImage: `url(${bgDesktopImageSrc})` }}
           ></div>
         )}
 
