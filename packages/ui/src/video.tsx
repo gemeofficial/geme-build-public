@@ -17,6 +17,7 @@ const VideoPlayer: FC<IVideoPlayerProps> = ({
   sources = [],
   ...props
 }) => {
+  const [isCanPlay, setIsCanPlay] = useState(false)
   const [currentSource, setCurrentSource] = useState<string>('')
 
   useEffect(() => {
@@ -50,18 +51,31 @@ const VideoPlayer: FC<IVideoPlayerProps> = ({
     }
   }, [sources]) // 依赖项为sources数组
 
+  let coverImageURL = '/assets/images/home-v2311/hero-blurred.webp'
+
   return (
-    <video
-      autoPlay
-      playsInline
-      muted
-      loop
-      {...props}
-      poster={videoPosterUrl}
-      src={currentSource}
-    >
-      Your browser does not support HTML5 video.
-    </video>
+    <>
+      <img
+        src={coverImageURL}
+        alt="Video cover picture"
+        className={`w-full h-full object-cover ${
+          isCanPlay ? 'hidden' : 'block'
+        }`}
+      />
+
+      <video
+        autoPlay
+        playsInline
+        muted
+        loop
+        {...props}
+        poster={videoPosterUrl}
+        src={currentSource}
+        onPlaying={() => setIsCanPlay(true)}
+      >
+        Your browser does not support HTML5 video.
+      </video>
+    </>
   )
 }
 
