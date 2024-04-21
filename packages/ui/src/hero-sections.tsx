@@ -1,6 +1,6 @@
 import { ReactNode, ComponentType, PropsWithChildren } from 'react'
 import { IconCycleArrow, IconLogoGeme } from './icons'
-// import { IVideoPlayerProps, VideoPlayer } from './video'
+import { IVideoPlayerProps, VideoPlayer } from './video'
 import { IMuxVideoPlayerProps, MuxVideoPlayer } from './mux-video'
 
 interface IHeroSection1Props {
@@ -77,13 +77,13 @@ function HeroSection1({
     <div className="h-screen ">
       <div className="overflow-hidden h-full relative">
         <div className="z-10 absolute inset-0 bg-v2311-bg-dark-green/[15%]"></div>
-        {/* 停用原生Video */}
-        {/*<VideoPlayer*/}
-        {/*  {...videoProps}*/}
-        {/*  className="relative w-full h-full overflow-hidden object-cover"*/}
-        {/*/>*/}
-        {/* 疫情Mux Player */}
-        <MuxVideoPlayer {...videoProps} />
+        {/*原生Video*/}
+        <VideoPlayer
+          {...videoProps}
+          className="relative w-full h-full overflow-hidden object-cover"
+        />
+        {/* 停用Mux Player */}
+        {/*<MuxVideoPlayer {...videoProps} />*/}
       </div>
 
       <div className=" h-screen xl:mx-auto xl:max-w-7xl absolute z-40 inset-0 flex flex-col items-center xl:items-start justify-center text-center xl:text-left">
