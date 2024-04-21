@@ -57,9 +57,10 @@ const MuxVideoPlayer: FC<IMuxVideoPlayerProps> = ({
   }, [sources]) // 依赖项为sources数组
 
   let coverImageURL = '/assets/images/home-v2311/hero-blurred.webp'
-  if (window.innerWidth < 1028) {
-    coverImageURL = '/assets/images/home-v2311/hero-blurred-m.webp'
-  }
+  // TODO window var not found, need another way
+  // if (window.innerWidth < 1028) {
+  //   coverImageURL = '/assets/images/home-v2311/hero-blurred-m.webp'
+  // }
 
   return (
     <>
