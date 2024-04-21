@@ -59,7 +59,7 @@ const MuxVideoPlayer: FC<IMuxVideoPlayerProps> = ({
   return (
     <>
       <img
-        src="/assets/images/home-v2311/hero-blurred.webp"
+        src={currentPosterUrl}
         alt="videoPicture"
         className={`w-full h-full object-cover ${
           isCanPlay ? 'hidden' : 'block'
