@@ -56,11 +56,16 @@ const MuxVideoPlayer: FC<IMuxVideoPlayerProps> = ({
     }
   }, [sources]) // 依赖项为sources数组
 
+  let coverImageURL = '/assets/images/home-v2311/hero-blurred.webp'
+  if (window.innerWidth < 1028) {
+    coverImageURL = '/assets/images/home-v2311/hero-blurred-m.webp'
+  }
+
   return (
     <>
       <img
-        src="/assets/images/home-v2311/hero-blurred.jpg"
-        alt="videoPicture"
+        src={coverImageURL}
+        alt="Video cover picture"
         className={`w-full h-full object-cover ${
           isCanPlay ? 'hidden' : 'block'
         }`}

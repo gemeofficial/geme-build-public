@@ -68,14 +68,14 @@ const heroSection1Props: IHeroSection1Props = {
         minWidth: 1280,
         src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-bio-home-hero-backgruond-video-1080p.mp4',
         playbackId: 'PHDmho81odHhv3yvvm4WLQjqUFpKqwAR01gJwEVEUcXo',
-        posterUrl: '/assets/images/home-v2311/hero-blurred.jpg',
+        posterUrl: '/assets/images/home-v2311/hero-blurred.webp',
       },
       // for mobile/tablet
       {
         minWidth: 0,
         src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-bio-home-background-video-no-sound-480p.mp4',
         playbackId: 'WcYd7fIP97ciG1zR5Hkq9dEmqLeQpsoX5iIZdMQn8Lc',
-        posterUrl: '/assets/images/home-v2311/hero-blurred.jpg',
+        posterUrl: '/assets/images/home-v2311/hero-blurred-m.webp',
       },
     ],
   },
@@ -102,7 +102,8 @@ const contentSection2Props: IContentSection2Props = {
 
 // 首页第三部分的内容数据配置 De
 const contentSection3Props: IContentSection3Props = {
-  title: 'Lebensmittelabfälle werden in den magischen Mülleimer für Pflanzenfutter umgewandelt',
+  title:
+    'Lebensmittelabfälle werden in den magischen Mülleimer für Pflanzenfutter umgewandelt',
   items: [
     {
       id: 1,
