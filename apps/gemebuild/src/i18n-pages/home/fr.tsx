@@ -57,7 +57,7 @@ const heroSection1Props: IHeroSection1Props = {
     </>
   ),
   linkText: 'Achetez maintenant',
-  linkUrl: '/product/geme',
+  linkUrl: '/fr/product/geme',
   linkClickedTrack: () => {
     mixpanel.track('Go Product Page', {
       From: 'Hero Primary Button',
