@@ -13,7 +13,7 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
       name: 'Alex Egertson',
       role: 'Direktor für Nachhaltigkeit',
       image: {
-        src: 'https://img1.wsimg.com/isteam/ip/b6c98e26-b6a8-472d-adb1-ebf59337e750/Copy%20of%20thankyouCard_Jump.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1160,h:743',
+        src: '/assets/images/pdp-v2311/user-stories/user-stories-llc.jpg',
         alt: 'Alex Egertson',
       },
       bio: (
@@ -106,8 +106,7 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
           unsere Erde gemeinsam besser zu machen.
         </>
       ),
-      quote:
-      `Ich wollte mich immer mehr und mehr in alles um mich herum einbringen, um ein besseres, nachhaltigeres Leben zu führen, und deshalb wollte ich unbedingt so viel GEME bekommen. Es vereint alles, was Sie für ein einfacheres, stressfreies Leben brauchen. Ich kann es meiner gesamten Umgebung nur wärmstens empfehlen!`
+      quote: `Ich wollte mich immer mehr und mehr in alles um mich herum einbringen, um ein besseres, nachhaltigeres Leben zu führen, und deshalb wollte ich unbedingt so viel GEME bekommen. Es vereint alles, was Sie für ein einfacheres, stressfreies Leben brauchen. Ich kann es meiner gesamten Umgebung nur wärmstens empfehlen!`,
     },
   ],
 }
