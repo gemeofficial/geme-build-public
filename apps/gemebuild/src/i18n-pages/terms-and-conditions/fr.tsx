@@ -68,7 +68,7 @@ const termsAndConditionsProps: ITermsAndConditionsProps = {
         </svg>
       ),
       description: `
-      <p class="mb-5">Tous les produits vendus dans la boutique en ligne ROKH SRL sont décrits de manière aussi complète et précise que possible. Les offres et les prix sont valables à la date à laquelle ils sont mis à disposition sur le site. Les prix mentionnés incluent la TVA et peuvent inclure des contributions de recyclage. Nous proposons nos produits dans la boutique en ligne jusqu'à épuisement des stocks. En règle générale, tous les produits proposés sont toujours en stock et seront expédiés immédiatement. Cependant, il peut arriver qu'un article ne soit plus disponible. Nous veillons alors à ce que le produit soit livré dès que possible. Vous pouvez annuler votre commande à tout moment à votre discrétion. Pour plus d'informations sur les garanties, voir "Garanties" ci-dessous.</a> </p>
+      <p class="mb-5">Tous les produits vendus dans la boutique en ligne de ROKH SRL sont décrits de la manière la plus complète et précise possible. Les offres et les prix sont valables à la date à laquelle ils sont mis à disposition sur le site. Les prix mentionnés incluent la TVA et peuvent inclure des contributions de recyclage. Nous proposons nos produits dans la boutique en ligne jusqu'à épuisement des stocks. En règle générale, tous les produits proposés sont toujours en stock et seront expédiés immédiatement. Cependant, il peut arriver qu'un article ne soit plus disponible. Nous veillons alors à ce que le produit soit livré dès que possible. Vous pouvez annuler votre commande à tout moment à votre discrétion. Pour plus d'informations sur les garanties, voir "Garanties" ci-dessous.</a> </p>
             `,
     },
     {
@@ -88,7 +88,7 @@ const termsAndConditionsProps: ITermsAndConditionsProps = {
         </svg>
       ),
       description: `
-      <p class="mb-5">Un accord contraignant entre vous et ROKH SRL existe lorsque ROKH SRL reçoit votre commande dans la boutique en ligne. Notre confirmation de commande est un résumé de votre commande et contient un lien vers ces termes et conditions. Cependant, ROKH SRL peut décider de soumettre la validité de l'accord à d'autres conditions, telles que les commandes importantes, les commandes passées par des mineurs, les commandes incomplètes ou inexactes, ou les commandes antérieures qui n'ont pas été payées. Selon la Loi sur les Pratiques Commerciales, la perte/dommage est la responsabilité du vendeur. Cependant, il nous a alertés dans un délai acceptable (10 jours après la passation de la commande). ROKH SRL se réserve le droit de refuser votre demande si elle n'est pas livrée dans ce délai.</p>
+      <p class="mb-5">Un accord contraignant entre vous et ROKH SRL existe lorsque ROKH SRL reçoit votre commande dans la boutique en ligne. Notre confirmation de commande est un résumé de votre commande et contient un lien vers ces termes et conditions. Cependant, ROKH SRL peut décider de soumettre la validité de l'accord à d'autres conditions, telles que les commandes importantes, les commandes passées par des mineurs, les commandes incomplètes ou inexactes, ou les commandes antérieures qui n'ont pas été payées. Conformément à la Loi sur les Pratiques Commerciales, tout dommage ou perte est de la responsabilité du vendeur. Cependant, il nous a alertés dans un délai acceptable (10 jours après la passation de la commande). ROKH SRL se réserve le droit de refuser votre demande si elle n'est pas livrée dans ce délai.</p>
             `,
     },
     {
@@ -110,7 +110,7 @@ const termsAndConditionsProps: ITermsAndConditionsProps = {
         </svg>
       ),
       description: `
-      <p class="mb-5">La loi belge sur les pratiques commerciales et l'information et la protection des consommateurs permet à l'acheteur d'informer le vendeur qu'il abandonnera l'achat dans les 30 jours suivant la réception du produit. Les marchandises doivent être suivies dans un délai acceptable (7 jours) après la réception des marchandises et sans les ouvrir pour utilisation. Nous recommandons de conserver les marchandises dans leur emballage et condition d'origine autant que possible afin que vous ne soyez pas obligé d'être responsable de toute dévaluation des marchandises résultant de leur disposition.</p>
+      <p class="mb-5">Selon la loi belge relative aux pratiques commerciales, à l'information et à la protection des consommateurs, l'acheteur a le droit de notifier au vendeur son intention d'annuler l'achat dans un délai de 30 jours après réception du produit. Les marchandises doivent être suivies dans un délai acceptable (7 jours) après la réception des marchandises et sans les ouvrir pour utilisation. Nous recommandons de conserver les marchandises dans leur emballage et condition d'origine autant que possible afin que vous ne soyez pas obligé d'être responsable de toute dévaluation des marchandises résultant de leur disposition.</p>
       <p class="mb-5">Vous pouvez envoyer un formulaire de retrait par <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a> pour nous informer que vous abandonnez votre achat. Vous devez ensuite retourner les marchandises par la poste normale à l'adresse que nous avons demandée avec suffisamment d'affranchissement et une copie de la facture.</p>
       <p class="mb-5">Pour que nous puissions émettre un remboursement, veuillez également nous fournir votre numéro de compte. À la réception de votre retour, nous émettrons un avoir et rembourserons le montant payé dans les 14 jours. Il n'y a pas d'exceptions au formulaire d'annulation.</p>
       <p class="mb-5">Si vous recevez un produit qui n'est pas ce que vous avez commandé ou qui est endommagé, vous devez alors nous en informer de la même manière et retourner le produit de la même manière. Cependant, dans ce cas, nous vous rembourserons également les frais de port envoyés par courrier ordinaire.</p>
@@ -136,7 +136,7 @@ const termsAndConditionsProps: ITermsAndConditionsProps = {
         </svg>
       ),
       description: `
-      <p class="mb-5">Nous livrons des accessoires et petits appareils par service de messagerie. Le délai de livraison final est en principe de 30 jours. Pour les commandes jusqu'à 50 euros, vous devrez payer des frais de livraison de 5 euros. À partir de 50 €, la livraison est gratuite. ROKH SRL offre la livraison uniquement en Belgique. Pour les livraisons dans d'autres pays/régions, veuillez visiter notre site web international www.geme.bio. Le lieu de livraison est celui que vous spécifiez dans votre commande. Si vous n'êtes pas présent au moment de la livraison, votre colis réapparaîtra. Le colis est alors renvoyé chez nous par le prestataire de service d'expédition.</p>
+      <p class="mb-5">Nous livrons des accessoires et petits appareils par service de messagerie. Le délai de livraison final est en principe de 30 jours. Un frais de livraison de 5 euros est appliqué pour les commandes inférieures à 50 euros. Les commandes de 50 euros et plus bénéficient de la livraison gratuite. ROKH SRL offre la livraison uniquement en Belgique. Pour les livraisons dans d'autres pays/régions, veuillez visiter notre site web international www.geme.bio. Le lieu de livraison est celui que vous spécifiez dans votre commande. Si vous n'êtes pas présent au moment de la livraison, votre colis réapparaîtra. Le colis est alors renvoyé chez nous par le prestataire de service d'expédition.</p>
       <p class="mb-5">Lorsque nous livrons le nouvel équipement, nous pouvons emporter gratuitement votre ancien équipement si vous le souhaitez. Cela doit être convenu dans le contact par e-mail.</p>
       `,
     },
@@ -158,7 +158,7 @@ const termsAndConditionsProps: ITermsAndConditionsProps = {
           />
         </svg>
       ),
-      description: `<p>Vous pouvez payer en ligne avec Visa, Mastercard ou Bancontact. Commander chez ROKH SRL est totalement sécurisé. Pour tous les paiements en ligne, ROKH SRL travaille avec Strips, l'un des leaders mondiaux du marché des paiements en ligne. Vous pouvez saisir vos données de paiement lors de la commande et vos données seront envoyées de manière sécurisée via Strips.</p>`,
+      description: `<p>Les paiements en ligne peuvent être effectués en utilisant Visa, Mastercard ou Bancontact. Les commandes passées chez ROKH SRL sont entièrement sécurisées. Pour tous les paiements en ligne, ROKH SRL travaille avec Strips, l'un des leaders mondiaux du marché des paiements en ligne. Vous pouvez saisir vos données de paiement lors de la commande et vos données seront envoyées de manière sécurisée via Strips.</p>`,
     },
     {
       name: 'Avertissement et Limitation de Responsabilité',

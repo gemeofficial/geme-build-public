@@ -42,7 +42,7 @@ const gemeDotsProps: IGemeDotsProps = {
     title: 'Déclaration des points GEME',
     description: `
         <p class="mb-10">Bienvenue dans le programme de fidélité GAME Dots.</p>
-        <p class="mb-5">Accumulez vos GEME Dots - L'éco-responsabilité finit toujours par payer !</p>
+        <p class="mb-5">Accumulez vos GEME Dots : l'éco-responsabilité finit toujours par payer !</p>
         <ul class="mx-2 my-5 list-inside list-disc">
             <li class="mb-5  ${cn(
               s.textIndented
@@ -55,7 +55,7 @@ const gemeDotsProps: IGemeDotsProps = {
             )}">Bénéficiez d’avantages extraordinaires et soyez récompensé pour votre respect de l’environnement.</li>
             <li class="mb-5 ${cn(
               s.textIndented
-            )}">Les éco-responsables payent toujours : une fois que vous avez collecté 1 000 points GEME, vous pouvez les échanger immédiatement lors de votre prochain achat ou décider de continuer à les collecter. Vous pouvez échanger jusqu'à 40 000 points GEME par achat pour un cashback instantané de 40 $ !</li>
+            )}">Les éco-responsables payent toujours : une fois que vous avez collecté 1 000 points GEME, vous pouvez les échanger immédiatement lors de votre prochain achat ou décider de continuer à les collecter. Vous pouvez échanger jusqu'à 40,000 points GEME par achat, ce qui vous donne droit à un cashback instantané de 40 euros.</li>
         </ul>
         `,
     imgSrc: '/assets/images/geme-dots-loyalty-program/image.png',
@@ -115,12 +115,12 @@ const gemeDotsProps: IGemeDotsProps = {
       {
         question: 'Comment puis-je échanger mes points GEME ? ',
         answer:
-          "Les GEME Dots collectés lors de la commande peuvent être convertis en bon d'achat. Les GEME Dots seront convertis en un montant qui sera déduit du montant de votre facture. Vous pouvez décider au niveau du panier lors de chaque commande si vous souhaitez échanger vos GEME Dots ou continuer à les collecter.",
+          "Les GEME Dots accumulés lors des achats peuvent être convertis en bons d'achat. Les GEME Dots seront convertis en un montant qui sera déduit du montant de votre facture. Vous pouvez décider au niveau du panier lors de chaque commande si vous souhaitez échanger vos GEME Dots ou continuer à les collecter.",
       },
       {
         question: 'Mes points GEME vont-ils expirer ?',
         answer:
-          "Oui, vos GEME Dots expireront si vos GEME Dots n'ont pas été utilisés depuis trois ans ou si vous n'avez pas passé de commande sur un compte lié depuis 12 mois.",
+          "Vos GEME Dots expireront si vous ne les avez pas utilisés pendant trois ans, ou si aucune commande n'a été passée depuis 12 mois sur un compte associé.",
       },
     ],
   },
@@ -143,7 +143,7 @@ const gemeDotsProps: IGemeDotsProps = {
       },
       {
         label: 'Admissibilité',
-        description: `<p class="mb-5">Seules les personnes physiques âgées de plus de 18 ans peuvent participer.</p>`,
+        description: `<p class="mb-5">Seules les personnes physiques de 18 ans et plus sont éligibles pour participer.</p>`,
       },
       {
         label: "Admissibilité à l'adhésion",
