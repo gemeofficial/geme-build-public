@@ -10,14 +10,15 @@
     "lint": "eslint ./src/stories/**/*.stories.tsx",
     "ci:test-storybook": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"pnpm run build && http-server storybook-static --port 6006 --silent\" \"wait-on http://127.0.0.1:6006 && test-storybook\""
   },
-  "dependencies": {
+  "peerDependencies": {
+    "next": "13.5.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
     "next": "13.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwind-config": "workspace:*",
-    "ui": "workspace:*"
-  },
-  "devDependencies": {
     "@storybook/addon-essentials": "^7.4.0",
     "@storybook/addon-interactions": "^7.6.13",
     "@storybook/addon-links": "^7.4.0",
