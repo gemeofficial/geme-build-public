@@ -54,8 +54,8 @@ const warrantyExtendProps: IWarrantyExtendProps = {
       ),
       description: `
         <ul class="my-5 list-inside list-decimal">
-        <li class="mb-5">ROKH SRL offre une période de garantie de 1 an à compter de la date d'achat du matériel. En prolongeant la période de garantie, ROKH SRL couvrira les frais de réparation pendant un ou deux ans supplémentaires immédiatement après l'expiration de la période de garantie. La date d'expiration est indiquée au recto du document de garantie.</li>
-        <li class="mb-5">Le contrat d'extension de garantie d'un an est automatiquement prolongé de 12 mois à 3 ans à compter de la date d'achat du matériel. Par la suite, le contrat est automatiquement résilié. Elle peut également être résiliée par écrit jusqu'à un mois avant la fin de la période annuelle de couverture à compter du premier jour de validité/renouvellement. La prolongation automatique prend effet lorsque le client paie la facture reçue au début de la prolongation dans le délai de paiement indiqué.</li>
+        <li class="mb-5">ROKH SRL offre une période de garantie de 1 an à compter de la date d'achat du matériel. En prolongeant la période de garantie, ROKH SRL couvrira les frais de réparation pour une ou deux années supplémentaires, immédiatement après l'expiration de la période de garantie initiale. La date d'expiration est indiquée au recto du document de garantie.</li>
+        <li class="mb-5">Le contrat d'extension de garantie est prolongé automatiquement de 12 mois à chaque fois, jusqu'à atteindre un total de 3 ans, à compter de la date d'achat du matériel. Par la suite, le contrat est automatiquement résilié. Elle peut également être résiliée par écrit jusqu'à un mois avant la fin de la période annuelle de couverture à compter du premier jour de validité/renouvellement. La prolongation automatique prend effet lorsque le client paie la facture reçue au début de la prolongation dans le délai de paiement indiqué.</li>
         <li class="mb-5">Les extensions de garantie existantes d'un an peuvent être prolongées pour un maximum de 3 ans au cours de leur période de garantie.</li>
         <li class="mb-5">ROKH SRL a le droit d’ajuster ses prix à tout moment. Lors de l’achat d’une extension de garantie, le prix en vigueur au moment de la signature du contrat s’applique. L'évolution du prix d'une extension de garantie d'un an peut être indiquée sur la facture annuelle. Aucune information écrite préalable ne sera fournie. Si la facture est payée dans le délai de paiement, on suppose que le changement de prix a été accepté. Si le paiement est refusé, la période de garantie ne sera pas prolongée.
         <p class="mt-2">Tous les prix incluent la TVA légale.</p>
@@ -85,7 +85,7 @@ const warrantyExtendProps: IWarrantyExtendProps = {
         <li class="mb-5">Les appareils sont achetés auprès de revendeurs spécialisés agréés ou directement dans la boutique en ligne ROKH SRL dans les pays de l'UE, au Royaume-Uni, en Suisse, en Norvège ou aux États-Unis.</li>
         <li class="mb-5">Au moment de l’achat de l’extension de garantie, l’équipement se trouve dans le pays précisé ci-dessus.</li>
         <li class="mb-5">Le document de police est valable pour un appareil ROKH SRL spécifique dans chaque cas et n'est pas transférable.</li>
-        <li class="mb-5">Si l'équipement change de propriétaire ou si le propriétaire déménage à une autre adresse, ROKH SRL doit en être informé pour que le document de police reste valable.</li>
+        <li class="mb-5">En cas de changement de propriétaire de l'équipement ou de déménagement du propriétaire à une autre adresse, il est impératif d'informer ROKH SRL pour maintenir la validité du document de garantie.</li>
         <li class="mb-5">Le document de politique doit être enregistré et signé pendant la période de garantie d'un an de l'équipement. Une extension de garantie d'un an peut également être obtenue directement après une visite de service par un technicien ROKH SRL pour les appareils jusqu'à 3 ans.</li>
         <li class="mb-5">Le service couvert par l'extension de garantie ne sera disponible que dans l'UE, au Royaume-Uni, en Suisse, en Norvège et aux États-Unis.</li>
         <li class="mb-5">Le service au titre de l'extension de garantie ne peut être effectué que par le service client de ROKH SRL ou par un agent de service agréé ROKH SRL, disponible à l'adresse <a href="mailto:info@geme.bio" class="text-accent-6 hover:text- accent-9 transition facilité d'entrée-sortie durée-150 soulignement">info@geme.bio</a> contrat avec le service client de ROKH SRL.</li>
@@ -143,7 +143,7 @@ const warrantyExtendProps: IWarrantyExtendProps = {
       <p class="mb-5">Les extensions de garantie ne couvrent pas les frais de réparation si le défaut est causé par</p>
         <ul class="my-5 list-inside list-decimal">
         <li class="mb-5">Une mauvaise installation, telle que le non-respect des règles de sécurité applicables et des instructions écrites d'utilisation et d'installation.</li>
-        <li class="mb-5">Utilisation et manipulation inappropriées, telles que l'utilisation d'agents de nettoyage ou de produits chimiques inappropriés et les dommages causés par l'absorption de liquides, de poussière ou de toner.</li>
+        <li class="mb-5">Utilisation et manipulation inappropriées, telles que l'emploi d'agents de nettoyage ou de produits chimiques non recommandés, ainsi que les dommages résultant de l'absorption de liquides, de poussière ou de toner.</li>
         <li class="mb-5">Les équipements achetés dans d'autres États membres de l'UE, au Royaume-Uni, en Suisse, en Norvège ou aux États-Unis peuvent ne pas fonctionner ou leur utilisation peut être limitée en raison de spécifications techniques différentes.</li>
         <li class="mb-5">Facteurs externes tels que dommages dus au transport, chocs et bosses, conditions environnementales difficiles ou phénomènes naturels.</li>
         <li class="mb-5">Réparations ou modifications non effectuées par un agent de service formé et autorisé de ROKH SRL.</li>
@@ -196,7 +196,7 @@ const warrantyExtendProps: IWarrantyExtendProps = {
         </svg>
       ),
       description: `
-      <p class="mb-5">Vous avez le droit de résilier ce contrat dans un délai de 30 jours sans avoir à justifier votre décision. Voir les <a href="/return-policy" target="_blank" class="text-accent-6 hover:text-accent-9 transition easy-in-out duration-150 underline">les conditions de retour</a > pour plus de détails.<p>
+      <p class="mb-5">Vous avez le droit de résilier ce contrat sans justification dans les 30 jours suivant sa signature. Voir les <a href="/return-policy" target="_blank" class="text-accent-6 hover:text-accent-9 transition easy-in-out duration-150 underline">les conditions de retour</a > pour plus de détails.<p>
       <p class="mb-5">Si vous demandez à commencer à fournir des services pendant la période de retour, vous devez nous verser un montant proportionnel au montant fourni en fonction de la couverture totale du contrat avant de pouvoir nous notifier votre rétractation de ce contrat.</p>
       `,
     },

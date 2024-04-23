@@ -39,8 +39,8 @@ const warrantyProps: IWarrantyProps = {
   forward: {
     title: 'Avant-propos',
     description: `
-      Les appareils électriques ROKH SRL sont fabriqués selon des normes très élevées
-      normes de qualité. Néanmoins, des échecs sont toujours possibles.
+      Les appareils électriques de ROKH SRL sont fabriqués selon des normes de 
+      qualité très élevées. Néanmoins, des échecs sont toujours possibles.
       Dans de tels cas, les réparations peuvent être effectuées rapidement et
       professionnellement pendant ou après la période de garantie, sans
       affectant la durée de vie de l'équipement.
@@ -140,9 +140,9 @@ const warrantyProps: IWarrantyProps = {
       <p class="mb-5">La garantie ne s'applique pas dans les cas suivants.</p>
       <ul class="my-5 list-inside list-disc">
         <li class="mb-5">Des écarts mineurs liés à la qualité attendue, qui n'altèrent pas la valeur ou le bon fonctionnement du matériel.</li>
-        <li class="mb-5">Modifications de construction ou d'exécution apportées avant l'exécution de la commande et n'affectant pas la valeur et le bon fonctionnement du matériel.</li>
+        <li class="mb-5">Les modifications de construction ou d'exécution, apportées avant l'exécution de la commande et qui n'affectent pas la valeur ni le bon fonctionnement du matériel, sont exclues de la garantie.</li>
         <li class="mb-5">Défauts dus à un assemblage ou une installation incorrecte.</li>
-        <li class="mb-5">Conséquences de facteurs externes, tels que : les dommages causés par le transport ; une utilisation non conforme pouvant endommager certains composants sensibles, tels que les pièces synthétiques, le caoutchouc ; réactions chimiques ou électrochimiques provoquées par l'eau ; conditions météorologiques; stress environnementaux anormaux.</li>
+        <li class="mb-5">Conséquences de facteurs externes, telles que les dommages causés par le transport, une utilisation non conforme endommageant des composants sensibles (comme les pièces synthétiques et le caoutchouc), des réactions chimiques ou électrochimiques dues à l'eau, des conditions météorologiques adverses, ou des stress environnementaux anormaux.</li>
         <li class="mb-5">Conditions d'utilisation ou de fonctionnement inappropriées.</li>
         <li class="mb-5">Réparations ou modifications effectuées par des tiers non professionnellement qualifiés.</li>
         <li class="mb-5">Numéros d'identification de l'équipement manquants.</li>
@@ -157,10 +157,8 @@ const warrantyProps: IWarrantyProps = {
   additionalProvisions: {
     title: 'Dispositions supplémentaires',
     description: `
-    Réclamations pour annulation de la vente, perte de valeur ou dommages
-    ne sont pas couverts, sauf dans les cas prévus par la loi au présent
-    champ. En cas de recours, l'indemnisation ne peut excéder le montant
-    valeur du matériel.
+    Les réclamations pour annulation de la vente, perte de valeur ou dommages ne sont pas couvertes, sauf dans les cas où la loi l'exige.
+    En cas de recours, l'indemnisation ne peut excéder le montant valeur du matériel.
     <br />
     <br />
     Les conditions de garantie s'appliquent au matériel acheté et utilisé dans
@@ -187,14 +185,14 @@ const warrantyProps: IWarrantyProps = {
   },
 }
 
- function WarrantyPageFr() {
+function WarrantyPageFr() {
   return (
     <>
       <link rel="canonical" href="https://www.geme.bio/fr/warranty" />
       <h1 className="sr-only">Informations sur la garantie du produit GEME</h1>
       <SiteHelpTabs {...siteHelpTabsProps} />
-      <Warranty {...warrantyProps}/>
+      <Warranty {...warrantyProps} />
     </>
   )
 }
- export {WarrantyPageFr}
+export { WarrantyPageFr }
