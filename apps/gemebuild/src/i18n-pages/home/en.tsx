@@ -442,7 +442,7 @@ function HomePageEn() {
         <ContentSection1 {...contentSection1Props3} />
       </div>
 
-      <div className=" bg-v2311-bg-light-green ">
+      <div className=" bg-v2311-bg-light-green">
         <ContentSection5 {...contentSection5Props} />
       </div>
 

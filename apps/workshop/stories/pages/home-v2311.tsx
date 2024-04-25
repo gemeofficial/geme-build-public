@@ -387,7 +387,7 @@ function HomeV2311(): JSX.Element {
         <ContentSection1 {...contentSection1Props} />
       </div>
 
-      <div className=" bg-v2311-bg-light-green ">
+      <div className=" bg-v2311-bg-dark-green ">
         <ContentSection5 {...contentSection5Props} />
       </div>
 

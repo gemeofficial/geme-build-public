@@ -1,4 +1,4 @@
-import { ReactNode} from 'react'
+import { ReactNode } from 'react'
 import './second-life.css'
 import { Img } from '../image'
 import type { IImgProps } from '../image'
