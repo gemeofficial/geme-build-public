@@ -33,6 +33,11 @@
     "ui": "workspace:*"
   },
   "devDependencies": {
+    "next": "13.5.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "next-intl": "3.0.0-beta.19",
+    "ui": "workspace:*",
     "@storybook/addon-essentials": "^7.4.0",
     "@storybook/addon-interactions": "^7.6.13",
     "@storybook/addon-links": "^7.4.0",
