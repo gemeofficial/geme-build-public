@@ -84,7 +84,7 @@ function ScrollTriggeredAnimatedHeadlineBottom({
             rotate: 'none',
             scale: 'none',
             transform: 'translateX(-100%)',
-            opacity: '1',
+            opacity: '0',
           }}
         >
           {endTitleLeftPart}
