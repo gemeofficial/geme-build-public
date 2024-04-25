@@ -5,7 +5,7 @@ import {
 } from '@heroicons/react/24/solid'
 
 const title = 'Buy with Confident'
-const description = `We know you will feel expensive, but we make sure it worth. 
+const description = `We know you will feel expensive, but we make sure it worth.
 Your money wont gone, it turns into the a better life style and good service around you.`
 
 const features = [
@@ -49,7 +49,7 @@ function Warranty() {
             {features.map((feature) => (
               <div key={feature.name} className="flex flex-col">
                 <dt className="text-base font-semibold leading-7 text-gray-900">
-                  <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-600">
+                  <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-v2311-bg-dark-green">
                     <feature.icon
                       className="h-6 w-6 text-white"
                       aria-hidden="true"
