@@ -96,7 +96,7 @@ export default function Hero({
                       : primaryButtonProps.locale
                   }
                   passHref
-                  className="inline-block rounded-md border border-transparent bg-emerald-600 py-3 px-8 text-center font-medium text-white hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-gray-50"
+                  className="inline-block rounded-md border border-transparent bg-v2311-bg-dark-green hover:bg-v2311-primary py-3 px-8 text-center font-medium text-white focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-gray-50"
                 >
                   {primaryButtonLabel}
                 </Link>

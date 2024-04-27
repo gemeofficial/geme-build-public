@@ -61,7 +61,7 @@ function equipmentToViewProps(
                 className={clsx(
                   'flex w-full items-center justify-center rounded-md border border-transparent',
                   'py-3 px-8 text-base font-medium',
-                  'bg-emerald-600  text-white hover:bg-emerald-700',
+                  'bg-v2311-bg-dark-green hover:bg-v2311-primary text-white',
                   'focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-gray-50',
                 )}
               >

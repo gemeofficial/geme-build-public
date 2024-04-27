@@ -422,7 +422,7 @@ function ContentSection5({
         </h2>
       )}
       {description && (
-        <p className="v2311-font-body text-v2311-fg-black text-center mt-4 md:mt-8">
+        <p className="v2311-font-body text-gray-600 text-center mt-4 md:mt-8">
           {description}
         </p>
       )}
@@ -453,7 +453,7 @@ function ContentSection5({
         })}
       </div>
       {bottomDescription && (
-        <p className="v2311-font-body text-v2311-fg-black text-center mt-4 md:mt-8 xl:hidden">
+        <p className="v2311-font-body text-gray-600 text-center mt-4 md:mt-8 xl:hidden">
           {bottomDescription}
         </p>
       )}

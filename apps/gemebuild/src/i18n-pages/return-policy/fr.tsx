@@ -47,7 +47,7 @@ const returnPolicyCurrentProps: IReturnPolicyCurrentProps = {
   updateTime: 'Mise à jour : 25 novembre 2023',
   forward: {
     description: `
-    <p class="mb-5">Notre équipe se fera un plaisir de vous aider dans le processus de retour des produits achetés via www.geme.bio. Envoyez simplement le formulaire d'annulation à <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition easy-in-out duration-150 underline">info@geme. biographie </a>. Veuillez préparer votre numéro de commande ou le numéro de série de votre produit afin que nous puissions vous aider tout au long du processus.</p>
+    <p class="mb-5">Notre équipe se fera un plaisir de vous aider dans le processus de retour des produits achetés via www.geme.bio. Envoyez simplement le formulaire d'annulation à <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition easy-in-out duration-150 underline">info@geme. biographie </a>. Veuillez préparer votre numéro de commande ou le numéro de série de votre produit afin que nous puissions vous assister tout au long du processus.</p>
     <p class="mb-2 text-xs">
       Remarque : Nous acceptons uniquement les retours de produits achetés directement à partir de ce tableau.
       Si vous avez acheté votre produit auprès d'un autre détaillant, veuillez contacter ce détaillant concernant votre retour.
@@ -104,8 +104,8 @@ const returnPolicyCurrentProps: IReturnPolicyCurrentProps = {
       svgSrc: <Svg30Days></Svg30Days>,
       description: `
         <p class="mb-5">Profitez de 30 jours de bonheur avec GEME à la maison ! Si vous n'êtes pas satisfait, renvoyez-le dans les 30 jours. Nous nous occuperons du reste et prendrons en charge les frais de port.</p>
-        <p class="mb-5">Si vous n'avez pas utilisé GEME-Kobold, obtenez un remboursement complet, sans poser de questions !</p>
-        <p class="mb-5">Vous l'avez utilisé ? Aucun problème! Renvoyez-le, nous prenons toujours en charge les frais d'expédition. Seulement 70 $ seront déduits du paiement initial pour un nettoyage et un réapprovisionnement en profondeur.</p>
+        <p class="mb-5">Si vous n'avez pas utilisé le GEME-Kobold, vous obtiendrez un remboursement complet, sans questions.</p>
+        <p class="mb-5">Vous l'avez utilisé ? Aucun problème ! Renvoyez-le, nous prendrons toujours en charge les frais d'expédition. Une somme de 70 $ sera déduite du paiement initial pour couvrir les coûts de nettoyage et de réapprovisionnement.</p>
         <p class="mb-5">Juste un conseil amical : avant de retourner l'appareil, assurez-vous d'éliminer tous les sous-produits, micro-organismes utilisés ou résidus alimentaires. Prenez des photos avant et après l'emballage. Ces 2 étapes simples garantissent un processus de retour fluide, évitant tout problème logistique.</p>
         <p class="mb-5">Votre satisfaction est notre priorité et nous souhaitons que cet essai soit une expérience agréable pour vous !</p>
       `,
@@ -115,15 +115,15 @@ const returnPolicyCurrentProps: IReturnPolicyCurrentProps = {
       hide: false,
       svgSrc: <Svg45Days></Svg45Days>,
       description: `
-      <p class="mb-5">Si vous n'êtes pas satisfait de votre produit pour toute autre raison, vous disposez de 45 jours calendaires pour demander un retour. Des frais de restockage supplémentaires de 50 % du prix de vente du produit seront facturés. Les frais de livraison, d'expédition et de service d'origine ne seront pas remboursés. Contactez-nous via <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition easy-in-out duration-150 underline">info@geme.bio</ a> pour organiser un retour. </p>
+      <p class="mb-5">Si vous n'êtes pas satisfait de votre produit pour une quelconque autre raison, vous avez 45 jours calendaires à partir de la date de réception pour demander un retour. Des frais de restockage supplémentaires de 50 % du prix de vente du produit seront facturés. Les frais de livraison, d'expédition et de service d'origine ne seront pas remboursés. Contactez-nous via <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition easy-in-out duration-150 underline">info@geme.bio</ a> pour organiser un retour. </p>
         `,
     },
     {
-      name: 'Après 45 jours calendaires',
+      name: 'Passés les 45 jours calendaires',
       hide: false,
       svgSrc: <Svg45DaysAfter></Svg45DaysAfter>,
       description: `
-      <p class="mb-5">Si le délai de retour de 45 jours est écoulé et que votre produit est toujours sous garantie, veuillez nous appeler pour un service de garantie ou pour organiser une réparation. Des frais peuvent s'appliquer.</p>
+      <p class="mb-5">si le délai pour retourner le produit est expiré mais que votre produit est toujours sous garantie, veuillez nous contacter pour bénéficier d'un service sous garantie ou pour organiser une réparation. Des frais peuvent s'appliquer.</p>
       <p class="mb-5">Une raison d'être malheureux ? Contactez-nous via <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a> afin que nous puissions mieux comprendre comment vous aider à résoudre votre problème.</p>
       `,
     },
@@ -136,7 +136,7 @@ const returnPolicyEndProps: IReturnPolicyEndProps = {
   updateTime: 'Mise à jour : 1 janvier 2023',
   forward: {
     description: `
-    <p class="mb-5">Notre équipe se fera un plaisir de vous aider dans le processus de retour des produits achetés via www.geme.bio. Envoyez simplement le formulaire de rétractation à <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio </a>. Veuillez préparer votre numéro de commande ou le numéro de série de votre produit afin que nous puissions vous aider tout au long du processus.</p>
+    <p class="mb-5">Notre équipe se fera un plaisir de vous aider dans le processus de retour des produits achetés via www.geme.bio. Envoyez simplement le formulaire de rétractation à <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio </a>. Veuillez préparer votre numéro de commande ou le numéro de série de votre produit afin que nous puissions vous assister tout au long du processus.</p>
     <p class="mb-5">Remarque : Nous acceptons uniquement les retours de produits achetés directement sur www.geme.bio. Si vous avez acheté votre produit auprès d'un autre détaillant, veuillez contacter ce détaillant concernant votre retour.</p>
     `,
     imgSrc: '/assets/images/return-policy/1.png',
@@ -170,14 +170,14 @@ const returnPolicyEndProps: IReturnPolicyEndProps = {
       name: 'Retours sous 45 jours calendaires',
       svgSrc: <Svg45Days></Svg45Days>,
       description: `
-      <p class="mb-5">Si vous n'êtes pas satisfait de votre produit pour toute autre raison, vous disposez de 45 jours calendaires pour demander un retour. Des frais de restockage supplémentaires de 50 % du prix de vente du produit seront facturés. Les frais de livraison, d'expédition et de service d'origine ne seront pas remboursés. Contactez-nous via <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a> pour organiser un retour. </p>
+      <p class="mb-5">Si vous n'êtes pas satisfait de votre produit pour une quelconque autre raison, vous avez 45 jours calendaires à partir de la date de réception pour demander un retour. Des frais de restockage supplémentaires de 50 % du prix de vente du produit seront facturés. Les frais de livraison, d'expédition et de service d'origine ne seront pas remboursés. Contactez-nous via <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a> pour organiser un retour. </p>
         `,
     },
     {
-      name: 'Après 45 jours calendaires',
+      name: 'Passés les 45 jours calendaires',
       svgSrc: <Svg45DaysAfter></Svg45DaysAfter>,
       description: `
-      <p class="mb-5">Si le délai de retour de 45 jours est écoulé et que votre produit est toujours sous garantie, veuillez nous appeler pour un service de garantie ou pour organiser une réparation. Des frais peuvent s'appliquer.</p>
+      <p class="mb-5">si le délai pour retourner le produit est expiré mais que votre produit est toujours sous garantie, veuillez nous contacter pour bénéficier d'un service sous garantie ou pour organiser une réparation. Des frais peuvent s'appliquer.</p>
       <p class="mb-5">Une raison d'être malheureux ? Contactez-nous via <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a> afin que nous puissions mieux comprendre comment vous aider à résoudre votre problème. </p>
       `,
     },

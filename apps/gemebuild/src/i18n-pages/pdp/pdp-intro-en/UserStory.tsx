@@ -12,8 +12,7 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
       name: 'Alex Egertson',
       role: 'Director of Sustainability',
       image: {
-        // src: 'https://img1.wsimg.com/isteam/ip/b6c98e26-b6a8-472d-adb1-ebf59337e750/Alex%20bio%20pic%20(1).png/:/cr=t:0%25,l:24.73%25,w:50.55%25,h:89.29%25/rs=w:730,h:730,cg:true,m',
-        src: 'https://img1.wsimg.com/isteam/ip/b6c98e26-b6a8-472d-adb1-ebf59337e750/Copy%20of%20thankyouCard_Jump.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1160,h:743',
+        src: '/assets/images/pdp-v2311/user-stories/user-stories-llc.jpg',
         alt: 'Alex Egertson',
       },
       bio: (
