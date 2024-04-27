@@ -7,6 +7,7 @@ import {
   usingCompostIcons,
 } from './pdp-intro-svgs'
 import { IconCycleArrow } from './icons'
+import Image from 'next/image'
 interface IPdpIntroSection1Props {
   title?: ReactNode
   description?: ReactNode
@@ -24,7 +25,7 @@ interface IPdpIntroSection1Props {
     {
       id: number
       description?: ReactNode
-    }
+    },
   ]
 }
 
@@ -49,7 +50,7 @@ function PdpIntroSection1({
   return (
     <div
       className={classNames(
-        ' h-[534px] md:h-[1060px] bg-cover bg-center bg-no-repeat'
+        ' h-[534px] md:h-[1060px] bg-cover bg-center bg-no-repeat',
       )}
       style={{ backgroundImage: `url(${bgImageSrc})` }}
     >
@@ -109,9 +110,11 @@ function PdpIntroSection3({ title }: IPdpIntroSection3Props) {
 
 function PdpIntroSection4() {
   return (
-    <img
+    <Image
       className=" rounded-xl "
       src="/assets/images/pdp-v2311/introduction/noise-level.jpeg"
+      width={3985}
+      height={2196}
       alt="GEME Noise Performance"
     />
   )
@@ -147,12 +150,18 @@ function PdpIntroSection5({ title, leftNotes }: IPdpIntroSection5Props) {
         {/* <SvgWasteToGeme className=" z-0 xl:hidden" />
         <SvgWasteToGemeLarge className=" z-0 hidden xl:block " /> */}
 
-        <img
+        <Image
           src="/assets/images/pdp-v2311/introduction/waste-to-geme.svg"
           alt="introduction waste to geme"
+          width={58}
+          height={75}
+          layout="responsive"
           className=" z-0 xl:hidden"
         />
-        <img
+        <Image
+          width={300}
+          height={133}
+          layout="responsive"
           src="/assets/images/pdp-v2311/introduction/waste-to-geme-large.svg"
           alt="introduction waste to geme"
           className=" z-0 hidden xl:block "
@@ -203,7 +212,7 @@ interface IPdpIntroSection6Props {
       features?: ReactNode[]
       imageSrc?: string
       imageAlt?: string
-    }
+    },
   ]
 }
 
@@ -259,7 +268,7 @@ function PdpIntroSection6({
   return (
     <section
       className={classNames(
-        'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl'
+        'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl',
       )}
     >
       <div className=" text-center">
@@ -284,7 +293,7 @@ function PdpIntroSection6({
                   : ' text-v2311-primary xl:rounded-3xl xl:col-span-3 xl:row-span-5 xl:text-white xl:p-8 xl:pt-4',
 
                 item.id === 2 ? 'xl:bg-[#80AB9D]' : '',
-                item.id === 3 ? 'xl:bg-[#578F75]' : ''
+                item.id === 3 ? 'xl:bg-[#578F75]' : '',
               )}
             >
               {item?.title && (
@@ -293,7 +302,7 @@ function PdpIntroSection6({
                     'text-center xl:text-left',
                     item.featured
                       ? 'v2311-font-h2'
-                      : 'v2311-font-body text-v2311-fg-black xl:text-white mt-4'
+                      : 'v2311-font-body text-v2311-fg-black xl:text-white mt-4',
                   )}
                 >
                   {item?.title}
@@ -304,7 +313,7 @@ function PdpIntroSection6({
                   'flex flex-row xl:flex-col items-center justify-center w-full xl:items-stretch',
                   item.featured
                     ? 'mt-4 md:mt-8 xl:mt-4 gap-4 md:gap-8 xl:gap-8'
-                    : 'mt-2 md:mt-4 gap-2 md:gap-4'
+                    : 'mt-2 md:mt-4 gap-2 md:gap-4',
                 )}
               >
                 {item?.imageSrc && (
@@ -312,18 +321,20 @@ function PdpIntroSection6({
                     className={classNames(
                       item.featured
                         ? ' aspect-[156/99] flex-1'
-                        : 'aspect-1 md:min-w-[120px] flex-[2]'
+                        : 'aspect-1 md:min-w-[120px] flex-[2]',
                     )}
                   >
-                    <img
+                    <Image
                       className={classNames(
                         'w-full',
                         item.featured
                           ? 'rounded-2xl flex-1'
-                          : '  rounded-full xl:rounded-2xl '
+                          : '  rounded-full xl:rounded-2xl ',
                       )}
-                      src={item?.imageSrc}
-                      alt={item?.imageAlt}
+                      src={item?.imageSrc || ''}
+                      alt={item?.imageAlt || ''}
+                      width={item.featured ? 156 : 89}
+                      height={item.featured ? 99 : 89}
                     />
                   </div>
                 )}
@@ -333,7 +344,7 @@ function PdpIntroSection6({
                       'v2311-font-body xl:v2311-font-h3 xl:font-normal',
                       item.featured
                         ? 'flex-1'
-                        : ' text-[8px] md:v2311-font-img-desc xl:v2311-font-body mr-2 md:mr-4 flex-[3]'
+                        : ' text-[8px] md:v2311-font-img-desc xl:v2311-font-body mr-2 md:mr-4 flex-[3]',
                     )}
                   >
                     {item?.features.map((feature, idx) => {
@@ -342,7 +353,7 @@ function PdpIntroSection6({
                           key={`${feature}_${idx}`}
                           className={classNames(
                             'flex items-center mb-1 md:mb-2 ',
-                            item.featured ? 'xl:mb-2' : 'xl:mb-1'
+                            item.featured ? 'xl:mb-2' : 'xl:mb-1',
                           )}
                         >
                           {item.featured ? (
@@ -391,12 +402,18 @@ function PdpIntroSection7({
       <div className=" relative ">
         {/*<SvgDeviceCompare className=" xl:hidden " />*/}
         {/*<SvgDeviceCompareLarge className=" hidden xl:block " />*/}
-        <img
+        <Image
+          width={58}
+          height={75}
+          layout="responsive"
           src="/assets/images/pdp-v2311/introduction/device-compare.svg"
           alt="Introduction GEME Composter Super Large Volume"
           className=" z-0 xl:hidden"
         />
-        <img
+        <Image
+          width={300}
+          height={133}
+          layout="responsive"
           src="/assets/images/pdp-v2311/introduction/device-compare-large.svg"
           alt="Introduction GEME Composter Super Large Volume"
           className=" z-0 hidden xl:block "
@@ -520,7 +537,7 @@ function PdpIntroSection8({
     <div className="bg-[#E1EBE7] 2xl:bg-transparent relative">
       <div
         className={classNames(
-          ' px-4 py-8 md:px-8 md:py-16 xl:p-0 xl:min-h-[850px] flex flex-col items-center justify-center '
+          ' px-4 py-8 md:px-8 md:py-16 xl:p-0 xl:min-h-[850px] flex flex-col items-center justify-center ',
         )}
       >
         {bgImageSrc && (
@@ -557,8 +574,10 @@ function PdpIntroSection8({
                         className=" flex flex-col justify-center items-center"
                       >
                         {/*<feature.Icon className="w-12 h-12 md:w-16 md:h-16" />*/}
-                        <img
+                        <Image
                           src={feature.imgSrc}
+                          height={100}
+                          width={100}
                           alt="Introduction GEME Composter features"
                           className="w-12 h-12 md:w-16 md:h-16"
                         />

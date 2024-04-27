@@ -1,6 +1,7 @@
 import { ReactNode } from 'react'
 import { Img } from './image'
 import type { IImgProps } from './image'
+import Image from 'next/image'
 
 interface IPdpUserStoryTeamSectionsExampleProps {
   title?: ReactNode
@@ -81,9 +82,11 @@ function PdpUserStoryTeamSectionsExample({
         >
           {people.map((person) => (
             <li key={person.id} className="flex flex-col gap-6 xl:flex-row">
-              <img
+              <Image
                 className="aspect-[4/5] w-52 flex-none rounded-2xl object-cover"
-                src={person.imageUrl}
+                width={400}
+                height={500}
+                src={person.imageUrl || ''}
                 alt=""
               />
               <div className="flex-auto">
@@ -200,10 +203,22 @@ function PdpUserStoryTeamSections({
               className="shadow-md p-4 rounded-2xl"
             >
               <div className="flex md:flex-col xl:flex-row gap-4 md:gap-8">
-                <Img
-                  {...person.image}
-                  className=" aspect-[4/5] rounded-2xl object-cover w-32 md:w-52"
-                />
+                {person.image?.src?.startsWith('https') ? (
+                  <img
+                    src={person.image?.src || ''}
+                    alt={person.image?.alt || ''}
+                    loading="lazy"
+                    className=" aspect-[4/5] rounded-2xl object-cover w-32 md:w-52"
+                  />
+                ) : (
+                  <Image
+                    src={person.image?.src || ''}
+                    alt={person.image?.alt || ''}
+                    width={400}
+                    height={500}
+                    className=" aspect-[4/5] rounded-2xl object-cover w-32 md:w-52"
+                  />
+                )}
 
                 <div className="flex-auto">
                   <h3 className=" v2311-font-h2 text-v2311-fg-dark-black">

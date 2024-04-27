@@ -105,6 +105,7 @@ const UiCompost = forwardRef(function UiCompost(
               src="https://www.datocms-assets.com/79468/1663102198-spritesheet-1.png?auto=format"
               width={3510}
               height={2808}
+              loading="lazy"
               alt="sprite images"
             />
           </div>
