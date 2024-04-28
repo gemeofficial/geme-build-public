@@ -1,4 +1,5 @@
-import Link from '../../../components/link'
+// FIXME: next/link not work with next-intl, should use components/link instead.
+import Link from 'next/link'
 import { QuestionMarkCircleIcon } from '@heroicons/react/24/solid'
 
 interface IQAType {
