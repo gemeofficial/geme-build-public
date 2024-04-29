@@ -10,22 +10,21 @@ const manualsDownloadProps: IManualsDownloadProps = {
     {
       language: 'Anglais',
       document: 'geme-manual-en.pdf',
-      pdfLink: `/assets/return/geme-manual-en-v2.pdf`,
+      pdfLink: `/assets/manuals/geme-manual-en-v2.pdf`,
     },
     {
       language: 'Français',
       document: 'geme-manual-fr.pdf',
-      pdfLink: `/assets/return/geme-manual-fr.pdf`,
+      pdfLink: `/assets/manuals/geme-manual-fr.pdf`,
     },
     {
       language: 'Allemand',
       document: 'geme-manual-de.pdf',
-      pdfLink: `/assets/return/geme-manual-de.pdf`,
+      pdfLink: `/assets/manuals/geme-manual-de.pdf`,
     },
   ],
   tableTitle: ['Langue', 'Document'],
 }
-
 
 function ManualsDownloadPageFr() {
   const url = 'https://www.geme.bio/fr/manuals-download'
