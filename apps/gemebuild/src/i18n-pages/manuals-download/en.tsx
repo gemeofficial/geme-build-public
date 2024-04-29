@@ -9,13 +9,13 @@ const manualsDownloadProps: IManualsDownloadProps = {
   files: [
     {
       language: 'English',
-      document: 'geme-manual-en-220v.pdf',
-      pdfLink: `/assets/manuals/geme-manual-en-v2.pdf`,
+      document: 'geme-manual-en-110v.pdf',
+      pdfLink: `/assets/manuals/geme-manual-110v-en-v2024-04-27.pdf`,
     },
     {
       language: 'English',
-      document: 'geme-manual-en-110v.pdf',
-      pdfLink: `/assets/manuals/geme-manual-110v-en-v2024-04-27.pdf`,
+      document: 'geme-manual-en-220v.pdf',
+      pdfLink: `/assets/manuals/geme-manual-en-v2.pdf`,
     },
     {
       language: 'French',
