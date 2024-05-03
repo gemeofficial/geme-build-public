@@ -69,6 +69,7 @@ const MuxVideoPlayer: FC<IMuxVideoPlayerProps> = ({
         src={coverImageURL}
         alt="Video cover picture"
         fill={true}
+        loading="eager"
         className={`w-full h-full object-cover ${
           isCanPlay ? 'hidden' : 'block'
         }`}
