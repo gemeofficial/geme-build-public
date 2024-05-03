@@ -447,6 +447,7 @@ function ContentSection5({
                 alt={imageAlt || ''}
                 width={608}
                 height={343}
+                unoptimized
               />
             </div>
           )
