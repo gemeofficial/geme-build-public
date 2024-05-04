@@ -23,7 +23,6 @@ function ScrollTriggeredAnimatedOxygenCycle(props: IOxygenCycleProps) {
       start="top top+=12%"
       end="bottom center-=10%"
       pin={true}
-      pinnedContainer=".sb-show-main"
       scrub={true}
       markers={false}
       onUpdate={onUpdate}
