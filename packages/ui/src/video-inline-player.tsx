@@ -5,7 +5,7 @@ import { MouseEventHandler, PropsWithChildren, useState, Fragment } from 'react'
 import { XCircleIcon } from '@heroicons/react/24/solid'
 import classNames from './lib/classNames'
 
-function PlayIcon({
+export function PlayIcon({
   size = 'large',
   className,
 }: {

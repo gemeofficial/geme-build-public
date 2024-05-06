@@ -3,6 +3,8 @@ import { IconCycleArrow, IconLogoGeme } from './icons'
 // import { IVideoPlayerProps, VideoPlayer } from './video'
 import { IMuxVideoPlayerProps, MuxVideoPlayer } from './mux-video'
 import Image from 'next/image'
+import { PlayIcon } from './video-inline-player'
+// import mixpanel from 'mixpanel-browser'
 
 interface IHeroSection1Props {
   title?: ReactNode
@@ -74,10 +76,16 @@ function HeroSection1({
   videoProps,
   LinkComponent,
 }: IHeroSection1Props) {
+  const playerVideoHandler = ()=>{
+    // mixpanel.track('Watch video', {
+    //   From: 'Home hero video',
+    // })
+  }
   return (
     <div className="h-screen ">
+      {/* 大屏图片层 */}
       <div className="overflow-hidden h-full relative">
-        <div className="z-10 absolute inset-0 bg-opacity-40 bg-black "></div>
+        <div className="z-10 absolute inset-0 bg-opacity-30 md:bg-opacity-40 bg-black "></div>
         {/* 停用Mux Player自动背景播放 */}
         {/* <MuxVideoPlayer {...videoProps} /> */}
         <Image
@@ -88,6 +96,7 @@ function HeroSection1({
         />
       </div>
 
+      {/* 文字定位层 */}
       <div className="h-screen xl:mx-auto xl:max-w-7xl absolute z-40 inset-0 flex flex-col items-center xl:items-start justify-center text-center xl:text-left">
         <IconLogoGeme className="hidden xl:block w-16" />
         {title && (
@@ -121,7 +130,7 @@ function HeroSection1({
       </div>
 
       {/* 右下角视频小窗 */}
-      <div className="portrait:hidden absolute right-[18px] bottom-[18px] z-50">
+      <div className="portrait:w-48 portrait:h-28 absolute right-[18px] bottom-[18px] z-50">
         <div className="relative h-full landscape:w-[180px] landscape:h-[111px] landscape:lg:w-[230px] landscape:lg:h-[132px] landscape:2xl:w-[270px] landscape:2xl:h-[152px] rounded-full landscape:rounded-xl overflow-hidden group">
           <div className="relative h-full w-full object-cover transform-gpu transition-transform group-hover:scale-125 duration-[0.25s] ease-[cubic-bezier(0.24, 0.8, 0.4, 1)]">
             <MuxVideoPlayer {...videoProps} />
@@ -130,8 +139,9 @@ function HeroSection1({
             type="button"
             className="absolute inset-0 w-full"
             title="Play fullscreen video"
+            onClick={() => playerVideoHandler()}
           >
-            <svg
+            {/* <svg
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -168,7 +178,11 @@ function HeroSection1({
                   <rect width="56" height="56" rx="28" fill="white"></rect>
                 </clipPath>
               </defs>
-            </svg>
+            </svg> */}
+            {/* 手机显示小按钮 */}
+            <PlayIcon className='m-auto landscape:hidden' size='small'/>
+            {/* pc显示大按钮 */}
+            <PlayIcon className='m-auto portrait:hidden' size='medium'/>
           </button>
         </div>
       </div>
