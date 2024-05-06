@@ -21,7 +21,9 @@ const MuxVideoPlayer: FC<IMuxVideoPlayerProps> = ({
 }) => {
   const [isCanPlay, setIsCanPlay] = useState(false)
   const [currentPlaybackId, setCurrentPlaybackId] = useState<string>('')
-  const [currentPosterUrl, setCurrentPosterUrl] = useState<string>('')
+  const [currentPosterUrl, setCurrentPosterUrl] = useState<string>(
+    sources?.[0]?.posterUrl || '',
+  )
 
   useEffect(() => {
     const updateSource = () => {
@@ -57,16 +59,10 @@ const MuxVideoPlayer: FC<IMuxVideoPlayerProps> = ({
     }
   }, [sources]) // 依赖项为sources数组
 
-  let coverImageURL = '/assets/images/home-v2311/hero-blurred.webp'
-  // TODO window var not found, need another way
-  // if (window.innerWidth < 1028) {
-  //   coverImageURL = '/assets/images/home-v2311/hero-blurred-m.webp'
-  // }
-
   return (
     <>
       <Image
-        src={coverImageURL}
+        src={currentPosterUrl}
         alt="Video cover picture"
         fill={true}
         loading="eager"
@@ -78,7 +74,6 @@ const MuxVideoPlayer: FC<IMuxVideoPlayerProps> = ({
       <MuxPlayer
         streamType="on-demand"
         playbackId={currentPlaybackId}
-        poster={currentPosterUrl}
         // metadataVideoTitle="Placeholder (optional)"
         // metadataViewerUserId="Placeholder (optional)"
         // primaryColor="#FFFFFF"
