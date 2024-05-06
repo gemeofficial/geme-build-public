@@ -18,7 +18,11 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
       bio: (
         <>
           Alex work in Lutheran Retreats, Camps & Conferences, aka{' '}
-          <a className="text-emerald-600" href="https://lrcchome.com/">
+          <a
+            className="text-emerald-600"
+            href="https://lrcchome.com/"
+            target="_blank"
+          >
             LRCC
           </a>{' '}
           is a camp school that kids are learning and living a green life.
@@ -40,7 +44,11 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
       bio: (
         <>
           Bill is the owner of{' '}
-          <a className="text-emerald-600" href="https://www.rainforestinn.com/">
+          <a
+            className="text-emerald-600"
+            href="https://www.rainforestinn.com/"
+            target="_blank"
+          >
             Rainforest Inn
           </a>{' '}
           located in Puerto Rico. He want GEME badly and even paid multiple
@@ -49,6 +57,7 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
           <a
             className="text-emerald-600"
             href="https://www.tiktok.com/@rainforestinn/video/7309861665711901998"
+            target="_blank"
           >
             vlog
           </a>{' '}
