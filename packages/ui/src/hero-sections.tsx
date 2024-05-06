@@ -2,6 +2,7 @@ import { ReactNode, ComponentType, PropsWithChildren } from 'react'
 import { IconCycleArrow, IconLogoGeme } from './icons'
 // import { IVideoPlayerProps, VideoPlayer } from './video'
 import { IMuxVideoPlayerProps, MuxVideoPlayer } from './mux-video'
+import { ILinkComponent } from '../../../apps/gemebuild/src/contexts/link-context'
 
 interface IHeroSection1Props {
   title?: ReactNode
@@ -10,12 +11,7 @@ interface IHeroSection1Props {
   linkUrl?: string
   linkClickedTrack?: () => void
   videoProps?: IMuxVideoPlayerProps
-  LinkComponent?: ComponentType<
-    PropsWithChildren<{
-      className?: string
-      href?: string | Object
-    }>
-  >
+  LinkComponent?: ILinkComponent
 }
 
 const heroSection1Props: IHeroSection1Props = {
