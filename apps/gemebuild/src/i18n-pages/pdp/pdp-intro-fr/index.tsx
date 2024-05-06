@@ -47,7 +47,7 @@ function PdpIntroFr({ ReviewsComponent, PrefetchLink }: IPdpIntroProps) {
         },
       ],
     }),
-    [ReviewsComponent],
+    [ReviewsComponent, PrefetchLink],
   )
 
   return <ScrollablePdpTabsWithAnchorOffset {...props} />
