@@ -36,6 +36,8 @@ function VideoInlinePlayer({
   description,
   playButtonSize,
   children,
+  hiddenPlayIcon,
+  mixpanelStatPayload,
 }: PropsWithChildren<IVideoInlinePlayerProps>) {
   let [isOpen, setIsOpen] = useState(false)
 
@@ -47,6 +49,16 @@ function VideoInlinePlayer({
     setIsOpen(true)
   }
 
+  // 向后台发送统计信息
+  function mixpanelStatHandler() {
+    if (mixpanelStatPayload) {
+      // mixpanel.track(
+      //   mixpanelStatPayload.title,
+      //   mixpanelStatPayload?.payload || {},
+      // )
+    }
+  }
+
   return (
     <>
       <PlayButton
@@ -55,8 +67,10 @@ function VideoInlinePlayer({
         size={playButtonSize}
         onClick={(evt) => {
           openModal()
+          mixpanelStatHandler()
           evt.preventDefault()
         }}
+        hiddenPlayIcon={hiddenPlayIcon}
       >
         {children}
       </PlayButton>
@@ -118,6 +132,7 @@ function PlayButton({
   size,
   onClick,
   children,
+  hiddenPlayIcon = false,
 }: PropsWithChildren<IPlayButtonProps>) {
   return (
     <a
@@ -134,10 +149,12 @@ function PlayButton({
         className="absolute inset-0 flex h-full w-full items-center justify-center"
         aria-hidden="true"
       >
-        <PlayIcon
-          size={size}
-          className="opacity-80 group-focus:opacity-100 group-hover:opacity-100 group-active:opacity-100 xl:opacity-30 xl:group-hover:opacity-100 transition-opacity"
-        />
+        {!hiddenPlayIcon && (
+          <PlayIcon
+            size={size}
+            className="opacity-80 group-focus:opacity-100 group-hover:opacity-100 group-active:opacity-100 xl:opacity-50 xl:group-hover:opacity-100 transition-opacity"
+          />
+        )}
       </span>
     </a>
   )
@@ -147,6 +164,11 @@ export interface IVideoInlinePlayerProps {
   videoUrl: string
   description?: string
   playButtonSize?: IPlayButtonProps['size']
+  hiddenPlayIcon?: boolean
+  mixpanelStatPayload?: {
+    title: string
+    payload?: { [key: string]: any }
+  }
 }
 
 export default VideoInlinePlayer
