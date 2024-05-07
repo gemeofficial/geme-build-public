@@ -4,6 +4,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import { MouseEventHandler, PropsWithChildren, useState, Fragment } from 'react'
 import { XCircleIcon } from '@heroicons/react/24/solid'
 import classNames from './lib/classNames'
+import mixpanel from 'mixpanel-browser'
 
 export function PlayIcon({
   size = 'large',
@@ -52,10 +53,10 @@ function VideoInlinePlayer({
   // 向后台发送统计信息
   function mixpanelStatHandler() {
     if (mixpanelStatPayload) {
-      // mixpanel.track(
-      //   mixpanelStatPayload.title,
-      //   mixpanelStatPayload?.payload || {},
-      // )
+      mixpanel.track(
+        mixpanelStatPayload.title,
+        mixpanelStatPayload?.payload || {},
+      )
     }
   }
 
