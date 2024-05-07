@@ -79,6 +79,7 @@ const heroSection1Props: IHeroSection1Props = {
       },
     ],
   },
+  fullScreenVideoUrl: 'https://www.youtube.com/embed/ROJYZBp0jcM',
 }
 
 // 首页第二部分的内容数据配置 En
