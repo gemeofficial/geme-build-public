@@ -18,7 +18,7 @@
     "geme.bio",
     "GEME.bio"
   ],
-  "packageManager": "pnpm@8.7.5",
+  "packageManager": "pnpm@9.0.6",
   "engines": {
     "node": ">=18.16.1"
   }
