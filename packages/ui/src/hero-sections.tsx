@@ -149,8 +149,11 @@ function HeroSection1({
               className="absolute inset-0 w-full opacity-80 hover:opacity-100 transition-opacity duration-200"
               title="Play fullscreen video"
             >
-              <PlayIcon className="m-auto landscape:hidden" size="small" />
-              <PlayIcon className="m-auto portrait:hidden" size="medium" />
+              {/* 大屏显示大按钮 */}
+              <PlayIcon className="m-auto hidden lg:block" size="medium" />
+
+              {/* 1024以下显示小按钮 */}
+              <PlayIcon className="m-auto lg:hidden" size="small" />
             </button>
           </div>
         </div>
