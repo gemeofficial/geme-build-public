@@ -85,6 +85,7 @@ function HeroSection1({
         {/* 停用Mux Player自动背景播放 */}
         {/* <MuxVideoPlayer {...videoProps} /> */}
         <Image
+          priority={true}
           src="/assets/images/home-v2311/cover-v3.jpg"
           alt="hero picture"
           layout="fill"
