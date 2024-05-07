@@ -88,8 +88,25 @@ function HeroSection1({
           priority={true}
           src="/assets/images/home-v2311/cover-v3.jpg"
           alt="hero picture"
-          layout="fill"
+          width={3586}
+          height={2100}
           className="w-full h-full object-cover"
+          style={{
+            position: 'absolute',
+            inset: 0,
+            boxSizing: 'border-box',
+            padding: 0,
+            border: 'none',
+            margin: 'auto',
+            display: 'block',
+            width: '0px',
+            height: '0px',
+            minWidth: '100%',
+            maxWidth: '100%',
+            minHeight: '100%',
+            maxHeight: '100%',
+          }}
+          sizes="(min-width: 768px) 100vw, 100vw"
         />
       </div>
 
