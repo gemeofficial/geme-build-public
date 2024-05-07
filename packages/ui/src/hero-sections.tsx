@@ -19,6 +19,7 @@ interface IHeroSection1Props {
       href?: string | Object
     }>
   >
+  fullScreenVideoUrl?: string
 }
 
 const heroSection1Props: IHeroSection1Props = {
@@ -75,6 +76,7 @@ function HeroSection1({
   linkClickedTrack,
   videoProps,
   LinkComponent,
+  fullScreenVideoUrl,
 }: IHeroSection1Props) {
   return (
     <div className="h-screen ">
@@ -126,7 +128,9 @@ function HeroSection1({
 
       {/* 全屏播放器 */}
       <VideoInlinePlayer
-        videoUrl="https://www.youtube.com/embed/ROJYZBp0jcM"
+        videoUrl={
+          fullScreenVideoUrl || 'https://www.youtube.com/embed/ROJYZBp0jcM'
+        }
         description="Watch our video to learn more"
         hiddenPlayIcon={true}
         mixpanelStatPayload={{
