@@ -53,7 +53,7 @@ const heroSection1Props: IHeroSection1Props = {
       {
         minWidth: 1280,
         src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-bio-home-hero-backgruond-video-1080p.mp4',
-        playbackId: 'PHDmho81odHhv3yvvm4WLQjqUFpKqwAR01gJwEVEUcXo',
+        playbackId: '4xlpgl6PcY6d8N3H5FowWDdP01kCupf3Pn8A101zaCnFo',
         posterUrl:
           'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/cover-v2.jpg',
       },
@@ -61,7 +61,7 @@ const heroSection1Props: IHeroSection1Props = {
       {
         minWidth: 0,
         src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-bio-home-background-video-no-sound-480p.mp4',
-        playbackId: 'WcYd7fIP97ciG1zR5Hkq9dEmqLeQpsoX5iIZdMQn8Lc',
+        playbackId: '4xlpgl6PcY6d8N3H5FowWDdP01kCupf3Pn8A101zaCnFo',
       },
     ],
   },
