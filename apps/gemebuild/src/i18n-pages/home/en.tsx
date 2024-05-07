@@ -168,17 +168,17 @@ const contentSection4Props: IContentSection4Props = {
   withMp4VideoOrYoutubeVideo: {
     type: 'youtube',
     videoPosterImage: {
-      src: '/assets/images/home-v2311/cover-v3.jpg',
+      src: '/assets/images/home-v2311/cover-v4.jpg',
       alt: 'GEME in your home',
       width: 1600,
       height: 900,
       srcSetData: {
-        '100w': '/assets/images/home-v2311/cover-v3.jpg',
+        '100w': '/assets/images/home-v2311/cover-v4.jpg',
       },
     },
     // videoSrcUrl:
     //   'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-banner.mp4',
-    videoSrcUrl: 'https://www.youtube.com/embed/ROJYZBp0jcM',
+    videoSrcUrl: 'https://www.youtube.com/embed/nlsTg4l_3zE',
   },
 }
 
