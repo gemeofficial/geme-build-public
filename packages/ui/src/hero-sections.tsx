@@ -103,7 +103,7 @@ function HeroSection1({
             {description}
           </p>
         )}
-        {linkText && linkUrl && LinkComponent == null && (
+        {linkText && linkUrl && !LinkComponent && (
           <a
             className=" v2311-font-h3 font-bold text-white xl:w-auto flex items-center justify-center mt-[80px] md:mt-[160px] xl:mt-16 border-solid border-2 border-white rounded-xl py-1 md:py-2 px-16 md:px-32 xl:px-8"
             href={linkUrl}
@@ -113,7 +113,7 @@ function HeroSection1({
             <IconCycleArrow className="inline-block ml-4 md:ml-8 xl:ml-4 w-5 md:w-10 xl:w-12 h-5 md:h-10 xl:h-12" />
           </a>
         )}
-        {linkText && linkUrl && LinkComponent != null && (
+        {linkText && linkUrl && LinkComponent && (
           <LinkComponent
             className=" v2311-font-h3 font-bold text-white xl:w-auto flex items-center justify-center mt-[80px] md:mt-[160px] xl:mt-16 border-solid border-2 border-white rounded-xl py-1 md:py-2 px-16 md:px-32 xl:px-8"
             href={linkUrl}
