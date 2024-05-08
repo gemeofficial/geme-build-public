@@ -66,10 +66,9 @@ function VideoInlinePlayer({
         videoUrl={videoUrl}
         description={description}
         size={playButtonSize}
-        onClick={(evt) => {
+        onClick={() => {
           openModal()
           mixpanelStatHandler()
-          evt.preventDefault()
         }}
         hiddenPlayIcon={hiddenPlayIcon}
       >
@@ -123,12 +122,11 @@ function VideoInlinePlayer({
 }
 
 interface IPlayButtonProps extends IVideoInlinePlayerProps {
-  onClick?: MouseEventHandler<HTMLAnchorElement>
+  onClick?: MouseEventHandler<HTMLDivElement> 
   size?: 'small' | 'medium' | 'large'
 }
 
 function PlayButton({
-  videoUrl,
   description,
   size,
   onClick,
@@ -136,13 +134,9 @@ function PlayButton({
   hiddenPlayIcon = false,
 }: PropsWithChildren<IPlayButtonProps>) {
   return (
-    <a
-      type="button"
-      href={videoUrl}
+    <div
       onClick={onClick}
-      target="_blank"
       className="group"
-      // className="relative block w-full overflow-hidden rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
     >
       <span className="sr-only">{description}</span>
       {children}
@@ -157,7 +151,7 @@ function PlayButton({
           />
         )}
       </span>
-    </a>
+    </div>
   )
 }
 
