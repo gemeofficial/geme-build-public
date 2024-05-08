@@ -66,10 +66,9 @@ function VideoInlinePlayer({
         videoUrl={videoUrl}
         description={description}
         size={playButtonSize}
-        onClick={(evt) => {
+        onClick={() => {
           openModal()
           mixpanelStatHandler()
-          evt.preventDefault()
         }}
         hiddenPlayIcon={hiddenPlayIcon}
       >
