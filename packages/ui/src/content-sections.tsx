@@ -2,9 +2,10 @@ import { ReactNode, SVGProps } from 'react'
 import { CompostStep1, CompostStep2, CompostStep3 } from './compost-steps'
 import classNames from './lib/classNames'
 import VideoInlinePlayer from './video-inline-player'
-import { IImgProps, Img } from './image'
+import { IImgProps } from './image'
 import { IVideoPlayerProps, VideoPlayer } from './video'
 import Image from 'next/image'
+// import Image, { getImageProps } from 'next/image'
 
 interface IContentSection1Props {
   title?: ReactNode
@@ -594,6 +595,19 @@ function ContentSection6Fixed({
   isDisplayTextOnLeft,
   steps,
 }: IContentSection6FixedProps): JSX.Element {
+  let videoPosterSrc: undefined | string
+
+  if (videoPosterUrl != null) {
+    videoPosterSrc = videoPosterUrl
+    // FIXME quick fix CI by disable it
+    // videoPosterSrc = getImageProps({
+    //   src: videoPosterUrl,
+    //   width: 1280, // 16:9 ratio
+    //   height: 720,
+    //   alt: 'video poster',
+    // }).props.src
+  }
+
   return (
     <section
       className={classNames(
@@ -607,7 +621,7 @@ function ContentSection6Fixed({
         )}
       </div>
       <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">
-        {videoSrcUrl && videoPosterUrl && (
+        {videoSrcUrl && videoPosterSrc && (
           <video
             preload="none"
             autoPlay
@@ -615,7 +629,7 @@ function ContentSection6Fixed({
             muted
             loop
             className="max-w-full w-full rounded-2xl overflow-hidden object-cover"
-            poster={videoPosterUrl}
+            poster={videoPosterSrc}
           >
             <source src={videoSrcUrl} type="video/mp4" />
             Your browser does not support HTML5 video.

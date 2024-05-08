@@ -23,7 +23,6 @@ import type {
 } from 'ui'
 import { Footprints, type IFootprintsProps } from '../../components/footprints'
 import { Newsletter, INewsletterProps } from './containers/newsletter'
-import Link from 'next/link'
 import mixpanel from 'mixpanel-browser'
 import { ILinkComponent } from '../../contexts/link-context'
 
@@ -67,18 +66,19 @@ const heroSection1Props: IHeroSection1Props = {
       {
         minWidth: 1280,
         src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-bio-home-hero-backgruond-video-1080p.mp4',
-        playbackId: 'PHDmho81odHhv3yvvm4WLQjqUFpKqwAR01gJwEVEUcXo',
+        playbackId: '4xlpgl6PcY6d8N3H5FowWDdP01kCupf3Pn8A101zaCnFo',
         posterUrl: '/assets/images/home-v2311/hero-blurred.webp',
       },
       // for mobile/tablet
       {
         minWidth: 0,
         src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-bio-home-background-video-no-sound-480p.mp4',
-        playbackId: 'WcYd7fIP97ciG1zR5Hkq9dEmqLeQpsoX5iIZdMQn8Lc',
+        playbackId: '4xlpgl6PcY6d8N3H5FowWDdP01kCupf3Pn8A101zaCnFo',
         posterUrl: '/assets/images/home-v2311/hero-blurred-m.webp',
       },
     ],
   },
+  fullScreenVideoUrl: 'https://www.youtube.com/embed/ROJYZBp0jcM',
 }
 
 // 首页第二部分的内容数据配置 En
@@ -167,17 +167,17 @@ const contentSection4Props: IContentSection4Props = {
   withMp4VideoOrYoutubeVideo: {
     type: 'youtube',
     videoPosterImage: {
-      src: '/assets/images/home-v2311/cover-v3.jpg',
+      src: '/assets/images/home-v2311/cover-v4.jpg',
       alt: 'GEME in your home',
       width: 1600,
       height: 900,
       srcSetData: {
-        '100w': '/assets/images/home-v2311/cover-v3.jpg',
+        '100w': '/assets/images/home-v2311/cover-v4.jpg',
       },
     },
     // videoSrcUrl:
     //   'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-banner.mp4',
-    videoSrcUrl: 'https://www.youtube.com/embed/ROJYZBp0jcM',
+    videoSrcUrl: 'https://www.youtube.com/embed/nlsTg4l_3zE',
   },
 }
 
