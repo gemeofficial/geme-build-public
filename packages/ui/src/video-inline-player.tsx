@@ -137,7 +137,6 @@ function PlayButton({
     <div
       onClick={onClick}
       className="group"
-      // className="relative block w-full overflow-hidden rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
     >
       <span className="sr-only">{description}</span>
       {children}
