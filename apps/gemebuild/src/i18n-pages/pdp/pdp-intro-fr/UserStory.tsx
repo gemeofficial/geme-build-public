@@ -20,7 +20,11 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
         <>
           Alex travaille dans les retraites, camps et conférences luthériens,
           alias{' '}
-          <a className="text-emerald-600" href="https://lrcchome.com/">
+          <a
+            className="text-emerald-600"
+            href="https://lrcchome.com/"
+            target="_blank"
+          >
             LRCC
           </a>{' '}
           est un camp-école où les enfants apprennent et vivent une vie verte.
@@ -42,7 +46,11 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
       bio: (
         <>
           Bill est le propriétaire de{' '}
-          <a className="text-emerald-600" href="https://www.rainforestinn.com/">
+          <a
+            className="text-emerald-600"
+            href="https://www.rainforestinn.com/"
+            target="_blank"
+          >
             Auberge de la forêt tropicale
           </a>{' '}
           situé à Porto Rico. Il veut vraiment GEME et a même payé plusieurs
@@ -51,6 +59,7 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
           <a
             className="text-emerald-600"
             href="https://www.tiktok.com/@rainforestinn/video/7309861665711901998"
+            target="_blank"
           >
             blog vidéo
           </a>{' '}

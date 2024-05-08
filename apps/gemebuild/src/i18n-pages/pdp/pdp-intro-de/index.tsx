@@ -5,12 +5,14 @@ import UserStory from './UserStory'
 import { ScrollablePdpTabsWithAnchorOffset } from '../../../components/scrollable-pdp-tabs-with-anchor-offset'
 
 import { FC, useMemo } from 'react'
+import { ILinkComponent } from '../../../contexts/link-context'
 
 interface IPdpIntroProps {
   ReviewsComponent: FC<{}>
+  PrefetchLink?: ILinkComponent
 }
 
-function PdpIntroDe({ ReviewsComponent }: IPdpIntroProps) {
+function PdpIntroDe({ ReviewsComponent, PrefetchLink }: IPdpIntroProps) {
   const props = useMemo(
     () => ({
       tabs: [
@@ -27,7 +29,7 @@ function PdpIntroDe({ ReviewsComponent }: IPdpIntroProps) {
         {
           id: 3,
           tabLabel: 'Garantie',
-          tabPanel: <Warranty />,
+          tabPanel: <Warranty Link={PrefetchLink} />,
         },
         {
           id: 4,
@@ -45,7 +47,7 @@ function PdpIntroDe({ ReviewsComponent }: IPdpIntroProps) {
         },
       ],
     }),
-    [ReviewsComponent],
+    [ReviewsComponent, PrefetchLink],
   )
 
   return <ScrollablePdpTabsWithAnchorOffset {...props} />

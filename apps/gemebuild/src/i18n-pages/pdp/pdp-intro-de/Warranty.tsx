@@ -3,6 +3,7 @@ import {
   TruckIcon,
   ChatBubbleLeftRightIcon,
 } from '@heroicons/react/24/solid'
+import { ILinkComponent } from '../../../contexts/link-context'
 
 const title = 'Kaufen Sie mit Vertrauen'
 const description = `Wir wissen, dass Sie sich teuer fühlen werden, aber wir sorgen dafür, dass es sich lohnt.
@@ -34,7 +35,7 @@ const features = [
 
 const btnText = 'Mehr erfahren'
 
-function Warranty() {
+function Warranty({ Link }: { Link?: ILinkComponent }) {
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -60,12 +61,23 @@ function Warranty() {
                 <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-600">
                   <p className="flex-auto">{feature.description}</p>
                   <p className="mt-6">
-                    <a
-                      href={feature.href}
-                      className="text-sm font-semibold leading-6 text-emerald-600"
-                    >
-                      {btnText} <span aria-hidden="true">→</span>
-                    </a>
+                    {Link && (
+                      <Link
+                        href={feature.href}
+                        className="text-sm font-semibold leading-6 text-emerald-600"
+                      >
+                        {btnText} <span aria-hidden="true">→</span>
+                      </Link>
+                    )}
+
+                    {!Link && (
+                      <a
+                        href={feature.href}
+                        className="text-sm font-semibold leading-6 text-emerald-600"
+                      >
+                        {btnText} <span aria-hidden="true">→</span>
+                      </a>
+                    )}
                   </p>
                 </dd>
               </div>

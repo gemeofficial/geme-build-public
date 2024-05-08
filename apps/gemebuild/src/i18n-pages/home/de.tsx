@@ -23,8 +23,7 @@ import type {
 } from 'ui'
 import { Footprints, type IFootprintsProps } from '../../components/footprints'
 import { Newsletter, INewsletterProps } from './containers/newsletter'
-import Link from 'next/link'
-import mixpanel from 'mixpanel-browser'
+import { ILinkComponent } from '../../contexts/link-context'
 
 // 首页video部分的内容数据配置 De
 const heroSection1Props: IHeroSection1Props = {
@@ -53,14 +52,8 @@ const heroSection1Props: IHeroSection1Props = {
       </span>
     </>
   ),
-  linkText: 'Achetez maintenant',
+  linkText: 'Jetzt shoppen',
   linkUrl: '/de/product/geme',
-  linkClickedTrack: () => {
-    mixpanel.track('Go Product Page', {
-      From: 'Hero Primary Button',
-    })
-  },
-  LinkComponent: Link,
   videoProps: {
     sources: [
       // for pc
@@ -441,7 +434,8 @@ const newsltterProps: INewsletterProps = {
   },
 }
 
-function HomePageDe() {
+function HomePageDe({ PrefetchLink }: { PrefetchLink?: ILinkComponent }) {
+  heroSection1Props.LinkComponent = PrefetchLink
   return (
     <>
       <HeroSection1 {...heroSection1Props} />

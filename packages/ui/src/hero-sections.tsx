@@ -1,23 +1,19 @@
-import { ReactNode, ComponentType, PropsWithChildren } from 'react'
-import { IconCycleArrow, IconLogoGeme } from './icons'
+import { ReactNode } from 'react'
+import { IconLogoGeme } from './icons'
 // import { IVideoPlayerProps, VideoPlayer } from './video'
 import { IMuxVideoPlayerProps, MuxVideoPlayer } from './mux-video'
+import { ILinkComponent } from '../../../apps/gemebuild/src/contexts/link-context'
 import Image from 'next/image'
 import VideoInlinePlayer, { PlayIcon } from './video-inline-player'
+import HeroSectionsButton from './client-components/HeroSectionsButton'
 
 interface IHeroSection1Props {
   title?: ReactNode
   description?: ReactNode
   linkText?: string
   linkUrl?: string
-  linkClickedTrack?: () => void
   videoProps?: IMuxVideoPlayerProps
-  LinkComponent?: ComponentType<
-    PropsWithChildren<{
-      className?: string
-      href?: string | Object
-    }>
-  >
+  LinkComponent?: ILinkComponent
   fullScreenVideoUrl?: string
 }
 
@@ -46,7 +42,6 @@ const heroSection1Props: IHeroSection1Props = {
   ),
   linkText: 'Shop Now',
   linkUrl: '/product/geme',
-  linkClickedTrack: () => {},
   videoProps: {
     sources: [
       // for pc
@@ -72,7 +67,6 @@ function HeroSection1({
   description,
   linkText,
   linkUrl,
-  linkClickedTrack,
   videoProps,
   LinkComponent,
   fullScreenVideoUrl,
@@ -82,7 +76,7 @@ function HeroSection1({
       {/* 大屏图片层 */}
       <div className="overflow-hidden h-full relative">
         <div className="z-10 absolute inset-0 bg-opacity-30 md:bg-opacity-40 bg-black "></div>
-        {/* 停用Mux Player自动背景播放 */}
+        {/* 停用Mux Player的自动背景播放 */}
         {/* <MuxVideoPlayer {...videoProps} /> */}
         <Image
           src="/assets/images/home-v2311/cover-v3.jpg"
@@ -103,26 +97,11 @@ function HeroSection1({
             {description}
           </p>
         )}
-        {linkText && linkUrl && !LinkComponent && (
-          <a
-            className=" v2311-font-h3 font-bold text-white xl:w-auto flex items-center justify-center mt-[80px] md:mt-[160px] xl:mt-16 border-solid border-2 border-white rounded-xl py-1 md:py-2 px-16 md:px-32 xl:px-8"
-            href={linkUrl}
-            onClick={linkClickedTrack}
-          >
-            {linkText}
-            <IconCycleArrow className="inline-block ml-4 md:ml-8 xl:ml-4 w-5 md:w-10 xl:w-12 h-5 md:h-10 xl:h-12" />
-          </a>
-        )}
-        {linkText && linkUrl && LinkComponent && (
-          <LinkComponent
-            className=" v2311-font-h3 font-bold text-white xl:w-auto flex items-center justify-center mt-[80px] md:mt-[160px] xl:mt-16 border-solid border-2 border-white rounded-xl py-1 md:py-2 px-16 md:px-32 xl:px-8"
-            href={linkUrl}
-            // onClick={linkClickedTrack}
-          >
-            {linkText}
-            <IconCycleArrow className="inline-block ml-4 md:ml-8 xl:ml-4 w-5 md:w-10 xl:w-12 h-5 md:h-10 xl:h-12" />
-          </LinkComponent>
-        )}
+        <HeroSectionsButton
+          LinkComponent={LinkComponent}
+          linkText={linkText}
+          linkUrl={linkUrl}
+        />
       </div>
 
       {/* 全屏播放器 */}

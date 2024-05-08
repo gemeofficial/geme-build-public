@@ -20,7 +20,11 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
         <>
           Alex arbeitet in lutherischen Exerzitien, Camps und Konferenzen, auch
           bekannt als{' '}
-          <a className="text-emerald-600" href="https://lrcchome.com/">
+          <a
+            className="text-emerald-600"
+            href="https://lrcchome.com/"
+            target="_blank"
+          >
             LRCC
           </a>{' '}
           ist eine Camp-Schule, in der Kinder lernen und ein grünes Leben
@@ -44,7 +48,11 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
       bio: (
         <>
           Bill ist der Besitzer von{' '}
-          <a className="text-emerald-600" href="https://www.rainforestinn.com/">
+          <a
+            className="text-emerald-600"
+            href="https://www.rainforestinn.com/"
+            target="_blank"
+          >
             Regenwald-Gasthaus
           </a>{' '}
           befindet sich in Puerto Rico. Er will GEME dringend und hat sogar ein
@@ -53,6 +61,7 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
           <a
             className="text-emerald-600"
             href="https://www.tiktok.com/@rainforestinn/video/7309861665711901998"
+            target="_blank"
           >
             vlog
           </a>{' '}
