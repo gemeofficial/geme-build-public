@@ -1,18 +1,17 @@
 import { ReactNode } from 'react'
-import { IconLogoGeme } from './icons'
+import { IconLogoGeme,IconCycleArrow } from './icons'
 // import { IVideoPlayerProps, VideoPlayer } from './video'
 import { IMuxVideoPlayerProps, MuxVideoPlayer } from './mux-video'
 import { ILinkComponent } from '../../../apps/gemebuild/src/contexts/link-context'
 import Image from 'next/image'
 import VideoInlinePlayer, { PlayIcon } from './video-inline-player'
-import HeroSectionsButton from './client-components/hero-sections-button'
+import mixpanel from 'mixpanel-browser'
 
 interface IHeroSection1Props {
   title?: ReactNode
   description?: ReactNode
   linkText?: string
   linkUrl?: string
-  linkClickedTrack?: () => void
   videoProps?: IMuxVideoPlayerProps
   LinkComponent?: ILinkComponent
   fullScreenVideoUrl?: string
@@ -43,7 +42,6 @@ const heroSection1Props: IHeroSection1Props = {
   ),
   linkText: 'Shop Now',
   linkUrl: '/product/geme',
-  linkClickedTrack: () => {},
   videoProps: {
     sources: [
       // for pc
@@ -69,11 +67,16 @@ function HeroSection1({
   description,
   linkText,
   linkUrl,
-  linkClickedTrack,
   videoProps,
   LinkComponent,
   fullScreenVideoUrl,
 }: IHeroSection1Props) {
+  const linkClickedTrack = () => {
+    mixpanel.track('Go Product Page', {
+      From: 'Hero Primary Button',
+    })
+  }
+  
   return (
     <div className="h-screen ">
       {/* 大屏图片层 */}
@@ -100,12 +103,27 @@ function HeroSection1({
             {description}
           </p>
         )}
-        <HeroSectionsButton
-          LinkComponent={LinkComponent}
-          linkClickedTrack={linkClickedTrack}
-          linkText={linkText}
-          linkUrl={linkUrl}
-        />
+        {linkText && linkUrl && LinkComponent == null && (
+        <a
+          className=" v2311-font-h3 font-bold text-white xl:w-auto flex items-center justify-center mt-[80px] md:mt-[160px] xl:mt-16 border-solid border-2 border-white rounded-xl py-1 md:py-2 px-16 md:px-32 xl:px-8"
+          href={linkUrl}
+          onClick={linkClickedTrack}
+        >
+          {linkText}
+          <IconCycleArrow className="inline-block ml-4 md:ml-8 xl:ml-4 w-5 md:w-10 xl:w-12 h-5 md:h-10 xl:h-12" />
+        </a>
+      )}
+      {linkText && linkUrl && LinkComponent && (
+        <span onClick={linkClickedTrack}>
+          <LinkComponent
+            className=" v2311-font-h3 font-bold text-white xl:w-auto flex items-center justify-center mt-[80px] md:mt-[160px] xl:mt-16 border-solid border-2 border-white rounded-xl py-1 md:py-2 px-16 md:px-32 xl:px-8"
+            href={linkUrl}
+          >
+            {linkText}
+            <IconCycleArrow className="inline-block ml-4 md:ml-8 xl:ml-4 w-5 md:w-10 xl:w-12 h-5 md:h-10 xl:h-12" />
+          </LinkComponent>
+        </span>
+      )}
       </div>
 
       {/* 全屏播放器 */}
