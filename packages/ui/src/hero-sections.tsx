@@ -81,6 +81,7 @@ function HeroSection1({
         <Image
           src="/assets/images/home-v2311/cover-v3.jpg"
           alt="hero picture"
+          priority
           layout="fill"
           className="w-full h-full object-cover"
         />
