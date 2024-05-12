@@ -4,8 +4,7 @@ import classNames from './lib/classNames'
 import VideoInlinePlayer from './video-inline-player'
 import { IImgProps } from './image'
 import { IVideoPlayerProps, VideoPlayer } from './video'
-import Image from 'next/image'
-// import Image, { getImageProps } from 'next/image'
+import Image, { getImageProps } from 'next/image'
 
 interface IContentSection1Props {
   title?: ReactNode
@@ -598,14 +597,12 @@ function ContentSection6Fixed({
   let videoPosterSrc: undefined | string
 
   if (videoPosterUrl != null) {
-    videoPosterSrc = videoPosterUrl
-    // FIXME quick fix CI by disable it
-    // videoPosterSrc = getImageProps({
-    //   src: videoPosterUrl,
-    //   width: 1280, // 16:9 ratio
-    //   height: 720,
-    //   alt: 'video poster',
-    // }).props.src
+    videoPosterSrc = getImageProps({
+      src: videoPosterUrl,
+      width: 1280, // 16:9 ratio
+      height: 720,
+      alt: 'video poster',
+    }).props.src
   }
 
   return (
