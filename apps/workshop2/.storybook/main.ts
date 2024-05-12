@@ -27,7 +27,7 @@ const config: StorybookConfig = {
   },
   staticDirs: ['../public'],
   typescript: {
-    reactDocgen: false,
+    reactDocgen: 'react-docgen-typescript',
     skipCompiler: true,
   },
 }
