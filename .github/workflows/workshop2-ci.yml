@@ -1,0 +1,21 @@
+name: workshop2-ci
+
+on:
+  push:
+    paths:
+      - 'pnpm-lock.yaml'
+      - 'apps/workshop2/**'
+      - 'packages/**'
+      - '.github/workflows/workshop2-ci.yml'
+  workflow_dispatch:
+
+jobs:
+  storybook-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/setup-node
+      - name: Install Playwright browsers
+        run: npx playwright@1.42.1 install --with-deps
+      - run: pnpm i
+      - run: cd apps/workshop2 && pnpm run ci:test-storybook
