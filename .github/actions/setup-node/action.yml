@@ -6,14 +6,14 @@ runs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '18.16'
+        node-version: '20.12'
     - name: Setup Pnpm
       run: corepack enable
       shell: bash
     - name: Enable setup-node cache for Pnpm
       uses: actions/setup-node@v4
       with:
-        node-version: '18.16'
+        node-version: '20.12'
         cache: 'pnpm'
     - name: Print versions
       run: |
