@@ -21,18 +21,18 @@ const data = [
 
 export default function ContentSection4() {
   return (
-    <div className="mt-40 mx-auto max-w-xl px-4 md:px-0 lg:max-w-7xl">
-      <div className="flex items-start">
+    <div className="mt-28 lg:mt-40 mx-auto max-w-xl px-4 md:px-0 lg:max-w-7xl">
+      <div className="lg:flex items-start lg:flex-wrap xl:flex-nowrap">
         {
           data.map(item=>(
-            <div className="" key={item.progressBarTitle}>
-              <div className="flex items-center">
+            <div className="lg:w-1/2 xl:w-full" key={item.progressBarTitle}>
+              <div className="flex items-center mt-6 lg:mt-8 xl:mt-0">
                 <div className="w-1 h-1 rounded-full bg-emerald-600"></div>
-                <div className="ml-4 text-emerald-600 font-medium">{item.progressBarTitle}</div>
-                <div className="ml-5 mr-6 h-[1px] bg-gray-200 flex-1"></div>
+                <div className="ml-4 text-emerald-600 font-medium text-sm lg:text-base">{item.progressBarTitle}</div>
+                <div className="hidden lg:block ml-5 mr-6 lg:mr-10 xl:mr-6 h-[1px] bg-gray-200 flex-1"></div>
               </div>
-              <div className="mt-6 font-bold text-lg">{item.title}</div>
-              <div className="mt-2  pr-6 text-[#4B5563] leading-6">{item.desc}</div>
+              <div className="mt-3 lg:mt-6 font-bold text-lg">{item.title}</div>
+              <div className="mt-2 pr-6 lg:pr-10 xl:pr-6 text-[#4B5563] leading-6">{item.desc}</div>
             </div>
           ))
         }

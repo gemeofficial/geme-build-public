@@ -7,7 +7,7 @@ import ContentSection5 from '../components/about/ContentSection5'
 
 export default function About() {
   return (
-    <div>
+    <div className='py-8 lg:py-20'>
       <HeroSection />
       <ContentSection1 />
       <ContentSection2 />
