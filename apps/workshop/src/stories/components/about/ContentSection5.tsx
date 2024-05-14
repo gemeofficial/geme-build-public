@@ -14,7 +14,7 @@ const data = {
 export default function ContentSection5() {
   return (
     <div className="mt-40 mx-auto max-w-xl px-4 md:px-0 lg:max-w-7xl text-white">
-      <div className="w-full h-[475px] bg-[#111827] box-border py-24 px-16 rounded-3xl text-center">
+      <div className="w-full h-[475px] bg-[#111827] box-border py-24 px-16 rounded-2xl text-center">
         <div className="font-bold text-2xl sm:text-3xl mb-2">{data.title}</div>
         <div className="mt-6 max-w-[570px] mx-auto leading-8">{data.desc}</div>
         <div className="grid grid-cols-2 xl:grid-cols-4 gap-12 mt-20">
