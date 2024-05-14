@@ -1,14 +1,14 @@
 import Image from 'next/image'
 
 const data = {
-  mTitle: 'Our Dreams',
+  mTitle: 'Our mission',
   title: 'All Things Live Forever and In Harmony with The Earth',
   descriptions: [
     'Dreams do not always belong to a few, innovations do not rise from the ground, nor is the desire to follow the laws of nature and" ALL THINGS LIVE FOREVER AND IN HARMONY WITH THE EARTH" a slogan written on a placard by environmentalists. Embracing the dream and innovating to achieve the good intentions of all mankind is the motivation for the GEME team members to start acting immediately.',
     'We are a group of "young people" who share a common dream. We are a team of project managers, engineering designers, microbiological scientists and natural agronomists who have been working in the field of waste treatment for more than 20 years, with the dream of "becoming a doctor of the earth" and constantly exploring and practicing.',
-    'We combine advanced AI technology to design equipment with simple operation, comprehensive function and low cost; we apply the microorganisms extracted from nature to the treatment of biological waste to make everything circulate in an orderly manner in accordance with the laws of nature; and we apply the natural farming method that has been continuously improved in practice for more than 50 years to the cultivation of crops, so that organic food no longer belongs to a specific group of people, but by you to grow and produce in your balcony and backyard.',
-    `In the future, we will continue to promote the proven microbial treatment technology to restore the consolidated soil's vitality and clear the polluted river.`,
-    'All this is not only our dream, but also the dream of every one of you who supports our products. Thank you for adding to environmental protection with just one small change. Thank you for working with us to protect our planet and realize our common dream.',
+    // 'We combine advanced AI technology to design equipment with simple operation, comprehensive function and low cost; we apply the microorganisms extracted from nature to the treatment of biological waste to make everything circulate in an orderly manner in accordance with the laws of nature; and we apply the natural farming method that has been continuously improved in practice for more than 50 years to the cultivation of crops, so that organic food no longer belongs to a specific group of people, but by you to grow and produce in your balcony and backyard.',
+    // `In the future, we will continue to promote the proven microbial treatment technology to restore the consolidated soil's vitality and clear the polluted river.`,
+    // 'All this is not only our dream, but also the dream of every one of you who supports our products. Thank you for adding to environmental protection with just one small change. Thank you for working with us to protect our planet and realize our common dream.',
   ],
   datas: [
     {
@@ -29,37 +29,37 @@ const data = {
 
 export default function ContentSection1() {
   return (
-    <div className="mx-auto max-w-xl px-4 md:px-0 lg:max-w-7xl">
+    <div className="mt-28 md:mt-0 lg:mt-20 mx-auto max-w-xl px-4 md:px-0 lg:max-w-7xl">
       <div className="font-bold text-emerald-600 text-2xl sm:text-3xl mb-2">
         {data.mTitle}
       </div>
-      <div className="font-bold text-emerald-600 text-4xl sm:text-5xl xl:text-6xl mr-[40%]">
+      <div className="font-bold tracking-tight text-emerald-600 text-4xl sm:text-5xl xl:text-6xl lg:mr-[40%]">
         {data.title}
       </div>
-      <div className="flex items-start justify-between">
-        <div className="w-[55%] mr-[5%]">
+      <div className="lg:flex items-start justify-between">
+        <div className="lg:w-[55%] lg:mr-[5%]">
           {data.descriptions.map((item) => (
             <div
               key={item}
-              className="mt-3 md:mt-5 max-w-md text-lg text-gray-500 sm:text-xl md:max-w-3xl"
+              className="mt-3 lg:mt-5 text-base text-gray-500 lg:text-xl "
             >
               {item}
             </div>
           ))}
         </div>
 
-        <div className="w-[40%] pl-20 flex flex-col items-start justify-between overflow-hidden space-y-20">
+        <div className="lg:w-[40%] lg:pl-20 mt-10 lg:mt-5 flex flex-col items-start justify-between overflow-hidden space-y-10 lg:space-y-20">
           {data.datas.map((item) => (
             <div key={item.title}>
-              <div className="text-lg sm:text-5xl">{item.title}</div>
+              <div className="text-3xl sm:text-5xl font-semibold">{item.title}</div>
               <div className="text-gray-600 mt-4">{item.desc}</div>
             </div>
           ))}
         </div>
       </div>
-      <div className="my-40">
+      <div className="py-20 lg:py-40">
         <Image
-          className="w-full h-[500px] object-cover rounded-lg"
+          className="w-full max-h-[500px] object-cover rounded-lg"
           src={data.fullImgUrl}
           width={1920}
           height={500}

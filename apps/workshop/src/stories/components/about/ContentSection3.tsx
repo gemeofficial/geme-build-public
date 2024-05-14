@@ -17,9 +17,9 @@ const data = {
 
 export default function ContentSection3() {
   return (
-    <div className="mt-40 mx-auto max-w-xl px-4 md:px-0 lg:max-w-7xl">
-      <div className="flex items-start justify-between">
-        <div className="w-[55%] mr-[5%]">
+    <div className="mt-24 md:mt-40 mx-auto max-w-xl px-4 md:px-0 lg:max-w-7xl">
+      <div className="lg:flex items-start justify-between">
+        <div className="lg:w-[55%] lg:mr-[5%]">
           <div className="font-bold text-emerald-600 text-2xl sm:text-3xl mb-2">
             {data.title}
           </div>
@@ -28,37 +28,111 @@ export default function ContentSection3() {
         </div>
 
         <Image
-          className="w-[600px] h-[400px] object-cover rounded-xl"
+          className="hidden lg:block w-[600px] h-[400px] object-cover rounded-xl"
           src={data.mainImgUrl}
           width={600}
           height={400}
           alt="img"
         />
       </div>
-      <div className="flex space-x-8 overflow-hidden mt-12">
-        <div className="flex-1 overflow-hidden relative">
+
+      <div className="mt-12">
+        {/* < 768 + */}
+        <div className="md:hidden flex items-start h-[300px] overflow-hidden">
+          <div className="flex flex-col justify-between h-full flex-shrink-0 -translate-x-12">
+            <Image
+              className="w-[192px] h-[144px] object-cover rounded-xl"
+              src={data.imgSectionUrl1}
+              width={192}
+              height={144}
+              alt="img"
+            />
+
+            <Image
+              className="w-[192px] h-[144px] object-cover rounded-xl"
+              src={data.imgSectionUrl3}
+              width={192}
+              height={144}
+              alt="img"
+            />
+          </div>
+
+          <div className="overflow-hidden h-full ml-4 w-[600px] flex-shrink-0 -translate-x-12">
+            <Image
+              className="w-full h-full object-cover rounded-xl"
+              src={data.imgSectionUrl2}
+              width={600}
+              height={400}
+              alt="img"
+            />
+          </div>
+        </div>
+
+        {/* > 768 && < 1024 +  */}
+        <div className="hidden md:block lg:hidden space-y-6">
+          <div className="flex items-end overflow-hidden space-x-6">
+            <Image
+              className="w-[384px] h-[288px] object-cover rounded-xl flex-shrink-0 -translate-x-48"
+              src={data.imgSectionUrl1}
+              width={384}
+              height={288}
+              alt="img"
+            />
+
+            <Image
+              className="w-[600px] h-[400px] object-cover rounded-xl flex-shrink-0 -translate-x-48"
+              src={data.mainImgUrl}
+              width={600}
+              height={400}
+              alt="img"
+            />
+          </div>
+
+          <div className="flex items-start overflow-hidden space-x-6">
           <Image
-            className="w-[384px] h-[288px] object-cover rounded-xl absolute bottom-0"
+              className="w-[600px] h-[400px] object-cover rounded-xl flex-shrink-0 -translate-x-48"
+              src={data.imgSectionUrl2}
+              width={600}
+              height={400}
+              alt="img"
+            />
+
+            <Image
+              className="w-[384px] h-[288px] object-cover rounded-xl flex-shrink-0 -translate-x-48"
+              src={data.imgSectionUrl3}
+              width={384}
+              height={288}
+              alt="img"
+            />
+          </div>
+        </div>
+
+        {/* > 1024 +  */}
+        <div className="hidden lg:flex space-x-8 overflow-hidden relative">
+          <Image
+            className="w-[384px] h-[288px] object-cover rounded-xl -translate-x-24"
             src={data.imgSectionUrl1}
             width={384}
             height={288}
             alt="img"
           />
+          
+          <Image
+            className="w-[600px] h-[400px] object-cover rounded-xl flex-shrink-0 -translate-x-24"
+            src={data.imgSectionUrl2}
+            width={600}
+            height={400}
+            alt="img"
+          />
+
+          <Image
+            className="w-[384px] h-[288px] object-cover rounded-xl flex-shrink-0 -translate-x-24"
+            src={data.imgSectionUrl3}
+            width={384}
+            height={288}
+            alt="img"
+          />
         </div>
-        <Image
-          className="w-[600px] h-[400px] object-cover rounded-xl"
-          src={data.imgSectionUrl2}
-          width={600}
-          height={400}
-          alt="img"
-        />
-        <Image
-          className="w-[384px] h-[288px] object-cover rounded-xl"
-          src={data.imgSectionUrl3}
-          width={384}
-          height={288}
-          alt="img"
-        />
       </div>
     </div>
   )
