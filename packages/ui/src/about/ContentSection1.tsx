@@ -29,7 +29,7 @@ const data = {
 
 export default function ContentSection1() {
   return (
-    <div className="mt-28 md:mt-0 lg:mt-20 mx-auto max-w-xl px-4 md:px-0 lg:max-w-7xl">
+    <div className="mt-28 md:mt-0 lg:mt-20 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
       <div className="font-bold text-emerald-600 text-2xl sm:text-3xl mb-2">
         {data.mTitle}
       </div>

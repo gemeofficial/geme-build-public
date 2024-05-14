@@ -21,7 +21,7 @@ const data = [
 
 export default function ContentSection4() {
   return (
-    <div className="mt-28 lg:mt-40 mx-auto max-w-xl px-4 md:px-0 lg:max-w-7xl">
+    <div className="mt-28 lg:mt-40 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
       <div className="lg:flex items-start lg:flex-wrap xl:flex-nowrap">
         {
           data.map(item=>(
