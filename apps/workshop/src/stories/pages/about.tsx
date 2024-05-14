@@ -1,9 +1,9 @@
-import ContentSection1 from '../components/about/ContentSection1'
-import HeroSection from '../components/about/HeroSection'
-import ContentSection2 from '../components/about/ContentSection2'
-import ContentSection3 from '../components/about/ContentSection3'
-import ContentSection4 from '../components/about/ContentSection4'
-import ContentSection5 from '../components/about/ContentSection5'
+import ContentSection1 from 'ui/src/about/ContentSection1'
+import HeroSection from 'ui/src/about/HeroSection'
+import ContentSection2 from 'ui/src/about/ContentSection2'
+import ContentSection3 from 'ui/src/about/ContentSection3'
+import ContentSection4 from 'ui/src/about/ContentSection4'
+import ContentSection5 from 'ui/src/about/ContentSection5'
 
 export default function About() {
   return (
