@@ -14,7 +14,7 @@ const heroConfigProps: IHeroWithImageTilesProps = {
       Different sizes of GEME are widely used in communities, schools, hospitals, office buildings, shopping centers, tourist attractions, resorts, restaurants, hotels, etc.`,
   primaryButtonLabel: 'Contact us',
   primaryButtonProps: {
-    href: '/contact',
+    href: '/business-inquiry',
   },
   decorativeImageGroups: [
     [
@@ -107,5 +107,3 @@ function IndustrialEquipmentsPageEn() {
 }
 
 export { IndustrialEquipmentsPageEn }
-
-
