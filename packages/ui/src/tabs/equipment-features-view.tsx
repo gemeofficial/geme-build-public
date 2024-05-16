@@ -4,7 +4,7 @@ import { Tab } from '@headlessui/react'
 
 import { Link, Element } from 'react-scroll'
 import classNames from '../lib/classNames'
-import { ReactNode } from 'react'
+import { ReactNode, useEffect, useState } from 'react'
 
 interface IProductFeaturesTabProps {
   name: string
@@ -21,6 +21,15 @@ export function EquipmentFeaturesView({
 }: {
   tabs: IProductFeaturesTabProps[]
 }) {
+  const [offset, setOffset] = useState(0)
+  useEffect(() => {
+    const rootHeader = document.querySelector('#root-header')
+    if (rootHeader) {
+      const rootHeaderheight = rootHeader.getBoundingClientRect().height
+      setOffset(-rootHeaderheight)
+    }
+  }, [])
+
   return (
     <div className="bg-white">
       <section
@@ -50,7 +59,7 @@ export function EquipmentFeaturesView({
                         smooth={true}
                         duration={250}
                         to={String(tab.name)}
-                        offset={0}
+                        offset={offset}
                         className=" hover:text-gray-700 whitespace-nowrap inline-block py-6  font-medium focus:outline-none"
                       >
                         {tab.name}
