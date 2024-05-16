@@ -1,7 +1,5 @@
 'use client'
 
-import { Tab } from '@headlessui/react'
-
 import { Link, Element } from 'react-scroll'
 import classNames from '../lib/classNames'
 import { ReactNode, useEffect, useState } from 'react'
