@@ -30,6 +30,8 @@ export function EquipmentFeaturesView({
     }
   }, [])
 
+  const [currentIndex, setCurrentIndex] = useState(0)
+
   return (
     <div className="bg-white">
       <section
@@ -37,39 +39,32 @@ export function EquipmentFeaturesView({
         className="mx-auto max-w-7xl py-16 sm:py-24 sm:px-2 lg:px-8"
       >
         {tabs.length > 0 && (
-          <Tab.Group as="div">
-            <div className="-mx-4 flex overflow-x-auto sm:mx-0">
-              <div className="flex-auto border-b border-gray-200 px-4 sm:px-0">
-                <Tab.List className="-mb-px flex space-x-10">
-                  {tabs.map((tab) => (
-                    <Tab
-                      key={tab.name}
-                      className={({ selected }) =>
-                        classNames(
-                          selected
-                            ? 'border-emerald-500 text-emerald-600 text-base'
-                            : 'border-transparent text-gray-500 text-sm',
-                          'border-b-2 hover:border-gray-300 focus:outline-none',
-                        )
-                      }
-                    >
-                      <Link
-                        activeClass="bg-white text-[#047857] rounded-t-lg xl:rounded-lg !font-bold"
-                        spy={true}
-                        smooth={true}
-                        duration={250}
-                        to={String(tab.name)}
-                        offset={offset}
-                        className=" hover:text-gray-700 whitespace-nowrap inline-block py-6  font-medium focus:outline-none"
-                      >
-                        {tab.name}
-                      </Link>
-                    </Tab>
-                  ))}
-                </Tab.List>
+          <div className="-mx-4 flex overflow-x-auto sm:mx-0">
+            <div className="flex-auto border-b border-gray-200 px-4 sm:px-0">
+              <div className="-mb-px flex space-x-10">
+                {tabs.map((tab, index) => (
+                  <Link
+                    key={tab.name}
+                    spy={true}
+                    smooth={true}
+                    duration={250}
+                    to={String(tab.name)}
+                    offset={offset}
+                    className={classNames(
+                      `border-b-2 cursor-pointer whitespace-nowrap inline-block py-6  font-medium`,
+                      "focus:outline-none hover:text-emerald-600",
+                      currentIndex === index
+                        ? 'border-emerald-500 text-emerald-600 text-base'
+                        : 'border-transparent text-gray-500 text-sm',
+                    )}
+                    onClick={() => setCurrentIndex(index)}
+                  >
+                    {tab.name}
+                  </Link>
+                ))}
               </div>
             </div>
-          </Tab.Group>
+          </div>
         )}
 
         {tabs.map((tab) => (
