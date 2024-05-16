@@ -1,7 +1,7 @@
 import { IEquipmentToFeaturesPropsFnPayload } from "../../../i18n-pages/industrial-equipments-id/components/EquipmentFeatures"
 import { IProductListsWithTallImagesProps } from "../../../i18n-pages/industrial-equipments/components/EquipmentList"
 import { TEquipment } from "../data/data-en"
-import { IProductFeaturesWithTabsProps } from "../../../i18n-pages/industrial-equipments-id/components/ProductFeaturesWithTabs"
+import { ReactNode } from "react"
 
 export function equipmentDescription(equipment: TEquipment): string {
   return `${equipment.description}. ${equipment.subDesc}`
@@ -15,7 +15,7 @@ export function equipmentPath(equipment: TEquipment): string {
   return `/industrial-equipments/${equipment.id}`
 }
 
-export function findEquipmentById(id: string,items:TEquipment[]): TEquipment | null {
+export function findEquipmentById(id: string, items: TEquipment[]): TEquipment | null {
   return items.find((item) => item.id === id) ?? null
 }
 
@@ -36,13 +36,23 @@ export function mapItemsToProducts(
   }))
 }
 
+export interface IProductFeaturesTabProps {
+  name: string
+  heading: string
+  description?: ReactNode
+  features: {
+    name: string
+    description: string
+  }[]
+}
+
 // 生成设备详情数据函数
 export function equipmentToFeaturesProps({
   tabs,
   equipment,
   tabNames,
   tabHeadingAndDescription
-}:IEquipmentToFeaturesPropsFnPayload): IProductFeaturesWithTabsProps['tabs'] {
+}: IEquipmentToFeaturesPropsFnPayload): IProductFeaturesTabProps[] {
   return tabs.reduce((acc, tab) => {
     const values = equipment?.[tab]
 
@@ -56,7 +66,7 @@ export function equipmentToFeaturesProps({
       description:
         tab === 'baiscParams'
           ? equipment.parametersDescription ||
-            tabHeadingAndDescription[tab].description
+          tabHeadingAndDescription[tab].description
           : tabHeadingAndDescription[tab].description,
       features: (values ?? []).map(({ name, value }) => ({
         name,
@@ -65,5 +75,5 @@ export function equipmentToFeaturesProps({
     })
 
     return acc
-  }, [] as IProductFeaturesWithTabsProps['tabs'])
+  }, [] as IProductFeaturesTabProps[])
 }
