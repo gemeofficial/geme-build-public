@@ -1,10 +1,10 @@
 import { ReactNode } from 'react'
-import ProductFeaturesWithTabs, {
-  IProductFeaturesWithTabsProps,
-} from './ProductFeaturesWithTabs'
-
 import type { TEquipment } from '../../../helpers/industrial-equipments/data/data-en'
-import { equipmentToFeaturesProps } from '../../../helpers/industrial-equipments/tool'
+import {
+  equipmentToFeaturesProps,
+  IProductFeaturesTabProps,
+} from '../../../helpers/industrial-equipments/tool'
+import { EquipmentFeaturesView } from 'ui'
 
 export type TTab = keyof Pick<
   TEquipment,
@@ -18,7 +18,8 @@ const TABS: TTab[] = [
   'MaterialOfMain',
 ]
 
-export interface IEquipmentToFeaturesPropsFnPayload extends IEquipmentFeaturesProps {
+export interface IEquipmentToFeaturesPropsFnPayload
+  extends IEquipmentFeaturesProps {
   tabs: TTab[]
 }
 
@@ -37,11 +38,12 @@ function EquipmentFeatures(props: IEquipmentFeaturesProps) {
     tabs: TABS,
   }
 
-  const data: IProductFeaturesWithTabsProps = {
-    tabs: equipmentToFeaturesProps(payload),
-  }
+  const data: IProductFeaturesTabProps[] =
+    equipmentToFeaturesProps(payload) || []
 
-  return <ProductFeaturesWithTabs {...data} />
+  return (
+    <EquipmentFeaturesView tabs={data}/>
+  )
 }
 
 export default EquipmentFeatures
