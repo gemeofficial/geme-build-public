@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import { IconLogoGeme } from './icons'
 // import { IVideoPlayerProps, VideoPlayer } from './video'
-import { IMuxVideoPlayerProps, MuxVideoPlayer } from './mux-video'
+// import { IMuxVideoPlayerProps, MuxVideoPlayer } from './mux-video'
 import { ILinkComponent } from '../../../apps/gemebuild/src/contexts/link-context'
 import Image from 'next/image'
 import VideoInlinePlayer, { PlayIcon } from './video-inline-player'
