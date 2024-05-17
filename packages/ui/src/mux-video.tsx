@@ -69,6 +69,8 @@ const MuxVideoPlayer: FC<IMuxVideoPlayerProps> = ({
         className={`w-full h-full object-cover ${
           isCanPlay ? 'hidden' : 'block'
         }`}
+        width={1080}
+        height={720}
       />
 
       <MuxPlayer
