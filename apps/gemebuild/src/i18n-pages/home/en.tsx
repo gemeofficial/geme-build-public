@@ -171,12 +171,12 @@ const secondLifeProps: ISecondLifeProps = {
   articles: [
     {
       id: 1,
-      title: 'Prevent Water Lost',
-      description: 'Compost can absorb water, let your seeds grow better.',
+      title: 'Make Good Soil',
+      description: 'Compost can nourish garden soil, let plants grow bigger.',
       image: {
         width: 1200,
         height: 800,
-        alt: 'Prevent Water Lost',
+        alt: 'Make Good Soil',
         src: 'https://www.datocms-assets.com/79468/1666986512-moins_eau.jpg?w=10',
         srcSetData: {
           '100w':
@@ -194,8 +194,8 @@ const secondLifeProps: ISecondLifeProps = {
     },
     {
       id: 2,
-      title: 'Make Good Soil',
-      description: 'Compost can nourish garden soil, let plants grow bigger.',
+      title: 'Prevent Water Lost',
+      description: 'Compost can absorb water, let your seeds grow better.',
       image: {
         width: 1200,
         height: 800,
@@ -222,7 +222,7 @@ const secondLifeProps: ISecondLifeProps = {
       image: {
         width: 1200,
         height: 800,
-        alt: 'Prevent Water Lost',
+        alt: 'Fight Climate Change',
         src: 'https://www.datocms-assets.com/79468/1666986537-changements_climatiques.jpg?w=10',
         srcSetData: {
           '100w':
