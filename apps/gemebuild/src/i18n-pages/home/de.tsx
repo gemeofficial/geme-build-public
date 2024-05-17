@@ -174,13 +174,13 @@ const secondLifeProps: ISecondLifeProps = {
   articles: [
     {
       id: 1,
-      title: 'Verhindern Sie Wasserverlust',
+      title: 'Machen Sie guten Boden',
       description:
-        'Kompost kann Wasser aufnehmen und Ihre Samen besser wachsen lassen.',
+        'Kompost kann den Gartenboden nähren und Pflanzen wachsen lassen.',
       image: {
         width: 1200,
         height: 800,
-        alt: 'Verhindern Sie Wasserverlust',
+        alt: 'Machen Sie guten Boden',
         src: 'https://www.datocms-assets.com/79468/1666986512-moins_eau.jpg?w=10',
         srcSetData: {
           '100w':
@@ -198,9 +198,9 @@ const secondLifeProps: ISecondLifeProps = {
     },
     {
       id: 2,
-      title: 'Machen Sie guten Boden',
+      title: 'Verhindern Sie Wasserverlust',
       description:
-        'Kompost kann den Gartenboden nähren und Pflanzen wachsen lassen.',
+        'Kompost kann Wasser aufnehmen und Ihre Samen besser wachsen lassen.',
       image: {
         width: 1200,
         height: 800,
@@ -228,7 +228,7 @@ const secondLifeProps: ISecondLifeProps = {
       image: {
         width: 1200,
         height: 800,
-        alt: 'Verhindern Sie Wasserverlust',
+        alt: 'Den Klimawandel bekämpfen',
         src: 'https://www.datocms-assets.com/79468/1666986537-changements_climatiques.jpg?w=10',
         srcSetData: {
           '100w':
