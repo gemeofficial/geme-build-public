@@ -34,7 +34,7 @@ export function EquipmentFeaturesView({
     <div className="bg-white">
       <section
         aria-labelledby="features-heading"
-        className="mx-auto max-w-7xl py-16 sm:py-24 sm:px-2 lg:px-8"
+        className="mx-auto max-w-7xl py-16 sm:py-24 px-4 sm:px-6 lg:px-8"
       >
         {tabs.length > 0 && (
           <div className="-mx-4 flex overflow-x-auto sm:mx-0">
