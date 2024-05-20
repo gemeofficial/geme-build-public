@@ -1,5 +1,5 @@
-import Image from 'next/legacy/image'
 // FIXME: next/link not work with next-intl, should use components/link instead.
+import Image from 'next/image'
 import Link from 'next/link'
 
 function classNames(...classes: string[]) {
@@ -119,8 +119,9 @@ function WithSquareImages({
                   <Image
                     src={imageSrc}
                     alt={imageAlt}
+                    width={280}
+                    height={280}
                     className="object-cover object-center"
-                    layout="fill"
                   />
                 </div>
               </div>

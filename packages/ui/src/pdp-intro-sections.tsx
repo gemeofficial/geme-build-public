@@ -155,16 +155,14 @@ function PdpIntroSection5({ title, leftNotes }: IPdpIntroSection5Props) {
           alt="introduction waste to geme"
           width={58}
           height={75}
-          layout="responsive"
-          className=" z-0 xl:hidden"
+          className="w-full h-full z-0 xl:hidden"
         />
         <Image
-          width={300}
-          height={133}
-          layout="responsive"
+          width={1920}
+          height={1080}
           src="/assets/images/pdp-v2311/introduction/waste-to-geme-large.svg"
           alt="introduction waste to geme"
-          className=" z-0 hidden xl:block "
+          className="w-full h-full z-0 hidden xl:block"
         />
 
         <div className=" absolute z-10 inset-0 flex flex-col items-center justify-end xl:max-w-7xl  xl:mx-auto">
@@ -405,18 +403,16 @@ function PdpIntroSection7({
         <Image
           width={58}
           height={75}
-          layout="responsive"
           src="/assets/images/pdp-v2311/introduction/device-compare.svg"
           alt="Introduction GEME Composter Super Large Volume"
-          className=" z-0 xl:hidden"
+          className=" z-0 xl:hidden w-full h-full"
         />
         <Image
-          width={300}
-          height={133}
-          layout="responsive"
+          width={1920}
+          height={1080}
           src="/assets/images/pdp-v2311/introduction/device-compare-large.svg"
           alt="Introduction GEME Composter Super Large Volume"
-          className=" z-0 hidden xl:block "
+          className=" z-0 hidden xl:block w-full h-full"
         />
 
         <div className=" absolute top-0 w-full h-full flex flex-col xl:flex-row items-center justify-between xl:items-start">

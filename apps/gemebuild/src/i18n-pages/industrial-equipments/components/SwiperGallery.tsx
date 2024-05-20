@@ -1,5 +1,4 @@
 'use client'
-import Image from 'next/legacy/image'
 import React, { useEffect } from 'react'
 // core version + navigation, pagination modules:
 import Swiper from 'swiper'
@@ -8,6 +7,7 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import Image from 'next/image'
 
 const SwiperGallery = (props: {
   galleryID: string
@@ -60,12 +60,11 @@ const SwiperGallery = (props: {
         {props.images.map((image, index) => (
           <div className="swiper-slide" key={index}>
             <Image
-              className="w-full rounded-lg"
+              className="w-full rounded-lg object-cover"
               src={image.thumbnailURL}
               width={image.width}
               height={image.height}
-              layout="intrinsic"
-              alt=""
+              alt={`industrial equipments style${index}`}
             />
           </div>
         ))}

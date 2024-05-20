@@ -3,8 +3,8 @@ import clsx from 'clsx'
 import type { LinkProps } from 'next/link'
 
 import { ReactNode } from 'react'
-import Image from 'next/legacy/image'
 import { useLink } from '../../../contexts/link-context'
+import Image from 'next/image'
 
 export interface IHeroWithImageTilesProps {
   title: string
@@ -69,12 +69,9 @@ export default function Hero({
                               >
                                 <Image
                                   src={image.imageSrc}
-                                  layout="intrinsic"
                                   width={image.width}
                                   height={image.height}
-                                  objectFit="cover"
-                                  objectPosition="center"
-                                  alt=""
+                                  alt="Hero"
                                   className="h-full w-full object-cover object-center"
                                 />
                               </div>
