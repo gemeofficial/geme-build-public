@@ -1,5 +1,7 @@
 // 'use client'
 
+// TODO：2024-5-20 项目中暂时没有地方用到mux，删除此依赖以修复Best Practices。但目前这份代码先注释保留
+
 // import MuxPlayer from '@mux/mux-player-react'
 // import { FC, useState, useEffect, VideoHTMLAttributes } from 'react'
 // import Image from 'next/image'
