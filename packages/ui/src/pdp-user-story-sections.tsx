@@ -86,7 +86,7 @@ function PdpUserStoryTeamSectionsExample({
                 width={400}
                 height={500}
                 src={person.imageUrl || ''}
-                alt="image"
+                alt="user story avatar"
               />
               <div className="flex-auto">
                 <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">
