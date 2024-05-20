@@ -350,7 +350,6 @@ function ContentSection4({
                     withMp4VideoOrYoutubeVideo?.videoPosterImage?.width || 900
                   }
                   className="absolute inset-0 h-full w-full object-cover"
-                  priority
                 />
               </VideoInlinePlayer>
             </div>

@@ -64,7 +64,7 @@ const SwiperGallery = (props: {
               src={image.thumbnailURL}
               width={image.width}
               height={image.height}
-              alt="swiper-slide"
+              alt={`industrial equipments style${index}`}
             />
           </div>
         ))}
