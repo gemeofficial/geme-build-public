@@ -63,8 +63,6 @@ function HeroSection1({
       {/* 大屏图片层 */}
       <div className="overflow-hidden h-full relative">
         <div className="z-10 absolute inset-0 bg-opacity-30 md:bg-opacity-40 bg-black "></div>
-        {/* 停用Mux Player的自动背景播放 */}
-        {/* <MuxVideoPlayer {...videoProps} /> */}
         <Image
           src="/assets/images/home-v2311/cover-v3.jpg"
           alt="hero picture"
