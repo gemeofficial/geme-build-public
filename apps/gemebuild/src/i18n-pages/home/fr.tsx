@@ -169,19 +169,20 @@ const contentSection4Props: IContentSection4Props = {
 // 首页第五部分（滚动动画部分）的内容数据配置 Fr
 const secondLifeProps: ISecondLifeProps = {
   titleLeftPart: 'Compost',
-  titleRightPart: 'Une nouvelle vie pour les déchets',
+  titleRightPart: 'Nouvelle vie pour les déchets',
   description:
     'Vous pouvez réduire de 100 kg à 300 kg les émissions de CO2. Si vous recyclez tous vos déchets alimentaires via le compostage.',
 
   articles: [
     {
       id: 1,
-      title: `Prévenir la perte d'eau`,
-      description: `Le compost peut absorber l'eau, permettant à vos graines de mieux pousser.`,
+      title: 'Faire du bon sol',
+      description:
+        'Le compost peut nourrir la terre du jardin et permettre aux plantes de grandir.',
       image: {
         width: 1200,
         height: 800,
-        alt: `Prévenir la perte d'eau`,
+        alt: `Faire du bon sol`,
         src: 'https://www.datocms-assets.com/79468/1666986512-moins_eau.jpg?w=10',
         srcSetData: {
           '100w':
@@ -199,9 +200,8 @@ const secondLifeProps: ISecondLifeProps = {
     },
     {
       id: 2,
-      title: 'Faire du bon sol',
-      description:
-        'Le compost peut nourrir la terre du jardin et permettre aux plantes de grandir.',
+      title: `Prévenir la perte d'eau`,
+      description: `Le compost peut absorber l'eau, permettant à vos graines de mieux pousser.`,
       image: {
         width: 1200,
         height: 800,
@@ -229,7 +229,7 @@ const secondLifeProps: ISecondLifeProps = {
       image: {
         width: 1200,
         height: 800,
-        alt: `Prévenir la perte d'eau`,
+        alt: `Combattre le changement climatique`,
         src: 'https://www.datocms-assets.com/79468/1666986537-changements_climatiques.jpg?w=10',
         srcSetData: {
           '100w':
