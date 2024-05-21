@@ -69,7 +69,7 @@ function HeroSection1({
       {/* 大屏图片层 */}
       <div className="overflow-hidden h-full relative">
         <div className="z-10 absolute inset-0 bg-opacity-30 md:bg-opacity-40 bg-black "></div>
-        <picture>
+        {/* <picture>
           <source media="(max-width: 768px)" srcSet={heroImageUrlMobile} />
           <source media="(min-width: 769px)" srcSet={heroImageUrlPc} />
           <Image
@@ -80,7 +80,23 @@ function HeroSection1({
             width={1920}
             height={1080}
           />
-        </picture>
+        </picture> */}
+        <Image
+            src={heroImageUrlPc}
+            alt="hero background picture"
+            priority
+            className="hidden xl:block w-full h-full object-cover"
+            width={1920}
+            height={1080}
+          />
+          <Image
+            src={heroImageUrlMobile}
+            alt="hero background picture"
+            priority
+            className="xl:hidden w-full h-full object-cover"
+            width={375}
+            height={750}
+          />
       </div>
 
       {/* 文字定位层 */}
