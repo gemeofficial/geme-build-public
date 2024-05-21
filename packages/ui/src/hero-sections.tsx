@@ -79,34 +79,39 @@ function HeroSection1({
             sizes='(max-width: 1280px) 50vw, (min-width: 1281px) 100vw'
           /> */}
         {/* <picture>
-          <source media="(max-width: 768px)" srcSet={heroImageUrlMobile} />
-          <source media="(min-width: 769px)" srcSet={heroImageUrlPc} />
+          <source media="(max-width: 1280px)" srcSet={heroImageUrlMobile} />
+          <source media="(min-width: 1281px)" srcSet={heroImageUrlPc} />
           <Image
             src={heroImageUrlPc}
             alt="hero background picture"
             priority
             className="w-full h-full object-cover"
+            sizes="(max-width: 1280px) 50vw, (min-width: 1281px) 100vw"
             width={1920}
             height={1080}
           />
         </picture> */}
-        {/* <Image
+        <Image
           src={heroImageUrlPc}
           alt="hero background picture"
           priority
           className="hidden xl:block w-full h-full object-cover"
-          width={1920}
-          height={1080}
+          fill
+          // width={1920}
+          // height={1080}
+          sizes="(max-width: 1280px) 1vw, (min-width: 1281px) 100vw, 1vw"
         />
         <Image
           src={heroImageUrlMobile}
           alt="hero background picture"
           priority
           className="xl:hidden w-full h-full object-cover"
-          width={375}
-          height={750}
-        /> */}
-        <picture>
+          // width={375}
+          // height={750}
+          fill
+          sizes="(max-width: 1280px) 100vw, (min-width: 1281px) 1vw, 1vw"
+        />
+        {/* <picture>
           <source media="(max-width: 1280px)" srcSet={heroImageUrlMobile} />
           <source media="(min-width: 1281px)" srcSet={heroImageUrlPc} />
           <img
@@ -114,7 +119,7 @@ function HeroSection1({
             alt="hero background picture"
             className="w-full h-full object-cover"
           />
-        </picture>
+        </picture> */}
       </div>
 
       {/* 文字定位层 */}
