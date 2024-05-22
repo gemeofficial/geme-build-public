@@ -154,12 +154,12 @@ const contentSection4Props: IContentSection4Props = {
   withMp4VideoOrYoutubeVideo: {
     type: 'youtube',
     videoPosterImage: {
-      src: '/assets/images/home-v2311/cover-v3.jpg',
+      src: '/assets/images/home-v2311/cover-v4.jpg',
       alt: 'GEME in your home',
       width: 1600,
       height: 900,
       srcSetData: {
-        '100w': '/assets/images/home-v2311/cover-v3.jpg',
+        '100w': '/assets/images/home-v2311/cover-v4.jpg',
       },
     },
     // videoSrcUrl:
