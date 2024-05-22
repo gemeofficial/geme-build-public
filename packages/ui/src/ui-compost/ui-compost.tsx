@@ -10,6 +10,7 @@ import {
 import './ui-compost.css'
 import { ScrollTrigger, Tween } from 'react-gsap'
 import classNames from '../lib/classNames'
+import Image from 'next/image'
 
 interface IUiCompostProps {
   progress: number
@@ -95,7 +96,7 @@ const UiCompost = forwardRef(function UiCompost(
             className="ui-fragments-sprite 2xl:!scale-[0.35]"
             style={{}}
           >
-            <img
+            <Image
               className={`_${String(Math.round(19 * progress)).padStart(
                 2,
                 '0',
@@ -107,6 +108,7 @@ const UiCompost = forwardRef(function UiCompost(
               height={2808}
               loading="lazy"
               alt="sprite images"
+              sizes="(max-width: 1280px) 243.75vw, (min-width: 1281px) 243.75vw, 243.75vw"
             />
           </div>
         </div>
