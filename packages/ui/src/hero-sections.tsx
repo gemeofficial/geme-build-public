@@ -16,6 +16,8 @@ interface IHeroSection1Props {
   }
   LinkComponent?: ILinkComponent
   fullScreenVideoUrl?: string
+  heroImageUrlPc: string // 首屏大图URL
+  heroImageUrlMobile: string // 首屏大图URL
 }
 
 const heroSection1Props: IHeroSection1Props = {
@@ -47,6 +49,8 @@ const heroSection1Props: IHeroSection1Props = {
     src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
     posterUrl: '/assets/images/home-v2311/hero-blurred.webp',
   },
+  heroImageUrlPc: '/assets/images/home-v2311/cover-v3.jpg',
+  heroImageUrlMobile: '/assets/images/home-v2311/cover-v3-mobile.jpg',
 }
 
 function HeroSection1({
@@ -57,6 +61,8 @@ function HeroSection1({
   videoProps,
   LinkComponent,
   fullScreenVideoUrl,
+  heroImageUrlPc,
+  heroImageUrlMobile,
 }: IHeroSection1Props) {
   return (
     <div className="h-screen ">
@@ -64,12 +70,24 @@ function HeroSection1({
       <div className="overflow-hidden h-full relative">
         <div className="z-10 absolute inset-0 bg-opacity-30 md:bg-opacity-40 bg-black "></div>
         <Image
-          src="/assets/images/home-v2311/cover-v3.jpg"
-          alt="hero picture"
+          src={heroImageUrlPc}
+          alt="hero background picture"
           priority
-          className="w-full h-full object-cover"
-          width={1920}
-          height={1080}
+          className="hidden xl:block w-full h-full object-cover"
+          fill
+          // width={1920}
+          // height={1080}
+          sizes="(max-width: 1280px) 1vw,(min-width: 1281px) 60vw, (min-width: 1920px) 80vw,(min-width: 2420px) 100vw, 1vw"
+        />
+        <Image
+          src={heroImageUrlMobile}
+          alt="hero background picture"
+          priority
+          className="xl:hidden w-full h-full object-cover"
+          // width={375}
+          // height={750}
+          fill
+          sizes="(max-width: 1280px) 100vw, (min-width: 1281px) 1vw, 1vw"
         />
       </div>
 

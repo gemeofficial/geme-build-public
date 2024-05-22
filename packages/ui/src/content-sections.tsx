@@ -121,11 +121,13 @@ function ContentSection2({
       <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">
         {imageSrc && (
           <Image
-            className=" max-w-full w-full rounded-2xl"
+            className=" max-w-full w-full rounded-2xl h-full"
             alt={imageAlt || ''}
             width={589}
             height={428}
             src={imageSrc}
+            quality={60}
+            sizes="(max-width: 1280px) 80vw, (min-width: 1281px) 500px, 1vw"
           />
         )}
       </div>
@@ -228,11 +230,13 @@ function ContentSection3({
           return (
             <div key={item.id}>
               <Image
-                className=" max-w-full w-full rounded-xl "
+                className="max-w-full w-full rounded-xl "
                 src={item.imageSrc || ''}
                 alt={item.imageAlt || ''}
                 width={280}
                 height={373}
+                quality={60}
+                sizes="(max-width: 1280px) 40vw, (min-width: 1281px) 250px, 1vw"
               />
               <p className="v2311-font-body text-v2311-fg-black text-left mt-2 md:mt-4">
                 {item.description}
@@ -344,12 +348,14 @@ function ContentSection4({
                   src={withMp4VideoOrYoutubeVideo?.videoPosterImage?.src || ''}
                   alt={withMp4VideoOrYoutubeVideo?.videoPosterImage?.alt || ''}
                   width={
-                    withMp4VideoOrYoutubeVideo?.videoPosterImage?.width || 1600
+                    withMp4VideoOrYoutubeVideo?.videoPosterImage?.width || 1200
                   }
                   height={
-                    withMp4VideoOrYoutubeVideo?.videoPosterImage?.width || 900
+                    withMp4VideoOrYoutubeVideo?.videoPosterImage?.width || 680
                   }
                   className="absolute inset-0 h-full w-full object-cover"
+                  quality={60}
+                  sizes="(max-width: 1280px) 80vw, (min-width: 1281px) 1000px, 1vw"
                 />
               </VideoInlinePlayer>
             </div>

@@ -59,6 +59,8 @@ const heroSection1Props: IHeroSection1Props = {
     posterUrl: '/assets/images/home-v2311/hero-blurred.webp',
   },
   fullScreenVideoUrl: 'https://www.youtube.com/embed/ROJYZBp0jcM',
+  heroImageUrlPc:'/assets/images/home-v2311/cover-v3.jpg',
+  heroImageUrlMobile: '/assets/images/home-v2311/cover-v3-mobile.jpg',
 }
 
 // 首页第二部分的内容数据配置 De
