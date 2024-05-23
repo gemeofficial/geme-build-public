@@ -1,6 +1,7 @@
 import SelfRepairView from './components/SelfRepairView'
 import { IFaqOffsetWithSupportingTextProps } from './components/FaqOffsetWithSupportingText'
 import { IHeaderCenteredProps } from './components/Hero'
+import Image from 'next/image'
 
 // 页面内容配置文件1  Fr版本
 const faqGroups: IFaqOffsetWithSupportingTextProps[] = [
@@ -30,7 +31,7 @@ const faqGroups: IFaqOffsetWithSupportingTextProps[] = [
         question: "Lorsque le code s'affiche comme suit :",
         answer: (
           <div className="prose text-gray-600 prose-p:my-0 prose-ul:my-0 prose-img:mb-2">
-            <img src="/assets/images/self-repair/stirringIndicatorLight.png" />
+            <Image src="/assets/images/self-repair/stirringIndicatorLight.png" alt='code displayed1' width={260} height={80} />
             <p>Ce code indique que le mélange est anormal.</p>
             <ul>
               <li>
@@ -53,7 +54,7 @@ const faqGroups: IFaqOffsetWithSupportingTextProps[] = [
         question: "Lorsque le code s'affiche comme suit :",
         answer: (
           <div className="prose text-gray-600 prose-p:my-0 prose-ul:my-0 prose-img:mb-2">
-            <img src="/assets/images/self-repair/uvLampIndicatorLight.png" />
+            <Image src="/assets/images/self-repair/uvLampIndicatorLight.png" alt='code displayed2' width={260} height={80} />
             <p>
               {"S'il te plaît "}
               <a href="https://youtu.be/VdAtQfpSQ_E" target="_blank">
