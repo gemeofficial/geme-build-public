@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { IReturnPolicyEndProps } from './ReturnPolicy'
 
 function ReturnPolicyEndAt20231125(props: IReturnPolicyEndProps) {
@@ -20,10 +21,12 @@ function ReturnPolicyEndAt20231125(props: IReturnPolicyEndProps) {
               </div>
             </div>
             <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg bg-gray-100">
-              <img
+              <Image
                 src={props.forward.imgSrc}
-                alt=""
+                alt="Returns Work Process"
                 className="object-cover object-center"
+                width={570}
+                height={380}
               />
             </div>
           </div>

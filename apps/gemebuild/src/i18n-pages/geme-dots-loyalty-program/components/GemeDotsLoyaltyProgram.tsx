@@ -1,6 +1,7 @@
 // FIXME: next/link not work with next-intl, should use components/link instead.
 import Link from 'next/link'
 import { QuestionMarkCircleIcon } from '@heroicons/react/24/solid'
+import Image from 'next/image'
 
 interface IQAType {
   question: string
@@ -48,9 +49,11 @@ function GemeDotsLoyaltyProgram(props: IGemeDotsProps) {
               />
             </div>
             <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg ">
-              <img
+              <Image
                 src={props.forward.imgSrc}
-                alt=""
+                alt="Geme Dots Loyalty Program"
+                width={570}
+                height={380}
                 className="object-contain object-center"
               />
             </div>

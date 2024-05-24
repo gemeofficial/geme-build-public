@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 interface IWarrantyProps {
   title: string
   forward: {
@@ -38,9 +40,11 @@ function Warranty(props: IWarrantyProps) {
               />
             </div>
             <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg bg-gray-100">
-              <img
+              <Image
+                width={570}
+                height={380}
                 src={props.forward.imgSrc}
-                alt=""
+                alt="GEME Warranty"
                 className="object-cover object-center"
               />
             </div>
