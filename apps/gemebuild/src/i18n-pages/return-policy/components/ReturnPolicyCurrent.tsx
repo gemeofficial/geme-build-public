@@ -12,7 +12,9 @@ function ReturnPolicyCurrent(props: IReturnPolicyCurrentProps) {
                 {props.title}
               </h2>
 
-              <time className="text-gray-500 text-xs">{props.updateTime}</time>
+              <time suppressHydrationWarning className="text-gray-500 text-xs">
+                {props.updateTime}
+              </time>
               <div className="mt-4 text-gray-500">
                 <div
                   dangerouslySetInnerHTML={{
@@ -50,7 +52,7 @@ function ReturnPolicyCurrent(props: IReturnPolicyCurrentProps) {
                       </div>
                     </div>
                   </div>
-                )
+                ),
             )}
           </div>
         </div>
