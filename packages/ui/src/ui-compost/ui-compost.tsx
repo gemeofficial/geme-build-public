@@ -6,6 +6,7 @@ import {
   useRef,
   useState,
   forwardRef,
+  useEffect,
 } from 'react'
 import './ui-compost.css'
 import { ScrollTrigger, Tween } from 'react-gsap'
@@ -23,20 +24,42 @@ const UiCompost = forwardRef(function UiCompost(
   const [vhHeight, setVhHeight] = useState(0)
   const [compostMaskPath, setCompostMaskPath] = useState('')
   const uiFragmentsSpriteRef = useRef<HTMLDivElement>(null)
+  const scaleMultiples = useRef(1)
 
   useLayoutEffect(() => {
-    if (typeof window !== 'undefined') {
-      setVhHeight(window.innerHeight / 100)
+    setVhHeight(window.innerHeight / 100)
 
-      const width = uiFragmentsSpriteRef.current?.clientWidth || 0
-      const progressSize = width - 0.445 * width * progress
-      setCompostMaskPath(
-        `M0 0H${width}V${progressSize}C${width} ${progressSize} ${width} ${width} ${
-          width / 2
-        } ${width}C0 ${width} 0 ${progressSize} 0 ${progressSize}`,
-      )
-    }
+    const width = uiFragmentsSpriteRef.current?.clientWidth || 0
+    const progressSize = width - 0.445 * width * progress
+    setCompostMaskPath(
+      `M0 0H${width}V${progressSize}C${width} ${progressSize} ${width} ${width} ${
+        width / 2
+      } ${width}C0 ${width} 0 ${progressSize} 0 ${progressSize}`,
+    )
   }, [setVhHeight, setCompostMaskPath, progress])
+
+  // 尝试修复Hydration Errors
+  // 使用useEffect 代替typeof window !== 'undefined'的判断
+  useEffect(() => {
+    function windowWidthChangeHandler() {
+      if (window.innerWidth > 1440) {
+        scaleMultiples.current = 0.8
+        return
+      }
+
+      scaleMultiples.current = 1
+    }
+
+    // 初始化执行一次
+    windowWidthChangeHandler()
+
+    window.addEventListener('resize', windowWidthChangeHandler)
+
+    // 清理函数
+    return () => {
+      window.removeEventListener('resize', windowWidthChangeHandler)
+    }
+  }, [])
 
   return (
     <div
@@ -83,12 +106,7 @@ const UiCompost = forwardRef(function UiCompost(
               // transform: 'translate(-50%, -50%) scale(1)';,
               transform: `translate(-50%, -${
                 20 + (50 - 20) * progress
-              }%) scale(${
-                progress *
-                (typeof window !== 'undefined' && window.innerWidth > 1440
-                  ? 0.8
-                  : 1)
-              })`,
+              }%) scale(${progress * scaleMultiples.current})`,
             }}
           />
           <div
