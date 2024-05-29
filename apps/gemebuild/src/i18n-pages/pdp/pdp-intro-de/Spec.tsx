@@ -5,7 +5,7 @@ import WhatsInBox, {
 } from '../../../components/geme-whats-in-box'
 
 const gemeSpecsProps: IGemeSpecsProps = {
-  title: 'Technische Spezifikation',
+  title: 'Technische Spezifikationen',
   specs: [
     {
       id: 1,
@@ -19,7 +19,7 @@ const gemeSpecsProps: IGemeSpecsProps = {
     },
     {
       id: 3,
-      name: 'Strom',
+      name: 'Leistung',
       description: 'AC110V-60Hz/220V-50Hz',
     },
     {
@@ -41,13 +41,13 @@ const gemeSpecsProps: IGemeSpecsProps = {
       id: 7,
       name: 'Funktion',
       description:
-        'Vollautomatische, schnell wirkende Biokompostierung; Sicher und energiesparend; Automatische Desodorierung; Automatische Entfeuchtung',
+        'Vollautomatische, schnell wirkende Bio-Kompostierung; Sicher und energiesparend; Automatische Geruchsbeseitigung; Automatische Entfeuchtung',
     },
   ],
 }
 
 const gemeWhatsInBoxProps: IGemeWhatsInBoxProps = {
-  title: `Was ist in der Box`,
+  title: `Lieferumfang`,
   features: [
     {
       name: '1',
@@ -58,22 +58,22 @@ const gemeWhatsInBoxProps: IGemeWhatsInBoxProps = {
     },
     {
       name: '2',
-      title: 'GEME composter',
-      description: 'Die Bioabfall-Schnellmaschine',
+      title: 'GEME-Komposter',
+      description: 'Die schnell wirkende Bioabfallmaschine',
       imageSrc: '/assets/images/geme-whats-in-box/w2.png',
       imageAlt: 'GEME Bioabfall-Schnellkomposter',
     },
     {
       name: '3',
       title: 'Schaufel',
-      description: 'Wird zum Ausbringen von organischem Dünger verwendet',
+      description: 'Zum Herausnehmen des organischen Düngers',
       imageSrc: '/assets/images/geme-whats-in-box/w3.png',
       imageAlt: 'Schaufel',
     },
     {
       name: '4',
       title: 'Schaber',
-      description: 'Wird zur Reinigung der Zersetzungswanne verwendet',
+      description: 'Zur Reinigung des Zersetzungskessels',
       imageSrc: '/assets/images/geme-whats-in-box/w4.png',
       imageAlt: 'Schaber',
     },
