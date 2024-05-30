@@ -11,7 +11,7 @@ function ReturnPolicyEndAt20231125(props: IReturnPolicyEndProps) {
               <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-5">
                 {props.title}
               </h2>
-              <time className="text-gray-500 text-xs">{props.updateTime}</time>
+              <time suppressHydrationWarning  className="text-gray-500 text-xs">{props.updateTime}</time>
               <div className="mt-4 text-gray-500">
                 <div
                   dangerouslySetInnerHTML={{
