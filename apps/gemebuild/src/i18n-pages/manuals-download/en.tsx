@@ -8,27 +8,49 @@ const manualsDownloadProps: IManualsDownloadProps = {
   description: `You can find the user manual for your GEME here.`,
   files: [
     {
+      versions: 'Latest',
       language: 'English',
       document: 'geme-manual-en-110v.pdf',
-      pdfLink: `/assets/manuals/geme-manual-110v-en-v2024-04-27.pdf`,
+      pdfLink: `/assets/manuals/latest/geme-manual-110v-en-v2024-04-27.pdf`,
     },
     {
+      versions: 'Latest',
       language: 'English',
       document: 'geme-manual-en-220v.pdf',
-      pdfLink: `/assets/manuals/geme-manual-en-v2.pdf`,
+      pdfLink: `/assets/manuals/latest/geme-manual-220v-en-2024-05-31.pdf`,
     },
     {
+      versions: 'Latest',
       language: 'French',
       document: 'geme-manual-fr-220v.pdf',
-      pdfLink: `/assets/manuals/geme-manual-fr.pdf`,
+      pdfLink: `/assets/manuals/latest/geme-manual-220v-fr-2024-05-31.pdf`,
     },
     {
+      versions: 'Latest',
       language: 'German',
       document: 'geme-manual-de-220v.pdf',
-      pdfLink: `/assets/manuals/geme-manual-de.pdf`,
+      pdfLink: `/assets/manuals/latest/geme-manual-220v-de-2024-05-31.pdf`,
+    },
+    {
+      versions: 'Before 2024',
+      language: 'English',
+      document: 'geme-manual-en-220v-2023.pdf',
+      pdfLink: `/assets/manuals/before-2024/geme-manual-en-2023.pdf`,
+    },
+    {
+      versions: 'Before 2024',
+      language: 'French',
+      document: 'geme-manual-fr-220v-2023.pdf',
+      pdfLink: `/assets/manuals/before-2024/geme-manual-fr-2023.pdf`,
+    },
+    {
+      versions: 'Before 2024',
+      language: 'German',
+      document: 'geme-manual-de-220v-2023.pdf',
+      pdfLink: `/assets/manuals/before-2024/geme-manual-de-2023.pdf`,
     },
   ],
-  tableTitle: ['Language', 'Document'],
+  tableTitle: ['Versions', 'Language', 'Document'],
 }
 
 function ManualsDownloadPageEn() {
