@@ -207,12 +207,12 @@ const contentSection71Props: IContentSection7Props = {
         // for pc
         {
           minWidth: 1280,
-          src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-banner.mp4',
+          src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/geme-genereate-compost-12s-480p.mp4',
         },
         // for mobile/tablet
         {
           minWidth: 0,
-          src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-banner.mp4',
+          src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/geme-genereate-compost-12s-480p.mp4',
         },
       ],
     },

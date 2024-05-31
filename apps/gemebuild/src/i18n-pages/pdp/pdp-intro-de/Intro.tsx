@@ -227,7 +227,7 @@ const contentSection71Props: IContentSection7Props = {
       sources: [
         {
           minWidth: 0,
-          src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/how-geme-kobold-eat-food-waste-480p.mp4',
+          src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/how-geme-kobold-eat-food-waste-480p.mp4',
         },
       ],
     },

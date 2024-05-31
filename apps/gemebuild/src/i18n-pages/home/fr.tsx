@@ -58,11 +58,11 @@ const heroSection1Props: IHeroSection1Props = {
   linkText: 'Achetez maintenant',
   linkUrl: '/fr/product/geme',
   videoProps: {
-    src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
     posterUrl: '/assets/images/home-v2311/hero-blurred.webp',
   },
   fullScreenVideoUrl: 'https://www.youtube.com/embed/ROJYZBp0jcM',
-  heroImageUrlPc:'/assets/images/home-v2311/cover-v3.jpg',
+  heroImageUrlPc: '/assets/images/home-v2311/cover-v3.jpg',
   heroImageUrlMobile: '/assets/images/home-v2311/cover-v3-mobile.jpg',
 }
 
@@ -163,7 +163,6 @@ const contentSection4Props: IContentSection4Props = {
       },
     },
     // videoSrcUrl:
-    //   'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-banner.mp4',
     videoSrcUrl: 'https://www.youtube.com/embed/ROJYZBp0jcM',
   },
 }
@@ -258,7 +257,7 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
   title: `Le moyen le plus simple d'obtenir du compost`,
   videoPosterUrl: '/assets/images/home-v2311/use-compost-cover.jpg',
   videoSrcUrl:
-    'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-genereate-compost-12s-480p.mp4',
+    'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/geme-genereate-compost-12s-480p.mp4',
   steps: [
     {
       id: 1,

@@ -46,7 +46,7 @@ const heroSection1Props: IHeroSection1Props = {
   linkText: 'Shop Now',
   linkUrl: '/product/geme',
   videoProps: {
-    src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
     posterUrl: '/assets/images/home-v2311/hero-blurred.webp',
   },
   heroImageUrlPc: '/assets/images/home-v2311/cover-v3.jpg',

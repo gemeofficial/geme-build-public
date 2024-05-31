@@ -57,7 +57,7 @@ const heroSection1Props: IHeroSection1Props = {
   linkText: 'Jetzt einkaufen',
   linkUrl: '/de/product/geme',
   videoProps: {
-    src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
     posterUrl: '/assets/images/home-v2311/hero-blurred.webp',
   },
   fullScreenVideoUrl: 'https://www.youtube.com/embed/ROJYZBp0jcM',
@@ -163,7 +163,6 @@ const contentSection4Props: IContentSection4Props = {
       },
     },
     // videoSrcUrl:
-    //   'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-banner.mp4',
     videoSrcUrl: 'https://www.youtube.com/embed/ROJYZBp0jcM',
   },
 }
@@ -259,7 +258,7 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
   title: 'Der einfachste Weg, Kompost zu erhalten',
   videoPosterUrl: '/assets/images/home-v2311/use-compost-cover.jpg',
   videoSrcUrl:
-    'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-genereate-compost-12s-480p.mp4',
+    'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/geme-genereate-compost-12s-480p.mp4',
   steps: [
     {
       id: 1,
@@ -326,17 +325,22 @@ const contentSection1Props2: IContentSection1Props = {
 const contentSection1Props3: IContentSection1Props = {
   title: (
     <>
-      Angetrieben durch Biotech 
+      Angetrieben durch Biotech
       <br />
       und moderne Fertigung
     </>
   ),
   description: (
     <>
-      Unser Wissenschaftsteam hat diese Technologie in den letzten 50 Jahren ausgiebig getestet, um Bioabfälle, Boden und verschmutztes Wasser zu behandeln. Sie haben die Kerntechnologie verfeinert, was zur Schaffung von GEME Kobold führte.
+      Unser Wissenschaftsteam hat diese Technologie in den letzten 50 Jahren
+      ausgiebig getestet, um Bioabfälle, Boden und verschmutztes Wasser zu
+      behandeln. Sie haben die Kerntechnologie verfeinert, was zur Schaffung von
+      GEME Kobold führte.
       <br />
       <br />
-      Unser Ingenieurteam verfügt über umfangreiche Erfahrung in der Konstruktion und Herstellung von Müllpressen. Sie haben kürzlich den GEME Komposter entwickelt.
+      Unser Ingenieurteam verfügt über umfangreiche Erfahrung in der
+      Konstruktion und Herstellung von Müllpressen. Sie haben kürzlich den GEME
+      Komposter entwickelt.
       <br />
       <br />
       GEME Kobold und GEME Komposter entfachen eine Revolution.
@@ -351,7 +355,7 @@ const contentSection5Props: IContentSection5Props = {
   title: 'Essensreste in organischen Kompost verwandeln',
   description: (
     <>
-     GEME Kobold vermehrt Mikroorganismen, wenn sie gut gefüttert werden.
+      GEME Kobold vermehrt Mikroorganismen, wenn sie gut gefüttert werden.
       <br />
       Er zersetzt Ihre Lebensmittelabfälle, egal wie salzig oder sauer.
       <br />
@@ -380,7 +384,8 @@ const contentSection5Props: IContentSection5Props = {
   ],
   bottomDescription: (
     <>
-      Nur 3 Schritte machen es zum einfachsten Weg, den Klimawandel zu bekämpfen.
+      Nur 3 Schritte machen es zum einfachsten Weg, den Klimawandel zu
+      bekämpfen.
     </>
   ),
 }
@@ -402,7 +407,8 @@ const newsltterProps: INewsletterProps = {
     title: 'Treten Sie der Bewegung bei',
     description: (
       <>
-        Ein neuer Ansatz zur Lösung des weltweiten Abfallproblems beginnt bei jedem von uns, mühelos im Alltag
+        Ein neuer Ansatz zur Lösung des weltweiten Abfallproblems beginnt bei
+        jedem von uns, mühelos im Alltag
       </>
     ),
     emailInputName: 'E-Mail-Adresse',

@@ -556,7 +556,7 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
   title: 'The Easiest Way to Get Compost',
   videoPosterUrl: 'https://placehold.co/358x202/3B806F/white?text=poster',
   videoSrcUrl:
-    'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-banner.mp4',
+    'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/geme-genereate-compost-12s-480p.mp4',
   steps: [
     {
       id: 1,
