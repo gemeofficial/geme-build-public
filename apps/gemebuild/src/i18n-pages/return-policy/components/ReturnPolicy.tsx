@@ -3,10 +3,11 @@
 import { useSearchParams } from 'next/navigation'
 import ReturnPolicyCurrent from './ReturnPolicyCurrent'
 import ReturnPolicyEndAt20231125 from './ReturnPolicyEndAt20231125'
+import { Suspense } from 'react'
 
 interface IReturnPolicyCurrentProps {
   title: string
-  updateTime:string
+  updateTime: string
   forward: {
     description: string
     imgSrc: string
@@ -22,7 +23,7 @@ interface IReturnPolicyCurrentProps {
 
 interface IReturnPolicyEndProps {
   title: string
-  updateTime:string
+  updateTime: string
   forward: {
     description: string
     imgSrc: string
@@ -73,9 +74,17 @@ function ReturnPolicy(props: IReturnPolicyProps) {
   return <ReturnPolicyCurrent {...props.current} />
 }
 
+function SuspenseReturnPolicy(props: IReturnPolicyProps) {
+  return (
+    <Suspense>
+      <ReturnPolicy {...props} />
+    </Suspense>
+  )
+}
+
 export type {
   IReturnPolicyProps,
   IReturnPolicyCurrentProps,
   IReturnPolicyEndProps,
 }
-export { ReturnPolicy }
+export { SuspenseReturnPolicy as ReturnPolicy }
