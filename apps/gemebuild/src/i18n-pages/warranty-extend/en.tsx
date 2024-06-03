@@ -204,11 +204,8 @@ const warrantyExtendProps: IWarrantyExtendProps = {
 }
 
 function WarrantyExtendPageEn() {
-  const url = 'https://www.geme.bio/warranty-extend'
-
   return (
     <>
-      <link rel="canonical" href={url} />
       <h1 className="sr-only">Extend Your GEME Product Warranty</h1>
       <SiteHelpTabs {...siteHelpTabsProps} />
       <WarrantyExtend {...warrantyExtendProps} />
