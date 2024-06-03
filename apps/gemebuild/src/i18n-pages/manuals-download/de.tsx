@@ -54,11 +54,8 @@ const manualsDownloadProps: IManualsDownloadProps = {
 }
 
 function ManualsDownloadPageDe() {
-  const url = 'https://www.geme.bio/de/manuals-download'
-
   return (
     <>
-      <link rel="canonical" href={url} />
       <h1 className="sr-only">GAME-Handbücher herunterladen</h1>
       <ManualsDownload {...manualsDownloadProps} />
     </>
