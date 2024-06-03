@@ -55,24 +55,12 @@ const heroSection1Props: IHeroSection1Props = {
   linkText: 'Shop Now',
   linkUrl: '/product/geme',
   videoProps: {
-    sources: [
-      // for pc
-      {
-        minWidth: 1280,
-        src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-bio-home-hero-backgruond-video-1080p.mp4',
-        playbackId: '4xlpgl6PcY6d8N3H5FowWDdP01kCupf3Pn8A101zaCnFo',
-        posterUrl: '/assets/images/home-v2311/hero-blurred.webp',
-      },
-      // for mobile/tablet
-      {
-        minWidth: 0,
-        src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-bio-home-background-video-no-sound-480p.mp4',
-        playbackId: '4xlpgl6PcY6d8N3H5FowWDdP01kCupf3Pn8A101zaCnFo',
-        posterUrl: '/assets/images/home-v2311/hero-blurred-m.webp',
-      },
-    ],
+    src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    posterUrl: '/assets/images/home-v2311/hero-blurred.webp',
   },
   fullScreenVideoUrl: 'https://www.youtube.com/embed/ROJYZBp0jcM',
+  heroImageUrlPc: '/assets/images/home-v2311/cover-v3.jpg',
+  heroImageUrlMobile: '/assets/images/home-v2311/cover-v3-mobile.jpg',
 }
 
 // 首页第二部分的内容数据配置 En
@@ -170,7 +158,6 @@ const contentSection4Props: IContentSection4Props = {
       },
     },
     // videoSrcUrl:
-    //   'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-banner.mp4',
     videoSrcUrl: 'https://www.youtube.com/embed/nlsTg4l_3zE',
   },
 }
@@ -185,12 +172,12 @@ const secondLifeProps: ISecondLifeProps = {
   articles: [
     {
       id: 1,
-      title: 'Prevent Water Lost',
-      description: 'Compost can absorb water, let your seeds grow better.',
+      title: 'Make Good Soil',
+      description: 'Compost can nourish garden soil, let plants grow bigger.',
       image: {
         width: 1200,
         height: 800,
-        alt: 'Prevent Water Lost',
+        alt: 'Make Good Soil',
         src: 'https://www.datocms-assets.com/79468/1666986512-moins_eau.jpg?w=10',
         srcSetData: {
           '100w':
@@ -208,8 +195,8 @@ const secondLifeProps: ISecondLifeProps = {
     },
     {
       id: 2,
-      title: 'Make Good Soil',
-      description: 'Compost can nourish garden soil, let plants grow bigger.',
+      title: 'Prevent Water Lost',
+      description: 'Compost can absorb water, let your seeds grow better.',
       image: {
         width: 1200,
         height: 800,
@@ -236,7 +223,7 @@ const secondLifeProps: ISecondLifeProps = {
       image: {
         width: 1200,
         height: 800,
-        alt: 'Prevent Water Lost',
+        alt: 'Fight Climate Change',
         src: 'https://www.datocms-assets.com/79468/1666986537-changements_climatiques.jpg?w=10',
         srcSetData: {
           '100w':
@@ -263,7 +250,7 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
   title: 'The Easiest Way to Get Compost',
   videoPosterUrl: '/assets/images/home-v2311/use-compost-cover.jpg',
   videoSrcUrl:
-    'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-genereate-compost-12s-480p.mp4',
+    'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/geme-genereate-compost-12s-480p.mp4',
   steps: [
     {
       id: 1,

@@ -58,24 +58,12 @@ const heroSection1Props: IHeroSection1Props = {
   linkText: 'Achetez maintenant',
   linkUrl: '/fr/product/geme',
   videoProps: {
-    sources: [
-      // for pc
-      {
-        minWidth: 1280,
-        src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-bio-home-hero-backgruond-video-1080p.mp4',
-        playbackId: '4xlpgl6PcY6d8N3H5FowWDdP01kCupf3Pn8A101zaCnFo',
-        posterUrl: '/assets/images/home-v2311/hero-blurred.webp',
-      },
-      // for mobile/tablet
-      {
-        minWidth: 0,
-        src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-bio-home-background-video-no-sound-480p.mp4',
-        playbackId: '4xlpgl6PcY6d8N3H5FowWDdP01kCupf3Pn8A101zaCnFo',
-        posterUrl: '/assets/images/home-v2311/hero-blurred-m.webp',
-      },
-    ],
+    src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    posterUrl: '/assets/images/home-v2311/hero-blurred.webp',
   },
   fullScreenVideoUrl: 'https://www.youtube.com/embed/ROJYZBp0jcM',
+  heroImageUrlPc: '/assets/images/home-v2311/cover-v3.jpg',
+  heroImageUrlMobile: '/assets/images/home-v2311/cover-v3-mobile.jpg',
 }
 
 // 首页第二部分的内容数据配置 Fr
@@ -166,16 +154,15 @@ const contentSection4Props: IContentSection4Props = {
   withMp4VideoOrYoutubeVideo: {
     type: 'youtube',
     videoPosterImage: {
-      src: '/assets/images/home-v2311/cover-v3.jpg',
+      src: '/assets/images/home-v2311/cover-v4.jpg',
       alt: 'GEME in your home',
       width: 1600,
       height: 900,
       srcSetData: {
-        '100w': '/assets/images/home-v2311/cover-v3.jpg',
+        '100w': '/assets/images/home-v2311/cover-v4.jpg',
       },
     },
     // videoSrcUrl:
-    //   'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-banner.mp4',
     videoSrcUrl: 'https://www.youtube.com/embed/ROJYZBp0jcM',
   },
 }
@@ -183,19 +170,20 @@ const contentSection4Props: IContentSection4Props = {
 // 首页第五部分（滚动动画部分）的内容数据配置 Fr
 const secondLifeProps: ISecondLifeProps = {
   titleLeftPart: 'Compost',
-  titleRightPart: 'Une nouvelle vie pour les déchets',
+  titleRightPart: 'Nouvelle vie pour les déchets',
   description:
     'Vous pouvez réduire de 100 kg à 300 kg les émissions de CO2. Si vous recyclez tous vos déchets alimentaires via le compostage.',
 
   articles: [
     {
       id: 1,
-      title: `Prévenir la perte d'eau`,
-      description: `Le compost peut absorber l'eau, permettant à vos graines de mieux pousser.`,
+      title: 'Faire du bon sol',
+      description:
+        'Le compost peut nourrir la terre du jardin et permettre aux plantes de grandir.',
       image: {
         width: 1200,
         height: 800,
-        alt: `Prévenir la perte d'eau`,
+        alt: `Faire du bon sol`,
         src: 'https://www.datocms-assets.com/79468/1666986512-moins_eau.jpg?w=10',
         srcSetData: {
           '100w':
@@ -213,9 +201,8 @@ const secondLifeProps: ISecondLifeProps = {
     },
     {
       id: 2,
-      title: 'Faire du bon sol',
-      description:
-        'Le compost peut nourrir la terre du jardin et permettre aux plantes de grandir.',
+      title: `Prévenir la perte d'eau`,
+      description: `Le compost peut absorber l'eau, permettant à vos graines de mieux pousser.`,
       image: {
         width: 1200,
         height: 800,
@@ -243,7 +230,7 @@ const secondLifeProps: ISecondLifeProps = {
       image: {
         width: 1200,
         height: 800,
-        alt: `Prévenir la perte d'eau`,
+        alt: `Combattre le changement climatique`,
         src: 'https://www.datocms-assets.com/79468/1666986537-changements_climatiques.jpg?w=10',
         srcSetData: {
           '100w':
@@ -270,7 +257,7 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
   title: `Le moyen le plus simple d'obtenir du compost`,
   videoPosterUrl: '/assets/images/home-v2311/use-compost-cover.jpg',
   videoSrcUrl:
-    'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-genereate-compost-12s-480p.mp4',
+    'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/geme-genereate-compost-12s-480p.mp4',
   steps: [
     {
       id: 1,

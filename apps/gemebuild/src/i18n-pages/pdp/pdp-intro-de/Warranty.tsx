@@ -6,34 +6,34 @@ import {
 import { ILinkComponent } from '../../../contexts/link-context'
 
 const title = 'Kaufen Sie mit Vertrauen'
-const description = `Wir wissen, dass Sie sich teuer fühlen werden, aber wir sorgen dafür, dass es sich lohnt.
-Ihr Geld geht nicht verloren, es verwandelt sich in einen besseren Lebensstil und guten Service um Sie herum.`
+const description = `Wir wissen, dass Sie es teuer finden werden, aber wir stellen sicher, dass es sich lohnt.
+Ihr Geld ist nicht weg, es verwandelt sich in einen besseren Lebensstil und guten Service um Sie herum.`
 
 const features = [
   {
-    name: '30 Tage kostenlose Testversion',
+    name: '30 Tage kostenloser Test',
     description:
-      'Kostenloser Versand (US-Festland), kostenlose Testversion, keine Rücksendegebühr. Stellen Sie uns während Ihrer Testversion Fragen, Liebhaber innovativer Produkte werden ermutigt!',
+      'Kostenloser Versand (US-Festland), kostenloser Test, keine Rücksendegebühren. Stellen Sie uns während Ihres Tests Fragen, innovative Produktliebhaber verdienen Unterstützung!',
     href: '/return-policy',
     icon: TruckIcon,
   },
   {
     name: '2 Jahre Garantie',
     description:
-      'We will undertakes to repair or replace defective parts free of charge if the initial defect occurs during the warranty period.',
+      'Wir verpflichten uns, defekte Teile kostenlos zu reparieren oder zu ersetzen, wenn der anfängliche Defekt während der Garantiezeit auftritt.',
     href: '/warranty',
     icon: ShieldCheckIcon,
   },
   {
-    name: '100 % Kundenantwortrate',
+    name: '100% Kundenantwortquote',
     description:
-      'Erleben Sie eine sorgenfreie Kompostierung mit unserer umfassenden Garantie. Ihr GEME-Komposter, unsere Verpflichtung.',
+      'Erleben Sie sorgenfreies Kompostieren mit unserer umfassenden Garantie. Ihr GEME-Komposter, unser Engagement.',
     href: '/contact',
     icon: ChatBubbleLeftRightIcon,
   },
 ]
 
-const btnText = 'Mehr erfahren'
+const btnText = 'Erfahren Sie mehr'
 
 function Warranty({ Link }: { Link?: ILinkComponent }) {
   return (

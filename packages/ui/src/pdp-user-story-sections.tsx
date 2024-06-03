@@ -1,5 +1,4 @@
 import { ReactNode } from 'react'
-import { Img } from './image'
 import type { IImgProps } from './image'
 import Image from 'next/image'
 
@@ -80,14 +79,14 @@ function PdpUserStoryTeamSectionsExample({
           role="list"
           className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-8 xl:max-w-none"
         >
-          {people.map((person) => (
+          {people.map((person,index) => (
             <li key={person.id} className="flex flex-col gap-6 xl:flex-row">
               <Image
                 className="aspect-[4/5] w-52 flex-none rounded-2xl object-cover"
                 width={400}
                 height={500}
                 src={person.imageUrl || ''}
-                alt=""
+                alt={`user story avatar${index}`}
               />
               <div className="flex-auto">
                 <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">

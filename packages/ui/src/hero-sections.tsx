@@ -1,7 +1,5 @@
 import { ReactNode } from 'react'
 import { IconLogoGeme } from './icons'
-// import { IVideoPlayerProps, VideoPlayer } from './video'
-import { IMuxVideoPlayerProps, MuxVideoPlayer } from './mux-video'
 import { ILinkComponent } from '../../../apps/gemebuild/src/contexts/link-context'
 import Image from 'next/image'
 import VideoInlinePlayer, { PlayIcon } from './video-inline-player'
@@ -12,9 +10,14 @@ interface IHeroSection1Props {
   description?: ReactNode
   linkText?: string
   linkUrl?: string
-  videoProps?: IMuxVideoPlayerProps
+  videoProps: {
+    src: string // 视频源的URL
+    posterUrl: string // 视频源封面
+  }
   LinkComponent?: ILinkComponent
   fullScreenVideoUrl?: string
+  heroImageUrlPc: string // 首屏大图URL
+  heroImageUrlMobile: string // 首屏大图URL
 }
 
 const heroSection1Props: IHeroSection1Props = {
@@ -43,23 +46,11 @@ const heroSection1Props: IHeroSection1Props = {
   linkText: 'Shop Now',
   linkUrl: '/product/geme',
   videoProps: {
-    sources: [
-      // for pc
-      {
-        minWidth: 1280,
-        src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-bio-home-hero-backgruond-video-1080p.mp4',
-        playbackId: '4xlpgl6PcY6d8N3H5FowWDdP01kCupf3Pn8A101zaCnFo',
-        posterUrl:
-          'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/cover-v2.jpg',
-      },
-      // for mobile/tablet
-      {
-        minWidth: 0,
-        src: 'https://public-assest-434759801795.s3.us-west-1.amazonaws.com/geme-bio-home-background-video-no-sound-480p.mp4',
-        playbackId: '4xlpgl6PcY6d8N3H5FowWDdP01kCupf3Pn8A101zaCnFo',
-      },
-    ],
+    src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    posterUrl: '/assets/images/home-v2311/hero-blurred.webp',
   },
+  heroImageUrlPc: '/assets/images/home-v2311/cover-v3.jpg',
+  heroImageUrlMobile: '/assets/images/home-v2311/cover-v3-mobile.jpg',
 }
 
 function HeroSection1({
@@ -70,20 +61,33 @@ function HeroSection1({
   videoProps,
   LinkComponent,
   fullScreenVideoUrl,
+  heroImageUrlPc,
+  heroImageUrlMobile,
 }: IHeroSection1Props) {
   return (
     <div className="h-screen ">
       {/* 大屏图片层 */}
       <div className="overflow-hidden h-full relative">
         <div className="z-10 absolute inset-0 bg-opacity-30 md:bg-opacity-40 bg-black "></div>
-        {/* 停用Mux Player的自动背景播放 */}
-        {/* <MuxVideoPlayer {...videoProps} /> */}
         <Image
-          src="/assets/images/home-v2311/cover-v3.jpg"
-          alt="hero picture"
+          src={heroImageUrlPc}
+          alt="hero background picture"
           priority
-          layout="fill"
-          className="w-full h-full object-cover"
+          className="hidden xl:block w-full h-full object-cover"
+          fill
+          // width={1920}
+          // height={1080}
+          sizes="(max-width: 1280px) 1vw,(min-width: 1281px) 60vw, (min-width: 1920px) 80vw,(min-width: 2420px) 100vw, 1vw"
+        />
+        <Image
+          src={heroImageUrlMobile}
+          alt="hero background picture"
+          priority
+          className="xl:hidden w-full h-full object-cover"
+          // width={375}
+          // height={750}
+          fill
+          sizes="(max-width: 1280px) 100vw, (min-width: 1281px) 1vw, 1vw"
         />
       </div>
 
@@ -121,7 +125,18 @@ function HeroSection1({
           {/* 右下角视频小窗 */}
           <div className="relative h-full landscape:w-[180px] landscape:h-[111px] landscape:lg:w-[270px] landscape:lg:h-[152px]  landscape:2xl:w-[400px] landscape:2xl:h-[230px] rounded-xl landscape:rounded-xl overflow-hidden group">
             <div className="relative h-full w-full object-cover transform-gpu transition-transform group-hover:scale-125 duration-[0.25s] ease-[cubic-bezier(0.24, 0.8, 0.4, 1)]">
-              <MuxVideoPlayer {...videoProps} />
+              <video
+                className="w-full h-full object-cover"
+                controls={false}
+                autoPlay
+                playsInline
+                muted
+                loop
+                poster={videoProps.posterUrl}
+                src={videoProps.src}
+              >
+                Your browser does not support HTML5 video.
+              </video>
             </div>
 
             <button

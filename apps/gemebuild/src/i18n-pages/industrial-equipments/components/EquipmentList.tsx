@@ -1,7 +1,7 @@
 'use client'
 import clsx from 'clsx'
-import Image from 'next/legacy/image'
 import { useLink } from '../../../contexts/link-context'
+import Image from 'next/image'
 
 export interface IProductListsWithTallImagesProps {
   title: string
@@ -69,12 +69,9 @@ function EquipmentList({
                 <Image
                   src={product.imageSrc}
                   alt={product.imageAlt || ''}
-                  layout="responsive"
                   width={product.imageWidth || 200}
                   height={product.imageHeight || 300}
-                  objectFit="cover"
-                  objectPosition="center"
-                  className="h-full w-full object-cover object-center group-hover:opacity-75"
+                  className="h-full w-full object-center group-hover:opacity-75 object-cover"
                 />
               </div>
               <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900">

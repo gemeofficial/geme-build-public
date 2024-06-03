@@ -6,6 +6,7 @@ import {
   GlobeAltIcon,
   ScaleIcon,
 } from '@heroicons/react/24/outline'
+import Image from 'next/image'
 import React from 'react'
 
 function classNames(...classes: string[]) {
@@ -73,9 +74,10 @@ function TextAndImageLeftBlock() {
 function TextAndImageRightBlock() {
   return (
     <>
-      <img
+      <Image
         className="relative mx-auto"
         width={490}
+        height={400}
         src="https://tailwindui.com/img/features/feature-example-1.png"
         alt=""
       />
@@ -135,9 +137,10 @@ function ImageAndTextLeftBlock() {
 
 function ImageAndTextRightBlock() {
   return (
-    <img
+    <Image
       className="relative mx-auto"
       width={490}
+      height={400}
       src="https://tailwindui.com/img/features/feature-example-2.png"
       alt=""
     />

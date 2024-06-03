@@ -23,7 +23,7 @@ function PdpIntroDe({ ReviewsComponent, PrefetchLink }: IPdpIntroProps) {
         },
         {
           id: 2,
-          tabLabel: 'Spez',
+          tabLabel: 'Spec',
           tabPanel: <Spec />,
         },
         {
@@ -42,7 +42,7 @@ function PdpIntroDe({ ReviewsComponent, PrefetchLink }: IPdpIntroProps) {
         },
         {
           id: 5,
-          tabLabel: 'Rezensionen',
+          tabLabel: 'Bewertungen',
           tabPanel: <ReviewsComponent />,
         },
       ],

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 interface ITermsAndConditionsProps {
   title: string
   forward: {
@@ -29,9 +31,11 @@ function TermsAndConditions(props: ITermsAndConditionsProps) {
               ></div>
             </div>
             <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg bg-gray-100">
-              <img
+              <Image
+                width={570}
+                height={380}
                 src={props.forward.imgSrc}
-                alt=""
+                alt="Terms And Conditions"
                 className="object-cover object-center"
               />
             </div>

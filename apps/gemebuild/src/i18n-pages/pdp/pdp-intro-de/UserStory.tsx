@@ -3,9 +3,11 @@ import { PdpUserStoryTeamSections } from 'ui'
 import type { IPdpUserStoryTeamSectionsProps } from 'ui'
 
 const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
-  title: 'Lernen Sie die Kundengeschichten von GEME kennen',
+  title: 'Erleben Sie die Kundenberichte von GEME',
   description: (
-    <>Wie das Leben unserer Kunden durch die Nutzung von GEME verändert wird</>
+    <>
+      Wie sich das Leben unserer Kunden nach der Nutzung von GEME verändert hat
+    </>
   ),
   people: [
     {
@@ -18,8 +20,8 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
       },
       bio: (
         <>
-          Alex arbeitet in lutherischen Exerzitien, Camps und Konferenzen, auch
-          bekannt als{' '}
+          Alex arbeitet bei Lutheran Retreats, Camps & Conferences, auch bekannt
+          als{' '}
           <a
             className="text-emerald-600"
             href="https://lrcchome.com/"
@@ -27,37 +29,37 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
           >
             LRCC
           </a>{' '}
-          ist eine Camp-Schule, in der Kinder lernen und ein grünes Leben
-          führen.
+          einer Campschule, in der Kinder ein umweltbewusstes Leben lernen und
+          leben.
           <br />
-          Mit GEME können mehr Kinder das Kompostieren lernen, indem sie es ganz
-          einfach selbst durchführen ihr tägliches Leben.
+          Mit GEME können mehr Kinder durch den einfachen täglichen Einsatz
+          Kompostieren lernen.
         </>
       ),
       quote:
-        'Es freut mich, dass ich Ihnen helfen konnte. Scheint bisher ein tolles Produkt zu sein.',
+        'Freue mich zu helfen. Scheint bisher ein großartiges Produkt zu sein.',
     },
     {
       id: 2,
-      name: 'Regenwald-Gasthaus',
-      role: 'Bill, Boss',
+      name: 'Rainforest Inn',
+      role: 'Bill, Chef',
       image: {
         src: '/assets/images/pdp-v2311/user-stories/user-stories-rainforest.jpg', // 'https://images.squarespace-cdn.com/content/v1/55390e7ee4b0a048151b9185/1549219762523-XL1GYVWNFYNJ44ZJXXMD/RFI-from-treehouse-suite-headerjpg.jpg',
-        alt: 'Regenwald-Gasthaus',
+        alt: 'Rainforest Inn',
       },
       bio: (
         <>
-          Bill ist der Besitzer von{' '}
+          Bill ist der Besitzer des{' '}
           <a
             className="text-emerald-600"
             href="https://www.rainforestinn.com/"
             target="_blank"
           >
-            Regenwald-Gasthaus
+            Rainforest Inn
           </a>{' '}
-          befindet sich in Puerto Rico. Er will GEME dringend und hat sogar ein
-          Vielfaches bezahlt Zeit und zusätzliche Versandkosten, ich möchte
-          einfach den GEME-Komposter verwenden. Lasst uns Überprüfen Sie seine{' '}
+          in Puerto Rico. Er wollte GEME unbedingt haben und zahlte sogar
+          mehrfach sowie zusätzliche Versandkosten, nur um den GEME-Komposter
+          nutzen zu können. Lassen Sie uns seinen{' '}
           <a
             className="text-emerald-600"
             href="https://www.tiktok.com/@rainforestinn/video/7309861665711901998"
@@ -65,15 +67,16 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
           >
             vlog
           </a>{' '}
-          um zu sehen, wie es weitergeht.
+          ansehen, um zu sehen, wie es läuft. Bill ist der Bill ist der Besitzer
+          des
         </>
       ),
       quote:
-        'Suchen Sie nach einem sauberen, einfachen Komposter, der in die Küche gestellt werden kann, da unsere großen Kompostbehälter zu weit entfernt sind. Es funktioniert sehr effizient. Ruhig und sauber.',
+        'Auf der Suche nach einem sauberen, einfachen Komposter, der in der Küche stehen kann, da unsere großen Kompostbehälter zu weit entfernt sind. Er funktioniert sehr effizient. Leise und sauber.',
     },
     {
       id: 3,
-      name: 'DAS E. Angeles Delgado',
+      name: 'LAE. Angeles Delgado',
       role: 'Finanz-CEO',
       image: {
         src: '/assets/images/pdp-v2311/user-stories/user-stories-angelita.jpeg',
@@ -81,41 +84,40 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
       },
       bio: (
         <>
-          Angelita lebt in Mexiko 🇲🇽, sie hat uns im April kontaktiert und eine
-          Einheit gekauft. Zu diesem Zeitpunkt waren wir nicht in der Lage, von
-          den USA nach Mexiko zu versenden. Allerdings leitete ihre Angelita
-          eine Spedition. Sie verschiffte unsere Einheit problemlos von Texas
-          nach Mexiko. Nach Monaten des täglichen Gebrauchs beschließt sie, drei
-          weitere als Weihnachtsgeschenk für ihre Tochter zu kaufen. Übrigens
-          ist sie auch eine großartige Helferin bei einer unserer
-          Kickstarter-Lösungen für unseren Versand nach Mexiko.
+          Angelita lebt in Mexiko 🇲🇽, sie kontaktierte uns im April und kaufte
+          ein Gerät. Zu dieser Zeit konnten wir nicht von den USA nach Mexiko
+          versenden. Angelita betreibt jedoch ein LKW-Unternehmen. Sie konnte
+          unser Gerät leicht von Texas nach Mexiko transportieren. Nach
+          monatelanger täglicher Nutzung beschloss sie, drei weitere für ihre
+          Tochter zu Weihnachten zu kaufen. Übrigens, sie ist auch eine Heldin,
+          die einem unserer Kickstarter bei der Erfüllung nach Mexiko geholfen
+          hat.
         </>
       ),
       quote:
-        'Ich habe im Internet nachgeschaut und bin auf Deinen gestoßen und in der Werbung steht, dass es sich um einen Biokomposter handelt. Ich habe mir Videos angeschaut und schließlich habe ich Deinen gefunden, der mir sehr gut gefallen hat. Ich möchte meine Komposter kaufen! Ich bin jetzt bereit für zwei weitere. Vielleicht die drei.',
+        'Ich ging ins Internet, suchte mehr und fand Ihres, und die Werbung sagt, dass es ein Bio-Komposter ist, und sah Videos, und schließlich fand ich Ihres, ich liebte es. Ich möchte meine Komposter kaufen! Ich bin bereit für zwei weitere jetzt. Vielleicht sogar drei.',
     },
     {
       id: 4,
-      name: 'Wassil Borukow',
-      role: 'Leitender IT-Support-Ingenieur',
+      name: 'Vasil Borukov',
+      role: 'Senior IT-Support-Ingenieur',
       image: {
         src: '/assets/images/pdp-v2311/user-stories/user-stories-vasil.png',
         alt: 'Vasil Software-Ingenieur',
       },
       bio: (
         <>
-          Herr Vasil kommt aus Bulgarien🇧🇬 und ist ebenfalls ein
-          Zero-Waste-Held. Er liebt die Einheit sehr. Dies löst nicht nur die
-          tägliche Lebensmittelverschwendung, sondern kann auch den
-          CO2-Fußabdruck reduzieren. Vasil begann GEME seit der
-          Crowdfunding-Phase im Juli 2022 zu verfolgen und schaffte es, die
-          Zahlung für 499 € zur Unterstützung von GEME zu tätigen. Vor der
-          Umsetzung hat er viel dazu beigetragen, das Produkt und die Idee von
-          GEME in seinen Kreisen bekannt zu machen. Er ist voller Begeisterung,
-          unsere Erde gemeinsam besser zu machen.
+          Herr Vasil kommt aus Bulgarien 🇧🇬 und ist auch ein Zero-Waste-Held. Er
+          liebt das Gerät sehr. Es löst nicht nur das tägliche
+          Lebensmittelabfallproblem, sondern kann auch den CO2-Fußabdruck
+          reduzieren. Vasil verfolgt GEME seit der Crowdfunding-Phase im Juli
+          2022 und schaffte es, die Ratenzahlung von 499 € für GEME zu leisten.
+          Vor der Erfüllung tat er viel, um GEMEs Produkt und Idee in seinem
+          Umfeld zu fördern. Er ist super begeistert, gemeinsam unsere Erde
+          besser zu machen.
         </>
       ),
-      quote: `Ich wollte mich immer mehr und mehr in alles um mich herum einbringen, um ein besseres, nachhaltigeres Leben zu führen, und deshalb wollte ich unbedingt so viel GEME bekommen. Es vereint alles, was Sie für ein einfacheres, stressfreies Leben brauchen. Ich kann es meiner gesamten Umgebung nur wärmstens empfehlen!`,
+      quote: `Ich wollte mich immer mehr und mehr in alles um mich herum einbringen, um ein besser nachhaltiges Leben zu führen, und deshalb wollte ich unbedingt GEME haben. Es vereint alles, was man für ein einfacheres, sorgenfreies Leben braucht. Ich empfehle es total allen in meinem Umfeld!`,
     },
   ],
 }

@@ -1,4 +1,4 @@
-import Image from 'next/legacy/image'
+import Image from 'next/image';
 import { AlternativeSideBySideWithImages } from '../feature-sections'
 import { ReactNode, useMemo } from 'react'
 
@@ -80,8 +80,7 @@ function GemeSpecs({ title, specs }: IGemeSpecsProps) {
           RightBlock: () => (
             <>
               <Image
-                className="relative mx-auto"
-                layout="responsive"
+                className="relative mx-auto object-contain"
                 width={850}
                 height={850}
                 src="/assets/images/geme-specs/s3.png"

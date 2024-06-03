@@ -5,6 +5,7 @@ import { RadioGroup } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { useLink } from '../../../contexts/link-context'
+import Image from 'next/image'
 
 const reviews = { average: 4, totalCount: 1624 }
 
@@ -127,10 +128,12 @@ function ProductOverviewSplitWithImage({
               productImageAspectRadioClassName || 'aspect-w-1 aspect-h-1 ',
             )}
           >
-            <img
+            <Image
               src={product.imageSrc}
-              alt={product.imageAlt}
+              alt={product.imageAlt || ''}
               className="h-full w-full object-cover object-center"
+              width={590}
+              height={390}
             />
           </div>
         </div>
