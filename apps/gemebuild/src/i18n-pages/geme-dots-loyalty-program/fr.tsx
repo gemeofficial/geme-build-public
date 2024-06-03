@@ -44,18 +44,10 @@ const gemeDotsProps: IGemeDotsProps = {
         <p class="mb-10">Bienvenue dans le programme de fidélité GAME Dots.</p>
         <p class="mb-5">Accumulez vos GEME Dots : l'éco-responsabilité finit toujours par payer !</p>
         <ul class="mx-2 my-5 list-inside list-disc">
-            <li class="mb-5  ${cn(
-              s.textIndented,
-            )}">Découvrez notre programme de fidélité GEME Dots !</li>
-            <li class="mb-5  ${cn(
-              s.textIndented,
-            )}">Collectez vos GEME Dots à chaque achat et économisez de l'argent.</li>
-            <li class="mb-5  ${cn(
-              s.textIndented,
-            )}">Bénéficiez d’avantages extraordinaires et soyez récompensé pour votre respect de l’environnement.</li>
-            <li class="mb-5 ${cn(
-              s.textIndented,
-            )}">Les éco-responsables payent toujours : une fois que vous avez collecté 1 000 points GEME, vous pouvez les échanger immédiatement lors de votre prochain achat ou décider de continuer à les collecter. Vous pouvez échanger jusqu'à 40,000 points GEME par achat, ce qui vous donne droit à un cashback instantané de 40 euros.</li>
+            <li class="mb-5 ${cn(s.textIndented)}">Découvrez notre programme de fidélité GEME Dots !</li>
+            <li class="mb-5 ${cn(s.textIndented)}">Collectez vos GEME Dots à chaque achat et économisez de l'argent.</li>
+            <li class="mb-5 ${cn(s.textIndented)}">Bénéficiez d’avantages extraordinaires et soyez récompensé pour votre respect de l’environnement.</li>
+            <li class="mb-5 ${cn(s.textIndented)}">Les éco-responsables payent toujours : une fois que vous avez collecté 1 000 points GEME, vous pouvez les échanger immédiatement lors de votre prochain achat ou décider de continuer à les collecter. Vous pouvez échanger jusqu'à 40,000 points GEME par achat, ce qui vous donne droit à un cashback instantané de 40 euros.</li>
         </ul>
         `,
     imgSrc: '/assets/images/geme-dots-loyalty-program/image.png',
@@ -149,12 +141,8 @@ const gemeDotsProps: IGemeDotsProps = {
         label: "Admissibilité à l'adhésion",
         description: `
             <ul class="m-5 ml-0 list-inside list-decimal">
-                <li class="mb-5 ${cn(
-                  s.textIndented,
-                )}">La participation au programme de fidélité GEME Dots est gratuite. Il est uniquement disponible sur le site Web <a href="https://www.geme.bio" class="underline">https://www.geme.bio</a> lors de votre inscription en ligne sur le site ou au moment de l'achat</li>
-                <li class="${cn(
-                  s.textIndented,
-                )}">Si vous êtes éligible (voir 2. Éligibilité), vous commencerez à participer au programme de fidélité GAME Dots immédiatement après avoir vérifié votre inscription. </li>
+                <li class="mb-5 ${cn(s.textIndented)}">La participation au programme de fidélité GEME Dots est gratuite. Il est uniquement disponible sur le site Web <a href="https://www.geme.bio" class="underline">https://www.geme.bio</a> lors de votre inscription en ligne sur le site ou au moment de l'achat</li>
+                <li class="${cn(s.textIndented)}">Si vous êtes éligible (voir 2. Éligibilité), vous commencerez à participer au programme de fidélité GAME Dots immédiatement après avoir vérifié votre inscription. </li>
             </ul>`,
       },
       {

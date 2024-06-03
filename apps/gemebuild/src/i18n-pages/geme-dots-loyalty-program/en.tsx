@@ -44,18 +44,10 @@ const gemeDotsProps: IGemeDotsProps = {
         <p class="mb-10">Welcome to the GEME Dots Loyalty Program.</p>
         <p class="mb-5">Accumulate your GEME Dots - Eco-friendliness always pays off!</p>
         <ul class="mx-2 my-5 list-inside list-disc">
-            <li class="mb-5  ${cn(
-              s.textIndented,
-            )}">Discover our GEME Dots loyalty program!</li>
-            <li class="mb-5  ${cn(
-              s.textIndented,
-            )}">Collect your GEME Dots with every purchase and save money.</li>
-            <li class="mb-5  ${cn(
-              s.textIndented,
-            )}">Enjoy extraordinary benefits and get rewarded for your Eco-friendliness.</li>
-            <li class="mb-5 ${cn(
-              s.textIndented,
-            )}">Eco-friendly always pay: once you've collected 1,000 GEME Dots, you can redeem them immediately on your next purchase or decide to keep collecting them. You can redeem up to 40,000 GEME Dots per purchase for an instant cashback of $40!</li>
+            <li class="mb-5 ${cn(s.textIndented)}">Discover our GEME Dots loyalty program!</li>
+            <li class="mb-5 ${cn(s.textIndented)}">Collect your GEME Dots with every purchase and save money.</li>
+            <li class="mb-5 ${cn(s.textIndented)}">Enjoy extraordinary benefits and get rewarded for your Eco-friendliness.</li>
+            <li class="mb-5 ${cn(s.textIndented)}">Eco-friendly always pay: once you've collected 1,000 GEME Dots, you can redeem them immediately on your next purchase or decide to keep collecting them. You can redeem up to 40,000 GEME Dots per purchase for an instant cashback of $40!</li>
         </ul>
         `,
     imgSrc: '/assets/images/geme-dots-loyalty-program/image.png',
@@ -146,12 +138,8 @@ const gemeDotsProps: IGemeDotsProps = {
         label: 'Eligibility for membership',
         description: `
             <ul class="m-5 ml-0 list-inside list-decimal">
-                <li class="mb-5 ${cn(
-                  s.textIndented,
-                )}">Participation in the GEME Dots loyalty program is free of charge. It is only available through the website <a href="https://www.geme.bio" class="underline">https://www.geme.bio</a> when you register online on the website or at the time of purchase</li>
-                <li class="${cn(
-                  s.textIndented,
-                )}">If you are eligible (see 2. Eligibility), you will start participating in the GEME Dots Loyalty Program immediately after verifying your registration. </li>
+                <li class="mb-5 ${cn(s.textIndented)}">Participation in the GEME Dots loyalty program is free of charge. It is only available through the website <a href="https://www.geme.bio" class="underline">https://www.geme.bio</a> when you register online on the website or at the time of purchase</li>
+                <li class="${cn(s.textIndented)}">If you are eligible (see 2. Eligibility), you will start participating in the GEME Dots Loyalty Program immediately after verifying your registration. </li>
             </ul>`,
       },
       {
