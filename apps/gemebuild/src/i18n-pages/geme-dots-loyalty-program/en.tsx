@@ -211,11 +211,8 @@ const gemeDotsProps: IGemeDotsProps = {
 }
 
 function GemeDotsLoyaltyProgramPageEn() {
-  const url = 'https://www.geme.bio/geme-dots-loyalty-program'
-
   return (
     <>
-      <link rel="canonical" href={url} />
       <h1 className="sr-only">GEME Dots Loyalty Program Details</h1>
       <SiteHelpTabs {...siteHelpTabsProps} />
       <GemeDotsLoyaltyProgram {...gemeDotsProps} />

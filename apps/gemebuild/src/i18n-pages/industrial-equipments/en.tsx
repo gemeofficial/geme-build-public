@@ -94,7 +94,6 @@ function IndustrialEquipmentsPageEn() {
 
   return (
     <>
-      <link rel="canonical" href={url} />
       <h1 className="sr-only">GEME Industrial Equipments</h1>
       <script
         type="application/ld+json"

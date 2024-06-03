@@ -83,8 +83,6 @@ function IndustrialEquipmentsIdPageFr({ params }: IPageProps) {
 
   return (
     <>
-      <link rel="canonical" href={equipmentCanonicalUrl(equipment)} />
-      <h1 className="sr-only">Détail des équipements industriels GEME</h1>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={industrialEquipmentXJsonLd(

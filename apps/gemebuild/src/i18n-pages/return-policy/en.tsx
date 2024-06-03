@@ -185,8 +185,6 @@ const returnPolicyEndProps: IReturnPolicyEndProps = {
 }
 
 function ReturnPolicyPageEn() {
-  const url = 'https://www.geme.bio/return-policy'
-
   const childProps: IReturnPolicyProps = {
     current: returnPolicyCurrentProps,
     end: returnPolicyEndProps,
@@ -194,7 +192,6 @@ function ReturnPolicyPageEn() {
 
   return (
     <>
-      <link rel="canonical" href={url} />
       <h1 className="sr-only">GEME Return Policy</h1>
       <SiteHelpTabs {...siteHelpTabsProps} />
       <ReturnPolicy {...childProps} />

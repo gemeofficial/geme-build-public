@@ -296,7 +296,6 @@ const termsAndConditionsProps: ITermsAndConditionsProps = {
 function TermsAndConditionsPageDe() {
   return (
     <>
-      <link rel="canonical" href="https://www.geme.bio/de/terms-and-conditions" />
       <h1 className="sr-only">Allgemeine Geschäftsbedingungen von GEME</h1>
       <SiteHelpTabs {...siteHelpTabsProps} />
       <TermsAndConditions {...termsAndConditionsProps} />

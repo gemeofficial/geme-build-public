@@ -87,8 +87,6 @@ function IndustrialEquipmentsIdPageDe({ params }: IPageProps) {
 
   return (
     <>
-        <link rel="canonical" href={equipmentCanonicalUrl(equipment)} />
-      <h1 className="sr-only">GEME Industrial Equipments Detail</h1>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={industrialEquipmentXJsonLd(

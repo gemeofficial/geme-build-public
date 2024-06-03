@@ -45,16 +45,16 @@ const gemeDotsProps: IGemeDotsProps = {
         <p class="mb-5">Sammeln Sie Ihre GEME Dots - Umweltfreundlichkeit zahlt sich immer aus!</p>
         <ul class="mx-2 my-5 list-inside list-disc">
             <li class="mb-5  ${cn(
-              s.textIndented
+              s.textIndented,
             )}">Entdecken Sie unser GEME Dots Treueprogramm!</li>
             <li class="mb-5  ${cn(
-              s.textIndented
+              s.textIndented,
             )}">Sammeln Sie Ihre GEME Dots bei jedem Einkauf und sparen Sie Geld.</li>
             <li class="mb-5  ${cn(
-              s.textIndented
+              s.textIndented,
             )}">Genießen Sie außergewöhnliche Vorteile und werden Sie für Ihre Umweltfreundlichkeit belohnt.</li>
             <li class="mb-5 ${cn(
-              s.textIndented
+              s.textIndented,
             )}">Umweltfreundlich zahlt sich immer aus: Sobald Sie 1.000 GEME Dots gesammelt haben, können Sie diese sofort bei Ihrem nächsten Einkauf einlösen oder weiter sammeln. Du kannst bis zu 40.000 GEME Dots pro Einkauf einlösen und erhältst sofort 40€ Cashback!</li>
         </ul>
         `,
@@ -147,10 +147,10 @@ const gemeDotsProps: IGemeDotsProps = {
         description: `
             <ul class="m-5 ml-0 list-inside list-decimal">
                 <li class="mb-5 ${cn(
-                  s.textIndented
+                  s.textIndented,
                 )}">Die Teilnahme am GEME Dots Treueprogramm ist kostenlos. Es ist nur über die Website verfügbar <a href="https://www.geme.bio" class="underline">https://www.geme.bio</a> bei der Online-Registrierung auf der Website oder zum Zeitpunkt des Kaufs</li>
                 <li class="${cn(
-                  s.textIndented
+                  s.textIndented,
                 )}">Wenn Sie teilnahmeberechtigt sind (siehe 2. Teilnahmeberechtigung), nehmen Sie unmittelbar nach der Verifizierung Ihrer Anmeldung am GEME Dots Treueprogramm teil. </li>
             </ul>`,
       },
@@ -211,11 +211,8 @@ const gemeDotsProps: IGemeDotsProps = {
 }
 
 function GemeDotsLoyaltyProgramPageDe() {
-  const url = 'https://www.geme.bio/de/geme-dots-loyalty-program'
-
   return (
     <>
-      <link rel="canonical" href={url} />
       <h1 className="sr-only">Details zum GEME Dots-Treueprogramm</h1>
       <SiteHelpTabs {...siteHelpTabsProps} />
       <GemeDotsLoyaltyProgram {...gemeDotsProps} />

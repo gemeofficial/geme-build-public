@@ -570,11 +570,8 @@ const privacyPolicyProps: IPrivacyPolicyProps = {
 }
 
 function PrivacyPolicyPageEn() {
-  const url = 'https://www.geme.bio/privacy-policy'
-
   return (
     <>
-      <link rel="canonical" href={url} />
       <h1 className="sr-only">GEME Privacy Policy</h1>
       <SiteHelpTabs {...siteHelpTabsProps} />
       <PrivacyPolicy {...privacyPolicyProps} />
