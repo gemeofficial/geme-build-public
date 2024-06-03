@@ -54,14 +54,6 @@ const manualsDownloadProps: IManualsDownloadProps = {
 }
 
 function ManualsDownloadPageFr() {
-  const url = 'https://www.geme.bio/fr/manuals-download'
-
-  return (
-    <>
-      <link rel="canonical" href={url} />
-      <h1 className="sr-only">Téléchargement des manuels GEME</h1>
-      <ManualsDownload {...manualsDownloadProps} />
-    </>
-  )
+  return <ManualsDownload {...manualsDownloadProps} />
 }
 export { ManualsDownloadPageFr }
