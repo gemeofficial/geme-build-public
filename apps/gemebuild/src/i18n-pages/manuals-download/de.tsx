@@ -54,6 +54,11 @@ const manualsDownloadProps: IManualsDownloadProps = {
 }
 
 function ManualsDownloadPageDe() {
-  return <ManualsDownload {...manualsDownloadProps} />
+  return (
+    <>
+      <h1 className="sr-only">GAME-Handbücher herunterladen</h1>
+      <ManualsDownload {...manualsDownloadProps} />
+    </>
+  )
 }
 export { ManualsDownloadPageDe }

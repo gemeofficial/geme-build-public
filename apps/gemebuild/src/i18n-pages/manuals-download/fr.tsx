@@ -54,6 +54,11 @@ const manualsDownloadProps: IManualsDownloadProps = {
 }
 
 function ManualsDownloadPageFr() {
-  return <ManualsDownload {...manualsDownloadProps} />
+  return (
+    <>
+      <h1 className="sr-only">Téléchargement des manuels GEME</h1>
+      <ManualsDownload {...manualsDownloadProps} />
+    </>
+  )
 }
 export { ManualsDownloadPageFr }
