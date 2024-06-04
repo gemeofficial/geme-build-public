@@ -1,12 +1,16 @@
- 
- export interface IDownloadFileTableProps{
-    name: string
-    description: string
-    files: Array<{ language: string; document: string; pdfLink: string }>
-    tableTitle: Array<string>
- }
+export interface IDownloadFileTableProps {
+  name: string
+  description: string
+  files: Array<{
+    versions: string
+    language: string
+    document: string
+    pdfLink: string
+  }>
+  tableTitle: Array<string>
+}
 
- function DownloadFileTable({
+function DownloadFileTable({
   name,
   description,
   files,
@@ -41,10 +45,13 @@
                 <tbody className="bg-white">
                   {files.map((file, index) => (
                     <tr
-                    // +idx是为了修复language为重复语言对应多个说明书时key重复问题
+                      // +idx是为了修复language为重复语言对应多个说明书时key重复问题
                       key={file.language + index}
                       className={index % 2 === 0 ? undefined : 'bg-gray-50'}
                     >
+                      <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                        {file.versions}
+                      </td>
                       <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
                         {file.language}
                       </td>

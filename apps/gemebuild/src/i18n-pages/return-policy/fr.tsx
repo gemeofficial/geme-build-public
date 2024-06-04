@@ -185,8 +185,6 @@ const returnPolicyEndProps: IReturnPolicyEndProps = {
 }
 
 function ReturnPolicyPageFr() {
-  const url = 'https://www.geme.bio/fr/return-policy'
-
   const childProps: IReturnPolicyProps = {
     current: returnPolicyCurrentProps,
     end: returnPolicyEndProps,
@@ -194,7 +192,6 @@ function ReturnPolicyPageFr() {
 
   return (
     <>
-      <link rel="canonical" href={url} />
       <h1 className="sr-only">GAME-Rückgabebedingungen</h1>
       <SiteHelpTabs {...siteHelpTabsProps} />
       <ReturnPolicy {...childProps} />

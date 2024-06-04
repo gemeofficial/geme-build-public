@@ -84,8 +84,6 @@ const equipmentListConfigProps: IProductListsWithTallImagesProps = {
 }
 
 function IndustrialEquipmentsPageFr() {
-  const url = 'https://www.geme.bio/fr/industrial-equipments'
-
   const componentConfigProps: IIndustrialEquipmentsProps = {
     heroConfigProps,
     equipmentPreviewConfigProps,
@@ -94,7 +92,6 @@ function IndustrialEquipmentsPageFr() {
 
   return (
     <>
-      <link rel="canonical" href={url} />
       <h1 className="sr-only">GEME Équipements Industriels</h1>
       <script
         type="application/ld+json"

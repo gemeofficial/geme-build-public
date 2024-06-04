@@ -8,35 +8,54 @@ const manualsDownloadProps: IManualsDownloadProps = {
   description: `Die Bedienungsanleitung für Ihr GEME finden Sie hier.`,
   files: [
     {
+      versions: 'Neueste',
       language: 'Englisch',
       document: 'geme-manual-en-110v.pdf',
-      pdfLink: `/assets/manuals/geme-manual-110v-en-v2024-04-27.pdf`,
+      pdfLink: `/assets/manuals/latest/geme-manual-110v-en-v2024-04-27.pdf`,
     },
     {
+      versions: 'Neueste',
       language: 'Englisch',
       document: 'geme-manual-en-220v.pdf',
-      pdfLink: `/assets/manuals/geme-manual-en-v2.pdf`,
+      pdfLink: `/assets/manuals/latest/geme-manual-220v-en-2024-05-31.pdf`,
     },
     {
+      versions: 'Neueste',
       language: 'Französisch',
       document: 'geme-manual-fr-220v.pdf',
-      pdfLink: `/assets/manuals/geme-manual-fr.pdf`,
+      pdfLink: `/assets/manuals/latest/geme-manual-220v-fr-2024-05-31.pdf`,
     },
     {
+      versions: 'Neueste',
       language: 'Deutsch',
       document: 'geme-manual-de-220v.pdf',
-      pdfLink: `/assets/manuals/geme-manual-de.pdf`,
+      pdfLink: `/assets/manuals/latest/geme-manual-220v-de-2024-05-31.pdf`,
+    },
+    {
+      versions: 'Vor 2024',
+      language: 'Englisch',
+      document: 'geme-manual-en-220v-2023.pdf',
+      pdfLink: `/assets/manuals/before-2024/geme-manual-en-2023.pdf`,
+    },
+    {
+      versions: 'Vor 2024',
+      language: 'Französisch',
+      document: 'geme-manual-fr-220v-2023.pdf',
+      pdfLink: `/assets/manuals/before-2024/geme-manual-fr-2023.pdf`,
+    },
+    {
+      versions: 'Vor 2024',
+      language: 'Deutsch',
+      document: 'geme-manual-de-220v-2023.pdf',
+      pdfLink: `/assets/manuals/before-2024/geme-manual-de-2023.pdf`,
     },
   ],
-  tableTitle: ['Sprache', 'Dokumentieren'],
+  tableTitle: ['Versionen', 'Sprache', 'Dokument'],
 }
 
 function ManualsDownloadPageDe() {
-  const url = 'https://www.geme.bio/de/manuals-download'
-
   return (
     <>
-      <link rel="canonical" href={url} />
       <h1 className="sr-only">GAME-Handbücher herunterladen</h1>
       <ManualsDownload {...manualsDownloadProps} />
     </>
