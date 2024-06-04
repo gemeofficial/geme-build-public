@@ -1,12 +1,11 @@
 import Image from 'next/image'
 
 const data = {
-  title:
-    'Do Ordinary Things With Great Wisdom Travel Extraordinary Roads With A Big Heart',
+  title: 'Small Microbes in the Lab, Big Impact on the World',
   desctiptions: [
     'ROKH is committed to providing you with waste collection and treatment system solutions and high-quality waste collection and treatment equipment.',
     'ROKH combines the use of smart devices with natural microorganisms to blend modern technology into the natural cycle of the laws of life, reducing the damage to nature and easing the burden on the earth.',
-    'ROKH ROKH will use the amazing microbiota found in nature to improve and treat polluted water and soil, compensate for the damage done to nature, and heal our wounded earth.',
+    'ROKH will use the amazing microbiota found in nature to improve and treat polluted water and soil, compensate for the damage done to nature, and heal our wounded earth.',
   ],
   contactUs: 'Contact us :',
   imgUrls1:
