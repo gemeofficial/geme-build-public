@@ -1,33 +1,40 @@
 'use client'
 
 import ReviewsItem, { IReviewsItem } from './ReviewsItem'
-import { Navigation, Pagination, Parallax } from 'swiper/modules'
-import { Swiper, SwiperRef, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, Parallax,Autoplay } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import styles from './styles.module.css'
-import { useRef } from 'react'
+import './styles.css'
+import { NextButton, PrevButton } from './ControlButton'
 
 const exampleReviews: IReviewsItem[] = [
   {
     name: 'Jane Doe',
     content:
       'Great value for the price. Very happy with my purchase. It’s durable, functional, and looks great. The inner bucket is easy to remove and clean, and it’s a breeze to change the trash bags. ',
-    imageUrl: '',
+    imageUrl:
+      'https://images.unsplash.com/photo-1637215797311-5dee970911e6?q=80&w=3774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    score: 4,
+    avatar: 'https://pagedone.io/asset/uploads/1696230027.png',
+    desc: 'Design Lead',
   },
   {
     name: 'Emily Davis',
     content:
       'The foot pedal is very convenient. Hands-free operation!I highly recommend this trash can to anyone looking for a reliable and stylish option.',
-    imageUrl: '',
+    imageUrl:
+      'https://images.unsplash.com/photo-1565073182887-6bcefbe225b1?q=80&w=3871&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    score: 5,
   },
   {
     name: 'Michael Johnson',
     content:
       'This trash can is amazing! It keeps all the odors inside and the build quality is top-notch. The stainless steel finish looks great in my kitchen and it’s super easy to clean. ',
-    imageUrl: '',
+    imageUrl:
+      'https://images.unsplash.com/photo-1706820643404-71812d9d7d3a?q=80&w=3929&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     name: 'Michael Johnson',
@@ -72,53 +79,61 @@ const exampleReviews: IReviewsItem[] = [
 ]
 
 export function Reviews() {
-  const swiperElRef = useRef<SwiperRef>(null)
-
-  function onProgress(swiper: any, progress: number) {
-    console.log('progress', progress)
-  }
-
   return (
-    <div className="">
-      <Swiper
-        className={`${styles.swiper} select-none !w-full !bg-v2311-bg-light-green !py-24 !px-8 !pl-96`}
-        ref={swiperElRef}
-        onProgress={onProgress}
-        spaceBetween={30}
-        modules={[Navigation, Pagination, Parallax]}
-        navigation
-        pagination={{
-          type: 'bullets',
-          renderBullet: (i, className) =>
-            `<span class="${className} !h-1 !w-8 !rounded-sm transition-all duration-500"></span>`,
-          bulletActiveClass: '!bg-v2311-primary !opacity-100',
-          clickable: true,
+    <Swiper
+      className={`reviewsSwiper select-none !w-full !bg-v2311-bg-light-green !py-24 !px-8`}
+      modules={[Navigation, Pagination, Parallax,Autoplay]}
+      pagination={{
+        type: 'bullets',
+        renderBullet: (i, className) =>
+          `<span class="${className} !h-1 !w-8 !rounded-sm transition-all duration-500"></span>`,
+        bulletActiveClass: '!bg-v2311-primary !opacity-100',
+        clickable: true,
+      }}
+      navigation={{
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }}
+      speed={600}
+      parallax
+      grabCursor
+      breakpoints={{
+        1: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 28,
+        },
+        1520: {
+          slidesPerView: 3,
+          spaceBetween: 32,
+        },
+      }}
+      // loop
+      autoplay={{
+        delay:5000,
+        disableOnInteraction:false
+      }}
+    >
+      <div
+        className="parallaxBg"
+        style={{
+          backgroundImage:
+            'url(https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80)',
         }}
-        speed={600}
-        parallax
-        grabCursor
-        slidesPerView={1}
-        breakpoints={{
-          1280: {
-            slidesPerView: 5,
-            slidesPerGroup: 3,
-          },
-        }}
-      >
-        <div
-          className={styles.parallaxBg}
-          style={{
-            backgroundImage:
-              'url(https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80)',
-          }}
-          data-swiper-parallax="-23%"
-        ></div>
-        {exampleReviews.map((item, idx) => (
-          <SwiperSlide key={item.name + idx}>
-            <ReviewsItem item={item} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+        data-swiper-parallax="-23%"
+      ></div>
+
+      <PrevButton />
+      <NextButton />
+
+      {exampleReviews.map((item, idx) => (
+        <SwiperSlide key={item.name || '' + idx}>
+          <ReviewsItem item={item} />
+        </SwiperSlide>
+      ))}
+    </Swiper>
   )
 }
