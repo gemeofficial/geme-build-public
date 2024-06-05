@@ -1,30 +1,30 @@
 const data = {
-  title: 'Our values',
-  desc: 'Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam.',
+  title: 'Our Values',
+  desc: 'Go down the road less traveled, head to the bright north star, dream big and walk carefully.',
   dataList: [
     {
-      title: 'Be world-class',
-      desc: 'Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.',
+      title: 'Be World-class',
+      desc: 'We set the highest standards, relentlessly pursuing excellence in all aspects of our work, with sustainability at its core. Our unwavering commitment to quality, innovation, and environmental responsibility sets us apart, pushing the boundaries of sustainable business practices.',
     },
     {
-      title: 'Share everything you know',
-      desc: 'Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id molestiae. Cumque cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.',
+      title: 'Open and Cooperative',
+      desc: 'We believe that synergy stems from open communication and seamless teamwork. We foster a culture of collaboration, where diverse perspectives and ideas converge to achieve remarkable results. We break down silos, embrace transparency, and value the contributions of each individual.',
     },
     {
-      title: 'Always learning',
-      desc: 'Aut repellendus et officiis dolor possimus. Deserunt velit quasi sunt fuga error labore quia ipsum. Commodi autem voluptatem nam. Quos voluptatem totam.',
+      title: 'Always Learning',
+      desc: 'We are perpetual learners, constantly seeking knowledge and expanding our skillset. This growth mindset empowers us to stay ahead of the curve, adapt to evolving challenges, and deliver cutting-edge solutions. We embrace lifelong learning, recognizing that the pursuit of knowledge is never-ending.',
     },
     {
-      title: 'Be supportive',
-      desc: 'Magnam provident veritatis odit. Vitae eligendi repellat non. Eum fugit impedit veritatis ducimus. Non qui aspernatur laudantium modi. Praesentium rerum error deserunt harum.',
+      title: 'Be Supportive',
+      desc: 'We recognize that our success hinges on the collective effort of our team. We cultivate a supportive environment where individuals feel empowered, valued, and encouraged to reach their full potential. We believe in fostering a sense of belonging, where everyone feels respected, heard, and supported.',
     },
     {
-      title: 'Take responsibility',
-      desc: 'Sit minus expedita quam in ullam molestiae dignissimos in harum. Tenetur dolorem iure. Non nesciunt dolorem veniam necessitatibus laboriosam voluptas perspiciatis error.',
+      title: 'Facts and Solution',
+      desc: 'We ground our decisions in sound evidence and rigorous analysis. We meticulously gather information, objectively evaluate options, and employ data-driven strategies to craft effective solutions. We are not swayed by assumptions or biases; we let the data guide our path.',
     },
     {
-      title: 'Enjoy downtime',
-      desc: 'Ipsa in earum deserunt aut. Quos minus aut animi et soluta. Ipsum dicta ut quia eius. Possimus reprehenderit iste aspernatur ut est velit consequatur distinctio.',
+      title: 'Take Responsibility',
+      desc: 'We take ownership of our actions and decisions, demonstrating accountability and integrity. We are committed to upholding our commitments, ensuring that our work aligns with our values and ethical principles. We hold ourselves and each other to the highest standards, fostering a culture of responsibility and trust.',
     },
   ],
 }
