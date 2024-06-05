@@ -32,7 +32,7 @@ const data = {
 export default function ContentSection2() {
   return (
     <div className="mt-10 lg:mt-0 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
-      <div className="font-bold text-emerald-600 text-2xl sm:text-3xl mb-2">
+      <div className="font-bold text-amber-400 text-2xl sm:text-3xl mb-2">
         {data.title}
       </div>
       <div className="text-gray-600 mt-2">{data.desc}</div>

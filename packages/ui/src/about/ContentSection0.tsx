@@ -1,10 +1,14 @@
 import Image from 'next/image'
 
 const data = {
-  title: 'Our people',
-  desc: 'Quasi est quaerat. Sit molestiae et. Provident ad dolorem occaecati eos iste. Soluta rerum quidem minus ut molestiae velit error quod. Excepturi quidem expedita molestias quas.',
-  bodyText:
-    'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat. Quasi aperiam sit non sit neque reprehenderit.',
+  title: 'Our Story',
+  mTitle: 'Our Story',
+  desc: 'The Birth of GEME',
+  bodyTexts: [
+    'A passionate scientist leading a team spent years unlocking the power of microscopic wonders - microbes! They used them to clean up polluted areas, bringing life back to nature. But seeing misleading dehydrated based "composter" products bothered them. They knew the real composting method, a better way, a faster way!',
+    'Fate intervened. They met Vivian, a tech pro who shared their love for the environment. Together, they launched GEME, a project focused on bringing real home composting to everyone. Imagine a world with natural bio-waste recycling and greener lives!',
+    "This exciting technology goes beyond food waste. It can even transform cat litter boxes, eliminating unpleasant odors for pet owners.  The future's looking bright, and the GEME team is thrilled to be a part of it!",
+  ],
   mainImgUrl:
     'https://images.unsplash.com/photo-1670272502246-768d249768ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80',
   imgSectionUrl1:
@@ -15,7 +19,7 @@ const data = {
     'https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80',
 }
 
-export default function ContentSection3() {
+export default function ContentSection0() {
   return (
     <div className="mt-24 md:mt-40 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
       <div className="lg:flex items-start justify-between">
@@ -23,8 +27,17 @@ export default function ContentSection3() {
           <div className="font-bold text-amber-400 text-2xl sm:text-3xl mb-2">
             {data.title}
           </div>
-          <div className="text-gray-600 mt-4 text-lg">{data.desc}</div>
-          <div className="text-[#777] mt-4">{data.bodyText}</div>
+          <div className="font-bold tracking-tight text-emerald-600 text-4xl sm:text-5xl xl:text-6xl">
+            {data.desc}
+          </div>
+          {/*<div className="text-gray-600 mt-4 text-lg">{data.desc}</div>*/}
+          <div className="text-[#777] mt-4">
+            {data.bodyTexts.map((item, index) => (
+              <div key={index} className="mt-2">
+                <div>{item}</div>
+              </div>
+            ))}
+          </div>
         </div>
 
         <Image

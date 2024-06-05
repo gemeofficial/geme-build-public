@@ -1,11 +1,14 @@
 import Image from 'next/image'
 
 const data = {
-  title: 'Small Microbes in the Lab, Big Impact on the World',
+  title: 'Small Microbes, Big Impact',
+  // title: 'Small Microbes in the Lab, Big Impact on the World',
   desctiptions: [
-    'ROKH is committed to providing you with waste collection and treatment system solutions and high-quality waste collection and treatment equipment.',
-    'ROKH combines the use of smart devices with natural microorganisms to blend modern technology into the natural cycle of the laws of life, reducing the damage to nature and easing the burden on the earth.',
-    'ROKH will use the amazing microbiota found in nature to improve and treat polluted water and soil, compensate for the damage done to nature, and heal our wounded earth.',
+    'ROKH SRL is the company behind GEME brand.',
+    // 'ROKH SRL is the company behind GEME brand, we committed to providing intelligent and eco-friendly waste management solutions, harnessing the power of nature to remediate damaged environments.',
+    // 'ROKH combines the use of smart devices with natural microorganisms to blend modern technology into the natural cycle of the laws of life, reducing the damage to nature and easing the burden on the earth.',
+    // 'We discovered, developed and deliver amazing microbiota to improve and treat polluted water and soil, compensate for the damage done to nature, and heal our wounded earth.',
+    'At ROKH, we are driven by a passion for scientific innovation and a deep commitment to making a positive impact on the world. Through the commercialization of our groundbreaking biotechnology solutions, we aim to translate our research achievements into tangible benefits that enhance human well-being and address pressing global challenges.',
   ],
   contactUs: 'Contact us :',
   imgUrls1:
