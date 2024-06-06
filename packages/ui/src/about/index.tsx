@@ -14,7 +14,7 @@ export default function About() {
       <ContentSection0 />
       <ContentSection1 />
       <ContentSection2 />
-      <ContentSection3 />
+      {/*<ContentSection3 />*/}
       <ContentSection4 />
       <ContentSection6 />
     </div>

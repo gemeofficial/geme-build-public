@@ -1,5 +1,5 @@
 const data = {
-  title: 'Our development history',
+  title: 'Our Milestones',
   desc: 'Our development process is short, but our pace is fast',
   progressList: [
     {
