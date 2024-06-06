@@ -5,6 +5,7 @@ export interface IReviewsItem {
   content: string //文本内容
   reviewsImageUrls: string[] // 点击后展现的好评截图URLs
   bgImageUrl?: string // 背景图片 如传入则覆盖默认的背景图片
+  isHiddenBgImage?: boolean // 是否不显示背景图 default false
   name?: string // 姓名
   avatar?: string // 头像
   desc?: string // 简短的描述
@@ -12,13 +13,19 @@ export interface IReviewsItem {
 }
 
 // const bgColors = ['#7bc294', '#D2D9D7', '#f9c192', '#a0f1ff']
+const bgImageUrls = [
+  'https://images.unsplash.com/photo-1637215797311-5dee970911e6?q=80&w=3774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1565073182887-6bcefbe225b1?q=80&w=3871&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  'https://plus.unsplash.com/premium_photo-1673059583935-5621c72e4f30?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDV8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D',
+  'https://images.unsplash.com/photo-1717226263533-d48d50759764?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDIwfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D',
+]
 
-// function getRandomNumber(max: number) {
-//   return Math.floor(Math.random() * (max + 1))
-// }
+function getRandomNumber(max: number) {
+  return Math.floor(Math.random() * (max + 1))
+}
 
 export default function ReviewsItem({ item }: { item: IReviewsItem }) {
-  // const currentColor = bgColors[getRandomNumber(bgColors.length - 1)]
+  const currentBgImage = bgImageUrls[getRandomNumber(bgImageUrls.length - 1)]
 
   return (
     <div className="w-full max-w-[90vw] md:max-w-lg bg-white relative group border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-300 hover:border-v2311-primary hover:-translate-y-3 ">
@@ -65,13 +72,13 @@ export default function ReviewsItem({ item }: { item: IReviewsItem }) {
       </div>
 
       {/* 背景图 */}
-      {item.bgImageUrl && (
+      {!item.isHiddenBgImage && (
         <img
           className="absolute inset-0 object-cover opacity-20 rounded-2xl z-[1] w-full h-full"
-          src={item.bgImageUrl}
+          src={item.bgImageUrl || currentBgImage}
           width={500}
           height={300}
-          loading="lazy"
+          loading='eager'
           alt=""
         />
       )}
