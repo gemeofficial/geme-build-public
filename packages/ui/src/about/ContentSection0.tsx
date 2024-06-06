@@ -21,7 +21,7 @@ const data = {
 
 export default function ContentSection0() {
   return (
-    <div className="mt-24 md:mt-40 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
+    <div className="mt-24 md:mt-0 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
       <div className="lg:flex items-start justify-between">
         <div className="lg:w-[55%] lg:mr-[5%]">
           <div className="font-bold text-amber-400 text-2xl sm:text-3xl mb-2">

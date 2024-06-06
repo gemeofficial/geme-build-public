@@ -9,7 +9,7 @@ import ContentSection6 from './ContentSection6'
 
 export default function About() {
   return (
-    <div className="py-8 lg:py-20">
+    <div className="py-8 lg:pt-6 lg:pb-16">
       <HeroSection />
       <ContentSection0 />
       <ContentSection1 />
