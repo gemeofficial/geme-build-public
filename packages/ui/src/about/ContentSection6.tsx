@@ -5,15 +5,15 @@ const incentives = [
     imageSrc:
       'https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg',
     description:
-      "It's not actually free we just price it into the products. Someone's paying for it, and it's not us.",
+      'GEME makes your everyday life a breeze, not only by cutting down on waste but also by helping you feel less wasteful.',
   },
   {
     name: 'Large Scale Composting with GEME',
-    link: '/business-inquiry',
+    link: '/industrial-equipments',
     imageSrc:
       'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
     description:
-      "If you don't like it, trade it to one of your friends for something of theirs. Don't send it here though.",
+      'Beyond our range of household composting devices, GEME leverages its cutting-edge biotechnology to offer customized industrial-grade composting equipment and solutions.',
   },
   {
     name: 'Join GEME Networking',
@@ -21,7 +21,7 @@ const incentives = [
     imageSrc:
       'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
     description:
-      "If it breaks in the first 10 years we'll replace it. After that you're on your own though.",
+      "Get compost from someone's  unnecessary food scraps, with zero or minimum cost!  Donate your GEME byproduct if you don't need compost. Join our waiting list to be the super early users for this great program!.",
   },
   {
     name: 'Affiliate with GEME',
@@ -29,7 +29,7 @@ const incentives = [
     imageSrc:
       'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
     description:
-      "If you don't like it, trade it to one of your friends for something of theirs. Don't send it here though.",
+      "GEME's growth is fueled by the support of our users and allies. Join our affiliate union and become an early advocate for the new lifestyle.",
   },
   {
     name: 'Distribute with GEME',
@@ -37,7 +37,7 @@ const incentives = [
     imageSrc:
       'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
     description:
-      "If it breaks in the first 10 years we'll replace it. After that you're on your own though.",
+      "We are open to partnering with distributors from all over the world. If you have strong local market presence, please don't hesitate to reach out to us.",
   },
   {
     name: 'Investment with GEME',
