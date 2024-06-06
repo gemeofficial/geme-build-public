@@ -3,13 +3,13 @@ import StarIcon from './StarIcon'
 import ImageZoomViewer from '../client-components/ImageZoomViewer'
 
 export interface IReviewsItem {
-  content: string
-  reviewsImageUrls: string[]
-  bgImageUrl?: string
-  name?: string
-  avatar?: string
-  desc?: string
-  score?: string | number
+  content: string //文本内容
+  reviewsImageUrls: string[] // 点击后展现的好评截图URLs
+  bgImageUrl?: string // 背景图片 如传入则覆盖默认的背景图片
+  name?: string // 姓名
+  avatar?: string // 头像
+  desc?: string // 简短的描述
+  score?: string | number // 评分星级
 }
 
 // const bgColors = ['#7bc294', '#D2D9D7', '#f9c192', '#a0f1ff']
@@ -18,13 +18,7 @@ export interface IReviewsItem {
 //   return Math.floor(Math.random() * (max + 1))
 // }
 
-export default function ReviewsItem({
-  item,
-  ZoomImageComponent,
-}: {
-  item: IReviewsItem
-  ZoomImageComponent?: any
-}) {
+export default function ReviewsItem({ item }: { item: IReviewsItem }) {
   // const currentColor = bgColors[getRandomNumber(bgColors.length - 1)]
 
   return (

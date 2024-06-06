@@ -29,11 +29,12 @@
   height: 24px !important;
 }
 
-
-
+.reviewsSwiper > .swiper-wrapper {
+  @apply !py-24 !px-8;
+}
 
 @media (min-width: 1280px) {
   .swiper-wrapper:nth-child(1) {
-    margin-left: 40%;
+    padding-left: 40% !important;
   }
 }
