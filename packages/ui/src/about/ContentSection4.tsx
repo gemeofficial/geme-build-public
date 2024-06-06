@@ -7,22 +7,41 @@ const data = [
   {
     progressBarTitle: 'July 2022',
     title: 'Kickstarter Campaign',
-    desc: 'Got 100+ backers and almost all of them are fulfilled.',
+    // desc: 'Got 100+ backers and almost all of them are fulfilled.',
+    desc: (
+      <div>
+        Got{' '}
+        <a href="https://www.kickstarter.com/projects/geme/geme-harvest-ready-to-use-organic-compost-easily">
+          support
+        </a>{' '}
+        from backers over 22 countries world wide.
+      </div>
+    ),
   },
+  // {
+  //   progressBarTitle: 'Feb 2023',
+  //   title: 'Fulfill Crowdfunding',
+  //   desc: <div>Fulfilled our backers at a 96% coverage rate.</div>,
+  // },
   {
-    progressBarTitle: 'Feb 2023',
-    title: 'Sale in United States',
-    desc: 'Start selling in United States, Amazon Store also setup.',
+    progressBarTitle: 'March 2023',
+    title: 'Enter US Marketing',
+    desc: 'Started selling in US, Authorized Amazon store launched.',
   },
   {
     progressBarTitle: 'June 2023',
     title: 'Sale in Europe',
-    desc: 'GEME landing in Europe, brand new product.',
+    desc: 'First batch machines landing in Europe, local warehouse setup.',
+  },
+  {
+    progressBarTitle: 'December 2023',
+    title: 'Kobold Manufacture',
+    desc: 'Setup large scale manufacture pipeline in factory.',
   },
   {
     progressBarTitle: 'January 2024',
-    title: 'Large Scale Kobold Manufacture',
-    desc: 'Significant improved, same model but new designed.',
+    title: 'GEME 1 Model Upgrade',
+    desc: 'Hardware upgrade after 1 year customer feedback, quieter and robuster.',
   },
 ]
 
