@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import StarIcon from './StarIcon'
+import ImageZoomViewer from '../client-components/ImageZoomViewer'
 
 export interface IReviewsItem {
   content: string
@@ -72,9 +73,10 @@ export default function ReviewsItem({
 
       {/* 点击后显示好评截图 */}
       {item.reviewsImageUrls.length > 0 && (
-        <ZoomImageComponent>
+        <ImageZoomViewer>
           {item.reviewsImageUrls.map((url) => (
             <Image
+              key={url}
               className="absolute inset-0 object-cover rounded-2xl z-[3] w-full h-full opacity-0"
               src={url}
               width={1280}
@@ -83,7 +85,7 @@ export default function ReviewsItem({
               unoptimized
             />
           ))}
-        </ZoomImageComponent>
+        </ImageZoomViewer>
       )}
     </div>
   )
