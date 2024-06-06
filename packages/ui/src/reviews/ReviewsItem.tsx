@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import StarIcon from './StarIcon'
 import ImageZoomViewer from '../client-components/ImageZoomViewer'
 
@@ -22,7 +21,7 @@ export default function ReviewsItem({ item }: { item: IReviewsItem }) {
   // const currentColor = bgColors[getRandomNumber(bgColors.length - 1)]
 
   return (
-    <div className="w-full max-w-lg bg-white relative group border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-300 hover:border-v2311-primary hover:-translate-y-3 ">
+    <div className="w-full max-w-[90vw] md:max-w-lg bg-white relative group border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-300 hover:border-v2311-primary hover:-translate-y-3 ">
       <div className="relative z-[2]">
         {/* star icon */}
         {item.score && <StarIcon score={parseInt(item.score + '')} />}
@@ -32,35 +31,47 @@ export default function ReviewsItem({ item }: { item: IReviewsItem }) {
           {item.content}
         </p>
 
-        <div className="flex items-center gap-5">
-          {/* avatar */}
-          {item.avatar && <img src={item.avatar} alt="review user avatar" />}
+        <div className="flex flex-col md:flex-row md:items-center">
+          <div className="flex items-center gap-5 flex-wrap">
+            {/* avatar */}
+            {item.avatar && (
+              <img
+                className="w-14 h-14 rounded-full "
+                src={item.avatar}
+                alt="review user avatar"
+              />
+            )}
 
-          <div className="grid gap-1">
-            {/* name */}
-            {item.name && (
-              <h5 className="text-gray-900 font-medium transition-all duration-500 group-hover:text-v2311-primary ">
-                {item.name}
-              </h5>
-            )}
-            {/* description */}
-            {item.desc && (
-              <span className="text-sm leading-6 text-gray-500">
-                {item.desc}
-              </span>
-            )}
+            <div className="grid gap-1">
+              {/* name */}
+              {item.name && (
+                <h5 className="text-gray-900 font-medium">{item.name}</h5>
+              )}
+              {/* description */}
+              {item.desc && (
+                <span className="text-sm leading-6 text-gray-500">
+                  {item.desc}
+                </span>
+              )}
+            </div>
+          </div>
+
+          <div className="flex-1 flex md:justify-end mt-4 md:mt-0">
+            <a className="text-sm font-semibold leading-6 text-emerald-600">
+              Click to View More <span aria-hidden="true">→</span>
+            </a>
           </div>
         </div>
       </div>
 
       {/* 背景图 */}
       {item.bgImageUrl && (
-        <Image
+        <img
           className="absolute inset-0 object-cover opacity-20 rounded-2xl z-[1] w-full h-full"
           src={item.bgImageUrl}
           width={500}
           height={300}
-          unoptimized
+          loading="lazy"
           alt=""
         />
       )}
@@ -69,14 +80,14 @@ export default function ReviewsItem({ item }: { item: IReviewsItem }) {
       {item.reviewsImageUrls.length > 0 && (
         <ImageZoomViewer>
           {item.reviewsImageUrls.map((url) => (
-            <Image
+            <img
               key={url}
               className="absolute inset-0 object-cover rounded-2xl z-[3] w-full h-full opacity-0"
               src={url}
               width={1280}
               height={720}
+              loading="lazy"
               alt=""
-              unoptimized
             />
           ))}
         </ImageZoomViewer>

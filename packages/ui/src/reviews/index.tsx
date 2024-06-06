@@ -138,7 +138,7 @@ export function Reviews() {
     const wrapperWidth = (slideCount - dependentVariable) * slideWidth
 
     swiper.wrapperEl.style.width = `${wrapperWidth}px`
-    
+
     isFirstLoad.current = false
   }
 
@@ -169,10 +169,14 @@ export function Reviews() {
       grabCursor
       breakpoints={{
         1: {
-          slidesPerView: 1,
-          spaceBetween: 20,
+          slidesPerView: 1.3,
+          spaceBetween: 15,
         },
         768: {
+          slidesPerView: 1.5,
+          spaceBetween: 28,
+        },
+        1024: {
           slidesPerView: 2,
           spaceBetween: 28,
         },
