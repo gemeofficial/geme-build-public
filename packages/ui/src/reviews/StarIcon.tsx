@@ -1,5 +1,5 @@
 export default function StarIcon({ score }: { score: number }) {
-  const paragraphs = []
+  const paragraphs: JSX.Element[] = []
   for (let i = 0; i < score; i++) {
     paragraphs.push(
       <svg
