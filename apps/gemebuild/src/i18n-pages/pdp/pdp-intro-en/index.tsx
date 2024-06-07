@@ -48,21 +48,30 @@ function PdpIntroEn({
         },
         {
           id: 5,
-          tabLabel: 'Good Reviews',
-          tabPanel: (
-            <div className="bg-gray-100/80">
-              <ReviewsSection reviewsListConfig={reviewsListConfig} />
-            </div>
-          ),
-        },
-        {
-          id: 6,
           tabLabel: 'Reviews',
-          tabPanel: <ReviewsComponent />,
+          tabPanel: (
+            <>
+              <div className="bg-gray-100/80 py-10">
+                <div className="text-center lg:mt-10">
+                  <h2 className="v2311-font-h1 text-v2311-primary text-center ">
+                    What Real Users Say
+                  </h2>
+                  <p className="v2311-font-body text-gray-600 text-center mt-4">
+                    Ditch the fake smiles and scripted lines of paid
+                    influencers. Instead, listen to real people share their
+                    honest thoughts and frustrations. Get the unfiltered truth,
+                    both the good and the bad.
+                  </p>
+                </div>
+                <ReviewsSection reviewsListConfig={reviewsListConfig} />
+              </div>
+              <ReviewsComponent />
+            </>
+          ),
         },
       ],
     }),
-    [ReviewsComponent, PrefetchLink,reviewsListConfig],
+    [ReviewsComponent, PrefetchLink, reviewsListConfig],
   )
 
   return <ScrollablePdpTabsWithAnchorOffset {...props} />

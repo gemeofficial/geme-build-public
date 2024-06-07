@@ -18,10 +18,10 @@ export const En: Story = {
 
 export const De: Story = {
   name: 'de',
-  render: () => <HomePageDe />,
+  render: () => <HomePageDe reviewsListConfig={exampleReviewsSectionData} />,
 }
 
 export const Fr: Story = {
   name: 'fr',
-  render: () => <HomePageFr />,
+  render: () => <HomePageFr reviewsListConfig={exampleReviewsSectionData} />,
 }
