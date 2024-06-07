@@ -10,6 +10,7 @@ import {
   CompostStep2,
   CompostStep3,
   SecondLife,
+  ReviewsSection,
 } from 'ui'
 import type {
   IHeroSection1Props,
@@ -20,6 +21,7 @@ import type {
   IContentSection5Props,
   IContentSection6FixedProps,
   ISecondLifeProps,
+  IReviewsItem,
 } from 'ui'
 import { Footprints, type IFootprintsProps } from '../../components/footprints'
 import { Newsletter, INewsletterProps } from './containers/newsletter'
@@ -406,7 +408,13 @@ const newsltterProps: INewsletterProps = {
   },
 }
 
-function HomePageEn({ PrefetchLink }: { PrefetchLink?: ILinkComponent }) {
+function HomePageEn({
+  PrefetchLink,
+  reviewsListConfig,
+}: {
+  PrefetchLink?: ILinkComponent
+  reviewsListConfig: IReviewsItem[]
+}) {
   heroSection1Props.LinkComponent = PrefetchLink
   return (
     <>
@@ -426,6 +434,18 @@ function HomePageEn({ PrefetchLink }: { PrefetchLink?: ILinkComponent }) {
 
       <div className=" bg-v2311-bg-light-green">
         <ContentSection5 {...contentSection5Props} />
+      </div>
+
+      <div className="bg-gray-100/80 py-10">
+        <div className="text-center lg:mt-10">
+          <h2 className=" v2311-font-h1 text-v2311-primary text-center ">
+            Real customer evaluation
+          </h2>
+          <p className="v2311-font-body text-gray-600 text-center mt-4">
+            Real experience GEME from millions of customers
+          </p>
+        </div>
+        <ReviewsSection reviewsListConfig={reviewsListConfig} />
       </div>
 
       <Footprints {...footprintsProps} />
