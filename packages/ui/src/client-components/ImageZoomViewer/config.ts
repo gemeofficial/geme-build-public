@@ -1,4 +1,3 @@
-import { isMobile } from 'react-device-detect'
 import Viewer from 'viewerjs'
 
 // 更多配置见:https://github.com/fengyuanchen/viewerjs?tab=readme-ov-file#options
@@ -95,7 +94,7 @@ export const defaultConfig: Viewer.Options = {
 
   // 手机端下图片初始显示过小 强制放大的处理方法  ## 先保留
   // viewed() {
-  //   if (isMobile) {
+  //   if (window.innerWidth <= 625) {
   //     const viewerEls = document.querySelectorAll('body .viewer-container')
   //     viewerEls.forEach((el) => {
   //       const imgContentEl = el.querySelector('.viewer-canvas img')
