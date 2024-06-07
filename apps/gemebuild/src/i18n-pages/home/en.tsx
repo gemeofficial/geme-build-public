@@ -380,7 +380,7 @@ const contentSection5Props: IContentSection5Props = {
 const reviewsSectionProps = {
   title: 'What Real Users Say',
   description:
-    'Ditch the fake smiles and scripted lines of paid influencers. Instead, listen to real people share their honest thoughts and frustrations. Get the unfiltered truth, both the good and the bad.',
+    'Forget paid reviews flooding the web. Listen to real people dish the dirt, good and bad - the unfiltered truth you need.',
 }
 
 // 首页第十一部分（地图）的内容数据配置 En
@@ -452,7 +452,7 @@ function HomePageEn({
             {reviewsSectionProps.description}
           </p>
         </div>
-        <ReviewsSection locale='en' reviewsListConfig={reviewsListConfig} />
+        <ReviewsSection locale="en" reviewsListConfig={reviewsListConfig} />
       </div>
 
       <Footprints {...footprintsProps} />
