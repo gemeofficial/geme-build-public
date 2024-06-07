@@ -39,6 +39,9 @@
     "access": "public"
   },
   "dependencies": {
-    "mixpanel-browser": "^2.47.0"
+    "mixpanel-browser": "^2.47.0",
+    "swiper": "^10.2.0",
+    "viewerjs": "^1.11.6",
+    "clsx": "^2.0.0"
   }
 }
