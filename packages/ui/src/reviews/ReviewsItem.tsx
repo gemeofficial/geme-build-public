@@ -86,7 +86,7 @@ export default function ReviewsItem({ item }: { item: IReviewsItem }) {
       {/* 点击后显示好评截图 */}
       {item.reviewsImageUrls.length > 0 && (
         <ImageZoomViewer>
-          {item.reviewsImageUrls.reverse().map((url) => (
+          {item.reviewsImageUrls.map((url) => (
             <img
               key={url}
               className="absolute inset-0 object-cover rounded-2xl z-[3] w-full h-full opacity-0"

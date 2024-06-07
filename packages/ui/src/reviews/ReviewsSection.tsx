@@ -121,7 +121,7 @@ export function ReviewsSection({
       <NextButton />
 
       {reviewsListConfig.map((item, idx) => (
-        <SwiperSlide key={item.content}>
+        <SwiperSlide key={idx}>
           <ReviewsItem item={item} />
         </SwiperSlide>
       ))}
