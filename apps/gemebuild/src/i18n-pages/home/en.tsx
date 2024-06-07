@@ -452,7 +452,7 @@ function HomePageEn({
             {reviewsSectionProps.description}
           </p>
         </div>
-        <ReviewsSection reviewsListConfig={reviewsListConfig} />
+        <ReviewsSection locale='en' reviewsListConfig={reviewsListConfig} />
       </div>
 
       <Footprints {...footprintsProps} />

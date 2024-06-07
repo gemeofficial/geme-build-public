@@ -64,7 +64,7 @@ function PdpIntroDe({
                     Gute als auch das Schlechte.
                   </p>
                 </div>
-                <ReviewsSection reviewsListConfig={reviewsListConfig} />
+                <ReviewsSection locale='de' reviewsListConfig={reviewsListConfig} />
               </div>
               <ReviewsComponent />
             </>

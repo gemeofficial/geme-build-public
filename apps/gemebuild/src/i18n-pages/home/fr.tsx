@@ -465,7 +465,7 @@ function HomePageFr({
             {reviewsSectionProps.description}
           </p>
         </div>
-        <ReviewsSection reviewsListConfig={reviewsListConfig} />
+        <ReviewsSection locale='fr' reviewsListConfig={reviewsListConfig} />
       </div>
 
       <Footprints {...footprintsProps} />

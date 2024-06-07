@@ -63,7 +63,7 @@ function PdpIntroEn({
                     both the good and the bad.
                   </p>
                 </div>
-                <ReviewsSection reviewsListConfig={reviewsListConfig} />
+                <ReviewsSection locale='en' reviewsListConfig={reviewsListConfig} />
               </div>
               <ReviewsComponent />
             </>

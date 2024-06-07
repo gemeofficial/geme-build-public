@@ -63,7 +63,7 @@ function PdpIntroFr({
                     vérité non filtrée, à la fois le bon et le mauvais.
                   </p>
                 </div>
-                <ReviewsSection reviewsListConfig={reviewsListConfig} />
+                <ReviewsSection locale='fr' reviewsListConfig={reviewsListConfig} />
               </div>
               <ReviewsComponent />
             </>
