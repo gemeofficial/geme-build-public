@@ -78,7 +78,7 @@ export default function ReviewsItem({ item }: { item: IReviewsItem }) {
           src={item.bgImageUrl || currentBgImage}
           width={500}
           height={300}
-          loading='eager'
+          loading="eager"
           alt=""
         />
       )}
@@ -86,7 +86,7 @@ export default function ReviewsItem({ item }: { item: IReviewsItem }) {
       {/* 点击后显示好评截图 */}
       {item.reviewsImageUrls.length > 0 && (
         <ImageZoomViewer>
-          {item.reviewsImageUrls.map((url) => (
+          {item.reviewsImageUrls.reverse().map((url) => (
             <img
               key={url}
               className="absolute inset-0 object-cover rounded-2xl z-[3] w-full h-full opacity-0"

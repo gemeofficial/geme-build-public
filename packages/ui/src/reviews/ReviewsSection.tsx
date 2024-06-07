@@ -11,11 +11,14 @@ import './styles.css'
 import { NextButton, PrevButton } from './ControlButton'
 import { Swiper as SwiperType } from 'swiper/types'
 import { useEffect, useRef } from 'react'
+import clsx from 'clsx'
 
 export function ReviewsSection({
   reviewsListConfig,
+  bgColor,
 }: {
   reviewsListConfig: IReviewsItem[]
+  bgColor?: string
 }) {
   const swiperRef = useRef<SwiperType | null>(null)
   const isFirstLoad = useRef(true)
@@ -59,7 +62,10 @@ export function ReviewsSection({
 
   return (
     <Swiper
-      className={`reviewsSwiper select-none !bg-v2311-bg-light-green !w-full`}
+      className={clsx(
+        `reviewsSwiper select-none !w-full`,
+        bgColor ? `!${bgColor}` : '!bg-v2311-bg-light-green',
+      )}
       onSwiper={onSwiperHandle}
       modules={[Navigation, Pagination, Autoplay]}
       pagination={{
