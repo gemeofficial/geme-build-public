@@ -66,7 +66,8 @@ const ImageZoomViewer = (props: PropsWithChildren & ImageZoomViewerOptions) => {
 
     // 销毁查看器以避免内存泄漏
     return () => {
-      viewer.destroy()
+      // 在nextjs中不需要销毁 因为nextjs切换route 始终会返回新的html！
+      // viewer.destroy()
     }
   }, [props])
 
