@@ -24,9 +24,22 @@ function getRandomNumber(max: number) {
   return Math.floor(Math.random() * (max + 1))
 }
 
-export default function ReviewsItem({ item }: { item: IReviewsItem }) {
-  const currentBgImage = bgImageUrls[getRandomNumber(bgImageUrls.length - 1)]
+const clickTextMultiLang = {
+  en: 'Click to View More',
+  de: 'Klicken Sie hier, um mehr zu sehen',
+  fr: 'Cliquez pour voir plus',
+}
 
+export default function ReviewsItem({
+  item,
+  locale,
+}: {
+  item: IReviewsItem
+  locale?: 'en' | 'de' | 'fr'
+}) {
+  const currentBgImage = bgImageUrls[getRandomNumber(bgImageUrls.length - 1)]
+  const clickText = clickTextMultiLang[locale || 'en']
+  
   return (
     <div className="w-full max-w-[90vw] md:max-w-lg bg-white relative group border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-300 hover:border-v2311-primary hover:-translate-y-3 ">
       <div className="relative z-[2]">
@@ -65,7 +78,8 @@ export default function ReviewsItem({ item }: { item: IReviewsItem }) {
 
           <div className="flex-1 flex md:justify-end mt-4 md:mt-0">
             <a className="text-sm font-semibold leading-6 text-emerald-600">
-              Click to View More <span aria-hidden="true">→</span>
+              {clickText}
+              <span aria-hidden="true">→</span>
             </a>
           </div>
         </div>

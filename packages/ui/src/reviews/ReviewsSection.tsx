@@ -14,8 +14,10 @@ import { useEffect, useRef } from 'react'
 
 export function ReviewsSection({
   reviewsListConfig,
+  locale
 }: {
   reviewsListConfig: IReviewsItem[]
+  locale?: 'en' | 'de' | 'fr'
 }) {
   const swiperRef = useRef<SwiperType | null>(null)
   const isFirstLoad = useRef(true)
@@ -122,7 +124,7 @@ export function ReviewsSection({
 
       {reviewsListConfig.map((item, idx) => (
         <SwiperSlide key={idx}>
-          <ReviewsItem item={item} />
+          <ReviewsItem locale={locale} item={item} />
         </SwiperSlide>
       ))}
     </Swiper>
