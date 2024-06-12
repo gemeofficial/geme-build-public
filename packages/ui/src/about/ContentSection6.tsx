@@ -30,7 +30,7 @@ const data = {
         "GEME's growth is fueled by the support of our users and allies. Join our affiliate union and become an early advocate for the new lifestyle.",
     },
     {
-      name: 'Distribute with GEME',
+      name: 'Retail or Distribute with GEME',
       link: 'https://eu.jotform.com/form/221943772954062',
       imageSrc: '/assets/images/about/icons/distribution.png',
       description:
