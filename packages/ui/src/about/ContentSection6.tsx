@@ -13,14 +13,14 @@ const data = {
       link: '/industrial-equipments',
       imageSrc: '/assets/images/about/icons/composting.png',
       description:
-        'Beyond our range of household composting devices, GEME leverages its cutting-edge biotechnology to offer customized industrial-grade composting equipment and solutions.',
+        'Beyond our range of household units, GEME leverages its cutting-edge biotechnology to offer customized industrial-grade composting equipment and solutions.',
     },
     {
       name: 'Join GEME Networking',
       link: '/geme-network-survey',
       imageSrc: '/assets/images/about/icons/networking.png',
       description:
-        "Get compost from someone's  unnecessary food scraps, with zero or minimum cost!  Donate your GEME byproduct if you don't need compost. Join our waiting list to be the super early users for this great program!.",
+        "Get compost from someone's  unnecessary food scraps, with zero or minimum cost! Donate your GEME byproduct if you don't need compost. Join us!",
     },
     {
       name: 'Affiliate with GEME',
@@ -41,7 +41,7 @@ const data = {
       link: 'mailto:admin@geme.bio',
       imageSrc: '/assets/images/about/icons/profits.png',
       description:
-        'GEME has ambitious dreams, and our continued rapid growth hinges on the support of external capital. If you are interested and have investment intentions, please send an email to admin@geme.bio to discuss further.',
+        'GEME has ambitious dreams, and our continued rapid growth hinges on the support of external capital. Email us(admin@geme.bio) if you get investment intentions.',
     },
   ],
 }
@@ -79,7 +79,7 @@ export default function ContentSection6() {
                     {incentive.name}
                   </h3>
                 </a>
-                <p className="sm:max-w-[250px] lg:max-w-full mt-2 sm:mt-0 lg:mt-2 text-sm text-gray-500">
+                <p className="text-left sm:max-w-[250px] lg:max-w-full mt-2 sm:mt-0 lg:mt-2 text-sm text-gray-500">
                   {incentive.description}
                 </p>
               </div>
