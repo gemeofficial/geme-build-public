@@ -10,9 +10,9 @@ const data = {
     "This exciting technology goes beyond food waste. It can even transform cat litter boxes, eliminating unpleasant odors for pet owners.  The future's looking bright, and the GEME team is thrilled to be a part of it!",
   ],
   mainImgUrl: '/assets/images/about/v2406/s1-birth.png',
-  imgSectionUrl3: '/assets/images/about/v2406/s1-team.png',
+  imgSectionUrl1: '/assets/images/about/v2406/s1-team.png',
   imgSectionUrl2: '/assets/images/about/v2406/s1-meeting.png',
-  imgSectionUrl1: '/assets/images/about/v2406/s1-colleagues.png',
+  imgSectionUrl3: '/assets/images/about/v2406/s1-colleagues.png',
 }
 
 export default function ContentSection0() {
