@@ -11,15 +11,14 @@ const data = {
     'At ROKH, we are driven by a passion for scientific innovation and a deep commitment to making a positive impact on the world. Through the commercialization of our groundbreaking biotechnology solutions, we aim to translate our research achievements into tangible benefits that enhance human well-being and address pressing global challenges.',
   ],
   contactUs: 'Contact us :',
-  imgUrls1:
-    'https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80',
+  imgUrls1: '/assets/images/about/v2406/s0-company.png',
   imgUrls2: [
-    'https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80',
-    'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80',
+    '/assets/images/about/v2406/s0-experiment.png',
+    '/assets/images/about/v2406/s0-scientist.png',
   ],
   imgUrls3: [
-    'https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80',
-    'https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80',
+    '/assets/images/about/v2406/s0-soil.png',
+    '/assets/images/about/v2406/s0-seed.png',
   ],
 }
 
