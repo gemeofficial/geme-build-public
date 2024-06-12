@@ -189,22 +189,16 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgMicrobe className=" w-8 h-8 md:w-16 md:h-16 " />
           <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Mikroben (GEME Kobold)
+            Mikroorganismen
+            <br className="block md:hidden" />
+            (GEME Kobold)
           </h3>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            Um die Effizienz zu verbessern, kann die Impfung mit Mikroorganismen
-            eingeführt werden.
-          </p>
-          <p className="hidden xl:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            Die für die Kompostierung verwendeten Inokulum-Organismen sind
-            hauptsächlich Pilze wie Trichoderma und Pleurotus. Einige enthalten
-            auch "effektive Mikroorganismen" (EMs).
-          </p>
           <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            Der GEME Kobold ist ein Set von Mikrobiota, das weltweit einzige
-            zuvor entdeckte und validierte hochtemperaturbeständige
-            zusammengesetzte Mikrobiota. Es arbeitet 100-mal schneller als
-            gewöhnliche Bakterien in der Natur.
+            Mikroorganismen zerlegen organische Abfälle in Kompost, einen
+            nährstoffreichen Bodenverbesserer. Pilze zersetzen zähe Stoffe wie
+            Cellulose, während andere Mikroben andere organische Materialien
+            abbauen. GEME Kobold, ein einzigartiges hitzebeständiges
+            Mikrobenteam, beschleunigt die Kompostierung.
           </p>
         </>
       ),

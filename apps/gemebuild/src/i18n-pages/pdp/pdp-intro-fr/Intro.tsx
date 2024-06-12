@@ -190,23 +190,18 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgMicrobe className=" w-8 h-8 md:w-16 md:h-16 " />
           <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Microbes(GEME Kobold)
+            Micro-organismes
+            <br className="block md:hidden" />
+            (GEME Kobold)
           </h3>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            Pour améliorer l'efficacité, l'inoculation de micro-organismes
-            pourrait être introduite.
-          </p>
-          <p className="hidden xl:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            Les organismes inoculums utilisés pour le compostage sont
-            principalement des champignons tels que Trichoderma et Pleurotus.
-            Certains contiennent également des « micro-organismes efficaces »
-            (EM).
-          </p>
           <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            GEME Kobold est un ensemble de microbiotes, qui est le seul
-            microbiote composite résistant aux hautes températures découvert et
-            validé au monde. Il agit 100 fois plus vite que les bactéries
-            ordinaires dans la nature.
+            Le compostage est un processus naturel décomposé par des
+            micro-organismes qui transforment les déchets organiques en
+            amendements de sol riches en nutriments. Les champignons s'attaquent
+            aux matériaux durs comme la cellulose, tandis que d'autres
+            micro-organismes décomposent d'autres matières organiques. GEME
+            Kobold, une équipe microbienne unique et résistante à la chaleur,
+            accélère le compostage.
           </p>
         </>
       ),

@@ -184,22 +184,16 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgMicrobe className=" w-8 h-8 md:w-16 md:h-16 " />
           <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Microbes(GEME Kobold)
+            Microbes
+            <br className="block md:hidden" />
+            (GEME Kobold)
           </h3>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            To improve the efficiency, inoculation of micro-organisms could be
-            introduced.
-          </p>
-          <p className="hidden xl:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            Inoculum organisms utilized for composting are mainly fungi such as
-            Trichoderma and Pleurotus. Some also features 'effective
-            micro-organisms' (EMs).
-          </p>
           <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
-            GEME Kobold is a set of microbiota, which is the world's only
-            previously discovered and validated high-temperature resistant
-            composite microbiota. It works 100x faster than ordinary bacteria in
-            natural.
+            Composting is a natural process driven by microbes that break down
+            organic waste into nutrient-rich soil amendments. Fungi tackle tough
+            materials like cellulose, while other microbes decompose other
+            organics. GEME Kobold, a unique heat-resistant microbial team,
+            accelerates composting.
           </p>
         </>
       ),
