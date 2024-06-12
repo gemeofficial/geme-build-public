@@ -4,48 +4,42 @@ const data = {
     {
       name: 'Live with GEME',
       link: '/product/geme',
-      imageSrc:
-        'https://tailwindui.com/img/ecommerce/icons/icon-shipping-simple.svg',
+      imageSrc: '/assets/images/about/icons/litter.png',
       description:
         'GEME makes your everyday life a breeze, not only by cutting down on waste but also by helping you feel less wasteful.',
     },
     {
       name: 'Large Scale Composting with GEME',
       link: '/industrial-equipments',
-      imageSrc:
-        'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
+      imageSrc: '/assets/images/about/icons/composting.png',
       description:
         'Beyond our range of household composting devices, GEME leverages its cutting-edge biotechnology to offer customized industrial-grade composting equipment and solutions.',
     },
     {
       name: 'Join GEME Networking',
       link: '/geme-network-survey',
-      imageSrc:
-        'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
+      imageSrc: '/assets/images/about/icons/networking.png',
       description:
         "Get compost from someone's  unnecessary food scraps, with zero or minimum cost!  Donate your GEME byproduct if you don't need compost. Join our waiting list to be the super early users for this great program!.",
     },
     {
       name: 'Affiliate with GEME',
       link: '/coming-soon',
-      imageSrc:
-        'https://tailwindui.com/img/ecommerce/icons/icon-exchange-simple.svg',
+      imageSrc: '/assets/images/about/icons/affiliate-marketing.png',
       description:
         "GEME's growth is fueled by the support of our users and allies. Join our affiliate union and become an early advocate for the new lifestyle.",
     },
     {
       name: 'Distribute with GEME',
       link: 'https://eu.jotform.com/form/221943772954062',
-      imageSrc:
-        'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
+      imageSrc: '/assets/images/about/icons/distribution.png',
       description:
         "We are open to partnering with distributors from all over the world. If you have strong local market presence, please don't hesitate to reach out to us.",
     },
     {
       name: 'Investment with GEME',
       link: 'mailto:admin@geme.bio',
-      imageSrc:
-        'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
+      imageSrc: '/assets/images/about/icons/profits.png',
       description:
         'GEME has ambitious dreams, and our continued rapid growth hinges on the support of external capital. If you are interested and have investment intentions, please send an email to admin@geme.bio to discuss further.',
     },
