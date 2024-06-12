@@ -20,7 +20,7 @@ const data = {
       link: '/geme-network-survey',
       imageSrc: '/assets/images/about/icons/networking.png',
       description:
-        "Get compost from someone's  unnecessary food scraps, with zero or minimum cost! Donate your GEME byproduct if you don't need compost. Join the community!",
+        "Get compost from someone's unnecessary stuff, with zero or minimum cost! Donate your GEME byproduct if you don't need compost. Join the community!",
     },
     {
       name: 'Affiliate with GEME',
