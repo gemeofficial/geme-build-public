@@ -40,7 +40,7 @@ const data = {
 export default function ContentSection1() {
   return (
     <div className="mt-28 md:mt-32 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
-      <div className="font-bold text-amber-400 text-2xl sm:text-3xl mb-2">
+      <div className="font-bold text-[#E5BE51] text-2xl sm:text-3xl mb-2">
         {data.mTitle}
       </div>
       <div className="font-bold tracking-tight text-emerald-600 text-4xl sm:text-5xl xl:text-6xl lg:mr-[40%]">

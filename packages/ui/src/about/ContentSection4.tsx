@@ -52,7 +52,7 @@ const data = {
 export default function ContentSection4() {
   return (
     <div className="mt-28 lg:mt-40 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
-      <div className="font-bold text-amber-400 text-2xl sm:text-3xl mb-2">
+      <div className="font-bold text-[#E5BE51] text-2xl sm:text-3xl mb-2">
         {data.title}
       </div>
       <div className="text-gray-600 mt-2">{data.desc}</div>
