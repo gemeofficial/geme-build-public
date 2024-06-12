@@ -8,8 +8,14 @@ const meta: Meta = {
 
 export default meta
 
-
 export const StoryActionSection1: StoryObj<typeof ReviewsSection> = {
-  render: (props) => <ReviewsSection locale='en' reviewsListConfig={exampleReviewsSectionData} />,
+  render: (props) => (
+    <div className="bg-gray-100">
+      <ReviewsSection
+        locale="en"
+        reviewsSectionConfig={exampleReviewsSectionData}
+      />
+    </div>
+  ),
   name: 'ReviewsSection',
 }

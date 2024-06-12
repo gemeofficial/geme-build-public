@@ -21,7 +21,7 @@ import type {
   IContentSection5Props,
   IContentSection6FixedProps,
   ISecondLifeProps,
-  IReviewsItem,
+  IReviewsSectionConfig,
 } from 'ui'
 import { Footprints, type IFootprintsProps } from '../../components/footprints'
 import { Newsletter, INewsletterProps } from './containers/newsletter'
@@ -399,7 +399,7 @@ const reviewsSectionProps = {
 
 // 首页第十一部分（地图）的内容数据配置 Fr
 const footprintsProps: IFootprintsProps = {
-  grayBackground: false,
+  grayBackground: true,
   title: 'Empreintes vertes de GEME dans le monde',
   description: `Merci de soutenir GEME et d'apporter plus de vert au monde. Soyez le premier à vous propager chez vous !`,
   proportionalSymbolMapProps: {
@@ -430,10 +430,10 @@ const newsltterProps: INewsletterProps = {
 
 function HomePageFr({
   PrefetchLink,
-  reviewsListConfig,
+  reviewsSectionConfig,
 }: {
   PrefetchLink?: ILinkComponent
-  reviewsListConfig: IReviewsItem[]
+  reviewsSectionConfig: IReviewsSectionConfig
 }) {
   heroSection1Props.LinkComponent = PrefetchLink
   return (
@@ -456,7 +456,7 @@ function HomePageFr({
         <ContentSection5 {...contentSection5Props} />
       </div>
 
-      <div className="bg-gray-100/80 py-10">
+      <div className="bg-white py-10">
         <div className="text-center lg:mt-10">
           <h2 className="v2311-font-h1 text-v2311-primary text-center ">
             {reviewsSectionProps.title}
@@ -465,7 +465,7 @@ function HomePageFr({
             {reviewsSectionProps.description}
           </p>
         </div>
-        <ReviewsSection locale='fr' reviewsListConfig={reviewsListConfig} />
+        <ReviewsSection locale='fr' reviewsSectionConfig={reviewsSectionConfig} />
       </div>
 
       <Footprints {...footprintsProps} />

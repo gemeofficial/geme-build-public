@@ -13,15 +13,15 @@ type Story = StoryObj<typeof meta>
 
 export const En: Story = {
   name: 'en',
-  render: () => <HomePageEn reviewsListConfig={exampleReviewsSectionData} />,
+  render: () => <HomePageEn reviewsSectionConfig={exampleReviewsSectionData} />,
 }
 
 export const De: Story = {
   name: 'de',
-  render: () => <HomePageDe reviewsListConfig={exampleReviewsSectionData} />,
+  render: () => <HomePageDe reviewsSectionConfig={exampleReviewsSectionData} />,
 }
 
 export const Fr: Story = {
   name: 'fr',
-  render: () => <HomePageFr reviewsListConfig={exampleReviewsSectionData} />,
+  render: () => <HomePageFr reviewsSectionConfig={exampleReviewsSectionData} />,
 }

@@ -3,21 +3,28 @@
 import ReviewsItem, { IReviewsItem } from './ReviewsItem'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { NextButton, PrevButton } from './ControlButton'
+import { Swiper as SwiperType } from 'swiper/types'
+import { useEffect, useRef } from 'react'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import './styles.css'
-import { NextButton, PrevButton } from './ControlButton'
-import { Swiper as SwiperType } from 'swiper/types'
-import { useEffect, useRef } from 'react'
+
+export type LocaleType = 'en' | 'de' | 'fr'
+
+export interface IReviewsSectionConfig {
+  reviewsList: IReviewsItem[]
+  isShowBgImage?: boolean // 配置选项：是否显示默认背景图
+}
 
 export function ReviewsSection({
-  reviewsListConfig,
-  locale
+  reviewsSectionConfig,
+  locale,
 }: {
-  reviewsListConfig: IReviewsItem[]
-  locale?: 'en' | 'de' | 'fr'
+  reviewsSectionConfig: IReviewsSectionConfig
+  locale?: LocaleType
 }) {
   const swiperRef = useRef<SwiperType | null>(null)
   const isFirstLoad = useRef(true)
@@ -122,9 +129,14 @@ export function ReviewsSection({
       <PrevButton />
       <NextButton />
 
-      {reviewsListConfig.map((item, idx) => (
+      {reviewsSectionConfig.reviewsList.map((item, idx) => (
         <SwiperSlide key={idx}>
-          <ReviewsItem locale={locale} item={item} />
+          <ReviewsItem
+            index={idx}
+            isShowBgImage={reviewsSectionConfig.isShowBgImage}
+            locale={locale}
+            item={item}
+          />
         </SwiperSlide>
       ))}
     </Swiper>

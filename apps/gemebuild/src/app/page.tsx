@@ -2,5 +2,5 @@ import { exampleReviewsSectionData } from 'ui'
 import { HomePageEn } from '../i18n-pages/home'
 
 export default function Home() {
-  return <HomePageEn reviewsListConfig={exampleReviewsSectionData} />
+  return <HomePageEn reviewsSectionConfig={exampleReviewsSectionData} />
 }
