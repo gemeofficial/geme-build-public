@@ -21,7 +21,7 @@ import type {
   IContentSection5Props,
   IContentSection6FixedProps,
   ISecondLifeProps,
-  IReviewsItem,
+  IReviewsSectionConfig
 } from 'ui'
 import { Footprints, type IFootprintsProps } from '../../components/footprints'
 import { Newsletter, INewsletterProps } from './containers/newsletter'
@@ -417,10 +417,10 @@ const newsltterProps: INewsletterProps = {
 
 function HomePageEn({
   PrefetchLink,
-  reviewsListConfig,
+  reviewsSectionConfig,
 }: {
   PrefetchLink?: ILinkComponent
-  reviewsListConfig: IReviewsItem[]
+  reviewsSectionConfig: IReviewsSectionConfig
 }) {
   heroSection1Props.LinkComponent = PrefetchLink
   return (
@@ -452,7 +452,7 @@ function HomePageEn({
             {reviewsSectionProps.description}
           </p>
         </div>
-        <ReviewsSection locale="en" reviewsListConfig={reviewsListConfig} />
+        <ReviewsSection locale="en" reviewsSectionConfig={reviewsSectionConfig} />
       </div>
 
       <Footprints {...footprintsProps} />

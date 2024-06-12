@@ -6,18 +6,18 @@ import { ScrollablePdpTabsWithAnchorOffset } from '../../../components/scrollabl
 
 import { FC, useMemo } from 'react'
 import { ILinkComponent } from '../../../contexts/link-context'
-import { IReviewsItem, ReviewsSection } from 'ui'
+import { IReviewsSectionConfig, ReviewsSection } from 'ui'
 
 interface IPdpIntroProps {
   ReviewsComponent: FC<{}>
   PrefetchLink?: ILinkComponent
-  reviewsListConfig: IReviewsItem[]
+  reviewsSectionConfig: IReviewsSectionConfig
 }
 
 function PdpIntroDe({
   ReviewsComponent,
   PrefetchLink,
-  reviewsListConfig,
+  reviewsSectionConfig,
 }: IPdpIntroProps) {
   const props = useMemo(
     () => ({
@@ -64,7 +64,10 @@ function PdpIntroDe({
                     Gute als auch das Schlechte.
                   </p>
                 </div>
-                <ReviewsSection locale='de' reviewsListConfig={reviewsListConfig} />
+                <ReviewsSection
+                  locale="de"
+                  reviewsSectionConfig={reviewsSectionConfig}
+                />
               </div>
               <ReviewsComponent />
             </>
@@ -72,7 +75,7 @@ function PdpIntroDe({
         },
       ],
     }),
-    [ReviewsComponent, PrefetchLink, reviewsListConfig],
+    [ReviewsComponent, PrefetchLink, reviewsSectionConfig],
   )
 
   return <ScrollablePdpTabsWithAnchorOffset {...props} />

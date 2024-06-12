@@ -10,6 +10,6 @@ export default meta
 
 
 export const StoryActionSection1: StoryObj<typeof ReviewsSection> = {
-  render: (props) => <ReviewsSection locale='en' reviewsListConfig={exampleReviewsSectionData} />,
+  render: (props) => <ReviewsSection locale='en' reviewsSectionConfig={exampleReviewsSectionData} />,
   name: 'ReviewsSection',
 }
