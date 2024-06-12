@@ -401,7 +401,7 @@ const reviewsSectionProps = {
 
 // 首页第十一部分（地图）的内容数据配置 De
 const footprintsProps: IFootprintsProps = {
-  grayBackground: false,
+  grayBackground: true,
   title: 'GEMEs grüne Fußabdrücke in der Welt',
   description:
     'Danke, dass Sie GEME unterstützen und mehr Grün in die Welt bringen. Seien Sie der Erste, der es in Ihre Region verbreitet!',
@@ -460,7 +460,7 @@ function HomePageDe({
         <ContentSection5 {...contentSection5Props} />
       </div>
 
-      <div className="bg-gray-100/80 py-10">
+      <div className="bg-white py-10">
         <div className="text-center lg:mt-10">
           <h2 className="v2311-font-h1 text-v2311-primary text-center ">
             {reviewsSectionProps.title}

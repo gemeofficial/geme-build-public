@@ -51,7 +51,7 @@ function PdpIntroDe({
           tabLabel: 'Bewertungen',
           tabPanel: (
             <>
-              <div className="bg-gray-100/80 py-10">
+              <div className="bg-white py-10">
                 <div className="text-center lg:mt-10">
                   <h2 className="v2311-font-h1 text-v2311-primary text-center ">
                     Was echte Nutzer sagen
