@@ -184,9 +184,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgMicrobe className=" w-8 h-8 md:w-16 md:h-16 " />
           <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Microbes
-            <br className="block md:hidden" />
-            (GEME Kobold)
+            Microbes(GEME Kobold)
           </h3>
           <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
             Composting is a natural process driven by microbes that break down
