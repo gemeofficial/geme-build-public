@@ -105,7 +105,7 @@ function OxygenCycle(
         </h2>
       )}
       <div className=" mt-8 md:mt-16 lg:max-w-3xl lg:mx-auto relative ">
-        <div className=" px-8 md:px-16 mx-auto ">
+        <div className="px-4 md:px-12 mx-auto ">
           <SvgOxygenCycleProgress progress={curProgressValue} />
         </div>
         {curProgressData?.content != null && (
