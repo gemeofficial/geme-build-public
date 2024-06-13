@@ -58,7 +58,9 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgFoodWaste className="w-6 h-6 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Nutriments (déchets alimentaires)
+            Nutriments
+            <br />
+            (déchets alimentaires)
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base">
             Les micro-organismes ont besoin de C, N, de phosphore (P) et de
@@ -86,7 +88,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
           <SvgOxygen className="w-6 h-6 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Compostage Aérobie:
-            <br className="hidden md:block" />
+            <br />
             Cycle Naturel des Nutriments
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
@@ -137,7 +139,9 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgWaterDrop className="w-6 h-6 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Humidité : Le secret du compostage rapide
+            Humidité : Le secret du
+            <br />
+            compostage rapide
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
             L'humidité est cruciale pour la décomposition. La plage idéale ?
@@ -165,7 +169,9 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgTemperature className="w-6 h-6 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Compostage : Une Danse de Température
+            Compostage : Une Danse
+            <br />
+            de Température
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
             Le compostage transforme les déchets en sol riche en nutriments
@@ -196,7 +202,9 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgMicrobe className="w-6 h-6 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Micro-organismes(GEME Kobold)
+            Micro-organismes
+            <br />
+            (GEME Kobold)
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
             Le compostage est un processus naturel décomposé par des

@@ -84,7 +84,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
           <SvgOxygen className="w-6 h-6 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Aerobic Composting:
-            <br className='hidden md:block'/>
+            <br />
             Nature's Nutrient Cycle
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
@@ -132,7 +132,9 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgWaterDrop className="w-6 h-6 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Moisture: The Secret to Fast Composting
+            Moisture: The Secret to
+            <br />
+            Fast Composting
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
             Moisture is king in composting, impacting how microbes break down
@@ -161,7 +163,8 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgTemperature className="w-6 h-6 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Composting: A Temperature Dance
+            Composting:
+            <br />A Temperature Dance
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
             Composting transforms waste into nutrient-rich soil through
@@ -190,7 +193,9 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgMicrobe className="w-6 h-6 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Microbes(GEME Kobold)
+            Microbes
+            <br />
+            (GEME Kobold)
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
             Composting is a natural process driven by microbes that break down

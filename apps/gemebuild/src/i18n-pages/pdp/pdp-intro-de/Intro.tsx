@@ -85,7 +85,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
           <SvgOxygen className="w-6 h-6 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Aerobe Kompostierung:
-            <br className="hidden md:block" />
+            <br />
             Natürlicher Nährstoffkreislauf
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
@@ -110,7 +110,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgWood className="w-6 h-6 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Braune Materialien in der Kompostierung: Gewährleistung optimaler
+            Braune Materialien <br className='md:hidden' /> in der Kompostierung: Gewährleistung optimaler
             Bedingungen
           </h3>
           <p className="hidden lg:block  v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
@@ -138,7 +138,9 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgWaterDrop className="w-6 h-6 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Feuchtigkeit: Das Geheimnis schnellen Kompostierens
+            Feuchtigkeit: Das Geheimnis
+            <br className="hidden md:block" />
+            schnellen Kompostierens
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
             Feuchtigkeit ist entscheidend für die Zersetzung. Der ideale
@@ -196,7 +198,9 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgMicrobe className="w-6 h-6 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4">
-            Mikroorganismen(GEME Kobold)
+            Mikroorganismen
+            <br />
+            (GEME Kobold)
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
             Mikroorganismen zerlegen organische Abfälle in Kompost, einen
