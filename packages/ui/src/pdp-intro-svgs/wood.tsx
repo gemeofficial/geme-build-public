@@ -9,6 +9,7 @@ const SvgWood = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="#067857"
     stroke="#067857"
+    className={props.className}
   >
     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
