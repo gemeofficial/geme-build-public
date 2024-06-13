@@ -88,14 +88,14 @@ const oxygenCycleProps: IOxygenCycleProps = {
             Nature's Nutrient Cycle
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
-            Aerobic composting breaks down organic matter using oxygen (O2),
+            Aerobic composting breaks down organic matter using oxygen ( O<sub>2</sub> ),
             requiring aerobic microbes to decompose materials into water vapor,
             heat, and nutrient-rich humus. The GEME composter simplifies this
             process with an efficient aeration system, optimizing oxygen flow
             for effective decomposition.
           </p>
           <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
-            Breaks down biowaste with oxygen (O2) for valuable nutrients. GEME
+            Breaks down biowaste with oxygen ( O<sub>2</sub> ) for valuable nutrients. GEME
             composter simplifies this with an efficient air system for faster
             decomposition.
           </p>

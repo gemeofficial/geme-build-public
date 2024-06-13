@@ -93,14 +93,14 @@ const oxygenCycleProps: IOxygenCycleProps = {
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
             Le compostage aérobie décompose la matière organique en utilisant de
-            l'oxygène (O2), nécessitant des microbes aérobies pour décomposer
+            l'oxygène ( O<sub>2</sub> ), nécessitant des microbes aérobies pour décomposer
             les matériaux en vapeur d'eau, chaleur et humus riche en nutriments.
             Le composteur GEME simplifie ce processus avec un système d'aération
             efficace, optimisant le flux d'oxygène pour une décomposition
             efficace.
           </p>
           <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
-            Décompose les déchets organiques avec de l'oxygène (O2) pour obtenir
+            Décompose les déchets organiques avec de l'oxygène ( O<sub>2</sub> ) pour obtenir
             des nutriments précieux. Le composteur GEME simplifie cela avec un
             système d'aération efficace pour une décomposition plus rapide.
           </p>
@@ -182,7 +182,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
             30-40°C.
           </p>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
-            Le composteur GEME optimise ce processus en régulant la température
+            GEME optimise ce processus en régulant la température
             à chaque étape, garantissant un compostage efficace et un compost de
             haute qualité.
           </p>

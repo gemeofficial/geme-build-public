@@ -90,14 +90,14 @@ const oxygenCycleProps: IOxygenCycleProps = {
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
             Die aerobe Kompostierung zersetzt organisches Material mithilfe von
-            Sauerstoff (O2), wobei aerobe Mikroben die Materialien in
+            Sauerstoff ( O<sub>2</sub> ), wobei aerobe Mikroben die Materialien in
             Wasserdampf, Wärme und nährstoffreichen Humus umwandeln. Der GEME
             Komposter vereinfacht diesen Prozess mit einem effizienten
             Belüftungssystem, das den Sauerstofffluss für eine effektive
             Zersetzung optimiert.
           </p>
           <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
-            Zersetzt Bioabfall mit Sauerstoff (O2) zu wertvollen Nährstoffen.
+            Zersetzt Bioabfall mit Sauerstoff ( O<sub>2</sub> ) zu wertvollen Nährstoffen.
             Der GEME Komposter vereinfacht dies mit einem effizienten
             Belüftungssystem für eine schnellere Zersetzung.
           </p>
