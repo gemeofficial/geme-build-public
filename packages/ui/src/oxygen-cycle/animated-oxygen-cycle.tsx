@@ -12,7 +12,6 @@ function ScrollTriggeredAnimatedOxygenCycle(props: IOxygenCycleProps) {
   const onUpdate = useCallback(
     (self: { progress?: number }) => {
       const progress = self.progress || 0
-      console.log('progress', progress)
       setProgress(progress)
     },
     [setProgress],
