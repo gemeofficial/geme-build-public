@@ -48,13 +48,13 @@ function ScrollTriggeredAnimatedOxygenCycle(props: IOxygenCycleProps) {
       invalidateOnRefresh={true}
       fastScrollEnd={2000}
       // markers：在调试滚动时  可打开此属性
-      markers={{
-        startColor: 'green',
-        endColor: 'red',
-        fontSize: '18px',
-        fontWeight: 'bold',
-        indent: 20,
-      }}
+      // markers={{
+      //   startColor: 'green',
+      //   endColor: 'red',
+      //   fontSize: '18px',
+      //   fontWeight: 'bold',
+      //   indent: 20,
+      // }}
       
     >
       <Tween>
