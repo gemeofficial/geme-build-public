@@ -20,13 +20,42 @@ function ScrollTriggeredAnimatedOxygenCycle(props: IOxygenCycleProps) {
   return (
     <ScrollTrigger
       trigger={containerRef.current}
-      start="top top+=12%"
-      end="bottom center-=10%"
+      start={() => {
+        // 根据Header的高度动态计算起始滚动位置
+        const rootHeaderEl = document.querySelector('#root-header')
+        const rootHeaderHeight =
+          rootHeaderEl?.getBoundingClientRect().height || 0
+
+        const topOffset = rootHeaderHeight > 0 ? rootHeaderHeight + 100 : '12%'
+
+        // 适配部分老款分辨率低的机型
+        if (window.innerHeight <= 680 && typeof topOffset === 'number') {
+          return `top top+=${topOffset - 60}`
+        }
+
+        return `top top+=${topOffset}`
+      }}
+      end={() => {
+        // 若是在移动触控设备上（包括平板） 则将滚动结束的位置放大125vh。从而实现在移动端中的触控时更缓慢的滚动进度
+        if (window.innerWidth <= 1024) {
+          return 'bottom top-=125%'
+        }
+        return 'bottom top'
+      }}
       pin={true}
       scrub={true}
-      markers={false}
       onUpdate={onUpdate}
       invalidateOnRefresh={true}
+      fastScrollEnd={2000}
+      // markers：在调试滚动时  可打开此属性
+      // markers={{
+      //   startColor: 'green',
+      //   endColor: 'red',
+      //   fontSize: '18px',
+      //   fontWeight: 'bold',
+      //   indent: 20,
+      // }}
+      
     >
       <Tween>
         <ForwardedRefOxygenCycle

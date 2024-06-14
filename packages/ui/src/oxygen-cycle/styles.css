@@ -1,0 +1,32 @@
+@media (min-width: 300px) and (max-width: 370px) {
+  #svg-oxygen-cycle-progress {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media (min-width: 370px) and (max-width: 767px) {
+  #oxygen-cycle-content-box {
+    margin-top: 2.5rem !important;
+  }
+  #oxygen-cycle-content-box h3 {
+    font-size: 13px !important;
+  }
+  #oxygen-cycle-content-box p {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 390px) {
+  #oxygen-cycle-content-box {
+    padding-left: 20vw !important;
+    padding-right: 20vw !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  #oxygen-cycle-content-box {
+    padding-left: 22vw !important;
+    padding-right: 22vw !important;
+  }
+}

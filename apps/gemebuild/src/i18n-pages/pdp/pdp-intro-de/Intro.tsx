@@ -56,22 +56,22 @@ const oxygenCycleProps: IOxygenCycleProps = {
       minProgress: 12.5,
       content: (
         <>
-          <SvgFoodWaste className="w-6 h-6 md:w-16 md:h-16" />
+          <SvgFoodWaste className="w-8 h-8 md:w-16 md:h-16" />
           <h3 className="v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4">
             Nährstoffe (Lebensmittelabfälle)
           </h3>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base">
+          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base">
             Mikroorganismen benötigen C, N, Phosphor (P) und Kalium (K) als
             Hauptnährstoffe. Das C ältnis der Rohstoffe ist wichtig. Das
             optimale C ältnis der Rohstoffe liegt zwischen 25:1 und 30:1.
           </p>
-          <p className="hidden xl:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base">
+          <p className="hidden xl:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base">
             Wenn das Verhältnis zu hoch ist, wird das Wachstum der
             Mikroorganismen eingeschränkt, was zu einer längeren
             Kompostierungszeit führt. Ein geringeres C ältnis führt zu einer
             Unterausnutzung von N und kann zu Geruchsproblemen führen.
           </p>
-          <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
+          <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Der GEME Komposter und der GEME Kobold kümmern sich automatisch um
             das C ältnis für Sie.
           </p>
@@ -82,13 +82,13 @@ const oxygenCycleProps: IOxygenCycleProps = {
       minProgress: 25,
       content: (
         <>
-          <SvgOxygen className="w-6 h-6 md:w-16 md:h-16" />
+          <SvgOxygen className="w-8 h-8 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Aerobe Kompostierung:
             <br />
             Natürlicher Nährstoffkreislauf
           </h3>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Die aerobe Kompostierung zersetzt organisches Material mithilfe von
             Sauerstoff ( O<sub>2</sub> ), wobei aerobe Mikroben die Materialien in
             Wasserdampf, Wärme und nährstoffreichen Humus umwandeln. Der GEME
@@ -96,7 +96,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
             Belüftungssystem, das den Sauerstofffluss für eine effektive
             Zersetzung optimiert.
           </p>
-          <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
+          <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Zersetzt Bioabfall mit Sauerstoff ( O<sub>2</sub> ) zu wertvollen Nährstoffen.
             Der GEME Komposter vereinfacht dies mit einem effizienten
             Belüftungssystem für eine schnellere Zersetzung.
@@ -108,12 +108,12 @@ const oxygenCycleProps: IOxygenCycleProps = {
       minProgress: 40,
       content: (
         <>
-          <SvgWood className="w-6 h-6 md:w-16 md:h-16" />
+          <SvgWood className="w-8 h-8 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Braune Materialien <br className='md:hidden' /> in der Kompostierung: Gewährleistung optimaler
             Bedingungen
           </h3>
-          <p className="hidden lg:block  v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block  v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Braune Materialien, die reich an Kohlenstoff sind, spielen eine
             entscheidende Rolle in der Kompostierung, indem sie das
             Kohlenstoff-Stickstoff-Verhältnis (C:N) ausgleichen, das für die
@@ -123,7 +123,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
             sorgt für ein ausgewogenes C:N-Verhältnis und optimale
             Kompostierungsbedingungen.
           </p>
-          <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
+          <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Braune Materialien, reich an Kohlenstoff, gleichen das
             C:N-Verhältnis für Mikroben aus. Ihre Struktur fördert den
             Luftstrom. Der GEME Kobold Starter bietet diese braunen Materialien
@@ -136,24 +136,24 @@ const oxygenCycleProps: IOxygenCycleProps = {
       minProgress: 60,
       content: (
         <>
-          <SvgWaterDrop className="w-6 h-6 md:w-16 md:h-16" />
+          <SvgWaterDrop className="w-8 h-8 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Feuchtigkeit: Das Geheimnis
             <br className="hidden md:block" />
             schnellen Kompostierens
           </h3>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Feuchtigkeit ist entscheidend für die Zersetzung. Der ideale
             Bereich? 40-60%. Dies fördert das mikrobielle Wachstum und
             beschleunigt die Zersetzung. Zu viel Feuchtigkeit (&gt;70%) führt zu
             Gerüchen, zu wenig (&lt;30%) hemmt Mikroben.
           </p>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Der GEME Komposter vereinfacht die Feuchtigkeitskontrolle. Seine
             One-Touch-Smart-Steuerung hält automatisch 40-60% für effizienten,
             hochwertigen Kompost.
           </p>
-          <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
+          <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Richtige Feuchtigkeit (40-60%) füttert Mikroben, die Abfall abbauen.
             Zu nass (&gt;70%) erzeugt Gerüche und verlangsamt den Prozess. Zu
             trocken (&lt;30%) macht Mikroben träge. GEME regelt die Feuchtigkeit
@@ -166,23 +166,23 @@ const oxygenCycleProps: IOxygenCycleProps = {
       minProgress: 78,
       content: (
         <>
-          <SvgTemperature className="w-6 h-6 md:w-16 md:h-16" />
+          <SvgTemperature className="w-8 h-8 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Kompostierung: Ein Temperaturtanz
           </h3>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Kompostierung verwandelt Abfall durch temperaturgesteuerte
             mikrobielle Aktivität in nährstoffreichen Boden. Zunächst erhitzen
             Mikroben den Kompost auf 40-50°C. In der Hauptabbauphase steigen die
             Temperaturen auf 50-65°C für eine schnelle Zersetzung. Wenn der
             Kompost reift, kühlt er auf 30-40°C ab.
           </p>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Der GEME Komposter optimiert diesen Prozess, indem er die Temperatur
             in jeder Phase reguliert und so für eine effiziente Kompostierung
             und hochwertigen Kompost sorgt.
           </p>
-          <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
+          <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Kompostierung verwandelt Abfall durch Temperaturschwankungen, die
             durch mikrobielle Aktivität verursacht werden, in nährstoffreichen
             Boden. Der GEME verbessert dies, indem er die Temperaturen
@@ -196,20 +196,20 @@ const oxygenCycleProps: IOxygenCycleProps = {
       minProgress: 100,
       content: (
         <>
-          <SvgMicrobe className="w-6 h-6 md:w-16 md:h-16" />
+          <SvgMicrobe className="w-8 h-8 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4">
             Mikroorganismen
             <br />
             (GEME Kobold)
           </h3>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Mikroorganismen zerlegen organische Abfälle in Kompost, einen
             nährstoffreichen Bodenverbesserer. Pilze zersetzen zähe Stoffe wie
             Cellulose, während andere Mikroben andere organische Materialien
             abbauen. GEME Kobold, ein einzigartiges hitzebeständiges
             Mikrobenteam, beschleunigt die Kompostierung.
           </p>
-          <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 !text-xs !text-[10px] md:!text-base ">
+          <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Natur's Recycler: Mikroben zersetzen Abfälle in nährstoffreiche
             Bodenverbesserungsmittel. Pilze zerlegen zähe Materialien, während
             andere den Rest übernehmen. GEME Kobold, ein hitzeresistentes
