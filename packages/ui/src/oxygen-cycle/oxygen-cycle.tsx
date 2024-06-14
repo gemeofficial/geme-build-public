@@ -1,6 +1,6 @@
 import { ReactNode, Ref } from 'react'
 import { SvgOxygen, SvgOxygenCycleProgress } from '../pdp-intro-svgs'
-import "./styles.css";
+import './styles.css'
 
 interface IOxygenCycleProps {
   title?: ReactNode
@@ -106,11 +106,14 @@ function OxygenCycle(
         </h2>
       )}
       <div className=" mt-8 md:mt-16 lg:max-w-3xl lg:mx-auto relative ">
-        <div id='svg-oxygen-cycle-progress' className="px-4 md:px-12 mx-auto ">
+        <div id="svg-oxygen-cycle-progress" className="px-4 md:px-12 mx-auto ">
           <SvgOxygenCycleProgress progress={curProgressValue} />
         </div>
         {curProgressData?.content != null && (
-          <div id='oxygen-cycle-content-box' className="absolute top-0 bottom-0 flex flex-col items-center px-20 md:px-44 lg:px-48 mt-8 md:mt-16 lg:mt-20 mx-auto">
+          <div
+            id="oxygen-cycle-content-box"
+            className="absolute top-0 bottom-0 flex flex-col items-center px-20 md:px-44 lg:px-48 mt-10 md:mt-16 lg:mt-20 mx-auto"
+          >
             {curProgressData.content}
           </div>
         )}
