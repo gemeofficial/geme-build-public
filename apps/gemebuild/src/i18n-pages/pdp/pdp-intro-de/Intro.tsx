@@ -56,7 +56,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
       minProgress: 12.5,
       content: (
         <>
-          <SvgFoodWaste className="w-6 h-6 md:w-16 md:h-16" />
+          <SvgFoodWaste className="w-8 h-8 md:w-16 md:h-16" />
           <h3 className="v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4">
             Nährstoffe (Lebensmittelabfälle)
           </h3>
@@ -82,7 +82,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
       minProgress: 25,
       content: (
         <>
-          <SvgOxygen className="w-6 h-6 md:w-16 md:h-16" />
+          <SvgOxygen className="w-8 h-8 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Aerobe Kompostierung:
             <br />
@@ -108,7 +108,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
       minProgress: 40,
       content: (
         <>
-          <SvgWood className="w-6 h-6 md:w-16 md:h-16" />
+          <SvgWood className="w-8 h-8 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Braune Materialien <br className='md:hidden' /> in der Kompostierung: Gewährleistung optimaler
             Bedingungen
@@ -136,7 +136,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
       minProgress: 60,
       content: (
         <>
-          <SvgWaterDrop className="w-6 h-6 md:w-16 md:h-16" />
+          <SvgWaterDrop className="w-8 h-8 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Feuchtigkeit: Das Geheimnis
             <br className="hidden md:block" />
@@ -166,7 +166,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
       minProgress: 78,
       content: (
         <>
-          <SvgTemperature className="w-6 h-6 md:w-16 md:h-16" />
+          <SvgTemperature className="w-8 h-8 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Kompostierung: Ein Temperaturtanz
           </h3>
@@ -196,7 +196,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
       minProgress: 100,
       content: (
         <>
-          <SvgMicrobe className="w-6 h-6 md:w-16 md:h-16" />
+          <SvgMicrobe className="w-8 h-8 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4">
             Mikroorganismen
             <br />
