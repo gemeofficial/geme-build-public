@@ -4,7 +4,7 @@ const data = {
     {
       name: 'Live with GEME',
       link: '/product/geme',
-      imageSrc: '/assets/images/about/icons/litter.png',
+      imageSrc: '/assets/images/about/icons/use-geme.png',
       description:
         'GEME makes your everyday life a breeze, not only by cutting down on waste but also by helping you feel less wasteful.',
     },
