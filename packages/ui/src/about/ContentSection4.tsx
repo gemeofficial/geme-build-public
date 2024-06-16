@@ -2,11 +2,11 @@ const data = {
   title: 'Our Milestones',
   desc: 'Our development process is short, but our pace is fast',
   progressList: [
-    {
-      progressBarTitle: 'Dec 2021',
-      title: 'Core team initialized',
-      desc: 'Form the idea and start the GEME Composter project',
-    },
+    // {
+    //   progressBarTitle: 'Dec 2021',
+    //   title: 'Core team initialized',
+    //   desc: 'Form the idea and start the GEME Composter project',
+    // },
     {
       progressBarTitle: 'July 2022',
       title: 'Kickstarter Campaign',
@@ -27,24 +27,34 @@ const data = {
     //   desc: <div>Fulfilled our backers at a 96% coverage rate.</div>,
     // },
     {
-      progressBarTitle: 'March 2023',
+      progressBarTitle: 'Mar 2023',
       title: 'Enter US Marketing',
       desc: 'Started selling in US, Authorized Amazon store launched.',
     },
     {
-      progressBarTitle: 'June 2023',
+      progressBarTitle: 'Jun 2023',
       title: 'Sale in Europe',
       desc: 'First batch machines landing in Europe, local warehouse setup.',
     },
+    // {
+    //   progressBarTitle: 'December 2023',
+    //   title: 'Kobold Manufacture',
+    //   desc: 'Setup large scale manufacture pipeline in factory.',
+    // },
     {
-      progressBarTitle: 'December 2023',
-      title: 'Kobold Manufacture',
-      desc: 'Setup large scale manufacture pipeline in factory.',
+      progressBarTitle: 'Jan 2024',
+      title: 'GEME I Model Upgrade',
+      desc: 'Hardware upgrade after 1 year customer feedback, quieter and robuster.',
     },
     {
-      progressBarTitle: 'January 2024',
-      title: 'GEME 1 Model Upgrade',
-      desc: 'Hardware upgrade after 1 year customer feedback, quieter and robuster.',
+      progressBarTitle: 'Sep/Oct 2024',
+      title: 'GEME II',
+      desc: 'More function and less cost with smaller size.',
+    },
+    {
+      progressBarTitle: '2025',
+      title: 'GEME Cat Litter',
+      desc: 'The out of box solution for cat poop, completely eliminate the smell.',
     },
   ],
 }

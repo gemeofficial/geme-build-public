@@ -69,7 +69,7 @@ export default function ContentSection1() {
           ))}
         </div>
       </div>
-      <div className="py-20 lg:py-40">
+      <div className="py-20">
         <Image
           className="w-full max-h-[500px] object-cover rounded-lg"
           src={data.fullImgUrl}

@@ -6,13 +6,15 @@ import ContentSection3 from './ContentSection3'
 import ContentSection4 from './ContentSection4'
 import ContentSection5 from './ContentSection5'
 import ContentSection6 from './ContentSection6'
+import ContentSection15 from './ContentSection1-5'
 
 export default function About() {
   return (
     <div className="py-8 lg:pt-6 lg:pb-16">
       <HeroSection />
-      <ContentSection0 />
+      {/*<ContentSection0 />*/}
       <ContentSection1 />
+      <ContentSection15 />
       <ContentSection2 />
       {/*<ContentSection3 />*/}
       <ContentSection4 />

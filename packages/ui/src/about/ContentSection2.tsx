@@ -4,27 +4,60 @@ const data = {
   dataList: [
     {
       title: 'Be World-class',
-      desc: 'We set the highest standards, relentlessly pursuing excellence in all aspects of our work, with sustainability at its core. Our unwavering commitment to quality, innovation, and environmental responsibility sets us apart, pushing the boundaries of sustainable business practices.',
+      desc: (
+        <>
+          We set the highest standards, relentlessly pursuing excellence in all
+          aspects of our work, with sustainability at its core.
+        </>
+      ),
     },
     {
       title: 'Open and Cooperative',
-      desc: 'We believe that synergy stems from open communication and seamless teamwork. We foster a culture of collaboration, where diverse perspectives and ideas converge to achieve remarkable results. We break down silos, embrace transparency, and value the contributions of each individual.',
+      desc: (
+        <>
+          Fostering open dialogue and collaboration to find collective
+          solutions. Building strong partnerships with individuals,
+          organizations, and communities.
+        </>
+      ),
     },
     {
       title: 'Always Learning',
-      desc: 'We are perpetual learners, constantly seeking knowledge and expanding our skillset. This growth mindset empowers us to stay ahead of the curve, adapt to evolving challenges, and deliver cutting-edge solutions. We embrace lifelong learning, recognizing that the pursuit of knowledge is never-ending.',
+      desc: (
+        <>
+          Embracing cutting-edge research to tackle environmental challenges.
+          Continuously innovating and refining our solutions to achieve optimal
+          results.
+        </>
+      ),
     },
     {
       title: 'Be Supportive',
-      desc: 'We recognize that our success hinges on the collective effort of our team. We cultivate a supportive environment where individuals feel empowered, valued, and encouraged to reach their full potential. We believe in fostering a sense of belonging, where everyone feels respected, heard, and supported.',
+      desc: (
+        <>
+          Cultivate a supportive environment where individuals feel empowered,
+          valued, and encouraged to reach their full potential.
+        </>
+      ),
     },
     {
       title: 'Facts and Solution',
-      desc: 'We ground our decisions in sound evidence and rigorous analysis. We meticulously gather information, objectively evaluate options, and employ data-driven strategies to craft effective solutions. We are not swayed by assumptions or biases; we let the data guide our path.',
+      desc: (
+        <>
+          Crafting effective solutions not swayed by assumptions or biases but
+          by experiment result and data; we let the data guide our path.
+        </>
+      ),
     },
     {
       title: 'Take Responsibility',
-      desc: 'We take ownership of our actions and decisions, demonstrating accountability and integrity. We are committed to upholding our commitments, ensuring that our work aligns with our values and ethical principles. We hold ourselves and each other to the highest standards, fostering a culture of responsibility and trust.',
+      desc: (
+        <>
+          Ensuring our commitments, our work aligns with our values and ethical
+          principles. Sharing our expertise and knowledge to empower communities
+          worldwide.
+        </>
+      ),
     },
   ],
 }

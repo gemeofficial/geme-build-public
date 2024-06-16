@@ -1,16 +1,34 @@
 import Image from 'next/image'
 
 const data = {
-  title: 'Small Microbes, Big Impact',
+  title: 'Small Findings in the Lab, Big Impact to the World',
   // title: 'Small Microbes in the Lab, Big Impact on the World',
   desctiptions: [
-    'ROKH SRL is the company behind GEME brand.',
+    'At ROKH, we are united by a shared vision and a common goal: to create a world where waste is no longer a burden, but a resource, and where nature thrives alongside human progress.',
     // 'ROKH SRL is the company behind GEME brand, we committed to providing intelligent and eco-friendly waste management solutions, harnessing the power of nature to remediate damaged environments.',
     // 'ROKH combines the use of smart devices with natural microorganisms to blend modern technology into the natural cycle of the laws of life, reducing the damage to nature and easing the burden on the earth.',
     // 'We discovered, developed and deliver amazing microbiota to improve and treat polluted water and soil, compensate for the damage done to nature, and heal our wounded earth.',
-    'At ROKH, we are driven by a passion for scientific innovation and a deep commitment to making a positive impact on the world. Through the commercialization of our groundbreaking biotechnology solutions, we aim to translate our research achievements into tangible benefits that enhance human well-being and address pressing global challenges.',
+    'We are driven by a passion for scientific innovation and a deep commitment to making a positive impact on the world. Through the commercialization of our groundbreaking biotechnology solutions, we aim to translate our research achievements into tangible benefits that enhance human well-being and address pressing global challenges.',
+    <>
+      We are a team of passionate individuals
+      <li>
+        <strong>Experienced professionals</strong>: With over 20 years of
+        experience in waste treatment, we bring a depth of knowledge and
+        expertise to our work.{' '}
+      </li>{' '}
+      <li>
+        <strong>Dedicated scientists</strong>: Our microbiologists and natural
+        agronomists are constantly exploring new ways to harness the power of
+        nature for sustainable waste management.{' '}
+      </li>{' '}
+      <li>
+        <strong>Dreamers and doers</strong>: We are not just dreamers; we are
+        also doers. We are committed to turning our vision into reality, one
+        innovative solution at a time.
+      </li>
+    </>,
   ],
-  contactUs: 'Contact us :',
+  contactUs: 'Contact Us',
   imgUrls1: '/assets/images/about/v2406/s0-company.png',
   imgUrls2: [
     '/assets/images/about/v2406/s0-experiment.png',
@@ -41,7 +59,9 @@ export default function HeroSection() {
             </div>
           ))}
           <div className="mt-3 md:mt-5 max-w-md text-lg text-gray-500 sm:text-xl md:max-w-3xl">
-            {data.contactUs}
+            <a href="/contact" className="text-emerald-600 hover:underline">
+              {data.contactUs}
+            </a>
             <a
               href="mailto:info@geme.bio"
               className="ml-4 text-emerald-600 hover:underline"

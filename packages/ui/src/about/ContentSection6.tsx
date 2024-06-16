@@ -5,43 +5,67 @@ const data = {
       name: 'Live with GEME',
       link: '/product/geme',
       imageSrc: '/assets/images/about/icons/use-geme.png',
-      description:
-        'GEME makes your everyday life a breeze, not only by cutting down on waste but also by helping you feel less wasteful.',
+      description: (
+        <>
+          Feel good, do good, live sustainably. Replace your garbage disposal
+          with <a href="/product/geme">GEME Composter</a>.
+        </>
+      ),
     },
     {
       name: 'Large Scale Composting with GEME',
       link: '/industrial-equipments',
       imageSrc: '/assets/images/about/icons/composting.png',
-      description:
-        'Beyond our range of household units, GEME leverages its cutting-edge biotechnology to offer customized industrial-grade composting equipment and solutions.',
+      description: (
+        <>
+          From homes to factories, Tailored biotechnology for industrial-grade
+          composting excellence.
+        </>
+      ),
     },
     {
       name: 'Join GEME Networking',
       link: '/geme-network-survey',
       imageSrc: '/assets/images/about/icons/networking.png',
-      description:
-        "Get compost from someone's unnecessary stuff, with zero or minimum cost! Donate your GEME byproduct if you don't need compost. Join the community!",
+      description: (
+        <>
+          Free compost swap community! Share what you don't need, grow a greener
+          future together.
+        </>
+      ),
     },
     {
       name: 'Affiliate with GEME',
       link: '/coming-soon',
       imageSrc: '/assets/images/about/icons/affiliate-marketing.png',
-      description:
-        "GEME's growth is fueled by the support of our users and allies. Join our affiliate union and become an early advocate for the new lifestyle.",
+      description: (
+        <>
+          Be a GEME champion! Join our affiliate union & lead the sustainable
+          revolution.
+        </>
+      ),
     },
     {
       name: 'Retail or Distribute with GEME',
       link: 'https://eu.jotform.com/form/221943772954062',
       imageSrc: '/assets/images/about/icons/distribution.png',
-      description:
-        "We are open to partnering with distributors from all over the world. If you have strong local market presence, please don't hesitate to reach out to us.",
+      description: (
+        <>
+          Expand your reach & join the GEME movement. We're seeking strong
+          distributors worldwide.
+        </>
+      ),
     },
     {
       name: 'Investment with GEME',
       link: 'mailto:admin@geme.bio',
       imageSrc: '/assets/images/about/icons/profits.png',
-      description:
-        'GEME has ambitious dreams, and our continued rapid growth hinges on the support of external capital. Email us(admin@geme.bio) if you get investment intentions.',
+      description: (
+        <>
+          Fuel the future! Invest in GEME & join a game-changing sustainable
+          movement. (admin@geme.bio)
+        </>
+      ),
     },
   ],
 }
