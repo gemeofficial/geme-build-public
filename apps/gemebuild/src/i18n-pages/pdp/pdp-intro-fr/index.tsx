@@ -6,13 +6,19 @@ import { ScrollablePdpTabsWithAnchorOffset } from '../../../components/scrollabl
 
 import { FC, useMemo } from 'react'
 import { ILinkComponent } from '../../../contexts/link-context'
+import { IReviewsSectionConfig, ReviewsSection } from 'ui'
 
 interface IPdpIntroProps {
   ReviewsComponent: FC<{}>
   PrefetchLink?: ILinkComponent
+  reviewsSectionConfig: IReviewsSectionConfig
 }
 
-function PdpIntroFr({ ReviewsComponent, PrefetchLink }: IPdpIntroProps) {
+function PdpIntroFr({
+  ReviewsComponent,
+  PrefetchLink,
+  reviewsSectionConfig,
+}: IPdpIntroProps) {
   const props = useMemo(
     () => ({
       tabs: [
@@ -42,12 +48,33 @@ function PdpIntroFr({ ReviewsComponent, PrefetchLink }: IPdpIntroProps) {
         },
         {
           id: 5,
-          tabLabel: 'Commentaires',
-          tabPanel: <ReviewsComponent />,
+          tabLabel: 'Bewertungen',
+          tabPanel: (
+            <>
+              <div className="bg-white py-10">
+                <div className="text-center lg:mt-10">
+                  <h2 className="v2311-font-h1 text-v2311-primary text-center ">
+                    Ce que disent les vrais utilisateurs
+                  </h2>
+                  <p className="v2311-font-body text-gray-600 text-center mt-4">
+                    Oubliez les sourires faux et les discours préparés des
+                    influenceurs payés. Écoutez plutôt de vraies personnes
+                    partager leurs pensées et frustrations honnêtes. Obtenez la
+                    vérité non filtrée, à la fois le bon et le mauvais.
+                  </p>
+                </div>
+                <ReviewsSection
+                  locale="fr"
+                  reviewsSectionConfig={reviewsSectionConfig}
+                />
+              </div>
+              <ReviewsComponent />
+            </>
+          ),
         },
       ],
     }),
-    [ReviewsComponent, PrefetchLink],
+    [ReviewsComponent, PrefetchLink, reviewsSectionConfig],
   )
 
   return <ScrollablePdpTabsWithAnchorOffset {...props} />

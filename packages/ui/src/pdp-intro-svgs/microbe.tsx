@@ -8,7 +8,7 @@ const SvgMicrobe = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
     role="img"
-    className="iconify iconify--twemoji"
+    className={props.className}
     preserveAspectRatio="xMidYMid meet"
     fill="#000000"
   >

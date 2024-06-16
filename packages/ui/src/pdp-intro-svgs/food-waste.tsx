@@ -10,6 +10,7 @@ const SvgFoodWaste = (props: SVGProps<SVGSVGElement>) => (
     height="64px"
     viewBox="0 0 191.146 191.146"
     stroke="#067857"
+    className={props.className}
   >
     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g

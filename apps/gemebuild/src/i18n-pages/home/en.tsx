@@ -10,6 +10,7 @@ import {
   CompostStep2,
   CompostStep3,
   SecondLife,
+  ReviewsSection,
 } from 'ui'
 import type {
   IHeroSection1Props,
@@ -20,6 +21,7 @@ import type {
   IContentSection5Props,
   IContentSection6FixedProps,
   ISecondLifeProps,
+  IReviewsSectionConfig
 } from 'ui'
 import { Footprints, type IFootprintsProps } from '../../components/footprints'
 import { Newsletter, INewsletterProps } from './containers/newsletter'
@@ -374,9 +376,16 @@ const contentSection5Props: IContentSection5Props = {
   ),
 }
 
-// 首页第十部分（地图）的内容数据配置 En
+// 首页第十部分（好评卡片）的内容数据配置 En
+const reviewsSectionProps = {
+  title: 'What Real Users Say',
+  description:
+    'Forget paid reviews flooding the web. Listen to real people dish the dirt, good and bad - the unfiltered truth you need.',
+}
+
+// 首页第十一部分（地图）的内容数据配置 En
 const footprintsProps: IFootprintsProps = {
-  grayBackground: false,
+  grayBackground: true,
   title: "GEME's Green Footprints in the World",
   description:
     'Thanks for backing GEME and bring more green to the world. Be the first one to spread to your place!',
@@ -406,7 +415,13 @@ const newsltterProps: INewsletterProps = {
   },
 }
 
-function HomePageEn({ PrefetchLink }: { PrefetchLink?: ILinkComponent }) {
+function HomePageEn({
+  PrefetchLink,
+  reviewsSectionConfig,
+}: {
+  PrefetchLink?: ILinkComponent
+  reviewsSectionConfig: IReviewsSectionConfig
+}) {
   heroSection1Props.LinkComponent = PrefetchLink
   return (
     <>
@@ -426,6 +441,18 @@ function HomePageEn({ PrefetchLink }: { PrefetchLink?: ILinkComponent }) {
 
       <div className=" bg-v2311-bg-light-green">
         <ContentSection5 {...contentSection5Props} />
+      </div>
+
+      <div className="bg-white py-10">
+        <div className="text-center lg:mt-10">
+          <h2 className="v2311-font-h1 text-v2311-primary text-center ">
+            {reviewsSectionProps.title}
+          </h2>
+          <p className="v2311-font-body text-gray-600 text-center mt-4">
+            {reviewsSectionProps.description}
+          </p>
+        </div>
+        <ReviewsSection locale="en" reviewsSectionConfig={reviewsSectionConfig} />
       </div>
 
       <Footprints {...footprintsProps} />

@@ -6,13 +6,19 @@ import { ScrollablePdpTabsWithAnchorOffset } from '../../../components/scrollabl
 
 import { FC, useMemo } from 'react'
 import { ILinkComponent } from '../../../contexts/link-context'
+import { IReviewsSectionConfig, ReviewsSection } from 'ui'
 
 interface IPdpIntroProps {
   ReviewsComponent: FC<{}>
   PrefetchLink?: ILinkComponent
+  reviewsSectionConfig: IReviewsSectionConfig
 }
 
-function PdpIntroEn({ ReviewsComponent, PrefetchLink }: IPdpIntroProps) {
+function PdpIntroEn({
+  ReviewsComponent,
+  PrefetchLink,
+  reviewsSectionConfig,
+}: IPdpIntroProps) {
   const props = useMemo(
     () => ({
       tabs: [
@@ -43,11 +49,32 @@ function PdpIntroEn({ ReviewsComponent, PrefetchLink }: IPdpIntroProps) {
         {
           id: 5,
           tabLabel: 'Reviews',
-          tabPanel: <ReviewsComponent />,
+          tabPanel: (
+            <>
+              <div className="bg-white py-10">
+                <div className="text-center lg:mt-10">
+                  <h2 className="v2311-font-h1 text-v2311-primary text-center ">
+                    What Real Users Say
+                  </h2>
+                  <p className="v2311-font-body text-gray-600 text-center mt-4">
+                    Ditch the fake smiles and scripted lines of paid
+                    influencers. Instead, listen to real people share their
+                    honest thoughts and frustrations. Get the unfiltered truth,
+                    both the good and the bad.
+                  </p>
+                </div>
+                <ReviewsSection
+                  locale="en"
+                  reviewsSectionConfig={reviewsSectionConfig}
+                />
+              </div>
+              <ReviewsComponent />
+            </>
+          ),
         },
       ],
     }),
-    [ReviewsComponent, PrefetchLink],
+    [ReviewsComponent, PrefetchLink, reviewsSectionConfig],
   )
 
   return <ScrollablePdpTabsWithAnchorOffset {...props} />
