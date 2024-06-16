@@ -57,7 +57,7 @@ export default function HeroSection() {
           </div>
           {data.descriptions.map((item, index) => (
             <div
-              key={item}
+              key={index}
               className={`${
                 index === data.descriptions.length - 1 ? 'md:w-[65%]' : ''
               } lg:w-full mt-3 md:mt-5 max-w-md text-lg text-gray-500 lg:text-xl md:max-w-3xl`}
