@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const data = {
   mTitle: 'Our Mission',
-  title: 'All Things Live Forever and In Harmony with The Earth',
+  title: 'All Things Live Forever and in Harmony with the Earth',
   descriptions: [
     "Food waste is one of the world's most challenging problems. We can contribute our part to solve it, together with you!",
     "Not only food waste, but also animal feces, cat and dog's poops, cow and horse manure, all biodegradable waste can be well decomposed in the best practice way.",
@@ -10,7 +10,7 @@ const data = {
     'Similar like the cache idea in the computer network, the true way to manage waste, especially bio waste from human, is to be processed where it created, shorten the path of the cycle significantly.',
     'GEME create products to make the idea come ture, being echo-friendly and protecting our mother nature is not just a slogan, but actionable among every single small moves when we throw our daily waste.',
     'GEME is not just a product, but a technology solution. We are trying to leverage the technology to a network, linking scientist teams, distributor partners, sustainable restaurants, recycle communities, organic farms, disposal stations, waste management organizations and individual together. Every node can get benefit, just like all things living harmony in our planet.',
-    // 'Dreams do not always belong to a few, innovations do not rise from the ground, nor is the desire to follow the laws of nature and" ALL THINGS LIVE FOREVER AND IN HARMONY WITH THE EARTH" a slogan written on a placard by environmentalists. Embracing the dream and innovating to achieve the good intentions of all mankind is the motivation for the GEME team members to start acting immediately.',
+    // 'Dreams do not always belong to a few, innovations do not rise from the ground, nor is the desire to follow the laws of nature and" All Things Live Forever and in Harmony with the Earth" a slogan written on a placard by environmentalists. Embracing the dream and innovating to achieve the good intentions of all mankind is the motivation for the GEME team members to start acting immediately.',
     // 'We are a group of "young people" who share a common dream. We are a team of project managers, engineering designers, microbiological scientists and natural agronomists who have been working in the field of waste treatment for more than 20 years, with the dream of "becoming a doctor of the earth" and constantly exploring and practicing.',
     // 'We combine advanced AI technology to design equipment with simple operation, comprehensive function and low cost; we apply the microorganisms extracted from nature to the treatment of biological waste to make everything circulate in an orderly manner in accordance with the laws of nature; and we apply the natural farming method that has been continuously improved in practice for more than 50 years to the cultivation of crops, so that organic food no longer belongs to a specific group of people, but by you to grow and produce in your balcony and backyard.',
     // `In the future, we will continue to promote the proven microbial treatment technology to restore the consolidated soil's vitality and clear the polluted river.`,
