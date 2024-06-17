@@ -9,15 +9,16 @@ const meta: Meta = {
 export default meta
 
 const exampleData: IInlinePalyerType = {
-  title: 'User evaluatio',
-  description: 'Watch our video to learn more',
+  title: 'Seeing is Believing',
+  description:
+    "See the incredible speed for yourself! This unedited 7-hour video showcases how quickly our machine works. Witness the breakdown of nearly 2kg of food waste – a feat none of our competitors dare to demonstrate publicly. We believe customers deserve transparency, even if it's not good looking and tedious.",
   type: 'youtube',
   videoPosterUrl: '/assets/images/home-v2311/cover-v3.jpg',
   videoSrcUrlOrVidioId: 'nlsTg4l_3zE',
 }
 
 // const exampleData: IInlinePalyerType = {
-//   title: 'User evaluatio',
+//   title: 'Seeing is Believing',
 //   description: 'Watch our video to learn more',
 //   type: 'mp4',
 //   videoPosterUrl: '/assets/images/home-v2311/cover-v3.jpg',
