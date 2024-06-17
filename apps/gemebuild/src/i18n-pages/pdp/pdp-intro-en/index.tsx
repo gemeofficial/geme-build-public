@@ -6,12 +6,26 @@ import { ScrollablePdpTabsWithAnchorOffset } from '../../../components/scrollabl
 
 import { FC, useMemo } from 'react'
 import { ILinkComponent } from '../../../contexts/link-context'
-import { IReviewsSectionConfig, ReviewsSection } from 'ui'
+import {
+  IInlinePalyerType,
+  InlinePlayer,
+  IReviewsSectionConfig,
+  ReviewsSection,
+} from 'ui'
 
 interface IPdpIntroProps {
   ReviewsComponent: FC<{}>
   PrefetchLink?: ILinkComponent
   reviewsSectionConfig: IReviewsSectionConfig
+}
+
+const inlinePlayerProps: IInlinePalyerType = {
+  title: 'Seeing is Believing',
+  description:
+    "See the incredible speed for yourself! This unedited 7-hour video showcases how quickly our machine works. Witness the breakdown of nearly 2kg of food waste – a feat none of our competitors dare to demonstrate publicly. We believe customers deserve transparency, even if it's not good looking and tedious.",
+  type: 'youtube',
+  videoSrcUrlOrVidioId: 'asNRoqkC_BA',
+  mixpanelFrom: 'Product page inline player',
 }
 
 function PdpIntroEn({
@@ -44,7 +58,12 @@ function PdpIntroEn({
               <span className="hidden lg:inline">User </span>Stories
             </>
           ),
-          tabPanel: <UserStory />,
+          tabPanel: (
+            <>
+              <UserStory />
+              <InlinePlayer {...inlinePlayerProps} />
+            </>
+          ),
         },
         {
           id: 5,
@@ -57,10 +76,10 @@ function PdpIntroEn({
                     What Real Users Say
                   </h2>
                   <p className="v2311-font-body text-gray-600 text-center mt-4">
-                    Ditch the fake smiles and scripted lines of paid
-                    influencers. Instead, listen to real people share their
-                    honest thoughts and frustrations. Get the unfiltered truth,
-                    both the good and the bad.
+                    Do not worry about the lack of reviews online. Many of those
+                    are paid ads. Instead, listen to everyday folks like you who
+                    share their honest experiences with us, even if they did not
+                    leave reviews online.
                   </p>
                 </div>
                 <ReviewsSection

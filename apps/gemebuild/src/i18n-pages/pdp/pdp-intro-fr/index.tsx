@@ -6,12 +6,26 @@ import { ScrollablePdpTabsWithAnchorOffset } from '../../../components/scrollabl
 
 import { FC, useMemo } from 'react'
 import { ILinkComponent } from '../../../contexts/link-context'
-import { IReviewsSectionConfig, ReviewsSection } from 'ui'
+import {
+  IInlinePalyerType,
+  InlinePlayer,
+  IReviewsSectionConfig,
+  ReviewsSection,
+} from 'ui'
 
 interface IPdpIntroProps {
   ReviewsComponent: FC<{}>
   PrefetchLink?: ILinkComponent
   reviewsSectionConfig: IReviewsSectionConfig
+}
+
+const inlinePlayerProps: IInlinePalyerType = {
+  title: "Voir c'est croire",
+  description:
+    "Voyez par vous-même la vitesse incroyable! Cette vidéo brute de 7 heures montre à quelle vitesse notre machine fonctionne. Assistez à la décomposition de près de 2 kg de déchets alimentaires - un exploit qu'aucun de nos concurrents n'ose démontrer publiquement. Nous pensons que les clients méritent la transparence, même si ce n'est pas esthétique et fastidieux.",
+  type: 'youtube',
+  videoSrcUrlOrVidioId: 'asNRoqkC_BA',
+  mixpanelFrom: 'Product page inline player',
 }
 
 function PdpIntroFr({
@@ -44,7 +58,12 @@ function PdpIntroFr({
               <span className="hidden lg:inline">Utilisateur </span>Histoires
             </>
           ),
-          tabPanel: <UserStory />,
+          tabPanel: (
+            <>
+              <UserStory />
+              <InlinePlayer {...inlinePlayerProps} />
+            </>
+          ),
         },
         {
           id: 5,
@@ -57,10 +76,9 @@ function PdpIntroFr({
                     Ce que disent les vrais utilisateurs
                   </h2>
                   <p className="v2311-font-body text-gray-600 text-center mt-4">
-                    Oubliez les sourires faux et les discours préparés des
-                    influenceurs payés. Écoutez plutôt de vraies personnes
-                    partager leurs pensées et frustrations honnêtes. Obtenez la
-                    vérité non filtrée, à la fois le bon et le mauvais.
+                    {
+                      "Vous vous inquiétez peut-être du manque d'avis sur les réseaux sociaux. Cependant, il est important de comprendre qu'une grande partie des avis en ligne sont des publicités payantes. Les vrais consommateurs sont la majorité silencieuse. Au lieu de vous fier uniquement à ces avis, pensez à écouter la voix des consommateurs ordinaires comme vous. Ils ne sont peut-être pas aussi bavards en ligne, mais ils sont plus susceptibles de fournir des commentaires authentiques et impartiaux."
+                    }
                   </p>
                 </div>
                 <ReviewsSection

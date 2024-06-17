@@ -6,12 +6,26 @@ import { ScrollablePdpTabsWithAnchorOffset } from '../../../components/scrollabl
 
 import { FC, useMemo } from 'react'
 import { ILinkComponent } from '../../../contexts/link-context'
-import { IReviewsSectionConfig, ReviewsSection } from 'ui'
+import {
+  IInlinePalyerType,
+  InlinePlayer,
+  IReviewsSectionConfig,
+  ReviewsSection,
+} from 'ui'
 
 interface IPdpIntroProps {
   ReviewsComponent: FC<{}>
   PrefetchLink?: ILinkComponent
   reviewsSectionConfig: IReviewsSectionConfig
+}
+
+const inlinePlayerProps: IInlinePalyerType = {
+  title: 'Sehen heißt',
+  description:
+    'Überzeugen Sie sich selbst von der unglaublichen Geschwindigkeit! Dieses unbearbeitete 7-Stunden-Video zeigt, wie schnell unsere Maschine arbeitet. Seien Sie Zeuge des Abbaus von fast 2 kg Lebensmittelverschwendung – eine Leistung, die sich keiner unserer Wettbewerber öffentlich zu zeigen traut. Wir glauben, dass Kunden Transparenz verdienen, auch wenn es nicht schön anzusehen und langweilig ist.',
+  type: 'youtube',
+  videoSrcUrlOrVidioId: 'asNRoqkC_BA',
+  mixpanelFrom: 'Product page inline player',
 }
 
 function PdpIntroDe({
@@ -44,7 +58,12 @@ function PdpIntroDe({
               <span className="hidden lg:inline">Benutzer </span>Geschichten
             </>
           ),
-          tabPanel: <UserStory />,
+          tabPanel: (
+            <>
+              <UserStory />
+              <InlinePlayer {...inlinePlayerProps} />
+            </>
+          ),
         },
         {
           id: 5,
@@ -57,11 +76,16 @@ function PdpIntroDe({
                     Was echte Nutzer sagen
                   </h2>
                   <p className="v2311-font-body text-gray-600 text-center mt-4">
-                    Verzichten Sie auf die falschen Lächeln und einstudierten
-                    Sätze bezahlter Influencer. Hören Sie stattdessen echten
-                    Menschen zu, die ihre ehrlichen Gedanken und Frustrationen
-                    teilen. Erhalten Sie die ungefilterte Wahrheit, sowohl das
-                    Gute als auch das Schlechte.
+                    Sie könnten sich Sorgen über die begrenzte Anzahl von
+                    Bewertungen in den sozialen Medien machen. Es ist jedoch
+                    wichtig zu beachten, dass ein erheblicher Teil der
+                    Online-Bewertungen bezahlte Werbung ist. Die wahren
+                    Verbraucher sind die stille Mehrheit. Anstatt sich nur auf
+                    diese Bewertungen zu verlassen, sollten Sie den Stimmen von
+                    normalen Verbrauchern wie Ihnen selbst Gehör schenken. Sie
+                    sind zwar online vielleicht nicht so lautstark, aber sie
+                    geben wahrscheinlich eher echte und unvoreingenommene
+                    Rückmeldungen.
                   </p>
                 </div>
                 <ReviewsSection
