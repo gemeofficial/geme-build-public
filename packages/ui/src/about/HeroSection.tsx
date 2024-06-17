@@ -1,37 +1,48 @@
 import Image from 'next/image'
 
 const data = {
-  title: 'Small Findings in the Lab, Big Impact to the World',
+  // title: 'Small Findings in the Lab, Big Impact to the World',
+  // title: 'Less Waste, More Green',
+  title: 'Less Waste, More Green',
   // title: 'Small Microbes in the Lab, Big Impact on the World',
   descriptions: [
+    <h2 className="font-bold tracking-tight text-[#E5BE51]">
+      ROKH's Path to a Sustainable Future
+    </h2>,
     <>
-      At ROKH, we are united by a shared vision and a common goal: to create a
-      world where waste is no longer a burden, but a resource, and where nature
-      thrives alongside human progress.
+      At ROKH, we share a unified vision: to transform waste into a resource and
+      create a world where nature thrives alongside human progress. Our passion
+      for scientific innovation drives us to have a positive impact on the
+      world. By commercializing our groundbreaking biotechnology solutions, we
+      turn research into tangible benefits that enhance human well-being and
+      address global challenges.
     </>,
+    // <>
+    //   At ROKH, we are united by a shared vision and a common goal: to create a
+    //   world where waste is no longer a burden, but a resource, and where nature
+    //   thrives alongside human progress.
+    // </>,
+    // <>
+    //   We are driven by a passion for scientific innovation and a deep commitment
+    //   to making a positive impact on the world. Through the commercialization of
+    //   our groundbreaking biotechnology solutions, we aim to translate our
+    //   research achievements into tangible benefits that enhance human well-being
+    //   and address pressing global challenges.
+    // </>,
     <>
-      We are driven by a passion for scientific innovation and a deep commitment
-      to making a positive impact on the world. Through the commercialization of
-      our groundbreaking biotechnology solutions, we aim to translate our
-      research achievements into tangible benefits that enhance human well-being
-      and address pressing global challenges.
-    </>,
-    <>
-      We are a team of passionate individuals
+      Our team consists of:
       <li>
-        <strong>Experienced professionals</strong>: With over 20 years of
-        experience in waste treatment, we bring a depth of knowledge and
-        expertise to our work.{' '}
+        <strong>Experienced Professionals</strong>: With over 20 years in solid
+        waste resource treatment, we bring deep expertise to our work.{' '}
       </li>{' '}
       <li>
-        <strong>Dedicated scientists</strong>: Our microbiologists and natural
-        agronomists are constantly exploring new ways to harness the power of
-        nature for sustainable waste management.{' '}
+        <strong>Dedicated Scientists</strong>: Our microbiologists and
+        agronomists continuously explore new ways to harness nature for
+        sustainable waste management.
       </li>{' '}
       <li>
-        <strong>Dreamers and doers</strong>: We are not just dreamers; we are
-        also doers. We are committed to turning our vision into reality, one
-        innovative solution at a time.
+        <strong>Dreamers and Doers</strong>: We are committed to turning our
+        vision into reality, one innovative solution at a time.
       </li>
     </>,
   ],
@@ -52,9 +63,9 @@ export default function HeroSection() {
     <div className="mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
       <div className="lg:flex items-center justify-between">
         <div className="text-4xl md:text-6xl lg:w-[55%] lg:mr-[5%] mt-4 lg:mt-0">
-          <div className="font-bold tracking-tight text-emerald-600">
+          <h1 className="font-bold tracking-tight text-emerald-600">
             {data.title}
-          </div>
+          </h1>
           {data.descriptions.map((item, index) => (
             <div
               key={index}
