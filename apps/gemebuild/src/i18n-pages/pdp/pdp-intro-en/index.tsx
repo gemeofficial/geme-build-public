@@ -76,9 +76,9 @@ function PdpIntroEn({
                     What Real Users Say
                   </h2>
                   <p className="v2311-font-body text-gray-600 text-center mt-4">
-                    Don't worry about the lack of reviews online. Many of those
+                    Do not worry about the lack of reviews online. Many of those
                     are paid ads. Instead, listen to everyday folks like you who
-                    share their honest experiences with us, even if they don't
+                    share their honest experiences with us, even if they did not
                     leave reviews online.
                   </p>
                 </div>
