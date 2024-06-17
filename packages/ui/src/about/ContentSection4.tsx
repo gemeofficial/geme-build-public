@@ -51,10 +51,15 @@ const data = {
       title: 'GEME II',
       desc: 'More function and less cost with smaller size.',
     },
+    // {
+    //   progressBarTitle: '2025',
+    //   title: 'GEME Cat Litter',
+    //   desc: 'The out of box solution for cat poop, completely eliminate the smell.',
+    // },
     {
-      progressBarTitle: '2025',
-      title: 'GEME Cat Litter',
-      desc: 'The out of box solution for cat poop, completely eliminate the smell.',
+      progressBarTitle: '2026',
+      title: 'GEME Networking',
+      desc: 'Eco-system connected individuals, organic farm, waste stations and more.',
     },
   ],
 }

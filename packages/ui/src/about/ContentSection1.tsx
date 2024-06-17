@@ -2,14 +2,21 @@ import Image from 'next/image'
 
 const data = {
   mTitle: 'Our Mission',
-  title: 'All Things Live Forever and in Harmony with the Earth',
+  title: 'All Things Live Forever and in Harmony with Earth',
   descriptions: [
-    "Food waste is one of the world's most challenging problems. We can contribute our part to solve it, together with you!",
-    "Not only food waste, but also animal feces, cat and dog's poops, cow and horse manure, all biodegradable waste can be well decomposed in the best practice way.",
-    'Combined with biotechnology and modern manufacture, GEME proposal a solution for a better waste recycle methodology- Reduce & Recycle in place.',
-    'Similar like the cache idea in the computer network, the true way to manage waste, especially bio waste from human, is to be processed where it created, shorten the path of the cycle significantly.',
-    'GEME create products to make the idea come ture, being echo-friendly and protecting our mother nature is not just a slogan, but actionable among every single small moves when we throw our daily waste.',
-    'GEME is not just a product, but a technology solution. We are trying to leverage the technology to a network, linking scientist teams, distributor partners, sustainable restaurants, recycle communities, organic farms, disposal stations, waste management organizations and individual together. Every node can get benefit, just like all things living harmony in our planet.',
+    // "Food waste is one of the world's most challenging problems. We can contribute our part to solve it, together with you!",
+    // "Not only food waste, but also animal feces, cat and dog's poops, cow and horse manure, all biodegradable waste can be well decomposed in the best practice way.",
+    // 'Combined with biotechnology and modern manufacture, GEME proposal a solution for a better waste recycle methodology- Reduce & Recycle in place.',
+    // 'Similar like the cache idea in the computer network, the true way to manage waste, especially bio waste from human, is to be processed where it created, shorten the path of the cycle significantly.',
+    // 'GEME create products to make the idea come ture, being echo-friendly and protecting our mother nature is not just a slogan, but actionable among every single small moves when we throw our daily waste.',
+    // 'GEME is not just a product, but a technology solution. We are trying to leverage the technology to a network, linking scientist teams, distributor partners, sustainable restaurants, recycle communities, organic farms, disposal stations, waste management organizations and individual together. Every node can get benefit, just like all things living harmony in our planet.',
+
+    "Food waste is one of the world's biggest challenges, and we can help solve it together with you. But it's not just food waste—animal feces, and all biodegradable waste can be effectively decomposed.",
+    'By combining biotechnology with modern manufacturing, GEME offers a solution for better waste recycling: Reduce & Recycle in place.',
+    "Similar to the cache concept in computer networks, the most efficient way to manage waste, especially bio-waste, is to process it where it's created, significantly shortening the recycling path.",
+    "GEME creates products to make this idea a reality. Being eco-friendly and protecting nature isn't just a slogan for us; it's actionable through every small step when we dispose of our daily waste.",
+    "GEME is more than a product; it's a technology solution.",
+    'We leverage technology to create a network linking scientist teams, distributor partners, sustainable restaurants, recycling communities, organic farms, disposal stations, waste management organizations, and individuals. Every node benefits, just like all things living in harmony on our planet.',
     // 'Dreams do not always belong to a few, innovations do not rise from the ground, nor is the desire to follow the laws of nature and" All Things Live Forever and in Harmony with the Earth" a slogan written on a placard by environmentalists. Embracing the dream and innovating to achieve the good intentions of all mankind is the motivation for the GEME team members to start acting immediately.',
     // 'We are a group of "young people" who share a common dream. We are a team of project managers, engineering designers, microbiological scientists and natural agronomists who have been working in the field of waste treatment for more than 20 years, with the dream of "becoming a doctor of the earth" and constantly exploring and practicing.',
     // 'We combine advanced AI technology to design equipment with simple operation, comprehensive function and low cost; we apply the microorganisms extracted from nature to the treatment of biological waste to make everything circulate in an orderly manner in accordance with the laws of nature; and we apply the natural farming method that has been continuously improved in practice for more than 50 years to the cultivation of crops, so that organic food no longer belongs to a specific group of people, but by you to grow and produce in your balcony and backyard.',
@@ -19,19 +26,23 @@ const data = {
   points: [
     {
       title: 'Rethink',
-      desc: 'Bio waste is not waste, it is gold for garden plants.',
+      // desc: 'Bio waste is not waste, it is gold for garden plants.',
+      desc: 'Adopt a holistic view of environmental care. Treat bio waste not as trash, but as a resource for gardens and the planet. Understand that our actions deeply impact the Earth.',
     },
     {
       title: 'Reduce',
-      desc: 'Stop burning and landfill, we can reduce waste in place!',
+      // desc: 'Stop burning and landfill, we can reduce waste in place!',
+      desc: 'Cut down on resource use and waste. Follow sustainable practices to save resources and protect the environment. Handle waste at its source to lessen its impact.',
     },
     {
       title: 'Reuse',
-      desc: 'Different waste can be transformed to different treasure.',
+      // desc: 'Different waste can be transformed to different treasure.',
+      desc: 'Recycle, repurpose, and upcycle materials. Turn different types of waste into useful resources, extending their life and reducing the need for new materials.',
     },
     {
       title: 'Restore',
-      desc: 'Not just nourish soil, also heal pollution, repair the earth.',
+      // desc: 'Not just nourish soil, also heal pollution, repair the earth.',
+      desc: "Protect and revive natural ecosystems. Improve soil health, clean pollution, and repair damaged environments to ensure our planet's well-being.",
     },
   ],
   fullImgUrl: '/assets/images/about/v2406/s2-family.png',
@@ -43,7 +54,7 @@ export default function ContentSection1() {
       <div className="font-bold text-[#E5BE51] text-2xl sm:text-3xl mb-2">
         {data.mTitle}
       </div>
-      <div className="font-bold tracking-tight text-emerald-600 text-4xl sm:text-5xl xl:text-6xl lg:mr-[40%]">
+      <div className="font-bold tracking-tight text-emerald-600 text-4xl sm:text-5xl xl:text-6xl lg:mr-[0%]">
         {data.title}
       </div>
       <div className="lg:flex items-start justify-between">
@@ -58,7 +69,7 @@ export default function ContentSection1() {
           ))}
         </div>
 
-        <div className="lg:w-[40%] lg:pl-20 mt-10 lg:mt-5 flex flex-col items-start justify-between overflow-hidden space-y-10 lg:space-y-20">
+        <div className="lg:w-[40%] lg:pl-20 mt-10 lg:mt-5 flex flex-col items-start justify-between overflow-hidden space-y-10 lg:space-y-5">
           {data.points.map((item) => (
             <div key={item.title}>
               <div className="text-3xl sm:text-5xl font-semibold">
