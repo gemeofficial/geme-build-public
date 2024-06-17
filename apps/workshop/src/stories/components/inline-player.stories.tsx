@@ -12,7 +12,6 @@ const exampleData: IInlinePalyerType = {
   title: 'User evaluatio',
   description: 'Watch our video to learn more',
   type: 'youtube',
-  videoPosterUrl: '/assets/images/home-v2311/cover-v3.jpg',
   videoSrcUrlOrVidioId: 'nlsTg4l_3zE',
 }
 
@@ -20,7 +19,6 @@ const exampleData: IInlinePalyerType = {
 //   title: 'User evaluatio',
 //   description: 'Watch our video to learn more',
 //   type: 'mp4',
-//   videoPosterUrl: '/assets/images/home-v2311/cover-v3.jpg',
 //   videoSrcUrlOrVidioId: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
 // }
 

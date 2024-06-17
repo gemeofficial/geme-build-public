@@ -7,12 +7,14 @@ import { hasMixpanel } from '../lib/has-mixpanel'
 interface Props {
   videoId: string
   readyCallback?: () => void
+  playCallback?: () => void
   mixpanelFrom?: string
   videoIsAutoPlay?: boolean
 }
 const YouTubePlayer = ({
   videoId,
   readyCallback,
+  playCallback,
   mixpanelFrom,
   videoIsAutoPlay,
 }: Props) => {
@@ -26,6 +28,10 @@ const YouTubePlayer = ({
 
   const onReady = () => {
     readyCallback && readyCallback()
+  }
+
+  const onPlay = () => {
+    playCallback && playCallback()
   }
 
   const onError: YouTubeProps['onError'] = (event) => {
@@ -80,6 +86,7 @@ const YouTubePlayer = ({
       onReady={onReady}
       onError={onError}
       onEnd={onEnd}
+      onPlay={onPlay}
     />
   )
 }

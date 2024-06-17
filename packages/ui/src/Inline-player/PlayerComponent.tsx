@@ -9,9 +9,9 @@ import { hasMixpanel } from '../lib/has-mixpanel'
 import styles from './styles.module.css'
 
 export interface IPlayerComponentType {
-  videoPosterUrl: string
   type: 'mp4' | 'youtube'
   videoSrcUrlOrVidioId: string
+  videoPosterUrl?: string
   mixpanelFrom?: string
   videoIsAutoPlay?: boolean
 }
@@ -23,18 +23,22 @@ export default function PlayerComponent({
   mixpanelFrom,
   videoIsAutoPlay,
 }: IPlayerComponentType) {
-  const [isPlay, setIsPlay] = useState(false)
+  // 如果videoPosterUrl封面图没有传入，则直接展示YouTube播放器
+  const [isPlay, setIsPlay] = useState(!videoPosterUrl)
   const [isLoading, setIsLoading] = useState(true)
 
   // 向后台发送统计信息
-  function PlayClickHandler() {
+  const mixpanelTrackHandle = useCallback(() => {
     // 添加判断条件 解决在gemebuild中点击时mixpanel没有初始化的问题
-    if (hasMixpanel()) {
+    if (hasMixpanel() && videoPosterUrl) {
       mixpanel.track('Watch video', {
         From: mixpanelFrom || 'Inline player video',
       })
     }
+  }, [videoPosterUrl, mixpanelFrom])
 
+  function PlayClickHandler() {
+    mixpanelTrackHandle()
     setIsPlay(true)
   }
 
@@ -45,7 +49,7 @@ export default function PlayerComponent({
   return (
     <div className="group">
       <span className="sr-only">Watch our video to learn more</span>
-      {!isPlay && (
+      {!isPlay && videoPosterUrl && (
         <div
           className=" w-full h-full  flex justify-center items-center hover:cursor-pointer"
           onClick={() => PlayClickHandler()}
@@ -84,6 +88,7 @@ export default function PlayerComponent({
               <YouTubePlayer
                 videoIsAutoPlay={videoIsAutoPlay}
                 readyCallback={onYoutubePlayerReady}
+                playCallback={mixpanelTrackHandle}
                 videoId={videoSrcUrlOrVidioId}
               />
               {isLoading && (
