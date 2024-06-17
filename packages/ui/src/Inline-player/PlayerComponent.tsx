@@ -1,8 +1,12 @@
 'use client'
-import { useState } from 'react'
+
+import { useCallback, useState } from 'react'
 import Image from 'next/image'
 import { PlayIcon } from '../video-inline-player'
 import mixpanel from 'mixpanel-browser'
+import YouTubePlayer from '../client-components/YouTubePlayer'
+import { hasMixpanel } from '../lib/has-mixpanel'
+import styles from './styles.module.css'
 
 export interface IPlayerComponentType {
   videoPosterUrl: string
@@ -25,16 +29,13 @@ export default function PlayerComponent({
   mixpanelFrom?: string
   videoIsAutoPlay?: boolean
 }) {
-  let [isPlay, setIsPlay] = useState(false)
+  const [isPlay, setIsPlay] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
 
   // 向后台发送统计信息
   function PlayClickHandler() {
     // 添加判断条件 解决在gemebuild中点击时mixpanel没有初始化的问题
-    if (
-      mixpanel.hasOwnProperty('token') &&
-      mixpanel.get_config() &&
-      Object.keys(mixpanel.get_config()).length > 0
-    ) {
+    if (hasMixpanel()) {
       mixpanel.track('Watch video', {
         From: mixpanelFrom || 'Inline player video',
       })
@@ -43,12 +44,16 @@ export default function PlayerComponent({
     setIsPlay(true)
   }
 
+  const onYoutubePlayerReady = useCallback(() => {
+    setIsLoading(false)
+  }, [])
+
   return (
     <div className="group">
       <span className="sr-only">Watch our video to learn more</span>
       {!isPlay && (
         <div
-          className=" w-full h-full relative flex justify-center items-center hover:cursor-pointer"
+          className=" w-full h-full  flex justify-center items-center hover:cursor-pointer"
           onClick={() => PlayClickHandler()}
         >
           <Image
@@ -81,11 +86,17 @@ export default function PlayerComponent({
           )}
 
           {type === 'youtube' && (
-            <iframe
-              loading="lazy"
-              src={videoSrcUrl}
-              className="w-full h-full"
-            ></iframe>
+            <div className="relative w-full h-full">
+              <YouTubePlayer
+                readyCallback={onYoutubePlayerReady}
+                videoId="nlsTg4l_3zE"
+              />
+              {isLoading && (
+                <div className="absolute inset-0 h-full w-full bg-black flex items-center justify-center">
+                  <div className={styles.loader}></div>
+                </div>
+              )}
+            </div>
           )}
         </>
       )}
