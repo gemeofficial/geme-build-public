@@ -6,12 +6,26 @@ import { ScrollablePdpTabsWithAnchorOffset } from '../../../components/scrollabl
 
 import { FC, useMemo } from 'react'
 import { ILinkComponent } from '../../../contexts/link-context'
-import { IReviewsSectionConfig, ReviewsSection } from 'ui'
+import {
+  IInlinePalyerType,
+  InlinePlayer,
+  IReviewsSectionConfig,
+  ReviewsSection,
+} from 'ui'
 
 interface IPdpIntroProps {
   ReviewsComponent: FC<{}>
   PrefetchLink?: ILinkComponent
   reviewsSectionConfig: IReviewsSectionConfig
+}
+
+const inlinePlayerProps: IInlinePalyerType = {
+  title: 'Sehen heißt',
+  description:
+    'Überzeugen Sie sich selbst von der unglaublichen Geschwindigkeit! Dieses unbearbeitete 7-Stunden-Video zeigt, wie schnell unsere Maschine arbeitet. Seien Sie Zeuge des Abbaus von fast 2 kg Lebensmittelverschwendung – eine Leistung, die sich keiner unserer Wettbewerber öffentlich zu zeigen traut. Wir glauben, dass Kunden Transparenz verdienen, auch wenn es nicht schön anzusehen und langweilig ist.',
+  type: 'youtube',
+  videoSrcUrlOrVidioId: 'asNRoqkC_BA',
+  mixpanelFrom: 'Product page inline player',
 }
 
 function PdpIntroDe({
@@ -44,7 +58,12 @@ function PdpIntroDe({
               <span className="hidden lg:inline">Benutzer </span>Geschichten
             </>
           ),
-          tabPanel: <UserStory />,
+          tabPanel: (
+            <>
+              <UserStory />
+              <InlinePlayer {...inlinePlayerProps} />
+            </>
+          ),
         },
         {
           id: 5,

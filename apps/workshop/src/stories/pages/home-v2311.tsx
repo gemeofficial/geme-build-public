@@ -51,22 +51,12 @@ const heroSection1Props: IHeroSection1Props = {
   linkText: 'Shop Now',
   linkUrl: '/product/geme',
   videoProps: {
-    sources: [
-      // for pc
-      {
-        minWidth: 1280,
-        src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/geme-bio-home-background-video-no-sound-480p.mp4',
-        playbackId: '4xlpgl6PcY6d8N3H5FowWDdP01kCupf3Pn8A101zaCnFo',
-        posterUrl: '/assets/images/home-v2311/cover-v3.jpg',
-      },
-      // for mobile/tablet
-      {
-        minWidth: 0,
-        src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/geme-bio-home-background-video-no-sound-480p.mp4',
-        playbackId: '4xlpgl6PcY6d8N3H5FowWDdP01kCupf3Pn8A101zaCnFo',
-      },
-    ],
+    src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    posterUrl: '/assets/images/home-v2311/hero-blurred.webp',
   },
+  fullScreenVideoUrl: 'https://www.youtube.com/embed/ROJYZBp0jcM',
+  heroImageUrlPc: '/assets/images/home-v2311/cover-v3.jpg',
+  heroImageUrlMobile: '/assets/images/home-v2311/cover-v3-mobile.jpg',
 }
 
 const contentSection1Props: IContentSection1Props = {
