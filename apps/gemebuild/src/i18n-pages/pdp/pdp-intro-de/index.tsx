@@ -76,10 +76,16 @@ function PdpIntroDe({
                     Was echte Nutzer sagen
                   </h2>
                   <p className="v2311-font-body text-gray-600 text-center mt-4">
-                    Online-Bewertungen sind oft gekauft, ignorieren Sie sie
-                    lieber. Hören Sie stattdessen auf normale Leute wie Sie, die
-                    uns ihre ehrlichen Erfahrungen mitteilen, auch wenn sie
-                    keine Online-Bewertungen schreiben.
+                    Sie könnten sich Sorgen über die begrenzte Anzahl von
+                    Bewertungen in den sozialen Medien machen. Es ist jedoch
+                    wichtig zu beachten, dass ein erheblicher Teil der
+                    Online-Bewertungen bezahlte Werbung ist. Die wahren
+                    Verbraucher sind die stille Mehrheit. Anstatt sich nur auf
+                    diese Bewertungen zu verlassen, sollten Sie den Stimmen von
+                    normalen Verbrauchern wie Ihnen selbst Gehör schenken. Sie
+                    sind zwar online vielleicht nicht so lautstark, aber sie
+                    geben wahrscheinlich eher echte und unvoreingenommene
+                    Rückmeldungen.
                   </p>
                 </div>
                 <ReviewsSection
