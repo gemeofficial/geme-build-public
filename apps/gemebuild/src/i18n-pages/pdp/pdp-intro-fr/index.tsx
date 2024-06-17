@@ -20,8 +20,9 @@ interface IPdpIntroProps {
 }
 
 const inlinePlayerProps: IInlinePalyerType = {
-  title: 'User evaluatio',
-  description: 'Watch our video to learn more',
+  title: "Voir c'est croire",
+  description:
+    "Voyez par vous-même la vitesse incroyable! Cette vidéo brute de 7 heures montre à quelle vitesse notre machine fonctionne. Assistez à la décomposition de près de 2 kg de déchets alimentaires - un exploit qu'aucun de nos concurrents n'ose démontrer publiquement. Nous pensons que les clients méritent la transparence, même si ce n'est pas esthétique et fastidieux.",
   type: 'youtube',
   videoSrcUrlOrVidioId: 'asNRoqkC_BA',
   mixpanelFrom: 'Product page inline player',

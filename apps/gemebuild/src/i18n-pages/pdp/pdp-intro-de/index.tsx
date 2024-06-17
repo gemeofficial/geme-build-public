@@ -20,8 +20,9 @@ interface IPdpIntroProps {
 }
 
 const inlinePlayerProps: IInlinePalyerType = {
-  title: 'User evaluatio',
-  description: 'Watch our video to learn more',
+  title: 'Sehen heißt',
+  description:
+    'Überzeugen Sie sich selbst von der unglaublichen Geschwindigkeit! Dieses unbearbeitete 7-Stunden-Video zeigt, wie schnell unsere Maschine arbeitet. Seien Sie Zeuge des Abbaus von fast 2 kg Lebensmittelverschwendung – eine Leistung, die sich keiner unserer Wettbewerber öffentlich zu zeigen traut. Wir glauben, dass Kunden Transparenz verdienen, auch wenn es nicht schön anzusehen und langweilig ist.',
   type: 'youtube',
   videoSrcUrlOrVidioId: 'asNRoqkC_BA',
   mixpanelFrom: 'Product page inline player',
