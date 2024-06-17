@@ -57,11 +57,10 @@ function PdpIntroDe({
                     Was echte Nutzer sagen
                   </h2>
                   <p className="v2311-font-body text-gray-600 text-center mt-4">
-                    Verzichten Sie auf die falschen Lächeln und einstudierten
-                    Sätze bezahlter Influencer. Hören Sie stattdessen echten
-                    Menschen zu, die ihre ehrlichen Gedanken und Frustrationen
-                    teilen. Erhalten Sie die ungefilterte Wahrheit, sowohl das
-                    Gute als auch das Schlechte.
+                    Online-Bewertungen sind oft gekauft, ignorieren Sie sie
+                    lieber. Hören Sie stattdessen auf normale Leute wie Sie, die
+                    uns ihre ehrlichen Erfahrungen mitteilen, auch wenn sie
+                    keine Online-Bewertungen schreiben.
                   </p>
                 </div>
                 <ReviewsSection

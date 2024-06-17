@@ -57,10 +57,10 @@ function PdpIntroFr({
                     Ce que disent les vrais utilisateurs
                   </h2>
                   <p className="v2311-font-body text-gray-600 text-center mt-4">
-                    Oubliez les sourires faux et les discours préparés des
-                    influenceurs payés. Écoutez plutôt de vraies personnes
-                    partager leurs pensées et frustrations honnêtes. Obtenez la
-                    vérité non filtrée, à la fois le bon et le mauvais.
+                    Pas la peine de se fier aux avis en ligne, y en a plein des
+                    faux. Parlez plutôt à des gens comme vous qui nous font part
+                    de leurs impressions, même s'ils ne laissent pas d'avis en
+                    ligne.
                   </p>
                 </div>
                 <ReviewsSection

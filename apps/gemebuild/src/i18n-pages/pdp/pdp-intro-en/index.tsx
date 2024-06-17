@@ -57,10 +57,10 @@ function PdpIntroEn({
                     What Real Users Say
                   </h2>
                   <p className="v2311-font-body text-gray-600 text-center mt-4">
-                    Ditch the fake smiles and scripted lines of paid
-                    influencers. Instead, listen to real people share their
-                    honest thoughts and frustrations. Get the unfiltered truth,
-                    both the good and the bad.
+                    Don't worry about the lack of reviews online. Many of those
+                    are paid ads. Instead, listen to everyday folks like you who
+                    share their honest experiences with us, even if they don't
+                    leave reviews online.
                   </p>
                 </div>
                 <ReviewsSection
