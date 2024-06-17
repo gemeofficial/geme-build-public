@@ -11,7 +11,7 @@ import styles from './styles.module.css'
 export interface IPlayerComponentType {
   videoPosterUrl: string
   type: 'mp4' | 'youtube'
-  videoSrcUrl: string
+  videoSrcUrlOrVidioId: string
   mixpanelFrom?: string
   videoIsAutoPlay?: boolean
 }
@@ -19,16 +19,10 @@ export interface IPlayerComponentType {
 export default function PlayerComponent({
   videoPosterUrl,
   type,
-  videoSrcUrl,
+  videoSrcUrlOrVidioId,
   mixpanelFrom,
   videoIsAutoPlay,
-}: {
-  videoPosterUrl: string
-  type: 'mp4' | 'youtube'
-  videoSrcUrl: string
-  mixpanelFrom?: string
-  videoIsAutoPlay?: boolean
-}) {
+}: IPlayerComponentType) {
   const [isPlay, setIsPlay] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
 
@@ -80,7 +74,7 @@ export default function PlayerComponent({
               className="max-w-full w-full rounded-2xl overflow-hidden object-cover"
               poster={videoPosterUrl}
             >
-              <source src={videoSrcUrl} type="video/mp4" />
+              <source src={videoSrcUrlOrVidioId} type="video/mp4" />
               Your browser does not support HTML5 video.
             </video>
           )}
@@ -88,8 +82,9 @@ export default function PlayerComponent({
           {type === 'youtube' && (
             <div className="relative w-full h-full">
               <YouTubePlayer
+                videoIsAutoPlay={videoIsAutoPlay}
                 readyCallback={onYoutubePlayerReady}
-                videoId="nlsTg4l_3zE"
+                videoId={videoSrcUrlOrVidioId}
               />
               {isLoading && (
                 <div className="absolute inset-0 h-full w-full bg-black flex items-center justify-center">

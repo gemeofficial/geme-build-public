@@ -6,12 +6,21 @@ import { ScrollablePdpTabsWithAnchorOffset } from '../../../components/scrollabl
 
 import { FC, useMemo } from 'react'
 import { ILinkComponent } from '../../../contexts/link-context'
-import { IReviewsSectionConfig, ReviewsSection } from 'ui'
+import { IInlinePalyerType, InlinePlayer, IReviewsSectionConfig, ReviewsSection } from 'ui'
 
 interface IPdpIntroProps {
   ReviewsComponent: FC<{}>
   PrefetchLink?: ILinkComponent
   reviewsSectionConfig: IReviewsSectionConfig
+}
+
+const inlinePlayerProps: IInlinePalyerType = {
+  title: 'User evaluatio',
+  description: 'Watch our video to learn more',
+  type: 'youtube',
+  videoPosterUrl: '/assets/images/home-v2311/cover-v3.jpg',
+  videoSrcUrlOrVidioId: 'asNRoqkC_BA',
+  videoIsAutoPlay: true,
 }
 
 function PdpIntroFr({
@@ -44,7 +53,12 @@ function PdpIntroFr({
               <span className="hidden lg:inline">Utilisateur </span>Histoires
             </>
           ),
-          tabPanel: <UserStory />,
+          tabPanel: (
+            <>
+              <UserStory />
+              <InlinePlayer {...inlinePlayerProps} />
+            </>
+          ),
         },
         {
           id: 5,

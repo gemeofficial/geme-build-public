@@ -8,8 +8,14 @@ interface Props {
   videoId: string
   readyCallback?: () => void
   mixpanelFrom?: string
+  videoIsAutoPlay?: boolean
 }
-const YouTubePlayer = ({ videoId, readyCallback, mixpanelFrom }: Props) => {
+const YouTubePlayer = ({
+  videoId,
+  readyCallback,
+  mixpanelFrom,
+  videoIsAutoPlay,
+}: Props) => {
   const onEnd = () => {
     if (hasMixpanel()) {
       mixpanel.track('Watch Video End', {
@@ -62,7 +68,7 @@ const YouTubePlayer = ({ videoId, readyCallback, mixpanelFrom }: Props) => {
     width: '100%',
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
-      autoplay: 0,
+      autoplay: videoIsAutoPlay ? 1 : 0,
     },
   }
 

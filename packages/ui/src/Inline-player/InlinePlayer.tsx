@@ -1,6 +1,6 @@
 import PlayerComponent, { IPlayerComponentType } from './PlayerComponent'
 
-export interface IInlinePalyer extends IPlayerComponentType {
+export interface IInlinePalyerType extends IPlayerComponentType {
   title?: string
   description?: string
 }
@@ -10,15 +10,15 @@ export function InlinePlayer({
   description,
   type,
   videoPosterUrl,
-  videoSrcUrl,
+  videoSrcUrlOrVidioId,
   mixpanelFrom,
   videoIsAutoPlay,
-}: IInlinePalyer) {
+}: IInlinePalyerType) {
 
   const playerComponentProps = {
     type,
     videoPosterUrl,
-    videoSrcUrl,
+    videoSrcUrlOrVidioId,
     mixpanelFrom,
     videoIsAutoPlay,
   }

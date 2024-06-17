@@ -12,3 +12,10 @@
     transform: rotate(360deg);
   }
 }
+
+@media (min-width: 1024px) {
+  .loader {
+    width: 48px;
+    height: 48px;
+  }
+}

@@ -7,7 +7,7 @@ import { ScrollablePdpTabsWithAnchorOffset } from '../../../components/scrollabl
 import { FC, useMemo } from 'react'
 import { ILinkComponent } from '../../../contexts/link-context'
 import {
-  IInlinePalyer,
+  IInlinePalyerType,
   InlinePlayer,
   IReviewsSectionConfig,
   ReviewsSection,
@@ -19,12 +19,13 @@ interface IPdpIntroProps {
   reviewsSectionConfig: IReviewsSectionConfig
 }
 
-const inlinePlayerProps: IInlinePalyer = {
+const inlinePlayerProps: IInlinePalyerType = {
   title: 'User evaluatio',
   description: 'Watch our video to learn more',
   type: 'youtube',
   videoPosterUrl: '/assets/images/home-v2311/cover-v3.jpg',
-  videoSrcUrl: 'https://www.youtube.com/embed/nlsTg4l_3zE?si=EHWjPO41orbC75sk',
+  videoSrcUrlOrVidioId: 'asNRoqkC_BA',
+  videoIsAutoPlay: true,
 }
 
 function PdpIntroEn({
