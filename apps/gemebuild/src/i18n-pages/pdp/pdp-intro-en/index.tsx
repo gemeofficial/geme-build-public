@@ -26,6 +26,7 @@ const inlinePlayerProps: IInlinePalyerType = {
   videoPosterUrl: '/assets/images/home-v2311/cover-v3.jpg',
   videoSrcUrlOrVidioId: 'asNRoqkC_BA',
   videoIsAutoPlay: true,
+  mixpanelFrom: 'Product page inline player',
 }
 
 function PdpIntroEn({

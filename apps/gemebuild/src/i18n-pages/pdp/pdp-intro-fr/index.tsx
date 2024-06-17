@@ -6,7 +6,12 @@ import { ScrollablePdpTabsWithAnchorOffset } from '../../../components/scrollabl
 
 import { FC, useMemo } from 'react'
 import { ILinkComponent } from '../../../contexts/link-context'
-import { IInlinePalyerType, InlinePlayer, IReviewsSectionConfig, ReviewsSection } from 'ui'
+import {
+  IInlinePalyerType,
+  InlinePlayer,
+  IReviewsSectionConfig,
+  ReviewsSection,
+} from 'ui'
 
 interface IPdpIntroProps {
   ReviewsComponent: FC<{}>
@@ -21,6 +26,7 @@ const inlinePlayerProps: IInlinePalyerType = {
   videoPosterUrl: '/assets/images/home-v2311/cover-v3.jpg',
   videoSrcUrlOrVidioId: 'asNRoqkC_BA',
   videoIsAutoPlay: true,
+  mixpanelFrom: 'Product page inline player',
 }
 
 function PdpIntroFr({

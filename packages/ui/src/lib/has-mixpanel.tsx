@@ -1,11 +1,8 @@
-import mixpanel from 'mixpanel-browser'
-
 export function hasMixpanel() {
   let isHas = false
   if (
-    mixpanel.hasOwnProperty('token') &&
-    mixpanel.get_config() &&
-    Object.keys(mixpanel.get_config()).length > 0
+    process.env.NEXT_PUBLIC_MIXPANEL_TOKEN &&
+    process.env.NEXT_PUBLIC_MIXPANEL_TOKEN.length > 0
   ) {
     isHas = true
   }
