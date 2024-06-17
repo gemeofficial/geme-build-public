@@ -20,9 +20,9 @@ interface IPdpIntroProps {
 }
 
 const inlinePlayerProps: IInlinePalyerType = {
-  title: 'Seeing is Believing',
+  title: "Voir c'est croire",
   description:
-    "See the incredible speed for yourself! This unedited 7-hour video showcases how quickly our machine works. Witness the breakdown of nearly 2kg of food waste – a feat none of our competitors dare to demonstrate publicly. We believe customers deserve transparency, even if it's not good looking and tedious.",
+    "Voyez par vous-même la vitesse incroyable! Cette vidéo brute de 7 heures montre à quelle vitesse notre machine fonctionne. Assistez à la décomposition de près de 2 kg de déchets alimentaires - un exploit qu'aucun de nos concurrents n'ose démontrer publiquement. Nous pensons que les clients méritent la transparence, même si ce n'est pas esthétique et fastidieux.",
   type: 'youtube',
   videoPosterUrl: '/assets/images/home-v2311/cover-v3.jpg',
   videoSrcUrlOrVidioId: 'asNRoqkC_BA',
