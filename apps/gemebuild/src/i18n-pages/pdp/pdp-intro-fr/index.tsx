@@ -76,10 +76,9 @@ function PdpIntroFr({
                     Ce que disent les vrais utilisateurs
                   </h2>
                   <p className="v2311-font-body text-gray-600 text-center mt-4">
-                    Pas la peine de se fier aux avis en ligne, y en a plein des
-                    faux. Parlez plutôt à des gens comme vous qui nous font part
-                    de leurs impressions, même s'ils ne laissent pas d'avis en
-                    ligne.
+                    {
+                      "Vous vous inquiétez peut-être du manque d'avis sur les réseaux sociaux. Cependant, il est important de comprendre qu'une grande partie des avis en ligne sont des publicités payantes. Les vrais consommateurs sont la majorité silencieuse. Au lieu de vous fier uniquement à ces avis, pensez à écouter la voix des consommateurs ordinaires comme vous. Ils ne sont peut-être pas aussi bavards en ligne, mais ils sont plus susceptibles de fournir des commentaires authentiques et impartiaux."
+                    }
                   </p>
                 </div>
                 <ReviewsSection
