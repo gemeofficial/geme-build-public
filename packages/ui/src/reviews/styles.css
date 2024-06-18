@@ -31,6 +31,7 @@
 
 .reviewsSwiper > .swiper-wrapper {
   @apply !py-24 !px-8;
+  padding-top: 3rem !important;
 }
 
 @media (min-width: 1280px) {
