@@ -103,7 +103,7 @@ const returnPolicyCurrentProps: IReturnPolicyCurrentProps = {
       hide: false,
       svgSrc: <Svg30Days></Svg30Days>,
       description: `
-        <p class="mb-5">Enjoy 30 days of happiness with GEME at home! If you're not happy, return it within 30 days. We'll take care of the rest and cover the postage.</p>
+        <p class="mb-5">Enjoy 30 days of happiness with GEME at home! If you're not happy, return it within 30 days(since item delivered). We'll take care of the rest and cover the postage.</p>
         <p class="mb-5">If you haven't used GEME-Kobold, get a full refund, no questions asked!</p>
         <p class="mb-5">Used it? No problem! Return it, we still cover the shipping fee. Only a mere $70 will be deducted from the original payment for a thorough cleaning and replenish.</p>
         <p class="mb-5">Just a friendly tip: before returning the unit, make sure to clear out any by-products, used microorganisms, or food residue. Take photos before and after packing. This 2 simple steps ensures a smooth return process, preventing any logistical hiccups.</p>
