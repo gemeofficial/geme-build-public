@@ -1,6 +1,6 @@
 const data = {
   title: 'Our Milestones',
-  desc: 'Our development process is short, but our pace is fast',
+  desc: 'Driven by passion and a shared commitment to excellence, we move swiftly through our development process.',
   progressList: [
     // {
     //   progressBarTitle: 'Dec 2021',
