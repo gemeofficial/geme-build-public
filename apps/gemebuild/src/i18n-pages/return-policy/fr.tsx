@@ -107,6 +107,7 @@ const returnPolicyCurrentProps: IReturnPolicyCurrentProps = {
         <p class="mb-5">Si vous n'avez pas utilisé le GEME-Kobold, vous obtiendrez un remboursement complet, sans questions.</p>
         <p class="mb-5">Vous l'avez utilisé ? Aucun problème ! Renvoyez-le, nous prendrons toujours en charge les frais d'expédition. Une somme de 70 $ sera déduite du paiement initial pour couvrir les coûts de nettoyage et de réapprovisionnement.</p>
         <p class="mb-5">Juste un conseil amical : avant de retourner l'appareil, assurez-vous d'éliminer tous les sous-produits, micro-organismes utilisés ou résidus alimentaires. Prenez des photos avant et après l'emballage. Ces 2 étapes simples garantissent un processus de retour fluide, évitant tout problème logistique.</p>
+        <p class="mb-5">GEME Kobold n'accepte que les achats individuels des utilisateurs d'équipements existants. Pour votre sécurité, une fois le Kobold livré, les retours et les remboursements ne sont pas acceptés.</p>
         <p class="mb-5">Votre satisfaction est notre priorité et nous souhaitons que cet essai soit une expérience agréable pour vous !</p>
       `,
     },
