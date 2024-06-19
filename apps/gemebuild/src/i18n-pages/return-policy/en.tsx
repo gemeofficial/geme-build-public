@@ -107,6 +107,7 @@ const returnPolicyCurrentProps: IReturnPolicyCurrentProps = {
         <p class="mb-5">If you haven't used GEME-Kobold, get a full refund, no questions asked!</p>
         <p class="mb-5">Used it? No problem! Return it, we still cover the shipping fee. Only a mere $70 will be deducted from the original payment for a thorough cleaning and replenish.</p>
         <p class="mb-5">Just a friendly tip: before returning the unit, make sure to clear out any by-products, used microorganisms, or food residue. Take photos before and after packing. This 2 simple steps ensures a smooth return process, preventing any logistical hiccups.</p>
+        <p class="mb-5">Kobold only accepts individual purchases from existing equipment users. For your safety, once the Kobold has been delivered, returns and refunds are not accepted.</p>
         <p class="mb-5">Your satisfaction is our priority, and we want this trial to be a delightful experience for you!</p>
       `,
     },
