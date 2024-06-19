@@ -9,16 +9,26 @@ const gemeSpecsProps: IGemeSpecsProps = {
   specs: [
     {
       id: 1,
+      name: 'Volume',
+      description: '19L',
+    },
+    {
+      id: 2,
+      name: 'Capacité',
+      description: '5kg/jour',
+    },
+    {
+      id: 3,
       name: 'Taille',
       description: 'L320*P455*H665mm (18" x 12,6" x 26,2")',
     },
     {
-      id: 2,
+      id: 4,
       name: 'Poids',
       description: '19.5kg',
     },
     {
-      id: 3,
+      id: 5,
       name: 'Pouvoir',
       description: (
         <>
@@ -28,22 +38,18 @@ const gemeSpecsProps: IGemeSpecsProps = {
       ),
     },
     {
-      id: 4,
+      id: 6,
       name: 'Décibel',
       description: '≈40db (23db-55db)',
     },
+
     {
-      id: 5,
-      name: 'Capacité',
-      description: '5kg/jour',
-    },
-    {
-      id: 6,
+      id: 7,
       name: 'Certifications',
       description: 'CE/FCC/ISO9001/ISO14001/ISO45001',
     },
     {
-      id: 7,
+      id: 8,
       name: 'Fonction',
       description:
         'Biocompostage entièrement automatique à action rapide ; Sûr et économe en énergie ; Désodorisation automatique ; Déshumidification automatique',
