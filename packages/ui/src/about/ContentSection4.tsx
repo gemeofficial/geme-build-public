@@ -49,7 +49,7 @@ const data = {
     {
       progressBarTitle: 'Sep/Oct 2024',
       title: 'GEME II',
-      desc: 'More function and less cost with smaller size.',
+      desc: 'Smarter, more convenient, and more affordable.',
     },
     // {
     //   progressBarTitle: '2025',
@@ -59,7 +59,7 @@ const data = {
     {
       progressBarTitle: '2026',
       title: 'GEME Networking',
-      desc: 'Eco-system connected individuals, organic farm, waste stations and more.',
+      desc: 'Connecting communities, farms, and waste solutions for sustainability.',
     },
   ],
 }
