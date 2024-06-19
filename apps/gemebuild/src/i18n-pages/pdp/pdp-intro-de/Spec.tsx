@@ -20,8 +20,14 @@ const gemeSpecsProps: IGemeSpecsProps = {
     {
       id: 3,
       name: 'Leistung',
-      description: 'AC110V-60Hz/220V-50Hz',
+      description: (
+        <>
+          <p>AC110V-60Hz (Modell G601N-2K für Nordamerika)</p>
+          <p>AC220V-50Hz (Modell G601U-2K für Europa)</p>
+        </>
+      ),
     },
+
     {
       id: 4,
       name: 'Dezibel',

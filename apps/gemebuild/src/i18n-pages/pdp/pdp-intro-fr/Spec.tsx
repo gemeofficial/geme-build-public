@@ -20,7 +20,12 @@ const gemeSpecsProps: IGemeSpecsProps = {
     {
       id: 3,
       name: 'Pouvoir',
-      description: 'AC110V-60Hz/220V-50Hz',
+      description: (
+        <>
+          <p>CA 110 V - 60 Hz (Modèle G601N-2K pour l'Amérique du Nord</p>
+          <p>CA 220 V - 50 Hz (Modèle G601U-2K pour l'Europe</p>
+        </>
+      ),
     },
     {
       id: 4,

@@ -28,7 +28,12 @@ export const En: Story = {
       {
         id: 3,
         name: 'Power',
-        description: 'AC110V-60Hz/220V-50Hz',
+        description: (
+          <>
+            <p>AC110V-60Hz(Model G601N-2K for North America)</p>
+            <p>AC220V-50Hz(Model G601U-2K for Europe)</p>
+          </>
+        ),
       },
       {
         id: 4,
