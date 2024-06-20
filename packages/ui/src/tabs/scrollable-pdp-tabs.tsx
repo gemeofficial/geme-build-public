@@ -3,6 +3,7 @@
 import classNames from '../lib/classNames'
 import type { ReactNode } from 'react'
 import { Link, Element } from 'react-scroll'
+import { getRootHeaderInfo } from '../index'
 
 interface IScrollablePdpTabsProps {
   anchorOffset?: number
@@ -58,9 +59,15 @@ const scrollablePdpTabsProps: IScrollablePdpTabsProps = {
 }
 
 function ScrollablePdpTabs({ tabs, anchorOffset }: IScrollablePdpTabsProps) {
+  const { rootHeaderHeight } = getRootHeaderInfo()
+
   return (
     <>
-      <div className="bg-[#047857]">
+      <div
+        id="product-tabs-container"
+        style={{ top: `${rootHeaderHeight}px` }}
+        className="bg-[#047857] sticky z-50"
+      >
         <ul className="overflow-auto v2311-font-h3 md:v2311-font-link-selected xl:v2311-font-body text-white py-2 px-1 md:py-6 md:px-8 flex flex-row space-x-4 md:space-x-6 xl:space-x-12 xl:max-w-7xl xl:mx-auto">
           {tabs.map((tab) => (
             <li key={tab.id}>
