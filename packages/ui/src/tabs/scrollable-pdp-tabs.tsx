@@ -1,9 +1,9 @@
 'use client'
 
 import classNames from '../lib/classNames'
-import type { ReactNode } from 'react'
+import { type ReactNode } from 'react'
 import { Link, Element } from 'react-scroll'
-import { getRootHeaderInfo } from '../index'
+import { useGetRootHeaderInfo } from '../index'
 
 interface IScrollablePdpTabsProps {
   anchorOffset?: number
@@ -59,8 +59,7 @@ const scrollablePdpTabsProps: IScrollablePdpTabsProps = {
 }
 
 function ScrollablePdpTabs({ tabs, anchorOffset }: IScrollablePdpTabsProps) {
-  const { rootHeaderHeight } = getRootHeaderInfo()
-
+  const { rootHeaderHeight } = useGetRootHeaderInfo()
   return (
     <>
       <div

@@ -1,3 +1,4 @@
 export * from './classNames'
-export * from './get-dom-info'
+export * from './use-get-dom-info-hooks'
+export * from './use-get-root-header-info'
 export * from './has-mixpanel'

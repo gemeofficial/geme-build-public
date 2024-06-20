@@ -3,7 +3,7 @@
 import { useState, useCallback, useRef, forwardRef } from 'react'
 import { ScrollTrigger, Tween } from 'react-gsap'
 import { OxygenCycle, IOxygenCycleProps } from './oxygen-cycle'
-import { getRootHeaderInfo } from '../index'
+import { useGetRootHeaderInfo } from '../index'
 
 const ForwardedRefOxygenCycle = forwardRef(OxygenCycle)
 
@@ -22,7 +22,7 @@ function ScrollTriggeredAnimatedOxygenCycle(props: IOxygenCycleProps) {
     <ScrollTrigger
       trigger={containerRef.current}
       start={() => {
-        const { rootHeaderHeight } = getRootHeaderInfo()
+        const { rootHeaderHeight } = useGetRootHeaderInfo()
 
         const topOffset = rootHeaderHeight > 0 ? rootHeaderHeight + 100 : '12%'
 
@@ -53,7 +53,6 @@ function ScrollTriggeredAnimatedOxygenCycle(props: IOxygenCycleProps) {
       //   fontWeight: 'bold',
       //   indent: 20,
       // }}
-      
     >
       <Tween>
         <ForwardedRefOxygenCycle
