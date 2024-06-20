@@ -54,7 +54,7 @@ function ScrollTriggeredAnimatedOxygenCycle(props: IOxygenCycleProps) {
 
         // Mobile-适配部分老款分辨率低的机型 贴合标题位置滚动
         if (window.innerHeight <= 680 && rootHeaderHeight > 0) {
-          return `top top+=${rootHeaderHeight}`
+          return `top top+=${rootHeaderHeight + 15}`
         }
 
         return `top top+=${defaultOffset}`
