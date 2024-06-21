@@ -24,14 +24,11 @@ function ScrollTriggeredAnimatedOxygenCycle(props: IOxygenCycleProps) {
       trigger={containerRef.current}
       start={() => {
         // 因为这里是一个回调函数，存在闭包现象，无法获取到Hooks状态的最新值。所以只能在这里手动获取
-        // const { elHeight: productTabsHeight } = getDomInfo(
-        //   '#product-tabs-container',
-        // )
         const { elHeight: rootHeaderHeight } = getDomInfo('#root-header')
 
-        // 默认偏移量 如没有header 则12% 如在bio中有header 则偏移量为header高度 + 吸顶tab高度 + 50px
+        // 默认偏移量 如没有header 则12% 如在bio中有header 则偏移量为header高度 + 100px
         const defaultOffset =
-          rootHeaderHeight > 0 ? rootHeaderHeight + 50 : '12%'
+          rootHeaderHeight > 0 ? rootHeaderHeight + 100 : '12%'
 
         // 80是圆圈标题的paddingTop 48是title的高度 64是圆圈的marginTop
         const scrollStartOffsetTop = 80 - 48 - 64
@@ -75,13 +72,13 @@ function ScrollTriggeredAnimatedOxygenCycle(props: IOxygenCycleProps) {
       invalidateOnRefresh={true}
       fastScrollEnd={2000}
       // markers：在调试滚动时  可打开此属性
-      markers={{
-        startColor: 'green',
-        endColor: 'red',
-        fontSize: '18px',
-        fontWeight: 'bold',
-        indent: 20,
-      }}
+      // markers={{
+      //   startColor: 'green',
+      //   endColor: 'red',
+      //   fontSize: '18px',
+      //   fontWeight: 'bold',
+      //   indent: 20,
+      // }}
     >
       <Tween>
         <ForwardedRefOxygenCycle

@@ -17,8 +17,7 @@ function ScrollablePdpTabsWithAnchorOffset(
   const { productTabsHeight } = useGetProductTabsInfo()
 
   // 偏移量 = header高度 + 吸顶tabs高度
-  // 为了观感体验，再向屏幕中间偏移100px（所以-100）
-  const anchorOffset = -(rootHeaderHeight + productTabsHeight + 50)
+  const anchorOffset = -(rootHeaderHeight + productTabsHeight)
 
   return <ScrollablePdpTabs {...props} anchorOffset={anchorOffset} />
 }
