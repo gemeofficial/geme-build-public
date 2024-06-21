@@ -2,6 +2,7 @@ import './styles.css'
 
 export { Button, type ButtonProps } from './button'
 export * from './fonts'
+export * from './lib'
 export * from './colors'
 export * from './content-sections'
 export * from './compost-steps'
