@@ -3,12 +3,14 @@
 import { useState, useCallback, useRef, forwardRef } from 'react'
 import { ScrollTrigger, Tween } from 'react-gsap'
 import { OxygenCycle, IOxygenCycleProps } from './oxygen-cycle'
+import { getDomInfo } from '../lib'
 
 const ForwardedRefOxygenCycle = forwardRef(OxygenCycle)
 
 function ScrollTriggeredAnimatedOxygenCycle(props: IOxygenCycleProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const [progress, setProgress] = useState(0)
+
   const onUpdate = useCallback(
     (self: { progress?: number }) => {
       const progress = self.progress || 0
@@ -21,10 +23,8 @@ function ScrollTriggeredAnimatedOxygenCycle(props: IOxygenCycleProps) {
     <ScrollTrigger
       trigger={containerRef.current}
       start={() => {
-        // 根据Header的高度动态计算起始滚动位置
-        const rootHeaderEl = document.querySelector('#root-header')
-        const rootHeaderHeight =
-          rootHeaderEl?.getBoundingClientRect().height || 0
+        // 因为这里是一个回调函数，存在闭包现象，无法获取到Hooks状态的最新值。所以只能在这里手动获取
+        const { elHeight: rootHeaderHeight } = getDomInfo('#root-header')
 
         // 默认偏移量 如没有header 则12% 如在bio中有header 则偏移量为header高度 + 100px
         const defaultOffset =

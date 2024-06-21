@@ -1,14 +1,11 @@
 'use client'
 
-import { ScrollablePdpTabs, useMediaQuery } from 'ui'
+import {
+  useGetProductTabsInfo,
+  useGetRootHeaderInfo,
+  ScrollablePdpTabs,
+} from 'ui'
 import type { IScrollablePdpTabsProps } from 'ui'
-
-function useAnchorOffset() {
-  // width >= 768px
-  const isMd = useMediaQuery('(min-width: 768px)')
-
-  return isMd ? -96 : -88
-}
 
 interface IScrollablePdpTabsWithAnchorOffsetProps
   extends Omit<IScrollablePdpTabsProps, 'anchorOffset'> {}
@@ -16,7 +13,11 @@ interface IScrollablePdpTabsWithAnchorOffsetProps
 function ScrollablePdpTabsWithAnchorOffset(
   props: IScrollablePdpTabsWithAnchorOffsetProps,
 ) {
-  const anchorOffset = useAnchorOffset()
+  const { rootHeaderHeight } = useGetRootHeaderInfo()
+  const { productTabsHeight } = useGetProductTabsInfo()
+
+  // 偏移量 = header高度 + 吸顶tabs高度
+  const anchorOffset = -(rootHeaderHeight + productTabsHeight)
 
   return <ScrollablePdpTabs {...props} anchorOffset={anchorOffset} />
 }
