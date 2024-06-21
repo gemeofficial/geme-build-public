@@ -1,7 +1,4 @@
-import {
-  TermsAndConditions,
-  ITermsAndConditionsProps,
-} from './components'
+import { TermsAndConditions, ITermsAndConditionsProps } from './components'
 import { SiteHelpTabs, ISiteHelpTabsProps } from '../../components/tabs'
 
 // 静态页面的navBar内容 配置文件 En版
@@ -269,7 +266,7 @@ const termsAndConditionsProps: ITermsAndConditionsProps = {
         </svg>
       ),
       description: `
-            <p class="md-5">Belgian law is applicable and the courts of the Wallonia Region have jurisdiction.</p>
+            <p class="md-5">Belgian law is applicable and the courts of the Brussels Region have jurisdiction.</p>
           `,
     },
     {

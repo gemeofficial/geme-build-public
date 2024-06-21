@@ -71,15 +71,14 @@ function PdpIntroEn({
           tabPanel: (
             <>
               <div className="bg-white py-10">
-                <div className="text-center lg:mt-10">
+                <div className="text-center lg:mt-10 px-4 mx-auto md:px-8 xl:max-w-7xl">
                   <h2 className="v2311-font-h1 text-v2311-primary text-center ">
                     What Real Users Say
                   </h2>
                   <p className="v2311-font-body text-gray-600 text-center mt-4">
-                    Do not worry about the lack of reviews online. Many of those
-                    are paid ads. Instead, listen to everyday folks like you who
-                    share their honest experiences with us, even if they did not
-                    leave reviews online.
+                    {
+                      "Don't pay too much attention to influencers reviews, many of which are paid advertisements. Instead, listen to everyday people like you who share their honest experiences with us, even if they haven't left reviews online."
+                    }
                   </p>
                 </div>
                 <ReviewsSection

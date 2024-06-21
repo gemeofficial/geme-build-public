@@ -9,36 +9,46 @@ const gemeSpecsProps: IGemeSpecsProps = {
   specs: [
     {
       id: 1,
-      name: 'Größe',
-      description: 'B320*T455*H665mm (18" x 12.6" x 26.2")',
+      name: 'Volumen',
+      description: '19L',
     },
     {
       id: 2,
-      name: 'Gewicht',
-      description: '19.5kg',
-    },
-    {
-      id: 3,
-      name: 'Leistung',
-      description: 'AC110V-60Hz/220V-50Hz',
-    },
-    {
-      id: 4,
-      name: 'Dezibel',
-      description: '≈40db (23db-55db)',
-    },
-    {
-      id: 5,
       name: 'Kapazität',
       description: '5kg/Tag',
     },
     {
+      id: 3,
+      name: 'Größe',
+      description: 'B320*T455*H665mm (18" x 12.6" x 26.2")',
+    },
+    {
+      id: 4,
+      name: 'Gewicht',
+      description: '19.5kg',
+    },
+    {
+      id: 5,
+      name: 'Leistung',
+      description: (
+        <>
+          <p>AC110V-60Hz (Modell G601N-2K für Nordamerika)</p>
+          <p>AC220V-50Hz (Modell G601U-2K für Europa)</p>
+        </>
+      ),
+    },
+    {
       id: 6,
+      name: 'Dezibel',
+      description: '≈40db (23db-55db)',
+    },
+    {
+      id: 7,
       name: 'Zertifizierungen',
       description: 'CE/FCC/ISO9001/ISO14001/ISO45001',
     },
     {
-      id: 7,
+      id: 8,
       name: 'Funktion',
       description:
         'Vollautomatische, schnell wirkende Bio-Kompostierung; Sicher und energiesparend; Automatische Geruchsbeseitigung; Automatische Entfeuchtung',

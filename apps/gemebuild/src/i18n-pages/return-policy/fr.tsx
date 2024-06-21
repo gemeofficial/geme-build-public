@@ -73,14 +73,14 @@ const returnPolicyCurrentProps: IReturnPolicyCurrentProps = {
         <tr>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">Amazone</td>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">
-            <a href="https://www.amazon.com/dp/B0BV31KTCN" target="_blank">Lien</a>
+            <a href="https://www.amazon.com/dp/B0BV31KTCN" target="_blank">gemecomposter</a>
           </td>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">2023-02-04</td>
         </tr>
         <tr>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">eBay</td>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">
-            <a href="https://www.ebay.com/usr/gemeofficial" target="_blank">Lien</a>
+            <a href="https://www.ebay.com/usr/gemeofficial" target="_blank">gemeofficial</a>
           </td>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">2023-09-05</td>
         </tr>
@@ -107,6 +107,7 @@ const returnPolicyCurrentProps: IReturnPolicyCurrentProps = {
         <p class="mb-5">Si vous n'avez pas utilisé le GEME-Kobold, vous obtiendrez un remboursement complet, sans questions.</p>
         <p class="mb-5">Vous l'avez utilisé ? Aucun problème ! Renvoyez-le, nous prendrons toujours en charge les frais d'expédition. Une somme de 70 $ sera déduite du paiement initial pour couvrir les coûts de nettoyage et de réapprovisionnement.</p>
         <p class="mb-5">Juste un conseil amical : avant de retourner l'appareil, assurez-vous d'éliminer tous les sous-produits, micro-organismes utilisés ou résidus alimentaires. Prenez des photos avant et après l'emballage. Ces 2 étapes simples garantissent un processus de retour fluide, évitant tout problème logistique.</p>
+        <p class="mb-5">GEME Kobold n'accepte que les achats individuels des utilisateurs d'équipements existants. Pour votre sécurité, une fois le Kobold livré, les retours et les remboursements ne sont pas acceptés.</p>
         <p class="mb-5">Votre satisfaction est notre priorité et nous souhaitons que cet essai soit une expérience agréable pour vous !</p>
       `,
     },

@@ -1,10 +1,10 @@
-import Image from 'next/image';
+import Image from 'next/image'
 import { AlternativeSideBySideWithImages } from '../feature-sections'
 import { ReactNode, useMemo } from 'react'
 
 interface IGemeSpecsProps {
   title?: ReactNode
-  specs: { id: number; name: string; description: string }[]
+  specs: { id: number; name: string; description: ReactNode }[]
 }
 
 const gemeSpecsExampleProps: IGemeSpecsProps = {
@@ -13,7 +13,7 @@ const gemeSpecsExampleProps: IGemeSpecsProps = {
     {
       id: 1,
       name: 'Size',
-      description: 'W320*D455*H665mm  (18" x 12.6" x 26.2")',
+      description: 'W320*D455*H665mm (18" x 12.6" x 26.2")',
     },
     {
       id: 2,
@@ -23,7 +23,12 @@ const gemeSpecsExampleProps: IGemeSpecsProps = {
     {
       id: 3,
       name: 'Power',
-      description: 'AC110V-60Hz/220V-50Hz',
+      description: (
+        <>
+          <p>AC110V-60Hz(Model G601N-2K for North America)</p>
+          <p>AC220V-50Hz(Model G601U-2K for Europe)</p>
+        </>
+      ),
     },
     {
       id: 4,

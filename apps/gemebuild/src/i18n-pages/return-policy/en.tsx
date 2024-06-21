@@ -73,14 +73,14 @@ const returnPolicyCurrentProps: IReturnPolicyCurrentProps = {
         <tr>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">Amazon</td>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">
-            <a href="https://www.amazon.com/dp/B0BV31KTCN" target="_blank">Link</a>
+            <a href="https://www.amazon.com/dp/B0BV31KTCN" target="_blank">gemecomposter</a>
           </td>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">2023-02-04</td>
         </tr>
         <tr>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">eBay</td>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">
-            <a href="https://www.ebay.com/usr/gemeofficial" target="_blank">Link</a>
+            <a href="https://www.ebay.com/usr/gemeofficial" target="_blank">gemeofficial</a>
           </td>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">2023-09-05</td>
         </tr>
@@ -103,10 +103,11 @@ const returnPolicyCurrentProps: IReturnPolicyCurrentProps = {
       hide: false,
       svgSrc: <Svg30Days></Svg30Days>,
       description: `
-        <p class="mb-5">Enjoy 30 days of happiness with GEME at home! If you're not happy, return it within 30 days. We'll take care of the rest and cover the postage.</p>
+        <p class="mb-5">Enjoy 30 days of happiness with GEME at home! If you're not happy, return it within 30 days(since item delivered). We'll take care of the rest and cover the postage.</p>
         <p class="mb-5">If you haven't used GEME-Kobold, get a full refund, no questions asked!</p>
         <p class="mb-5">Used it? No problem! Return it, we still cover the shipping fee. Only a mere $70 will be deducted from the original payment for a thorough cleaning and replenish.</p>
         <p class="mb-5">Just a friendly tip: before returning the unit, make sure to clear out any by-products, used microorganisms, or food residue. Take photos before and after packing. This 2 simple steps ensures a smooth return process, preventing any logistical hiccups.</p>
+        <p class="mb-5">GEME Kobold only accepts individual purchases from existing equipment users. For your safety, once the Kobold has been delivered, returns and refunds are not accepted.</p>
         <p class="mb-5">Your satisfaction is our priority, and we want this trial to be a delightful experience for you!</p>
       `,
     },

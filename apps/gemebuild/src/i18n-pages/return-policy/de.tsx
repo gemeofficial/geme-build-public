@@ -73,14 +73,14 @@ const returnPolicyCurrentProps: IReturnPolicyCurrentProps = {
         <tr>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">Amazon</td>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">
-            <a href="https://www.amazon.com/dp/B0BV31KTCN" target="_blank">Link</a>
+            <a href="https://www.amazon.com/dp/B0BV31KTCN" target="_blank">gemecomposter</a>
           </td>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">2023-02-04</td>
         </tr>
         <tr>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">eBay</td>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">
-            <a href="https://www.ebay.com/usr/gemeofficial" target="_blank">Link</a>
+            <a href="https://www.ebay.com/usr/gemeofficial" target="_blank">gemeofficial</a>
           </td>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">2023-09-05</td>
         </tr>
@@ -107,6 +107,7 @@ const returnPolicyCurrentProps: IReturnPolicyCurrentProps = {
         <p class="mb-5">Wenn Sie GEME-Kobold nicht benutzt haben, erhalten Sie eine volle Rückerstattung, ohne Fragen zu stellen!</p>
         <p class="mb-5">Benutzt? Kein Problem! Schicken Sie es zurück, wir übernehmen die Versandgebühren. Nur eine bloße $ 70 wird von der ursprünglichen Zahlung für eine gründliche Reinigung und wieder aufzufüllen abgezogen werden.</p>
         <p class="mb-5">Nur ein freundlicher Tipp: Bevor Sie das Gerät zurückgeben, sollten Sie sicherstellen, dass alle Nebenprodukte, verbrauchten Mikroorganismen oder Lebensmittelreste entfernt werden. Machen Sie Fotos vor und nach dem Verpacken. Diese 2 einfachen Schritte gewährleisten einen reibungslosen Rückgabeprozess und verhindern logistische Probleme.</p>
+        <p class="mb-5">GEME Kobold akzeptiert nur Einzelkäufe von bestehenden Gerätebenutzern. Zu Ihrer Sicherheit werden nach der Lieferung des Kobold keine Rücksendungen und Rückerstattungen akzeptiert.</p>
         <p class="mb-5">Ihre Zufriedenheit ist unsere Priorität, und wir möchten, dass diese Studie für Sie zu einer angenehmen Erfahrung wird!</p>
       `,
     },
