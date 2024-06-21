@@ -71,7 +71,7 @@ function ScrollablePdpTabs({ tabs, anchorOffset }: IScrollablePdpTabsProps) {
           {tabs.map((tab) => (
             <li key={tab.id}>
               <Link
-                activeClass="bg-white text-[#047857] rounded-t-lg xl:rounded-lg !font-bold"
+                activeClass="bg-white text-[#047857] rounded-lg !font-bold"
                 spy={true}
                 smooth={true}
                 duration={500}

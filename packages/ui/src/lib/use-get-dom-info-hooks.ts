@@ -25,7 +25,6 @@ export function useGetProductTabsInfo() {
   useEffect(() => {
     const productTabsEl = document.querySelector('#product-tabs-container')
     const productTabsElHeight = productTabsEl?.getBoundingClientRect().height || 0
-
     setProductTabsHeight(productTabsElHeight)
     productTabsRef.current = productTabsEl
   }, [])
