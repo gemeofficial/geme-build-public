@@ -11,6 +11,7 @@ export * from './self-repair'
 export * from './industrial-equipments'
 export * from './industrial-equipments-id'
 export * from './manuals-download'
+export * from './about'
 
 // contexts
 export * from '../contexts/link-context'
