@@ -3,13 +3,15 @@
 import { useState, useCallback, useRef, forwardRef } from 'react'
 import { ScrollTrigger, Tween } from 'react-gsap'
 import { OxygenCycle, IOxygenCycleProps } from './oxygen-cycle'
-import { useGetRootHeaderInfo } from '../index'
+import { useGetRootHeaderInfo } from '../lib'
 
 const ForwardedRefOxygenCycle = forwardRef(OxygenCycle)
 
 function ScrollTriggeredAnimatedOxygenCycle(props: IOxygenCycleProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const [progress, setProgress] = useState(0)
+  const { rootHeaderHeight } = useGetRootHeaderInfo()
+
   const onUpdate = useCallback(
     (self: { progress?: number }) => {
       const progress = self.progress || 0
@@ -22,8 +24,6 @@ function ScrollTriggeredAnimatedOxygenCycle(props: IOxygenCycleProps) {
     <ScrollTrigger
       trigger={containerRef.current}
       start={() => {
-        const { rootHeaderHeight } = useGetRootHeaderInfo()
-
         const topOffset = rootHeaderHeight > 0 ? rootHeaderHeight + 100 : '12%'
 
         // 适配部分老款分辨率低的机型

@@ -1,7 +1,7 @@
 'use client'
 
 import {
-  // useGetProductTabsInfo,
+  useGetProductTabsInfo,
   useGetRootHeaderInfo,
   ScrollablePdpTabs,
 } from 'ui'
@@ -14,12 +14,11 @@ function ScrollablePdpTabsWithAnchorOffset(
   props: IScrollablePdpTabsWithAnchorOffsetProps,
 ) {
   const { rootHeaderHeight } = useGetRootHeaderInfo()
-  // const { productTabsHeight } = useGetProductTabsInfo()
+  const { productTabsHeight } = useGetProductTabsInfo()
 
   // 偏移量 = header高度 + 吸顶tabs高度
   // 为了观感体验，再向屏幕中间偏移100px（所以-100）
-  // const anchorOffset = -(rootHeaderHeight + productTabsHeight + 50)
-  const anchorOffset = -(rootHeaderHeight + 50)
+  const anchorOffset = -(rootHeaderHeight + productTabsHeight + 50)
 
   return <ScrollablePdpTabs {...props} anchorOffset={anchorOffset} />
 }
