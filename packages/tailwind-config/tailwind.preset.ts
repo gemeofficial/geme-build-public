@@ -24,7 +24,11 @@ const tailwindPreset: Config = {
             'light-green': '#D2E7DB',
             'dark-green': '#3B806F',
           },
-        },
+          text: {
+            gary: 'rgb(75, 85, 99)',
+            yellow: '#E5BE51'
+          }
+        }
       },
       maxWidth: {
         '8xl': '1920px',

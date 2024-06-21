@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { MTitle, Title } from '../index'
 
 const data = {
   mTitle: 'Our Mission',
@@ -34,32 +35,23 @@ const data = {
 
 export default function ContentSection1() {
   return (
-    <div className="mt-20 md:mt-24 lg:mt-12 3xl:mt-0 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
-      <div className="font-bold text-[#E5BE51] text-2xl sm:text-3xl mb-2">
-        {data.mTitle}
-      </div>
-      <div className="font-bold tracking-tight text-emerald-600 text-4xl sm:text-5xl xl:text-6xl lg:mr-[0%]">
-        {data.title}
-      </div>
-      <div className="lg:flex items-start justify-between">
+    <div className="mt-20 md:mt-0 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
+      <MTitle>{data.mTitle}</MTitle>
+      <Title>{data.title}</Title>
+      <div className="lg:flex items-start justify-between text-base">
         <div className="lg:w-[55%] lg:mr-[5%]">
           {data.descriptions.map((item) => (
-            <div
-              key={item}
-              className="mt-3 lg:mt-5 text-base text-gray-500 lg:text-xl "
-            >
+            <div key={item} className="mt-3 lg:mt-5  text-v2311-text-gary ">
               {item}
             </div>
           ))}
         </div>
 
-        <div className="lg:w-[40%] lg:pl-20 mt-10 lg:mt-5 flex flex-col items-start justify-between overflow-hidden space-y-10 lg:space-y-5">
+        <div className="lg:w-[40%] lg:pl-20 mt-10 lg:mt-5 flex flex-col items-start justify-between overflow-hidden space-y-4 lg:space-y-5">
           {data.points.map((item) => (
             <div key={item.title}>
-              <div className="text-3xl sm:text-5xl font-semibold">
-                {item.title}
-              </div>
-              <div className="text-gray-600 mt-4">{item.desc}</div>
+              <MTitle className="!text-emerald-600">{item.title}</MTitle>
+              <div className="text-v2311-text-gary mt-4">{item.desc}</div>
             </div>
           ))}
         </div>

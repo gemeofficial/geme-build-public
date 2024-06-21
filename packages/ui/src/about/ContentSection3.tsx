@@ -97,7 +97,7 @@ export default function ContentSection3() {
   return (
     <div className="bg-white mt-24 lg:mt-40 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
       <div className="mx-auto max-w-2xl lg:mx-0">
-        <h2 className="text-3xl font-bold tracking-tight text-[#E5BE51] sm:text-4xl">
+        <h2 className="text-3xl font-bold tracking-tight text-v2311-text-yellow sm:text-4xl">
           {data.title}
         </h2>
         <p className="text-gray-600 mt-2">{data.description}</p>
@@ -127,7 +127,7 @@ export default function ContentSection3() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
         <div className="max-w-2xl">
-          <h2 className="text-3xl font-bold tracking-tight text-[#E5BE51] sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-v2311-text-yellow sm:text-4xl">
             Our People
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -291,7 +291,7 @@ export default function ContentSection3() {
     <div className="mt-24 md:mt-40 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
       <div className="lg:flex items-start justify-between">
         <div className="lg:w-[55%] lg:mr-[5%]">
-          <div className="font-bold text-[#E5BE51] text-2xl sm:text-3xl mb-2">
+          <div className="font-bold text-v2311-text-yellow text-2xl sm:text-3xl mb-2">
             {data.title}
           </div>
           <div className="text-gray-600 mt-4 text-lg">{data.desc}</div>

@@ -1,16 +1,12 @@
+import { MTitle } from '../ui-components'
+
 const data = {
   title: 'Our Milestones',
   desc: 'Driven by passion and a shared commitment to excellence, we move swiftly through our development process.',
   progressList: [
-    // {
-    //   progressBarTitle: 'Dec 2021',
-    //   title: 'Core team initialized',
-    //   desc: 'Form the idea and start the GEME Composter project',
-    // },
     {
       progressBarTitle: 'July 2022',
       title: 'Kickstarter Campaign',
-      // desc: 'Got 100+ backers and almost all of them are fulfilled.',
       desc: (
         <div>
           Got{' '}
@@ -21,11 +17,6 @@ const data = {
         </div>
       ),
     },
-    // {
-    //   progressBarTitle: 'Feb 2023',
-    //   title: 'Fulfill Crowdfunding',
-    //   desc: <div>Fulfilled our backers at a 96% coverage rate.</div>,
-    // },
     {
       progressBarTitle: 'Mar 2023',
       title: 'Enter US Marketing',
@@ -36,11 +27,6 @@ const data = {
       title: 'Sale in Europe',
       desc: 'First batch machines landing in Europe, local warehouse setup.',
     },
-    // {
-    //   progressBarTitle: 'December 2023',
-    //   title: 'Kobold Manufacture',
-    //   desc: 'Setup large scale manufacture pipeline in factory.',
-    // },
     {
       progressBarTitle: 'Jan 2024',
       title: 'GEME I Model Upgrade',
@@ -51,11 +37,6 @@ const data = {
       title: 'GEME II',
       desc: 'Smarter, more convenient, and more affordable.',
     },
-    // {
-    //   progressBarTitle: '2025',
-    //   title: 'GEME Cat Litter',
-    //   desc: 'The out of box solution for cat poop, completely eliminate the smell.',
-    // },
     {
       progressBarTitle: '2026',
       title: 'GEME Networking',
@@ -66,11 +47,9 @@ const data = {
 
 export default function ContentSection4() {
   return (
-    <div className="mt-28 lg:mt-40 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
-      <div className="font-bold text-[#E5BE51] text-2xl sm:text-3xl mb-2">
-        {data.title}
-      </div>
-      <div className="text-gray-600 mt-2">{data.desc}</div>
+    <div className="mt-20 md:mt-28 lg:mt-40 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0 text-base text-v2311-text-gary">
+      <MTitle>{data.title}</MTitle>
+      <div className="mt-2">{data.desc}</div>
 
       <div className="lg:flex items-start lg:flex-wrap xl:flex-nowrap mt-8">
         {data.progressList.map((item) => (
@@ -82,10 +61,10 @@ export default function ContentSection4() {
               </div>
               <div className="hidden lg:block ml-5 mr-6 lg:mr-10 xl:mr-6 h-[1px] bg-gray-200 flex-1"></div>
             </div>
-            <div className="mt-3 lg:mt-6 font-bold text-lg">{item.title}</div>
-            <div className="mt-2 pr-6 lg:pr-10 xl:pr-6 text-[#4B5563] leading-6">
-              {item.desc}
+            <div className="mt-3 lg:mt-6 font-bold text-lg text-[#222]">
+              {item.title}
             </div>
+            <div className="mt-2 pr-6 lg:pr-10 xl:pr-6">{item.desc}</div>
           </div>
         ))}
       </div>

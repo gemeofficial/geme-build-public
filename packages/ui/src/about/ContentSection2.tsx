@@ -1,3 +1,5 @@
+import { MTitle } from '../ui-components'
+
 const data = {
   title: 'Our Values',
   desc: 'Go down the road less traveled, head to the bright north star, dream big and walk carefully.',
@@ -64,16 +66,14 @@ const data = {
 
 export default function ContentSection2() {
   return (
-    <div className="mt-10 lg:mt-0 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
-      <div className="font-bold text-[#E5BE51] text-2xl sm:text-3xl mb-2">
-        {data.title}
-      </div>
-      <div className="text-gray-600 mt-2">{data.desc}</div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 mt-4">
+    <div className="mt-10 lg:mt-12 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0 text-base text-v2311-text-gary">
+      <MTitle>{data.title}</MTitle>
+      <div className="mt-2">{data.desc}</div>
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-12 mt-4">
         {data.dataList.map((item) => (
           <div key={item.title}>
-            <div className="text-lg font-semibold">{item.title}</div>
-            <div className="text-gray-600 mt-2">{item.desc}</div>
+            <div className="text-lg font-bold text-[#222]">{item.title}</div>
+            <div className="mt-2">{item.desc}</div>
           </div>
         ))}
       </div>

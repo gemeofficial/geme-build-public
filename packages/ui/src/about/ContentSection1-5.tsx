@@ -1,8 +1,9 @@
 import Image from 'next/image'
+import { MTitle, Title } from '../ui-components'
 
 const data = {
-  title: 'Our People',
-  desc: 'Pioneering Minds, Passionate Hearts',
+  mTitle: 'Our People',
+  title: 'Pioneering Minds, Passionate Hearts',
   bodyTexts: [
     <div>
       <strong>Visionaries</strong>: Our visionary leaders set the direction,
@@ -33,16 +34,12 @@ const data = {
 
 export default function ContentSection15() {
   return (
-    <div className="mt-20 lg:mt-28 3xl:mt-32 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
-      <div className="lg:flex items-start justify-between">
+    <div className="mt-20 md:mt-28 3xl:mt-40 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
+      <div className="lg:flex items-start justify-between text-base text-v2311-text-gary">
         <div className="lg:w-[55%] lg:mr-[5%]">
-          <div className="font-bold text-[#E5BE51] text-2xl sm:text-3xl mb-2">
-            {data.title}
-          </div>
-          <div className="font-bold tracking-tight text-emerald-600 text-4xl sm:text-5xl xl:text-6xl">
-            {data.desc}
-          </div>
-          <div className="text-[#777] mt-4">
+          <MTitle>{data.mTitle}</MTitle>
+          <Title>{data.title}</Title>
+          <div className="mt-4">
             {data.bodyTexts.map((item, index) => (
               <div key={index} className="mt-2">
                 <div>{item}</div>
@@ -132,9 +129,9 @@ export default function ContentSection15() {
         </div>
 
         {/* > 1024 +  */}
-        <div className="hidden lg:flex justify-end space-x-8 overflow-hidden relative">
+        <div className="hidden lg:flex justify-end items-end space-x-8 overflow-hidden relative">
           <Image
-            className="w-[384px] h-[288px] object-cover rounded-xl -translate-x-24"
+            className="w-[384px] h-[288px] object-cover rounded-xl"
             src={data.imgSectionUrl1}
             width={384}
             height={288}
@@ -142,7 +139,7 @@ export default function ContentSection15() {
           />
 
           <Image
-            className="w-[600px] h-[400px] object-cover rounded-xl flex-shrink-0 -translate-x-24"
+            className="w-[600px] h-[400px] object-cover rounded-xl flex-shrink-0"
             src={data.imgSectionUrl2}
             width={600}
             height={400}
@@ -150,7 +147,7 @@ export default function ContentSection15() {
           />
 
           <Image
-            className="w-[384px] h-[288px] object-cover rounded-xl flex-shrink-0 -translate-x-24"
+            className="w-[384px] h-[288px] object-cover rounded-xl flex-shrink-0"
             src={data.imgSectionUrl3}
             width={384}
             height={288}

@@ -1,3 +1,5 @@
+import { MTitle } from '../ui-components'
+
 const data = {
   title: 'Partner with GEME',
   incentives: [
@@ -72,13 +74,11 @@ const data = {
 
 export default function ContentSection6() {
   return (
-    <div className="mt-28 lg:mt-40 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
+    <div className="mt-20 md:mt-28 lg:mt-40 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
       <div className="rounded-2xl bg-gray-50 px-6 py-16 sm:p-16">
         <div className="mx-auto max-w-xl lg:max-w-none">
           <div className="text-center">
-            <h2 className="text-2xl font-bold tracking-tight text-gray-800">
-              {data.title}
-            </h2>
+            <MTitle className="!text-[#222]">{data.title}</MTitle>
           </div>
           <div className="lg:mx-auto mt-12 grid max-w-sm grid-cols-1 gap-x-8 gap-y-10 sm:max-w-none lg:grid-cols-3">
             {data.incentives.map((incentive) => (
@@ -99,11 +99,11 @@ export default function ContentSection6() {
                       />
                     </div>
                   </div>
-                  <h3 className="text-center mt-3 lg:mt-6 text-sm font-medium ">
+                  <h3 className="text-center mt-3 lg:mt-6 font-bold ">
                     {incentive.name}
                   </h3>
                 </a>
-                <p className="text-left sm:max-w-[250px] lg:max-w-full mt-2 sm:mt-0 lg:mt-2 text-sm text-gray-500">
+                <p className="text-left sm:max-w-[250px] lg:max-w-full mt-2 sm:mt-0 lg:mt-2 text-base text-v2311-text-gary">
                   {incentive.description}
                 </p>
               </div>

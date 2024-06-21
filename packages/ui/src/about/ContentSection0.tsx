@@ -20,7 +20,7 @@ export default function ContentSection0() {
     <div className="mt-24 md:mt-0 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
       <div className="lg:flex items-start justify-between">
         <div className="lg:w-[55%] lg:mr-[5%]">
-          <div className="font-bold text-[#E5BE51] text-2xl sm:text-3xl mb-2">
+          <div className="font-bold text-v2311-text-yellow text-2xl sm:text-3xl mb-2">
             {data.title}
           </div>
           <div className="font-bold tracking-tight text-emerald-600 text-4xl sm:text-5xl xl:text-6xl">
