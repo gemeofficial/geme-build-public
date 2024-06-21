@@ -72,7 +72,7 @@ const data = {
   ],
 }
 
-export default function ContentSection6() {
+export function AboutContentSection6() {
   return (
     <div className="mt-20 md:mt-28 lg:mt-40 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
       <div className="rounded-2xl bg-gray-50 px-6 py-16 sm:p-16">

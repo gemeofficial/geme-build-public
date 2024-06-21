@@ -1,10 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import HeroSection from 'ui/src/about/HeroSection'
-import ContentSection1 from 'ui/src/about/ContentSection1'
-import ContentSection2 from 'ui/src/about/ContentSection2'
-import ContentSection3 from 'ui/src/about/ContentSection3'
-import ContentSection4 from 'ui/src/about/ContentSection4'
-import ContentSection5 from 'ui/src/about/ContentSection5'
+import {
+  AboutContentSection1,
+  AboutContentSection15,
+  AboutContentSection2,
+  AboutContentSection3,
+  AboutContentSection4,
+  AboutContentSection5,
+  AboutContentSection6,
+  AboutHeroSection,
+} from 'ui'
 
 const meta: Meta = {
   title: 'components/about',
@@ -13,42 +17,64 @@ const meta: Meta = {
 
 export default meta
 
-export const HeroSectionComponent: StoryObj<typeof HeroSection> = {
-  render: () => <HeroSection />,
-  name: 'HeroSection',
+export const HeroSectionComponent: StoryObj<typeof AboutHeroSection> = {
+  render: () => <AboutHeroSection />,
+  name: 'AboutHeroSection',
   args: {},
 }
 
-export const ContentSection1Component: StoryObj<typeof ContentSection1> = {
-  render: () => <ContentSection1 />,
-  name: 'ContentSection1',
+export const AboutContentSection1Component: StoryObj<
+  typeof AboutContentSection1
+> = {
+  render: () => <AboutContentSection1 />,
+  name: 'AboutContentSection1',
   args: {},
 }
 
-export const ContentSection2Component: StoryObj<typeof ContentSection2> = {
-  render: () => <ContentSection2 />,
-  name: 'ContentSection2',
+export const AboutContentSection2Component: StoryObj<
+  typeof AboutContentSection2
+> = {
+  render: () => <AboutContentSection2 />,
+  name: 'AboutContentSection2',
   args: {},
 }
 
-export const ContentSection3Component: StoryObj<typeof ContentSection3> = {
-  render: () => <ContentSection3 />,
-  name: 'ContentSection3',
+export const AboutContentSection3Component: StoryObj<
+  typeof AboutContentSection3
+> = {
+  render: () => <AboutContentSection3 />,
+  name: 'AboutContentSection3',
   args: {},
 }
 
-export const ContentSection4Component: StoryObj<typeof ContentSection4> = {
-  render: () => <ContentSection4 />,
-  name: 'ContentSection4',
+export const AboutContentSection4Component: StoryObj<
+  typeof AboutContentSection4
+> = {
+  render: () => <AboutContentSection4 />,
+  name: 'AboutContentSection4',
   args: {},
 }
 
-export const ContentSection5Component: StoryObj<typeof ContentSection5> = {
-  render: () => <ContentSection5 />,
-  name: 'ContentSection5',
+export const AboutContentSection5Component: StoryObj<
+  typeof AboutContentSection5
+> = {
+  render: () => <AboutContentSection5 />,
+  name: 'AboutContentSection5',
   args: {},
 }
 
+export const AboutContentSection6Component: StoryObj<
+  typeof AboutContentSection6
+> = {
+  render: () => <AboutContentSection6 />,
+  name: 'AboutContentSection5',
+  args: {},
+}
 
-
-
+export const AboutContentSection15Component: StoryObj<
+  typeof AboutContentSection15
+> = {
+  render: () => <AboutContentSection15 />,
+  name: 'AboutContentSection5',
+  args: {},
+}

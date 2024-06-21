@@ -93,7 +93,7 @@ const data = {
     'https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80',
 }
 
-export default function ContentSection3() {
+export function AboutContentSection3() {
   return (
     <div className="bg-white mt-24 lg:mt-40 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
       <div className="mx-auto max-w-2xl lg:mx-0">

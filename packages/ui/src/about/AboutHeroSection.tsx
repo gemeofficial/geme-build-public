@@ -47,7 +47,7 @@ const data = {
   ],
 }
 
-export default function HeroSection() {
+export function AboutHeroSection() {
   return (
     <div className="mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
       <div className="lg:flex items-center justify-between">

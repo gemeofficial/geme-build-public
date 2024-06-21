@@ -64,7 +64,7 @@ const data = {
   ],
 }
 
-export default function ContentSection2() {
+export function AboutContentSection2() {
   return (
     <div className="mt-10 lg:mt-12 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0 text-base text-v2311-text-gary">
       <MTitle>{data.title}</MTitle>

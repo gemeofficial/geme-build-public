@@ -12,8 +12,7 @@ const data = {
   ],
 }
 
-// // bg-[#F0CF68]
-export default function ContentSection5() {
+export function AboutContentSection5() {
   return (
     <div className="mt-28 md:mt-40 mx-auto lg:px-12 2xl:px-0 max-w-xl lg:max-w-7xl text-white">
       <div className="w-full xl:h-[475px] bg-v2311-bg-dark-green box-border py-24 px-8 md:px-16 md:rounded-2xl text-center">

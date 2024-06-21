@@ -33,7 +33,7 @@ const data = {
   fullImgUrl: '/assets/images/about/v2406/s2-family.png',
 }
 
-export default function ContentSection1() {
+export function AboutContentSection1() {
   return (
     <div className="mt-20 md:mt-0 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
       <MTitle>{data.mTitle}</MTitle>
