@@ -1,10 +1,7 @@
 import Image from 'next/image'
 
 const data = {
-  // title: 'Small Findings in the Lab, Big Impact to the World',
-  // title: 'Less Waste, More Green',
   title: 'Less Waste, More Green',
-  // title: 'Small Microbes in the Lab, Big Impact on the World',
   descriptions: [
     <h2 className="font-bold tracking-tight text-[#E5BE51]">
       ROKH's Path to a Sustainable Future
@@ -17,29 +14,17 @@ const data = {
       turn research into tangible benefits that enhance human well-being and
       address global challenges.
     </>,
-    // <>
-    //   At ROKH, we are united by a shared vision and a common goal: to create a
-    //   world where waste is no longer a burden, but a resource, and where nature
-    //   thrives alongside human progress.
-    // </>,
-    // <>
-    //   We are driven by a passion for scientific innovation and a deep commitment
-    //   to making a positive impact on the world. Through the commercialization of
-    //   our groundbreaking biotechnology solutions, we aim to translate our
-    //   research achievements into tangible benefits that enhance human well-being
-    //   and address pressing global challenges.
-    // </>,
     <>
       Our team consists of:
       <li>
         <strong>Experienced Professionals</strong>: With over 20 years in solid
-        waste resource treatment, we bring deep expertise to our work.{' '}
-      </li>{' '}
+        waste resource treatment, we bring deep expertise to our work.
+      </li>
       <li>
         <strong>Dedicated Scientists</strong>: Our microbiologists and
         agronomists continuously explore new ways to harness nature for
         sustainable waste management.
-      </li>{' '}
+      </li>
       <li>
         <strong>Dreamers and Doers</strong>: We are committed to turning our
         vision into reality, one innovative solution at a time.
