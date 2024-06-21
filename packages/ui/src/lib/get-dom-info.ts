@@ -3,7 +3,7 @@
  * @param selector 选择器
  */
 export function getDomInfo(selector: string) {
-  if (!window || typeof window === 'undefined') {
+  if (typeof window === 'undefined') {
     return { el: null, elHeight: 0 }
   }
 
