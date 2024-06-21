@@ -47,7 +47,7 @@ const data = {
 
 export function AboutContentSection4() {
   return (
-    <div className="mt-20 md:mt-28 lg:mt-40 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0 text-base text-v2311-text-gary">
+    <div className="mt-20 md:mt-28 3xl:mt-40 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0 text-base text-v2311-text-gary">
       <MTitle>{data.title}</MTitle>
       <div className="mt-2">{data.desc}</div>
 

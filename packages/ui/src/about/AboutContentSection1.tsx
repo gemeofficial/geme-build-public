@@ -35,7 +35,7 @@ const data = {
 
 export function AboutContentSection1() {
   return (
-    <div className="mt-20 md:mt-0 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
+    <div className="mt-20 md:mt-0 lg:mt-8 xl:mt-0 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
       <MTitle>{data.mTitle}</MTitle>
       <Title>{data.title}</Title>
       <div className="lg:flex items-start justify-between text-base">
