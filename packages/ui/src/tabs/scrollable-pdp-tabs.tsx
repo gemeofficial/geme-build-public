@@ -106,6 +106,7 @@ function ScrollablePdpTabs({ tabs, anchorOffset }: IScrollablePdpTabsProps) {
             top: `${
               scrollY > productTabsWrapperOffsetTop ? rootHeaderHeight : 0
             }px`,
+            zIndex: 20,
           }}
         >
           <div id="product-tabs-container" className="bg-[#047857]">
