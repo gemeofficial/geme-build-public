@@ -1,8 +1,9 @@
-import { MTitle } from '../ui-components'
+import { MTitle, Title } from '../ui-components'
 
 const data = {
-  title: 'Our Values',
-  desc: 'Go down the road less traveled, head to the bright north star, dream big and walk carefully.',
+  mTitle: 'Our Values',
+  title: 'Take the Road Less Traveled',
+  desc: 'We base our actions on truth and first principles. With a clear goal in sight, we dream ambitiously but take calculated steps to achieve it.',
   dataList: [
     {
       title: 'Be World-class',
@@ -67,7 +68,9 @@ const data = {
 export function AboutContentSection2() {
   return (
     <div className="mt-10 lg:mt-12 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0 text-base text-v2311-text-gary">
-      <MTitle>{data.title}</MTitle>
+      <MTitle>{data.mTitle}</MTitle>
+      <Title>{data.title}</Title>
+
       <div className="mt-2">{data.desc}</div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-12 mt-4">
         {data.dataList.map((item) => (

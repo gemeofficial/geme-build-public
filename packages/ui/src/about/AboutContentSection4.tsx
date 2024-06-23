@@ -1,7 +1,8 @@
-import { MTitle } from '../ui-components'
+import { MTitle, Title } from '../ui-components'
 
 const data = {
-  title: 'Our Milestones',
+  mTitle: 'Our Milestones',
+  title: 'Solid Foundations, Step by Step',
   desc: 'Driven by passion and a shared commitment to excellence, we move swiftly through our development process.',
   progressList: [
     {
@@ -48,7 +49,8 @@ const data = {
 export function AboutContentSection4() {
   return (
     <div className="mt-20 md:mt-28 3xl:mt-40 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0 text-base text-v2311-text-gary">
-      <MTitle>{data.title}</MTitle>
+      <MTitle>{data.mTitle}</MTitle>
+      <Title>{data.title}</Title>
       <div className="mt-2">{data.desc}</div>
 
       <div className="lg:flex items-start lg:flex-wrap xl:flex-nowrap mt-8">
