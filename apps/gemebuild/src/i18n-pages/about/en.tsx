@@ -5,6 +5,9 @@ import {
   AboutContentSection4,
   AboutContentSection6,
   AboutHeroSection,
+} from 'ui'
+
+import type {
   IAboutContentSection1,
   IAboutContentSection15,
   IAboutContentSection2,
@@ -13,7 +16,7 @@ import {
   IAboutHeroSection,
 } from 'ui'
 
-// 静态页面的内容 配置文件 En版
+// about page静态页面的内容 配置文件 En版
 
 // AboutHeroSection
 const aboutHeroSectionProps: IAboutHeroSection = {
@@ -272,12 +275,4 @@ function AboutPageEn() {
   )
 }
 
-export {
-  AboutPageEn,
-  aboutHeroSectionProps,
-  aboutContentSection1Props,
-  aboutContentSection15Props,
-  aboutContentSection2Props,
-  aboutContentSection4Props,
-  aboutContentSection6Props,
-}
+export { AboutPageEn }
