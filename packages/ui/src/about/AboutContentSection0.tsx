@@ -41,7 +41,7 @@ export function AboutContentSection0() {
           src={data.mainImgUrl}
           width={600}
           height={400}
-          alt="img"
+          alt=""
         />
       </div>
 
@@ -54,7 +54,7 @@ export function AboutContentSection0() {
               src={data.imgSectionUrl1}
               width={192}
               height={144}
-              alt="img"
+              alt=""
             />
 
             <Image
@@ -62,7 +62,7 @@ export function AboutContentSection0() {
               src={data.imgSectionUrl3}
               width={192}
               height={144}
-              alt="img"
+              alt=""
             />
           </div>
 
@@ -72,7 +72,7 @@ export function AboutContentSection0() {
               src={data.imgSectionUrl2}
               width={600}
               height={400}
-              alt="img"
+              alt=""
             />
           </div>
         </div>
@@ -85,7 +85,7 @@ export function AboutContentSection0() {
               src={data.imgSectionUrl1}
               width={384}
               height={288}
-              alt="img"
+              alt=""
             />
 
             <Image
@@ -93,7 +93,7 @@ export function AboutContentSection0() {
               src={data.mainImgUrl}
               width={600}
               height={400}
-              alt="img"
+              alt=""
             />
           </div>
 
@@ -103,7 +103,7 @@ export function AboutContentSection0() {
               src={data.imgSectionUrl2}
               width={600}
               height={400}
-              alt="img"
+              alt=""
             />
 
             <Image
@@ -111,7 +111,7 @@ export function AboutContentSection0() {
               src={data.imgSectionUrl3}
               width={384}
               height={288}
-              alt="img"
+              alt=""
             />
           </div>
         </div>
@@ -123,7 +123,7 @@ export function AboutContentSection0() {
             src={data.imgSectionUrl1}
             width={384}
             height={288}
-            alt="img"
+            alt=""
           />
 
           <Image
@@ -131,7 +131,7 @@ export function AboutContentSection0() {
             src={data.imgSectionUrl2}
             width={600}
             height={400}
-            alt="img"
+            alt=""
           />
 
           <Image
@@ -139,7 +139,7 @@ export function AboutContentSection0() {
             src={data.imgSectionUrl3}
             width={384}
             height={288}
-            alt="img"
+            alt=""
           />
         </div>
       </div>

@@ -29,7 +29,7 @@ export function AboutContentSection5() {
                 src={item}
                 width={158}
                 height={48}
-                alt="img"
+                alt=""
               />
             </div>
           ))}
