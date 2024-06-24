@@ -1,5 +1,5 @@
 import { IReviewsSectionConfig, ReviewsSection } from 'ui'
-import { LocaleType } from 'ui/src/reviews/ReviewsSection'
+import { LocaleType } from 'ui'
 
 interface IMutilLanguageTextInfo {
   en: ITextInfo
