@@ -1,3 +1,3 @@
-export { AboutPageEn } from './en'
-export { AboutPageFr } from './fr'
-export { AboutPageDe } from './de'
+export * from './en'
+export * from './fr'
+export * from './de'

@@ -1,6 +1,19 @@
+import { ReactNode } from 'react'
 import { MTitle, Title } from '../ui-components'
+export interface IAboutContentSection4 {
+  mTitle: string
+  title: string
+  desc: string
+  progressList: IProgressList[]
+}
 
-const data = {
+interface IProgressList {
+  progressBarTitle: string
+  title: string
+  desc: string | ReactNode
+}
+
+export const aboutContentSection4ExampleData: IAboutContentSection4 = {
   mTitle: 'Our Milestones',
   title: 'Solid Foundations, Step by Step',
   desc: 'Driven by passion and a shared commitment to excellence, we move swiftly through our development process.',
@@ -46,15 +59,15 @@ const data = {
   ],
 }
 
-export function AboutContentSection4() {
+export function AboutContentSection4(props: IAboutContentSection4) {
   return (
     <div className="mt-20 md:mt-28 3xl:mt-40 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0 text-base text-v2311-text-gary">
-      <MTitle>{data.mTitle}</MTitle>
-      <Title>{data.title}</Title>
-      <div className="mt-2">{data.desc}</div>
+      <MTitle>{props.mTitle}</MTitle>
+      <Title>{props.title}</Title>
+      <div className="mt-2">{props.desc}</div>
 
       <div className="lg:flex items-start lg:flex-wrap xl:flex-nowrap mt-8">
-        {data.progressList.map((item) => (
+        {props.progressList.map((item) => (
           <div className="lg:w-1/2 xl:w-full" key={item.progressBarTitle}>
             <div className="flex items-center mt-6 lg:mt-8 xl:mt-0">
               <div className="w-1 h-1 rounded-full bg-emerald-600"></div>

@@ -11,6 +11,15 @@ import {
   AboutHeroSection,
 } from 'ui'
 
+import {
+  aboutContentSection15ExampleData,
+  aboutContentSection1ExampleData,
+  aboutHeroSectionExampleData,
+  aboutContentSection6ExampleData,
+  aboutContentSection4ExampleData,
+  aboutContentSection2ExampleData,
+} from 'ui'
+
 const meta: Meta = {
   title: 'pages/pathes',
   argTypes: {},
@@ -39,12 +48,12 @@ export const PdpUserStoryStory: StoryObj<typeof PdpUserStoryV2311> = {
 export const AboutStory: StoryObj<typeof AboutHeroSection> = {
   render: () => (
     <div className="py-8 lg:pt-6 lg:pb-16">
-      <AboutHeroSection />
-      <AboutContentSection1 />
-      <AboutContentSection15 />
-      <AboutContentSection2 />
-      <AboutContentSection4 />
-      <AboutContentSection6 />
+      <AboutHeroSection {...aboutHeroSectionExampleData} />
+      <AboutContentSection1 {...aboutContentSection1ExampleData} />
+      <AboutContentSection15 {...aboutContentSection15ExampleData} />
+      <AboutContentSection2 {...aboutContentSection2ExampleData} />
+      <AboutContentSection4 {...aboutContentSection4ExampleData} />
+      <AboutContentSection6 {...aboutContentSection6ExampleData} />
     </div>
   ),
   name: '/about',

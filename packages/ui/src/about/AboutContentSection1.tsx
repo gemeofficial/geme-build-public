@@ -1,7 +1,18 @@
 import Image from 'next/image'
 import { MTitle, Title } from '../index'
 
-const data = {
+export interface IAboutContentSection1 {
+  mTitle: string
+  title: string
+  descriptions: string[]
+  points: {
+    title: string
+    desc: string
+  }[]
+  fullImgUrl: string
+}
+
+export const aboutContentSection1ExampleData: IAboutContentSection1 = {
   mTitle: 'Our Mission',
   title: 'All Things Live Forever and in Harmony with Earth',
   descriptions: [
@@ -33,14 +44,14 @@ const data = {
   fullImgUrl: '/assets/images/about/v2406/s2-family.png',
 }
 
-export function AboutContentSection1() {
+export function AboutContentSection1(props: IAboutContentSection1) {
   return (
     <div className="mt-20 md:mt-0 lg:mt-8 xl:mt-0 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
-      <MTitle>{data.mTitle}</MTitle>
-      <Title>{data.title}</Title>
+      <MTitle>{props.mTitle}</MTitle>
+      <Title>{props.title}</Title>
       <div className="lg:flex items-start justify-between text-base">
         <div className="lg:w-[55%] lg:mr-[5%]">
-          {data.descriptions.map((item) => (
+          {props.descriptions.map((item) => (
             <div key={item} className="mt-3 lg:mt-5  text-v2311-text-gary ">
               {item}
             </div>
@@ -48,7 +59,7 @@ export function AboutContentSection1() {
         </div>
 
         <div className="lg:w-[40%] lg:pl-20 mt-10 lg:mt-5 flex flex-col items-start justify-between overflow-hidden space-y-4 lg:space-y-5">
-          {data.points.map((item) => (
+          {props.points.map((item) => (
             <div key={item.title}>
               <MTitle className="!text-emerald-600">{item.title}</MTitle>
               <div className="text-v2311-text-gary mt-4">{item.desc}</div>
@@ -59,10 +70,10 @@ export function AboutContentSection1() {
       <div className="pt-8">
         <Image
           className="w-full max-h-[500px] object-cover rounded-lg"
-          src={data.fullImgUrl}
+          src={props.fullImgUrl}
           width={1920}
           height={500}
-          alt="img"
+          alt=""
         />
       </div>
     </div>
