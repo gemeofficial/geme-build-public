@@ -37,7 +37,7 @@ const mutilLanguageTextInfo = {
 export function ReviewsScoreHeader({ locale }: { locale: LocaleType }) {
   const defaultTextInfo = mutilLanguageTextInfo[locale]
   return (
-    <div className="flex flex-col max-w-[450px] lg:max-w-screen-sm mx-auto items-center gap-y-3 text-brown-2 border border-v2311-primary rounded-xl py-5 px-8">
+    <div className="flex flex-col max-w-[450px] lg:max-w-screen-sm mx-auto items-center gap-y-3 rounded-xl py-5 px-8">
       <div className="flex gap-x-1">
         <StarIcon count={4} />
         <svg
