@@ -10,6 +10,7 @@ import {
   IInlinePalyerType,
   InlinePlayer,
   IReviewsSectionConfig,
+  ReviewsScoreHeader,
 } from 'ui'
 import { ReviewsSectionModule } from '../../../components/reviews-section-module'
 
@@ -71,6 +72,7 @@ function PdpIntroEn({
           tabPanel: (
             <>
               <ReviewsSectionModule reviewsSectionConfig={reviewsSectionConfig} locale='en'/>
+              <div className="my-4"><ReviewsScoreHeader locale='en'/></div>
               <ReviewsComponent />
             </>
           ),

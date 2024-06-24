@@ -9,7 +9,8 @@ import { ILinkComponent } from '../../../contexts/link-context'
 import {
   IInlinePalyerType,
   InlinePlayer,
-  IReviewsSectionConfig
+  IReviewsSectionConfig,
+  ReviewsScoreHeader
 } from 'ui'
 import { ReviewsSectionModule } from '../../../components/reviews-section-module'
 
@@ -74,6 +75,7 @@ function PdpIntroFr({
                 locale="fr"
                 reviewsSectionConfig={reviewsSectionConfig}
               />
+              <div className="my-4"><ReviewsScoreHeader locale='fr'/></div>
               <ReviewsComponent />
             </>
           ),
