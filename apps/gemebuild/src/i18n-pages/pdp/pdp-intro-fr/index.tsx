@@ -9,9 +9,9 @@ import { ILinkComponent } from '../../../contexts/link-context'
 import {
   IInlinePalyerType,
   InlinePlayer,
-  IReviewsSectionConfig,
-  ReviewsSection,
+  IReviewsSectionConfig
 } from 'ui'
+import { ReviewsSectionModule } from '../../../components/reviews-section-module'
 
 interface IPdpIntroProps {
   ReviewsComponent: FC<{}>
@@ -70,22 +70,10 @@ function PdpIntroFr({
           tabLabel: 'Bewertungen',
           tabPanel: (
             <>
-              <div className="bg-white py-10">
-                <div className="text-center lg:mt-10 px-4 mx-auto md:px-8 xl:max-w-7xl">
-                  <h2 className="v2311-font-h1 text-v2311-primary text-center ">
-                    Ce que disent les vrais utilisateurs
-                  </h2>
-                  <p className="v2311-font-body text-gray-600 text-center mt-4">
-                    {
-                      "Vous vous inquiétez peut-être du manque d'avis sur les réseaux sociaux. Cependant, il est important de comprendre qu'une grande partie des avis en ligne sont des publicités payantes. Les vrais consommateurs sont la majorité silencieuse. Au lieu de vous fier uniquement à ces avis, pensez à écouter la voix des consommateurs ordinaires comme vous. Ils ne sont peut-être pas aussi bavards en ligne, mais ils sont plus susceptibles de fournir des commentaires authentiques et impartiaux."
-                    }
-                  </p>
-                </div>
-                <ReviewsSection
-                  locale="fr"
-                  reviewsSectionConfig={reviewsSectionConfig}
-                />
-              </div>
+              <ReviewsSectionModule
+                locale="fr"
+                reviewsSectionConfig={reviewsSectionConfig}
+              />
               <ReviewsComponent />
             </>
           ),

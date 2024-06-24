@@ -9,9 +9,9 @@ import { ILinkComponent } from '../../../contexts/link-context'
 import {
   IInlinePalyerType,
   InlinePlayer,
-  IReviewsSectionConfig,
-  ReviewsSection,
+  IReviewsSectionConfig
 } from 'ui'
+import { ReviewsSectionModule } from '../../../components/reviews-section-module'
 
 interface IPdpIntroProps {
   ReviewsComponent: FC<{}>
@@ -70,29 +70,10 @@ function PdpIntroDe({
           tabLabel: 'Bewertungen',
           tabPanel: (
             <>
-              <div className="bg-white py-10">
-                <div className="text-center lg:mt-10 px-4 mx-auto md:px-8 xl:max-w-7xl">
-                  <h2 className="v2311-font-h1 text-v2311-primary text-center ">
-                    Was echte Nutzer sagen
-                  </h2>
-                  <p className="v2311-font-body text-gray-600 text-center mt-4">
-                    Sie könnten sich Sorgen über die begrenzte Anzahl von
-                    Bewertungen in den sozialen Medien machen. Es ist jedoch
-                    wichtig zu beachten, dass ein erheblicher Teil der
-                    Online-Bewertungen bezahlte Werbung ist. Die wahren
-                    Verbraucher sind die stille Mehrheit. Anstatt sich nur auf
-                    diese Bewertungen zu verlassen, sollten Sie den Stimmen von
-                    normalen Verbrauchern wie Ihnen selbst Gehör schenken. Sie
-                    sind zwar online vielleicht nicht so lautstark, aber sie
-                    geben wahrscheinlich eher echte und unvoreingenommene
-                    Rückmeldungen.
-                  </p>
-                </div>
-                <ReviewsSection
-                  locale="de"
-                  reviewsSectionConfig={reviewsSectionConfig}
-                />
-              </div>
+              <ReviewsSectionModule
+                locale="de"
+                reviewsSectionConfig={reviewsSectionConfig}
+              />
               <ReviewsComponent />
             </>
           ),

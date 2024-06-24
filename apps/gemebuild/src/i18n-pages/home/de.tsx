@@ -10,7 +10,6 @@ import {
   CompostStep2,
   CompostStep3,
   SecondLife,
-  ReviewsSection,
 } from 'ui'
 import type {
   IHeroSection1Props,
@@ -26,6 +25,7 @@ import type {
 import { Footprints, type IFootprintsProps } from '../../components/footprints'
 import { Newsletter, INewsletterProps } from './containers/newsletter'
 import { ILinkComponent } from '../../contexts/link-context'
+import { ReviewsSectionModule } from '../../components/reviews-section-module'
 
 // 首页video部分的内容数据配置 De
 const heroSection1Props: IHeroSection1Props = {
@@ -460,17 +460,7 @@ function HomePageDe({
         <ContentSection5 {...contentSection5Props} />
       </div>
 
-      <div className="bg-white py-10">
-        <div className="text-center lg:mt-10">
-          <h2 className="v2311-font-h1 text-v2311-primary text-center ">
-            {reviewsSectionProps.title}
-          </h2>
-          <p className="v2311-font-body text-gray-600 text-center mt-4">
-            {reviewsSectionProps.description}
-          </p>
-        </div>
-        <ReviewsSection locale='de' reviewsSectionConfig={reviewsSectionConfig} />
-      </div>
+      <ReviewsSectionModule locale="de" reviewsSectionConfig={reviewsSectionConfig} {...reviewsSectionProps} />
 
       <Footprints {...footprintsProps} />
 
