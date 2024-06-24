@@ -91,6 +91,7 @@ export function AboutHeroSection(props: IAboutHeroSection) {
               width={176}
               height={264}
               alt=""
+              priority
             />
           </div>
 
@@ -103,6 +104,7 @@ export function AboutHeroSection(props: IAboutHeroSection) {
                 width={176}
                 height={264}
                 alt=""
+                priority
               />
             ))}
           </div>
@@ -116,6 +118,7 @@ export function AboutHeroSection(props: IAboutHeroSection) {
                 width={176}
                 height={264}
                 alt=""
+                priority
               />
             ))}
           </div>
