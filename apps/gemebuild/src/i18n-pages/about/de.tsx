@@ -51,7 +51,7 @@ const aboutHeroSectionProps: IAboutHeroSection = {
     </div>
   ),
 
-  contactUs: 'Kontaktieren Sie uns',
+  contactUs: 'Kontaktiere uns',
   imgUrls1: '/assets/images/about/v2406/s0-company.png',
   imgUrls2: [
     '/assets/images/about/v2406/s0-experiment.png',
