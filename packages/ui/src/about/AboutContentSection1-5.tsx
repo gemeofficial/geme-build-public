@@ -60,7 +60,7 @@ export function AboutContentSection15(props: IAboutContentSection15) {
           src={props.mainImgUrl}
           width={600}
           height={400}
-          alt="img"
+          alt=""
         />
       </div>
 
@@ -73,7 +73,7 @@ export function AboutContentSection15(props: IAboutContentSection15) {
               src={props.imgSectionUrl1}
               width={192}
               height={144}
-              alt="img"
+              alt=""
             />
 
             <Image
@@ -81,7 +81,7 @@ export function AboutContentSection15(props: IAboutContentSection15) {
               src={props.imgSectionUrl3}
               width={192}
               height={144}
-              alt="img"
+              alt=""
             />
           </div>
 
@@ -91,7 +91,7 @@ export function AboutContentSection15(props: IAboutContentSection15) {
               src={props.imgSectionUrl2}
               width={600}
               height={400}
-              alt="img"
+              alt=""
             />
           </div>
         </div>
@@ -104,7 +104,7 @@ export function AboutContentSection15(props: IAboutContentSection15) {
               src={props.imgSectionUrl1}
               width={384}
               height={288}
-              alt="img"
+              alt=""
             />
 
             <Image
@@ -112,7 +112,7 @@ export function AboutContentSection15(props: IAboutContentSection15) {
               src={props.mainImgUrl}
               width={600}
               height={400}
-              alt="img"
+              alt=""
             />
           </div>
 
@@ -122,7 +122,7 @@ export function AboutContentSection15(props: IAboutContentSection15) {
               src={props.imgSectionUrl2}
               width={600}
               height={400}
-              alt="img"
+              alt=""
             />
 
             <Image
@@ -130,7 +130,7 @@ export function AboutContentSection15(props: IAboutContentSection15) {
               src={props.imgSectionUrl3}
               width={384}
               height={288}
-              alt="img"
+              alt=""
             />
           </div>
         </div>
@@ -142,7 +142,7 @@ export function AboutContentSection15(props: IAboutContentSection15) {
             src={props.imgSectionUrl1}
             width={384}
             height={288}
-            alt="img"
+            alt=""
           />
 
           <Image
@@ -150,15 +150,15 @@ export function AboutContentSection15(props: IAboutContentSection15) {
             src={props.imgSectionUrl2}
             width={600}
             height={400}
-            alt="img"
+            alt=""
           />
 
           <Image
-            className="w-[384px] h-[288px] object-cover rounded-xl flex-shrink-0"
+            className="w-[384px] h-[288px] object-cover rounded-xl flex-shrink-0 self-start"
             src={props.imgSectionUrl3}
             width={384}
             height={288}
-            alt="img"
+            alt=""
           />
         </div>
       </div>
