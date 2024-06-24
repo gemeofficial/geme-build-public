@@ -121,8 +121,8 @@ const gemeDotsProps: IGemeDotsProps = {
         description: `
           <p>
           The manager of the GEME Dots loyalty program is
-          ROKH SRL<br /><br />
-          Avenue Louis Schmidt 29，<br /><br />
+          ROKH SRL<br /><br />  Brussels, Belgium  
+          Boulevard Louis Schmidt 29,<br /><br />
           1040 Etterbeek, <br /><br />
           Brussels, <br /><br />
           Belgium <br /><br />

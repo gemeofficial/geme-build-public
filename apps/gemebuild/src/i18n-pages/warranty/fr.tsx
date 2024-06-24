@@ -179,8 +179,7 @@ const warrantyProps: IWarrantyProps = {
     le consommateur.
     <br />
     <br />
-    Pour tout litige ou désaccord, les tribunaux de la Région Wallonne
-    sera compétent.
+    Pour tout litige ou désaccord, les tribunaux de la Région de Bruxelles seront compétents.
     `,
   },
 }

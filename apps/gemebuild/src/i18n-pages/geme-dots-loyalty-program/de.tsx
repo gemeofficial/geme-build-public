@@ -122,7 +122,7 @@ const gemeDotsProps: IGemeDotsProps = {
           <p>
           Der Verwalter des Treueprogramms GEME Dots ist
           ROKH SRL<br /><br />
-          Avenue Louis Schmidt 29，<br /><br />
+          Boulevard Louis Schmidt 29，<br /><br />
           1040 Etterbeek, <br /><br />
           Brüssel, <br /><br />
           Belgien <br /><br />

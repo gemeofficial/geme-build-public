@@ -125,7 +125,7 @@ const gemeDotsProps: IGemeDotsProps = {
           <p>
           Le responsable du programme de fidélité GEME Dots est
           ROKH SRL<br /><br />
-          Avenue Louis Schmidt 29，<br /><br />
+          Boulevard Louis Schmidt 29，<br /><br />
           1040 Etterbeek, <br /><br />
           Bruxelles, <br /><br />
           Belgique <br /><br />

@@ -181,8 +181,7 @@ const warrantyProps: IWarrantyProps = {
     the consumer.
     <br />
     <br />
-    For any dispute or disagreement, the courts of the Wallonia Region
-    shall have jurisdiction.
+    For any dispute or disagreement, the courts of the Brussels Region shall have jurisdiction.
     `,
   },
 }
