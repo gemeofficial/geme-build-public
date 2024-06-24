@@ -181,8 +181,7 @@ const warrantyProps: IWarrantyProps = {
     der Verbraucher.
     <br />
     <br />
-    Für alle Streitigkeiten oder Meinungsverschiedenheiten sind die Gerichte der Region Wallonien
-    zuständig.
+    Für alle Streitigkeiten oder Meinungsverschiedenheiten sind die Gerichte der Region Brüssel zuständig.
     `,
   },
 }
