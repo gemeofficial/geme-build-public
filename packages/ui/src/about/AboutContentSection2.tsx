@@ -44,7 +44,7 @@ export const aboutContentSection2ExampleData: IAboutContentSection2 = {
 
 export function AboutContentSection2(props: IAboutContentSection2) {
   return (
-    <div className="mt-10 lg:mt-12 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0 text-base text-v2311-text-gary">
+    <div className="mt-20 md:mt-28 3xl:mt-40 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0 text-base text-v2311-text-gary">
       <MTitle>{props.mTitle}</MTitle>
       <Title>{props.title}</Title>
 
