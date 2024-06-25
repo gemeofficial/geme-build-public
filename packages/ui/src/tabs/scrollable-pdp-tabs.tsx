@@ -1,9 +1,8 @@
 'use client'
 
 import classNames from '../lib/classNames'
-import { useEffect, useState, type ReactNode } from 'react'
+import { type ReactNode } from 'react'
 import { Link, Element } from 'react-scroll'
-import { useGetRootHeaderInfo } from '../index'
 
 interface IScrollablePdpTabsProps {
   anchorOffset?: number
@@ -59,41 +58,11 @@ const scrollablePdpTabsProps: IScrollablePdpTabsProps = {
 }
 
 function ScrollablePdpTabs({ tabs, anchorOffset }: IScrollablePdpTabsProps) {
-  const { rootHeaderHeight } = useGetRootHeaderInfo()
-  const [scrollY, setScrollY] = useState(0)
-  const [isPullUp, setIsPullUp] = useState(false)
-
-  useEffect(() => {
-    if (rootHeaderHeight > 0) {
-      const handleScroll = () => {
-        const currentScrollY = window.scrollY
-        setScrollY((prevScrollY) => {
-          if (prevScrollY > currentScrollY) {
-            setIsPullUp(false)
-          } else {
-            setIsPullUp(true)
-          }
-
-          return currentScrollY
-        })
-      }
-
-      handleScroll()
-
-      window.addEventListener('scroll', handleScroll)
-
-      return () => {
-        window.removeEventListener('scroll', handleScroll)
-      }
-    }
-  }, [rootHeaderHeight])
-
   return (
     <>
       <div
         id="product-tabs-container"
-        style={{ top: `${isPullUp ? 0 : rootHeaderHeight}` }}
-        className="sticky bg-[#047857] z-50"
+        className="sticky top-0 bg-[#047857] z-[49] transition-all duration-300"
       >
         <ul className="overflow-auto v2311-font-h3 md:v2311-font-link-selected xl:v2311-font-body text-white py-2 px-1 md:py-6 md:px-8 flex flex-row space-x-4 md:space-x-6 xl:space-x-12 xl:max-w-7xl xl:mx-auto">
           {tabs.map((tab) => (
