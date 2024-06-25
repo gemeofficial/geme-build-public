@@ -2,9 +2,9 @@ export default function StarIcon({ count }: { count: number }) {
   const constsArray: string[] = new Array(count).fill('')
   return (
     <>
-      {constsArray.map((item) => (
+      {constsArray.map((item, index) => (
         <svg
-          key={item}
+          key={'reviews-score-header-icon' + (index + 1)}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 32 32"
           fill="none"
