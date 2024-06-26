@@ -641,7 +641,7 @@ function ContentSection6Fixed({
                 height={80}
                 className="w-[80px] h-[80px] md:w-[172px] md:h-[172px] xl:w-[144px] xl:h-[144px] "
               />
-              <p className=" text-[10px] md:text-sm lg:text-base text-v2311-fg-black mt-4 md:mt-8 xl:mt-4 mx-[1px]">
+              <p className="text-[10px] md:text-sm lg:text-base text-v2311-fg-black mt-4 md:mt-8 xl:mt-4 mx-[1px]">
                 {step.description}
               </p>
             </div>
