@@ -1,3 +1,4 @@
+import { SectionDescription, SectionTitle } from '../ui-components'
 import PlayerComponent, { IPlayerComponentType } from './PlayerComponent'
 
 export interface IInlinePalyerType extends IPlayerComponentType {
@@ -14,7 +15,6 @@ export function InlinePlayer({
   mixpanelFrom,
   videoIsAutoPlay,
 }: IInlinePalyerType) {
-
   const playerComponentProps = {
     type,
     videoPosterUrl,
@@ -22,17 +22,15 @@ export function InlinePlayer({
     mixpanelFrom,
     videoIsAutoPlay,
   }
-  
+
   return (
     <section className="px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 ">
-      <div className=" text-center xl:flex-1">
-        {title && (
-          <h2 className=" v2311-font-h1 text-v2311-primary ">{title}</h2>
-        )}
+      <div className="xl:flex-1">
+        {title && <SectionTitle>{title}</SectionTitle>}
         {description && (
-          <p className=" mt-4 md:mt-8 v2311-font-body text-v2311-fg-black ">
+          <SectionDescription className="mt-4 md:mt-8">
             {description}
-          </p>
+          </SectionDescription>
         )}
       </div>
       <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">

@@ -1,4 +1,9 @@
-import { IReviewsSectionConfig, ReviewsSection } from 'ui'
+import {
+  IReviewsSectionConfig,
+  ReviewsSection,
+  SectionDescription,
+  SectionTitle,
+} from 'ui'
 import { LocaleType } from 'ui'
 
 interface IMutilLanguageTextInfo {
@@ -44,13 +49,11 @@ export function ReviewsSectionModule({
 
   return (
     <div className="bg-white py-10">
-      <div className="text-center lg:mt-10 px-4 mx-auto md:px-8 xl:max-w-7xl">
-        <h2 className="v2311-font-h1 text-v2311-primary text-center ">
-          {currentTitle}
-        </h2>
-        <p className="v2311-font-body text-gray-600 text-center mt-4">
+      <div className="lg:mt-10 px-4 mx-auto md:px-8 xl:max-w-7xl">
+        <SectionTitle>{currentTitle}</SectionTitle>
+        <SectionDescription className="mt-4">
           {currentDescription}
-        </p>
+        </SectionDescription>
       </div>
       <ReviewsSection
         locale={locale}

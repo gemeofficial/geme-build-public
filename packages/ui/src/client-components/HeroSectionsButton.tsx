@@ -31,7 +31,7 @@ export default function HeroSectionsButton({
     <>
       {linkText && linkUrl && LinkComponent == null && (
         <a
-          className=" v2311-font-h3 font-bold text-white xl:w-auto flex items-center justify-center mt-[80px] md:mt-[160px] xl:mt-16 border-solid border-2 border-white rounded-xl py-1 md:py-2 px-16 md:px-32 xl:px-8"
+          className="text-sm md:text-lg xl:text-2xl font-bold text-white xl:w-auto flex items-center justify-center mt-[80px] md:mt-[160px] xl:mt-16 border-solid border-2 border-white rounded-xl py-1 md:py-2 px-16 md:px-32 xl:px-8"
           href={linkUrl}
           onClick={linkClickedTrack}
         >
@@ -42,7 +42,7 @@ export default function HeroSectionsButton({
       {linkText && linkUrl && LinkComponent && (
         <span onClick={linkClickedTrack}>
           <LinkComponent
-            className=" v2311-font-h3 font-bold text-white xl:w-auto flex items-center justify-center mt-[80px] md:mt-[160px] xl:mt-16 border-solid border-2 border-white rounded-xl py-1 md:py-2 px-16 md:px-32 xl:px-8"
+            className="text-sm md:text-lg xl:text-2xl font-bold text-white xl:w-auto flex items-center justify-center mt-[80px] md:mt-[160px] xl:mt-16 border-solid border-2 border-white rounded-xl py-1 md:py-2 px-16 md:px-32 xl:px-8"
             href={newLinkUrl}
           >
             {linkText}

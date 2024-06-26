@@ -1,13 +1,14 @@
 import { ReactNode, SVGProps } from 'react'
-import classNames from './lib/classNames'
+import classNames from '../lib/classNames'
 import {
   IconCheckCycle,
   IconXCycle,
   SvgGreenArrow,
   usingCompostIcons,
-} from './pdp-intro-svgs'
-import { IconCycleArrow } from './icons'
+} from '../pdp-intro-svgs'
+import { IconCycleArrow } from '../icons'
 import Image from 'next/image'
+import { SectionDescription, SectionTitle } from '../ui-components'
 interface IPdpIntroSection1Props {
   title?: ReactNode
   description?: ReactNode
@@ -56,9 +57,15 @@ function PdpIntroSection1({
     >
       <div className="px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl h-full flex flex-col">
         <div className=" text-center ">
-          {title && <h2 className="v2311-font-h1 text-white">{title}</h2>}
+          {title && (
+            <SectionTitle className="text-white !text-center">
+              {title}
+            </SectionTitle>
+          )}
           {description && (
-            <p className="v2311-font-body text-white">{description}</p>
+            <SectionDescription className="!text-center text-white">
+              {description}
+            </SectionDescription>
           )}
         </div>
         <div className=" pb-4 sm:pb-0 md:pb-[12px] xl:pb-[12px] flex-1 flex items-end justify-around xl:gap-[320px] xl:justify-center v2311-font-h2 md:v2311-font-body xl:v2311-font-h2 text-v2311-primary text-center">
@@ -79,7 +86,7 @@ function PdpIntroSection1({
               return (
                 <div
                   key={item.id}
-                  className="v2311-font-img-desc text-white bg-v2311-fg-dark-black px-2 py-1 md:px-4 md:py-2 rounded-xl"
+                  className="v2311-font-img-desc text-white bg-v2311-fg-dark-black px-2 py-1 md:px-4 md:py-2 rounded-xl text-center"
                 >
                   {item.description}
                 </div>
@@ -269,16 +276,12 @@ function PdpIntroSection6({
         'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl',
       )}
     >
-      <div className=" text-center">
-        {title && (
-          <h2 className=" v2311-font-h1 text-v2311-primary ">{title}</h2>
-        )}
-        {description && (
-          <p className=" mt-4 md:mt-8 xl:mt-4 v2311-font-body text-v2311-fg-black hidden xl:block xl:v2311-font-h3 xl:font-normal">
-            {description}
-          </p>
-        )}
-      </div>
+      {title && <SectionTitle>{title}</SectionTitle>}
+      {description && (
+        <SectionDescription className=" mt-4 md:mt-8 xl:mt-4 hidden xl:block xl:v2311-font-h3 xl:font-normal">
+          {description}
+        </SectionDescription>
+      )}
       <div className="mt-4 md:mt-8 w-full grid xl:grid-cols-10 xl:grid-rows-6 xl:gap-4 xl:max-w-4xl xl:mx-auto">
         {items?.map((item) => {
           return (
@@ -297,13 +300,13 @@ function PdpIntroSection6({
               {item?.title && (
                 <h3
                   className={classNames(
-                    'text-center xl:text-left',
+                    'text-center',
                     item.featured
                       ? 'v2311-font-h2'
-                      : 'v2311-font-body text-v2311-fg-black xl:text-white mt-4',
+                      : 'v2311-font-body text-v2311-text-gary xl:text-white mt-4',
                   )}
                 >
-                  {item?.title}
+                  {item.title}
                 </h3>
               )}
               <div
@@ -311,7 +314,7 @@ function PdpIntroSection6({
                   'flex flex-row xl:flex-col items-center justify-center w-full xl:items-stretch',
                   item.featured
                     ? 'mt-4 md:mt-8 xl:mt-4 gap-4 md:gap-8 xl:gap-8'
-                    : 'mt-2 md:mt-4 gap-2 md:gap-4',
+                    : 'mt-2 md:mt-4 gap-1 md:gap-4',
                 )}
               >
                 {item?.imageSrc && (
@@ -342,22 +345,24 @@ function PdpIntroSection6({
                       'v2311-font-body xl:v2311-font-h3 xl:font-normal',
                       item.featured
                         ? 'flex-1'
-                        : ' text-[8px] md:v2311-font-img-desc xl:v2311-font-body mr-2 md:mr-4 flex-[3]',
+                        : ' md:v2311-font-img-desc xl:v2311-font-body mr-2 md:mr-4 flex-[3] text-v2311-text-gary xl:text-white',
                     )}
                   >
-                    {item?.features.map((feature, idx) => {
+                    {item.features.map((feature, idx) => {
                       return (
                         <li
                           key={`${feature}_${idx}`}
                           className={classNames(
-                            'flex items-center mb-1 md:mb-2 ',
-                            item.featured ? 'xl:mb-2' : 'xl:mb-1',
+                            ' flex md:items-center mb-1 md:mb-2 ',
+                            item.featured
+                              ? 'xl:mb-2'
+                              : 'xl:mb-1 items-center text-[10px]',
                           )}
                         >
                           {item.featured ? (
                             <IconCheckCycle className="w-5 h-5 md:w-12 md:h-12 xl:w-8 xl:h-8 xl:mr-2" />
                           ) : (
-                            <IconXCycle className="w-2 h-2 md:w-8 md:h-8 xl:w-5 xl:h-5 xl:mr-2" />
+                            <IconXCycle className="w-3 h-3 md:w-8 md:h-8 xl:w-5 xl:h-5 xl:mr-2" />
                           )}
                           {feature}
                         </li>
@@ -553,14 +558,16 @@ function PdpIntroSection8({
           <div className=" xl:flex-1"></div>
           <div className=" flex flex-col justify-between xl:flex-1 ">
             <div className=" text-center xl:text-left ">
-              {title && <h2 className="v2311-font-h1">{title}</h2>}
+              {title && (
+                <SectionTitle className="!text-center">{title}</SectionTitle>
+              )}
               {description && (
-                <p className="v2311-font-body text-v2311-fg-black xl:text-v2311-fg-dark-black mt-4 md:mt-8">
+                <SectionDescription className="xl:!text-v2311-fg-dark-black mt-4 md:mt-8 !text-left">
                   {description}
-                </p>
+                </SectionDescription>
               )}
             </div>
-            <div className=" mt-96 xl:mt-8">
+            <div className="mt-96 xl:mt-8">
               {features && (
                 <ul className=" grid gap-2 md:gap-4 grid-cols-3 grid-rows-2 items-center justify-center xl:max-w-md ">
                   {features.map((feature) => {
@@ -589,7 +596,7 @@ function PdpIntroSection8({
               <div className="mt-4">
                 {linkText && linkUrl && (
                   <a
-                    className=" v2311-font-h2 md:v2311-font-h3 bg-[#047857] text-white w-full xl:w-auto flex items-center justify-center mt-4 md:mt-8 rounded-xl xl:rounded-full py-2 md:py-3 xl:px-8 xl:inline-flex"
+                    className=" v2311-font-h2 bg-[#047857] text-white w-full xl:w-auto flex items-center justify-center mt-4 md:mt-8 rounded-xl xl:rounded-full py-2 md:py-3 xl:px-8 xl:inline-flex"
                     href={linkUrl}
                   >
                     {linkText}

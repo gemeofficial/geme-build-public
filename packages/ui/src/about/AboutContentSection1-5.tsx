@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { MTitle, Title } from '../ui-components'
+import { AboutMTitle, AboutTitle } from '../ui-components'
 import { ReactNode } from 'react'
 
 export interface IAboutContentSection15 {
@@ -50,8 +50,8 @@ export function AboutContentSection15(props: IAboutContentSection15) {
     <div className="mt-20 md:mt-28 3xl:mt-40 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
       <div className="lg:flex items-start justify-between text-base text-v2311-text-gary">
         <div className="lg:w-[55%] lg:mr-[5%]">
-          <MTitle>{props.mTitle}</MTitle>
-          <Title>{props.title}</Title>
+          <AboutMTitle>{props.mTitle}</AboutMTitle>
+          <AboutTitle>{props.title}</AboutTitle>
           <div className="mt-4 space-y-2">{props.bodyTexts}</div>
         </div>
 

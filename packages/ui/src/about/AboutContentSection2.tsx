@@ -1,4 +1,4 @@
-import { MTitle, Title } from '../ui-components'
+import { AboutMTitle, AboutTitle } from '../ui-components'
 
 export interface IAboutContentSection2 {
   mTitle: string
@@ -45,8 +45,8 @@ export const aboutContentSection2ExampleData: IAboutContentSection2 = {
 export function AboutContentSection2(props: IAboutContentSection2) {
   return (
     <div className="mt-20 md:mt-28 3xl:mt-40 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0 text-base text-v2311-text-gary">
-      <MTitle>{props.mTitle}</MTitle>
-      <Title>{props.title}</Title>
+      <AboutMTitle>{props.mTitle}</AboutMTitle>
+      <AboutTitle>{props.title}</AboutTitle>
 
       <div className="mt-2">{props.desc}</div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-12 mt-4">

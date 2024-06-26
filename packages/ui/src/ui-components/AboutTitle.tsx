@@ -5,7 +5,7 @@ import { PropsWithChildren } from 'react'
  *  TODO：如传入的className与原有的冲突，请添加important权重 如text-color !text-red-600
  */
 
-export function Title({
+export function AboutTitle({
   children,
   className,
 }: PropsWithChildren<{ className?: string }>) {
@@ -21,7 +21,7 @@ export function Title({
   )
 }
 
-export function MTitle({
+export function AboutMTitle({
   children,
   className,
 }: PropsWithChildren<{ className?: string }>) {

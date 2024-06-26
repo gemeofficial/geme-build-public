@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { MTitle } from '../ui-components'
+import { AboutMTitle } from '../ui-components'
 import { ReactNode } from 'react'
 
 export interface IAboutHeroSection {
@@ -66,7 +66,7 @@ export function AboutHeroSection(props: IAboutHeroSection) {
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-emerald-600">
             {props.title}
           </h1>
-          <MTitle className="mt-2">{props.mTitle}</MTitle>
+          <AboutMTitle className="mt-2">{props.mTitle}</AboutMTitle>
 
           {props.descriptionSection}
 

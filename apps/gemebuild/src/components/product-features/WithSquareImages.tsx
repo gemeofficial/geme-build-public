@@ -1,6 +1,7 @@
 // FIXME: next/link not work with next-intl, should use components/link instead.
 import Image from 'next/image'
 import Link from 'next/link'
+import { SectionTitle } from 'ui'
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
@@ -64,19 +65,17 @@ function WithSquareImages({
   return (
     <div className={classNames(grayBackground ? 'bg-gray-50' : 'bg-white')}>
       <div className="mx-auto max-w-2xl py-16 px-4 lg:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-        <div className="max-w-3xl text-center mx-auto">
-          {heading && (
-            <h2 id="features-heading" className="font-medium text-gray-500">
-              {heading}
-            </h2>
-          )}
-          {title && (
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              {title}
-            </p>
-          )}
-          {description && <p className="mt-4 text-gray-500">{description}</p>}
-        </div>
+        {heading && (
+          <h2 id="features-heading" className="font-medium text-gray-500">
+            {heading}
+          </h2>
+        )}
+        {title && (
+          <SectionTitle className="mt-2 text-3xl sm:text-4xl">
+            {title}
+          </SectionTitle>
+        )}
+        {description && <p className="mt-4 text-gray-500">{description}</p>}
 
         <div className="mt-4 grid grid-cols-2 items-start gap-y-16 gap-x-6 sm:mt-16 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-8">
           {features.map(
@@ -96,7 +95,7 @@ function WithSquareImages({
                       {title}
                     </h3>
                     {featureDesc != null && (
-                      <p className="mt-2 text-xs text-gray-500">
+                      <p className="mt-2 text-xs xl:text-sm text-gray-500">
                         {featureDesc}
                       </p>
                     )}
