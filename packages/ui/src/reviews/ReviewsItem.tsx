@@ -85,10 +85,10 @@ export default function ReviewsItem({
           </div>
 
           <div className="flex-1 flex md:justify-end mt-4 md:mt-0">
-            <a className="text-sm font-semibold leading-6 text-emerald-600">
+            <button className="text-sm font-semibold leading-6 text-emerald-600">
               {clickText}
-              <span aria-hidden="true">→</span>
-            </a>
+              <span aria-hidden="true" className='ml-[2px] text-xs'>→</span>
+            </button>
           </div>
         </div>
       </div>
