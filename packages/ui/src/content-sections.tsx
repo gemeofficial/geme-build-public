@@ -5,6 +5,7 @@ import VideoInlinePlayer from './video-inline-player'
 import { IImgProps } from './image'
 import { IVideoPlayerProps, VideoPlayer } from './video'
 import Image, { getImageProps } from 'next/image'
+import { SectionDescription, SectionTitle } from './ui-components'
 
 interface IContentSection1Props {
   title?: ReactNode
@@ -44,14 +45,12 @@ function ContentSection1({
         isDisplayTextOnLeft ? 'xl:flex-row' : 'xl:flex-row-reverse',
       )}
     >
-      <div className=" text-center xl:flex-1 xl:text-left ">
-        {title && (
-          <h2 className=" v2311-font-h1 text-v2311-primary ">{title}</h2>
-        )}
+      <div className="xl:flex-1">
+        {title && <SectionTitle className='!text-left'>{title}</SectionTitle>}
         {description && (
-          <p className=" mt-4 md:mt-8 v2311-font-body text-v2311-fg-black ">
+          <SectionDescription className="!text-left mt-4 md:mt-8">
             {description}
-          </p>
+          </SectionDescription>
         )}
       </div>
       <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">
@@ -106,17 +105,13 @@ function ContentSection2({
         isDisplayTextOnLeft ? 'xl:flex-row' : 'xl:flex-row-reverse',
       )}
     >
-      <div className=" text-center xl:flex-1 xl:text-left ">
-        {title && (
-          <h2 className=" v2311-font-h1 text-v2311-primary ">{title}</h2>
+      <div className="xl:flex-1">
+        {title && <SectionTitle className="!text-left">{title}</SectionTitle>}
+        {description && (
+          <SectionDescription className="!text-left mt-4 md:mt-8">
+            {description}
+          </SectionDescription>
         )}
-        <div className="mt-4 flex justify-center md:mt-8 xl:justify-start">
-          {description && (
-            <p className=" v2311-font-body text-v2311-fg-black text-left ">
-              {description}
-            </p>
-          )}
-        </div>
       </div>
       <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">
         {imageSrc && (
@@ -215,15 +210,11 @@ function ContentSection3({
 }: IContentSection3Props): JSX.Element {
   return (
     <section className="px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl ">
-      {title && (
-        <h2 className=" v2311-font-h1 text-v2311-primary text-center ">
-          {title}
-        </h2>
-      )}
+      {title && <SectionTitle>{title}</SectionTitle>}
       {description && (
-        <p className="v2311-font-body text-v2311-fg-black text-center mt-4 md:mt-8">
+        <SectionDescription className="mt-4 md:mt-8">
           {description}
-        </p>
+        </SectionDescription>
       )}
       <div className="mt-4 md:mt-8 xl:mt-16 grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-8">
         {items?.map((item) => {
@@ -305,14 +296,12 @@ function ContentSection4({
         'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 ',
       )}
     >
-      <div className=" text-center xl:flex-1">
-        {title && (
-          <h2 className=" v2311-font-h1 text-v2311-primary ">{title}</h2>
-        )}
+      <div className="xl:flex-1">
+        {title && <SectionTitle>{title}</SectionTitle>}
         {description && (
-          <p className=" mt-4 md:mt-8 v2311-font-body text-v2311-fg-black ">
+          <SectionDescription className="mt-4 md:mt-8">
             {description}
-          </p>
+          </SectionDescription>
         )}
       </div>
       <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">
@@ -422,15 +411,11 @@ function ContentSection5({
 }: IContentSection5Props): JSX.Element {
   return (
     <section className="px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl">
-      {title && (
-        <h2 className=" v2311-font-h1 text-v2311-primary text-center ">
-          {title}
-        </h2>
-      )}
+      {title && <SectionTitle>{title}</SectionTitle>}
       {description && (
-        <p className="v2311-font-body text-gray-600 text-center mt-4 md:mt-8">
+        <SectionDescription className=" mt-4 md:mt-8">
           {description}
-        </p>
+        </SectionDescription>
       )}
       <div className="mt-4 md:mt-8 grid grid-cols-1 gap-4 md:gap-8 xl:grid-cols-3 xl:gap-10">
         {images?.map(({ id, stepText, imageSrc, imageAlt }) => {
@@ -460,9 +445,9 @@ function ContentSection5({
         })}
       </div>
       {bottomDescription && (
-        <p className="v2311-font-body text-gray-600 text-center mt-4 md:mt-8 xl:hidden">
+        <SectionDescription className="mt-4 md:mt-8 xl:hidden">
           {bottomDescription}
-        </p>
+        </SectionDescription>
       )}
     </section>
   )
@@ -618,10 +603,8 @@ function ContentSection6Fixed({
         isDisplayTextOnLeft ? 'xl:flex-row-reverse' : 'xl:flex-row',
       )}
     >
-      <div className=" text-center xl:hidden ">
-        {title && (
-          <h2 className=" v2311-font-h1 text-v2311-primary ">{title}</h2>
-        )}
+      <div className="xl:hidden">
+        {title && <SectionTitle>{title}</SectionTitle>}
       </div>
       <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">
         {videoSrcUrl && videoPosterSrc && (
@@ -658,7 +641,7 @@ function ContentSection6Fixed({
                 height={80}
                 className="w-[80px] h-[80px] md:w-[172px] md:h-[172px] xl:w-[144px] xl:h-[144px] "
               />
-              <p className="v2311-font-img-desc text-v2311-fg-black text-center mt-4 md:mt-8 xl:mt-4">
+              <p className="v2311-font-img-desc text-v2311-fg-black mt-4 md:mt-8 xl:mt-4">
                 {step.description}
               </p>
             </div>

@@ -28,22 +28,22 @@ const v2311FontsPlugin: PluginCreator = ({ addComponents }) => {
     },
 
     '.v2311-font-link-selected': {
-      '@apply font-v2311 font-bold not-italic text-[12px] leading-normal md:text-[24px] xl:text-[16px]':
+      '@apply font-v2311 font-bold not-italic text-[14px] leading-normal md:text-[24px] xl:text-[16px]':
         {},
     },
 
     '.v2311-font-body': {
-      '@apply font-v2311 font-normal not-italic text-[12px] leading-normal md:text-[22px] xl:text-[16px]':
+      '@apply font-v2311 font-normal not-italic text-[14px] leading-normal md:text-[22px] xl:text-[16px]':
         {},
     },
 
     '.v2311-font-link': {
-      '@apply font-v2311 font-normal not-italic text-[12px] leading-normal md:text-[22px] xl:text-[16px]':
+      '@apply font-v2311 font-normal not-italic text-[14px] leading-normal md:text-[22px] xl:text-[16px]':
         {},
     },
 
     '.v2311-font-img-desc': {
-      '@apply font-v2311 font-normal not-italic text-[10px] leading-normal md:text-xl xl:text-[16px]':
+      '@apply font-v2311 font-normal not-italic text-[12px] leading-normal md:text-xl xl:text-[16px]':
         {},
     },
   })
