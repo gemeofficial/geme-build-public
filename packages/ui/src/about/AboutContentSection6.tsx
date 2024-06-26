@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import { MTitle } from '../ui-components'
+import { AboutMTitle } from '../ui-components'
 
 export interface IAboutContentSection6 {
   title: string
@@ -66,7 +66,7 @@ export function AboutContentSection6(props: IAboutContentSection6) {
       <div className="rounded-2xl bg-gray-50 px-6 py-16 sm:p-16">
         <div className="mx-auto max-w-xl lg:max-w-none">
           <div className="text-center">
-            <MTitle className="!text-[#222]">{props.title}</MTitle>
+            <AboutMTitle className="!text-[#222]">{props.title}</AboutMTitle>
           </div>
           <div className="lg:mx-auto mt-12 grid max-w-sm grid-cols-1 gap-x-8 gap-y-10 sm:max-w-none lg:grid-cols-3">
             {props.incentives.map((incentive) => (

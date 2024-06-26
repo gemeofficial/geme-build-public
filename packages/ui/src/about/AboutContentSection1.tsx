@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { MTitle, Title } from '../index'
+import { AboutMTitle, AboutTitle } from '../index'
 
 export interface IAboutContentSection1 {
   mTitle: string
@@ -47,8 +47,8 @@ export const aboutContentSection1ExampleData: IAboutContentSection1 = {
 export function AboutContentSection1(props: IAboutContentSection1) {
   return (
     <div className="mt-20 md:mt-0 lg:mt-8 xl:mt-0 mx-auto max-w-xl lg:max-w-7xl px-8 lg:px-12 2xl:px-0">
-      <MTitle>{props.mTitle}</MTitle>
-      <Title>{props.title}</Title>
+      <AboutMTitle>{props.mTitle}</AboutMTitle>
+      <AboutTitle>{props.title}</AboutTitle>
       <div className="lg:flex items-start justify-between text-base">
         <div className="lg:w-[55%] lg:mr-[5%]">
           {props.descriptions.map((item) => (
@@ -61,7 +61,7 @@ export function AboutContentSection1(props: IAboutContentSection1) {
         <div className="lg:w-[40%] lg:pl-20 mt-10 lg:mt-5 flex flex-col items-start justify-between overflow-hidden space-y-4 lg:space-y-5">
           {props.points.map((item) => (
             <div key={item.title}>
-              <MTitle className="!text-emerald-600">{item.title}</MTitle>
+              <AboutMTitle className="!text-emerald-600">{item.title}</AboutMTitle>
               <div className="text-v2311-text-gary mt-4">{item.desc}</div>
             </div>
           ))}
