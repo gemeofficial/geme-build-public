@@ -45,8 +45,8 @@ function ContentSection1({
         isDisplayTextOnLeft ? 'xl:flex-row' : 'xl:flex-row-reverse',
       )}
     >
-      <div className="xl:flex-1">
-        {title && <SectionTitle className='!text-left'>{title}</SectionTitle>}
+      <div className="xl:flex-1 w-full">
+        {title && <SectionTitle className="!text-left">{title}</SectionTitle>}
         {description && (
           <SectionDescription className="!text-left mt-4 md:mt-8">
             {description}
@@ -105,7 +105,7 @@ function ContentSection2({
         isDisplayTextOnLeft ? 'xl:flex-row' : 'xl:flex-row-reverse',
       )}
     >
-      <div className="xl:flex-1">
+      <div className="md:flex-1 w-full">
         {title && <SectionTitle className="!text-left">{title}</SectionTitle>}
         {description && (
           <SectionDescription className="!text-left mt-4 md:mt-8">
@@ -296,7 +296,7 @@ function ContentSection4({
         'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 ',
       )}
     >
-      <div className="xl:flex-1">
+      <div className="xl:flex-1 w-full">
         {title && <SectionTitle>{title}</SectionTitle>}
         {description && (
           <SectionDescription className="mt-4 md:mt-8">
@@ -622,7 +622,7 @@ function ContentSection6Fixed({
           </video>
         )}
       </div>
-      <div className=" xl:flex-1 ">
+      <div className=" xl:flex-1 w-full">
         {title && (
           <h2 className=" v2311-font-h1 text-v2311-primary hidden xl:block">
             {title}
@@ -641,7 +641,7 @@ function ContentSection6Fixed({
                 height={80}
                 className="w-[80px] h-[80px] md:w-[172px] md:h-[172px] xl:w-[144px] xl:h-[144px] "
               />
-              <p className="v2311-font-img-desc text-v2311-fg-black mt-4 md:mt-8 xl:mt-4">
+              <p className=" text-[10px] md:text-sm lg:text-base text-v2311-fg-black mt-4 md:mt-8 xl:mt-4 mx-[1px]">
                 {step.description}
               </p>
             </div>
@@ -703,14 +703,12 @@ function ContentSection7({
         isDisplayTextOnLeft ? 'xl:flex-row-reverse' : 'xl:flex-row',
       )}
     >
-      <div className=" text-center xl:hidden ">
-        {title && (
-          <h2 className=" v2311-font-h1 text-v2311-primary ">{title}</h2>
-        )}
+      <div className="w-full xl:hidden ">
+        {title && <SectionTitle>{title}</SectionTitle>}
         {description && (
-          <p className=" mt-4 md:mt-8 v2311-font-body text-v2311-fg-black ">
+          <SectionDescription className=" mt-4 md:mt-8">
             {description}
-          </p>
+          </SectionDescription>
         )}
       </div>
       <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">
@@ -792,15 +790,11 @@ function ContentSection8({
 }: IContentSection8Props): JSX.Element {
   return (
     <section className="px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl ">
-      {title && (
-        <h2 className=" v2311-font-h1 text-v2311-primary text-center ">
-          {title}
-        </h2>
-      )}
+      {title && <SectionTitle>{title}</SectionTitle>}
       {description && (
-        <p className="v2311-font-body text-v2311-fg-black text-center mt-4 md:mt-8 xl:hidden">
+        <SectionDescription className="mt-4 md:mt-8 xl:hidden">
           {description}
-        </p>
+        </SectionDescription>
       )}
       <div className="mt-4 md:mt-8 grid grid-cols-2 gap-4 md:gap-8 xl:max-w-4xl xl:mx-auto">
         {items?.map((item) => {

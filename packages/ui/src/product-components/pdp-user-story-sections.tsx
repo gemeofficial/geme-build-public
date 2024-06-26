@@ -1,6 +1,7 @@
 import { ReactNode } from 'react'
-import type { IImgProps } from './image'
+import type { IImgProps } from '../image'
 import Image from 'next/image'
+import { SectionDescription, SectionTitle } from '../ui-components'
 
 interface IPdpUserStoryTeamSectionsExampleProps {
   title?: ReactNode
@@ -79,7 +80,7 @@ function PdpUserStoryTeamSectionsExample({
           role="list"
           className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-8 xl:max-w-none"
         >
-          {people.map((person,index) => (
+          {people.map((person, index) => (
             <li key={person.id} className="flex flex-col gap-6 xl:flex-row">
               <Image
                 className="aspect-[4/5] w-52 flex-none rounded-2xl object-cover"
@@ -180,15 +181,11 @@ function PdpUserStoryTeamSections({
 }: IPdpUserStoryTeamSectionsProps) {
   return (
     <section className="px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl ">
-      {title && (
-        <h2 className=" v2311-font-h1 text-v2311-primary text-left md:text-center ">
-          {title}
-        </h2>
-      )}
+      {title && <SectionTitle>{title}</SectionTitle>}
       {description && (
-        <p className="v2311-font-body text-v2311-fg-black text-left md:text-center mt-4 md:mt-8">
+        <SectionDescription className="mt-4 md:mt-6">
           {description}
-        </p>
+        </SectionDescription>
       )}
       <div className="mt-4 md:mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
         {people?.map((person) => {

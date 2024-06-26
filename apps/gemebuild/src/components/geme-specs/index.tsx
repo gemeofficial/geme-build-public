@@ -62,7 +62,7 @@ function GemeSpecs({ title, specs }: IGemeSpecsProps) {
           name: 'geme tech specs',
           LeftBlock: () => (
             <div className="mx-auto max-w-xl sm:px-6 lg:mx-0 lg:max-w-none lg:px-0">
-              <h3 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+              <h3 className="text-2xl font-bold tracking-tight text-v2311-primary sm:text-3xl">
                 {title}
               </h3>
 
