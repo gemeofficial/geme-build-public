@@ -1,6 +1,7 @@
 import { ReactNode, Ref } from 'react'
 import { SvgOxygen, SvgOxygenCycleProgress } from '../pdp-intro-svgs'
 import './styles.css'
+import { SectionTitle } from '../ui-components'
 
 interface IOxygenCycleProps {
   title?: ReactNode
@@ -101,9 +102,9 @@ function OxygenCycle(
   return (
     <div ref={ref} className="px-4 md:px-8 lg:max-w-7xl lg:mx-auto lg:py-20 ">
       {title && (
-        <h2 className=" v2311-font-h2 md:v2311-font-h1 text-v2311-primary text-center ">
+        <SectionTitle className="!text-center ">
           {title}
-        </h2>
+        </SectionTitle>
       )}
       <div className=" mt-8 md:mt-16 lg:max-w-3xl lg:mx-auto relative ">
         <div id="svg-oxygen-cycle-progress" className="px-4 md:px-12 mx-auto ">

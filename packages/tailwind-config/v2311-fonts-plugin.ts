@@ -18,32 +18,31 @@ const v2311FontsPlugin: PluginCreator = ({ addComponents }) => {
     },
 
     '.v2311-font-h3': {
-      '@apply font-v2311 font-bold not-italic text-[14px] md:text-[18px] leading-normal xl:text-[24px]':
+      '@apply font-v2311 font-bold not-italic text-[16px] md:text-[18px] leading-normal xl:text-[24px]':
         {},
     },
 
     '.v2311-font-btn': {
-      '@apply font-v2311 font-bold not-italic text-[14px] leading-normal xl:text-[16px]':
+      '@apply font-v2311 font-bold not-italic text-[16px] leading-normal xl:text-[18px]':
         {},
     },
 
     '.v2311-font-link-selected': {
-      '@apply font-v2311 font-bold not-italic text-[14px] leading-normal xl:text-[16px]':
+      '@apply font-v2311 font-bold not-italic text-[16px] leading-normal xl:text-[18px]':
         {},
     },
 
     '.v2311-font-body': {
-      '@apply font-v2311 font-normal not-italic text-[14px] leading-normal xl:text-[16px]':
+      '@apply font-v2311 font-normal not-italic text-[16px] leading-normal xl:text-[18px]':
         {},
     },
 
     '.v2311-font-link': {
-      '@apply font-v2311 font-normal not-italic text-[14px] leading-normal xl:text-[16px]':
+      '@apply font-v2311 font-normal not-italic text-[16px] leading-normal xl:text-[18px]':
         {},
     },
-
     '.v2311-font-img-desc': {
-      '@apply font-v2311 font-normal not-italic text-[12px] leading-normal xl:text-[16px]':
+      '@apply font-v2311 font-normal not-italic text-[12px] md:text-[14px] leading-normal xl:text-[16px]':
         {},
     },
   })

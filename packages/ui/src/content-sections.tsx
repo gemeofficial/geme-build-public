@@ -229,9 +229,9 @@ function ContentSection3({
                 quality={60}
                 sizes="(max-width: 1280px) 40vw, (min-width: 1281px) 250px, 1vw"
               />
-              <p className="v2311-font-body text-v2311-fg-black text-left mt-2 md:mt-4">
+              <SectionDescription className="!text-[14px] md:!16px lg:!18px mt-2 md:mt-4">
                 {item.description}
-              </p>
+              </SectionDescription>
             </div>
           )
         })}
@@ -641,7 +641,7 @@ function ContentSection6Fixed({
                 height={80}
                 className="w-[80px] h-[80px] md:w-[172px] md:h-[172px] xl:w-[144px] xl:h-[144px] "
               />
-              <p className="text-[10px] md:text-sm lg:text-base text-v2311-fg-black mt-4 md:mt-8 xl:mt-4 mx-[1px]">
+              <p className="text-[12px] md:text-sm lg:text-base text-v2311-fg-black mt-4 md:mt-8 xl:mt-4 mx-[1px]">
                 {step.description}
               </p>
             </div>

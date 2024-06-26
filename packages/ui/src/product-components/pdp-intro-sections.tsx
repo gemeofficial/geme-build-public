@@ -86,7 +86,7 @@ function PdpIntroSection1({
               return (
                 <div
                   key={item.id}
-                  className="v2311-font-img-desc text-white bg-v2311-fg-dark-black px-2 py-1 md:px-4 md:py-2 rounded-xl"
+                  className="v2311-font-img-desc text-white bg-v2311-fg-dark-black px-2 py-1 md:px-4 md:py-2 rounded-xl text-center"
                 >
                   {item.description}
                 </div>
@@ -300,7 +300,7 @@ function PdpIntroSection6({
               {item?.title && (
                 <h3
                   className={classNames(
-                    'text-left xl:text-center',
+                    'text-center',
                     item.featured
                       ? 'v2311-font-h2'
                       : 'v2311-font-body text-v2311-text-gary xl:text-white mt-4',
@@ -314,7 +314,7 @@ function PdpIntroSection6({
                   'flex flex-row xl:flex-col items-center justify-center w-full xl:items-stretch',
                   item.featured
                     ? 'mt-4 md:mt-8 xl:mt-4 gap-4 md:gap-8 xl:gap-8'
-                    : 'mt-2 md:mt-4 gap-2 md:gap-4',
+                    : 'mt-2 md:mt-4 gap-1 md:gap-4',
                 )}
               >
                 {item?.imageSrc && (
@@ -345,7 +345,7 @@ function PdpIntroSection6({
                       'v2311-font-body xl:v2311-font-h3 xl:font-normal',
                       item.featured
                         ? 'flex-1'
-                        : ' text-[10px] md:v2311-font-img-desc xl:v2311-font-body mr-2 md:mr-4 flex-[3] text-v2311-text-gary xl:text-white',
+                        : ' md:v2311-font-img-desc xl:v2311-font-body mr-2 md:mr-4 flex-[3] text-v2311-text-gary xl:text-white',
                     )}
                   >
                     {item.features.map((feature, idx) => {
@@ -353,8 +353,10 @@ function PdpIntroSection6({
                         <li
                           key={`${feature}_${idx}`}
                           className={classNames(
-                            'flex md:items-center mb-1 md:mb-2 ',
-                            item.featured ? 'xl:mb-2' : 'xl:mb-1 items-center',
+                            ' flex md:items-center mb-1 md:mb-2 ',
+                            item.featured
+                              ? 'xl:mb-2'
+                              : 'xl:mb-1 items-center text-[10px]',
                           )}
                         >
                           {item.featured ? (
@@ -556,7 +558,9 @@ function PdpIntroSection8({
           <div className=" xl:flex-1"></div>
           <div className=" flex flex-col justify-between xl:flex-1 ">
             <div className=" text-center xl:text-left ">
-              {title && <SectionTitle className='!text-center'>{title}</SectionTitle>}
+              {title && (
+                <SectionTitle className="!text-center">{title}</SectionTitle>
+              )}
               {description && (
                 <SectionDescription className="xl:!text-v2311-fg-dark-black mt-4 md:mt-8 !text-left">
                   {description}
