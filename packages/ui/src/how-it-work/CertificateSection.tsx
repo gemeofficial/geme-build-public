@@ -20,7 +20,6 @@ export function CertificateSection({
   title,
   subDescription,
 }: ICertificateSectionProps) {
-
   return (
     <SectionContainer className="flex flex-col gap-4 md:gap-6">
       <SectionTitle>{title}</SectionTitle>
@@ -29,6 +28,7 @@ export function CertificateSection({
       <div className="flex flex-col lg:flex-row gap-4 h-full lg:h-[460px]">
         {imgUrls.map((url, index) => (
           <Image
+            key={url}
             className="w-full h-full object-contain lg:flex-1"
             src={url}
             alt={'certificate' + (index + 1)}
