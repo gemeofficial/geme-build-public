@@ -12,6 +12,7 @@ export * from './industrial-equipments'
 export * from './industrial-equipments-id'
 export * from './manuals-download'
 export * from './about'
+export * from './how-it-work'
 
 // contexts
 export * from '../contexts/link-context'
