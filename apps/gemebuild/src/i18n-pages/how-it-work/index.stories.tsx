@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { HowItWorkDe, HowItWorkEn, HowItWorkFr } from '.'
+import { HowItWorksDe, HowItWorksEn, HowItWorksFr } from '.'
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Pages/how-it-work',
-} satisfies Meta<typeof HowItWorkEn>
+  title: 'Pages/how-it-works',
+} satisfies Meta<typeof HowItWorksEn>
 
 const ReviewsComponent = () => (
   <div className=" h-96 bg-v2311-bg-light-green  flex justify-center items-center ">
@@ -18,15 +18,15 @@ type Story = StoryObj<typeof meta>
 
 export const En: Story = {
   name: 'en',
-  render: () => <HowItWorkEn ReviewsComponent={ReviewsComponent} />,
+  render: () => <HowItWorksEn ReviewsComponent={ReviewsComponent} />,
 }
 
 export const Fr: Story = {
   name: 'fr',
-  render: () => <HowItWorkFr ReviewsComponent={ReviewsComponent} />,
+  render: () => <HowItWorksFr ReviewsComponent={ReviewsComponent} />,
 }
 
 export const De: Story = {
   name: 'de',
-  render: () => <HowItWorkDe ReviewsComponent={ReviewsComponent} />,
+  render: () => <HowItWorksDe ReviewsComponent={ReviewsComponent} />,
 }

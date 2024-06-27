@@ -10,7 +10,7 @@ import {
   ReviewsScoreHeader,
   UseCompostContrast,
 } from 'ui'
-import { ShortVideo, IShortVideoProps } from 'ui/src/how-it-work/ShortVideo'
+import { ShortVideo, IShortVideoProps } from 'ui/src/how-it-works/ShortVideo'
 import { ILinkComponent } from '../../contexts/link-context'
 import { FC } from 'react'
 
@@ -103,7 +103,7 @@ const theoryImageProps: IExaminingReportProps = {
   ),
 }
 
-function HowItWorkFr({ ReviewsComponent }: IPdpIntroProps) {
+function HowItWorksFr({ ReviewsComponent }: IPdpIntroProps) {
   return (
     <>
       <div className="py-8 lg:pt-6 lg:pb-16">
@@ -124,4 +124,4 @@ function HowItWorkFr({ ReviewsComponent }: IPdpIntroProps) {
   )
 }
 
-export { HowItWorkFr }
+export { HowItWorksFr }
