@@ -13,24 +13,6 @@ export interface IExaminingReportProps {
   downloadHref: ReactNode
 }
 
-const examiningReportProps: IExaminingReportProps = {
-  title: `GEME Fertilizer Has Been Tested And Surpassed Quality Standard.`,
-  description: `The test results are as follow The test results are as follow The test results are as follow`,
-  imgUrl:
-    'https://cdn.shopify.com/s/files/1/0602/9390/6640/t/3/assets/remarkchart-1667521654065.jpg?v=1667521740',
-  downloadHref: (
-    <>
-      Download Salt Level Breakdown Report Test{' '}
-      <a
-        href="https://cdn.shopify.com/s/files/1/0602/9390/6640/files/Salt_Breakdown_Report_Reencle.pdf?v=1674090924"
-        target="_blank"
-      >
-        HERE
-      </a>
-    </>
-  ),
-}
-
 export function ExaminingReport({
   description,
   imgUrl,
