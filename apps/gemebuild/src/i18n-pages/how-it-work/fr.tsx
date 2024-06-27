@@ -1,4 +1,4 @@
-// about page静态页面的内容 配置文件 En版
+// page静态页面的内容 配置文件 Fr版
 
 import {
   CertificateSection,

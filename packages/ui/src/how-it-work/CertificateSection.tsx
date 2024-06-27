@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import {
   SectionContainer,
@@ -18,6 +20,7 @@ export function CertificateSection({
   title,
   subDescription,
 }: ICertificateSectionProps) {
+
   return (
     <SectionContainer className="flex flex-col gap-4 md:gap-6">
       <SectionTitle>{title}</SectionTitle>
@@ -28,7 +31,7 @@ export function CertificateSection({
           <Image
             className="w-full h-full object-contain lg:flex-1"
             src={url}
-            alt={'certificate' + index}
+            alt={'certificate' + (index + 1)}
             width={1280}
             height={720}
           />
