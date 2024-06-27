@@ -1,276 +1,127 @@
-/* eslint-disable react/no-unescaped-entities */
+// about page静态页面的内容 配置文件 En版
 
 import {
-  AboutContentSection1,
-  AboutContentSection15,
-  AboutContentSection2,
-  AboutContentSection4,
-  AboutContentSection6,
-  AboutHeroSection,
+  CertificateSection,
+  ExaminingReport,
+  ICertificateSectionProps,
+  IExaminingReportProps,
+  IInlinePalyerType,
+  InlinePlayer,
+  ReviewsScoreHeader,
+  UseCompostContrast,
 } from 'ui'
+import { ShortVideo, IShortVideoProps } from 'ui/src/how-it-work/ShortVideo'
+import { ILinkComponent } from '../../contexts/link-context'
+import { FC } from 'react'
 
-import type {
-  IAboutContentSection1,
-  IAboutContentSection15,
-  IAboutContentSection2,
-  IAboutContentSection4,
-  IAboutContentSection6,
-  IAboutHeroSection,
-} from 'ui'
-
-// about page静态页面的内容 配置文件 Fr版
-
-// AboutHeroSection
-const aboutHeroSectionProps: IAboutHeroSection = {
-  title: 'Moins de déchets, plus de vert',
-  mTitle: `Le chemin de ROKH vers un avenir durable`,
-  descriptionSection: (
-    <div className="w-full mt-3 md:mt-5 max-w-md text-base text-v2311-text-gary md:max-w-3xl">
-      <div>
-        Chez ROKH, nous partageons une vision unifiée : transformer les déchets en ressource
-        et créer un monde où la nature prospère aux côtés du progrès humain. Notre
-        passion pour l'innovation scientifique nous pousse à avoir un impact positif sur
-        le monde. En commercialisant nos solutions biotechnologiques révolutionnaires,
-        nous transformons la recherche en avantages concrets qui améliorent le bien-être humain et répondent aux défis mondiaux.
-      </div>
-      <div>
-        <ul className="space-y-1">
-          <li className="my-2">Notre équipe se compose de :</li>
-          <li>
-            <strong>Professionnels expérimentés</strong> : Avec plus de 20 ans d'expérience
-            dans le traitement des ressources de déchets solides, nous apportons une expertise approfondie à notre travail.
-          </li>
-          <li className="md:w-[60%] lg:w-full">
-            <strong>Scientifiques dévoués</strong> : Nos microbiologistes et
-            agronomes explorent continuellement de nouvelles façons d'utiliser la nature pour une gestion durable des déchets.
-          </li>
-          <li className="md:w-[60%] lg:w-full">
-            <strong>Rêveurs et faiseurs</strong> : Nous nous engageons à transformer notre
-            vision en réalité, une solution innovante à la fois.
-          </li>
-        </ul>
-      </div>
-    </div>
-  ),
-
-  contactUs: 'Contactez-nous',
-  imgUrls1: '/assets/images/about/v2406/s0-company.png',
-  imgUrls2: [
-    '/assets/images/about/v2406/s0-experiment.png',
-    '/assets/images/about/v2406/s0-scientist.png',
-  ],
-  imgUrls3: [
-    '/assets/images/about/v2406/s0-soil.png',
-    '/assets/images/about/v2406/s0-seed.png',
-  ],
+export interface IPdpIntroProps {
+  ReviewsComponent: FC<{}>
+  PrefetchLink?: ILinkComponent
 }
 
-// AboutContentSection1
-const aboutContentSection1Props: IAboutContentSection1 = {
-  mTitle: 'Notre mission',
-  title: 'Toutes les choses vivent éternellement et en harmonie avec la Terre',
-  descriptions: [
-    "Le gaspillage alimentaire est l'un des plus grands défis mondiaux, et nous pouvons vous aider à le résoudre ensemble. Mais il ne s'agit pas seulement de déchets alimentaires - les excréments d'animaux et tous les déchets biodégradables peuvent être efficacement décomposés.",
-    'En combinant la biotechnologie avec la fabrication moderne, GEME offre une solution pour un meilleur recyclage des déchets : Réduire & Recycler sur place.',
-    "Similaire au concept de cache dans les réseaux informatiques, la manière la plus efficace de gérer les déchets, en particulier les biodéchets, est de les traiter là où ils sont produits, raccourcissant ainsi considérablement le chemin du recyclage.",
-    "GEME crée des produits pour concrétiser cette idée. Être éco-responsable et protéger la nature n'est pas seulement un slogan pour nous; c'est réalisable à travers chaque petit geste lorsque nous éliminons nos déchets quotidiens.",
-    "GEME est plus qu'un produit; c'est une solution technologique.",
-    'Nous utilisons la technologie pour créer un réseau reliant des équipes de scientifiques, des partenaires distributeurs, des restaurants durables, des communautés de recyclage, des fermes biologiques, des stations de traitement des déchets, des organisations de gestion des déchets et des individus. Chaque nœud en bénéficie, tout comme toutes les choses vivent en harmonie sur notre planète.',
-  ],
-  points: [
-    {
-      title: 'Repenser',
-      desc: 'Adoptez une vision holistique des soins environnementaux. Traitez les biodéchets non pas comme des déchets, mais comme une ressource pour les jardins et la planète. Comprenez que nos actions ont un impact profond sur la Terre.',
-    },
-    {
-      title: 'Réduire',
-      desc: `Réduisez l'utilisation des ressources et les déchets. Suivez des pratiques durables pour économiser les ressources et protéger l'environnement. Gérez les déchets à leur source pour réduire leur impact.`,
-    },
-    {
-      title: 'Réutiliser',
-      desc: 'Recyclez, réutilisez et valorisez les matériaux. Transformez différents types de déchets en ressources utiles, prolongez leur durée de vie et réduisez le besoin de nouveaux matériaux.',
-    },
-    {
-      title: 'Restaurer',
-      desc: "Protégez et régénérez les écosystèmes naturels. Améliorez la santé des sols, nettoyez la pollution et réparez les environnements endommagés pour assurer le bien-être de notre planète.",
-    },
-  ],
-  fullImgUrl: '/assets/images/about/v2406/s2-family.png',
-}
-
-// AboutContentSection15
-const aboutContentSection15Props: IAboutContentSection15 = {
-  mTitle: 'Nos gens',
-  title: 'Esprits pionniers, cœurs passionnés',
-  bodyTexts: (
+const shortVideoProps: IShortVideoProps = {
+  title: 'Der einfachste Weg, Kompost zu erhalten',
+  description: (
     <>
-      <div>
-        <strong>Visionnaires</strong> : Nos leaders visionnaires définissent la direction,
-        nous inspirant à penser au-delà de l'ordinaire et à remettre en question les approches conventionnelles de la gestion des déchets.
-      </div>
-      <div>
-        <strong>Scientifiques</strong> : Nos brillants scientifiques sont à la pointe de la
-        recherche, explorant constamment de nouvelles façons d'exploiter le pouvoir de la nature pour des solutions de gestion des déchets durables.
-      </div>
-      <div>
-        <strong>Ingénieurs</strong> : Nos ingénieurs qualifiés donnent vie aux idées,
-        transformant des concepts innovants en solutions concrètes qui font une réelle différence dans le monde.
-      </div>
-      <div>
-        <strong>Collaborateurs</strong> : Nous favorisons un esprit de collaboration,
-        encourageant la communication ouverte et l'échange d'idées à tous les niveaux de l'organisation.
-      </div>
+      <p>no slow waiting time easy maintenance</p>
+      <p>no mess and smell clean and odorless</p>
+      <p>no need to turn over work in any weather</p>
     </>
   ),
-  mainImgUrl: '/assets/images/about/v2406/s1-birth.png',
-  imgSectionUrl1: '/assets/images/about/v2406/s1-team.png',
-  imgSectionUrl2: '/assets/images/about/v2406/s1-meeting.png',
-  imgSectionUrl3: '/assets/images/about/v2406/s1-colleagues.png',
+  videoPosterUrl: '/assets/images/home-v2311/use-compost-cover.jpg',
+  videoSrcUrl:
+    'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/geme-genereate-compost-12s-480p.mp4',
 }
 
-// AboutContentSection15
-const aboutContentSection2Props: IAboutContentSection2 = {
-  mTitle: 'Nos valeurs',
-  title: 'Prendre la route la moins fréquentée',
-  desc: 'Nous basons nos actions sur la vérité et les principes fondamentaux. Avec un objectif clair en vue, nous rêvons de manière ambitieuse mais prenons des mesures calculées pour y parvenir.',
-  dataList: [
-    {
-      title: 'Être de classe mondiale',
-      desc: `Nous fixons les normes les plus élevées, poursuivant sans relâche l'excellence dans tous les aspects de notre travail, avec la durabilité au cœur.`,
-    },
-    {
-      title: 'Ouvert et coopératif',
-      desc: `Favoriser le dialogue ouvert et la collaboration pour trouver des solutions collectives. Construire de solides partenariats avec des individus, des organisations et des communautés.`,
-    },
-    {
-      title: 'Toujours apprendre',
-      desc: `Adopter des recherches de pointe pour relever les défis environnementaux. Innover et affiner continuellement nos solutions pour obtenir des résultats optimaux.`,
-    },
-    {
-      title: 'Être solidaire',
-      desc: `Cultiver un environnement solidaire où les individus se sentent valorisés, encouragés et soutenus pour atteindre leur plein potentiel.`,
-    },
-    {
-      title: 'Faits et solutions',
-      desc: `Élaborer des solutions efficaces non influencées par des hypothèses ou des préjugés, mais par des résultats d'expériences et des données ; nous laissons les données guider notre chemin.`,
-    },
-    {
-      title: 'Prendre des responsabilités',
-      desc: `Garantir que nos engagements et notre travail sont alignés avec nos valeurs et principes éthiques. Partager notre expertise et nos connaissances pour autonomiser les communautés du monde entier.`,
-    },
+const shortVideoProps2: IShortVideoProps = {
+  title: 'Der einfachste Weg, Kompost zu erhalten',
+  description: (
+    <>
+      <p>no slow waiting time easy maintenance</p>
+      <p>no mess and smell clean and odorless</p>
+      <p>no need to turn over work in any weather</p>
+    </>
+  ),
+  videoPosterUrl: '/assets/images/home-v2311/use-compost-cover.jpg',
+  videoSrcUrl:
+    'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/geme-genereate-compost-12s-480p.mp4',
+  isReverse: true,
+}
+
+const inlinePlayerProps: IInlinePalyerType = {
+  title: 'Seeing is Believing',
+  description:
+    "See the incredible speed for yourself! This unedited 7-hour video showcases how quickly our machine works. Witness the breakdown of nearly 2kg of food waste – a feat none of our competitors dare to demonstrate publicly. We believe customers deserve transparency, even if it's not good looking and tedious.",
+  type: 'youtube',
+  videoSrcUrlOrVidioId: 'asNRoqkC_BA',
+  mixpanelFrom: 'Product page inline player',
+}
+
+const certificateSectionProps: ICertificateSectionProps = {
+  title: `Here's our certificate`,
+  description: `Here's our certificate`,
+  imgUrls: [
+    'https://cdn.shopify.com/s/files/1/0602/9390/6640/files/certificate_1.jpg?v=1695770281',
+    'https://cdn.shopify.com/s/files/1/0602/9390/6640/files/KakaoTalk_20221209_103729502-e4965f79-83ea-4ec3-8f91-2fcfae1530e7_452x.png?v=1695769669',
   ],
+  subDescription: `We thank all of our GEME and we couldn't have continue supporting our ENCORE Initiative if it wasn't for all of you. We would like to take a step forward so that we can start practicing our love for the mother nature.`,
 }
 
-// aboutContentSection4
-const aboutContentSection4Props: IAboutContentSection4 = {
-  mTitle: 'Nos jalons',
-  title: 'Des bases solides, étape par étape',
-  desc: `Animés par la passion et un engagement commun envers l'excellence, nous progressons rapidement dans notre processus de développement.`,
-  progressList: [
-    {
-      progressBarTitle: 'Juillet 2022',
-      title: 'Campagne Kickstarter',
-      desc: (
-        <div>
-          Obtenu{' '}
-          <a href="https://www.kickstarter.com/projects/geme/geme-harvest-ready-to-use-organic-compost-easily">
-            le soutien
-          </a>{' '}
-          de contributeurs de plus de 22 pays dans le monde.
-        </div>
-      ),
-    },
-    {
-      progressBarTitle: 'Mars 2023',
-      title: 'Entrée sur le marché américain',
-      desc: 'Commencé à vendre aux États-Unis, ouverture de la boutique autorisée Amazon.',
-    },
-    {
-      progressBarTitle: 'Juin 2023',
-      title: 'Vente en Europe',
-      desc: 'Première livraison de machines en Europe, mise en place d’un entrepôt local.',
-    },
-    {
-      progressBarTitle: 'Janvier 2024',
-      title: 'Mise à niveau du modèle GEME I',
-      desc: 'Mise à niveau matérielle après un an de retours clients, plus silencieuse et plus robuste.',
-    },
-    {
-      progressBarTitle: 'Septembre/Octobre 2024',
-      title: 'GEME II',
-      desc: 'Plus intelligent, plus pratique et plus abordable.',
-    },
-    {
-      progressBarTitle: '2026',
-      title: 'Réseautage GEME',
-      desc: 'Connexion des communautés, des fermes et des solutions de gestion des déchets pour la durabilité.',
-    },
-  ],
+const examiningReportProps: IExaminingReportProps = {
+  title: `GEME Fertilizer Has Been Tested And Surpassed Quality Standard.`,
+  description: `The test results are as follow The test results are as follow The test results are as follow`,
+  imgUrl:
+    'https://cdn.shopify.com/s/files/1/0602/9390/6640/t/3/assets/remarkchart-1667521654065.jpg?v=1667521740',
+  downloadHref: (
+    <>
+      Download Salt Level Breakdown Report Test{' '}
+      <a
+        href="https://cdn.shopify.com/s/files/1/0602/9390/6640/files/Salt_Breakdown_Report_Reencle.pdf?v=1674090924"
+        target="_blank"
+      >
+        HERE
+      </a>
+    </>
+  ),
 }
 
-// aboutContentSection6
-const aboutContentSection6Props: IAboutContentSection6 = {
-  title: 'Partenariat avec GEME',
-  incentives: [
-    {
-      name: 'Vivre avec GEME',
-      link: '/product/geme',
-      imageSrc: '/assets/images/about/icons/use-geme.png',
-      description: (
-        <>
-          Faites du bien, faites le bien, vivez durablement. Remplacez votre éliminateur de déchets
-          par <a href="/product/geme">GEME Composteur</a>.
-        </>
-      ),
-    },
-    {
-      name: 'Compostage à grande échelle avec GEME',
-      link: '/industrial-equipments',
-      imageSrc: '/assets/images/about/icons/composting.png',
-      description: `De la maison aux usines, biotechnologie sur mesure pour une excellence de compostage industrielle.`,
-    },
-    {
-      name: 'Rejoignez le réseau GEME',
-      link: '/geme-network-survey',
-      imageSrc: '/assets/images/about/icons/networking.png',
-      description: `Communauté de partage de compost gratuite ! Partagez ce dont vous n'avez pas besoin et construisez ensemble un avenir plus vert.`,
-    },
-    {
-      name: 'Devenez affilié avec GEME',
-      link: '/coming-soon',
-      imageSrc: '/assets/images/about/icons/affiliate-marketing.png',
-      description: `Soyez un champion de GEME ! Rejoignez notre union d'affiliation et menez la révolution durable.`,
-    },
-    {
-      name: 'Vente ou distribution avec GEME',
-      link: 'https://eu.jotform.com/form/221943772954062',
-      imageSrc: '/assets/images/about/icons/distribution.png',
-      description: `Élargissez votre portée et rejoignez le mouvement GEME. Nous recherchons des distributeurs forts dans le monde entier.`,
-    },
-    {
-      name: 'Investir dans GEME',
-      link: 'mailto:admin@geme.bio',
-      imageSrc: '/assets/images/about/icons/profits.png',
-      description: `Propulsez l'avenir ! Investissez dans GEME et rejoignez un mouvement durable révolutionnaire. (admin@geme.bio).`,
-    },
-  ],
+const theoryImageProps: IExaminingReportProps = {
+  title: `How the GEME composter works`,
+  description: `How the GEME composter works How the GEME composter works How the GEME composter works`,
+  imgUrl:
+    'https://cdn.shopify.com/s/files/1/0602/9390/6640/t/3/assets/remarkchart-1667521654065.jpg?v=1667521740',
+  downloadHref: (
+    <>
+      To Download Click{' '}
+      <a
+        href="https://cdn.shopify.com/s/files/1/0602/9390/6640/files/Salt_Breakdown_Report_Reencle.pdf?v=1674090924"
+        target="_blank"
+      >
+        HERE
+      </a>
+    </>
+  ),
 }
 
-
-
-function AboutPageFr() {
+function HowItWorkFr({ ReviewsComponent }: IPdpIntroProps) {
   return (
     <>
       <div className="py-8 lg:pt-6 lg:pb-16">
-        <AboutHeroSection {...aboutHeroSectionProps} />
-        <AboutContentSection1 {...aboutContentSection1Props} />
-        <AboutContentSection15 {...aboutContentSection15Props} />
-        <AboutContentSection2 {...aboutContentSection2Props} />
-        <AboutContentSection4 {...aboutContentSection4Props} />
-        <AboutContentSection6 {...aboutContentSection6Props} />
+        <ShortVideo {...shortVideoProps} />
+        <ShortVideo {...shortVideoProps2} />
+        <InlinePlayer {...inlinePlayerProps} />
+        <CertificateSection {...certificateSectionProps} />
+        <ExaminingReport {...examiningReportProps} />
+        <ExaminingReport {...theoryImageProps} />
+        <UseCompostContrast />
+
+        <div className="my-4">
+          <ReviewsScoreHeader locale="en" />
+        </div>
+        <ReviewsComponent />
       </div>
     </>
   )
 }
 
-export { AboutPageFr }
+export { HowItWorkFr }

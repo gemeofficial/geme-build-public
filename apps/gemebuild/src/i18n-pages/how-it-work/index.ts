@@ -1,3 +1,3 @@
 export { HowItWorkEn } from './en'
-export { AboutPageFr } from './fr'
-export { AboutPageDe } from './de'
+export { HowItWorkFr } from './fr'
+export { HowItWorkDe } from './de'

@@ -26,7 +26,7 @@ export function UseCompostContrast() {
       </SectionDescription>
 
       <BeforeAfterSlider
-        className="w-full h-60 md:h-96 mt-4 md:mt-8"
+        className="w-full h-60 md:h-96 xl:h-[475px] mt-4 md:mt-8"
         beforeImage={{
           imageUrl: before,
           alt: 'Before compost utilization',

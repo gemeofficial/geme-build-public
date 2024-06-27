@@ -1,6 +1,15 @@
 // about page静态页面的内容 配置文件 En版
 
-import { CertificateSection, ExaminingReport, IInlinePalyerType, InlinePlayer, ReviewsScoreHeader, UseCompostContrast } from 'ui'
+import {
+  CertificateSection,
+  ExaminingReport,
+  ICertificateSectionProps,
+  IExaminingReportProps,
+  IInlinePalyerType,
+  InlinePlayer,
+  ReviewsScoreHeader,
+  UseCompostContrast,
+} from 'ui'
 import { ShortVideo, IShortVideoProps } from 'ui/src/how-it-work/ShortVideo'
 import { ILinkComponent } from '../../contexts/link-context'
 import { FC } from 'react'
@@ -48,23 +57,68 @@ const inlinePlayerProps: IInlinePalyerType = {
   mixpanelFrom: 'Product page inline player',
 }
 
-function HowItWorkEn({
-  ReviewsComponent,
-  PrefetchLink,
-}: IPdpIntroProps) {
+const certificateSectionProps: ICertificateSectionProps = {
+  title: `Here's our certificate`,
+  description: `Here's our certificate`,
+  imgUrls: [
+    'https://cdn.shopify.com/s/files/1/0602/9390/6640/files/certificate_1.jpg?v=1695770281',
+    'https://cdn.shopify.com/s/files/1/0602/9390/6640/files/KakaoTalk_20221209_103729502-e4965f79-83ea-4ec3-8f91-2fcfae1530e7_452x.png?v=1695769669',
+  ],
+  subDescription: `We thank all of our GEME and we couldn't have continue supporting our ENCORE Initiative if it wasn't for all of you. We would like to take a step forward so that we can start practicing our love for the mother nature.`,
+}
+
+const examiningReportProps: IExaminingReportProps = {
+  title: `GEME Fertilizer Has Been Tested And Surpassed Quality Standard.`,
+  description: `The test results are as follow The test results are as follow The test results are as follow`,
+  imgUrl:
+    'https://cdn.shopify.com/s/files/1/0602/9390/6640/t/3/assets/remarkchart-1667521654065.jpg?v=1667521740',
+  downloadHref: (
+    <>
+      Download Salt Level Breakdown Report Test{' '}
+      <a
+        href="https://cdn.shopify.com/s/files/1/0602/9390/6640/files/Salt_Breakdown_Report_Reencle.pdf?v=1674090924"
+        target="_blank"
+      >
+        HERE
+      </a>
+    </>
+  ),
+}
+
+const theoryImageProps: IExaminingReportProps = {
+  title: `How the GEME composter works`,
+  description: `How the GEME composter works How the GEME composter works How the GEME composter works`,
+  imgUrl:
+    'https://cdn.shopify.com/s/files/1/0602/9390/6640/t/3/assets/remarkchart-1667521654065.jpg?v=1667521740',
+  downloadHref: (
+    <>
+      To Download Click{' '}
+      <a
+        href="https://cdn.shopify.com/s/files/1/0602/9390/6640/files/Salt_Breakdown_Report_Reencle.pdf?v=1674090924"
+        target="_blank"
+      >
+        HERE
+      </a>
+    </>
+  ),
+}
+
+function HowItWorkEn({ ReviewsComponent }: IPdpIntroProps) {
   return (
     <>
       <div className="py-8 lg:pt-6 lg:pb-16">
         <ShortVideo {...shortVideoProps} />
         <ShortVideo {...shortVideoProps2} />
-        <CertificateSection />
-        <ExaminingReport />
         <InlinePlayer {...inlinePlayerProps} />
+        <CertificateSection {...certificateSectionProps} />
+        <ExaminingReport {...examiningReportProps} />
+        <ExaminingReport {...theoryImageProps} />
+        <UseCompostContrast />
+
         <div className="my-4">
           <ReviewsScoreHeader locale="en" />
         </div>
         <ReviewsComponent />
-        <UseCompostContrast />
       </div>
     </>
   )

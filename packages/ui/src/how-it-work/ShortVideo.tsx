@@ -33,7 +33,7 @@ export function ShortVideo({
       {/* mobile title-desc */}
       <div className="lg:hidden">
         <SectionTitle>{title}</SectionTitle>
-        <SectionDescription>
+        <SectionDescription className='mt-4'>
           {description}
         </SectionDescription>
       </div>
@@ -65,7 +65,7 @@ export function ShortVideo({
         {/* pc title-desc */}
         <div className="lg:flex-1 w-full hidden lg:block">
           <SectionTitle className="!text-left">{title}</SectionTitle>
-          <SectionDescription className="!text-left">
+          <SectionDescription className="!text-left mt-4">
             {description}
           </SectionDescription>
         </div>
