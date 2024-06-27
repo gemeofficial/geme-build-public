@@ -1,8 +1,6 @@
 // about page静态页面的内容 配置文件 En版
 
-import { IInlinePalyerType, InlinePlayer, ReviewsScoreHeader } from 'ui'
-import CertificateSection from 'ui/src/how-it-work/CertificateSection'
-import ExaminingReport from 'ui/src/how-it-work/ExaminingReport'
+import { CertificateSection, ExaminingReport, IInlinePalyerType, InlinePlayer, ReviewsScoreHeader, UseCompostContrast } from 'ui'
 import { ShortVideo, IShortVideoProps } from 'ui/src/how-it-work/ShortVideo'
 import { ILinkComponent } from '../../contexts/link-context'
 import { FC } from 'react'
@@ -66,6 +64,7 @@ function HowItWorkEn({
           <ReviewsScoreHeader locale="en" />
         </div>
         <ReviewsComponent />
+        <UseCompostContrast />
       </div>
     </>
   )

@@ -1,15 +1,19 @@
 import Image from 'next/image'
-import { SectionDescription, SectionTitle } from '../ui-components'
+import {
+  SectionContainer,
+  SectionDescription,
+  SectionTitle,
+} from '../ui-components'
 
-export default function CertificateSection() {
+export function CertificateSection() {
   return (
-    <section className="px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col gap-4 md:gap-6">
+    <SectionContainer className="flex flex-col gap-4 md:gap-6">
       <SectionTitle>Here's our certificate</SectionTitle>
-      <SectionDescription className='!mt-0'>
+      <SectionDescription>
         Here's our certificate Here's our certificate Here's our certificate
       </SectionDescription>
 
-      <div className="flex gap-4 h-80 lg:h-[460px]">
+      <div className="flex flex-col lg:flex-row gap-4 h-full lg:h-[460px]">
         <Image
           className="w-full h-full object-contain"
           src={
@@ -30,11 +34,11 @@ export default function CertificateSection() {
         />
       </div>
       <div className="text-v2311-bg-dark-green mt-4">
-        We thank all of our peoples and we couldn't have continue supporting
-        our ENCORE Initiative if it wasn't for all of you. We would like to take
-        a step forward so that we can start practicing our love for the mother
+        We thank all of our peoples and we couldn't have continue supporting our
+        ENCORE Initiative if it wasn't for all of you. We would like to take a
+        step forward so that we can start practicing our love for the mother
         nature.
       </div>
-    </section>
+    </SectionContainer>
   )
 }

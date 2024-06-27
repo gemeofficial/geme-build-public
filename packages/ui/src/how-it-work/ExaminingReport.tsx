@@ -1,10 +1,10 @@
 import React, { memo } from 'react'
-import { SectionDescription, SectionTitle } from '../ui-components'
+import { SectionContainer, SectionDescription, SectionTitle } from '../ui-components'
 import Image from 'next/image'
 
-export default memo(function ExaminingReport() {
+export function ExaminingReport() {
   return (
-    <section className="px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl">
+    <SectionContainer className='flex flex-col gap-4 md:gap-6'>
       <SectionTitle>
         GEME Fertilizer Has Been Tested And Surpassed Quality Standard.
       </SectionTitle>
@@ -27,6 +27,6 @@ export default memo(function ExaminingReport() {
           HERE
         </a>
       </div>
-    </section>
+    </SectionContainer>
   )
-})
+}

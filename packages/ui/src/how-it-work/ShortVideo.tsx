@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { SectionDescription, SectionTitle } from '../ui-components'
+import { SectionContainer, SectionDescription, SectionTitle } from '../ui-components'
 import { getImageProps } from 'next/image'
 import { ReactNode } from 'react'
 
@@ -29,7 +29,7 @@ export function ShortVideo({
   }
 
   return (
-    <section className="px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col lg:flex-row">
+    <SectionContainer className="flex flex-col lg:flex-row">
       {/* mobile title-desc */}
       <div className="lg:hidden">
         <SectionTitle>{title}</SectionTitle>
@@ -70,6 +70,6 @@ export function ShortVideo({
           </SectionDescription>
         </div>
       </div>
-    </section>
+    </SectionContainer>
   )
 }
