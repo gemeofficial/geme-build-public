@@ -1,19 +1,26 @@
 import clsx from 'clsx'
-import { SectionContainer, SectionDescription, SectionTitle } from '../ui-components'
+import {
+  SectionContainer,
+  SectionDescription,
+  SectionTitle,
+} from '../ui-components'
+import Image from 'next/image'
 import { getImageProps } from 'next/image'
 import { ReactNode } from 'react'
 
 export interface IShortVideoProps {
   title: ReactNode
   description: ReactNode
-  videoPosterUrl: string
-  videoSrcUrl: string
+  imageUrl?: string
+  videoPosterUrl?: string
+  videoSrcUrl?: string
   isReverse?: boolean
 }
 
 export function ShortVideo({
   title,
   description,
+  imageUrl,
   videoPosterUrl,
   videoSrcUrl,
   isReverse,
@@ -33,9 +40,7 @@ export function ShortVideo({
       {/* mobile title-desc */}
       <div className="lg:hidden">
         <SectionTitle>{title}</SectionTitle>
-        <SectionDescription className='mt-4'>
-          {description}
-        </SectionDescription>
+        <SectionDescription className="mt-4">{description}</SectionDescription>
       </div>
 
       <div
@@ -59,6 +64,15 @@ export function ShortVideo({
               <source src={videoSrcUrl} type="video/mp4" />
               Your browser does not support HTML5 video.
             </video>
+          )}
+          {imageUrl && (
+            <Image
+              className="max-w-full w-full rounded-2xl overflow-hidden object-cover"
+              width={1600}
+              height={900}
+              src="/assets/images/how-it-works/dehydrator-vs-geme.png"
+              alt="GEME composter vs food dehydrators"
+            />
           )}
         </div>
 

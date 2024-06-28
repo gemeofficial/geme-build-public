@@ -20,12 +20,29 @@ export interface IPdpIntroProps {
 }
 
 const shortVideoProps: IShortVideoProps = {
-  title: 'Der einfachste Weg, Kompost zu erhalten',
+  title: 'Compost Pile in A Box',
   description: (
     <>
-      <p>no slow waiting time easy maintenance</p>
-      <p>no mess and smell clean and odorless</p>
-      <p>no need to turn over work in any weather</p>
+      <ul className="list-disc ml-4 mt-4">
+        <li className="mt-4">
+          <a href="product/geme">GEME Composter</a> quickly breaks down food
+          scraps and pet waste using special microbes.
+        </li>
+
+        <li className="mt-4">
+          The mixer increases the surface area of food waste for microbes to
+          attach.
+        </li>
+
+        <li className="mt-4">
+          It creates <strong>ideal environment for microbes</strong> to thrive
+          and decompose waste.
+        </li>
+
+        <li className="mt-4">
+          Similar to outdoor composting, but in a neat and convenient container.
+        </li>
+      </ul>
     </>
   ),
   videoPosterUrl: '/assets/images/home-v2311/use-compost-cover.jpg',
@@ -34,24 +51,46 @@ const shortVideoProps: IShortVideoProps = {
 }
 
 const shortVideoProps2: IShortVideoProps = {
-  title: 'Der einfachste Weg, Kompost zu erhalten',
+  title: 'Microbes, Not Dehydrate',
   description: (
     <>
-      <p>no slow waiting time easy maintenance</p>
-      <p>no mess and smell clean and odorless</p>
-      <p>no need to turn over work in any weather</p>
+      <p>
+        Many food dehydrator machines are marketed misleadingly as composters.
+        However, they are simply bread makers that cook and dehydrate food, not
+        actually composting it.
+      </p>
+      <p>These dehydrators use electricity to heat and dry food scraps.</p>
+      <hr className="mt-4 mb-4" />
+      <p>
+        In contrast, the GEME Composter utilizes{' '}
+        <a href="/geme-kobold">GEME Kobold</a> to accelerate the composting
+        process.
+      </p>
+      <p>
+        It uses electricity to{' '}
+        <strong>simulate and maintain the optimal environment</strong>. for
+        microbes to thrive, effectively breaking down organic waste.
+      </p>
     </>
   ),
-  videoPosterUrl: '/assets/images/home-v2311/use-compost-cover.jpg',
-  videoSrcUrl:
-    'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/geme-genereate-compost-12s-480p.mp4',
+  imageUrl: '/assets/images/how-it-works/geme-vs-dehydrators.png',
   isReverse: true,
 }
 
 const inlinePlayerProps: IInlinePalyerType = {
   title: 'Seeing is Believing',
-  description:
-    "See the incredible speed for yourself! This unedited 7-hour video showcases how quickly our machine works. Witness the breakdown of nearly 2kg of food waste – a feat none of our competitors dare to demonstrate publicly. We believe customers deserve transparency, even if it's not good looking and tedious.",
+  description: (
+    <>
+      <strong>Breakdown 2kg waste in 7 hours</strong>! See the incredible speed
+      for yourself. This unedited 7-hour video showcases the machines incredible
+      speed in processing food waste. Witness the breakdown of nearly 2kg of
+      food waste, a challenge no competitor has dared to publicly demonstrate.
+      We believe customers deserve transparency, check the video at any
+      timestamp if you doubt, although we will recommend you observe the first
+      10 min and last 10 min will be good enough.
+    </>
+  ),
+
   type: 'youtube',
   videoSrcUrlOrVidioId: 'asNRoqkC_BA',
   mixpanelFrom: 'Product page inline player',
