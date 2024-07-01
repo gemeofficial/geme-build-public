@@ -5,6 +5,7 @@ import {
   SectionTitle,
 } from '../ui-components'
 import clsx from 'clsx'
+import { PropsWithChildren } from 'react'
 
 const props = {
   title: 'Compare Section',
@@ -40,7 +41,6 @@ const props = {
           desc: 'Additional work needed to turn it into compost',
         },
       ],
-      isGeme: true,
     },
     {
       imgUrl:
@@ -136,10 +136,11 @@ const props = {
       ],
     },
   ],
+  buttonText: 'Buy Now',
 }
 
 export default function CompareSection() {
-  const { description, title } = props
+  const { description, title, buttonText, compareList } = props
   return (
     <div className="bg-v2311-bg-light-green">
       <SectionContainer>
@@ -150,7 +151,7 @@ export default function CompareSection() {
 
         <div className="overflow-auto">
           <div className="w-[960px] md:w-[1152px] xl:w-full grid grid-cols-4 text-center pt-4">
-            {props.compareList.map((item) => (
+            {compareList.map((item, index) => (
               <div className="flex flex-col" key={item.devicename}>
                 <Image
                   className="w-full h-32 md:h-40 xl:h-52 object-cover"
@@ -170,7 +171,7 @@ export default function CompareSection() {
                     <div
                       className={clsx(
                         'text-base lg:text-xl pt-4 px-5 border-t border-[#A8A8A8]',
-                        item.isGeme ? 'text-v2311-primary' : 'text-gray-800',
+                        index === 0 ? 'text-v2311-primary' : 'text-gray-800',
                       )}
                     >
                       {iten.title}
@@ -180,11 +181,37 @@ export default function CompareSection() {
                     </div>
                   </div>
                 ))}
+
+                {index === 0 && (
+                  <BuyNowButton className="hidden xl:flex w-full">
+                    {buttonText}
+                  </BuyNowButton>
+                )}
               </div>
             ))}
           </div>
         </div>
+        <BuyNowButton className="xl:hidden w-full md:w-1/2">
+          {buttonText}
+        </BuyNowButton>
       </SectionContainer>
     </div>
+  )
+}
+
+function BuyNowButton({
+  children,
+  className,
+}: PropsWithChildren<{ className?: string }>) {
+  return (
+    <a
+      className={clsx(
+        'md:text-lg xl:text-xl bg-[#047857] text-white flex items-center justify-center my-4 rounded-full py-2 md:py-3 xl:px-8',
+        className,
+      )}
+      href="/product/geme"
+    >
+      {children}
+    </a>
   )
 }
