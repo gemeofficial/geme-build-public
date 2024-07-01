@@ -30,7 +30,7 @@ export function ExaminingReport({
         width={900}
         height={720}
       />
-      <div className="text-[#d67b38] font-bold">{downloadHref}</div>
+      {/*<div className="text-[#d67b38] font-bold">{downloadHref}</div>*/}
     </SectionContainer>
   )
 }

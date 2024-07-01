@@ -81,13 +81,10 @@ const inlinePlayerProps: IInlinePalyerType = {
   title: 'Seeing is Believing',
   description: (
     <>
-      <strong>Breakdown 2kg waste in 7 hours</strong>! See the incredible speed
-      for yourself. This unedited 7-hour video showcases the machines incredible
-      speed in processing food waste. Witness the breakdown of nearly 2kg of
-      food waste, a challenge no competitor has dared to publicly demonstrate.
-      We believe customers deserve transparency, check the video at any
-      timestamp if you doubt, although we will recommend you observe the first
-      10 min and last 10 min will be good enough.
+      <strong>Break down 2kg waste in 7 hours</strong>! This unedited 7-hour
+      video might seem boring, but it offers an in-depth look at the real-world
+      performance of the GEME Composter. Comparing the first 3 minutes to the
+      last 10 minutes, you will be amazed.
     </>
   ),
 
@@ -107,10 +104,11 @@ const certificateSectionProps: ICertificateSectionProps = {
 }
 
 const examiningReportProps: IExaminingReportProps = {
-  title: `GEME Fertilizer Has Been Tested And Surpassed Quality Standard.`,
-  description: `The test results are as follow The test results are as follow The test results are as follow`,
+  title: `Certificates and Test Report`,
+  description: `Both GEME Kobold and GEME Composter are well-certified and have surpassed all tests conducted by authoritative organizations.`,
+  // imgUrl: '/assets/images/how-it-works/certificates-and-test-report.jpeg',
   imgUrl:
-    'https://cdn.shopify.com/s/files/1/0602/9390/6640/t/3/assets/remarkchart-1667521654065.jpg?v=1667521740',
+    'https://cdn.shopify.com/s/files/1/0602/9390/6640/files/certificate_1.jpg?v=1695770281',
   downloadHref: (
     <>
       Download Salt Level Breakdown Report Test{' '}
@@ -124,8 +122,25 @@ const examiningReportProps: IExaminingReportProps = {
   ),
 }
 
-const theoryImageProps: IExaminingReportProps = {
-  title: `How the GEME composter works`,
+const gemeComposterImageProps: IExaminingReportProps = {
+  title: `How the GEME Composter Works`,
+  description: `Completely understanding how the machine works and why the GEME Composter is the best home composter with its feature subsystems.`,
+  imgUrl: '/assets/images/how-it-works/how-geme-composter-works.jpg',
+  downloadHref: (
+    <>
+      To Download Click{' '}
+      <a
+        href="https://cdn.shopify.com/s/files/1/0602/9390/6640/files/Salt_Breakdown_Report_Reencle.pdf?v=1674090924"
+        target="_blank"
+      >
+        HERE
+      </a>
+    </>
+  ),
+}
+
+const gemeKoboldImageProps: IExaminingReportProps = {
+  title: `How the GEME Kobold works`,
   description: `How the GEME composter works How the GEME composter works How the GEME composter works`,
   imgUrl:
     'https://cdn.shopify.com/s/files/1/0602/9390/6640/t/3/assets/remarkchart-1667521654065.jpg?v=1667521740',
@@ -149,11 +164,12 @@ function HowItWorksEn({ ReviewsComponent }: IPdpIntroProps) {
         <ShortVideo {...shortVideoProps} />
         <ShortVideo {...shortVideoProps2} />
         <InlinePlayer {...inlinePlayerProps} />
-        <CertificateSection {...certificateSectionProps} />
-        <ExaminingReport {...examiningReportProps} />
-        <ExaminingReport {...theoryImageProps} />
-        <UseCompostContrast />
 
+        {/*<CertificateSection {...certificateSectionProps} />*/}
+        <ExaminingReport {...gemeComposterImageProps} />
+        <ExaminingReport {...gemeKoboldImageProps} />
+        <ExaminingReport {...examiningReportProps} />
+        <UseCompostContrast />
         <div className="my-4">
           <ReviewsScoreHeader locale="en" />
         </div>
