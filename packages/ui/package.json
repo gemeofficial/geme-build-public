@@ -39,10 +39,11 @@
     "access": "public"
   },
   "dependencies": {
-    "mixpanel-browser": "^2.47.0",
-    "swiper": "^10.2.0",
-    "viewerjs": "^1.11.6",
     "clsx": "^2.0.0",
-    "react-youtube": "^10.1.0"
+    "mixpanel-browser": "^2.47.0",
+    "react-before-after-slider-component": "^1.1.8",
+    "react-youtube": "^10.1.0",
+    "swiper": "^10.2.0",
+    "viewerjs": "^1.11.6"
   }
 }

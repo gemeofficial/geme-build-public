@@ -3,7 +3,7 @@ import PlayerComponent, { IPlayerComponentType } from './PlayerComponent'
 
 export interface IInlinePalyerType extends IPlayerComponentType {
   title?: string
-  description?: string
+  description?: React.ReactNode
 }
 
 export function InlinePlayer({
