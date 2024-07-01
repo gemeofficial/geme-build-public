@@ -45,12 +45,12 @@ function PdpIntroEn({
         {
           id: 2,
           tabLabel: 'Spec',
-          tabPanel: <Spec />,
+          tabPanel: <div id='pdp-spec-section' className='h-0 overflow-hidden'><Spec /></div>,
         },
         {
           id: 3,
           tabLabel: 'Warranty',
-          tabPanel: <Warranty Link={PrefetchLink} />,
+          tabPanel: <div id='pdp-warranty-section' className='h-0 overflow-hidden'><Warranty Link={PrefetchLink} /></div>,
         },
         {
           id: 4,
