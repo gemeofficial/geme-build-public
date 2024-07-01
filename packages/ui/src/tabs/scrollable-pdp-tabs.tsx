@@ -57,7 +57,19 @@ const scrollablePdpTabsProps: IScrollablePdpTabsProps = {
   ],
 }
 
+const tabLabelToIdMaps = new Map<string, string>([
+  ['Spec', 'pdp-spec-section'],
+  ['Warranty', 'pdp-warranty-section'],
+])
+
 function ScrollablePdpTabs({ tabs, anchorOffset }: IScrollablePdpTabsProps) {
+  const tabsClickHandler = (tabLabel: string | ReactNode) => {
+    const id = tabLabelToIdMaps.get(tabLabel as string)
+    if (!id) return
+
+    const el = document.getElementById(id)
+    if (el) el.style.height = '100%'
+  }
   return (
     <>
       <div
@@ -74,6 +86,7 @@ function ScrollablePdpTabs({ tabs, anchorOffset }: IScrollablePdpTabsProps) {
                 duration={500}
                 to={String(tab.id)}
                 offset={anchorOffset}
+                onClick={() => tabsClickHandler(tab.tabLabel)}
                 className={classNames(
                   'inline-block px-1 pt-0.5 pb-px md:px-4 xl:px-6 xl:py-2 font-normal cursor-pointer',
                   'hover:bg-white hover:text-[#047857] hover:rounded-t-lg hover:xl:rounded-lg',
