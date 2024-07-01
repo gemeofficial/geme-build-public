@@ -31,6 +31,7 @@ import type {
   IPdpIntroSection8Props,
   IOxygenCycleProps,
 } from 'ui'
+import CompareSection from 'ui/src/compare-section/CompareSection'
 
 const pdpIntroSection1Props: IPdpIntroSection1Props = {
   title: 'Le premier composteur de biodéchets au monde',
@@ -498,6 +499,8 @@ function Intro(): JSX.Element {
       <ContentSection2 {...contentSection22Props} />
 
       <PdpIntroSection6 {...pdpIntroSection6Props} />
+      
+      <CompareSection />
 
       <PdpIntroSection7 {...pdpIntroSection7Props} />
 

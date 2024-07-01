@@ -483,8 +483,6 @@ const pdpIntroSection8Props: IPdpIntroSection8Props = {
 function Intro(): JSX.Element {
   return (
     <div>
-      <CompareSection />
-
       <PdpIntroSection1 {...pdpIntroSection1Props} />
 
       <ScrollTriggeredAnimatedOxygenCycle {...oxygenCycleProps} />
@@ -500,6 +498,8 @@ function Intro(): JSX.Element {
       <ContentSection2 {...contentSection22Props} />
 
       <PdpIntroSection6 {...pdpIntroSection6Props} />
+      
+      <CompareSection />
 
       <PdpIntroSection7 {...pdpIntroSection7Props} />
 
