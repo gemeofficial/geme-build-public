@@ -96,7 +96,7 @@ const props = {
         },
         {
           title: '6.5L volume',
-          desc: 'Looks big, but capacity limited',
+          desc: 'Tall and big, but limited capacity',
         },
         {
           title: 'Limited food scraps',
