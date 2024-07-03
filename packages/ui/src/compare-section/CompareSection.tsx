@@ -109,7 +109,7 @@ function BuyNowButton({
   return (
     <a
       className={clsx(
-        'md:text-lg xl:text-xl bg-[#047857] text-white flex items-center justify-center my-4 rounded-full py-2 md:py-3 xl:px-8',
+        'md:text-lg xl:text-xl bg-v2311-bg-dark-green hover:bg-v2311-primary transition-all duration-300 text-white flex items-center justify-center my-4 rounded-full py-2 md:py-3 xl:px-8',
         className,
       )}
       href="/product/geme"
