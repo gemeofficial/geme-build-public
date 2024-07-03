@@ -30,6 +30,7 @@ import type {
   IContentSection8Props,
   IPdpIntroSection8Props,
   IOxygenCycleProps,
+  ICompareSectionProps,
 } from 'ui'
 import CompareSection from 'ui/src/compare-section/CompareSection'
 
@@ -91,16 +92,16 @@ const oxygenCycleProps: IOxygenCycleProps = {
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Die aerobe Kompostierung zersetzt organisches Material mithilfe von
-            Sauerstoff ( O<sub>2</sub> ), wobei aerobe Mikroben die Materialien in
-            Wasserdampf, Wärme und nährstoffreichen Humus umwandeln. Der GEME
+            Sauerstoff ( O<sub>2</sub> ), wobei aerobe Mikroben die Materialien
+            in Wasserdampf, Wärme und nährstoffreichen Humus umwandeln. Der GEME
             Komposter vereinfacht diesen Prozess mit einem effizienten
             Belüftungssystem, das den Sauerstofffluss für eine effektive
             Zersetzung optimiert.
           </p>
           <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
-            Zersetzt Bioabfall mit Sauerstoff ( O<sub>2</sub> ) zu wertvollen Nährstoffen.
-            Der GEME Komposter vereinfacht dies mit einem effizienten
-            Belüftungssystem für eine schnellere Zersetzung.
+            Zersetzt Bioabfall mit Sauerstoff ( O<sub>2</sub> ) zu wertvollen
+            Nährstoffen. Der GEME Komposter vereinfacht dies mit einem
+            effizienten Belüftungssystem für eine schnellere Zersetzung.
           </p>
         </>
       ),
@@ -111,8 +112,8 @@ const oxygenCycleProps: IOxygenCycleProps = {
         <>
           <SvgWood className="w-8 h-8 md:w-16 md:h-16" />
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
-            Braune Materialien <br className='md:hidden' /> in der Kompostierung: Gewährleistung optimaler
-            Bedingungen
+            Braune Materialien <br className="md:hidden" /> in der
+            Kompostierung: Gewährleistung optimaler Bedingungen
           </h3>
           <p className="hidden lg:block  v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Braune Materialien, die reich an Kohlenstoff sind, spielen eine
@@ -351,6 +352,155 @@ const pdpIntroSection6Props: IPdpIntroSection6Props = {
   ],
 }
 
+const compareSectionProps: ICompareSectionProps = {
+  title: "Vergleichen wir",
+  description: 'Entdecken Sie, was GEME anders macht.',
+  compareList: [
+    {
+      imgUrl:
+        'https://m.media-amazon.com/images/S/aplus-media-library-service-media/fee657c2-7e60-41d8-9b8d-9b1cd8e7ee24.__CR0,0,600,450_PT0_SX300_V1___.jpg',
+      devicename: 'GEME',
+      compareItems: [
+        {
+          title: 'Echter Kompost',
+          desc: 'Hochaktive Mikroben beschleunigen den Kompostierungsprozess',
+        },
+        {
+          title: 'Kein Filterwechsel erforderlich',
+          desc: 'Keine Kosten, industrieller Filter, kein Kohlenstoffmaterial',
+        },
+        {
+          title: '19L super großes Volumen',
+          desc: 'Dauert Monate, um es zu füllen',
+        },
+        {
+          title: 'Auch für Haustierkot & Suppe',
+          desc: 'Unterstützt Bioabfall, einschließlich Katzenstreu und Flüssigabfall',
+        },
+        {
+          title: 'Keine Reinigung erforderlich',
+          desc: 'Einfach reduzieren, wenn voll, keine Entleerung und Reinigung notwendig',
+        },
+        {
+          title: 'Kein Abonnement',
+          desc: 'Hoher Preis, aber keine versteckten Kosten, kostenloser Test, kostenlose Rückgabe',
+        },
+        {
+          title: 'Kontinuierliche Kompostierung',
+          desc: 'Jederzeit hinzufügen, kein Warten auf abgeschlossenen Zyklus notwendig',
+        },
+      ],
+    },
+    {
+      imgUrl:
+        'https://cdn.sanity.io/images/0u2q0huj/production/7f4899f5fe3877b287b29b9de868a86aeb88c5d0-1552x1768.png?w=430&auto=format',
+      devicename: 'Marke 1', // Lomi
+      compareItems: [
+        {
+          title: 'Kein echter Kompost',
+          desc: 'Trocknen und Kochen, immer noch trockener Abfall',
+        },
+        {
+          title: 'Kohlenstofffilter regelmäßig wechseln',
+          desc: 'Bis zu 240 $/Jahr für Filterwechsel',
+        },
+        {
+          title: '3L kleines Volumen',
+          desc: 'Begrenzte Menge an Lebensmittelabfällen',
+        },
+        {
+          title: 'Begrenzte Lebensmittelreste',
+          desc: 'Kann kein Fleisch und keine Suppe verarbeiten',
+        },
+        {
+          title: 'Täglich leeren',
+          desc: 'Nach jedem Gebrauch reinigen',
+        },
+        {
+          title: 'Abonnement erforderlich',
+          desc: 'Hohe versteckte Abonnementkosten',
+        },
+        {
+          title: 'Zyklusbasierter manueller Start',
+          desc: 'Deckel abdrehen, Knopf drücken, bis der Zyklus endet',
+        },
+      ],
+    },
+    {
+      imgUrl:
+        'https://cdn.sanity.io/images/0u2q0huj/production/f3eb4e0e9738129809ed179edb732beed21ab3ec-1552x1768.png?w=430&auto=format',
+      devicename: 'Marke 2', // Mill
+      compareItems: [
+        {
+          title: 'Kein echter Kompost',
+          desc: 'Trocknen und mahlen, immer noch trockener Abfall',
+        },
+        {
+          title: 'Kohlenstoffgeruchsfilter',
+          desc: '60 $+ für jeden Filterwechsel',
+        },
+        {
+          title: '6,5L Volumen',
+          desc: 'Hoch und groß, aber begrenzte Kapazität',
+        },
+        {
+          title: 'Begrenzte Lebensmittelreste',
+          desc: 'Kann kein Fleisch und keine Suppe verarbeiten',
+        },
+        {
+          title: 'Wöchentlich leeren',
+          desc: 'Laufen und leeren, wenn voll',
+        },
+        {
+          title: 'Abonnement erforderlich',
+          desc: 'Standardmäßig Abonnement, Schwierigkeiten bei der Kündigung und Rückgabe, keine Rückerstattung möglich',
+        },
+        {
+          title: 'Kontinuierliches Zerkleinern',
+          desc: 'Automatischer Neustart bei Zugabe von Abfall, kontinuierliches Zerkleinern',
+        },
+      ],
+    },
+    {
+      imgUrl:
+        'https://cdn.sanity.io/images/0u2q0huj/production/7f4899f5fe3877b287b29b9de868a86aeb88c5d0-1552x1768.png?w=430&auto=format',
+      devicename: 'Marke 3', // Reencle
+      compareItems: [
+        {
+          title: 'Echter Kompost',
+          desc: 'Wenig Wartung, Mikroben beteiligt',
+        },
+        {
+          title: 'Kohlenstofffilter regelmäßig wechseln',
+          desc: 'Kosten 35 $+ für jeden Filterwechsel',
+        },
+        {
+          title: '6L Volumen',
+          desc: '14L Außenvolumen, 6L Innenvolumen',
+        },
+        {
+          title: 'Nur Lebensmittelabfälle',
+          desc: 'Kann keinen Haustierkot verarbeiten',
+        },
+        {
+          title: 'Nach Bedarf reinigen',
+          desc: 'Entleeren, reinigen und Kompoststarter zurücksetzen, wenn voll',
+        },
+        {
+          title: 'Abonnement angeboten',
+          desc: 'Sieht erschwinglich aus, aber Schwierigkeiten bei der Kündigung oder Rückerstattung',
+        },
+        {
+          title: 'Kontinuierliche Kompostierung',
+          desc: 'Jederzeit hinzufügen, kein Warten auf abgeschlossenen Zyklus notwendig',
+        },
+      ],
+    },
+  ],
+  buttonText: 'Jetzt kaufen',
+}
+
+
 const pdpIntroSection7Props: IPdpIntroSection7Props = {
   title: 'Groß, mehr & langfristig',
   description: 'Arbeitet 7x24 Stunden, aber energiesparend',
@@ -496,9 +646,9 @@ function Intro(): JSX.Element {
 
       <ContentSection2 {...contentSection22Props} />
 
-      <PdpIntroSection6 {...pdpIntroSection6Props} />  
+      <PdpIntroSection6 {...pdpIntroSection6Props} />
 
-      <CompareSection />
+      <CompareSection className="mb-4" locale='de' {...compareSectionProps} />
 
       <PdpIntroSection7 {...pdpIntroSection7Props} />
 
