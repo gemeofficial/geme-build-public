@@ -30,7 +30,9 @@ import type {
   IContentSection8Props,
   IPdpIntroSection8Props,
   IOxygenCycleProps,
+  ICompareSectionProps,
 } from 'ui'
+import CompareSection from 'ui/src/compare-section/CompareSection'
 
 const pdpIntroSection1Props: IPdpIntroSection1Props = {
   title: 'Le premier composteur de biodéchets au monde',
@@ -93,16 +95,17 @@ const oxygenCycleProps: IOxygenCycleProps = {
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Le compostage aérobie décompose la matière organique en utilisant de
-            l'oxygène ( O<sub>2</sub> ), nécessitant des microbes aérobies pour décomposer
-            les matériaux en vapeur d'eau, chaleur et humus riche en nutriments.
-            Le composteur GEME simplifie ce processus avec un système d'aération
-            efficace, optimisant le flux d'oxygène pour une décomposition
-            efficace.
+            l'oxygène ( O<sub>2</sub> ), nécessitant des microbes aérobies pour
+            décomposer les matériaux en vapeur d'eau, chaleur et humus riche en
+            nutriments. Le composteur GEME simplifie ce processus avec un
+            système d'aération efficace, optimisant le flux d'oxygène pour une
+            décomposition efficace.
           </p>
           <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
-            Décompose les déchets organiques avec de l'oxygène ( O<sub>2</sub> ) pour obtenir
-            des nutriments précieux. Le composteur GEME simplifie cela avec un
-            système d'aération efficace pour une décomposition plus rapide.
+            Décompose les déchets organiques avec de l'oxygène ( O<sub>2</sub> )
+            pour obtenir des nutriments précieux. Le composteur GEME simplifie
+            cela avec un système d'aération efficace pour une décomposition plus
+            rapide.
           </p>
         </>
       ),
@@ -182,9 +185,9 @@ const oxygenCycleProps: IOxygenCycleProps = {
             30-40°C.
           </p>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
-            GEME optimise ce processus en régulant la température
-            à chaque étape, garantissant un compostage efficace et un compost de
-            haute qualité.
+            GEME optimise ce processus en régulant la température à chaque
+            étape, garantissant un compostage efficace et un compost de haute
+            qualité.
           </p>
           <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Le compostage transforme les déchets en sol riche en nutriments
@@ -354,6 +357,155 @@ const pdpIntroSection6Props: IPdpIntroSection6Props = {
   ],
 }
 
+const compareSectionProps: ICompareSectionProps = {
+  title: "Comparons",
+  description: 'Découvrez ce qui rend GEME différent.',
+  compareList: [
+    {
+      imgUrl:
+        '/assets/images/compare-section/compare-section-geme.png',
+      devicename: 'GEME',
+      compareItems: [
+        {
+          title: 'Véritable compost',
+          desc: 'Des microbes hautement actifs accélèrent le processus de compostage',
+        },
+        {
+          title: 'Pas besoin de changer le filtre',
+          desc: 'Aucun coût, filtre de qualité industrielle, pas de matériau carbone',
+        },
+        {
+          title: 'Volume super grand de 19L',
+          desc: 'Prend des mois pour se remplir',
+        },
+        {
+          title: 'Aussi pour les excréments d\'animaux et la soupe',
+          desc: 'Prend en charge les déchets bio, y compris litière pour chats et liquides',
+        },
+        {
+          title: 'Pas besoin de nettoyer',
+          desc: 'Réduire simplement quand il est plein, pas besoin de vider et de nettoyer',
+        },
+        {
+          title: 'Pas d\'abonnement',
+          desc: 'Le prix est élevé, mais aucun coût d\'abonnement caché, essai gratuit, retour gratuit',
+        },
+        {
+          title: 'Compostage continu',
+          desc: 'Ajouter à tout moment, pas besoin d\'attendre la fin du cycle',
+        },
+      ],
+    },
+    {
+      imgUrl:
+        '/assets/images/compare-section/compare-section-lomi.png',
+      devicename: 'Marque 1', // Lomi
+      compareItems: [
+        {
+          title: 'Pas de véritable compost',
+          desc: 'Déshydrater et cuire, toujours des déchets secs',
+        },
+        {
+          title: 'Changer régulièrement le filtre carbone',
+          desc: 'Jusqu\'à 240 $/an pour le remplacement des filtres',
+        },
+        {
+          title: 'Volume de 3L',
+          desc: 'Capacité limitée pour les déchets alimentaires',
+        },
+        {
+          title: 'Déchets alimentaires limités',
+          desc: 'Ne peut pas gérer la viande et la soupe',
+        },
+        {
+          title: 'Vider quotidiennement',
+          desc: 'Nettoyer après chaque utilisation',
+        },
+        {
+          title: 'Abonnement requis',
+          desc: 'Coût caché élevé de l\'abonnement',
+        },
+        {
+          title: 'Démarrage manuel basé sur le cycle',
+          desc: 'Dévisser le couvercle, appuyer sur le bouton pour démarrer, attendre la fin du cycle',
+        },
+      ],
+    },
+    {
+      imgUrl:
+        '/assets/images/compare-section/compare-section-mill.png',
+      devicename: 'Marque 2', // Mill
+      compareItems: [
+        {
+          title: 'Pas de véritable compost',
+          desc: 'Déshydrater et broyer, toujours des déchets secs',
+        },
+        {
+          title: 'Filtre à odeurs carbone',
+          desc: '60 $+ pour chaque remplacement de filtre',
+        },
+        {
+          title: 'Volume de 6,5L',
+          desc: 'Haut et grand, mais capacité limitée',
+        },
+        {
+          title: 'Déchets alimentaires limités',
+          desc: 'Ne peut pas gérer la viande et la soupe',
+        },
+        {
+          title: 'Vider chaque semaine',
+          desc: 'Fonctionne et se vide quand il est plein',
+        },
+        {
+          title: 'Abonnement requis',
+          desc: 'Abonnement par défaut, difficultés à annuler et à retourner, pas de remboursement possible',
+        },
+        {
+          title: 'Hachage continu',
+          desc: 'Redémarrage automatique lorsque vous ajoutez des déchets, continue de hacher',
+        },
+      ],
+    },
+    {
+      imgUrl:
+        '/assets/images/compare-section/compare-section-reencle.png',
+      devicename: 'Marque 3', // Reencle
+      compareItems: [
+        {
+          title: 'Véritable compost',
+          desc: 'Microbes impliqués, faible entretien',
+        },
+        {
+          title: 'Changer régulièrement le filtre carbone',
+          desc: 'Coût de 35 $+ pour chaque remplacement de filtre',
+        },
+        {
+          title: 'Volume de 6L',
+          desc: '14L espace extérieur, 6L volume intérieur',
+        },
+        {
+          title: 'Seulement les déchets alimentaires',
+          desc: 'Ne peut pas gérer les excréments d\'animaux',
+        },
+        {
+          title: 'Nettoyage à la demande',
+          desc: 'Vider, nettoyer et réinitialiser le composteur lorsque plein',
+        },
+        {
+          title: 'Abonnement offert',
+          desc: 'Semble abordable, mais des difficultés pour annuler ou obtenir un remboursement',
+        },
+        {
+          title: 'Compostage continu',
+          desc: 'Ajouter à tout moment, pas besoin d\'attendre la fin du cycle',
+        },
+      ],
+    },
+  ],
+  buttonText: 'Acheter maintenant',
+}
+
+
 const pdpIntroSection7Props: IPdpIntroSection7Props = {
   title: 'Grand, plus et à long terme',
   description: `Travail 7x24 mais économie d'énergie`,
@@ -498,6 +650,8 @@ function Intro(): JSX.Element {
       <ContentSection2 {...contentSection22Props} />
 
       <PdpIntroSection6 {...pdpIntroSection6Props} />
+
+      <CompareSection locale='fr' {...compareSectionProps} />
 
       <PdpIntroSection7 {...pdpIntroSection7Props} />
 
