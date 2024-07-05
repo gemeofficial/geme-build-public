@@ -360,7 +360,7 @@ const compareSectionProps: ICompareSectionProps = {
   compareList: [
     {
       imgUrl:
-        'https://m.media-amazon.com/images/S/aplus-media-library-service-media/fee657c2-7e60-41d8-9b8d-9b1cd8e7ee24.__CR0,0,600,450_PT0_SX300_V1___.jpg',
+        'assets/images/compare-section/compare-section-geme.png',
       devicename: 'GEME',
       compareItems: [
         {
@@ -395,7 +395,7 @@ const compareSectionProps: ICompareSectionProps = {
     },
     {
       imgUrl:
-        'https://cdn.sanity.io/images/0u2q0huj/production/7f4899f5fe3877b287b29b9de868a86aeb88c5d0-1552x1768.png?w=430&auto=format',
+        'assets/images/compare-section/compare-section-lomi.png',
       devicename: 'Brand 1', // Lomi
       compareItems: [
         {
@@ -430,7 +430,7 @@ const compareSectionProps: ICompareSectionProps = {
     },
     {
       imgUrl:
-        'https://cdn.sanity.io/images/0u2q0huj/production/f3eb4e0e9738129809ed179edb732beed21ab3ec-1552x1768.png?w=430&auto=format',
+        'assets/images/compare-section/compare-section-mill.png',
       devicename: 'Brand 2', // mill
       compareItems: [
         {
@@ -465,7 +465,7 @@ const compareSectionProps: ICompareSectionProps = {
     },
     {
       imgUrl:
-        'https://cdn.sanity.io/images/0u2q0huj/production/7f4899f5fe3877b287b29b9de868a86aeb88c5d0-1552x1768.png?w=430&auto=format',
+        'assets/images/compare-section/compare-section-reencle.png',
       devicename: 'Brand 3', // Reencle
       compareItems: [
         {

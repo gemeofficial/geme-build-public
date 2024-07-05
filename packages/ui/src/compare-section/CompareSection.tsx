@@ -36,10 +36,10 @@ export default function CompareSection({
   className?: string
 }) {
   return (
-    <div className={clsx("bg-v2311-bg-light-green",className)}>
+    <div className={clsx("bg-[#f8f8f8] font-v2311 font-medium",className)}>
       <SectionContainer>
         <SectionTitle>{title}</SectionTitle>
-        <SectionDescription className="mt-4 md:mt-8">
+        <SectionDescription className="my-4">
           {description}
         </SectionDescription>
 
@@ -67,7 +67,7 @@ export default function CompareSection({
                   >
                     <div
                       className={clsx(
-                        'lg:text-xl pt-4 px-5 border-t border-[#A8A8A8]',
+                        'lg:text-xl !leading-5 lg:!leading-6 pt-4 pb-1 px-5 border-t border-[#A8A8A8]',
                         index === 0 ? 'text-v2311-primary' : 'text-gray-800',
                         locale !== 'en' ? 'text-[15px]' : 'text-base',
                       )}
