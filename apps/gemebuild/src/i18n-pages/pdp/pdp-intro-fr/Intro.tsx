@@ -363,7 +363,7 @@ const compareSectionProps: ICompareSectionProps = {
   compareList: [
     {
       imgUrl:
-        'assets/images/compare-section/compare-section-geme.png',
+        '/assets/images/compare-section/compare-section-geme.png',
       devicename: 'GEME',
       compareItems: [
         {
@@ -398,7 +398,7 @@ const compareSectionProps: ICompareSectionProps = {
     },
     {
       imgUrl:
-        'assets/images/compare-section/compare-section-lomi.png',
+        '/assets/images/compare-section/compare-section-lomi.png',
       devicename: 'Marque 1', // Lomi
       compareItems: [
         {
@@ -433,7 +433,7 @@ const compareSectionProps: ICompareSectionProps = {
     },
     {
       imgUrl:
-        'assets/images/compare-section/compare-section-mill.png',
+        '/assets/images/compare-section/compare-section-mill.png',
       devicename: 'Marque 2', // Mill
       compareItems: [
         {
@@ -468,7 +468,7 @@ const compareSectionProps: ICompareSectionProps = {
     },
     {
       imgUrl:
-        'assets/images/compare-section/compare-section-reencle.png',
+        '/assets/images/compare-section/compare-section-reencle.png',
       devicename: 'Marque 3', // Reencle
       compareItems: [
         {

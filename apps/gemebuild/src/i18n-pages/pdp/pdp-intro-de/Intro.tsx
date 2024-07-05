@@ -357,7 +357,7 @@ const compareSectionProps: ICompareSectionProps = {
   description: 'Entdecken Sie, was GEME anders macht.',
   compareList: [
     {
-      imgUrl: 'assets/images/compare-section/compare-section-geme.png',
+      imgUrl: '/assets/images/compare-section/compare-section-geme.png',
       devicename: 'GEME',
       compareItems: [
         {
@@ -391,7 +391,7 @@ const compareSectionProps: ICompareSectionProps = {
       ],
     },
     {
-      imgUrl: 'assets/images/compare-section/compare-section-lomi.png',
+      imgUrl: '/assets/images/compare-section/compare-section-lomi.png',
       devicename: 'Marke 1', // Lomi
       compareItems: [
         {
@@ -425,7 +425,7 @@ const compareSectionProps: ICompareSectionProps = {
       ],
     },
     {
-      imgUrl: 'assets/images/compare-section/compare-section-mill.png',
+      imgUrl: '/assets/images/compare-section/compare-section-mill.png',
       devicename: 'Marke 2', // Mill
       compareItems: [
         {
@@ -459,7 +459,7 @@ const compareSectionProps: ICompareSectionProps = {
       ],
     },
     {
-      imgUrl: 'assets/images/compare-section/compare-section-reencle.png',
+      imgUrl: '/assets/images/compare-section/compare-section-reencle.png',
       devicename: 'Marke 3', // Reencle
       compareItems: [
         {
