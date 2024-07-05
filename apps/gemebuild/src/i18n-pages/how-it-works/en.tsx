@@ -150,7 +150,7 @@ const gemeComposterImageProps: IExaminingReportProps = {
 
 const gemeKoboldImageProps: IExaminingReportProps = {
   title: `How the GEME Kobold works`,
-  description: `How the GEME composter works How the GEME composter works How the GEME composter works`,
+  description: `GEME has tiny decomposers called Kobold that eat your food scraps. These decomposers multiply quickly and break down the scraps into nutrient-rich compost. As they work, the amount of food waste shrinks. Kobold also keeps the compost healthy by balancing its acidity and moisture.`,
   imgUrl: '/assets/images/how-it-works/how-geme-kobold-works.png',
   downloadHref: (
     <>
