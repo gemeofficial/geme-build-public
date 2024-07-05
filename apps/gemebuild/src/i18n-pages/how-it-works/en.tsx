@@ -202,7 +202,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
           <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Aerobic Composting:
             <br />
-            Nature's Nutrient Cycle
+            Nature Nutrient Cycle
           </h3>
           <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Aerobic composting breaks down organic matter using oxygen ( O
