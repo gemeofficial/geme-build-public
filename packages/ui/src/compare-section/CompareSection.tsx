@@ -48,7 +48,7 @@ export default function CompareSection({
             {compareList.map((item, index) => (
               <div className="flex flex-col" key={item.devicename}>
                 <Image
-                  className="w-full h-32 md:h-40 xl:h-52 object-cover"
+                  className="w-full h-32 md:h-40 xl:h-52 object-contain"
                   src={item.imgUrl}
                   alt={item.devicename}
                   width={350}

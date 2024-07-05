@@ -648,7 +648,7 @@ function Intro(): JSX.Element {
 
       <PdpIntroSection6 {...pdpIntroSection6Props} />
 
-      <CompareSection className="mb-4" locale='en' {...compareSectionProps} />
+      <CompareSection locale='en' {...compareSectionProps} />
 
       <PdpIntroSection7 {...pdpIntroSection7Props} />
 
