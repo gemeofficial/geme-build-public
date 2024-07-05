@@ -10,13 +10,13 @@ export function SectionDescription({
   className,
 }: PropsWithChildren<{ className?: string }>) {
   return (
-    <p
+    <div
       className={clsx(
         'v2311-font-body text-v2311-text-gary text-left xl:text-center',
         className,
       )}
     >
       {children}
-    </p>
+    </div>
   )
 }
