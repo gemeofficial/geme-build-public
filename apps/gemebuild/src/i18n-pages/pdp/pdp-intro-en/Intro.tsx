@@ -359,8 +359,7 @@ const compareSectionProps: ICompareSectionProps = {
   description: 'Discover what makes GEME different.',
   compareList: [
     {
-      imgUrl:
-        '/assets/images/compare-section/compare-section-geme.png',
+      imgUrl: '/assets/images/compare-section/compare-section-geme.png',
       devicename: 'GEME',
       compareItems: [
         {
@@ -394,8 +393,7 @@ const compareSectionProps: ICompareSectionProps = {
       ],
     },
     {
-      imgUrl:
-        '/assets/images/compare-section/compare-section-lomi.png',
+      imgUrl: '/assets/images/compare-section/compare-section-lomi.png',
       devicename: 'Brand 1', // Lomi
       compareItems: [
         {
@@ -429,8 +427,7 @@ const compareSectionProps: ICompareSectionProps = {
       ],
     },
     {
-      imgUrl:
-        '/assets/images/compare-section/compare-section-mill.png',
+      imgUrl: '/assets/images/compare-section/compare-section-mill.png',
       devicename: 'Brand 2', // mill
       compareItems: [
         {
@@ -455,7 +452,7 @@ const compareSectionProps: ICompareSectionProps = {
         },
         {
           title: 'Subscription required',
-          desc: 'Subscription by default, trouble for cancel and return, no possible refund',
+          desc: 'Subscription by default, trouble for cancel and return, refund is not applicable',
         },
         {
           title: 'Continuously chopping',
@@ -464,8 +461,7 @@ const compareSectionProps: ICompareSectionProps = {
       ],
     },
     {
-      imgUrl:
-        '/assets/images/compare-section/compare-section-reencle.png',
+      imgUrl: '/assets/images/compare-section/compare-section-reencle.png',
       devicename: 'Brand 3', // Reencle
       compareItems: [
         {
@@ -648,7 +644,7 @@ function Intro(): JSX.Element {
 
       <PdpIntroSection6 {...pdpIntroSection6Props} />
 
-      <CompareSection locale='en' {...compareSectionProps} />
+      <CompareSection locale="en" {...compareSectionProps} />
 
       <PdpIntroSection7 {...pdpIntroSection7Props} />
 
