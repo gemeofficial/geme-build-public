@@ -163,7 +163,7 @@ const inlinePlayerProps: IInlinePalyerType = {
 
 // 滚动圈配置项
 const oxygenCycleProps: IOxygenCycleProps = {
-  title: 'Étapes nécessaires pour un véritable processus de compostage',
+  title: 'Comment fonctionne le compostage naturel',
   progresses: [
     {
       minProgress: 12.5,

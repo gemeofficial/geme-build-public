@@ -637,7 +637,7 @@ function Intro(): JSX.Element {
     <div>
       <PdpIntroSection1 {...pdpIntroSection1Props} />
 
-      <ScrollTriggeredAnimatedOxygenCycle {...oxygenCycleProps} />
+      {/* <ScrollTriggeredAnimatedOxygenCycle {...oxygenCycleProps} /> */}
 
       <ContentSection7 {...contentSection71Props} />
 
@@ -661,7 +661,7 @@ function Intro(): JSX.Element {
 
       <ContentSection8 {...contentSection8Props} />
 
-      <PdpIntroSection8 {...pdpIntroSection8Props} />
+      {/* <PdpIntroSection8 {...pdpIntroSection8Props} /> */}
     </div>
   )
 }

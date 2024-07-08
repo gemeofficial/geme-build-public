@@ -162,7 +162,7 @@ const inlinePlayerProps: IInlinePalyerType = {
 
 // 滚动圈配置项
 const oxygenCycleProps: IOxygenCycleProps = {
-  title: 'Notwendige Schritte für den echten Kompostierungsprozess',
+  title: 'Wie natürliche Kompostierung funktioniert',
   progresses: [
     {
       minProgress: 12.5,
