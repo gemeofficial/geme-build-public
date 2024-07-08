@@ -104,34 +104,6 @@ const gemeKoboldImageProps: IExaminingReportProps = {
     imageUrl: '/assets/images/how-it-works/how-geme-kobold-works.png',
     alt: 'How the GEME Kobold works',
   },
-  downloadHref: (
-    <>
-      To Download Click{' '}
-      <a
-        href="https://cdn.shopify.com/s/files/1/0602/9390/6640/files/Salt_Breakdown_Report_Reencle.pdf?v=1674090924"
-        target="_blank"
-      >
-        HERE
-      </a>
-    </>
-  ),
-}
-
-// YouTube 视频播放器
-const inlinePlayerProps: IInlinePalyerType = {
-  title: 'Seeing is Believing',
-  description: (
-    <>
-      <strong>Break down 2kg waste in 7 hours</strong>! This unedited 7-hour
-      video might seem boring, but it offers an in-depth look at the real-world
-      performance of the GEME Composter. Comparing the first 3 minutes to the
-      last 10 minutes, you will be amazed.
-    </>
-  ),
-
-  type: 'youtube',
-  videoSrcUrlOrVidioId: 'asNRoqkC_BA',
-  mixpanelFrom: 'Product page inline player',
 }
 
 // 证书及测试报告
@@ -165,6 +137,23 @@ const useCompostContrastProps: IUseCompostContrastProps = {
     imageUrl: '/assets/images/how-it-works/used-geme-compost-after.png',
     alt: 'After compost utilization',
   },
+}
+
+// YouTube 视频播放器
+const inlinePlayerProps: IInlinePalyerType = {
+  title: 'Seeing is Believing',
+  description: (
+    <>
+      <strong>Break down 2kg waste in 7 hours</strong>! This unedited 7-hour
+      video might seem boring, but it offers an in-depth look at the real-world
+      performance of the GEME Composter. Comparing the first 3 minutes to the
+      last 10 minutes, you will be amazed.
+    </>
+  ),
+
+  type: 'youtube',
+  videoSrcUrlOrVidioId: 'asNRoqkC_BA',
+  mixpanelFrom: 'Product page inline player',
 }
 
 // 滚动圈配置项
