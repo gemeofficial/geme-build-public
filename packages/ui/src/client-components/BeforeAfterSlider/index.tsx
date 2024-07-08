@@ -2,10 +2,8 @@
 import 'react-before-after-slider-component/dist/build.css'
 import ReactBeforeSliderComponent from 'react-before-after-slider-component'
 import './reset-styles.css'
-import clsx from 'clsx'
-import { useEffect } from 'react'
 
-interface Image {
+export interface Image {
   imageUrl: string
   alt?: string
 }

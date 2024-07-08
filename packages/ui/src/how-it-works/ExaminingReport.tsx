@@ -5,17 +5,18 @@ import {
   SectionTitle,
 } from '../ui-components'
 import Image from 'next/image'
+import { Image as IImageType } from '../client-components/BeforeAfterSlider'
 
 export interface IExaminingReportProps {
   title: string
   description: string
-  imgUrl: string
-  downloadHref: ReactNode
+  imageInfo: IImageType
+  downloadHref?: ReactNode
 }
 
 export function ExaminingReport({
   description,
-  imgUrl,
+  imageInfo,
   title,
   downloadHref,
 }: IExaminingReportProps) {
@@ -25,8 +26,8 @@ export function ExaminingReport({
       <SectionDescription>{description}</SectionDescription>
       <Image
         className="w-full h-full object-contain"
-        src={imgUrl}
-        alt="examiningReport"
+        src={imageInfo.imageUrl}
+        alt={imageInfo.alt || 'examiningReport'}
         width={900}
         height={720}
       />
