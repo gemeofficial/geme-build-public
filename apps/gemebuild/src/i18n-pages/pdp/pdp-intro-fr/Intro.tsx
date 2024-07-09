@@ -518,7 +518,7 @@ const pdpIntroSection7Props: IPdpIntroSection7Props = {
 
 const contentSection23Props: IContentSection2Props = {
   // title: '19L Size, 11£/5kg Daily Feed',
-  title: 'Imaging A Life, No Need to Throw Food Waste Any More',
+  title: `Imaginez une vie où il n'est plus nécessaire de jeter les déchets alimentaires`,
   description: (
     <>
       👪&nbsp;&nbsp;10+ famille de personnes utilisant quotidiennement <br />

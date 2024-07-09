@@ -58,7 +58,7 @@ function PdpIntroFr({
         },
         {
           id: 5,
-          tabLabel: 'Bewertungen',
+          tabLabel: 'Avis',
           tabPanel: (
             <>
               <ReviewsSectionModule
