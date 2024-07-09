@@ -89,7 +89,7 @@ const contentSection2Props: IContentSection2Props = {
 
 // 首页第三部分的内容数据配置 Fr
 const contentSection3Props: IContentSection3Props = {
-  title: 'Déchets alimentaires pour nourrir les plantes Poubelle magique',
+  title: 'Déchets alimentaires pour nourrir les plantes composteur domestique',
   items: [
     {
       id: 1,

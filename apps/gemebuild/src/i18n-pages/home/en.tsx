@@ -20,7 +20,7 @@ import type {
   IContentSection5Props,
   IContentSection6FixedProps,
   ISecondLifeProps,
-  IReviewsSectionConfig
+  IReviewsSectionConfig,
 } from 'ui'
 import { Footprints, type IFootprintsProps } from '../../components/footprints'
 import { Newsletter, INewsletterProps } from './containers/newsletter'
@@ -84,7 +84,7 @@ const contentSection2Props: IContentSection2Props = {
 
 // 首页第三部分的内容数据配置 En
 const contentSection3Props: IContentSection3Props = {
-  title: 'Food Waste to Plant Feed Magic Trash Bin',
+  title: 'Food Waste to Plant Feed Home Composter',
   items: [
     {
       id: 1,
@@ -443,7 +443,11 @@ function HomePageEn({
         <ContentSection5 {...contentSection5Props} />
       </div>
 
-      <ReviewsSectionModule locale="en" reviewsSectionConfig={reviewsSectionConfig} {...reviewsSectionProps} />
+      <ReviewsSectionModule
+        locale="en"
+        reviewsSectionConfig={reviewsSectionConfig}
+        {...reviewsSectionProps}
+      />
 
       <Footprints {...footprintsProps} />
 

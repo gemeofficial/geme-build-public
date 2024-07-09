@@ -89,7 +89,7 @@ const contentSection2Props: IContentSection2Props = {
 
 // 首页第三部分的内容数据配置 De
 const contentSection3Props: IContentSection3Props = {
-  title: 'Lebensmittelabfälle zu Pflanzennahrung Zaubermülltonne',
+  title: 'Lebensmittelabfälle zu Pflanzennahrung Heimkomposter',
   items: [
     {
       id: 1,
@@ -460,7 +460,11 @@ function HomePageDe({
         <ContentSection5 {...contentSection5Props} />
       </div>
 
-      <ReviewsSectionModule locale="de" reviewsSectionConfig={reviewsSectionConfig} {...reviewsSectionProps} />
+      <ReviewsSectionModule
+        locale="de"
+        reviewsSectionConfig={reviewsSectionConfig}
+        {...reviewsSectionProps}
+      />
 
       <Footprints {...footprintsProps} />
 
