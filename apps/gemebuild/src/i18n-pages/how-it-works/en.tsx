@@ -1,13 +1,10 @@
-// page静态页面的内容 配置文件 En版
-
 import {
-  CertificateSection,
   ExaminingReport,
-  ICertificateSectionProps,
   IExaminingReportProps,
   IInlinePalyerType,
   InlinePlayer,
   type IOxygenCycleProps,
+  IUseCompostContrastProps,
   ReviewsScoreHeader,
   ScrollTriggeredAnimatedOxygenCycle,
   SvgFoodWaste,
@@ -28,6 +25,8 @@ export interface IPdpIntroProps {
   PrefetchLink?: ILinkComponent
 }
 
+// page静态页面的内容 配置文件 En版
+// 短视频工作过程section
 const shortVideoProps: IShortVideoProps = {
   title: 'Compost Pile in A Box',
   description: (
@@ -59,7 +58,8 @@ const shortVideoProps: IShortVideoProps = {
     'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/geme-genereate-compost-12s-480p.mp4',
 }
 
-const shortVideoProps2: IShortVideoProps = {
+// 图文section
+const imageTextProps: IShortVideoProps = {
   title: 'Microbes, Not Dehydrate',
   description: (
     <>
@@ -86,6 +86,60 @@ const shortVideoProps2: IShortVideoProps = {
   isReverse: true,
 }
 
+// 工作原理图
+const gemeComposterImageProps: IExaminingReportProps = {
+  title: `How the GEME Composter Works`,
+  description: `Completely understanding how the machine works and why the GEME Composter is the best home composter with its feature subsystems.`,
+  imageInfo: {
+    imageUrl: '/assets/images/how-it-works/how-geme-composter-works.jpg',
+    alt: 'GEME Composter working schematic',
+  },
+}
+
+// Kobold工作过程大图section
+const gemeKoboldImageProps: IExaminingReportProps = {
+  title: `How the GEME Kobold works`,
+  description: `GEME has tiny decomposers called Kobold that eat your food scraps. These decomposers multiply quickly and break down the scraps into nutrient-rich compost. As they work, the amount of food waste shrinks. Kobold also keeps the compost healthy by balancing its acidity and moisture.`,
+  imageInfo: {
+    imageUrl: '/assets/images/how-it-works/how-geme-kobold-works.png',
+    alt: 'How the GEME Kobold works',
+  },
+}
+
+// 证书及测试报告
+const examiningReportProps: IExaminingReportProps = {
+  title: `Certificates and Test Report`,
+  description: `Both GEME Kobold and GEME Composter are well-certified and have surpassed all tests conducted by authoritative organizations.`,
+  imageInfo: {
+    imageUrl: '/assets/images/how-it-works/certificates-and-test-report.jpeg',
+    alt: 'Certificates and test report for GEME',
+  },
+  downloadHref: (
+    <>
+      Download Salt Level Breakdown Report Test{' '}
+      <a href="#" target="_blank">
+        HERE
+      </a>
+    </>
+  ),
+}
+
+// before vs after
+const useCompostContrastProps: IUseCompostContrastProps = {
+  title: 'Before and After Applying GEME Compost',
+  description:
+    'See how GEME compost can help make the earth greener by reducing landfill waste, improving soil health, and promoting plant growth.',
+  beforeImage: {
+    imageUrl: '/assets/images/how-it-works/used-geme-compost-before.png',
+    alt: 'Before compost utilization',
+  },
+  afterImage: {
+    imageUrl: '/assets/images/how-it-works/used-geme-compost-after.png',
+    alt: 'After compost utilization',
+  },
+}
+
+// YouTube 视频播放器
 const inlinePlayerProps: IInlinePalyerType = {
   title: 'Seeing is Believing',
   description: (
@@ -102,70 +156,7 @@ const inlinePlayerProps: IInlinePalyerType = {
   mixpanelFrom: 'Product page inline player',
 }
 
-const certificateSectionProps: ICertificateSectionProps = {
-  title: `Here's our certificate`,
-  description: `Here's our certificate`,
-  imgUrls: [
-    'https://cdn.shopify.com/s/files/1/0602/9390/6640/files/certificate_1.jpg?v=1695770281',
-    'https://cdn.shopify.com/s/files/1/0602/9390/6640/files/KakaoTalk_20221209_103729502-e4965f79-83ea-4ec3-8f91-2fcfae1530e7_452x.png?v=1695769669',
-  ],
-  subDescription: `We thank all of our GEME and we couldn't have continue supporting our ENCORE Initiative if it wasn't for all of you. We would like to take a step forward so that we can start practicing our love for the mother nature.`,
-}
-
-const examiningReportProps: IExaminingReportProps = {
-  title: `Certificates and Test Report`,
-  description: `Both GEME Kobold and GEME Composter are well-certified and have surpassed all tests conducted by authoritative organizations.`,
-  imgUrl: '/assets/images/how-it-works/certificates-and-test-report.jpeg',
-  // imgUrl:
-  //   'https://cdn.shopify.com/s/files/1/0602/9390/6640/files/certificate_1.jpg?v=1695770281',
-  downloadHref: (
-    <>
-      Download Salt Level Breakdown Report Test{' '}
-      <a
-        href="https://cdn.shopify.com/s/files/1/0602/9390/6640/files/Salt_Breakdown_Report_Reencle.pdf?v=1674090924"
-        target="_blank"
-      >
-        HERE
-      </a>
-    </>
-  ),
-}
-
-const gemeComposterImageProps: IExaminingReportProps = {
-  title: `How the GEME Composter Works`,
-  description: `Completely understanding how the machine works and why the GEME Composter is the best home composter with its feature subsystems.`,
-  imgUrl: '/assets/images/how-it-works/how-geme-composter-works.jpg',
-  downloadHref: (
-    <>
-      To Download Click{' '}
-      <a
-        href="https://cdn.shopify.com/s/files/1/0602/9390/6640/files/Salt_Breakdown_Report_Reencle.pdf?v=1674090924"
-        target="_blank"
-      >
-        HERE
-      </a>
-    </>
-  ),
-}
-
-const gemeKoboldImageProps: IExaminingReportProps = {
-  title: `How the GEME Kobold works`,
-  description: `GEME has tiny decomposers called Kobold that eat your food scraps. These decomposers multiply quickly and break down the scraps into nutrient-rich compost. As they work, the amount of food waste shrinks. Kobold also keeps the compost healthy by balancing its acidity and moisture.`,
-  imgUrl: '/assets/images/how-it-works/how-geme-kobold-works.png',
-  downloadHref: (
-    <>
-      To Download Click{' '}
-      <a
-        href="https://cdn.shopify.com/s/files/1/0602/9390/6640/files/Salt_Breakdown_Report_Reencle.pdf?v=1674090924"
-        target="_blank"
-      >
-        HERE
-      </a>
-    </>
-  ),
-}
-
-// TODO 抽到一个地方
+// 滚动圈配置项
 const oxygenCycleProps: IOxygenCycleProps = {
   title: 'How Natural Composting Works',
   progresses: [
@@ -338,13 +329,12 @@ function HowItWorksEn({ ReviewsComponent }: IPdpIntroProps) {
     <>
       <div className="py-8 lg:pt-6 lg:pb-16">
         <ShortVideo {...shortVideoProps} />
-        <ShortVideo {...shortVideoProps2} />
-        {/*<CertificateSection {...certificateSectionProps} />*/}
+        <ShortVideo {...imageTextProps} />
         <ExaminingReport {...gemeComposterImageProps} />
         <ExaminingReport {...gemeKoboldImageProps} />
         <ScrollTriggeredAnimatedOxygenCycle {...oxygenCycleProps} />
         <ExaminingReport {...examiningReportProps} />
-        <UseCompostContrast />
+        <UseCompostContrast {...useCompostContrastProps} />
         <InlinePlayer {...inlinePlayerProps} />
         <div className="my-4">
           <ReviewsScoreHeader locale="en" />

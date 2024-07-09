@@ -20,15 +20,6 @@ interface IPdpIntroProps {
   reviewsSectionConfig: IReviewsSectionConfig
 }
 
-const inlinePlayerProps: IInlinePalyerType = {
-  title: 'Seeing is Believing',
-  description:
-    "See the incredible speed for yourself! This unedited 7-hour video showcases how quickly our machine works. Witness the breakdown of nearly 2kg of food waste – a feat none of our competitors dare to demonstrate publicly. We believe customers deserve transparency, even if it's not good looking and tedious.",
-  type: 'youtube',
-  videoSrcUrlOrVidioId: 'asNRoqkC_BA',
-  mixpanelFrom: 'Product page inline player',
-}
-
 function PdpIntroEn({
   ReviewsComponent,
   PrefetchLink,
@@ -45,12 +36,20 @@ function PdpIntroEn({
         {
           id: 2,
           tabLabel: 'Spec',
-          tabPanel: <div id='pdp-spec-section' className='h-0 overflow-hidden'><Spec /></div>,
+          tabPanel: (
+            <div id="pdp-spec-section" className="h-0 overflow-hidden">
+              <Spec />
+            </div>
+          ),
         },
         {
           id: 3,
           tabLabel: 'Warranty',
-          tabPanel: <div id='pdp-warranty-section' className='h-0 overflow-hidden'><Warranty Link={PrefetchLink} /></div>,
+          tabPanel: (
+            <div id="pdp-warranty-section" className="h-0 overflow-hidden">
+              <Warranty Link={PrefetchLink} />
+            </div>
+          ),
         },
         {
           id: 4,
@@ -62,7 +61,6 @@ function PdpIntroEn({
           tabPanel: (
             <>
               <UserStory />
-              <InlinePlayer {...inlinePlayerProps} />
             </>
           ),
         },
@@ -71,8 +69,13 @@ function PdpIntroEn({
           tabLabel: 'Reviews',
           tabPanel: (
             <>
-              <ReviewsSectionModule reviewsSectionConfig={reviewsSectionConfig} locale='en'/>
-              <div className="my-4"><ReviewsScoreHeader locale='en'/></div>
+              <ReviewsSectionModule
+                reviewsSectionConfig={reviewsSectionConfig}
+                locale="en"
+              />
+              <div className="my-4">
+                <ReviewsScoreHeader locale="en" />
+              </div>
               <ReviewsComponent />
             </>
           ),
