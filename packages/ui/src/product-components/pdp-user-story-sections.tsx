@@ -213,7 +213,7 @@ function PdpUserStoryTeamSections({
         style={{
           height: height + 'px',
         }}
-        className="select-none !w-full lg:!h-[440px] mt-12 rounded-xl bg-gray-100 transition-all duration-200"
+        className="select-none !w-full lg:!h-[440px] mt-6 md:mt-8 lg:mt-12 rounded-xl bg-gray-100 transition-all duration-200"
         // onSwiper={onSwiperHandle}
         onTransitionEnd={onChange}
         modules={[Pagination]}
