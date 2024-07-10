@@ -306,7 +306,12 @@ function PdpUserStoryTeamSections({
 
                     {person.quote && (
                       <p className="!text-[14px] v2311-font-body text-gray-400">
-                        "{person.mobileQuote || person.quote}"
+                        <span className="md:hidden">
+                          "{person.mobileQuote || person.quote}"
+                        </span>
+                        <span className="hidden md:inline-block">
+                          "{person.quote}"
+                        </span>
                       </p>
                     )}
                   </div>
