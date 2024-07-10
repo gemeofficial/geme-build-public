@@ -401,7 +401,7 @@ function PdpIntroSection7({
   features,
 }: IPdpIntroSection7Props) {
   return (
-    <div className=" py-8 md:py-16 xl:p-0">
+    <div className="pb-8 md:pb-16 xl:p-0">
       <div className=" relative ">
         {/*<SvgDeviceCompare className=" xl:hidden " />*/}
         {/*<SvgDeviceCompareLarge className=" hidden xl:block " />*/}
