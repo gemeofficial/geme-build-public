@@ -87,6 +87,8 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
       ),
       quote:
         'I went to internet and looked more and found out yours and the adertising says that it is bio composter and saw videos and at last i found yours i loved it. I want to buy my composters !  I am ready for 2 more now. Maybe the three.',
+      mobileQuote:
+        'I want to buy my composters !  I am ready for 2 more now. Maybe the three.',
     },
     {
       id: 4,
@@ -112,6 +114,8 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
         '          me for one better sustainable life and this is why I really wanted to\n' +
         '          get so much GEME. It combines everything you need for an easier\n' +
         '          worry-stress free life. Totally recommend it to all my surroundings!',
+      mobileQuote:
+        'It combines everything you need for an easier worry-stress free life.',
     },
   ],
 }

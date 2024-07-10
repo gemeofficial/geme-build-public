@@ -1,7 +1,14 @@
-import { ReactNode } from 'react'
+import { ReactNode, useState } from 'react'
 import type { IImgProps } from '../image'
 import Image from 'next/image'
 import { SectionDescription, SectionTitle } from '../ui-components'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination } from 'swiper/modules'
+
+import 'swiper/css'
+import 'swiper/css/pagination'
+import clsx from 'clsx'
+import { SwiperEvents } from 'swiper/types'
 
 interface IPdpUserStoryTeamSectionsExampleProps {
   title?: ReactNode
@@ -117,8 +124,9 @@ interface IPdpUserStoryTeamSectionsProps {
     role?: string
     imageUrl?: string
     image?: IImgProps
-    bio?: ReactNode
     quote?: string
+    mobileQuote?: ReactNode
+    bio?: ReactNode
   }[]
 }
 
@@ -179,6 +187,19 @@ function PdpUserStoryTeamSections({
   description,
   people,
 }: IPdpUserStoryTeamSectionsProps) {
+  const [height, setHeight] = useState(300)
+
+  function onChange() {
+    const currentSwiperSlide = document.querySelector(
+      '.swiper-slide-active .swiper-slide-box',
+    )
+
+    const currentSwiperHeight =
+      currentSwiperSlide?.getBoundingClientRect().height || 270
+
+    setHeight(currentSwiperHeight + 30)
+  }
+
   return (
     <section className="px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl ">
       {title && <SectionTitle>{title}</SectionTitle>}
@@ -187,24 +208,45 @@ function PdpUserStoryTeamSections({
           {description}
         </SectionDescription>
       )}
-      <div className="mt-4 md:mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-        {people?.map((person) => {
-          return (
-            <div
-              style={{
-                boxShadow:
-                  '0 0px 10px 2px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
-              }}
-              key={person.id}
-              className="shadow-md p-4 rounded-2xl"
-            >
-              <div className="flex md:flex-col xl:flex-row gap-4 md:gap-8">
+
+      <Swiper
+        style={{
+          height: height + 'px',
+        }}
+        className="select-none !w-full lg:!h-[440px] mt-12 rounded-xl bg-gray-100 transition-all duration-200"
+        // onSwiper={onSwiperHandle}
+        onTransitionEnd={onChange}
+        modules={[Pagination]}
+        pagination={{
+          type: 'bullets',
+          renderBullet: (i, className) =>
+            `<span class="${className} !h-8 !w-1 !rounded-sm transition-all duration-500 !my-2 !mr-1 lg:!mr-2"></span>`,
+          bulletActiveClass: '!bg-v2311-primary !opacity-100',
+          clickable: true,
+        }}
+        speed={500}
+        direction="vertical"
+        grabCursor
+        loop
+        mousewheel={{
+          forceToAxis: true,
+        }}
+      >
+        {people?.map((person, idx) => (
+          <SwiperSlide key={person.id}>
+            <div className="pl-4 pr-6 py-4 lg:pl-8 lg:pr-12 lg:py-8 h-full overflow-hidden">
+              <div
+                className={clsx(
+                  'hidden lg:flex justify-between items-stretch h-full lg:gap-16 xl:gap-20',
+                  idx % 2 === 0 ? 'flex-row-reverse' : '',
+                )}
+              >
                 {person.image?.src?.startsWith('https') ? (
                   <img
                     src={person.image?.src || ''}
                     alt={person.image?.alt || ''}
                     loading="lazy"
-                    className=" aspect-[4/5] rounded-2xl object-cover w-32 md:w-52"
+                    className="h-full rounded-xl object-cover w-[30%]"
                   />
                 ) : (
                   <Image
@@ -212,35 +254,71 @@ function PdpUserStoryTeamSections({
                     alt={person.image?.alt || ''}
                     width={400}
                     height={500}
-                    className=" aspect-[4/5] rounded-2xl object-cover w-32 md:w-52"
+                    className="h-full rounded-xl object-cover w-[30%]"
                   />
                 )}
-
-                <div className="flex-auto">
-                  <h3 className=" v2311-font-h2 text-v2311-fg-dark-black">
-                    {person.name}
-                  </h3>
-                  <p className=" v2311-font-h3 text-v2311-fg-black mt-1 md:mt-2">
-                    {person.role}
-                  </p>
-
-                  {person.quote && (
-                    <p className=" v2311-font-body text-gray-400 mt-4 md:mt-8">
-                      "{person.quote}"
+                <div className="flex flex-col justify-between gap-4 flex-1">
+                  <div className="flex flex-col gap-4">
+                    <h3 className=" v2311-font-h2 text-v2311-fg-dark-black">
+                      {person.name}
+                    </h3>
+                    <p className=" v2311-font-h3 text-v2311-fg-black">
+                      {person.role}
                     </p>
-                  )}
+
+                    {person.quote && (
+                      <p className=" v2311-font-body text-gray-400">
+                        "{person.quote}"
+                      </p>
+                    )}
+                  </div>
+                  <p className=" v2311-font-body text-v2311-fg-black">
+                    {person.bio}
+                  </p>
                 </div>
               </div>
 
-              <div className="flex-auto">
-                <p className=" v2311-font-body text-v2311-fg-black mt-4 md:mt-8">
+              <div className="swiper-slide-box lg:hidden flex flex-col gap-4">
+                <div className="flex items-stretch flex-row gap-4 md:gap-8">
+                  {person.image?.src?.startsWith('https') ? (
+                    <img
+                      src={person.image?.src || ''}
+                      alt={person.image?.alt || ''}
+                      loading="lazy"
+                      className="min-h-36 h-full rounded-xl object-cover w-32"
+                    />
+                  ) : (
+                    <Image
+                      src={person.image?.src || ''}
+                      alt={person.image?.alt || ''}
+                      width={400}
+                      height={500}
+                      className="min-h-36 h-full rounded-xl object-cover w-32"
+                    />
+                  )}
+                  <div className="flex-auto">
+                    <h3 className="v2311-font-h2 text-v2311-fg-dark-black">
+                      {person.name}
+                    </h3>
+                    <p className="!text-[14px] my-2 v2311-font-h3 text-v2311-fg-black">
+                      {person.role}
+                    </p>
+
+                    {person.quote && (
+                      <p className="!text-[14px] v2311-font-body text-gray-400">
+                        "{person.mobileQuote || person.quote}"
+                      </p>
+                    )}
+                  </div>
+                </div>
+                <p className="v2311-font-body !text-[14px] text-v2311-fg-black">
                   {person.bio}
                 </p>
               </div>
             </div>
-          )
-        })}
-      </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   )
 }

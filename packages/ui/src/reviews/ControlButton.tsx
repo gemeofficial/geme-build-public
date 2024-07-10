@@ -1,6 +1,6 @@
 export function PrevButton() {
   return (
-    <button className="swiper-button-prev group flex justify-center items-center border border-solid border-v2311-bg-dark-green !w-10 !h-10 md:!w-14 md:!h-14 xl:!w-16 xl:!h-16 transition-all duration-500 rounded-full hover:bg-v2311-bg-dark-green">
+    <button aria-label="button.swiper-button-prev" className="swiper-button-prev group flex justify-center items-center border border-solid border-v2311-bg-dark-green !w-10 !h-10 md:!w-14 md:!h-14 xl:!w-16 xl:!h-16 transition-all duration-500 rounded-full hover:bg-v2311-bg-dark-green">
       <svg
         className="!h-4 !w-4 md:!h-6 md:!w-6 text-v2311-bg-dark-green group-hover:text-white transition-all duration-500"
         viewBox="0 0 24 24"
@@ -21,7 +21,7 @@ export function PrevButton() {
 
 export function NextButton() {
   return (
-    <button className="swiper-button-next group flex justify-center items-center border border-solid border-v2311-bg-dark-green !w-10 !h-10 md:!w-14 md:!h-14 xl:!w-16 xl:!h-16 transition-all duration-500 rounded-full hover:bg-v2311-bg-dark-green">
+    <button aria-label="button.swiper-button-next" className="swiper-button-next group flex justify-center items-center border border-solid border-v2311-bg-dark-green !w-10 !h-10 md:!w-14 md:!h-14 xl:!w-16 xl:!h-16 transition-all duration-500 rounded-full hover:bg-v2311-bg-dark-green">
       <svg
         className="!h-4 !w-4 md:!h-6 md:!w-6 text-v2311-bg-dark-green group-hover:text-white transition-all duration-500"
         viewBox="0 0 24 24"
