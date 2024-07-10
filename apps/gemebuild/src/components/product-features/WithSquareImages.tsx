@@ -92,7 +92,7 @@ function WithSquareImages({
               <div key={name} className="flex flex-col-reverse px-0 py-0">
                 {title && (
                   <div className="mt-4">
-                    <h3 className="text-lg font-semibold  text-v2311-bg-dark-green">
+                    <h3 className="text-lg font-semibold  text-v2311-primary">
                       {title}
                     </h3>
                     {featureDesc != null && (
