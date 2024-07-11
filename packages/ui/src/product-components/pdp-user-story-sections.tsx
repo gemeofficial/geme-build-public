@@ -232,7 +232,7 @@ function PdpUserStoryTeamSections({
         speed={500}
         direction="vertical"
         grabCursor
-        loop
+        // loop
         mousewheel={{
           forceToAxis: true,
         }}
