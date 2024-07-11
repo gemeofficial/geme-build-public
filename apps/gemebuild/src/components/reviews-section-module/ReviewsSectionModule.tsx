@@ -20,7 +20,7 @@ interface ITextInfo {
 const mutilLanguageTextInfo: IMutilLanguageTextInfo = {
   en: {
     title: 'What Real Users Say',
-    description: `Don't pay too much attention to influencers reviews, many of which are paid advertisements. Instead, listen to everyday people like you who share their honest experiences with us, even if they haven't left reviews online.`,
+    description: `You might want to click and see the detail review, to see how our customers feel about our product, you can see the real product review and our customer service as well.`,
   },
   de: {
     title: 'Was echte Benutzer sagen',

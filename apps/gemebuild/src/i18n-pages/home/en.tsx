@@ -380,7 +380,7 @@ const contentSection5Props: IContentSection5Props = {
 const reviewsSectionProps = {
   title: 'What Real Users Say',
   description:
-    'Forget paid reviews flooding the web. Listen to real people dish the dirt, good and bad - the unfiltered truth you need.',
+    'Click below to see real people dish the dirt, good and bad - the unfiltered truth you need.',
 }
 
 // 首页第十一部分（地图）的内容数据配置 En
