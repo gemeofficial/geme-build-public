@@ -77,12 +77,11 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
       },
       bio: (
         <>
-          Angelita live in Mexico 🇲🇽, she contact us in April and bought one
-          unit. At that time we were not able to ship from US to Mexico.
-          However, her Angelita run a truck company. She easily ship our unit
-          from Texas to Mexico easily. After months of daily using, she decide
-          to purchase 3 more for her daughter's Christmas gift. BTW, she is also
-          a hero help to one of our Kickstarter solve our fulfillment to Mexico.
+          Mexican customer Angelita (contacted April) bought a unit despite our
+          initial US-Mexico shipping hurdle. Her trucking company facilitated
+          Texas pick-up. Loving the product, she purchased 3 more for her
+          daughters' Christmas! Angelita even became a hero by helping us
+          resolve a fulfillment issue for another Mexico Kickstarter campaign.
         </>
       ),
       quote:
@@ -100,13 +99,11 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
       },
       bio: (
         <>
-          Mr Vasil is from Bulgaria🇧🇬 and also a zero waste hero. He love the
-          unit very much. For not only solve the daily food waste, but also can
-          reduce carbon footprint.Vasil started follow GEME since the
-          crowdfunding phase back to July 2022, he manged to made the payment
-          install for €499 to back GEME. Before the fulfillment, he did a lot to
-          help promote GEME's product and idea to his circles. He is super
-          enthusiasm to make our earth better together.
+          Bulgarian zero-waste advocate Vasil loves GEME for tackling food waste
+          and reducing carbon footprint. Following GEME since its July 2022
+          crowdfunding campaign, he secured a €499 unit via installments and
+          actively promoted GEME's product and vision to his network. A true
+          sustainability champion!
         </>
       ),
       quote:
@@ -118,6 +115,7 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
         'It combines everything you need for an easier worry-stress free life.',
     },
   ],
+  locale:'en'
 }
 
 function UserStory(): JSX.Element {

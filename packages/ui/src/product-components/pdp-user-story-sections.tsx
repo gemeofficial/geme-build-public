@@ -1,6 +1,4 @@
-'use client'
-
-import { ReactNode, useState } from 'react'
+import { ReactNode } from 'react'
 import type { IImgProps } from '../image'
 import Image from 'next/image'
 import { SectionDescription, SectionTitle } from '../ui-components'
@@ -10,6 +8,7 @@ import { Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import clsx from 'clsx'
+import { LocaleType } from '../reviews'
 
 interface IPdpUserStoryTeamSectionsExampleProps {
   title?: ReactNode
@@ -129,6 +128,7 @@ interface IPdpUserStoryTeamSectionsProps {
     mobileQuote?: ReactNode
     bio?: ReactNode
   }[]
+  locale: LocaleType
 }
 
 const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
@@ -181,30 +181,15 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
       bio: 'Quia illum aut in beatae. Possimus dolores aliquid accusantium aut in ut non assumenda. Enim iusto molestias aut deleniti eos aliquid magnam molestiae. At et non possimus ab. Magni labore molestiae nulla qui.',
     },
   ],
+  locale: 'en',
 }
 
 function PdpUserStoryTeamSections({
   title,
   description,
   people,
+  locale,
 }: IPdpUserStoryTeamSectionsProps) {
-  const [height, setHeight] = useState(300)
-
-  function onChange() {
-    if (window.innerWidth > 625) return
-
-    const currentSwiperSlide = document.querySelector(
-      '.swiper-slide-active .swiper-slide-box',
-    )
-
-    const currentSwiperHeight =
-      currentSwiperSlide?.getBoundingClientRect().height || 270
-
-    const paddingGap = window.innerWidth > 1024 ? 64 : 32
-
-    setHeight(currentSwiperHeight + paddingGap)
-  }
-
   return (
     <section className="px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl ">
       {title && <SectionTitle>{title}</SectionTitle>}
@@ -215,12 +200,12 @@ function PdpUserStoryTeamSections({
       )}
 
       <Swiper
-        style={{
-          height: height + 'px',
-        }}
-        className="select-none !w-full md:!h-[330px] lg:!h-[440px] mt-6 md:mt-8 lg:mt-12 rounded-xl bg-gray-100 transition-all duration-200"
-        onSwiper={onChange}
-        onTransitionEnd={onChange}
+        className={clsx(
+          'select-none !w-full xl:h-[380px] mt-6 md:mt-8 lg:mt-12 rounded-xl bg-gray-100 transition-all duration-200',
+          locale === 'en'
+            ? '!h-[370px] md:!h-[290px] lg:!h-[380px]'
+            : '!h-[400px] md:!h-[320px] lg:!h-[420px]',
+        )}
         modules={[Pagination]}
         pagination={{
           type: 'bullets',
@@ -232,7 +217,7 @@ function PdpUserStoryTeamSections({
         speed={500}
         direction="vertical"
         grabCursor
-        // loop
+        loop
         mousewheel={{
           forceToAxis: true,
         }}
@@ -246,23 +231,13 @@ function PdpUserStoryTeamSections({
                   idx % 2 === 0 ? 'flex-row-reverse' : '',
                 )}
               >
-                {person.image?.src?.startsWith('https') ? (
-                  <img
-                    src={person.image?.src || ''}
-                    alt={person.image?.alt || ''}
-                    loading="lazy"
-                    className="rounded-xl object-cover w-[30%]"
-                  />
-                ) : (
-                  <Image
-                    src={person.image?.src || ''}
-                    alt={person.image?.alt || ''}
-                    width={400}
-                    height={500}
-                    className="rounded-xl object-cover w-[30%]"
-                  />
-                )}
-                <div className="flex flex-col justify-between gap-4 overflow-hidden">
+                <ImageCompoent image={person.image} className='w-[30%]'/>
+                <div
+                  className={clsx(
+                    'flex flex-col justify-between gap-4 overflow-hidden',
+                    idx < 2 ? 'lg:px-8' : '',
+                  )}
+                >
                   <div className="flex flex-col gap-2">
                     <h3 className=" v2311-font-h2 text-v2311-fg-dark-black">
                       {person.name}
@@ -283,24 +258,10 @@ function PdpUserStoryTeamSections({
                 </div>
               </div>
 
-              <div className="swiper-slide-box lg:hidden md:h-full flex flex-col md:justify-between lg:justify-start gap-4 overflow-hidden">
+              <div className="swiper-slide-box lg:hidden h-full flex flex-col justify-between gap-4 overflow-hidden">
                 <div className="flex items-stretch flex-row gap-4 md:gap-8">
-                  {person.image?.src?.startsWith('https') ? (
-                    <img
-                      src={person.image?.src || ''}
-                      alt={person.image?.alt || ''}
-                      loading="lazy"
-                      className="min-h-36 rounded-xl object-cover w-32"
-                    />
-                  ) : (
-                    <Image
-                      src={person.image?.src || ''}
-                      alt={person.image?.alt || ''}
-                      width={400}
-                      height={500}
-                      className="min-h-36 rounded-xl object-cover w-32"
-                    />
-                  )}
+                <ImageCompoent image={person.image} className='w-32'/>
+                
                   <div className="flex-auto">
                     <h3 className="v2311-font-h2 text-v2311-fg-dark-black">
                       {person.name}
@@ -330,6 +291,29 @@ function PdpUserStoryTeamSections({
         ))}
       </Swiper>
     </section>
+  )
+}
+
+function ImageCompoent({ image,className }: { image?: IImgProps,className?:string }) {
+  return (
+    <>
+      {image?.src?.startsWith('https') ? (
+        <img
+          src={image?.src || ''}
+          alt={image?.alt || ''}
+          loading="lazy"
+          className={clsx("rounded-xl object-cover",className)}
+        />
+      ) : (
+        <Image
+          src={image?.src || ''}
+          alt={image?.alt || ''}
+          width={400}
+          height={500}
+          className={clsx("rounded-xl object-cover",className)}
+        />
+      )}
+    </>
   )
 }
 
