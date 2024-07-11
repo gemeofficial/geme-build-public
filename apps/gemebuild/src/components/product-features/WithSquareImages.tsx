@@ -1,4 +1,5 @@
 // FIXME: next/link not work with next-intl, should use components/link instead.
+import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
 import { SectionTitle } from 'ui'
@@ -91,11 +92,11 @@ function WithSquareImages({
               <div key={name} className="flex flex-col-reverse px-0 py-0">
                 {title && (
                   <div className="mt-4">
-                    <h3 className="text-lg font-semibold  text-gray-900">
+                    <h3 className="text-lg font-semibold  text-v2311-primary">
                       {title}
                     </h3>
                     {featureDesc != null && (
-                      <p className="mt-2 text-xs xl:text-sm text-gray-500">
+                      <p className="mt-2 text-xs xl:text-sm text-[#568477]">
                         {featureDesc}
                       </p>
                     )}
@@ -114,13 +115,18 @@ function WithSquareImages({
                     )}
                   </div>
                 )}
-                <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-100">
+                <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-2xl  border-2 border-[#8ec597]">
                   <Image
                     src={imageSrc}
                     alt={imageAlt}
                     width={280}
                     height={280}
-                    className="object-cover object-center"
+                    className={clsx(
+                      'object-cover object-center ',
+                      name == '1'
+                        ? ' scale-75 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'
+                        : '',
+                    )}
                   />
                 </div>
               </div>
