@@ -55,7 +55,7 @@ function NewsletterCenteredCard({
             {emailLabel}
           </label>
           <input
-            className=" flex-auto v2311-font-body xl:v2311-font-h3 xl:font-normal text-v2311-fg-dark-black border-solid border-2 border-white rounded-xl py-1 md:py-2 xl:px-4  focus:border-v2311-bg-light-green focus:ring-v2311-bg-light-green"
+            className="w-full flex-auto v2311-font-body xl:v2311-font-h3 xl:font-normal text-v2311-fg-dark-black border-solid border-2 border-white rounded-xl py-1 md:py-2 xl:px-4  focus:border-v2311-bg-light-green focus:ring-v2311-bg-light-green"
             id="email-address"
             name={emailInputName}
             type="email"
