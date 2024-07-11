@@ -84,18 +84,19 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
       },
       bio: (
         <>
-          Angelita lebt in Mexiko 🇲🇽, sie kontaktierte uns im April und kaufte
-          ein Gerät. Zu dieser Zeit konnten wir nicht von den USA nach Mexiko
-          versenden. Angelita betreibt jedoch ein LKW-Unternehmen. Sie konnte
-          unser Gerät leicht von Texas nach Mexiko transportieren. Nach
-          monatelanger täglicher Nutzung beschloss sie, drei weitere für ihre
-          Tochter zu Weihnachten zu kaufen. Übrigens, sie ist auch eine Heldin,
-          die einem unserer Kickstarter bei der Erfüllung nach Mexiko geholfen
-          hat.
+          Mexikanische Kundin Angelita (kontaktiert im April) kaufte eine
+          Einheit trotz anfänglicher US-Mexiko-Versandprobleme. Ihre
+          Speditionsfirma ermöglichte die Abholung in Texas. Begeistert vom
+          Produkt, kaufte sie 3 weitere für ihre Töchter zu Weihnachten!
+          Angelita wurde sogar zur Heldin, indem sie uns half, ein
+          Erfüllungsproblem für eine andere Kickstarter-Kampagne in Mexiko zu
+          lösen.
         </>
       ),
       quote:
         'Ich ging ins Internet, suchte mehr und fand Ihres, und die Werbung sagt, dass es ein Bio-Komposter ist, und sah Videos, und schließlich fand ich Ihres, ich liebte es. Ich möchte meine Komposter kaufen! Ich bin bereit für zwei weitere jetzt. Vielleicht sogar drei.',
+      mobileQuote:
+        'Ich möchte meine Komposter kaufen! Ich bin bereit für 2 weitere. Vielleicht drei.',
     },
     {
       id: 4,
@@ -107,19 +108,19 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
       },
       bio: (
         <>
-          Herr Vasil kommt aus Bulgarien 🇧🇬 und ist auch ein Zero-Waste-Held. Er
-          liebt das Gerät sehr. Es löst nicht nur das tägliche
-          Lebensmittelabfallproblem, sondern kann auch den CO2-Fußabdruck
-          reduzieren. Vasil verfolgt GEME seit der Crowdfunding-Phase im Juli
-          2022 und schaffte es, die Ratenzahlung von 499 € für GEME zu leisten.
-          Vor der Erfüllung tat er viel, um GEMEs Produkt und Idee in seinem
-          Umfeld zu fördern. Er ist super begeistert, gemeinsam unsere Erde
-          besser zu machen.
+          Der bulgarische Zero-Waste-Verfechter Vasil liebt GEME für die
+          Bekämpfung von Lebensmittelabfällen und die Reduzierung des
+          CO2-Fußabdrucks. Seit der Crowdfunding-Kampagne im Juli 2022 verfolgt
+          er GEME. Er kaufte eine Einheit für 499 € in Raten und fördert aktiv
+          GEME in seinem Netzwerk. Ein echter Nachhaltigkeitschampion!
         </>
       ),
       quote: `Ich wollte mich immer mehr und mehr in alles um mich herum einbringen, um ein besser nachhaltiges Leben zu führen, und deshalb wollte ich unbedingt GEME haben. Es vereint alles, was man für ein einfacheres, sorgenfreies Leben braucht. Ich empfehle es total allen in meinem Umfeld!`,
+      mobileQuote:
+        'Es vereint alles, was Sie für ein leichteres, sorgenfreies Leben brauchen.',
     },
   ],
+  locale:'de'
 }
 
 function UserStory(): JSX.Element {

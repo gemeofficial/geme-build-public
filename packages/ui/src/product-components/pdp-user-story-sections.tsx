@@ -1,7 +1,16 @@
+'use client'
+
 import { ReactNode } from 'react'
 import type { IImgProps } from '../image'
 import Image from 'next/image'
 import { SectionDescription, SectionTitle } from '../ui-components'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination } from 'swiper/modules'
+
+import 'swiper/css'
+import 'swiper/css/pagination'
+import clsx from 'clsx'
+import { LocaleType } from '../reviews'
 
 interface IPdpUserStoryTeamSectionsExampleProps {
   title?: ReactNode
@@ -117,9 +126,11 @@ interface IPdpUserStoryTeamSectionsProps {
     role?: string
     imageUrl?: string
     image?: IImgProps
-    bio?: ReactNode
     quote?: string
+    mobileQuote?: ReactNode
+    bio?: ReactNode
   }[]
+  locale: LocaleType
 }
 
 const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
@@ -172,12 +183,14 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
       bio: 'Quia illum aut in beatae. Possimus dolores aliquid accusantium aut in ut non assumenda. Enim iusto molestias aut deleniti eos aliquid magnam molestiae. At et non possimus ab. Magni labore molestiae nulla qui.',
     },
   ],
+  locale: 'en',
 }
 
 function PdpUserStoryTeamSections({
   title,
   description,
   people,
+  locale,
 }: IPdpUserStoryTeamSectionsProps) {
   return (
     <section className="px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl ">
@@ -187,61 +200,149 @@ function PdpUserStoryTeamSections({
           {description}
         </SectionDescription>
       )}
-      <div className="mt-4 md:mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-        {people?.map((person) => {
-          return (
-            <div
-              style={{
-                boxShadow:
-                  '0 0px 10px 2px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
-              }}
-              key={person.id}
-              className="shadow-md p-4 rounded-2xl"
-            >
-              <div className="flex md:flex-col xl:flex-row gap-4 md:gap-8">
-                {person.image?.src?.startsWith('https') ? (
-                  <img
-                    src={person.image?.src || ''}
-                    alt={person.image?.alt || ''}
-                    loading="lazy"
-                    className=" aspect-[4/5] rounded-2xl object-cover w-32 md:w-52"
-                  />
-                ) : (
-                  <Image
-                    src={person.image?.src || ''}
-                    alt={person.image?.alt || ''}
-                    width={400}
-                    height={500}
-                    className=" aspect-[4/5] rounded-2xl object-cover w-32 md:w-52"
-                  />
+
+      <Swiper
+        className={clsx(
+          'select-none !w-full xl:h-[380px] mt-6 md:mt-8 lg:mt-12 rounded-xl bg-gray-100 transition-all duration-200',
+          locale === 'en'
+            ? '!h-[360px] md:!h-[290px] lg:!h-[380px]'
+            : '!h-[400px] md:!h-[320px] lg:!h-[420px]',
+        )}
+        modules={[Pagination]}
+        pagination={{
+          type: 'bullets',
+          renderBullet: (i, className) =>
+            `<span class="${className} !h-8 !w-1 !rounded-sm transition-all duration-500 !my-2 !mr-1 lg:!mr-2"></span>`,
+          bulletActiveClass: '!bg-v2311-primary !opacity-100',
+          clickable: true,
+        }}
+        speed={500}
+        direction="vertical"
+        grabCursor
+        // loop
+        mousewheel={{
+          forceToAxis: true,
+        }}
+      >
+        {people?.map((person, idx) => (
+          <SwiperSlide key={person.id}>
+            <div className="pl-4 pr-6 py-4 lg:pl-8 lg:pr-12 lg:py-8 h-full">
+              <div
+                className={clsx(
+                  'hidden lg:flex justify-between items-stretch h-full lg:gap-16 xl:gap-20',
+                  idx % 2 === 0 ? 'flex-row-reverse' : '',
                 )}
-
-                <div className="flex-auto">
-                  <h3 className=" v2311-font-h2 text-v2311-fg-dark-black">
-                    {person.name}
-                  </h3>
-                  <p className=" v2311-font-h3 text-v2311-fg-black mt-1 md:mt-2">
-                    {person.role}
-                  </p>
-
-                  {person.quote && (
-                    <p className=" v2311-font-body text-gray-400 mt-4 md:mt-8">
-                      "{person.quote}"
-                    </p>
+              >
+                <ImageCompoent image={person.image} className='w-[30%]'/>
+                <div
+                  className={clsx(
+                    'flex flex-col justify-between gap-4 overflow-hidden',
+                    idx < 2 ? 'lg:px-8' : '',
                   )}
+                >
+                  <div className="flex flex-col gap-2">
+                    <h3 className=" v2311-font-h2 text-v2311-fg-dark-black">
+                      {person.name}
+                    </h3>
+                    <p className=" v2311-font-h3 text-v2311-fg-black">
+                      {person.role}
+                    </p>
+
+                    {person.quote && (
+                      <p className=" v2311-font-body text-gray-400">
+                        "{person.quote}"
+                      </p>
+                    )}
+                  </div>
+                  <p className=" v2311-font-body text-v2311-fg-black">
+                    {person.bio}
+                  </p>
                 </div>
               </div>
 
-              <div className="flex-auto">
-                <p className=" v2311-font-body text-v2311-fg-black mt-4 md:mt-8">
+              <div className="swiper-slide-box lg:hidden h-full flex flex-col justify-between gap-4 overflow-hidden">
+                <div className="flex items-stretch flex-row gap-4 md:gap-8">
+                <ImageCompoent image={person.image} className='w-32 h-40'/>
+
+                  <div className="flex-auto">
+                    <h3 className="v2311-font-h2 text-v2311-fg-dark-black">
+                      {person.name}
+                    </h3>
+                    <p className="!text-[14px] my-2 v2311-font-h3 text-v2311-fg-black">
+                      {person.role}
+                    </p>
+
+                    {person.quote && (
+                      <p className="!text-[14px] v2311-font-body text-gray-400">
+                        <span className="md:hidden">
+                          "{person.mobileQuote || person.quote}"
+                        </span>
+                        <span className="hidden md:inline-block">
+                          "{person.quote}"
+                        </span>
+                      </p>
+                    )}
+                  </div>
+                </div>
+                <p className="v2311-font-body !text-[14px] text-v2311-fg-black">
                   {person.bio}
                 </p>
               </div>
             </div>
-          )
-        })}
-      </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
+  )
+}
+
+function ImageCompoent({ image,className }: { image?: IImgProps,className?:string }) {
+  return (
+    <>
+      {image?.src?.startsWith('https') ? (
+        <img
+          src={image?.src || ''}
+          alt={image?.alt || ''}
+          loading="lazy"
+          className={clsx("rounded-xl object-cover",className)}
+        />
+      ) : (
+        <Image
+          src={image?.src || ''}
+          alt={image?.alt || ''}
+          width={400}
+          height={500}
+          className={clsx("rounded-xl object-cover",className)}
+        />
+      )}
+    </>
+  )
+}
+
+// 暂时先不使用点击展示更多
+function ShowMore({ onClick }: { onClick: () => void }) {
+  return (
+    <div className="flex justify-end text-v2311-primary">
+      <div
+        className="flex items-center justify-end cursor-pointer hover:scale-110 transition-all"
+        onClick={onClick}
+      >
+        <span className="text-sm">show more</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          aria-hidden="true"
+          className="h-5 w-5 group-hover:text-gray-500"
+        >
+          <path
+            fillRule="evenodd"
+            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+            clipRule="evenodd"
+          ></path>
+        </svg>
+      </div>
+    </div>
   )
 }
 
