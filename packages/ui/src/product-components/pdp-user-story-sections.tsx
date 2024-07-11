@@ -251,7 +251,7 @@ function PdpUserStoryTeamSections({
                     src={person.image?.src || ''}
                     alt={person.image?.alt || ''}
                     loading="lazy"
-                    className="h-full rounded-xl object-cover w-[30%]"
+                    className="rounded-xl object-cover w-[30%]"
                   />
                 ) : (
                   <Image
@@ -259,7 +259,7 @@ function PdpUserStoryTeamSections({
                     alt={person.image?.alt || ''}
                     width={400}
                     height={500}
-                    className="h-full rounded-xl object-cover w-[30%]"
+                    className="rounded-xl object-cover w-[30%]"
                   />
                 )}
                 <div className="flex flex-col justify-between gap-4 overflow-hidden">
@@ -290,7 +290,7 @@ function PdpUserStoryTeamSections({
                       src={person.image?.src || ''}
                       alt={person.image?.alt || ''}
                       loading="lazy"
-                      className="min-h-36 h-full rounded-xl object-cover w-32"
+                      className="min-h-36 rounded-xl object-cover w-32"
                     />
                   ) : (
                     <Image
@@ -298,7 +298,7 @@ function PdpUserStoryTeamSections({
                       alt={person.image?.alt || ''}
                       width={400}
                       height={500}
-                      className="min-h-36 h-full rounded-xl object-cover w-32"
+                      className="min-h-36 rounded-xl object-cover w-32"
                     />
                   )}
                   <div className="flex-auto">
