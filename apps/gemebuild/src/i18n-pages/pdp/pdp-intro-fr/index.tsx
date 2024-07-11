@@ -13,6 +13,7 @@ import {
   ReviewsScoreHeader,
 } from 'ui'
 import { ReviewsSectionModule } from '../../../components/reviews-section-module'
+import Compare from './Compare'
 
 interface IPdpIntroProps {
   ReviewsComponent: FC<{}>
@@ -35,16 +36,21 @@ function PdpIntroFr({
         },
         {
           id: 2,
+          tabLabel: 'Comparer',
+          tabPanel: <Compare />,
+        },
+        {
+          id: 3,
           tabLabel: 'Spécification',
           tabPanel: <Spec />,
         },
         {
-          id: 3,
+          id: 4,
           tabLabel: 'garantie',
           tabPanel: <Warranty Link={PrefetchLink} />,
         },
         {
-          id: 4,
+          id: 5,
           tabLabel: (
             <>
               <span className="hidden lg:inline">Utilisateur </span>Histoires
@@ -57,7 +63,7 @@ function PdpIntroFr({
           ),
         },
         {
-          id: 5,
+          id: 6,
           tabLabel: 'Avis',
           tabPanel: (
             <>
