@@ -1,3 +1,5 @@
+'use client'
+
 import { ReactNode, useState } from 'react'
 import type { IImgProps } from '../image'
 import Image from 'next/image'
@@ -8,7 +10,6 @@ import { Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import clsx from 'clsx'
-import { SwiperEvents } from 'swiper/types'
 
 interface IPdpUserStoryTeamSectionsExampleProps {
   title?: ReactNode
