@@ -205,7 +205,7 @@ function PdpUserStoryTeamSections({
         className={clsx(
           'select-none !w-full xl:h-[380px] mt-6 md:mt-8 lg:mt-12 rounded-xl bg-gray-100 transition-all duration-200',
           locale === 'en'
-            ? '!h-[370px] md:!h-[290px] lg:!h-[380px]'
+            ? '!h-[360px] md:!h-[290px] lg:!h-[380px]'
             : '!h-[400px] md:!h-[320px] lg:!h-[420px]',
         )}
         modules={[Pagination]}
@@ -219,7 +219,7 @@ function PdpUserStoryTeamSections({
         speed={500}
         direction="vertical"
         grabCursor
-        loop
+        // loop
         mousewheel={{
           forceToAxis: true,
         }}
@@ -262,7 +262,7 @@ function PdpUserStoryTeamSections({
 
               <div className="swiper-slide-box lg:hidden h-full flex flex-col justify-between gap-4 overflow-hidden">
                 <div className="flex items-stretch flex-row gap-4 md:gap-8">
-                <ImageCompoent image={person.image} className='w-32'/>
+                <ImageCompoent image={person.image} className='w-32 h-40'/>
 
                   <div className="flex-auto">
                     <h3 className="v2311-font-h2 text-v2311-fg-dark-black">
