@@ -190,6 +190,8 @@ function PdpUserStoryTeamSections({
   const [height, setHeight] = useState(300)
 
   function onChange() {
+    if (window.innerWidth > 625) return
+
     const currentSwiperSlide = document.querySelector(
       '.swiper-slide-active .swiper-slide-box',
     )
@@ -197,7 +199,9 @@ function PdpUserStoryTeamSections({
     const currentSwiperHeight =
       currentSwiperSlide?.getBoundingClientRect().height || 270
 
-    setHeight(currentSwiperHeight + 30)
+    const paddingGap = window.innerWidth > 1024 ? 64 : 32
+
+    setHeight(currentSwiperHeight + paddingGap)
   }
 
   return (
@@ -213,8 +217,8 @@ function PdpUserStoryTeamSections({
         style={{
           height: height + 'px',
         }}
-        className="select-none !w-full lg:!h-[440px] mt-6 md:mt-8 lg:mt-12 rounded-xl bg-gray-100 transition-all duration-200"
-        // onSwiper={onSwiperHandle}
+        className="select-none !w-full md:!h-[330px] lg:!h-[440px] mt-6 md:mt-8 lg:mt-12 rounded-xl bg-gray-100 transition-all duration-200"
+        onSwiper={onChange}
         onTransitionEnd={onChange}
         modules={[Pagination]}
         pagination={{
@@ -234,7 +238,7 @@ function PdpUserStoryTeamSections({
       >
         {people?.map((person, idx) => (
           <SwiperSlide key={person.id}>
-            <div className="pl-4 pr-6 py-4 lg:pl-8 lg:pr-12 lg:py-8 h-full overflow-hidden">
+            <div className="pl-4 pr-6 py-4 lg:pl-8 lg:pr-12 lg:py-8 h-full">
               <div
                 className={clsx(
                   'hidden lg:flex justify-between items-stretch h-full lg:gap-16 xl:gap-20',
@@ -257,8 +261,8 @@ function PdpUserStoryTeamSections({
                     className="h-full rounded-xl object-cover w-[30%]"
                   />
                 )}
-                <div className="flex flex-col justify-between gap-4 flex-1">
-                  <div className="flex flex-col gap-4">
+                <div className="flex flex-col justify-between gap-4 overflow-hidden">
+                  <div className="flex flex-col gap-2">
                     <h3 className=" v2311-font-h2 text-v2311-fg-dark-black">
                       {person.name}
                     </h3>
@@ -278,7 +282,7 @@ function PdpUserStoryTeamSections({
                 </div>
               </div>
 
-              <div className="swiper-slide-box lg:hidden flex flex-col gap-4">
+              <div className="swiper-slide-box lg:hidden md:h-full flex flex-col md:justify-between lg:justify-start gap-4 overflow-hidden">
                 <div className="flex items-stretch flex-row gap-4 md:gap-8">
                   {person.image?.src?.startsWith('https') ? (
                     <img
@@ -325,6 +329,33 @@ function PdpUserStoryTeamSections({
         ))}
       </Swiper>
     </section>
+  )
+}
+
+// 暂时先不使用点击展示更多
+function ShowMore({ onClick }: { onClick: () => void }) {
+  return (
+    <div className="flex justify-end text-v2311-primary">
+      <div
+        className="flex items-center justify-end cursor-pointer hover:scale-110 transition-all"
+        onClick={onClick}
+      >
+        <span className="text-sm">show more</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          aria-hidden="true"
+          className="h-5 w-5 group-hover:text-gray-500"
+        >
+          <path
+            fillRule="evenodd"
+            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+            clipRule="evenodd"
+          ></path>
+        </svg>
+      </div>
+    </div>
   )
 }
 

@@ -90,6 +90,8 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
         </>
       ),
       quote: `Je suis allé sur Internet, j'ai cherché davantage et j'ai découvert le vôtre et la publicité dit que c'est un biocomposteur et j'ai vu des vidéos et enfin j'ai trouvé le vôtre, je l'ai adoré. Je veux acheter mes composteurs ! Je suis prêt pour 2 autres maintenant. Peut-être les trois.`,
+      mobileQuote:
+        'Je veux acheter mes composteurs! Je suis prêt pour 2 de plus maintenant. Peut-être trois.',
     },
     {
       id: 4,
@@ -113,6 +115,8 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
         </>
       ),
       quote: `J'ai toujours voulu m'impliquer de plus en plus dans tout ce qui m'entoure pour une vie meilleure et durable et c'est pourquoi je voulais vraiment obtenir autant de GEME. Il combine tout ce dont vous avez besoin pour une vie plus facile et sans stress. Je le recommande totalement à tout mon entourage !`,
+      mobileQuote:
+        'Il combine tout ce dont vous avez besoin pour une vie plus facile et sans stress.',
     },
   ],
 }

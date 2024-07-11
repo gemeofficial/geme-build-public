@@ -96,6 +96,8 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
       ),
       quote:
         'Ich ging ins Internet, suchte mehr und fand Ihres, und die Werbung sagt, dass es ein Bio-Komposter ist, und sah Videos, und schließlich fand ich Ihres, ich liebte es. Ich möchte meine Komposter kaufen! Ich bin bereit für zwei weitere jetzt. Vielleicht sogar drei.',
+      mobileQuote:
+        'Ich möchte meine Komposter kaufen! Ich bin bereit für 2 weitere. Vielleicht drei.',
     },
     {
       id: 4,
@@ -118,6 +120,8 @@ const pdpUserStoryTeamSectionsProps: IPdpUserStoryTeamSectionsProps = {
         </>
       ),
       quote: `Ich wollte mich immer mehr und mehr in alles um mich herum einbringen, um ein besser nachhaltiges Leben zu führen, und deshalb wollte ich unbedingt GEME haben. Es vereint alles, was man für ein einfacheres, sorgenfreies Leben braucht. Ich empfehle es total allen in meinem Umfeld!`,
+      mobileQuote:
+        'Es vereint alles, was Sie für ein leichteres, sorgenfreies Leben brauchen.',
     },
   ],
 }
