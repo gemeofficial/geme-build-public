@@ -27,26 +27,31 @@ const aboutHeroSectionProps: IAboutHeroSection = {
   descriptionSection: (
     <div className="w-full mt-3 md:mt-5 max-w-md text-base text-v2311-text-gary md:max-w-3xl">
       <div>
-        Chez ROKH, nous partageons une vision unifiée : transformer les déchets en ressource
-        et créer un monde où la nature prospère aux côtés du progrès humain. Notre
-        passion pour l'innovation scientifique nous pousse à avoir un impact positif sur
-        le monde. En commercialisant nos solutions biotechnologiques révolutionnaires,
-        nous transformons la recherche en avantages concrets qui améliorent le bien-être humain et répondent aux défis mondiaux.
+        Chez ROKH, nous partageons une vision unifiée : transformer les déchets
+        en ressource et créer un monde où la nature prospère aux côtés du
+        progrès humain. Notre passion pour l'innovation scientifique nous pousse
+        à avoir un impact positif sur le monde. En commercialisant nos solutions
+        biotechnologiques révolutionnaires, nous transformons la recherche en
+        avantages concrets qui améliorent le bien-être humain et répondent aux
+        défis mondiaux.
       </div>
       <div>
         <ul className="space-y-1">
           <li className="my-2">Notre équipe se compose de :</li>
           <li>
-            <strong>Professionnels expérimentés</strong> : Avec plus de 20 ans d'expérience
-            dans le traitement des ressources de déchets solides, nous apportons une expertise approfondie à notre travail.
+            <strong>Professionnels expérimentés</strong> : Avec plus de 20 ans
+            d'expérience dans le traitement des ressources de déchets solides,
+            nous apportons une expertise approfondie à notre travail.
           </li>
           <li className="md:w-[60%] lg:w-full">
             <strong>Scientifiques dévoués</strong> : Nos microbiologistes et
-            agronomes explorent continuellement de nouvelles façons d'utiliser la nature pour une gestion durable des déchets.
+            agronomes explorent continuellement de nouvelles façons d'utiliser
+            la nature pour une gestion durable des déchets.
           </li>
           <li className="md:w-[60%] lg:w-full">
-            <strong>Rêveurs et faiseurs</strong> : Nous nous engageons à transformer notre
-            vision en réalité, une solution innovante à la fois.
+            <strong>Rêveurs et faiseurs</strong> : Nous nous engageons à
+            transformer notre vision en réalité, une solution innovante à la
+            fois.
           </li>
         </ul>
       </div>
@@ -68,11 +73,12 @@ const aboutHeroSectionProps: IAboutHeroSection = {
 // AboutContentSection1
 const aboutContentSection1Props: IAboutContentSection1 = {
   mTitle: 'Notre mission',
-  title: 'Toutes les choses vivent éternellement et en harmonie avec la Terre',
+  title:
+    "Perpétuer l'existence éternelle de toutes les créatures en parfaite harmonie avec les rythmes et les équilibres de la Terre.",
   descriptions: [
     "Le gaspillage alimentaire est l'un des plus grands défis mondiaux, et nous pouvons vous aider à le résoudre ensemble. Mais il ne s'agit pas seulement de déchets alimentaires - les excréments d'animaux et tous les déchets biodégradables peuvent être efficacement décomposés.",
     'En combinant la biotechnologie avec la fabrication moderne, GEME offre une solution pour un meilleur recyclage des déchets : Réduire & Recycler sur place.',
-    "Similaire au concept de cache dans les réseaux informatiques, la manière la plus efficace de gérer les déchets, en particulier les biodéchets, est de les traiter là où ils sont produits, raccourcissant ainsi considérablement le chemin du recyclage.",
+    'Similaire au concept de cache dans les réseaux informatiques, la manière la plus efficace de gérer les déchets, en particulier les biodéchets, est de les traiter là où ils sont produits, raccourcissant ainsi considérablement le chemin du recyclage.',
     "GEME crée des produits pour concrétiser cette idée. Être éco-responsable et protéger la nature n'est pas seulement un slogan pour nous; c'est réalisable à travers chaque petit geste lorsque nous éliminons nos déchets quotidiens.",
     "GEME est plus qu'un produit; c'est une solution technologique.",
     'Nous utilisons la technologie pour créer un réseau reliant des équipes de scientifiques, des partenaires distributeurs, des restaurants durables, des communautés de recyclage, des fermes biologiques, des stations de traitement des déchets, des organisations de gestion des déchets et des individus. Chaque nœud en bénéficie, tout comme toutes les choses vivent en harmonie sur notre planète.',
@@ -92,7 +98,7 @@ const aboutContentSection1Props: IAboutContentSection1 = {
     },
     {
       title: 'Restaurer',
-      desc: "Protégez et régénérez les écosystèmes naturels. Améliorez la santé des sols, nettoyez la pollution et réparez les environnements endommagés pour assurer le bien-être de notre planète.",
+      desc: 'Protégez et régénérez les écosystèmes naturels. Améliorez la santé des sols, nettoyez la pollution et réparez les environnements endommagés pour assurer le bien-être de notre planète.',
     },
   ],
   fullImgUrl: '/assets/images/about/v2406/s2-family.png',
@@ -105,20 +111,25 @@ const aboutContentSection15Props: IAboutContentSection15 = {
   bodyTexts: (
     <>
       <div>
-        <strong>Visionnaires</strong> : Nos leaders visionnaires définissent la direction,
-        nous inspirant à penser au-delà de l'ordinaire et à remettre en question les approches conventionnelles de la gestion des déchets.
+        <strong>Visionnaires</strong> : Nos leaders visionnaires définissent la
+        direction, nous inspirant à penser au-delà de l'ordinaire et à remettre
+        en question les approches conventionnelles de la gestion des déchets.
       </div>
       <div>
-        <strong>Scientifiques</strong> : Nos brillants scientifiques sont à la pointe de la
-        recherche, explorant constamment de nouvelles façons d'exploiter le pouvoir de la nature pour des solutions de gestion des déchets durables.
+        <strong>Scientifiques</strong> : Nos brillants scientifiques sont à la
+        pointe de la recherche, explorant constamment de nouvelles façons
+        d'exploiter le pouvoir de la nature pour des solutions de gestion des
+        déchets durables.
       </div>
       <div>
-        <strong>Ingénieurs</strong> : Nos ingénieurs qualifiés donnent vie aux idées,
-        transformant des concepts innovants en solutions concrètes qui font une réelle différence dans le monde.
+        <strong>Ingénieurs</strong> : Nos ingénieurs qualifiés donnent vie aux
+        idées, transformant des concepts innovants en solutions concrètes qui
+        font une réelle différence dans le monde.
       </div>
       <div>
-        <strong>Collaborateurs</strong> : Nous favorisons un esprit de collaboration,
-        encourageant la communication ouverte et l'échange d'idées à tous les niveaux de l'organisation.
+        <strong>Collaborateurs</strong> : Nous favorisons un esprit de
+        collaboration, encourageant la communication ouverte et l'échange
+        d'idées à tous les niveaux de l'organisation.
       </div>
     </>
   ),
@@ -218,8 +229,9 @@ const aboutContentSection6Props: IAboutContentSection6 = {
       imageSrc: '/assets/images/about/icons/use-geme.png',
       description: (
         <>
-          Faites du bien, faites le bien, vivez durablement. Remplacez votre éliminateur de déchets
-          par <a href="/product/geme">GEME Composteur</a>.
+          Faites du bien, faites le bien, vivez durablement. Remplacez votre
+          éliminateur de déchets par <a href="/product/geme">GEME Composteur</a>
+          .
         </>
       ),
     },
@@ -255,8 +267,6 @@ const aboutContentSection6Props: IAboutContentSection6 = {
     },
   ],
 }
-
-
 
 function AboutPageFr() {
   return (
