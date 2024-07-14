@@ -440,7 +440,7 @@ function HomePageFr({
     <>
       <HeroSection1 {...heroSection1Props} />
 
-      <ContentSection2 {...contentSection2Props} />
+      {/*<ContentSection2 {...contentSection2Props} />*/}
       <ContentSection3 {...contentSection3Props} />
       <ContentSection4 {...contentSection4Props} />
 
