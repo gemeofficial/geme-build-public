@@ -264,33 +264,17 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
     {
       id: 1,
       Icon: CompostStep1,
-      description: (
-        <>
-          pas de temps d&apos;attente
-          <br />
-          lents et maintenance facile
-        </>
-      ),
+      description: <>{`Pas de temps d'attente lents et maintenance facile`}</>,
     },
     {
       id: 2,
       Icon: CompostStep2,
-      description: (
-        <>
-          pas de salissures <br />
-          odeur propre et inodore
-        </>
-      ),
+      description: <>Pas de souillures，Inodore</>,
     },
     {
       id: 3,
       Icon: CompostStep3,
-      description: (
-        <>
-          pas besoin de transférer <br />
-          le travail par tous les temps
-        </>
-      ),
+      description: <>Nul besoin de mélanger, fonctionne par tous les temps.</>,
     },
   ],
 }
@@ -401,7 +385,7 @@ const reviewsSectionProps = {
 const footprintsProps: IFootprintsProps = {
   grayBackground: true,
   title: 'Empreintes vertes de GEME dans le monde',
-  description: `Merci de soutenir GEME et d'apporter plus de vert au monde. Soyez le premier à vous propager chez vous !`,
+  description: `GEME aide chaque famille à valoriser ses déchets alimentaires quotidiens, à créer un sol nourrissant, à construire un jardin sain, à réduire son empreinte carbone et à éviter les décharges et l'incinération.`,
   proportionalSymbolMapProps: {
     recentOrderedFrom: 'Les gens de {city} soutiennent GEME avec leur amour.',
   },
@@ -440,7 +424,7 @@ function HomePageFr({
     <>
       <HeroSection1 {...heroSection1Props} />
 
-      <ContentSection2 {...contentSection2Props} />
+      {/*<ContentSection2 {...contentSection2Props} />*/}
       <ContentSection3 {...contentSection3Props} />
       <ContentSection4 {...contentSection4Props} />
 

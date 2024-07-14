@@ -635,8 +635,8 @@ function ContentSection6Fixed({
               {/* 将SVG组件修改为img渲染 */}
               {/* <step.Icon className=" w-[80px] h-[80px] md:w-[172px] md:h-[172px] xl:w-[144px] xl:h-[144px] " /> */}
               <Image
-                src={`/assets/images/home-v2311/compost-step-${step.id}.svg`}
-                alt={`compost-step-${index + 1}`}
+                src={`/assets/images/home-v2311/get-compost-step-${step.id}.svg`}
+                alt={`get compost step ${index + 1}`}
                 width={80}
                 height={80}
                 className="w-[80px] h-[80px] md:w-[172px] md:h-[172px] xl:w-[144px] xl:h-[144px] "
