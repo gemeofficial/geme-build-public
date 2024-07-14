@@ -404,7 +404,7 @@ const footprintsProps: IFootprintsProps = {
   grayBackground: true,
   title: 'GEMEs grüne Fußabdrücke in der Welt',
   description:
-    'Danke, dass Sie GEME unterstützen und mehr Grün in die Welt bringen. Seien Sie der Erste, der es in Ihre Region verbreitet!',
+    'GEME hilft jeder Familie, ihre täglichen Lebensmittelverschwendung zu reduzieren, nährstoffreichen Boden zu erzeugen, einen gesunden Garten anzulegen, den CO2-Fußabdruck zu verringern und Deponierungen und Verbrennungen zu vermeiden.',
   proportionalSymbolMapProps: {
     recentOrderedFrom: 'Menschen aus {city} unterstützen GEME mit ihrer Liebe.',
   },

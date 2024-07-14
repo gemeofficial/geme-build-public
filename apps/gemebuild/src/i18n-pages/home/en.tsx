@@ -147,7 +147,7 @@ const contentSection4Props: IContentSection4Props = {
     </>
   ),
   description:
-    'GEME helps every family eliminate daily food waste, create nourished soil, build a healthy garden, reduce carbon footprint, and avoid landfilling and incineration.',
+    'GEME empowers families to turn their everyday food scraps into thriving gardens, nourishing soil, and a smaller carbon footprint, all while keeping waste out of landfills and incinerators.',
   withMp4VideoOrYoutubeVideo: {
     type: 'youtube',
     videoPosterImage: {

@@ -385,7 +385,7 @@ const reviewsSectionProps = {
 const footprintsProps: IFootprintsProps = {
   grayBackground: true,
   title: 'Empreintes vertes de GEME dans le monde',
-  description: `Merci de soutenir GEME et d'apporter plus de vert au monde. Soyez le premier à vous propager chez vous !`,
+  description: `GEME aide chaque famille à valoriser ses déchets alimentaires quotidiens, à créer un sol nourrissant, à construire un jardin sain, à réduire son empreinte carbone et à éviter les décharges et l'incinération.`,
   proportionalSymbolMapProps: {
     recentOrderedFrom: 'Les gens de {city} soutiennent GEME avec leur amour.',
   },
