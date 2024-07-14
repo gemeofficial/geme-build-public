@@ -264,33 +264,17 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
     {
       id: 1,
       Icon: CompostStep1,
-      description: (
-        <>
-          pas de temps d&apos;attente
-          <br />
-          lents et maintenance facile
-        </>
-      ),
+      description: <>{`Pas de temps d'attente lents et maintenance facile`}</>,
     },
     {
       id: 2,
       Icon: CompostStep2,
-      description: (
-        <>
-          pas de salissures <br />
-          odeur propre et inodore
-        </>
-      ),
+      description: <>Pas de souillures，Inodore</>,
     },
     {
       id: 3,
       Icon: CompostStep3,
-      description: (
-        <>
-          pas besoin de transférer <br />
-          le travail par tous les temps
-        </>
-      ),
+      description: <>Nul besoin de mélanger, fonctionne par tous les temps.</>,
     },
   ],
 }
