@@ -273,9 +273,9 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep2,
       description: (
         <>
-          Pas de désordre ni d'odeur
+          Pas de souillures
           <br />
-          Propre et sans odeur
+          Inodore
         </>
       ),
     },
@@ -284,9 +284,9 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep3,
       description: (
         <>
-          Pas besoin de retourner
+          Nul besoin de mélanger
           <br />
-          Travailler par tous les temps
+          fonctionne par tous les temps
         </>
       ),
     },
