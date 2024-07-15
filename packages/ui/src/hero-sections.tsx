@@ -92,7 +92,7 @@ function HeroSection1({
       </div>
 
       {/* 文字定位层 */}
-      <div className="h-screen xl:mx-auto xl:max-w-7xl absolute z-40 inset-0 flex flex-col items-center xl:items-start justify-center text-center xl:text-left">
+      <div className="h-screen xl:mx-auto xl:max-w-7xl absolute z-40 inset-0 flex flex-col items-center xl:items-start justify-center text-center xl:text-left xl:pl-20 2xl:pl-0">
         <IconLogoGeme className="hidden xl:block w-16" />
         {title && (
           <h1 className="v2311-font-h0 text-white xl:mt-12">{title}</h1>

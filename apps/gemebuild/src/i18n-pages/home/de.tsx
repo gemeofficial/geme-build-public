@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import {
   HeroSection1,
   ContentSection1,
@@ -31,28 +32,27 @@ import { ReviewsSectionModule } from '../../components/reviews-section-module'
 const heroSection1Props: IHeroSection1Props = {
   title: (
     <>
-      <span className="hidden xl:inline whitespace-nowrap">
-        Weltweit erster Bio-Abfallkomposter
+      <span className="hidden xl:inline">
+        Der weltweit erste <br />Bio-Abfallkomposter
       </span>
-      <span className="xl:hidden">Weltweit erster Bio-Abfallkomposter</span>
+      <span className="xl:hidden">Der weltweit erste Bio-Abfallkomposter</span>
     </>
   ),
   description: (
     <>
       <span className=" hidden xl:inline ">
-        Schauen Sie sich GEME an, den modernen elektrischen Komposter für zu
-        Hause
+        GEME: Die smarte Wahl für Zuhause
         <br />
-        Verwandeln Sie Ihre täglichen Küchenabfälle in organischen Kompost
+        Verwandeln Sie Küchenabfälle in wertvollen Kompost
         <br />
-        Weniger Deponiemüll, mehr Gartenboden.
+        Weniger Müll, mehr nährstoffreiche Erde für Ihren Garten
       </span>
       <span className=" xl:hidden ">
-        Schauen Sie sich GEME an, den modernen elektrischen Komposter für zu
-        Hause <br />
-        Verwandeln Sie Ihre täglichen Küchenabfälle in organischen Kompost
+        GEME: Die smarte Wahl für Zuhause
         <br />
-        Weniger Deponiemüll, mehr Gartenfreude.
+        Verwandeln Sie Küchenabfälle in wertvollen Kompost
+        <br />
+        Weniger Müll, mehr nährstoffreiche Erde für Ihren Garten
       </span>
     </>
   ),
@@ -89,15 +89,15 @@ const contentSection2Props: IContentSection2Props = {
 
 // 首页第三部分的内容数据配置 De
 const contentSection3Props: IContentSection3Props = {
-  title: 'Lebensmittelabfälle zu Pflanzennahrung Heimkomposter',
+  title: 'Von Küchenabfällen zu Pflanzennahrung – der Heimkomposter',
   items: [
     {
       id: 1,
       description: (
         <>
-          Alle Arten von Abfällen wegwerfen
+          Alle Arten von Abfällen einwerfen
           <br />
-          Jederzeit Lebensmittelabfälle hinzufügen
+          Jederzeit Küchenabfälle hinzufügen
         </>
       ),
       imageSrc: '/assets/images/home-v2311/put-food-in-geme.jpg',
@@ -107,7 +107,7 @@ const contentSection3Props: IContentSection3Props = {
       id: 2,
       description: (
         <>
-          Kontinuierliche Kompostierung
+          Kontinuierliches Kompostieren
           <br />
           Abfälle werden in einer Box reduziert
         </>
@@ -119,9 +119,9 @@ const contentSection3Props: IContentSection3Props = {
       id: 3,
       description: (
         <>
-          Abfälle in Kompost verwandeln
+          Abfall zu Kompost umwandeln
           <br />
-          Einfach herausnehmen und verwenden
+          Einfach entnehmen und verwenden
         </>
       ),
       imageSrc: '/assets/images/home-v2311/get-compost-from-geme.jpg',
@@ -133,7 +133,7 @@ const contentSection3Props: IContentSection3Props = {
         <>
           Kostenloser und guter Gartenboden
           <br />
-          Ihre Pflanzen füttern und wachsen lassen
+          Ihre Pflanzen ernähren und wachsen lassen
         </>
       ),
       imageSrc: '/assets/images/home-v2311/planting.jpg',
@@ -146,13 +146,13 @@ const contentSection3Props: IContentSection3Props = {
 const contentSection4Props: IContentSection4Props = {
   title: (
     <>
-      Stoppen Sie das Deponieren
+      Aufhören zu deponieren
       <br />
-      Beginnen Sie mit dem Kompostieren
+      Mit dem Kompostieren beginnen
     </>
   ),
   description:
-    'GEME hilft jeder Familie, tägliche Lebensmittelabfälle zu beseitigen, nährstoffreichen Boden zu schaffen, einen gesunden Garten zu bauen, den CO2-Fußabdruck zu reduzieren und Deponierung und Verbrennung zu vermeiden.',
+    'GEME ermöglicht es Familien, ihre alltäglichen Lebensmittelreste in blühende Gärten, nährstoffreiche Böden und einen kleineren CO2-Fußabdruck zu verwandeln, während gleichzeitig Abfälle von Deponien und Verbrennungsanlagen ferngehalten werden.',
   withMp4VideoOrYoutubeVideo: {
     type: 'youtube',
     videoPosterImage: {
@@ -165,27 +165,26 @@ const contentSection4Props: IContentSection4Props = {
       },
     },
     // videoSrcUrl:
-    videoSrcUrl: 'https://www.youtube.com/embed/ROJYZBp0jcM',
+    videoSrcUrl: 'https://www.youtube.com/embed/nlsTg4l_3zE',
   },
 }
 
 // 首页第五部分（滚动动画部分）的内容数据配置 De
 const secondLifeProps: ISecondLifeProps = {
-  titleLeftPart: 'Kompostieren',
+  titleLeftPart: 'Kompost',
   titleRightPart: 'Neues Leben für Abfall',
   description:
-    'Wenn Sie alle Ihre Lebensmittelabfälle kompostieren, können Sie 100 kg bis 300 kg CO2-Emissionen reduzieren.',
+    'Sie können 100 kg bis 300 kg CO2-Emissionen reduzieren, wenn Sie alle Ihre Küchenabfälle durch Kompostieren recyceln.',
 
   articles: [
     {
       id: 1,
-      title: 'Guten Boden herstellen',
-      description:
-        'Kompost kann den Gartenboden nähren, Pflanzen wachsen lassen.',
+      title: 'Guter Boden',
+      description: 'Kompost kann Gartenboden nähren, damit Pflanzen größer wachsen.',
       image: {
         width: 1200,
         height: 800,
-        alt: 'Guten Boden herstellen',
+        alt: 'Make Good Soil',
         src: 'https://www.datocms-assets.com/79468/1666986512-moins_eau.jpg?w=10',
         srcSetData: {
           '100w':
@@ -204,12 +203,11 @@ const secondLifeProps: ISecondLifeProps = {
     {
       id: 2,
       title: 'Wasserverlust verhindern',
-      description:
-        'Kompost kann Wasser speichern, Samen besser wachsen lassen.',
+      description: 'Kompost kann Wasser aufnehmen und lässt Ihre Samen besser wachsen.',
       image: {
         width: 1200,
         height: 800,
-        alt: 'Wasserverlust verhindern',
+        alt: 'Prevent Water Lost',
         src: 'https://www.datocms-assets.com/79468/1666986527-sols_riches.jpg?w=10',
         srcSetData: {
           '100w':
@@ -228,12 +226,11 @@ const secondLifeProps: ISecondLifeProps = {
     {
       id: 3,
       title: 'Klimawandel bekämpfen',
-      description:
-        'Kompost kann Deponien reduzieren, unsere Erde grüner machen.',
+      description: 'Kompost kann Deponien reduzieren und unseren Planeten grüner machen.',
       image: {
         width: 1200,
         height: 800,
-        alt: 'Klimawandel bekämpfen',
+        alt: 'Fight Climate Change',
         src: 'https://www.datocms-assets.com/79468/1666986537-changements_climatiques.jpg?w=10',
         srcSetData: {
           '100w':
@@ -252,12 +249,12 @@ const secondLifeProps: ISecondLifeProps = {
   ],
 
   endTitleLeftPart: 'Abfall wiedergeboren',
-  endTitleRightPart: 'Das Leben geht weiter!',
+  endTitleRightPart: 'Leben geht weiter!',
 }
 
 // 首页第六部分的内容数据配置 De
 const contentSection6FixedProps: IContentSection6FixedProps = {
-  title: 'Der einfachste Weg, Kompost zu erhalten',
+  title: 'Der einfachste Weg, um Kompost zu bekommen',
   videoPosterUrl: '/assets/images/home-v2311/use-compost-cover.jpg',
   videoSrcUrl:
     'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/geme-genereate-compost-12s-480p.mp4',
@@ -267,9 +264,9 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep1,
       description: (
         <>
-          keine lange Wartezeit
+          Keine lange Wartezeit
           <br />
-          einfache Wartung
+          Einfache Wartung
         </>
       ),
     },
@@ -278,9 +275,9 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep2,
       description: (
         <>
-          kein Schmutz riecht
+          Kein Durcheinander und Geruch
           <br />
-          sauber und geruchlos
+          Sauber und geruchlos
         </>
       ),
     },
@@ -289,9 +286,9 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep3,
       description: (
         <>
-          kein Wenden erforderlich
+          Kein Wenden erforderlich
           <br />
-          funktioniert bei jedem Wetter
+          Bei jedem Wetter arbeiten
         </>
       ),
     },
@@ -308,26 +305,25 @@ const contentSection1Props2: IContentSection1Props = {
   ),
   description: (
     <>
-      Denken Sie daran, dass die meisten anderen „Komposter“ eigentlich
+      Denken Sie daran, dass die meisten anderen "Komposter" tatsächlich
       Dehydratoren sind;
       <br />
-      sie kochen und trocknen die Lebensmittel einfach zu Stücken, die wie Erde
+      sie kochen und trocknen das Essen einfach zu Stücken, die wie Erde
       aussehen.
       <br />
-      Im Gegensatz dazu nutzt GEME die Mikroben-Biotechnologie zur Verbesserung
-      der natürlichen aeroben Fermentation und macht daraus einen echten
-      Kompostierungsprozess.
+      Im Gegensatz dazu verwendet GEME Mikrobenbiotechnologie, um die natürliche
+      aerobe Fermentation zu verbessern und so einen echten Kompostierungsprozess zu schaffen.
     </>
   ),
   imageSrc: '/assets/images/home-v2311/the-man-get-compost-from-geme.jpg',
-  imageAlt: 'Der Mann bekommt Kompost von GAME',
+  imageAlt: 'the man get compost from GEME',
 }
 
 // 首页第八部分的内容数据配置 De
 const contentSection1Props3: IContentSection1Props = {
   title: (
     <>
-      Angetrieben durch Biotech
+      Angetrieben durch Biotechnologie
       <br />
       und moderne Fertigung
     </>
@@ -335,76 +331,76 @@ const contentSection1Props3: IContentSection1Props = {
   description: (
     <>
       Unser Wissenschaftsteam hat diese Technologie in den letzten 50 Jahren
-      ausgiebig getestet, um Bioabfälle, Boden und verschmutztes Wasser zu
-      behandeln. Sie haben die Kerntechnologie verfeinert, was zur Schaffung von
-      GEME Kobold führte.
+      umfassend getestet, um Bioabfälle, Böden und verschmutztes Wasser zu
+      behandeln. Sie haben die Kerntechnologie verfeinert und so GEME Kobold
+      geschaffen.
       <br />
       <br />
-      Unser Ingenieurteam verfügt über umfangreiche Erfahrung in der
-      Konstruktion und Herstellung von Müllpressen. Sie haben kürzlich den GEME
-      Komposter entwickelt.
+      Unser Ingenieurteam verfügt über umfangreiche Erfahrung im Design und in
+      der Herstellung von Müllpressen. Sie haben kürzlich den GEME Komposter
+      entwickelt.
       <br />
       <br />
       GEME Kobold und GEME Komposter entfachen eine Revolution.
     </>
   ),
   imageSrc: '/assets/images/home-v2311/observe-the-plants.jpg',
-  imageAlt: 'Beobachte die Pflanzen',
+  imageAlt: 'observe the plants',
 }
 
 // 首页第九部分（三动图）的内容数据配置 De
 const contentSection5Props: IContentSection5Props = {
-  title: 'Essensreste in organischen Kompost verwandeln',
+  title: 'Lebensmittelabfälle in organischen Kompost verwandeln',
   description: (
     <>
-      GEME Kobold vermehrt Mikroorganismen, wenn sie gut gefüttert werden.
+      GEME Kobold ist ein Mikroorganismus, der sich bei guter Ernährung
+      vermehrt.
       <br />
       Er zersetzt Ihre Lebensmittelabfälle, egal wie salzig oder sauer.
       <br />
-      Das Ergebnis? Fertiger, hausgemachter organischer Kompost für Pflanzen.
+      Das Ergebnis? Gebrauchsfertiger, hausgemachter organischer Kompost für
+      Pflanzen.
     </>
   ),
   images: [
     {
       id: 1,
-      stepText: 'Abfälle einwerfen',
+      stepText: 'Abfälle hineinlegen',
       imageSrc: '/assets/images/home-v2311/compost-step-1.gif',
-      imageAlt: 'Bild der Lebensmittelverschwendung',
+      imageAlt: 'food waste picture',
     },
     {
       id: 2,
       stepText: 'Ein paar Tage warten',
       imageSrc: '/assets/images/home-v2311/compost-step-2.gif',
-      imageAlt: 'Bild der Lebensmittelverschwendung',
+      imageAlt: 'food waste picture',
     },
     {
       id: 3,
       stepText: 'Kompost herausnehmen',
       imageSrc: '/assets/images/home-v2311/compost-step-3.gif',
-      imageAlt: 'Bild der Lebensmittelverschwendung',
+      imageAlt: 'food waste picture',
     },
   ],
   bottomDescription: (
-    <>
-      Nur 3 Schritte machen es zum einfachsten Weg, den Klimawandel zu
-      bekämpfen.
-    </>
+    <>Nur 3 Schritte machen es zur einfachsten Methode, dem Klimawandel entgegenzuwirken.</>
   ),
 }
 
 // 首页第十部分（好评卡片）的内容数据配置 De
 const reviewsSectionProps = {
-  title: 'Was echte Nutzer sagen',
+  title: 'Echte Nutzerbewertungen',
   description:
-    'Verzichten Sie auf die falschen Lächeln und einstudierten Sätze bezahlter Influencer. Hören Sie stattdessen echten Menschen zu, die ihre ehrlichen Gedanken und Frustrationen teilen. Erhalten Sie die ungefilterte Wahrheit, sowohl das Gute als auch das Schlechte.',
+    'Klicken Sie unten, um echte Menschen zu sehen, die sowohl das Gute als auch das Schlechte berichten - die ungefilterte Wahrheit, die Sie brauchen.',
 }
+
 
 // 首页第十一部分（地图）的内容数据配置 De
 const footprintsProps: IFootprintsProps = {
   grayBackground: true,
-  title: 'GEMEs grüne Fußabdrücke in der Welt',
+  title: "GEMEs grüne Fußabdrücke in der Welt",
   description:
-    'GEME hilft jeder Familie, ihre täglichen Lebensmittelverschwendung zu reduzieren, nährstoffreichen Boden zu erzeugen, einen gesunden Garten anzulegen, den CO2-Fußabdruck zu verringern und Deponierungen und Verbrennungen zu vermeiden.',
+    'Danke, dass Sie GEME unterstützen und der Welt mehr Grün bringen. Seien Sie der Erste, der es an Ihren Ort verbreitet!',
   proportionalSymbolMapProps: {
     recentOrderedFrom: 'Menschen aus {city} unterstützen GEME mit ihrer Liebe.',
   },
@@ -416,19 +412,18 @@ const newsltterProps: INewsletterProps = {
     title: 'Treten Sie der Bewegung bei',
     description: (
       <>
-        Ein neuer Ansatz zur Lösung des weltweiten Abfallproblems beginnt bei
-        jedem von uns, mühelos im Alltag
+        Ein neuer Ansatz für das Müllproblem der Welt beginnt bei jedem von uns,
+        mühelos im täglichen Leben
       </>
     ),
-    emailInputName: 'E-Mail-Adresse',
+    emailInputName: 'email-address',
     emailLabel: 'E-Mail-Adresse',
-    emailPlaceholder: 'E-Mail-Adresse eingeben',
+    emailPlaceholder: 'Geben Sie Ihre E-Mail-Adresse ein',
     submitButtonLabel: 'Abonnieren',
   },
   successNoticeProps: {
-    title: 'Danke für Ihr Abonnement!',
-    description:
-      'Wir halten Sie mit den neuesten Nachrichten auf dem Laufenden.',
+    title: 'Vielen Dank für Ihr Abonnement!',
+    description: 'Wir werden Sie mit den neuesten Nachrichten auf dem Laufenden halten.',
   },
 }
 
