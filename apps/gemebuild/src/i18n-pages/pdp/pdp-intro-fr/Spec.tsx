@@ -6,7 +6,7 @@ import WhatsInBox, {
 } from '../../../components/geme-whats-in-box'
 
 const gemeSpecsProps: IGemeSpecsProps = {
-  title: 'Spécification technique',
+  title: 'Spéc. tech',
   specs: [
     {
       id: 1,
