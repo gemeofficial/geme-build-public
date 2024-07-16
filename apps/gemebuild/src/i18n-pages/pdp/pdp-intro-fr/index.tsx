@@ -4,27 +4,17 @@ import Warranty from './Warranty'
 import UserStory from './UserStory'
 import { ScrollablePdpTabsWithAnchorOffset } from '../../../components/scrollable-pdp-tabs-with-anchor-offset'
 
-import { FC, useMemo } from 'react'
-import { ILinkComponent } from '../../../contexts/link-context'
-import {
-  IInlinePalyerType,
-  InlinePlayer,
-  IReviewsSectionConfig,
-  ReviewsScoreHeader,
-} from 'ui'
+import { useMemo } from 'react'
+import { ReviewsScoreHeader } from 'ui'
 import { ReviewsSectionModule } from '../../../components/reviews-section-module'
 import Compare from './Compare'
-
-interface IPdpIntroProps {
-  ReviewsComponent: FC<{}>
-  PrefetchLink?: ILinkComponent
-  reviewsSectionConfig: IReviewsSectionConfig
-}
+import { IPdpIntroProps } from '../pdp-intro-en'
 
 function PdpIntroFr({
   ReviewsComponent,
   PrefetchLink,
   reviewsSectionConfig,
+  GemeModelViewer,
 }: IPdpIntroProps) {
   const props = useMemo(
     () => ({
@@ -42,7 +32,7 @@ function PdpIntroFr({
         {
           id: 3,
           tabLabel: 'Spécification',
-          tabPanel: <Spec />,
+          tabPanel: <Spec GemeModelViewer={GemeModelViewer} />,
         },
         {
           id: 4,
@@ -80,7 +70,7 @@ function PdpIntroFr({
         },
       ],
     }),
-    [ReviewsComponent, PrefetchLink, reviewsSectionConfig],
+    [ReviewsComponent, PrefetchLink, reviewsSectionConfig, GemeModelViewer],
   )
 
   return <ScrollablePdpTabsWithAnchorOffset {...props} />

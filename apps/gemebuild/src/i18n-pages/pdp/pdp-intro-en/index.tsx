@@ -10,11 +10,11 @@ import { IReviewsSectionConfig, ReviewsScoreHeader } from 'ui'
 import { ReviewsSectionModule } from '../../../components/reviews-section-module'
 import Compare from './Compare'
 
-interface IPdpIntroProps {
+export interface IPdpIntroProps {
   ReviewsComponent: FC<{}>
   PrefetchLink?: ILinkComponent
   reviewsSectionConfig: IReviewsSectionConfig
-  GemeModelViewer?: JSX.Element
+  GemeModelViewer?: FC<{}>
 }
 
 function PdpIntroEn({

@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { FC } from 'react'
 import Specs, { type IGemeSpecsProps } from '../../../components/geme-specs'
 import WhatsInBox, {
   type IGemeWhatsInBoxProps,
@@ -90,7 +91,7 @@ const gemeWhatsInBoxProps: IGemeWhatsInBoxProps = {
   ],
 }
 
-function Spec({ GemeModelViewer }: { GemeModelViewer?: JSX.Element }) {
+function Spec({ GemeModelViewer }: { GemeModelViewer?: FC<{}> }) {
   return (
     <>
       <Specs {...gemeSpecsProps} GemeModelViewer={GemeModelViewer} />
