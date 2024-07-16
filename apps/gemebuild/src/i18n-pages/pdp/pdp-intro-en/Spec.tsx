@@ -90,10 +90,10 @@ const gemeWhatsInBoxProps: IGemeWhatsInBoxProps = {
   ],
 }
 
-function Spec() {
+function Spec({ GemeModelViewer }: { GemeModelViewer?: JSX.Element }) {
   return (
     <>
-      <Specs {...gemeSpecsProps} />
+      <Specs {...gemeSpecsProps} GemeModelViewer={GemeModelViewer} />
       <WhatsInBox {...gemeWhatsInBoxProps} />
     </>
   )
