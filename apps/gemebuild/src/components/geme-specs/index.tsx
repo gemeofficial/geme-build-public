@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import { AlternativeSideBySideWithImages } from '../feature-sections'
-import { ReactNode, useMemo } from 'react'
+import { FC, ReactNode, useMemo } from 'react'
 
 interface IGemeSpecsProps {
   title?: ReactNode
   specs: { id: number; name: string; description: ReactNode }[]
+  GemeModelViewer?: FC<{}>
 }
 
 const gemeSpecsExampleProps: IGemeSpecsProps = {
@@ -54,7 +55,7 @@ const gemeSpecsExampleProps: IGemeSpecsProps = {
   ],
 }
 
-function GemeSpecs({ title, specs }: IGemeSpecsProps) {
+function GemeSpecs({ title, specs, GemeModelViewer }: IGemeSpecsProps) {
   const props = useMemo(() => {
     return {
       textAndImageblocks: [
@@ -62,8 +63,9 @@ function GemeSpecs({ title, specs }: IGemeSpecsProps) {
           name: 'geme tech specs',
           LeftBlock: () => (
             <div className="mx-auto max-w-xl sm:px-6 lg:mx-0 lg:max-w-none lg:px-0">
-              <h3 className="text-2xl font-bold tracking-tight text-v2311-primary sm:text-3xl">
-                {title}
+              <h3 className="text-2xl font-bold tracking-tight text-v2311-primary sm:text-3xl flex items-center justify-between">
+                <span>{title}</span>
+                {GemeModelViewer && <GemeModelViewer />}
               </h3>
 
               <dl className="mt-6 space-y-4">
