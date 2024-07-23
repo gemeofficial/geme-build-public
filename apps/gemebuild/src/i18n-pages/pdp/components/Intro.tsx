@@ -22,9 +22,9 @@ export interface IPdpIntroProps {
   pdpIntroSection1Props: IPdpIntroSection1Props
   contentSection71Props: IContentSection7Props
   contentSection72Props: IContentSection7Props
+  pdpIntroSection5Props: IPdpIntroSection5Props
   contentSection21Props: IContentSection2Props
   contentSection22Props: IContentSection2Props
-  pdpIntroSection5Props: IPdpIntroSection5Props
   pdpIntroSection6Props: IPdpIntroSection6Props
   pdpIntroSection7Props: IPdpIntroSection7Props
   contentSection23Props: IContentSection2Props

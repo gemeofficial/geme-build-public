@@ -20,40 +20,39 @@ const locale: LocaleType = 'en'
 
 // 产品页Tabs吸顶栏的文本 De
 const tabs: IPdpTabsText = {
-  intro: 'Introduction',
-  compare: 'Compare',
-  spec: 'Spec',
-  warranty: 'Warranty',
-  userStories: 'User Stories',
-  reviews: 'Reviews',
+  intro: 'Einführung',
+  compare: 'Vergleichen',
+  spec: 'Spezifikationen',
+  warranty: 'Garantie',
+  userStories: 'Benutzergeschichten',
+  reviews: 'Bewertungen',
 }
 
 // ----------------  产品页 Introduction模块内容配置 De start  ----------------------
 
 const introProps: IPdpIntroProps = {
-  // Introduction 第1部分
+  // Introduction 第1部分 De
   pdpIntroSection1Props: {
-    title: "World's First Bio Waste Composter",
+    title: 'Erster Bio-Abfall-Komposter der Welt',
     description:
-      'Use microbiota to breakdown food waste quickly, 100x faster than traditional composting, completely different than countertop dehydrating electric "composters".',
+      'Verwendet Mikroorganismen, um Lebensmittelabfälle schnell abzubauen, 100-mal schneller als herkömmliches Kompostieren, völlig anders als elektrische "Komposter" auf der Arbeitsplatte.',
     bgImageSrc:
       '/assets/images/pdp-v2311/dividers/geme-with-compost-background-min.jpg',
     comparisonText: {
-      brfore: 'Brfore',
-      after: 'After',
+      brfore: 'Vorher',
+      after: 'Nachher',
     },
     bottomItems: [
-      { id: 1, description: 'Breakdown by Microbes' },
-      { id: 2, description: 'Not by Dehydration' },
-      { id: 3, description: 'Compost Pile in Box' },
+      { id: 1, description: 'Abbau durch Mikroben' },
+      { id: 2, description: 'Nicht durch Dehydration' },
+      { id: 3, description: 'Komposthaufen in der Box' },
     ],
   },
 
-  // Introduction 第2部分
+  // Introduction 第2部分 De
   contentSection71Props: {
-    title: 'From Waste To Wonder',
-    description:
-      "Let's dive into the tiny superheroes that create a significant impact: microbes (GEME Kobold). Similar to the friendly microbes aiding digestion in your gut, with ideal conditions and regular rotation mixing, they quickly transform food scraps into organic compost.",
+    title: 'Vom Abfall zum Wunder',
+    description: `Tauchen wir ein in die winzigen Superhelden, die eine bedeutende Wirkung entfalten: Mikroben (GEME Kobold). Ähnlich wie die freundlichen Mikroben, die die Verdauung in Ihrem Darm unterstützen, verwandeln sie bei idealen Bedingungen und regelmäßiger Rotation schnell Lebensmittelabfälle in organischen Kompost.`,
 
     withImageOrVideo: {
       type: 'video',
@@ -66,72 +65,71 @@ const introProps: IPdpIntroProps = {
         ],
       },
     },
-    bottomContent: <PdpIntroSection3 title="6-8 Hours" />,
+    bottomContent: <PdpIntroSection3 title="6-8 Stunden" />,
     isDisplayTextOnLeft: true,
   },
 
-  // Introduction 第3部分
+  // Introduction 第3部分 De
   contentSection72Props: {
-    title: 'Silent Operation',
-    description:
-      'GEME Sound level around 35-45 dB, the quietest composter on the marketing.',
+    title: 'Geräuscharmer Betrieb',
+    description: `GEME-Schallpegel liegt bei etwa 35-45 dB, der leiseste Komposter auf dem Markt.`,
     withImageOrVideo: {
       type: 'image',
       imageSrc: '/assets/images/pdp-v2311/introduction/geme-silent.jpg',
-      imageAlt: 'food waste picture',
+      imageAlt: 'Lebensmittelabfälle Bild',
     },
     bottomContent: <PdpIntroSection4 />,
   },
 
-  // Introduction 第4部分
-  contentSection21Props: {
-    title: 'Keep Throwing Garbage, GEME Take Care of the Rest',
-    description: (
-      <>
-        🫳&nbsp;&nbsp;Add waste at anytime <br />
-        🫷&nbsp;&nbsp;No need to push buttons <br />
-        🕓&nbsp;&nbsp;No need to wait cycles <br />
-        🤗&nbsp;&nbsp;Zero learning curve <br />
-        🚮&nbsp;&nbsp;Just like regular trash bin
-      </>
-    ),
-    imageSrc:
-      '/assets/images/pdp-v2311/introduction/geme-take-care-of-the-rest.jpg',
-    imageAlt: 'GEME take care of your food waste',
-    isDisplayTextOnLeft: true,
-  },
-
-  // Introduction 第5部分
-  contentSection22Props: {
-    title: 'Innovative Microbes Based Garbage Disposal, Work Quickly & Safely',
-    description: (
-      <>
-        🔥&nbsp;&nbsp;Not dehydrating, it's real composting <br />
-        🚰&nbsp;&nbsp;Not shredding, no more clogged sink
-        <br />
-        🌿&nbsp;&nbsp;Not green washing, true eco-friendly solution
-      </>
-    ),
-    imageSrc: '/assets/images/pdp-v2311/introduction/geme-garbage-disposal.jpg',
-    imageAlt: 'food waste picture',
-  },
-
-  // Introduction 第6部分
+  // Introduction 第4部分 De
   pdpIntroSection5Props: {
-    title: 'Almost All Of Waste Can Go into GEME',
+    title: 'Fast alle Abfälle können in GEME',
     leftNotes: (
       <>
         <strong>400+</strong>
         <br />
-        kinds of waste
+        Arten von Abfall
       </>
     ),
   },
 
-  // Introduction 第7部分
+  // Introduction 第5部分 De
+  contentSection21Props: {
+    title: 'Werfen Sie weiterhin Müll, GEME kümmert sich um den Rest',
+    description: (
+      <>
+        🫳&nbsp;&nbsp;Abfälle jederzeit hinzufügen <br />
+        🫷&nbsp;&nbsp;Keine Knöpfe drücken <br />
+        🕓&nbsp;&nbsp;Keine Zyklen abwarten <br />
+        🤗&nbsp;&nbsp;Keine Lernkurve <br />
+        🚮&nbsp;&nbsp;Genau wie ein normaler Mülleimer
+      </>
+    ),
+    imageSrc:
+      '/assets/images/pdp-v2311/introduction/geme-take-care-of-the-rest.jpg',
+    imageAlt: 'GEME kümmert sich um Ihre Lebensmittelabfälle',
+    isDisplayTextOnLeft: true,
+  },
+
+  // Introduction 第6部分 De
+  contentSection22Props: {
+    title: 'Innovative mikrobenbasierte Müllentsorgung, schnell und sicher',
+    description: (
+      <>
+        🔥&nbsp;&nbsp;Nicht dehydrieren, es ist echtes Kompostieren <br />
+        🚰&nbsp;&nbsp;Nicht zerkleinern, kein verstopftes Waschbecken mehr
+        <br />
+        🌿&nbsp;&nbsp;Kein Greenwashing, echte umweltfreundliche Lösung
+      </>
+    ),
+    imageSrc: '/assets/images/pdp-v2311/introduction/geme-garbage-disposal.jpg',
+    imageAlt: 'Lebensmittelabfälle Bild',
+  },
+
+  // Introduction 第7部分 De
   pdpIntroSection6Props: {
-    title: 'Composting Made Easy',
-    description: 'Loved by 100k+ gardeners',
+    title: 'Kompostieren leicht gemacht',
+    description: 'Geliebt von über 100.000 Gärtnern',
     items: [
       {
         id: 1,
@@ -139,111 +137,113 @@ const introProps: IPdpIntroProps = {
         title: 'GEME',
         imageSrc:
           '/assets/images/pdp-v2311/introduction/section-comparison-geme.jpeg',
-        imageAlt: 'GEME compose',
+        imageAlt: 'GEME Kompost',
         features: [
-          'Real Compost',
-          'Aerobic Fermentation',
-          'Odorless & Quiet',
-          'Energy Saving',
+          'Echter Kompost',
+          'Aerobe Fermentation',
+          'Geruchlos und leise',
+          'Energiesparend',
         ],
       },
       {
         id: 2,
-        title: 'Dehydrator',
+        title: 'Entwässerer',
         imageSrc:
           '/assets/images/pdp-v2311/introduction/section-comparison-dehydrator.jpeg',
-        imageAlt: 'Dehydrator',
+        imageAlt: 'Entwässerer',
         features: [
-          'Fake Compost',
-          'Cook & Dry',
-          'Smelly & Noisy',
-          'Energy Costly',
+          'Falscher Kompost',
+          'Kochen und Trocknen',
+          'Stinkend und laut',
+          'Energieaufwendig',
         ],
       },
       {
         id: 3,
-        title: 'Compost Pile',
+        title: 'Komposthaufen',
         imageSrc:
           '/assets/images/pdp-v2311/introduction/section-comparison-pile.jpeg',
-        imageAlt: 'Compost Pile',
+        imageAlt: 'Komposthaufen',
         features: [
-          'Wait Long Time',
-          'Dirty & Messy',
-          'Often Turn Over',
-          'Attract Animals',
+          'Lange Wartezeit',
+          'Schmutzig und unordentlich',
+          'Oft umdrehen',
+          'Zieht Tiere an',
         ],
       },
     ],
   },
 
-  // Introduction 第8部分
+  // Introduction 第8部分 De
   pdpIntroSection7Props: {
-    title: 'Big, More & Long Term',
-    description: 'Work 7x24 But Energy Saving',
+    title: 'Groß, mehr und langfristig',
+    description: 'Arbeitet 7x24, aber energiesparend',
     features: [
-      '😄 10+ people family daily using',
-      '📅 3 months no cleaning required',
-      '💰 Worth the price',
+      '😄 10+ Personen Familiennutzung täglich',
+      '📅 3 Monate keine Reinigung erforderlich',
+      '💰 Preiswert',
     ],
   },
 
-  // Introduction 第9部分
+  // Introduction 第9部分 De
   contentSection23Props: {
-    title: 'Imaging A Life, No Need to Throw Food Waste Any More',
+    title:
+      'Stellen Sie sich ein Leben vor, in dem Sie keinen Lebensmittelabfall mehr wegwerfen müssen',
     description: (
       <>
-        👪&nbsp;&nbsp;10+ people family daily using <br />
-        📅&nbsp;&nbsp;3+ months no cleaning required <br />
-        💰&nbsp;&nbsp;Worth the price for such a big guy <br />
-        🐳&nbsp;&nbsp;19L volume, 11£/5kg daily feed capacity <br />
-        🐘&nbsp;&nbsp;45.5x32x66.5(cm) 18x12.6x26.2 (inch)
+        👪&nbsp;&nbsp;Für Familien mit mehr als 10 Personen täglich geeignet{' '}
+        <br />
+        📅&nbsp;&nbsp;3+ Monate ohne Reinigung erforderlich <br />
+        💰&nbsp;&nbsp;Der Preis für so einen großen Kerl lohnt sich <br />
+        🐳&nbsp;&nbsp;19L Volumen, 11£/5kg tägliche Zuführkapazität <br />
+        🐘&nbsp;&nbsp;45,5x32x66,5(cm) 18x12,6x26,2 (Zoll)
       </>
     ),
     imageSrc:
       '/assets/images/pdp-v2311/introduction/geme-composter-size-v2.jpeg',
-    imageAlt: 'Big Size for GEME Composter',
+    imageAlt: 'Große Größe für GEME Komposter',
     isDisplayTextOnLeft: true,
   },
 
-  // Introduction 第10部分
+  // Introduction 第10部分 De
   contentSection24Props: {
-    title: 'No Need to Change Filter',
+    title: 'Kein Filterwechsel erforderlich',
     description: (
       <>
-        The world&apos;s only model that uses the most advanced industrial
-        filter, with <b>metal ion catalytic oxidation</b> purification.
+        Das weltweit einzige Modell, das den fortschrittlichsten Industriefilter
+        mit <b>Metallionenkatalyse-Oxidation</b> verwendet.
         <br />
-        This technology is powerful and requires no replacement at all.
+        Diese Technologie ist leistungsstark und erfordert keinerlei Ersatz.
         <br />
-        Other "composter" needs to replace filter every 3 months, large hidden
-        cost!
+        Andere „Komposter“ müssen den Filter alle 3 Monate wechseln, große
+        versteckte Kosten!
         <br />
         <br />
-        👃🏻&nbsp;&nbsp;No smell <br />
-        💰&nbsp;&nbsp;No additional hidden cost
+        👃🏻&nbsp;&nbsp;Kein Geruch <br />
+        💰&nbsp;&nbsp;Keine zusätzlichen versteckten Kosten
         <br />
-        🔨&nbsp;&nbsp;No replace errands
+        🔨&nbsp;&nbsp;Keine Austauschvorgänge
       </>
     ),
     imageSrc: '/assets/images/pdp-v2311/introduction/no-filters.jpg',
-    imageAlt: 'GEME requires no filter replacing',
+    imageAlt: 'GEME erfordert keinen Filterwechsel',
   },
 
-  // Introduction 第11部分
+  // Introduction 第11部分 De
   contentSection8Props: {
-    title: 'No Smell Composting At Home',
+    title: 'Geruchloses Kompostieren zu Hause',
     description:
-      'GEME uses industrial filters with the most advanced deodorization technology. Enjoy the high tech clean modern composting, enjoy the zero waste life style.',
+      'GEME verwendet industrielle Filter mit der fortschrittlichsten Deodorisationstechnologie. Genießen Sie das hochmoderne, saubere Kompostieren und den Zero-Waste-Lebensstil.',
     items: [
       {
         id: 1,
         imageSrc: '/assets/images/pdp-v2311/introduction/no-smell-before.jpg',
-        imageAlt: 'Get Smell before using GEME Composter',
+        imageAlt: 'Geruch vor der Verwendung des GEME Komposters',
       },
       {
         id: 2,
         imageSrc: '/assets/images/pdp-v2311/introduction/no-smell-after.jpg',
-        imageAlt: 'No Smell after using GEME Composter',
+        imageAlt: 'Kein Geruch nach der Verwendung des GEME Komposters',
       },
     ],
   },
@@ -253,40 +253,40 @@ const introProps: IPdpIntroProps = {
 // 产品页 compareSection模块内容配置 De
 const compareProps: IPdpCompareProps = {
   compareSectionProps: {
-    title: "Let's Compare",
-    description: 'Discover what makes GEME different.',
+    title: 'Vergleichen wir',
+    description: 'Entdecken Sie, was GEME anders macht.',
     compareList: [
       {
         imgUrl: '/assets/images/compare-section/compare-section-geme.png',
         devicename: 'GEME',
         compareItems: [
           {
-            title: 'Real Compost',
-            desc: 'High active microbe accelerate composting process',
+            title: 'Echter Kompost',
+            desc: 'Hochaktive Mikroben beschleunigen den Kompostierungsprozess',
           },
           {
-            title: 'No need to change filter',
-            desc: 'Zero cost, industrial grade filter, not carbon material',
+            title: 'Kein Filterwechsel erforderlich',
+            desc: 'Keine Kosten, industrieller Filter, kein Kohlenstoffmaterial',
           },
           {
-            title: '19L super large volume',
-            desc: 'Take months to fill up',
+            title: '19L super großes Volumen',
+            desc: 'Dauert Monate, um sich zu füllen',
           },
           {
-            title: 'Also pet poops & soup',
-            desc: 'Support bio waste, including cat litter and liquid waste',
+            title: 'Auch für Tierkot und Suppe geeignet',
+            desc: 'Unterstützt Bio-Abfälle, einschließlich Katzenstreu und flüssige Abfälle',
           },
           {
-            title: 'No need to clean',
-            desc: 'Just reduce when full, no need to empty and clean',
+            title: 'Keine Reinigung erforderlich',
+            desc: 'Einfach reduzieren, wenn voll, kein Entleeren und Reinigen erforderlich',
           },
           {
-            title: 'No subscription',
-            desc: 'Price is high, but no hidden subscription cost, free trail, free return',
+            title: 'Kein Abonnement',
+            desc: 'Preis ist hoch, aber keine versteckten Abonnementkosten, kostenlose Testversion, kostenlose Rückgabe',
           },
           {
-            title: 'Continuously composting',
-            desc: 'Add anytime, no need to wait cycle completed',
+            title: 'Kontinuierliche Kompostierung',
+            desc: 'Jederzeit hinzufügen, kein Warten auf Zyklusende',
           },
         ],
       },
@@ -295,32 +295,32 @@ const compareProps: IPdpCompareProps = {
         devicename: 'Brand 1', // Lomi
         compareItems: [
           {
-            title: 'Not real compost',
-            desc: 'Dehydrate and cook, still dry waste',
+            title: 'Kein echter Kompost',
+            desc: 'Dehydrieren und Kochen, immer noch trockene Abfälle',
           },
           {
-            title: 'Change carbon filter regularly',
-            desc: 'Up to $240/year for filter replacements',
+            title: 'Kohlenstofffilter regelmäßig wechseln',
+            desc: 'Bis zu $240/Jahr für Filterwechsel',
           },
           {
-            title: '3L small volume',
-            desc: 'Limited size of food waste',
+            title: '3L kleines Volumen',
+            desc: 'Begrenzte Größe des Lebensmittelabfalls',
           },
           {
-            title: 'Limited food scraps',
-            desc: 'Can not handle meat and soup',
+            title: 'Begrenzte Lebensmittelabfälle',
+            desc: 'Kann kein Fleisch und keine Suppe verarbeiten',
           },
           {
-            title: 'Empty daily',
-            desc: 'Clean up after each use',
+            title: 'Täglich entleeren',
+            desc: 'Nach jeder Nutzung reinigen',
           },
           {
-            title: 'Subscription required',
-            desc: 'High hidden cost subscription trap',
+            title: 'Abonnement erforderlich',
+            desc: 'Hohe versteckte Kosten des Abonnements',
           },
           {
-            title: 'Cycle based manual start',
-            desc: 'Twist off lid, push button to start, wait until cycle ends',
+            title: 'Manueller Start basierend auf Zyklus',
+            desc: 'Deckel abdrehen, Knopf drücken zum Starten, warten bis der Zyklus endet',
           },
         ],
       },
@@ -329,32 +329,32 @@ const compareProps: IPdpCompareProps = {
         devicename: 'Brand 2', // mill
         compareItems: [
           {
-            title: 'Not real compost',
-            desc: 'Dehydrate and grind, still dry waste',
+            title: 'Kein echter Kompost',
+            desc: 'Dehydrieren und Mahlen, immer noch trockene Abfälle',
           },
           {
-            title: 'Carbon odor filter',
-            desc: '$60+ for each filter replacements',
+            title: 'Kohlenstoffgeruchsfilter',
+            desc: '$60+ für jeden Filterwechsel',
           },
           {
-            title: '6.5L volume',
-            desc: 'Tall and big, but limited capacity',
+            title: '6,5L Volumen',
+            desc: 'Hoch und groß, aber begrenzte Kapazität',
           },
           {
-            title: 'Limited food scraps',
-            desc: 'Can not handle meat and soup',
+            title: 'Begrenzte Lebensmittelabfälle',
+            desc: 'Kann kein Fleisch und keine Suppe verarbeiten',
           },
           {
-            title: 'Empty weekly',
-            desc: 'Run and empty when get full',
+            title: 'Wöchentlich entleeren',
+            desc: 'Laufen und entleeren, wenn voll',
           },
           {
-            title: 'Subscription required',
-            desc: 'Subscription by default, trouble for cancel and return, refund is not applicable',
+            title: 'Abonnement erforderlich',
+            desc: 'Standardmäßig abonniert, Schwierigkeiten bei Stornierung und Rückgabe, keine Rückerstattung möglich',
           },
           {
-            title: 'Continuously chopping',
-            desc: 'Auto restart when you add waste, keep chopping',
+            title: 'Kontinuierliches Hacken',
+            desc: 'Automatischer Neustart, wenn Sie Abfall hinzufügen, weiterhacken',
           },
         ],
       },
@@ -363,125 +363,123 @@ const compareProps: IPdpCompareProps = {
         devicename: 'Brand 3', // Reencle
         compareItems: [
           {
-            title: 'Real Compost',
-            desc: 'Low maintenance microbes involved',
+            title: 'Echter Kompost',
+            desc: 'Niedrigwartungs-Mikroben beteiligt',
           },
           {
-            title: 'Change carbon filter regularly',
-            desc: 'Cost $35+ each replacement',
+            title: 'Kohlenstofffilter regelmäßig wechseln',
+            desc: 'Kosten $35+ pro Ersatz',
           },
           {
-            title: '6L volume',
-            desc: '14L outer space, 6L inner volume',
+            title: '6L Volumen',
+            desc: '14L Außenraum, 6L Innenvolumen',
           },
           {
-            title: 'Food waste only',
-            desc: 'Can not handle pet poops',
+            title: 'Nur Lebensmittelabfälle',
+            desc: 'Kann keine Tierkot verarbeiten',
           },
           {
-            title: 'Clean up on demand',
-            desc: 'Empty, clean up and reset compost starter when full',
+            title: 'Reinigung bei Bedarf',
+            desc: 'Entleeren, reinigen und Kompoststarter bei Vollstand zurücksetzen',
           },
           {
-            title: 'Subscription offered',
-            desc: 'Looks affordable, but trouble when cancel or refund',
+            title: 'Abonnement angeboten',
+            desc: 'Sieht erschwinglich aus, aber Schwierigkeiten bei Stornierung oder Rückerstattung',
           },
           {
-            title: 'Continuously composting',
-            desc: 'Add anytime, no need to wait cycle completed',
+            title: 'Kontinuierliche Kompostierung',
+            desc: 'Jederzeit hinzufügen, kein Warten auf Zyklusende',
           },
         ],
       },
     ],
-    buttonText: 'Buy Now',
+    buttonText: 'Jetzt kaufen',
   },
-  locale: 'en',
+  locale: 'de',
 }
 
 // 产品页Spec模块配置内容 De
 const specProps: IPdpSpecProps = {
   gemeSpecsProps: {
-    title: 'Tech spec',
+    title: 'Technische Daten',
     specs: [
       {
         id: 1,
-        name: 'Volume',
+        name: 'Volumen',
         description: '19L',
       },
       {
         id: 2,
-        name: 'Capacity',
-        description: '5kg/day',
+        name: 'Kapazität',
+        description: '5kg/Tag',
       },
       {
         id: 3,
-        name: 'Size',
+        name: 'Größe',
         description: 'W320*D455*H665mm  (18" x 12.6" x 26.2")',
       },
       {
         id: 4,
-        name: 'Weight',
+        name: 'Gewicht',
         description: '19.5kg',
       },
       {
         id: 5,
-        name: 'Power',
-        description: (
-          <>
-            <p>AC110V-60Hz(Model G601N-2K for North America)</p>
-            <p>AC220V-50Hz(Model G601U-2K for Europe)</p>
-          </>
-        ),
+        name: 'Leistung',
+        description: `
+          <p>AC110V-60Hz(Modell G601N-2K für Nordamerika)</p>
+          <p>AC220V-50Hz(Modell G601U-2K für Europa)</p>
+        `,
       },
       {
         id: 6,
-        name: 'Decibel',
+        name: 'Dezibel',
         description: '≈40db (23db-55db)',
       },
       {
         id: 7,
-        name: 'Certifications',
+        name: 'Zertifizierungen',
         description: 'CE/FCC/ISO9001/ISO14001/ISO45001',
       },
       {
         id: 8,
-        name: 'Function',
+        name: 'Funktion',
         description:
-          'Fully automatic quick-acting bio-composting; Safe and energy-saving; Automatic deodorization; Automatic dehumidification',
+          'Vollautomatische Schnellkompostierung; Sicher und energiesparend; Automatische Geruchsneutralisation; Automatische Entfeuchtung',
       },
     ],
   },
 
   gemeWhatsInBoxProps: {
-    title: `What's in the box`,
+    title: 'Was ist in der Box',
     features: [
       {
         name: '1',
-        title: 'GEME composter',
-        description: 'The bio-waste quick-acting machine',
+        title: 'GEME Komposter',
+        description: 'Die schnell wirkende Bio-Abfallmaschine',
         imageSrc: '/assets/images/geme-whats-in-box/q2.png',
-        imageAlt: 'GEME bio-waste quick-acting composter',
+        imageAlt: 'GEME schnell wirkender Bio-Abfallkomposter',
       },
       {
         name: '2',
         title: 'GEME-Kobold',
-        description: 'The natural microbiota for composting',
+        description: 'Die natürlichen Mikroben für die Kompostierung',
         imageSrc: '/assets/images/geme-whats-in-box/q1.png',
-        imageAlt: 'GEME-Kobold natural microbiota',
+        imageAlt: 'GEME-Kobold natürliche Mikroben',
       },
       {
         name: '3',
-        title: 'Shovel',
-        description: 'Used to take out organic fertilizer',
+        title: 'Schaufel',
+        description: 'Wird verwendet, um organischen Dünger zu entnehmen',
         imageSrc: '/assets/images/geme-whats-in-box/q3.png',
-        imageAlt: 'Shovel',
+        imageAlt: 'Schaufel',
       },
       {
         name: '4',
-        title: 'Scraper',
-        description: 'Used for cleaning the decomposition tub',
+        title: 'Schaber',
+        description: 'Wird zur Reinigung des Zersetzungstanks verwendet',
         imageSrc: '/assets/images/geme-whats-in-box/q4.png',
-        imageAlt: 'Scraper',
+        imageAlt: 'Schaber',
       },
     ],
   },
@@ -489,53 +487,54 @@ const specProps: IPdpSpecProps = {
 
 // 产品页Warranty模块配置内容 De
 const warrantyProps = {
-  title: 'Buy with Confident',
-  description: `We know you will feel expensive, but we make sure it worth.
-Your money wont gone, it turns into the a better life style and good service around you.`,
+  title: 'Kaufen Sie mit Vertrauen',
+  description: `Wir wissen, dass Sie es als teuer empfinden werden, aber wir stellen sicher, dass es sich lohnt. Ihr Geld ist nicht verloren, es verwandelt sich in einen besseren Lebensstil und guten Service um Sie herum.`,
 
   features: [
     {
-      name: '30 Days Free Trial',
-      description:
-        'Free shipping(US mainland), Free trial, No return fee charged. Ask us any questions during your trial, innovative product lovers deserved encouraged!',
+      name: '30 Tage kostenloser Test',
+      description: `Kostenloser Versand (Festland USA), kostenloser Test, keine Rücksendegebühr. Stellen Sie uns während Ihrer Testphase alle Fragen, die Sie haben, und wir ermutigen Liebhaber innovativer Produkte!`,
       href: '/return-policy',
       icon: TruckIcon,
     },
     {
-      name: '1 Year Warranty',
-      description:
-        'We will undertakes to repair or replace defective parts free of charge if the initial defect occurs during the warranty period.',
+      name: 'Ein Jahr Garantie',
+      description: `Wir übernehmen die Reparatur oder den kostenlosen Austausch defekter Teile, wenn der ursprüngliche Defekt während der Garantiezeit auftritt.`,
       href: '/warranty',
       icon: ShieldCheckIcon,
     },
     {
-      name: '100% Customer Reply Rate',
-      description:
-        'Experience worry-free composting with our comprehensive warranty. Your GEME Composter, our commitment.',
+      name: '100% Kundenantwortquote',
+      description: `Erleben Sie sorgenfreies Kompostieren mit unserer umfassenden Garantie. Ihr GEME Komposter, unser Versprechen.`,
       href: '/contact',
       icon: ChatBubbleLeftRightIcon,
     },
   ],
 
-  btnText: 'Learn more',
+  btnText: 'Erfahren Sie mehr',
 }
 
 // 产品页 User Stories 模块配置内容 De
 const userStoryProps: IPdpUserStoryTeamSectionsProps = {
-  title: "Meet GEME's Customer Stories",
-  description: <>How our customers get their life changed after using GEME</>,
+  title: 'Lernen Sie die Geschichten der GEME-Kunden kennen',
+  description: (
+    <>
+      Wie sich das Leben unserer Kunden nach der Nutzung von GEME verändert hat
+    </>
+  ),
   people: [
     {
       id: 1,
       name: 'Alex Egertson',
-      role: 'Director of Sustainability',
+      role: 'Nachhaltigkeitsdirektor',
       image: {
         src: '/assets/images/pdp-v2311/user-stories/user-stories-llc.jpg',
         alt: 'Alex Egertson',
       },
       bio: (
         <>
-          Alex work in Lutheran Retreats, Camps & Conferences, aka{' '}
+          Alex arbeitet bei Lutheran Retreats, Camps & Conferences, auch bekannt
+          als{' '}
           <a
             className="text-emerald-600"
             href="https://lrcchome.com/"
@@ -543,25 +542,25 @@ const userStoryProps: IPdpUserStoryTeamSectionsProps = {
           >
             LRCC
           </a>{' '}
-          is a camp school that kids are learning and living a green life.
+          , einer Campschule, in der Kinder ein grünes Leben lernen und leben.
           <br />
-          With GEME more children can learn composting by doing it easily in
-          their daily lives.
+          Mit GEME können mehr Kinder durch einfaches Kompostieren in ihrem
+          täglichen Leben lernen.
         </>
       ),
-      quote: 'Happy to help. Seems like a great product so far.',
+      quote: 'Ich helfe gerne. Scheint bisher ein großartiges Produkt zu sein.',
     },
     {
       id: 2,
       name: 'Rainforest Inn',
-      role: 'Bill, Boss',
+      role: 'Bill, Chef',
       image: {
-        src: '/assets/images/pdp-v2311/user-stories/user-stories-rainforest.jpg', // 'https://images.squarespace-cdn.com/content/v1/55390e7ee4b0a048151b9185/1549219762523-XL1GYVWNFYNJ44ZJXXMD/RFI-from-treehouse-suite-headerjpg.jpg',
+        src: '/assets/images/pdp-v2311/user-stories/user-stories-rainforest.jpg',
         alt: 'Rainforest Inn',
       },
       bio: (
         <>
-          Bill is the owner of{' '}
+          Bill ist der Besitzer des{' '}
           <a
             className="text-emerald-600"
             href="https://www.rainforestinn.com/"
@@ -569,71 +568,71 @@ const userStoryProps: IPdpUserStoryTeamSectionsProps = {
           >
             Rainforest Inn
           </a>{' '}
-          located in Puerto Rico. He want GEME badly and even paid multiple
-          times and extra shipping cost, just want to use GEME composter. Let's
-          check his{' '}
+          in Puerto Rico. Er wollte GEME unbedingt haben und hat sogar mehrmals
+          und zusätzliche Versandkosten bezahlt, nur um den GEME-Komposter zu
+          benutzen. Lassen Sie uns seinen{' '}
           <a
             className="text-emerald-600"
             href="https://www.tiktok.com/@rainforestinn/video/7309861665711901998"
             target="_blank"
           >
-            vlog
+            Vlog
           </a>{' '}
-          to see how's going on.
+          ansehen, um zu sehen, wie es läuft.
         </>
       ),
       quote:
-        'Looking for a clean easy composter that can be in the kitchen as our big compost bins are too far. It works very efficient.  Quiet and clean.',
+        'Ich suche nach einem sauberen, einfachen Komposter, der in der Küche stehen kann, da unsere großen Kompostbehälter zu weit entfernt sind. Es funktioniert sehr effizient. Ruhig und sauber.',
     },
     {
       id: 3,
       name: 'LAE. Angeles Delgado',
-      role: 'Finance CEO',
+      role: 'Finanz-CEO',
       image: {
         src: '/assets/images/pdp-v2311/user-stories/user-stories-angelita.jpeg',
         alt: 'Leonard Krasner',
       },
       bio: (
         <>
-          Mexican customer Angelita (contacted April) bought a unit despite our
-          initial US-Mexico shipping hurdle. Her trucking company facilitated
-          Texas pick-up. Loving the product, she purchased 3 more for her
-          daughters' Christmas! Angelita even became a hero by helping us
-          resolve a fulfillment issue for another Mexico Kickstarter campaign.
+          Die mexikanische Kundin Angelita (Kontakt im April) kaufte eine
+          Einheit trotz unserer anfänglichen Schwierigkeiten beim Versand von
+          den USA nach Mexiko. Ihr Transportunternehmen erleichterte die
+          Abholung in Texas. Sie liebt das Produkt und kaufte drei weitere für
+          das Weihnachtsfest ihrer Töchter! Angelita wurde sogar zur Heldin,
+          indem sie uns bei der Lösung eines Erfüllungsproblems für eine weitere
+          mexikanische Kickstarter-Kampagne half.
         </>
       ),
       quote:
-        'I went to internet and looked more and found out yours and the adertising says that it is bio composter and saw videos and at last i found yours i loved it. I want to buy my composters !  I am ready for 2 more now. Maybe the three.',
+        'Ich bin ins Internet gegangen, habe mehr gesucht und herausgefunden, dass eure Werbung besagt, dass es sich um einen Biokomposter handelt, und ich habe Videos gesehen und schließlich euren gefunden. Ich liebe ihn. Ich möchte meine Komposter kaufen! Ich bin jetzt bereit für 2 weitere. Vielleicht drei.',
       mobileQuote:
-        'I want to buy my composters !  I am ready for 2 more now. Maybe the three.',
+        'Ich möchte meine Komposter kaufen! Ich bin jetzt bereit für 2 weitere. Vielleicht drei.',
     },
     {
       id: 4,
       name: 'Vasil Borukov',
-      role: 'Senior IT Support Engineer',
+      role: 'Senior IT-Support-Ingenieur',
       image: {
         src: '/assets/images/pdp-v2311/user-stories/user-stories-vasil.png',
         alt: 'Vasil Software engineer',
       },
       bio: (
         <>
-          Bulgarian zero-waste advocate Vasil loves GEME for tackling food waste
-          and reducing carbon footprint. Following GEME since its July 2022
-          crowdfunding campaign, he secured a €499 unit via installments and
-          actively promoted GEME's product and vision to his network. A true
-          sustainability champion!
+          Der bulgarische Zero-Waste-Befürworter Vasil liebt GEME, weil es
+          Lebensmittelverschwendung bekämpft und den CO2-Fußabdruck reduziert.
+          Seit der Crowdfunding-Kampagne von GEME im Juli 2022 sicherte er sich
+          eine Einheit für 499 € über Ratenzahlungen und förderte aktiv GEMEs
+          Produkt und Vision in seinem Netzwerk. Ein wahrer
+          Nachhaltigkeits-Champion!
         </>
       ),
       quote:
-        'I always wanted to get involved more & more in everything around\n' +
-        '          me for one better sustainable life and this is why I really wanted to\n' +
-        '          get so much GEME. It combines everything you need for an easier\n' +
-        '          worry-stress free life. Totally recommend it to all my surroundings!',
+        'Ich wollte schon immer mehr und mehr an allem um mich herum teilnehmen, um ein besseres nachhaltiges Leben zu führen, und deshalb wollte ich so viel GEME haben. Es vereint alles, was man für ein einfacheres, stressfreies Leben braucht. Ich empfehle es all meinen Freunden!',
       mobileQuote:
-        'It combines everything you need for an easier worry-stress free life.',
+        'Es vereint alles, was man für ein einfacheres, stressfreies Leben braucht.',
     },
   ],
-  locale: 'en',
+  locale: 'de',
 }
 
 export function PdpIntroDe(props: IProductProps) {

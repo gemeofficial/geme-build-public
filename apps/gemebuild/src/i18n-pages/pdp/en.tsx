@@ -40,7 +40,7 @@ const tabs: IPdpTabsText = {
 // ----------------  产品页 Introduction模块内容配置 En start  ----------------------
 
 const introProps: IPdpIntroProps = {
-  // Introduction 第1部分
+  // Introduction 第1部分 En
   pdpIntroSection1Props: {
     title: "World's First Bio Waste Composter",
     description:
@@ -58,7 +58,7 @@ const introProps: IPdpIntroProps = {
     ],
   },
 
-  // Introduction 第2部分
+  // Introduction 第2部分 En
   contentSection71Props: {
     title: 'From Waste To Wonder',
     description:
@@ -79,7 +79,7 @@ const introProps: IPdpIntroProps = {
     isDisplayTextOnLeft: true,
   },
 
-  // Introduction 第3部分
+  // Introduction 第3部分 En
   contentSection72Props: {
     title: 'Silent Operation',
     description:
@@ -92,7 +92,19 @@ const introProps: IPdpIntroProps = {
     bottomContent: <PdpIntroSection4 />,
   },
 
-  // Introduction 第4部分
+  // Introduction 第4部分 En
+  pdpIntroSection5Props: {
+    title: 'Almost All Of Waste Can Go into GEME',
+    leftNotes: (
+      <>
+        <strong>400+</strong>
+        <br />
+        kinds of waste
+      </>
+    ),
+  },
+
+  // Introduction 第5部分 En
   contentSection21Props: {
     title: 'Keep Throwing Garbage, GEME Take Care of the Rest',
     description: (
@@ -110,7 +122,7 @@ const introProps: IPdpIntroProps = {
     isDisplayTextOnLeft: true,
   },
 
-  // Introduction 第5部分
+  // Introduction 第6部分 En
   contentSection22Props: {
     title: 'Innovative Microbes Based Garbage Disposal, Work Quickly & Safely',
     description: (
@@ -125,19 +137,7 @@ const introProps: IPdpIntroProps = {
     imageAlt: 'food waste picture',
   },
 
-  // Introduction 第6部分
-  pdpIntroSection5Props: {
-    title: 'Almost All Of Waste Can Go into GEME',
-    leftNotes: (
-      <>
-        <strong>400+</strong>
-        <br />
-        kinds of waste
-      </>
-    ),
-  },
-
-  // Introduction 第7部分
+  // Introduction 第7部分 En
   pdpIntroSection6Props: {
     title: 'Composting Made Easy',
     description: 'Loved by 100k+ gardeners',
@@ -185,7 +185,7 @@ const introProps: IPdpIntroProps = {
     ],
   },
 
-  // Introduction 第8部分
+  // Introduction 第8部分 En
   pdpIntroSection7Props: {
     title: 'Big, More & Long Term',
     description: 'Work 7x24 But Energy Saving',
@@ -196,7 +196,7 @@ const introProps: IPdpIntroProps = {
     ],
   },
 
-  // Introduction 第9部分
+  // Introduction 第9部分 En
   contentSection23Props: {
     title: 'Imaging A Life, No Need to Throw Food Waste Any More',
     description: (
@@ -214,7 +214,7 @@ const introProps: IPdpIntroProps = {
     isDisplayTextOnLeft: true,
   },
 
-  // Introduction 第10部分
+  // Introduction 第10部分 En
   contentSection24Props: {
     title: 'No Need to Change Filter',
     description: (
@@ -238,7 +238,7 @@ const introProps: IPdpIntroProps = {
     imageAlt: 'GEME requires no filter replacing',
   },
 
-  // Introduction 第11部分
+  // Introduction 第11部分 En
   contentSection8Props: {
     title: 'No Smell Composting At Home',
     description:
