@@ -5,140 +5,144 @@ import Features from './components/Features'
 import FeaturesWithIcons, { FeatureIcon } from './components/FeaturesWithIcons'
 import HeroSection, { IHeroSectionProps } from './components/HeroSection'
 
+// kobold页第一部分配置项 De
 const heroSectionProps: IHeroSectionProps = {
   title: 'GEME KOBOLD',
-  description:
-    'The Magic Power To Turn Bio-Waste Into A Highly Active Organic compost.',
+  description: `Die magische Kraft, Bioabfälle in hochaktiven organischen Kompost zu verwandeln.`,
   highlights: [
     {
       id: 1,
-      title: 'Pest Defense',
-      description: 'Keep plants free from disease and pests.',
+      title: 'Schädlingsabwehr',
+      description: `Halten Sie Pflanzen frei von Krankheiten und Schädlingen.`,
       iconPath: '/assets/images/geme-kobold/highlight-icon-1.svg',
     },
     {
       id: 2,
-      title: 'Bloom & Fruit Boost',
-      description: 'Make flowers smell better, fruit sweeter and harvest more.',
+      title: 'Blüten- und Fruchtschub',
+      description: `Lassen Sie Blumen besser riechen, Früchte süßer schmecken und mehr ernten.`,
       iconPath: '/assets/images/geme-kobold/highlight-icon-2.svg',
     },
     {
       id: 3,
-      title: 'Land & River Revive',
-      description:
-        'Make the land more fertile, the rivers clearer and the environment better.',
+      title: 'Land- und Flussrevitalisierung',
+      description: `Machen Sie das Land fruchtbarer, die Flüsse klarer und die Umwelt besser.`,
       iconPath: '/assets/images/geme-kobold/highlight-icon-3.svg',
     },
   ],
 }
 
+// kobold页第二部分配置项 De
 const featuresProps = {
-  section1Title: 'Natural Microbiota',
+  section1Title: 'Natürliche Mikrobiota',
   section1Description: (
     <>
-      GEME-Kobold is the world's sole known high-temperature resistant composite
-      microbiota, an ancient community with decades of evolutionary success. It
-      is not an artificially developed microbe but a practitioner of natural
-      circulation law.
+      GEME-Kobold ist die weltweit einzige bekannte hitzebeständige
+      zusammengesetzte Mikrobiota, eine alte Gemeinschaft mit jahrzehntelangem
+      evolutionärem Erfolg. Es ist kein künstlich entwickeltes Mikroorganismus,
+      sondern ein Praktiker des natürlichen Kreislaufgesetzes.
     </>
   ),
-  section2Title: 'Unique In The World',
+  section2Title: 'Einzigartig in der Welt',
   section2Description: (
     <>
-      In the high-efficiency biological waste processor's circulation system,
-      bio-waste undergoes rapid heating to 75℃, fermenting and drying with
-      GEME-Kobold's action.
+      Im Hochleistungs-Bioabfallverarbeitungssystem wird Bioabfall durch die
+      Wirkung von GEME-Kobold schnell auf 75℃ erhitzt, fermentiert und
+      getrocknet.
       <br />
       <br />
-      This aerobic high-temperature exposure kills potential pathogens and
-      neutralizes the harmfulness of fermenting products.
+      Diese aerobe Hochtemperaturbelastung tötet potenzielle Krankheitserreger
+      ab und neutralisiert die Schädlichkeit von Fermentationsprodukten.
     </>
   ),
-  section3Title: 'Complex Microbiota',
+  section3Title: 'Komplexe Mikrobiota',
   section3Description: (
     <>
-      GEME-Kobold significantly contributes to organic matter recycling. It
-      comprises 46 complex, heat-tolerant aerobic bacillus bacteria.
+      GEME-Kobold trägt erheblich zur Wiederverwertung organischer Stoffe bei.
+      Es umfasst 46 komplexe, hitzebeständige aerobe Bacillus-Bakterien.
       <br />
       <br />
-      Within 6-8 hours, it can decompose various bio-wastes, producing
-      high-activity organic fertilizer. It also activates soil and water
-      microorganisms, rejuvenating them.
+      Innerhalb von 6-8 Stunden kann es verschiedene Bioabfälle zersetzen und
+      hochaktive organische Düngemittel produzieren. Es aktiviert auch
+      Mikroorganismen im Boden und Wasser und verjüngt sie.
     </>
   ),
 }
 
+// kobold页第三部分配置项 De
 const featuresWithIconsProps: IGridWithOffsetIconsLiteProps = {
-  title: 'Nutritional Superiority',
-  description: 'Rich in the beneficial microbiota of GEME-Kobold',
+  title: 'Ernährungsüberlegenheit',
+  description: 'Reich an den nützlichen Mikrobiota von GEME-Kobold',
   features: [
     {
-      icon: FeatureIcon(1, 'Pollution-Free'),
-      name: 'Pollution-Free',
+      icon: FeatureIcon(1, 'Umweltfreundlich'),
+      name: 'Umweltfreundlich',
       description:
-        'Agricultural methods derived from the natural circulation system.',
+        'Landwirtschaftliche Methoden, die aus dem natürlichen Kreislaufsystem abgeleitet sind.',
     },
     {
-      icon: FeatureIcon(2, 'Highly Secure'),
-      name: 'Highly Secure',
+      icon: FeatureIcon(2, 'Hochsicher'),
+      name: 'Hochsicher',
       description:
-        'Using the original microorganisms in the soil, the ecosystem will not be destroyed. No need for pesticides.',
+        'Durch die Verwendung der ursprünglichen Mikroorganismen im Boden wird das Ökosystem nicht zerstört. Keine Notwendigkeit für Pestizide.',
     },
     {
-      icon: FeatureIcon(3, 'Strong Disease Resistance'),
-      name: 'Strong Disease Resistance',
+      icon: FeatureIcon(3, 'Starke Krankheitsresistenz'),
+      name: 'Starke Krankheitsresistenz',
       description:
-        'Soils rich in beneficial microorganisms make it difficult for pathogens to enter.',
+        'Böden, die reich an nützlichen Mikroorganismen sind, machen es Krankheitserregern schwer, einzudringen.',
     },
     {
-      icon: FeatureIcon(4, 'Crop Quality Improvement'),
-      name: 'Crop Quality Improvement',
+      icon: FeatureIcon(4, 'Verbesserung der Erntequalität'),
+      name: 'Verbesserung der Erntequalität',
       description:
-        'Practice has proven that the yield is 20%-30% higher than that of chemical crops.',
+        'Die Praxis hat gezeigt, dass der Ertrag um 20%-30% höher ist als bei chemischen Kulturen.',
     },
     {
-      icon: FeatureIcon(5, 'Heat And Cold Resilient'),
-      name: 'Heat And Cold Resilient',
+      icon: FeatureIcon(5, 'Hitze- und Kältebeständig'),
+      name: 'Hitze- und Kältebeständig',
       description:
-        'Microbes produce organic ingredients that activate the roots, and crops are healthy even in cold or hot weather.',
+        'Mikroben produzieren organische Inhaltsstoffe, die die Wurzeln aktivieren, und die Pflanzen sind auch bei kaltem oder heißem Wetter gesund.',
     },
     {
-      icon: FeatureIcon(6, 'Higher Yields'),
-      name: 'Higher Yields',
+      icon: FeatureIcon(6, 'Höhere Erträge'),
+      name: 'Höhere Erträge',
       description:
-        'It tastes and has better nutritional value than chemical crops.',
+        'Es schmeckt besser und hat einen höheren Nährwert als chemische Pflanzen.',
     },
     {
-      icon: FeatureIcon(7, 'Crop Disorder Resistance'),
-      name: 'Crop Disorder Resistance',
+      icon: FeatureIcon(7, 'Resistenz gegen Pflanzenerkrankungen'),
+      name: 'Resistenz gegen Pflanzenerkrankungen',
       description:
-        'Even with continuous planting, as the soil becomes healthy, it is easy to overcome disease and yield decline. Nematode bacteria (root knots) disappear.',
+        'Selbst bei kontinuierlicher Bepflanzung wird der Boden gesund, sodass Krankheiten und Ertragsrückgang leicht überwunden werden können. Nematodenbakterien (Wurzelknoten) verschwinden.',
     },
     {
       icon: FeatureIcon(8, 'Hygiene'),
       name: 'Hygiene',
       description:
-        'GEME-Kobold is a high temperature of 80°C activated bacteria, the high-temperature environment prevents pathogens from entering, thus creating a highly safe microbial soil.',
+        'GEME-Kobold ist ein bei 80°C aktiviertes Bakterium. Die hohen Temperaturen verhindern das Eindringen von Krankheitserregern und schaffen so einen sehr sicheren mikrobiellen Boden.',
     },
     {
-      icon: FeatureIcon(9, 'Soil Fungi Balance'),
-      name: 'Soil Fungi Balance',
+      icon: FeatureIcon(9, 'Bodenpilz-Balance'),
+      name: 'Bodenpilz-Balance',
       description:
-        'GEME-Kobold contains more than 46 soil bacteria that have been identified, which put the soil in good condition faster than a single soil bacterium.',
+        'GEME-Kobold enthält mehr als 46 identifizierte Bodenbakterien, die den Boden schneller in einen guten Zustand versetzen als ein einzelnes Bodenbakterium.',
     },
   ],
 }
 
+// kobold页第四部分配置项 De
 const enjoyYourLifeProps: IEnjoyYourLifeProps = {
-  title: 'Try Kobold Out',
+  title: 'Probieren Sie Kobold aus',
   description: (
     <>
-      Stop paying extra cost for fertilizer, stop worrying about turning over
-      the pile, stop wasting your food waste. Start harvesting fruits,
-      vegetables and flowers on the balcony and backyard!
+      Hören Sie auf, zusätzliche Kosten für Dünger zu zahlen, sich um das Wenden
+      des Haufens zu sorgen und Ihre Lebensmittelabfälle zu verschwenden.
+      Beginnen Sie, Früchte, Gemüse und Blumen auf dem Balkon und im Hinterhof
+      zu ernten!
     </>
   ),
 }
+
 
 export function GemeKoboldPageDe() {
   return (
