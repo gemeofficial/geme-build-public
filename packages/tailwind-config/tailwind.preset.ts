@@ -38,7 +38,24 @@ const tailwindPreset: Config = {
       },
     },
   },
-  plugins: [v2311FontsPlugin, typography, aspectRatio, forms],
+  plugins: [
+    v2311FontsPlugin,
+    typography,
+    aspectRatio,
+    forms,
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.no-scrollbar::-webkit-scrollbar': {
+          display: 'none',
+        },
+        '.no-scrollbar': {
+          '-ms-overflow-style': 'none',
+          'scrollbar-width': 'none',
+        },
+      }
+      addUtilities(newUtilities)
+    },
+  ],
 }
 
 export default tailwindPreset

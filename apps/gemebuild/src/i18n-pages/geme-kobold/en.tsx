@@ -1,7 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
+import { IGridWithOffsetIconsLiteProps } from '../../components/feature-sections'
+import EnjoyYourLife, { IEnjoyYourLifeProps } from './components/EnjoyYourLife'
 import Features from './components/Features'
+import FeaturesWithIcons, { FeatureIcon } from './components/FeaturesWithIcons'
 import HeroSection, { IHeroSectionProps } from './components/HeroSection'
 
+// kobold页第一部分配置项 En
 const heroSectionProps: IHeroSectionProps = {
   title: 'GEME KOBOLD',
   description:
@@ -29,6 +33,7 @@ const heroSectionProps: IHeroSectionProps = {
   ],
 }
 
+// kobold页第二部分配置项 En
 const featuresProps = {
   section1Title: 'Natural Microbiota',
   section1Description: (
@@ -65,11 +70,87 @@ const featuresProps = {
   ),
 }
 
+// kobold页第三部分配置项 En
+const featuresWithIconsProps: IGridWithOffsetIconsLiteProps = {
+  title: 'Nutritional Superiority',
+  description: 'Rich in the beneficial microbiota of GEME-Kobold',
+  features: [
+    {
+      icon: FeatureIcon(1, 'Pollution-Free'),
+      name: 'Pollution-Free',
+      description:
+        'Agricultural methods derived from the natural circulation system.',
+    },
+    {
+      icon: FeatureIcon(2, 'Highly Secure'),
+      name: 'Highly Secure',
+      description:
+        'Using the original microorganisms in the soil, the ecosystem will not be destroyed. No need for pesticides.',
+    },
+    {
+      icon: FeatureIcon(3, 'Strong Disease Resistance'),
+      name: 'Strong Disease Resistance',
+      description:
+        'Soils rich in beneficial microorganisms make it difficult for pathogens to enter.',
+    },
+    {
+      icon: FeatureIcon(4, 'Crop Quality Improvement'),
+      name: 'Crop Quality Improvement',
+      description:
+        'Practice has proven that the yield is 20%-30% higher than that of chemical crops.',
+    },
+    {
+      icon: FeatureIcon(5, 'Heat And Cold Resilient'),
+      name: 'Heat And Cold Resilient',
+      description:
+        'Microbes produce organic ingredients that activate the roots, and crops are healthy even in cold or hot weather.',
+    },
+    {
+      icon: FeatureIcon(6, 'Higher Yields'),
+      name: 'Higher Yields',
+      description:
+        'It tastes and has better nutritional value than chemical crops.',
+    },
+    {
+      icon: FeatureIcon(7, 'Crop Disorder Resistance'),
+      name: 'Crop Disorder Resistance',
+      description:
+        'Even with continuous planting, as the soil becomes healthy, it is easy to overcome disease and yield decline. Nematode bacteria (root knots) disappear.',
+    },
+    {
+      icon: FeatureIcon(8, 'Hygiene'),
+      name: 'Hygiene',
+      description:
+        'GEME-Kobold is a high temperature of 80°C activated bacteria, the high-temperature environment prevents pathogens from entering, thus creating a highly safe microbial soil.',
+    },
+    {
+      icon: FeatureIcon(9, 'Soil Fungi Balance'),
+      name: 'Soil Fungi Balance',
+      description:
+        'GEME-Kobold contains more than 46 soil bacteria that have been identified, which put the soil in good condition faster than a single soil bacterium.',
+    },
+  ],
+}
+
+// kobold页第四部分配置项 En
+const enjoyYourLifeProps: IEnjoyYourLifeProps = {
+  title: 'Try Kobold Out',
+  description: (
+    <>
+      Stop paying extra cost for fertilizer, stop worrying about turning over
+      the pile, stop wasting your food waste. Start harvesting fruits,
+      vegetables and flowers on the balcony and backyard!
+    </>
+  ),
+}
+
 export function GemeKoboldPageEn() {
   return (
     <>
       <HeroSection {...heroSectionProps} />
       <Features {...featuresProps} />
+      <FeaturesWithIcons {...featuresWithIconsProps} />
+      <EnjoyYourLife {...enjoyYourLifeProps} />
     </>
   )
 }
