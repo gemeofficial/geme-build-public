@@ -30,16 +30,7 @@ import { ReviewsSectionModule } from '../../components/reviews-section-module'
 
 // 首页video部分的内容数据配置 Fr
 const heroSection1Props: IHeroSection1Props = {
-  title: (
-    <>
-      <span className="hidden xl:inline">
-        Le premier composteur de déchets biologiques au monde
-      </span>
-      <span className="xl:hidden">
-        Le premier composteur de déchets biologiques au monde
-      </span>
-    </>
-  ),
+  title: `Le premier composteur de déchets biologiques au monde`,
   description: (
     <>
       <span className=" hidden xl:inline ">
@@ -47,13 +38,14 @@ const heroSection1Props: IHeroSection1Props = {
         <br />
         Transformez vos déchets alimentaires quotidiens en compost organique
         <br />
-        Moins de décharges, plus de terre fertile.
+        Moins de décharges, pour votre plants et végétations
       </span>
       <span className=" xl:hidden ">
-        Découvrez GEME, le composteur électrique moderne pour la maison <br />
-        Transformez vos déchets alimentaires quotidiens en compost organique
+        Découvrez GEME, le composteur électrique <br />
+        moderne pour la maison Transformez vos déchets <br />
+        alimentaires quotidiens en compost organique
         <br />
-        Moins de décharges, plus de terre fertile.
+        Moins de décharges, pour votre plants et végétations
       </span>
     </>
   ),
@@ -109,7 +101,7 @@ const contentSection3Props: IContentSection3Props = {
         <>
           Compostage continu
           <br />
-          Les déchets sont réduits dans une boîte
+          Les déchets sont réduits dans le composteur GEME
         </>
       ),
       imageSrc: '/assets/images/home-v2311/geme-is-running.jpg',
@@ -131,9 +123,9 @@ const contentSection3Props: IContentSection3Props = {
       id: 4,
       description: (
         <>
-          Sol de jardin gratuit et de bonne qualité
+          Enrichissez votre jardin d'un terreau fertile et nourrissant
           <br />
-          Nourrissez et faites pousser vos plantes
+          Choyez vos plantes et contemplez leur épanouissement
         </>
       ),
       imageSrc: '/assets/images/home-v2311/planting.jpg',
@@ -146,13 +138,13 @@ const contentSection3Props: IContentSection3Props = {
 const contentSection4Props: IContentSection4Props = {
   title: (
     <>
-      Arrêtez les décharges
+      Fini l'enfouissement,
       <br />
-      Commencez à composter
+      Place au compostage !
     </>
   ),
   description:
-    'GEME permet aux familles de transformer leurs restes de nourriture quotidiens en jardins prospères, en sols nourrissants et en une empreinte carbone réduite, tout en gardant les déchets hors des décharges et des incinérateurs.',
+    'GEME donne aux familles le pouvoir de transformer leurs déchets alimentaires quotidiens en jardins florissants et en sols fertiles. Réduisez votre empreinte carbone tout en détournant les déchets des décharges et des incinérateurs.',
   withMp4VideoOrYoutubeVideo: {
     type: 'youtube',
     videoPosterImage: {
@@ -178,13 +170,17 @@ const secondLifeProps: ISecondLifeProps = {
   articles: [
     {
       id: 1,
-      title: 'Créer un bon sol',
-      description:
-        'Le compost peut nourrir le sol du jardin et permettre aux plantes de grandir.',
+      title: 'Un sol vivant',
+      description: (
+        <>
+          Le compost, alchimie verte, enrichit la terre du jardin
+          <br /> Et donne aux plantes l'élan d'une croissance sublime
+        </>
+      ),
       image: {
         width: 1200,
         height: 800,
-        alt: 'Créer un bon sol',
+        alt: 'Un sol vivant',
         src: 'https://www.datocms-assets.com/79468/1666986512-moins_eau.jpg?w=10',
         srcSetData: {
           '100w':
@@ -202,13 +198,17 @@ const secondLifeProps: ISecondLifeProps = {
     },
     {
       id: 2,
-      title: "Prévenir la perte d'eau",
-      description:
-        "Le compost peut absorber l'eau et permettre à vos graines de mieux pousser.",
+      title: 'Préservons chaque goutte',
+      description: (
+        <>
+          Le compost, éponge fertile, étanche la soif de la terre <br /> Et
+          berce vos semences vers une éclosion vigoureuse
+        </>
+      ),
       image: {
         width: 1200,
         height: 800,
-        alt: "Prévenir la perte d'eau",
+        alt: 'Préservons chaque goutte',
         src: 'https://www.datocms-assets.com/79468/1666986527-sols_riches.jpg?w=10',
         srcSetData: {
           '100w':
@@ -226,13 +226,17 @@ const secondLifeProps: ISecondLifeProps = {
     },
     {
       id: 3,
-      title: 'Lutter contre le changement climatique',
-      description:
-        'Le compost peut réduire les décharges et rendre notre planète plus verte.',
+      title: 'Luttons contre le changement climatique',
+      description: (
+        <>
+          Le compost, gardien de notre terre, Éloigne les déchets de leur
+          funeste destin <br /> Et pare notre planète d'un manteau verdoyant.
+        </>
+      ),
       image: {
         width: 1200,
         height: 800,
-        alt: 'Lutter contre le changement climatique',
+        alt: 'Luttons contre le changement climatique',
         src: 'https://www.datocms-assets.com/79468/1666986537-changements_climatiques.jpg?w=10',
         srcSetData: {
           '100w':
@@ -297,23 +301,17 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
 
 // 首页第七部分的内容数据配置 Fr
 const contentSection1Props2: IContentSection1Props = {
-  title: (
-    <>
-      Véritable compost <br />
-      Pas de déchets déshydratés
-    </>
-  ),
+  title: <>L'essence du véritable compost</>,
   description: (
     <>
-      Gardez à l'esprit que la plupart des autres &quot;composteurs&quot; sont
-      en fait des déshydrateurs;
+      Loin des simulacres desséchés Gardez à l'esprit que la plupart des
+      prétendus « composteurs » Ne sont que de vulgaires déshydrateurs,
+      Réduisant les aliments en une pâle imitation de l'humus.
       <br />
-      ils cuisent et sèchent simplement les aliments en morceaux qui ressemblent
-      à du sol.
       <br />
-      En revanche, GEME utilise la biotechnologie microbienne pour améliorer la
-      fermentation aérobie naturelle, ce qui en fait un véritable processus de
-      compostage.
+      GEME, quant à lui, orchestre une symphonie microbienne,Où la
+      biotechnologie sublime la fermentation aérobie naturelle,Donnant naissance
+      à l'authentique alchimie du compostage."
     </>
   ),
   imageSrc: '/assets/images/home-v2311/the-man-get-compost-from-geme.jpg',
@@ -322,27 +320,22 @@ const contentSection1Props2: IContentSection1Props = {
 
 // 首页第八部分的内容数据配置 Fr
 const contentSection1Props3: IContentSection1Props = {
-  title: (
-    <>
-      Propulsé par la biotechnologie
-      <br />
-      et la fabrication moderne
-    </>
-  ),
+  title: <>L'alliance de la BioTech et de l'ingénierie moderne</>,
   description: (
     <>
-      Notre équipe scientifique a testé cette technologie de manière exhaustive
-      au cours des 50 dernières années dans le traitement des biodéchets, des
-      sols et de l'eau polluée. Ils ont affiné la technologie de base,
-      conduisant à la création de GEME Kobold.
+      Un demi-siècle d'expertise scientifique Nos chercheurs, tels des
+      alchimistes modernes, ont patiemment affiné leur art Au cœur des
+      biodéchets, des sols épuisés et des eaux souillées Donnant naissance à la
+      merveille qu'est GEME Kobold
       <br />
       <br />
-      Notre équipe d'ingénieurs possède une vaste expérience dans la conception
-      et la fabrication de compacteurs de déchets. Ils ont récemment développé
-      le composteur GEME.
+      L'ingéniosité au service de l'environnement Nos ingénieurs, maîtres dans
+      l'art de dompter les déchets. Ont forgé le GEME Composteur, fruit de leur
+      savoir-faire
       <br />
       <br />
-      GEME Kobold et le composteur GEME déclenchent une révolution.
+      GEME Kobold et GEME Composteur : Hérauts d'une révolution verte, ils
+      métamorphosent nos déchets en trésors
     </>
   ),
   imageSrc: '/assets/images/home-v2311/observe-the-plants.jpg',
@@ -351,16 +344,21 @@ const contentSection1Props3: IContentSection1Props = {
 
 // 首页第九部分（三动图）的内容数据配置 Fr
 const contentSection5Props: IContentSection5Props = {
-  title: 'Transformez les restes de nourriture en compost organique',
+  title: 'Du déchet à la ressource : la transformation par GEME Kobold',
   description: (
     <>
-      GEME Kobold est un microorganisme qui se reproduit lorsqu'il est bien
-      nourri.
+      GEME Kobold : un processus biologique innovant Nos micro-organismes
+      spécialisés prolifèrent en se nourrissant de vos résidus alimentaires.
+      Efficaces sur tous types de déchets, qu'ils soient salés ou acides.
       <br />
-      Il décompose vos déchets alimentaires, qu'ils soient salés ou acides.
       <br />
-      Le résultat ? Du compost organique fait maison prêt à l'emploi pour les
-      plantes.
+      Un cycle vertueux à domicile Transformez vos restes de cuisine en un
+      compost de qualité. Une solution écologique, pratique et économique.
+      <br />
+      <br />
+      Résultat : un amendement organique prêt à l'emploi Nourrissez vos plantes
+      avec un compost riche en nutriments. Contribuez à la santé de votre jardin
+      et à la préservation de l'environnement.
     </>
   ),
   images: [

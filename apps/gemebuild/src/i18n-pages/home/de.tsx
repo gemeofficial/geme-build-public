@@ -109,7 +109,7 @@ const contentSection3Props: IContentSection3Props = {
         <>
           Kontinuierliche Kompostierung
           <br />
-          Abfälle werden in einer Box reduziert
+          Abfälle werden im GEME-Komposter reduziert
         </>
       ),
       imageSrc: '/assets/images/home-v2311/geme-is-running.jpg',
@@ -131,9 +131,9 @@ const contentSection3Props: IContentSection3Props = {
       id: 4,
       description: (
         <>
-          Kostenlose und gute Gartenerde
+          Bereichern Sie Ihren Garten mit nährstoffreicher Erde
           <br />
-          Füttern und wachsen Sie Ihre Pflanzen
+          Pflegen Sie Ihre Pflanzen und sehen Sie zu, wie sie gedeihen
         </>
       ),
       imageSrc: '/assets/images/home-v2311/planting.jpg',
@@ -415,8 +415,8 @@ const newsltterProps: INewsletterProps = {
     title: 'Mach mit',
     description: (
       <>
-        Ein neuer Ansatz zur Lösung des weltweiten Abfallproblems beginnt bei jedem von uns,
-        mühelos im Alltag
+        Ein neuer Ansatz zur Lösung des weltweiten Abfallproblems beginnt bei
+        jedem von uns, mühelos im Alltag
       </>
     ),
     emailInputName: 'email-address',
@@ -426,10 +426,10 @@ const newsltterProps: INewsletterProps = {
   },
   successNoticeProps: {
     title: 'Vielen Dank für Ihre Anmeldung!',
-    description: 'Wir werden Sie mit den neuesten Nachrichten auf dem Laufenden halten.',
+    description:
+      'Wir werden Sie mit den neuesten Nachrichten auf dem Laufenden halten.',
   },
 }
-
 
 function HomePageDe({
   PrefetchLink,
