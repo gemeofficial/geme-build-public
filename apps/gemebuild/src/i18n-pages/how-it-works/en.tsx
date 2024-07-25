@@ -106,56 +106,6 @@ const gemeKoboldImageProps: IExaminingReportProps = {
   },
 }
 
-// 证书及测试报告
-const examiningReportProps: IExaminingReportProps = {
-  title: `Certificates and Test Report`,
-  description: `Both GEME Kobold and GEME Composter are well-certified and have surpassed all tests conducted by authoritative organizations.`,
-  imageInfo: {
-    imageUrl: '/assets/images/how-it-works/certificates-and-test-report.jpeg',
-    alt: 'Certificates and test report for GEME',
-  },
-  downloadHref: (
-    <>
-      Download Salt Level Breakdown Report Test{' '}
-      <a href="#" target="_blank">
-        HERE
-      </a>
-    </>
-  ),
-}
-
-// before vs after
-const useCompostContrastProps: IUseCompostContrastProps = {
-  title: 'Before and After Applying GEME Compost',
-  description:
-    'See how GEME compost can help make the earth greener by reducing landfill waste, improving soil health, and promoting plant growth.',
-  beforeImage: {
-    imageUrl: '/assets/images/how-it-works/used-geme-compost-before.png',
-    alt: 'Before compost utilization',
-  },
-  afterImage: {
-    imageUrl: '/assets/images/how-it-works/used-geme-compost-after.png',
-    alt: 'After compost utilization',
-  },
-}
-
-// YouTube 视频播放器
-const inlinePlayerProps: IInlinePalyerType = {
-  title: 'Seeing is Believing',
-  description: (
-    <>
-      <strong>Break down 2kg waste in 7 hours</strong>! This unedited 7-hour
-      video might seem boring, but it offers an in-depth look at the real-world
-      performance of the GEME Composter. Comparing the first 3 minutes to the
-      last 10 minutes, you will be amazed.
-    </>
-  ),
-
-  type: 'youtube',
-  videoSrcUrlOrVidioId: 'asNRoqkC_BA',
-  mixpanelFrom: 'Product page inline player',
-}
-
 // 滚动圈配置项
 const oxygenCycleProps: IOxygenCycleProps = {
   title: 'How Natural Composting Works',
@@ -322,6 +272,56 @@ const oxygenCycleProps: IOxygenCycleProps = {
       ),
     },
   ],
+}
+
+// 证书及测试报告
+const examiningReportProps: IExaminingReportProps = {
+  title: `Certificates and Test Report`,
+  description: `Both GEME Kobold and GEME Composter are well-certified and have surpassed all tests conducted by authoritative organizations.`,
+  imageInfo: {
+    imageUrl: '/assets/images/how-it-works/certificates-and-test-report.jpeg',
+    alt: 'Certificates and test report for GEME',
+  },
+  downloadHref: (
+    <>
+      Download Salt Level Breakdown Report Test{' '}
+      <a href="#" target="_blank">
+        HERE
+      </a>
+    </>
+  ),
+}
+
+// before vs after
+const useCompostContrastProps: IUseCompostContrastProps = {
+  title: 'Before and After Applying GEME Compost',
+  description:
+    'See how GEME compost can help make the earth greener by reducing landfill waste, improving soil health, and promoting plant growth.',
+  beforeImage: {
+    imageUrl: '/assets/images/how-it-works/used-geme-compost-before.png',
+    alt: 'Before compost utilization',
+  },
+  afterImage: {
+    imageUrl: '/assets/images/how-it-works/used-geme-compost-after.png',
+    alt: 'After compost utilization',
+  },
+}
+
+// YouTube 视频播放器
+const inlinePlayerProps: IInlinePalyerType = {
+  title: 'Seeing is Believing',
+  description: (
+    <>
+      <strong>Break down 2kg waste in 7 hours</strong>! This unedited 7-hour
+      video might seem boring, but it offers an in-depth look at the real-world
+      performance of the GEME Composter. Comparing the first 3 minutes to the
+      last 10 minutes, you will be amazed.
+    </>
+  ),
+
+  type: 'youtube',
+  videoSrcUrlOrVidioId: 'asNRoqkC_BA',
+  mixpanelFrom: 'Product page inline player',
 }
 
 function HowItWorksEn({ ReviewsComponent }: IPdpIntroProps) {
