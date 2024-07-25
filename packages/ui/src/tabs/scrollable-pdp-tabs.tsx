@@ -3,14 +3,10 @@
 import classNames from '../lib/classNames'
 import { type ReactNode } from 'react'
 import { Link, Element } from 'react-scroll'
+import { IPdpTabsProps } from './pdp-tabs'
 
-interface IScrollablePdpTabsProps {
+interface IScrollablePdpTabsProps extends IPdpTabsProps {
   anchorOffset?: number
-  tabs: {
-    id: number
-    tabLabel: ReactNode
-    tabPanel: JSX.Element
-  }[]
 }
 
 const scrollablePdpTabsProps: IScrollablePdpTabsProps = {
@@ -63,13 +59,14 @@ const tabLabelToIdMaps = new Map<string, string>([
 ])
 
 function ScrollablePdpTabs({ tabs, anchorOffset }: IScrollablePdpTabsProps) {
-  const tabsClickHandler = (tabLabel: string | ReactNode) => {
-    const id = tabLabelToIdMaps.get(tabLabel as string)
+  const tabsClickHandler = (tabOriginName: string | undefined) => {
+    const id = tabLabelToIdMaps.get(tabOriginName as string)
     if (!id) return
 
     const el = document.getElementById(id)
     if (el) el.style.height = '100%'
   }
+
   return (
     <>
       <div
@@ -86,11 +83,11 @@ function ScrollablePdpTabs({ tabs, anchorOffset }: IScrollablePdpTabsProps) {
                 duration={500}
                 to={String(tab.id)}
                 offset={anchorOffset}
-                onClick={() => tabsClickHandler(tab.tabLabel)}
+                onClick={() => tabsClickHandler(tab.tabOriginName)}
                 className={classNames(
                   'inline-block px-1 pt-0.5 pb-px md:px-4 xl:px-6 xl:py-2 font-normal cursor-pointer',
                   'hover:bg-white hover:text-[#047857] hover:rounded-t-lg hover:xl:rounded-lg',
-                  'whitespace-nowrap'
+                  'whitespace-nowrap',
                 )}
               >
                 {tab.tabLabel}

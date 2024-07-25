@@ -9,6 +9,7 @@ interface IPdpTabsProps {
     id: number
     tabLabel: ReactNode
     tabPanel: JSX.Element
+    tabOriginName?: string
   }[]
 }
 
