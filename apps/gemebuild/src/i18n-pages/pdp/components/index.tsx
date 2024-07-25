@@ -7,6 +7,7 @@ import { ScrollablePdpTabsWithAnchorOffset } from '../../../components/scrollabl
 import { ReactNode, useMemo } from 'react'
 
 import {
+  IPdpTabsProps,
   IPdpUserStoryTeamSectionsProps,
   LocaleType,
   ReviewsScoreHeader,
@@ -50,7 +51,7 @@ function PdpContent(props: IPdpContentProps) {
   } = props
 
   const datas = useMemo(
-    () => ({
+    (): IPdpTabsProps => ({
       tabs: [
         {
           id: 1,
@@ -70,6 +71,7 @@ function PdpContent(props: IPdpContentProps) {
               <Spec {...specProps} GemeModelViewer={GemeModelViewer} />
             </div>
           ),
+          tabOriginName: 'Spec',
         },
         {
           id: 4,
@@ -79,6 +81,7 @@ function PdpContent(props: IPdpContentProps) {
               <Warranty {...warrantyProps} Link={PrefetchLink} />
             </div>
           ),
+          tabOriginName: 'Warranty',
         },
         {
           id: 5,
@@ -105,7 +108,6 @@ function PdpContent(props: IPdpContentProps) {
         },
       ],
     }),
-    //
     [],
   )
 

@@ -16,7 +16,7 @@ import {
 } from '@heroicons/react/24/solid'
 import { IProductProps } from './en'
 
-const locale: LocaleType = 'en'
+const locale: LocaleType = 'de'
 
 // 产品页Tabs吸顶栏的文本 De
 const tabs: IPdpTabsText = {
