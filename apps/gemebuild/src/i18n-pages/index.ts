@@ -13,6 +13,7 @@ export * from './industrial-equipments-id'
 export * from './manuals-download'
 export * from './about'
 export * from './how-it-works'
+export * from './geme-kobold'
 
 // contexts
 export * from '../contexts/link-context'

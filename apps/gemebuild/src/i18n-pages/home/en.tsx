@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import {
   HeroSection1,
   ContentSection1,
@@ -29,14 +30,7 @@ import { ReviewsSectionModule } from '../../components/reviews-section-module'
 
 // 首页video部分的内容数据配置 En
 const heroSection1Props: IHeroSection1Props = {
-  title: (
-    <>
-      <span className="hidden xl:inline">
-        World&apos;s First Bio Waste Composter
-      </span>
-      <span className="xl:hidden">World&apos;s First Bio Waste Composter</span>
-    </>
-  ),
+  title: `World's First Bio Waste Composter`,
   description: (
     <>
       <span className=" hidden xl:inline ">
@@ -104,7 +98,7 @@ const contentSection3Props: IContentSection3Props = {
         <>
           Composting continuously
           <br />
-          Waste get reduced in a box
+          Waste is reduced in the GEME composter
         </>
       ),
       imageSrc: '/assets/images/home-v2311/geme-is-running.jpg',
@@ -126,9 +120,9 @@ const contentSection3Props: IContentSection3Props = {
       id: 4,
       description: (
         <>
-          Free and good gardening soil
+          Enrich your garden with nutrient-dense soil
           <br />
-          Feed and grow your plant
+          Nurture your plants and watch them flourish
         </>
       ),
       imageSrc: '/assets/images/home-v2311/planting.jpg',

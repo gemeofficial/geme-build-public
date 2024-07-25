@@ -49,7 +49,7 @@ function NewsletterCenteredCard({
 
         <form
           onSubmit={onSubmit}
-          className="w-full max-w-sm md:max-w-lg lg:max-w-xl flex items-center justify-center gap-x-2 md:gap-x-4 mt-4 md:mt-8 py-1 md:py-2 xl:px-4"
+          className="w-full max-w-sm md:max-w-lg lg:max-w-2xl flex items-center justify-center gap-x-2 md:gap-x-4 mt-4 md:mt-8 py-1 md:py-2 xl:px-4"
         >
           <label className="sr-only" htmlFor="email-address">
             {emailLabel}

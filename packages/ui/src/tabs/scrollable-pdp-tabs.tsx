@@ -90,6 +90,7 @@ function ScrollablePdpTabs({ tabs, anchorOffset }: IScrollablePdpTabsProps) {
                 className={classNames(
                   'inline-block px-1 pt-0.5 pb-px md:px-4 xl:px-6 xl:py-2 font-normal cursor-pointer',
                   'hover:bg-white hover:text-[#047857] hover:rounded-t-lg hover:xl:rounded-lg',
+                  'whitespace-nowrap'
                 )}
               >
                 {tab.tabLabel}
