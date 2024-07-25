@@ -108,6 +108,7 @@ function PdpContent(props: IPdpContentProps) {
         },
       ],
     }),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [],
   )
 
