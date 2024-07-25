@@ -25,17 +25,15 @@ interface IPageProps {
 }
 
 //  2.productOverviewSplitWithImage组件内容的配置数据  De版
-const productOverviewSplitWithImageOtherProps: IProductOverviewSplitWithImageOtherProps =
-  {
-    firstBreadcrumbsName: 'Alle Geräte',
-    btn1Label: `Lass uns reden`,
-    btn2Label: `In Kontakt kommen`,
-  }
+const productOverviewSplitWithImageOtherProps: IProductOverviewSplitWithImageOtherProps = {
+  firstBreadcrumbsName: 'Alle Geräte',
+  btn1Label: `Lass uns reden`,
+  btn2Label: `Kontakt aufnehmen`,
+}
+
 
 //  3.EquipmentFeatures组件内容的配置数据  De版
-function generateEquipmentFeaturesProps(
-  equipment: TEquipment
-): IEquipmentFeaturesProps {
+function generateEquipmentFeaturesProps(equipment: TEquipment): IEquipmentFeaturesProps {
   return {
     equipment,
     tabNames: {
@@ -47,29 +45,30 @@ function generateEquipmentFeaturesProps(
     tabHeadingAndDescription: {
       baiscParams: {
         heading: 'Grundlegende Geräteparameter',
-        description: `Es handelt sich um eine Großanlage zur Verarbeitung von allgemeinen Küchenabfällen und Lebensmittelabfällen. Es verfügt über ein intelligentes SPS-Steuerungssystem und integriert die Funktionen Zerkleinerung, Sortierung, Fermentation und Abwasserbehandlung. Kann an zentrale Abfallbehandlungsstationen in Städten, großen Handelszentren usw. geliefert werden. Fernüberwachung und Datenaustausch können realisiert werden.`,
+        description: `Es handelt sich um ein großes Gerät zur Verarbeitung von allgemeinen Küchenabfällen und Lebensmittelabfällen. Es verwendet ein intelligentes PLC-Steuerungssystem und integriert die Funktionen Zerkleinerung, Sortierung, Fermentation und Abwasserbehandlung. Kann an zentralisierte Abfallbehandlungsstationen in Städten, großen Einkaufszentren usw. geliefert werden. Fernüberwachung und Datenaustausch können realisiert werden.`,
       },
       power: {
         heading: 'Modulare Leistung',
         description: (
           <>
-            GEME ist stets auf der Suche nach der besten Balance zwischen hoher
-            Leistung und geringer Energieverbrauch. Ich versuche, mit mehr
-            Lebensmittelabfällen umzugehen weniger energie verbrauch.
+            GEME sucht immer nach dem besten Gleichgewicht zwischen hoher Leistung
+            und niedrigem Energieverbrauch. Der Versuch, mit weniger Energieverbrauch
+            mehr Lebensmittelabfälle zu bewältigen.
           </>
         ),
       },
       EquipmentPower: {
         heading: 'Geräteleistung',
-        description: `GEME maximiert die Wiederherstellung des gesamten Prozesses der natürlichen Kompostierung, indem es einen intelligenten Chip verwendet, um die Temperatur zu regulieren und so viel Energie wie möglich zu sparen und gleichzeitig eine geeignete Umgebung für die schnelle Reproduktion und Zersetzung der Mikrobiota zu schaffen.`,
+        description: `GEME maximiert die Wiederherstellung des gesamten Prozesses der natürlichen Kompostierung, indem ein intelligenter Chip verwendet wird, um die Temperatur zu regeln und so viel Energie wie möglich zu sparen, während gleichzeitig eine geeignete Umgebung für die schnelle Reproduktion und den Abbau der Mikroben bereitgestellt wird.`,
       },
       MaterialOfMain: {
         heading: 'Material',
-        description: `Wir haben Qualität zu unserer Gewohnheit gemacht. Wir streben nicht nur danach, sondern leben diesen Grundsatz jeden Tag. Dabei werden die meisten Dinge des kreativen Prozesses vergessen. Die Exzellenz unserer Produkte und Dienstleistungen wird uns in Erinnerung bleiben.`,
+        description: `Wir haben Qualität zu unserer Gewohnheit gemacht. Es ist nicht nur etwas, das wir anstreben - wir leben nach diesem Prinzip jeden Tag. Während die meisten Dinge des kreativen Prozesses vergessen werden, wird die Exzellenz unserer Produkte und Dienstleistungen in Erinnerung bleiben.`,
       },
     },
   }
 }
+
 
 function IndustrialEquipmentsIdPageDe({ params }: IPageProps) {
   const equipmentId = params.id
