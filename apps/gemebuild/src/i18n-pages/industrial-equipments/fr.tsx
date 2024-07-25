@@ -7,14 +7,14 @@ import type { IEquipmentPreviewProps } from './components/EquipmentPreview'
 import type { IProductListsWithTallImagesProps } from './components/EquipmentList'
 import { mapItemsToProducts } from '../../helpers/industrial-equipments/tool'
 
-// Hero组件内容的配置数据  Fr版
+// Hero组件内容的配置数据 Fr版
 const heroConfigProps: IHeroWithImageTilesProps = {
-  title: 'GEME pour le business',
-  description: `Partout où des biodéchets sont générés, c'est là que GEME change le monde.
-  Différentes tailles de GEME sont largement utilisées dans les communautés, les écoles, les hôpitaux, les immeubles de bureaux, les centres commerciaux, les attractions touristiques, les centres de villégiature, les restaurants, les hôtels, etc.`,
+  title: 'GEME pour les entreprises',
+  description: `Partout où des déchets biologiques sont générés, GEME change le monde.
+      Différentes tailles de GEME sont largement utilisées dans les communautés, les écoles, les hôpitaux, les immeubles de bureaux, les centres commerciaux, les attractions touristiques, les complexes hôteliers, les restaurants, les hôtels, etc.`,
   primaryButtonLabel: 'Contactez-nous',
   primaryButtonProps: {
-    href: '/contact',
+    href: '/business-inquiry',
   },
   decorativeImageGroups: [
     [
@@ -68,6 +68,7 @@ const heroConfigProps: IHeroWithImageTilesProps = {
   ],
 }
 
+
 // EquipmentPreview组件内容的配置数据  Fr版
 const equipmentPreviewConfigProps: IEquipmentPreviewProps = {
   title: 'Vitrine',
@@ -77,11 +78,12 @@ const equipmentPreviewConfigProps: IEquipmentPreviewProps = {
 const equipmentListConfigProps: IProductListsWithTallImagesProps = {
   title: 'Équipements commerciaux',
   description:
-    'Ces appareils sont des héros environnementaux silencieux, jouant un rôle essentiel dans diverses régions du monde. Ils utilisent une méthodologie de dégradation par fermentation microbienne pour contribuer à réduire le gaspillage alimentaire à grande échelle.',
-  products: mapItemsToProducts(items, 'capacité de traitement quotidienne'),
+    'Ces appareils sont des héros environnementaux silencieux, jouant un rôle essentiel dans diverses régions du monde. Ils utilisent une méthode de dégradation par fermentation microbienne pour aider à réduire les déchets alimentaires à grande échelle.',
+  products: mapItemsToProducts(items, 'Capacité de traitement quotidienne'),
   productImageAspectRadioClassName: 'aspect-w-9! aspect-h-6!',
   productsContainerClassName: 'gap-y-16 sm:gap-y-10',
 }
+
 
 function IndustrialEquipmentsPageFr() {
   const componentConfigProps: IIndustrialEquipmentsProps = {
