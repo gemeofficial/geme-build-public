@@ -84,8 +84,6 @@ const equipmentListConfigProps: IProductListsWithTallImagesProps = {
 }
 
 function IndustrialEquipmentsPageEn() {
-  const url = 'https://www.geme.bio/industrial-equipments'
-
   const componentConfigProps: IIndustrialEquipmentsProps = {
     heroConfigProps,
     equipmentPreviewConfigProps,

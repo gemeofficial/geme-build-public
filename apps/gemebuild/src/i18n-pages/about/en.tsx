@@ -18,7 +18,7 @@ import type {
 
 // about page静态页面的内容 配置文件 En版
 
-// AboutHeroSection
+// 第一部分 En
 const aboutHeroSectionProps: IAboutHeroSection = {
   title: 'Less Waste, More Green',
   mTitle: `ROKH's Path to a Sustainable Future`,
@@ -65,7 +65,7 @@ const aboutHeroSectionProps: IAboutHeroSection = {
   ],
 }
 
-// AboutContentSection1
+// 第二部分 En
 const aboutContentSection1Props: IAboutContentSection1 = {
   mTitle: 'Our Mission',
   title: 'All Things Live Forever and in Harmony with Earth',
@@ -98,7 +98,7 @@ const aboutContentSection1Props: IAboutContentSection1 = {
   fullImgUrl: '/assets/images/about/v2406/s2-family.png',
 }
 
-// AboutContentSection15
+// 第三部分 En
 const aboutContentSection15Props: IAboutContentSection15 = {
   mTitle: 'Our People',
   title: 'Pioneering Minds, Passionate Hearts',
@@ -132,7 +132,7 @@ const aboutContentSection15Props: IAboutContentSection15 = {
   imgSectionUrl3: '/assets/images/about/v2406/s1-colleagues.png',
 }
 
-// AboutContentSection15
+// 第四部分 En
 const aboutContentSection2Props: IAboutContentSection2 = {
   mTitle: 'Our Values',
   title: 'Take the Road Less Traveled',
@@ -165,7 +165,7 @@ const aboutContentSection2Props: IAboutContentSection2 = {
   ],
 }
 
-// aboutContentSection4
+// 第五部分 En
 const aboutContentSection4Props: IAboutContentSection4 = {
   mTitle: 'Our Milestones',
   title: 'Solid Foundations, Step by Step',
@@ -212,7 +212,7 @@ const aboutContentSection4Props: IAboutContentSection4 = {
   ],
 }
 
-// aboutContentSection6
+// 第六部分 En
 const aboutContentSection6Props: IAboutContentSection6 = {
   title: 'Partner with GEME',
   incentives: [

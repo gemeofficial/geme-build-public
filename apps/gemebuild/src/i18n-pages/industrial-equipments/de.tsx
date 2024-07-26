@@ -7,14 +7,14 @@ import type { IEquipmentPreviewProps } from './components/EquipmentPreview'
 import type { IProductListsWithTallImagesProps } from './components/EquipmentList'
 import { mapItemsToProducts } from '../../helpers/industrial-equipments/tool'
 
-// Hero组件内容的配置数据  De版
+// Hero组件内容的配置数据 De版
 const heroConfigProps: IHeroWithImageTilesProps = {
-  title: 'GEME für das Geschäft',
-  description: `Überall dort, wo Biomüll entsteht, verändert GEME die Welt.
-  GEME unterschiedlicher Größe wird häufig in Gemeinden, Schulen, Krankenhäusern, Bürogebäuden, Einkaufszentren, Touristenattraktionen, Resorts, Restaurants, Hotels usw. eingesetzt.`,
-  primaryButtonLabel: 'Kontaktiere uns',
+  title: 'GEME für Unternehmen',
+  description: `Wo auch immer Bio-Abfall entsteht, dort verändert GEME die Welt.
+      Verschiedene Größen von GEME werden in Gemeinden, Schulen, Krankenhäusern, Bürogebäuden, Einkaufszentren, touristischen Attraktionen, Resorts, Restaurants, Hotels usw. weit verbreitet verwendet.`,
+  primaryButtonLabel: 'Kontaktieren Sie uns',
   primaryButtonProps: {
-    href: '/contact',
+    href: '/business-inquiry',
   },
   decorativeImageGroups: [
     [
@@ -75,17 +75,15 @@ const equipmentPreviewConfigProps: IEquipmentPreviewProps = {
 
 // EquipmentList组件内容的配置数据  De版
 const equipmentListConfigProps: IProductListsWithTallImagesProps = {
-  title: 'Kommerzielle Ausrüstung',
+  title: 'Gewerbliche Geräte',
   description:
-    'Diese Geräte sind stille Umwelthelden und spielen in verschiedenen Teilen der Welt eine wesentliche Rolle. Sie nutzen die mikrobielle Fermentationsabbaumethode, um die Lebensmittelverschwendung in großem Maßstab zu reduzieren.',
+    'Diese Geräte sind stille Umwelthelden und spielen eine wesentliche Rolle in verschiedenen Teilen der Welt. Sie verwenden mikrobiologische Fermentationsabbauverfahren, um Lebensmittelabfälle in großem Umfang zu reduzieren.',
   products: mapItemsToProducts(items, 'tägliche Verarbeitungskapazität'),
   productImageAspectRadioClassName: 'aspect-w-9! aspect-h-6!',
   productsContainerClassName: 'gap-y-16 sm:gap-y-10',
 }
 
 function IndustrialEquipmentsPageDe() {
-  const url = 'https://www.geme.bio/de/industrial-equipments'
-
   const componentConfigProps: IIndustrialEquipmentsProps = {
     heroConfigProps,
     equipmentPreviewConfigProps,
@@ -106,5 +104,3 @@ function IndustrialEquipmentsPageDe() {
 }
 
 export { IndustrialEquipmentsPageDe }
-
-

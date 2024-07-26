@@ -11,9 +11,11 @@ export * from './self-repair'
 export * from './industrial-equipments'
 export * from './industrial-equipments-id'
 export * from './manuals-download'
+export * from './manual'
 export * from './about'
 export * from './how-it-works'
 export * from './geme-kobold'
+export * from './solar-compactor'
 
 // contexts
 export * from '../contexts/link-context'
