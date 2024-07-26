@@ -32,10 +32,12 @@ export interface IGemeCareProps {
   coverImage: string
   description: string
   links: Link[]
+
   item1: Item
   item2: Item
   item3Title: string
   item3: Item[]
+
   item4Title: string
   item4: Item[]
   item5: Item
@@ -43,6 +45,30 @@ export interface IGemeCareProps {
   item6: Item[]
   PrefetchLink: ILinkComponent
 }
+
+export interface IGemeCarePropsSection1 {
+  title: string
+  coverImage: string
+  description: string
+  links: Link[]
+}
+
+export interface IGemeCarePropsSection2 {
+  item1: Item
+  item2: Item
+  item3Title: string
+  item3: Item[]
+}
+
+export interface IGemeCarePropsSection3 {
+  item4Title: string
+  item4: Item[]
+  item5: Item
+  item6Title: string
+  item6: Item[]
+  PrefetchLink: ILinkComponent
+}
+
 function GemeCare({
   PrefetchLink,
   coverImage,
@@ -61,16 +87,16 @@ function GemeCare({
 }: IGemeCareProps) {
   return (
     <div className="bg-gray-50">
-      <div className="overflow-hidden bg-[#01121C] prose-a:break-all">
+      <div className="overflow-hidden bg-[#01121C] prose-a:break-all relative">
         <Image
           width={1920}
           height={1080}
           priority
           src={coverImage}
           alt="customer service cover"
-          className="object-cover object-center"
+          className="w-full h-full object-cover"
         />
-        <div className="grid grid-cols-1 items-center gap-y-10 gap-x-16 ">
+        <div className="w-full lg:absolute lg:top-[50%] lg:left-[50%] lg:-translate-x-[50%] grid grid-cols-1 items-center gap-y-10 gap-x-16 -mt-20 md:-mt-32 mb-4 md:mb-8">
           <div>
             <h2 className="text-2xl lg:text-4xl font-bold text-center tracking-tight text-white mb-5">
               {title}

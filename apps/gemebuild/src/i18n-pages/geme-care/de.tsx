@@ -1,42 +1,47 @@
 import defaultLink from 'next/link'
 import { ILinkComponent } from '../../contexts/link-context'
-import GemeCare, { IGemeCareProps } from './components/GemeCare'
+import GemeCare, {
+  IGemeCareProps,
+  IGemeCarePropsSection1,
+  IGemeCarePropsSection2,
+  IGemeCarePropsSection3,
+} from './components/GemeCare'
 
-// 配置文件 En版
-const useGemeCareProps = (PrefetchLink: ILinkComponent): IGemeCareProps => ({
+// 配置文件1 De版
+const gemeCarePropsSection1: IGemeCarePropsSection1 = {
   title: 'GEME Care+',
   coverImage: '/assets/images/geme-care/4.png',
-  description: `We offer you an exclusive GEME Care+ warranty of up to 2 years.`,
+  description: `Wir bieten Ihnen eine exklusive GEME Care+ Garantie von bis zu 2 Jahren.`,
   links: [
     {
-      name: 'Order Now',
+      name: 'Jetzt bestellen',
       type: 'link',
     },
   ],
+}
+
+const gemeCarePropsSection2: IGemeCarePropsSection2 = {
   item1: {
-    name: 'GEME Warranty',
-    subTitle: '1 year warranty',
-    description: `You deserve the best quality appliances. When you choose GEME, we offer a 1-year warranty on all GEMEs from the date of purchase. During this period, we will repair all material and manufacturing defects free of charge, and ROKH SRL Warranty conditions apply.`,
-    // FIXME: should link the GEME Care ordering page which is not ready
-    // link: '/warranty',
-    // buttonName: 'Register your GEME',
+    name: 'GEME Garantie',
+    subTitle: '1 Jahr Garantie',
+    description: `Sie verdienen die besten Qualitätsgeräte. Wenn Sie sich für GEME entscheiden, bieten wir eine einjährige Garantie auf alle GEME-Produkte ab Kaufdatum. Während dieses Zeitraums reparieren wir alle Material- und Herstellungsfehler kostenlos, und die Garantiebedingungen von ROKH SRL gelten.`,
     image: '/assets/images/geme-care/2-1.png',
   },
   item2: {
-    name: 'Total Safety',
+    name: 'Totale Sicherheit',
     subTitle:
-      'Durability, optimum user comfort and high quality - you have made the best choice when buying a GEME product.',
-    description: `Would you like to enjoy the highest level of security for your new appliance? Warranty extensions allow you to extend the warranty on your GEME appliance for up to 3 years within the 1-year period of the manufacturer's warranty.`,
+      'Haltbarkeit, optimaler Benutzerkomfort und hohe Qualität – Sie haben die beste Wahl getroffen, wenn Sie ein GEME-Produkt kaufen.',
+    description: `Möchten Sie den höchsten Sicherheitsstandard für Ihr neues Gerät genießen? Garantieverlängerungen ermöglichen es Ihnen, die Garantie Ihres GEME-Geräts innerhalb der einjährigen Herstellergarantie um bis zu 3 Jahre zu verlängern.`,
     link: '/warranty',
-    buttonName: 'More Protection',
+    buttonName: 'Mehr Schutz',
     image: '/assets/images/geme-care/3-1.jpg',
   },
-  item3Title: 'Your Advantages',
+  item3Title: 'Ihre Vorteile',
   item3: [
     {
       image: '',
-      name: 'Exclusive GEME Guarantee',
-      description: `We are the only company to offer a 1 or 2 year optional comprehensive warranty on your GEME appliances.`,
+      name: 'Exklusive GEME-Garantie',
+      description: `Wir sind das einzige Unternehmen, das eine optionale umfassende Garantie von 1 oder 2 Jahren für Ihre GEME-Geräte anbietet.`,
       icon: (
         <svg
           viewBox="0 0 1024 1024"
@@ -60,8 +65,8 @@ const useGemeCareProps = (PrefetchLink: ILinkComponent): IGemeCareProps => ({
     },
     {
       image: '',
-      name: 'Maximum Flexibility',
-      description: `You can choose to extend your warranty to 2 or 3 years before the full manufacturer's warranty expires at the end of the 1 year period.`,
+      name: 'Maximale Flexibilität',
+      description: `Sie können wählen, ob Sie Ihre Garantie um 2 oder 3 Jahre verlängern möchten, bevor die einjährige Herstellergarantie endet.`,
       icon: (
         <svg
           className="w-6 h-6"
@@ -80,8 +85,8 @@ const useGemeCareProps = (PrefetchLink: ILinkComponent): IGemeCareProps => ({
     },
     {
       image: '',
-      name: 'Maximum Security',
-      description: `During the extended warranty period, we cover the cost of all repairs that are not your responsibility`,
+      name: 'Maximale Sicherheit',
+      description: `Während des verlängerten Garantiezeitraums übernehmen wir die Kosten für alle Reparaturen, die nicht Ihrer Verantwortung unterliegen.`,
       icon: (
         <svg
           className="w-7 h-7"
@@ -100,8 +105,8 @@ const useGemeCareProps = (PrefetchLink: ILinkComponent): IGemeCareProps => ({
     },
     {
       image: '',
-      name: 'New Equipment',
-      description: `If the repair is no longer reasonable, we will provide you with new equipment of equal value.`,
+      name: 'Neues Gerät',
+      description: `Wenn die Reparatur nicht mehr angemessen ist, stellen wir Ihnen ein neues Gerät von gleichem Wert zur Verfügung.`,
       icon: (
         <svg
           className="w-6 h-6"
@@ -120,8 +125,8 @@ const useGemeCareProps = (PrefetchLink: ILinkComponent): IGemeCareProps => ({
     },
     {
       image: '',
-      name: 'Original Accessories',
-      description: `Ensure that your equipment operates in the most adapted way`,
+      name: 'Originalzubehör',
+      description: `Stellen Sie sicher, dass Ihr Gerät auf die bestmögliche Weise funktioniert.`,
       icon: (
         <svg
           className="w-6 h-6"
@@ -140,8 +145,8 @@ const useGemeCareProps = (PrefetchLink: ILinkComponent): IGemeCareProps => ({
     },
     {
       image: '',
-      name: 'Great Service',
-      description: `In the event of a service call, we will help you quickly and reliably.`,
+      name: 'Hervorragender Service',
+      description: `Im Falle eines Serviceanrufs helfen wir Ihnen schnell und zuverlässig.`,
       icon: (
         <svg
           className="w-6 h-6"
@@ -159,14 +164,20 @@ const useGemeCareProps = (PrefetchLink: ILinkComponent): IGemeCareProps => ({
       ),
     },
   ],
-  item4Title: 'Service Plan of GEME Care+',
+}
+
+// 配置文件3 En版
+const gemeCarePropsSection3 = (
+  PrefetchLink: ILinkComponent,
+): IGemeCarePropsSection3 => ({
+  item4Title: 'Serviceplan von GEME Care+',
   item4: [
     {
       image: '',
-      name: '1 year GEME Care+',
-      description: `Extended warranty period of 1 year`,
+      name: '1 Jahr GEME Care+',
+      description: `Verlängerte Garantiezeit von 1 Jahr`,
       price: '$49',
-      buttonName: 'Order Now',
+      buttonName: 'Jetzt bestellen',
       onClick: () => {},
       plainButton: true,
       icon: (
@@ -187,10 +198,10 @@ const useGemeCareProps = (PrefetchLink: ILinkComponent): IGemeCareProps => ({
     },
     {
       image: '',
-      name: '2 years GEME Care+',
-      description: `Extended warranty period of 2 year`,
+      name: '2 Jahre GEME Care+',
+      description: `Verlängerte Garantiezeit von 2 Jahren`,
       price: '$89',
-      buttonName: 'Order Now',
+      buttonName: 'Jetzt bestellen',
       onClick: () => {},
       plainButton: true,
       icon: (
@@ -212,22 +223,18 @@ const useGemeCareProps = (PrefetchLink: ILinkComponent): IGemeCareProps => ({
   ],
 
   item5: {
-    name: 'Activate The Extended Warranty',
-    description: `If you have purchased an extended warranty from your dealer, you can easily activate it online here. All you need is your personal registration code and the serial number of your device. After activation, you can access the certificate at any time from your user account on our website.`,
-    // FIXME: should link the Register Product page which is not ready
-    // link: '/warranty-extend',
-    // buttonName: 'Activate Now',
+    name: 'Aktivieren Sie die erweiterte Garantie',
+    description: `Wenn Sie eine erweiterte Garantie bei Ihrem Händler gekauft haben, können Sie diese hier einfach online aktivieren. Alles, was Sie brauchen, ist Ihr persönlicher Registrierungscode und die Seriennummer Ihres Geräts. Nach der Aktivierung können Sie das Zertifikat jederzeit über Ihr Benutzerkonto auf unserer Website abrufen.`,
     image: 'https://tailwindui.com/img/ecommerce-images/incentives-07-hero.jpg',
   },
-  item6Title: 'Do you have any questions? We are at your service!',
+  item6Title: 'Haben Sie Fragen? Wir sind für Sie da!',
   item6: [
     {
       image: '',
       description: '',
-      name: 'Extended Warranty Terms & Conditions',
-      buttonName: 'Find more',
+      name: 'Erweiterte Garantiebedingungen',
+      buttonName: 'Mehr erfahren',
       link: '/warranty-extend',
-
       icon: (
         <svg
           className="w-6 h-6"
@@ -253,7 +260,7 @@ const useGemeCareProps = (PrefetchLink: ILinkComponent): IGemeCareProps => ({
     {
       image: '',
       description: '',
-      name: 'Contact Us on Line',
+      name: 'Kontaktieren Sie uns online',
       buttonName: 'info@geme.bio',
       link: `mailto:info@geme.bio`,
       noArrow: true,
@@ -284,7 +291,11 @@ export function GemeCarePageDe({
   PrefetchLink?: ILinkComponent
 }) {
   const Link = (PrefetchLink || defaultLink) as ILinkComponent
-  const props = useGemeCareProps(Link)
-
-  return <GemeCare {...props} />
+  const props = gemeCarePropsSection3(Link)
+  const allProps = {
+    ...gemeCarePropsSection1,
+    ...gemeCarePropsSection2,
+    ...props,
+  } as IGemeCareProps
+  return <GemeCare {...allProps} />
 }

@@ -1,9 +1,14 @@
 import defaultLink from 'next/link'
 import { ILinkComponent } from '../../contexts/link-context'
-import GemeCare, { IGemeCareProps } from './components/GemeCare'
+import GemeCare, {
+  IGemeCareProps,
+  IGemeCarePropsSection1,
+  IGemeCarePropsSection2,
+  IGemeCarePropsSection3,
+} from './components/GemeCare'
 
-// 配置文件 En版
-const useGemeCareProps = (PrefetchLink: ILinkComponent): IGemeCareProps => ({
+// 配置文件1 En版
+const gemeCarePropsSection1: IGemeCarePropsSection1 = {
   title: 'GEME Care+',
   coverImage: '/assets/images/geme-care/4.png',
   description: `We offer you an exclusive GEME Care+ warranty of up to 2 years.`,
@@ -13,6 +18,10 @@ const useGemeCareProps = (PrefetchLink: ILinkComponent): IGemeCareProps => ({
       type: 'link',
     },
   ],
+}
+
+// 配置文件2 En版
+const gemeCarePropsSection2: IGemeCarePropsSection2 = {
   item1: {
     name: 'GEME Warranty',
     subTitle: '1 year warranty',
@@ -159,6 +168,12 @@ const useGemeCareProps = (PrefetchLink: ILinkComponent): IGemeCareProps => ({
       ),
     },
   ],
+}
+
+// 配置文件3 En版
+const gemeCarePropsSection3 = (
+  PrefetchLink: ILinkComponent,
+): IGemeCarePropsSection3 => ({
   item4Title: 'Service Plan of GEME Care+',
   item4: [
     {
@@ -284,7 +299,11 @@ export function GemeCarePageEn({
   PrefetchLink?: ILinkComponent
 }) {
   const Link = (PrefetchLink || defaultLink) as ILinkComponent
-  const props = useGemeCareProps(Link)
-
-  return <GemeCare {...props} />
+  const props = gemeCarePropsSection3(Link)
+  const allProps = {
+    ...gemeCarePropsSection1,
+    ...gemeCarePropsSection2,
+    ...props,
+  } as IGemeCareProps
+  return <GemeCare {...allProps} />
 }
