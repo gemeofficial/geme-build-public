@@ -16,6 +16,7 @@ export * from './about'
 export * from './how-it-works'
 export * from './geme-kobold'
 export * from './solar-compactor'
+export * from './gk'
 
 // contexts
 export * from '../contexts/link-context'
