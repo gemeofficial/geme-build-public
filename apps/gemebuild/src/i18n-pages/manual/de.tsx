@@ -1,4 +1,3 @@
-import { ILinkComponent } from '../../contexts/link-context'
 import CanNotCompostItems, {
   ICanNotCompostItemsProps,
   noSymbolIcon,
@@ -9,6 +8,7 @@ import FeaturesWithVideos, {
 } from './components/FeaturesWithVideos'
 import GeemDailyUsage from './components/GemeDailyUsage'
 import HeroSection, { IManualHeroSectionProps } from './components/HeroSection'
+import { IManualsPageProps } from './en'
 
 // 第1部分配置文件 De版
 const manualHeroSectionProps: IManualHeroSectionProps = {
@@ -213,12 +213,15 @@ const canNotCompostItemsProps: ICanNotCompostItemsProps = {
 
 export function ManualsPageDe({
   PrefetchLink,
-}: {
-  PrefetchLink?: ILinkComponent
-}) {
+  WhatsAppBusinessAccountURL,
+}: IManualsPageProps) {
   return (
     <>
-      <HeroSection {...manualHeroSectionProps} PrefetchLink={PrefetchLink} />
+      <HeroSection
+        {...manualHeroSectionProps}
+        PrefetchLink={PrefetchLink}
+        WhatsAppBusinessAccountURL={WhatsAppBusinessAccountURL}
+      />
       <FeaturesWithVideos {...featuresWithVideos} />
       <GeemDailyUsage {...geemDailyUsageProps} />
       <CanNotCompostItems {...canNotCompostItemsProps} />

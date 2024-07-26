@@ -10,6 +10,11 @@ import FeaturesWithVideos, {
 import GeemDailyUsage from './components/GemeDailyUsage'
 import HeroSection, { IManualHeroSectionProps } from './components/HeroSection'
 
+export interface IManualsPageProps {
+  PrefetchLink?: ILinkComponent
+  WhatsAppBusinessAccountURL?: string
+}
+
 // 第1部分配置文件 En版
 const manualHeroSectionProps: IManualHeroSectionProps = {
   title: 'Tutorial',
@@ -203,12 +208,15 @@ const canNotCompostItemsProps: ICanNotCompostItemsProps = {
 
 export function ManualsPageEn({
   PrefetchLink,
-}: {
-  PrefetchLink?: ILinkComponent
-}) {
+  WhatsAppBusinessAccountURL,
+}: IManualsPageProps) {
   return (
     <>
-      <HeroSection {...manualHeroSectionProps} PrefetchLink={PrefetchLink} />
+      <HeroSection
+        {...manualHeroSectionProps}
+        PrefetchLink={PrefetchLink}
+        WhatsAppBusinessAccountURL={WhatsAppBusinessAccountURL}
+      />
       <FeaturesWithVideos {...featuresWithVideos} />
       <GeemDailyUsage {...geemDailyUsageProps} />
       <CanNotCompostItems {...canNotCompostItemsProps} />
