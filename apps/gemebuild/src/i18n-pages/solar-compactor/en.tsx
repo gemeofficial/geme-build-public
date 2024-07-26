@@ -118,7 +118,7 @@ const GEMESolarPoweredTrashCompactorProps: IGEMESolarPoweredTrashCompactorProps 
                   </p>
                   <div className="mt-6">
                     <Link
-                      href="/green-city-networks"
+                      href="/en/green-city-networks"
                       passHref
                       className="inline-flex rounded-md border border-transparent bg-v2311-bg-dark-green hover:bg-v2311-primary px-4 py-2 text-base font-medium text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
                     >
