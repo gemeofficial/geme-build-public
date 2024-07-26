@@ -8,6 +8,7 @@ export interface IManualHeroSectionProps {
   secondaryButtonLabel: string
   hintsLinkLabel: string
   WhatsAppBusinessAccountURL?: string
+  buttonLn?: boolean
 }
 
 function TitleComponent({ title }: { title: string }) {
@@ -25,6 +26,7 @@ export default function HeroSection({
   primaryButtonLabel,
   secondaryButtonLabel,
   WhatsAppBusinessAccountURL,
+  buttonLn,
 }: IManualHeroSectionProps) {
   const whatsHref = WhatsAppBusinessAccountURL || '/'
 
@@ -37,6 +39,7 @@ export default function HeroSection({
         imageSrc="/assets/images/manual/hero-v1.jpg"
         imageAlt="GEME tutorial"
         videoUrl="https://www.youtube.com/embed/5rWoJlB-uVo"
+        buttonLn={buttonLn}
         buttons={{
           primaryButton: {
             label: primaryButtonLabel,

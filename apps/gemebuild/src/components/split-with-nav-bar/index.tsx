@@ -23,6 +23,7 @@ function SplitWithNavBar({
   primarySectionClassName,
   secondarySectionClassName,
   PrefetchLink,
+  buttonLn,
 }: ISplitWithNavBarProps) {
   const primaryButton = buttons?.primaryButton
   const Link = PrefetchLink || defaultLink
@@ -49,7 +50,12 @@ function SplitWithNavBar({
             {description}
           </div>
           {buttons && (
-            <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
+            <div
+              className={classNames(
+                'mt-10 sm:flex sm:justify-center lg:justify-start',
+                buttonLn ? 'flex-col gap-4' : '',
+              )}
+            >
               {primaryButton && (
                 <div className="rounded-md shadow">
                   {typeof primaryButton === 'object' &&
@@ -72,7 +78,12 @@ function SplitWithNavBar({
                 </div>
               )}
               {buttons.secondaryButton && (
-                <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+                <div
+                  className={classNames(
+                    'rounded-md shadow mt-3 sm:mt-0',
+                    buttonLn ? '' : 'ml-3',
+                  )}
+                >
                   <Link
                     {...buttons?.secondaryButton?.linkProps}
                     locale={
@@ -229,6 +240,7 @@ export interface ISplitWithNavBarProps {
         LinkProps
     }
   }
+  buttonLn?: boolean
 
   hints?: string
   hintsLink?: {
