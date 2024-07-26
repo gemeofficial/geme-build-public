@@ -182,7 +182,7 @@ const gemeCarePropsSection3 = (
       description: `Extended warranty period of 1 year`,
       price: '$49',
       buttonName: 'Order Now',
-      onClick: () => {},
+
       plainButton: true,
       icon: (
         <svg
@@ -206,7 +206,7 @@ const gemeCarePropsSection3 = (
       description: `Extended warranty period of 2 year`,
       price: '$89',
       buttonName: 'Order Now',
-      onClick: () => {},
+
       plainButton: true,
       icon: (
         <svg

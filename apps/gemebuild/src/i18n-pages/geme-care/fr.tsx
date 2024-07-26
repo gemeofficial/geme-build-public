@@ -180,7 +180,7 @@ const gemeCarePropsSection3 = (
       description: `Période de garantie prolongée de 1 an`,
       price: '$49',
       buttonName: 'Commander maintenant',
-      onClick: () => {},
+      
       plainButton: true,
       icon: (
         <svg
@@ -204,7 +204,7 @@ const gemeCarePropsSection3 = (
       description: `Période de garantie prolongée de 2 ans`,
       price: '$89',
       buttonName: 'Commander maintenant',
-      onClick: () => {},
+      
       plainButton: true,
       icon: (
         <svg
