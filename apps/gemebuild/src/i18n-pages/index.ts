@@ -18,6 +18,8 @@ export * from './geme-kobold'
 export * from './solar-compactor'
 export * from './gk'
 export * from './green-city-networks'
+export * from './customer-service'
+export * from './geme-care'
 
 // contexts
 export * from '../contexts/link-context'
