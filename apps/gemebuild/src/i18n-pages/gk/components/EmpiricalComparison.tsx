@@ -11,6 +11,10 @@ export interface IEmpiricalComparisonProps {
     title?: string
     description?: string
   }[]
+  featuresImage: {
+    width: number
+    height: number
+  }
   description1?: ReactNode
   description2?: ReactNode
   pictureDescription1?: string
@@ -24,6 +28,7 @@ export default function EmpiricalComparison({
   description1,
   description2,
   features,
+  featuresImage,
   pictureDescription1,
   pictureSubDescription2,
   title,
@@ -52,8 +57,8 @@ export default function EmpiricalComparison({
               : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4',
           )}
         >
-          {features.map((feature) => (
-            <div key={feature.name} className="flex flex-col-reverse">
+          {features.map((feature, index) => (
+            <div key={feature.name + index} className="flex flex-col-reverse">
               <div className="mt-6">
                 <h3 className="font-medium text-gray-900">{feature.name}</h3>
                 {feature.description && (
@@ -62,13 +67,17 @@ export default function EmpiricalComparison({
                   </p>
                 )}
               </div>
-              <div className="aspect-w-13 aspect-h-7 overflow-hidden bg-gray-100">
+              <div className="overflow-hidden bg-gray-100">
                 <Image
-                  width={280}
-                  height={150}
+                  width={featuresImage.width}
+                  height={featuresImage.height}
                   src={feature.imageSrc}
                   alt={feature.imageAlt}
-                  className="object-cover object-center"
+                  className={classNames('object-cover object-center')}
+                  style={{
+                    width: `${featuresImage.width}px`,
+                    height: `${featuresImage.height}px`,
+                  }}
                 />
               </div>
             </div>

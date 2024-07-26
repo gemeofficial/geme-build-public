@@ -11,6 +11,7 @@ function WithSquareImages({
   description,
   features,
   grayBackground = false,
+  textColorClassName,
 }: IWithSquareImagesProps) {
   return (
     <div className={classNames(grayBackground ? 'bg-gray-50' : 'bg-white')}>
@@ -21,7 +22,12 @@ function WithSquareImages({
           </h2>
         )}
         {title && (
-          <SectionTitle className="mt-2 text-3xl sm:text-4xl">
+          <SectionTitle
+            className={classNames(
+              'mt-2 text-3xl sm:text-4xl',
+              textColorClassName || '',
+            )}
+          >
             {title}
           </SectionTitle>
         )}
@@ -41,7 +47,12 @@ function WithSquareImages({
               <div key={name} className="flex flex-col-reverse px-0 py-0">
                 {title && (
                   <div className="mt-4">
-                    <h3 className="text-lg font-semibold  text-v2311-primary">
+                    <h3
+                      className={classNames(
+                        'text-lg font-semibold  text-v2311-primary',
+                        textColorClassName || '',
+                      )}
+                    >
                       {title}
                     </h3>
                     {featureDesc != null && (
@@ -64,7 +75,12 @@ function WithSquareImages({
                     )}
                   </div>
                 )}
-                <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-2xl  border-2 border-[#8ec597]">
+                <div
+                  className={classNames(
+                    'aspect-w-1 aspect-h-1 overflow-hidden rounded-2xl ',
+                    textColorClassName ? '' : 'border-2 border-[#8ec597]',
+                  )}
+                >
                   <Image
                     src={imageSrc}
                     alt={imageAlt}
@@ -101,6 +117,7 @@ export interface IWithSquareImagesProps {
     readMoreLinkHref?: string
   }[]
   grayBackground?: boolean
+  textColorClassName?: string
 }
 
 export default WithSquareImages

@@ -12,80 +12,84 @@ import EmpiricalComparison, {
   IEmpiricalComparisonProps,
 } from './components/EmpiricalComparison'
 
-// 第1部分配置文件 En版
+// 第1部分配置文件 Fr版
 const gkHeroSectionProps: IGKHeroSectionProps = {
-  title: 'GK Resource Recycling Technology',
-  highlightTitle: 'Orderly cycle that follows the laws of nature',
+  title: 'Technologie de recyclage des ressources GK',
+  highlightTitle: 'Cycle ordonné qui suit les lois de la nature',
   description: (
     <>
       <p>
-        Realize the closed-loop operation of the biological cycle "from the land
-        and back to the land"
+        Réaliser le fonctionnement en boucle fermée du cycle biologique "de la
+        terre et de retour à la terre"
       </p>
       <p className="mt-4">
-        Realize "renewable resources, friendlier environment, healthier soil,
-        and safer food".
+        Réaliser des "ressources renouvelables, un environnement plus convivial,
+        un sol plus sain et une nourriture plus sûre".
       </p>
       <p className="mt-4">
-        It has been successfully verified after more than 50 years of practice
+        Il a été vérifié avec succès après plus de 50 ans de pratique
       </p>
     </>
   ),
-  imageAlt: 'GK Resource Recycling Technology',
+  imageAlt: 'Technologie de recyclage des ressources GK',
 }
 
-// 第2部分配置文件 En版
+// 第2部分配置文件 Fr版
 const theLongTermDependenceProps: IWithSquareImagesProps = {
-  title: 'The long-term dependence on fertilizers on arable land has led to',
+  title:
+    'La dépendance à long terme aux engrais sur les terres arables a conduit à',
   features: [
     {
-      name: 'Soil Acidification',
-      title: 'Soil Acidification',
+      name: 'Acidification des sols',
+      title: 'Acidification des sols',
       imageSrc: '/assets/images/gk/s1-1.png',
-      imageAlt: 'Soil Acidification',
+      imageAlt: 'Acidification des sols',
     },
     {
-      name: 'Secondary Salinization',
-      title: 'Secondary Salinization',
+      name: 'Salinisation secondaire',
+      title: 'Salinisation secondaire',
       imageSrc: '/assets/images/gk/s1-2.png',
-      imageAlt: 'Secondary Salinization',
+      imageAlt: 'Salinisation secondaire',
     },
     {
-      name: 'Soil is Poor and Degraded',
-      title: 'Soil is Poor and Degraded',
+      name: 'Les sols sont pauvres et dégradés',
+      title: 'Les sols sont pauvres et dégradés',
       imageSrc: '/assets/images/gk/s1-3.png',
-      imageAlt: 'Soil is Poor and Degraded',
+      imageAlt: 'Les sols sont pauvres et dégradés',
     },
     {
-      name: 'Increased soil-borne diseases',
-      title: 'Increased soil-borne diseases',
+      name: 'Augmentation des maladies transmises par le sol',
+      title: 'Augmentation des maladies transmises par le sol',
       imageSrc: '/assets/images/gk/s1-4.png',
-      imageAlt: 'Increased soil-borne diseases',
+      imageAlt: 'Augmentation des maladies transmises par le sol',
     },
   ],
 }
 
-// 第3部分配置文件 En版
+// 第3部分配置文件 Fr版
 const currentStatusProps: IAlternativeSideBySideWithImagesProps = {
   textAndImageblocks: [
     {
-      name: 'Join the movement',
+      name: 'Rejoindre le mouvement',
       LeftBlock: () => (
         <>
           <div className="mx-auto max-w-xl px-4 sm:px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
             <div>
               <div className="mt-6">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-                  Current status of soil organic matter content
-                  <span>how fast food waste breakdown</span>
+                  État actuel de la matière organique du sol
+                  <span>
+                    la rapidité de la décomposition des déchets alimentaires
+                  </span>
                 </h2>
                 <div className="prose mt-4 text-lg text-gray-500">
                   <ul>
                     <li>
-                      International healthy soil organic matter content 5%
+                      Teneur en matière organique des sols sains à
+                      l'international 5%
                     </li>
-                    <li>Japan 6%</li>
-                    <li>US 5%</li>
+                    <li>Japon 6%</li>
+                    <li>États-Unis 5%</li>
                     <li>Europe 4%</li>
                   </ul>
                 </div>
@@ -107,7 +111,7 @@ const currentStatusProps: IAlternativeSideBySideWithImagesProps = {
       ),
     },
     {
-      name: 'Powered by Biotechnology',
+      name: 'Propulsé par la biotechnologie',
       LeftBlock: () => (
         <>
           <div className="mx-auto max-w-xl px-4 sm:px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
@@ -115,23 +119,25 @@ const currentStatusProps: IAlternativeSideBySideWithImagesProps = {
               <div className="mt-6">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900">
                   <span className="block text-gray-900 xl:inline">
-                    How long does it take for soil organic matter to increase by
-                    0.1%?
+                    Combien de temps faut-il pour que la matière organique du
+                    sol augmente de 0,1%?
                   </span>
-                  <span>not dehydration</span>
+                  <span>pas de déshydratation</span>
                 </h2>
                 <div className="prose mt-4 text-lg text-gray-500">
                   <ul>
-                    <li>Under natural fallowing, it takes 79 years</li>
+                    <li>En jachère naturelle, il faut 79 ans</li>
                     <li>
-                      Green manure fresh grass takes 5 years to add 6 tons per
-                      acre
+                      Les engrais verts frais mettent 5 ans pour ajouter 6
+                      tonnes par acre
                     </li>
                     <li>
-                      Ordinary organic fertilizer takes 2 years to add 9 tons
-                      per acre
+                      Les engrais organiques ordinaires mettent 2 ans pour
+                      ajouter 9 tonnes par acre
                     </li>
-                    <li>GK, it takes 1 year to add 2.4 tons per acre</li>
+                    <li>
+                      Avec GK, il faut 1 an pour ajouter 2,4 tonnes par acre
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -154,28 +160,29 @@ const currentStatusProps: IAlternativeSideBySideWithImagesProps = {
   ],
 }
 
-// 第4部分配置文件 En版
+// 第4部分配置文件 Fr版
 const organicWasteProps: IThreeColumnWithDescriptionProps = {
-  title: 'Organic waste is the highest quality organic matter resource',
+  title:
+    'Les déchets organiques sont la ressource organique de la plus haute qualité',
   description: (
     <>
       <p>
-        Bio-waste, especially kitchen waste, is the highest quality organic
-        matter resource
+        Les biodéchets, en particulier les déchets de cuisine, sont la ressource
+        organique de la plus haute qualité
       </p>
       <p>
-        The protein contained in every 50 million tons of kitchen waste is
-        equivalent to the protein output of 3.3 million acres of soybeans per
-        year
+        Les protéines contenues dans chaque 50 millions de tonnes de déchets de
+        cuisine équivalent à la production de protéines de 3,3 millions d'acres
+        de soja par an
       </p>
     </>
   ),
   imageAspectClassName: 'aspect-w-1 aspect-h-1 ',
   categories: [
     {
-      name: 'Bio-waste',
+      name: 'Biodéchets',
       imageSrc: '/assets/images/gk/s4-1.png',
-      imageAlt: 'Bio-waste',
+      imageAlt: 'Biodéchets',
     },
     {
       name: 'GEME & GEME-Kobold',
@@ -183,19 +190,17 @@ const organicWasteProps: IThreeColumnWithDescriptionProps = {
       imageAlt: 'GEME & GEME-Kobold',
     },
     {
-      name: 'Organic Fertilizer',
+      name: 'Engrais organique',
       imageSrc: '/assets/images/gk/s4-3.png',
-      imageAlt: 'Organic Fertilizer',
+      imageAlt: 'Engrais organique',
     },
   ],
 }
 
-// 第5部分配置文件 En版
+// 第5部分配置文件 Fr版
 const soilImprovementProps: IAlternativeSideBySideWithImagesProps = {
-  title:
-    'Soil Improvement Programs Of GK Technology - Bring Soils Back To Life Quickly',
-  description:
-    'GK soil remediation/improvement, soil enhancement overall ideas core solution:',
+  title: `Programmes d'amélioration des sols de la technologie GK - Ramenez les sols à la vie rapidement`,
+  description: `Réhabilitation/amélioration des sols GK, solution centrale pour l'amélioration globale des sols :`,
   textAndImageblocks: [
     {
       name: 'Join the movement',
@@ -205,20 +210,20 @@ const soilImprovementProps: IAlternativeSideBySideWithImagesProps = {
             <div>
               <div className="mt-6">
                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">
-                  Organic matter enhancement
+                  Amélioration de la matière organique
                 </h3>
                 <p className="mt-4 text-lg text-gray-500">
-                  Soil fast-acting carbon and steady-state carbon synergize with
-                  mineral nutrients to enhance soil physical and chemical
-                  properties
+                  Le carbone à action rapide et le carbone à l'état stable
+                  agissent en synergie avec les nutriments minéraux pour
+                  améliorer les propriétés physiques et chimiques des sols
                 </p>
                 <h3 className="mt-6 text-2xl font-bold tracking-tight text-gray-900">
-                  Revitalization of beneficial bacteria + crop-specific
-                  microbial complex
+                  Revitalisation des bactéries bénéfiques + complexe microbien
+                  spécifique aux cultures
                 </h3>
                 <p className="mt-4 text-lg text-gray-500">
-                  Complex microflora and biostimulants regulate the dynamic
-                  balance of microbial communities
+                  La microflore complexe et les biostimulants régulent
+                  l'équilibre dynamique des communautés microbiennes
                 </p>
               </div>
             </div>
@@ -232,7 +237,7 @@ const soilImprovementProps: IAlternativeSideBySideWithImagesProps = {
             width={490}
             height={490}
             src="/assets/images/gk/s5-1.gif"
-            alt="GK soil improvement"
+            alt="Amélioration des sols GK"
           />
         </>
       ),
@@ -240,75 +245,86 @@ const soilImprovementProps: IAlternativeSideBySideWithImagesProps = {
   ],
 }
 
-// 第6部分配置文件 En版
+// 第6部分配置文件 Fr版
 const empiricalComparisonProps: IEmpiricalComparisonProps = {
   title: (
     <>
-      Empirical comparison before and after GK soil remediation/improvement and
-      soil enhancement
+      Comparaison empirique avant et après la réhabilitation/amélioration du sol
+      GK et l'amélioration du sol
     </>
   ),
   description1: (
     <>
-      The growth distribution of the roots can not only determine how effective
-      the live bacteria fermentation fertilizer is on the health and growth of
-      the crop, but also see the improvement of soil quality
+      La répartition de la croissance des racines peut non seulement déterminer
+      l'efficacité de l'engrais de fermentation de bactéries vivantes sur la
+      santé et la croissance des cultures, mais aussi observer l'amélioration de
+      la qualité du sol
     </>
   ),
   description2: (
     <>
-      In the comparative experiment, you can clearly observe the effectiveness
-      of GK on soil vitality restoration and the promotion of GEME-Kobold rich
-      soil on plant growth and disease resistance
+      Dans l'expérience comparative, vous pouvez clairement observer
+      l'efficacité de GK sur la restauration de la vitalité du sol et la
+      promotion du sol riche en GEME-Kobold sur la croissance des plantes et la
+      résistance aux maladies
     </>
   ),
-  pictureDescription1: 'Left picture: Experimental group using GK technology',
+  pictureDescription1:
+    'Image de gauche : groupe expérimental utilisant la technologie GK',
   pictureSubDescription2:
-    'Right picture: Control group using conventional plantation method',
+    'Image de droite : groupe témoin utilisant la méthode de plantation conventionnelle',
+  featuresImage: {
+    width: 280,
+    height: 150,
+  },
   features: [
     {
-      name: 'Seedling stage',
+      name: 'Stade de semis',
       imageSrc: '/assets/images/gk/s6-1.png',
-      imageAlt: 'Soil Acidification',
+      imageAlt: 'Acidification du sol',
     },
     {
-      name: '2 weeks after sowing',
+      name: '2 semaines après le semis',
       imageSrc: '/assets/images/gk/s6-2.png',
-      imageAlt: 'Secondary Salinization',
+      imageAlt: 'Salinisation secondaire',
     },
     {
-      name: '1 month after sowing',
+      name: '1 mois après le semis',
       imageSrc: '/assets/images/gk/s6-3.png',
-      imageAlt: 'Soil is Poor and Degraded',
+      imageAlt: 'Le sol est pauvre et dégradé',
     },
     {
-      name: 'Field comparison',
+      name: 'Comparaison sur le terrain',
       imageSrc: '/assets/images/gk/s6-4.png',
-      imageAlt: 'Soil is Poor and Degraded',
+      imageAlt: 'Le sol est pauvre et dégradé',
     },
   ],
 }
 
-// 第7部分配置文件 En版
+// 第7部分配置文件 Fr版
 const empiricalComparison2Props: IEmpiricalComparisonProps = {
   title: (
     <>
-      Empirical comparison of contaminated soil and water treatment in Vietnam
-      using GEME-Kobold
+      Comparaison empirique du traitement des sols contaminés et de l'eau au
+      Vietnam utilisant GEME-Kobold
     </>
   ),
+  featuresImage: {
+    width: 592,
+    height: 236,
+  },
   features: [
     {
-      name: 'Before vs After 1',
-      title: 'Before vs After',
+      name: 'Avant vs Après',
+      title: 'Avant vs Après',
       imageSrc: '/assets/images/gk/s7-1.png',
-      imageAlt: 'Before vs After',
+      imageAlt: 'Avant vs Après',
     },
     {
-      name: 'Before vs After 2',
-      title: 'Before vs After',
+      name: 'Avant vs Après',
+      title: 'Avant vs Après',
       imageSrc: '/assets/images/gk/s7-2.png',
-      imageAlt: 'Before vs After 2',
+      imageAlt: 'Avant vs Après 2',
     },
   ],
 }

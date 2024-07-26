@@ -63,6 +63,7 @@ const theLongTermDependenceProps: IWithSquareImagesProps = {
       imageAlt: 'Increased soil-borne diseases',
     },
   ],
+  textColorClassName: '!text-gray-900',
 }
 
 // 第3部分配置文件 En版
@@ -265,6 +266,10 @@ const empiricalComparisonProps: IEmpiricalComparisonProps = {
   pictureDescription1: 'Left picture: Experimental group using GK technology',
   pictureSubDescription2:
     'Right picture: Control group using conventional plantation method',
+  featuresImage: {
+    width: 280,
+    height: 150,
+  },
   features: [
     {
       name: 'Seedling stage',
@@ -297,6 +302,10 @@ const empiricalComparison2Props: IEmpiricalComparisonProps = {
       using GEME-Kobold
     </>
   ),
+  featuresImage: {
+    width: 592,
+    height: 236,
+  },
   features: [
     {
       name: 'Before vs After 1',
