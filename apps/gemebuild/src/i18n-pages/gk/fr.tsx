@@ -64,6 +64,7 @@ const theLongTermDependenceProps: IWithSquareImagesProps = {
       imageAlt: 'Augmentation des maladies transmises par le sol',
     },
   ],
+  textColorClassName: '!text-gray-900',
 }
 
 // 第3部分配置文件 Fr版

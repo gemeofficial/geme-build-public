@@ -63,6 +63,7 @@ const theLongTermDependenceProps: IWithSquareImagesProps = {
       imageAlt: 'Zunahme bodenbürtiger Krankheiten',
     },
   ],
+  textColorClassName: '!text-gray-900',
 }
 
 // 第3部分配置文件 De版
