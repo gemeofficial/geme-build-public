@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
 import SplitWithNavBar from '../../../components/split-with-nav-bar'
+import { ILinkComponent } from '../../../contexts/link-context'
 
 export interface IManualHeroSectionProps {
   title: string
@@ -9,6 +10,7 @@ export interface IManualHeroSectionProps {
   hintsLinkLabel: string
   WhatsAppBusinessAccountURL?: string
   buttonLn?: boolean
+  PrefetchLink?: ILinkComponent
 }
 
 function TitleComponent({ title }: { title: string }) {
@@ -27,6 +29,7 @@ export default function HeroSection({
   secondaryButtonLabel,
   WhatsAppBusinessAccountURL,
   buttonLn,
+  PrefetchLink,
 }: IManualHeroSectionProps) {
   const whatsHref = WhatsAppBusinessAccountURL || '/'
 
@@ -40,6 +43,7 @@ export default function HeroSection({
         imageAlt="GEME tutorial"
         videoUrl="https://www.youtube.com/embed/5rWoJlB-uVo"
         buttonLn={buttonLn}
+        PrefetchLink={PrefetchLink}
         buttons={{
           primaryButton: {
             label: primaryButtonLabel,

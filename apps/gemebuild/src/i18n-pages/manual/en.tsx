@@ -1,3 +1,4 @@
+import { ILinkComponent } from '../../contexts/link-context'
 import CanNotCompostItems, {
   ICanNotCompostItemsProps,
   noSymbolIcon,
@@ -200,10 +201,14 @@ const canNotCompostItemsProps: ICanNotCompostItemsProps = {
   ],
 }
 
-export function ManualsPageEn() {
+export function ManualsPageEn({
+  PrefetchLink,
+}: {
+  PrefetchLink?: ILinkComponent
+}) {
   return (
     <>
-      <HeroSection {...manualHeroSectionProps} />
+      <HeroSection {...manualHeroSectionProps} PrefetchLink={PrefetchLink} />
       <FeaturesWithVideos {...featuresWithVideos} />
       <GeemDailyUsage {...geemDailyUsageProps} />
       <CanNotCompostItems {...canNotCompostItemsProps} />
