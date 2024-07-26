@@ -3,58 +3,7 @@ import clsx from 'clsx'
 import Image from 'next/image'
 import Link from 'next/link'
 import { SectionTitle } from 'ui'
-
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
-}
-
-const features = [
-  {
-    name: 'Three card types',
-    title: 'Three card types',
-    description:
-      'Today, Next, and Someday cards allow you to defer your dreams into the future.',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/product-feature-08-detail-01.jpg',
-    imageAlt: 'Green cardstock box containing white, beige, and brown cards.',
-  },
-  {
-    name: 'The perfect mix',
-    title: 'The perfect mix',
-    description:
-      'Each refill pack contains plenty of cards to last you a month of procrastination.',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/product-feature-08-detail-02.jpg',
-    imageAlt: 'Green cardstock box open with 50 cards inside.',
-  },
-  {
-    name: 'Dot grid backs',
-    tile: 'Dot grid backs',
-    description:
-      'Flip a card over to doodle during meetings when you should be listening.',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/product-feature-08-detail-03.jpg',
-    imageAlt:
-      'Detail of white today card, beige next card, and brown someday card with dot grid.',
-  },
-  {
-    name: 'Refill packs',
-    title: 'Refill packs',
-    description:
-      'Subscribe and save on routine refill packs to keep you productive all year long.',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/product-feature-08-detail-04.jpg',
-    imageAlt:
-      'Stack of three green cardstock boxes with 3 hole cutouts showing cards inside.',
-  },
-]
-
-const withSquareImagesPropsExample: IWithSquareImagesProps = {
-  heading: 'Focus',
-  title: 'Simple productivity',
-  description: `Focus allows you to plan 10 daily tasks, while also thinking ahead about what's next. Forget distracting digital apps and embrace these small, sturdy pieces of paper.`,
-  features,
-}
+import classNames from 'ui/src/lib/classNames'
 
 function WithSquareImages({
   heading,
@@ -62,6 +11,7 @@ function WithSquareImages({
   description,
   features,
   grayBackground = false,
+  textColorClassName,
 }: IWithSquareImagesProps) {
   return (
     <div className={classNames(grayBackground ? 'bg-gray-50' : 'bg-white')}>
@@ -72,7 +22,12 @@ function WithSquareImages({
           </h2>
         )}
         {title && (
-          <SectionTitle className="mt-2 text-3xl sm:text-4xl">
+          <SectionTitle
+            className={classNames(
+              'mt-2 text-3xl sm:text-4xl',
+              textColorClassName || '',
+            )}
+          >
             {title}
           </SectionTitle>
         )}
@@ -92,7 +47,12 @@ function WithSquareImages({
               <div key={name} className="flex flex-col-reverse px-0 py-0">
                 {title && (
                   <div className="mt-4">
-                    <h3 className="text-lg font-semibold  text-v2311-primary">
+                    <h3
+                      className={classNames(
+                        'text-lg font-semibold  text-v2311-primary',
+                        textColorClassName || '',
+                      )}
+                    >
                       {title}
                     </h3>
                     {featureDesc != null && (
@@ -115,7 +75,12 @@ function WithSquareImages({
                     )}
                   </div>
                 )}
-                <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-2xl  border-2 border-[#8ec597]">
+                <div
+                  className={classNames(
+                    'aspect-w-1 aspect-h-1 overflow-hidden rounded-2xl ',
+                    textColorClassName ? '' : 'border-2 border-[#8ec597]',
+                  )}
+                >
                   <Image
                     src={imageSrc}
                     alt={imageAlt}
@@ -152,7 +117,7 @@ export interface IWithSquareImagesProps {
     readMoreLinkHref?: string
   }[]
   grayBackground?: boolean
+  textColorClassName?: string
 }
 
 export default WithSquareImages
-export { withSquareImagesPropsExample }
