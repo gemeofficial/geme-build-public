@@ -27,9 +27,9 @@ export default function HeroSection({
   hintsLinkLabel,
   primaryButtonLabel,
   secondaryButtonLabel,
-  WhatsAppBusinessAccountURL,
   buttonLn,
   PrefetchLink,
+  WhatsAppBusinessAccountURL,
 }: IManualHeroSectionProps) {
   const whatsHref = WhatsAppBusinessAccountURL || '/'
 

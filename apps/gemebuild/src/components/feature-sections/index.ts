@@ -9,3 +9,6 @@ export { default as GridWithVideos } from './GridWithVideos'
 
 export * from './WithFeatureGridList'
 export { default as WithFeatureGridList } from './WithFeatureGridList'
+
+export * from './GridWithOffsetIcons'
+export { default as GridWithOffsetIcons } from './GridWithOffsetIcons'
