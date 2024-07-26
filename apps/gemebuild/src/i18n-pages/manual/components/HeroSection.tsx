@@ -7,7 +7,7 @@ export interface IManualHeroSectionProps {
   description: ReactNode
   primaryButtonLabel: string
   secondaryButtonLabel: string
-  hintsLinkLabel: string
+  hintsLinkLabel?: string
   WhatsAppBusinessAccountURL?: string
   buttonLn?: boolean
   PrefetchLink?: ILinkComponent
@@ -59,7 +59,7 @@ export default function HeroSection({
           },
         }}
         hintsLink={{
-          label: hintsLinkLabel,
+          label: hintsLinkLabel || '',
           linkProps: {
             href: '/manuals-download',
           },

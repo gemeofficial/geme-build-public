@@ -81,7 +81,7 @@ function SplitWithNavBar({
                 <div
                   className={classNames(
                     'rounded-md shadow mt-3 sm:mt-0',
-                    buttonLn ? '' : 'ml-3',
+                    buttonLn ? '' : 'md:ml-3',
                   )}
                 >
                   <Link

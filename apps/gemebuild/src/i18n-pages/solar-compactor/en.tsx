@@ -43,7 +43,7 @@ const solarCompactorHeroSectionProps: IManualHeroSectionProps = {
   ),
   primaryButtonLabel: `Let's talk`,
   secondaryButtonLabel: 'Customer Service',
-  hintsLinkLabel: 'Download PDF for manual book',
+  buttonLn: true,
 }
 
 // 第2部分配置文件 En版

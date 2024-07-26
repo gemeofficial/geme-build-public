@@ -42,6 +42,7 @@ const manualHeroSectionProps: IManualHeroSectionProps = {
   primaryButtonLabel: 'Get Help on WhatsApp',
   secondaryButtonLabel: 'Customer Service',
   hintsLinkLabel: 'Download PDF for manual book',
+  buttonLn: true,
 }
 
 // 第2部分配置文件 En版
