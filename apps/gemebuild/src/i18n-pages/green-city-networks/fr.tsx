@@ -7,77 +7,82 @@ import GcnIntelligentManagementApp from './components/GcnIntelligentManagementAp
 import HeroSection, { IGCNHeroSectionProps } from './components/HeroSection'
 import { IAlternativeSideBySideWithImagesProps } from '../../components/feature-sections'
 
-// 第1部分配置文件 En版
+// 第1部分配置文件 Fr版
 const gcnHeroSectionMessagesObj: IGCNHeroSectionProps = {
-  title: 'Intelligent Waste Separation Total Solution',
+  title: 'Solution totale de séparation des déchets intelligente',
   description:
-    'AI Intelligent Recycling Management Platform + Big Data management System',
+    'Plateforme de gestion du recyclage intelligente AI + Système de gestion des Big Data',
   subDescription1: (
     <>
       <strong className="flex-1 text-left ">
-        GCN Intelligent Management Terminal Platform
+        Plateforme de gestion intelligente GCN
       </strong>
       <strong className="flex-1 text-left lg:text-right">
-        GCN Intelligent Management APP
+        Application de gestion intelligente GCN
       </strong>
     </>
   ),
   subDescription2: (
     <>
       <p className="mt-4 text-lg text-gray-500">
-        GreenCityNetworks (GCN) is our waste management platform and the common
-        platform that combines all our solutions.
+        GreenCityNetworks (GCN) est notre plateforme de gestion des déchets et
+        la plateforme commune qui combine toutes nos solutions.
       </p>
       <p className="mt-4 text-lg text-gray-500">
-        GCN provides a monitoring environment, smart dashboard, analysis and
-        control center in a comprehensive and simple package.
+        GCN fournit un environnement de surveillance, un tableau de bord
+        intelligent, un centre d'analyse et de contrôle dans un package complet
+        et simple.
       </p>
       <p className="mt-4 text-lg text-gray-500">
-        Based on mobile internet, big data, IoT, cloud computing, and artificial
-        intelligence, GCN can be used anywhere you have a desktop or mobile
-        terminal with internet connection.
+        Basé sur l'internet mobile, les big data, l'IoT, le cloud computing et
+        l'intelligence artificielle, GCN peut être utilisé partout où vous avez
+        un terminal de bureau ou mobile avec une connexion internet.
       </p>
       <p className="mt-4 text-lg text-gray-500">
-        It gives you complete control and insight into your waste management
-        operations and proves cost reduction benefits across all of your
-        operational departments.
+        Il vous donne un contrôle complet et une vue d'ensemble de vos
+        opérations de gestion des déchets et prouve les avantages de la
+        réduction des coûts dans tous vos départements opérationnels.
       </p>
     </>
   ),
 }
 
-// 第2部分配置文件 En版
+// 第2部分配置文件 Fr版
 const gcnIntelligentManagementAppProps: IAlternativeSideBySideWithImagesProps =
   {
     textAndImageblocks: [
       {
-        name: 'GCN Intelligent Management APP',
+        name: 'Application de gestion intelligente GCN',
         LeftBlock: () => (
           <>
             <div className="mx-auto max-w-xl px-4 sm:px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
               <div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-                    <span className="text-emerald-600">GCN</span> Intelligent
-                    Management APP
+                    <span className="text-emerald-600">GCN</span> Application de
+                    gestion intelligente
                   </h2>
                   <p className="mt-4 text-lg text-gray-500">
-                    Operation personnel can easily complete it through the
-                    Sorting Manager APP anytime and anywhere.
+                    Le personnel opérationnel peut facilement le réaliser via
+                    l'application de gestion du tri à tout moment et en tout
+                    lieu.
                   </p>
                   <div className="mt-4 text-lg prose text-gray-500">
                     <ul>
-                      <li>Equipment activation, inspection & Monitoring</li>
-                      <li>Trash Removal</li>
-                      <li>Fault Report</li>
-                      <li>Data Acquisition & Analysis</li>
+                      <li>
+                        Activation des équipements, inspection et surveillance
+                      </li>
+                      <li>Enlèvement des déchets</li>
+                      <li>Rapport de panne</li>
+                      <li>Acquisition et analyse de données</li>
                     </ul>
                   </div>
                   <p className="mt-4 text-lg text-gray-500">
-                    At the same time, it integrates with other systems to obtain
-                    various kinds of waste management data reports, which can
-                    comprehensively improve the effectiveness of operation
-                    managers. Let the sunshine help you compress the garbage!
+                    En même temps, il s'intègre à d'autres systèmes pour obtenir
+                    divers rapports de données de gestion des déchets, ce qui
+                    peut améliorer globalement l'efficacité des gestionnaires
+                    opérationnels. Laissez le soleil vous aider à compresser les
+                    déchets!
                   </p>
                 </div>
               </div>
@@ -91,7 +96,7 @@ const gcnIntelligentManagementAppProps: IAlternativeSideBySideWithImagesProps =
               width={490}
               height={490}
               src="/assets/images/green-city-networks/s2-1.png"
-              alt="a screen of the GCN Intelligent Management APP"
+              alt="un écran de l'application de gestion intelligente GCN"
             />
           </>
         ),
@@ -99,46 +104,46 @@ const gcnIntelligentManagementAppProps: IAlternativeSideBySideWithImagesProps =
     ],
   }
 
-// 第3部分配置文件 En版
+// 第3部分配置文件 Fr版
 const gcnCustomizedDevelopmentProps: IGcnCustomizedDevelopmentProps = {
   title: (
     <>
-      <span className="text-emerald-600">GCN</span> Customized Development
+      <span className="text-emerald-600">GCN</span> Développement personnalisé
     </>
   ),
-  subTitle: 'Intelligent development of management platform/APP',
+  subTitle: 'Développement intelligent de la plateforme de gestion/application',
   description: (
     <>
       <p className="mt-3 text-lg text-gray-500">
-        Meet your individual needs for functionality
+        Répondez à vos besoins individuels en matière de fonctionnalité
         <br></br>
-        Create smooth user experience through native or HTML5 apps developed on
-        IOS/ANDROID
+        Créez une expérience utilisateur fluide grâce à des applications natives
+        ou HTML5 développées sur IOS/ANDROID
       </p>
       <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">
-        Visual custom collocation
+        Collocation visuelle personnalisée
       </h3>
       <p className="mt-3 text-lg text-gray-500">
-        Custom templates allow you to build a personalized management platform
-        by dragging and dropping freely
+        Les modèles personnalisés vous permettent de créer une plateforme de
+        gestion personnalisée en faisant glisser et déposer librement
       </p>
       <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">
-        Industry Standardized Templates
+        Modèles standardisés de l'industrie
       </h3>
       <p className="mt-3 text-lg text-gray-500">
-        Industry Standardized Templates Professional template for intelligent
-        waste management industry, comprehensive support, safe and stable, and
-        short delivery cycle
+        Les modèles standardisés de l'industrie sont des modèles professionnels
+        pour l'industrie de la gestion intelligente des déchets, offrant un
+        soutien complet, sûr et stable, et un cycle de livraison court
       </p>
       <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">
-        Powerful data analysis function
+        Fonction puissante d'analyse des données
       </h3>
       <p className="mt-3 text-lg text-gray-500">
-        Make waste management operations more accurate
+        Rendre les opérations de gestion des déchets plus précises
       </p>
     </>
   ),
-  imageAlt: 'GEME green city network',
+  imageAlt: 'Réseau de la ville verte GEME',
 }
 
 export function GreenCityNetworksPageFr() {

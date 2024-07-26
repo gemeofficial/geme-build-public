@@ -7,77 +7,78 @@ import GcnIntelligentManagementApp from './components/GcnIntelligentManagementAp
 import HeroSection, { IGCNHeroSectionProps } from './components/HeroSection'
 import { IAlternativeSideBySideWithImagesProps } from '../../components/feature-sections'
 
-// 第1部分配置文件 En版
+// 第1部分配置文件 De版
 const gcnHeroSectionMessagesObj: IGCNHeroSectionProps = {
-  title: 'Intelligent Waste Separation Total Solution',
+  title: 'Intelligente Gesamtlösung zur Abfalltrennung',
   description:
-    'AI Intelligent Recycling Management Platform + Big Data management System',
+    'KI-Intelligente Recycling-Management-Plattform + Big-Data-Management-System',
   subDescription1: (
     <>
       <strong className="flex-1 text-left ">
-        GCN Intelligent Management Terminal Platform
+        GCN-Intelligente Verwaltungsplattform
       </strong>
       <strong className="flex-1 text-left lg:text-right">
-        GCN Intelligent Management APP
+        GCN-Intelligente Verwaltungs-APP
       </strong>
     </>
   ),
   subDescription2: (
     <>
       <p className="mt-4 text-lg text-gray-500">
-        GreenCityNetworks (GCN) is our waste management platform and the common
-        platform that combines all our solutions.
+        GreenCityNetworks (GCN) ist unsere Abfallmanagement-Plattform und die
+        gemeinsame Plattform, die alle unsere Lösungen kombiniert.
       </p>
       <p className="mt-4 text-lg text-gray-500">
-        GCN provides a monitoring environment, smart dashboard, analysis and
-        control center in a comprehensive and simple package.
+        GCN bietet eine Überwachungsumgebung, ein intelligentes Dashboard, ein
+        Analyse- und Kontrollzentrum in einem umfassenden und einfachen Paket.
       </p>
       <p className="mt-4 text-lg text-gray-500">
-        Based on mobile internet, big data, IoT, cloud computing, and artificial
-        intelligence, GCN can be used anywhere you have a desktop or mobile
-        terminal with internet connection.
+        Basierend auf mobilem Internet, Big Data, IoT, Cloud-Computing und
+        künstlicher Intelligenz kann GCN überall dort eingesetzt werden, wo Sie
+        einen Desktop oder ein mobiles Endgerät mit Internetverbindung haben.
       </p>
       <p className="mt-4 text-lg text-gray-500">
-        It gives you complete control and insight into your waste management
-        operations and proves cost reduction benefits across all of your
-        operational departments.
+        Es gibt Ihnen die vollständige Kontrolle und Einblick in Ihre
+        Abfallmanagement-Operationen und beweist Kostensenkungsvorteile in all
+        Ihren Betriebsabteilungen.
       </p>
     </>
   ),
 }
 
-// 第2部分配置文件 En版
+// 第2部分配置文件 De版
 const gcnIntelligentManagementAppProps: IAlternativeSideBySideWithImagesProps =
   {
     textAndImageblocks: [
       {
-        name: 'GCN Intelligent Management APP',
+        name: 'GCN Intelligente Verwaltungs-APP',
         LeftBlock: () => (
           <>
             <div className="mx-auto max-w-xl px-4 sm:px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
               <div>
                 <div className="mt-6">
                   <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-                    <span className="text-emerald-600">GCN</span> Intelligent
-                    Management APP
+                    <span className="text-emerald-600">GCN</span> Intelligente
+                    Verwaltungs-APP
                   </h2>
                   <p className="mt-4 text-lg text-gray-500">
-                    Operation personnel can easily complete it through the
-                    Sorting Manager APP anytime and anywhere.
+                    Das Betriebspersonal kann dies jederzeit und überall über
+                    die Sortier-Manager-APP einfach erledigen.
                   </p>
                   <div className="mt-4 text-lg prose text-gray-500">
                     <ul>
-                      <li>Equipment activation, inspection & Monitoring</li>
-                      <li>Trash Removal</li>
-                      <li>Fault Report</li>
-                      <li>Data Acquisition & Analysis</li>
+                      <li>Geräteaktivierung, Inspektion und Überwachung</li>
+                      <li>Müllbeseitigung</li>
+                      <li>Fehlerbericht</li>
+                      <li>Datenerfassung und -analyse</li>
                     </ul>
                   </div>
                   <p className="mt-4 text-lg text-gray-500">
-                    At the same time, it integrates with other systems to obtain
-                    various kinds of waste management data reports, which can
-                    comprehensively improve the effectiveness of operation
-                    managers. Let the sunshine help you compress the garbage!
+                    Gleichzeitig integriert es sich mit anderen Systemen, um
+                    verschiedene Arten von Abfallmanagement-Datenberichten zu
+                    erhalten, die die Effizienz der Betriebsleiter umfassend
+                    verbessern können. Lassen Sie die Sonne helfen, den Müll zu
+                    komprimieren!
                   </p>
                 </div>
               </div>
@@ -91,7 +92,7 @@ const gcnIntelligentManagementAppProps: IAlternativeSideBySideWithImagesProps =
               width={490}
               height={490}
               src="/assets/images/green-city-networks/s2-1.png"
-              alt="a screen of the GCN Intelligent Management APP"
+              alt="ein Bildschirm der GCN Intelligente Verwaltungs-APP"
             />
           </>
         ),
@@ -99,42 +100,42 @@ const gcnIntelligentManagementAppProps: IAlternativeSideBySideWithImagesProps =
     ],
   }
 
-// 第3部分配置文件 En版
+// 第3部分配置文件 De版
 const gcnCustomizedDevelopmentProps: IGcnCustomizedDevelopmentProps = {
   title: (
     <>
-      <span className="text-emerald-600">GCN</span> Customized Development
+      <span className="text-emerald-600">GCN</span> maßgeschneiderte Entwicklung
     </>
   ),
-  subTitle: 'Intelligent development of management platform/APP',
+  subTitle: 'Intelligente Entwicklung von Verwaltungsplattform/APP',
   description: (
     <>
       <p className="mt-3 text-lg text-gray-500">
-        Meet your individual needs for functionality
+        Erfüllen Sie Ihre individuellen Funktionsanforderungen
         <br></br>
-        Create smooth user experience through native or HTML5 apps developed on
-        IOS/ANDROID
+        Erstellen Sie ein reibungsloses Benutzererlebnis durch native oder
+        HTML5-Apps, die auf IOS/ANDROID entwickelt wurden
       </p>
       <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">
-        Visual custom collocation
+        Visuelle benutzerdefinierte Zuordnung
       </h3>
       <p className="mt-3 text-lg text-gray-500">
-        Custom templates allow you to build a personalized management platform
-        by dragging and dropping freely
+        Benutzerdefinierte Vorlagen ermöglichen es Ihnen, eine personalisierte
+        Verwaltungsplattform durch Ziehen und Ablegen frei zu erstellen
       </p>
       <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">
-        Industry Standardized Templates
+        Branchenstandardisierte Vorlagen
       </h3>
       <p className="mt-3 text-lg text-gray-500">
-        Industry Standardized Templates Professional template for intelligent
-        waste management industry, comprehensive support, safe and stable, and
-        short delivery cycle
+        Branchenstandardisierte Vorlagen Professionelle Vorlage für die
+        intelligente Abfallwirtschaft, umfassende Unterstützung, sicher und
+        stabil und kurze Lieferzeiten
       </p>
       <h3 className="mt-6 text-xl font-bold tracking-tight text-gray-900">
-        Powerful data analysis function
+        Leistungsstarke Datenanalysefunktion
       </h3>
       <p className="mt-3 text-lg text-gray-500">
-        Make waste management operations more accurate
+        Machen Sie Abfallmanagement-Operationen genauer
       </p>
     </>
   ),
