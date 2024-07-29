@@ -364,7 +364,7 @@ const compareProps: IPdpCompareProps = {
         compareItems: [
           {
             title: 'Echter Kompost',
-            desc: 'Niedrigwartungs-Mikroben beteiligt',
+            desc: 'Niedrige Reduktionsrate',
           },
           {
             title: 'Kohlenstofffilter regelmäßig wechseln',

@@ -373,7 +373,7 @@ const compareProps: IPdpCompareProps = {
         compareItems: [
           {
             title: 'Real Compost',
-            desc: 'Low maintenance microbes involved',
+            desc: 'Low reduction rate',
           },
           {
             title: 'Change carbon filter regularly',

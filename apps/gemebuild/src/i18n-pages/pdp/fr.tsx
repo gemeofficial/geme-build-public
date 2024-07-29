@@ -365,7 +365,7 @@ const compareProps: IPdpCompareProps = {
         compareItems: [
           {
             title: 'Véritable compost',
-            desc: 'Microbes à faible entretien impliqués',
+            desc: 'Faible taux de réduction',
           },
           {
             title: 'Changer régulièrement le filtre à charbon',
