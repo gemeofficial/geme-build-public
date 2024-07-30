@@ -4,42 +4,15 @@ import type {
   IReturnPolicyEndProps,
   IReturnPolicyProps,
 } from './components'
-import { ISiteHelpTabsProps, SiteHelpTabs } from '../../components/tabs'
+import { ETabsId, SiteHelpTabs } from '../../components/tabs'
 import Svg7Days from './components/Svg7Days'
 import Svg30Days from './components/Svg30Days'
 import Svg45Days from './components/Svg45Days'
 import Svg45DaysAfter from './components/Svg45DaysAfter'
+import { getWarrantyTabsTextInfo } from '../../helpers/warranty-tabs-text-info'
 
 // navbar的内容 配置文件 De版
-const siteHelpTabsProps: ISiteHelpTabsProps = {
-  tabs: [
-    {
-      title: 'Bedingungen und Konditionen der Dienstleistungsvereinbarung',
-      id: 'terms-and-conditions',
-    },
-    {
-      title: 'Garantie',
-      id: 'warranty',
-    },
-    {
-      title: 'Garantieverlängerung',
-      id: 'warranty-extend',
-    },
-    {
-      title: 'Rückgaberecht',
-      id: 'return-policy',
-    },
-    {
-      title: 'Datenschutzrichtlinie',
-      id: 'privacy-policy',
-    },
-    {
-      title: 'GEME Dots-Treueprogramm',
-      id: 'geme-dots-loyalty-program',
-    },
-  ],
-  currentTabId: 'return-policy',
-}
+const tabs = getWarrantyTabsTextInfo('de', ETabsId.ReturnPolicy)
 
 // 静态页面的内容一 配置文件 De版
 const returnPolicyCurrentProps: IReturnPolicyCurrentProps = {
@@ -194,7 +167,7 @@ function ReturnPolicyPageDe() {
   return (
     <>
       <h1 className="sr-only">GAME-Rückgabebedingungen</h1>
-      <SiteHelpTabs {...siteHelpTabsProps} />
+      <SiteHelpTabs {...tabs} />
       <ReturnPolicy {...childProps} />
     </>
   )

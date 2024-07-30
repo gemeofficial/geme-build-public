@@ -1,39 +1,12 @@
 import { GemeDotsLoyaltyProgram } from './components'
 import type { IGemeDotsProps } from './components'
-import { ISiteHelpTabsProps, SiteHelpTabs } from '../../components/tabs'
+import { ETabsId, SiteHelpTabs } from '../../components/tabs'
 import s from './components/index.module.css'
 import cn from 'clsx'
+import { getWarrantyTabsTextInfo } from '../../helpers/warranty-tabs-text-info'
 
 // Navbar内容 配置文件 En版
-const siteHelpTabsProps: ISiteHelpTabsProps = {
-  tabs: [
-    {
-      title: 'Terms and Conditions of Service Agreement',
-      id: 'terms-and-conditions',
-    },
-    {
-      title: 'Warranty',
-      id: 'warranty',
-    },
-    {
-      title: 'Warranty Extend',
-      id: 'warranty-extend',
-    },
-    {
-      title: 'Return Policy',
-      id: 'return-policy',
-    },
-    {
-      title: 'Privacy Policy',
-      id: 'privacy-policy',
-    },
-    {
-      title: 'GEME Dots Loyalty Program',
-      id: 'geme-dots-loyalty-program',
-    },
-  ],
-  currentTabId: 'geme-dots-loyalty-program',
-}
+const tabs = getWarrantyTabsTextInfo('en', ETabsId.GemeDotsLoyaltyProgram)
 
 // 静态页面的内容 配置文件 En版
 const gemeDotsProps: IGemeDotsProps = {
@@ -202,7 +175,7 @@ function GemeDotsLoyaltyProgramPageEn() {
   return (
     <>
       <h1 className="sr-only">GEME Dots Loyalty Program Details</h1>
-      <SiteHelpTabs {...siteHelpTabsProps} />
+      <SiteHelpTabs {...tabs} />
       <GemeDotsLoyaltyProgram {...gemeDotsProps} />
     </>
   )

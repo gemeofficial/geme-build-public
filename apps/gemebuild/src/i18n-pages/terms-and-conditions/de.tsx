@@ -1,39 +1,9 @@
-import {
-  TermsAndConditions,
-  ITermsAndConditionsProps,
-} from './components'
-import { SiteHelpTabs, ISiteHelpTabsProps } from '../../components/tabs'
+import { TermsAndConditions, ITermsAndConditionsProps } from './components'
+import { ETabsId, SiteHelpTabs } from '../../components/tabs'
+import { getWarrantyTabsTextInfo } from '../../helpers/warranty-tabs-text-info'
 
 // 静态页面的navBar内容 配置文件 De版
-const siteHelpTabsProps: ISiteHelpTabsProps = {
-  tabs: [
-    {
-      title: 'Bedingungen und Konditionen der Dienstleistungsvereinbarung',
-      id: 'terms-and-conditions',
-    },
-    {
-      title: 'Garantie',
-      id: 'warranty',
-    },
-    {
-      title: 'Garantieverlängerung',
-      id: 'warranty-extend',
-    },
-    {
-      title: 'Rückgaberecht',
-      id: 'return-policy',
-    },
-    {
-      title: 'Datenschutzrichtlinie',
-      id: 'privacy-policy',
-    },
-    {
-      title: 'GEME Dots-Treueprogramm',
-      id: 'geme-dots-loyalty-program',
-    },
-  ],
-  currentTabId: 'terms-and-conditions',
-}
+const tabs = getWarrantyTabsTextInfo('de', ETabsId.TermsAndConditions)
 
 // 静态页面的内容 配置文件 De版
 const termsAndConditionsProps: ITermsAndConditionsProps = {
@@ -297,7 +267,7 @@ function TermsAndConditionsPageDe() {
   return (
     <>
       <h1 className="sr-only">Allgemeine Geschäftsbedingungen von GEME</h1>
-      <SiteHelpTabs {...siteHelpTabsProps} />
+      <SiteHelpTabs {...tabs} />
       <TermsAndConditions {...termsAndConditionsProps} />
     </>
   )

@@ -1,37 +1,10 @@
 import { Warranty } from './components'
 import type { IWarrantyProps } from './components'
-import { SiteHelpTabs, ISiteHelpTabsProps } from '../../components/tabs'
+import { SiteHelpTabs, ETabsId } from '../../components/tabs'
+import { getWarrantyTabsTextInfo } from '../../helpers/warranty-tabs-text-info'
 
 // 静态页面的navBar内容 配置文件 En版
-const siteHelpTabsProps: ISiteHelpTabsProps = {
-  tabs: [
-    {
-      title: 'Terms and Conditions of Service Agreement',
-      id: 'terms-and-conditions',
-    },
-    {
-      title: 'Warranty',
-      id: 'warranty',
-    },
-    {
-      title: 'Warranty Extend',
-      id: 'warranty-extend',
-    },
-    {
-      title: 'Return Policy',
-      id: 'return-policy',
-    },
-    {
-      title: 'Privacy Policy',
-      id: 'privacy-policy',
-    },
-    {
-      title: 'GEME Dots Loyalty Program',
-      id: 'geme-dots-loyalty-program',
-    },
-  ],
-  currentTabId: 'warranty',
-}
+const tabs = getWarrantyTabsTextInfo('en', ETabsId.Warranty)
 
 // 静态页面的内容 配置文件 En版
 const warrantyProps: IWarrantyProps = {
@@ -190,7 +163,7 @@ function WarrantyPageEn() {
   return (
     <>
       <h1 className="sr-only">GEME Product Warranty Information</h1>
-      <SiteHelpTabs {...siteHelpTabsProps} />
+      <SiteHelpTabs {...tabs} />
       <Warranty {...warrantyProps} />
     </>
   )

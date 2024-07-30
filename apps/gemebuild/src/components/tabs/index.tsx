@@ -30,7 +30,7 @@ const Tabs = ({ tabs }: ITabsProps) => {
   return (
     <div className="p-4 bg-gray-50">
       <nav
-        className="-mb-px flex lg:space-x-10 justify-center flex-col lg:flex-row"
+        className="-mb-px flex xl:space-x-10 justify-center flex-col xl:flex-row"
         aria-label="Tabs"
       >
         {tabs.map((tab) => (
@@ -70,40 +70,49 @@ interface ISiteHelpTabsProps {
   currentTabId: string // id of the current tab
 }
 
+export enum ETabsId {
+  TermsAndConditions = 'terms-and-conditions',
+  Warranty = 'warranty',
+  WarrantyExtend = 'warranty-extend',
+  ReturnPolicy = 'return-policy',
+  PrivacyPolicy = 'privacy-policy',
+  GemeDotsLoyaltyProgram = 'geme-dots-loyalty-program',
+}
+
 const staticTabs: Pick<ITab, 'href' | 'icon' | 'id'>[] = [
   {
-    id: 'terms-and-conditions',
+    id: ETabsId.TermsAndConditions,
     href: '/terms-and-conditions',
     icon: UserIcon,
   },
   {
-    id: 'warranty',
+    id: ETabsId.Warranty,
     href: '/warranty',
     icon: CheckCircleIcon,
   },
   {
-    id: 'warranty-extend',
+    id: ETabsId.WarrantyExtend,
     href: '/warranty-extend',
     icon: PlusCircleIcon,
   },
   {
-    id: 'return-policy',
+    id: ETabsId.ReturnPolicy,
     href: '/return-policy',
     icon: DocumentIcon,
   },
   {
-    id: 'privacy-policy',
+    id: ETabsId.PrivacyPolicy,
     href: '/privacy-policy',
     icon: CubeIcon,
   },
   {
-    id: 'geme-dots-loyalty-program',
+    id: ETabsId.GemeDotsLoyaltyProgram,
     href: '/geme-dots-loyalty-program',
     icon: DocumentTextIcon,
   },
 ]
 
-function siteHelpTabsPropsToTabsProps({
+function tabsToTabsProps({
   tabs,
   currentTabId,
 }: ISiteHelpTabsProps): ITabsProps {
@@ -117,7 +126,7 @@ function siteHelpTabsPropsToTabsProps({
 }
 
 const SiteHelpTabs = (props: ISiteHelpTabsProps) => {
-  const tabsProps = siteHelpTabsPropsToTabsProps(props)
+  const tabsProps = tabsToTabsProps(props)
   return <Tabs {...tabsProps} />
 }
 
