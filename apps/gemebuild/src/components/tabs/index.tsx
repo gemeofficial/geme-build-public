@@ -9,20 +9,8 @@ import {
   DocumentTextIcon,
 } from '@heroicons/react/20/solid'
 import classNames from '../../helpers/class-names'
-import { ComponentType, ComponentPropsWithRef } from 'react'
 import { useLink } from '../../contexts/link-context'
-
-interface ITab {
-  id: string
-  title: string
-  href: string
-  icon: ComponentType<ComponentPropsWithRef<'svg'>>
-  current: boolean
-}
-
-interface ITabsProps {
-  tabs: ITab[]
-}
+import { ETabsId, ISiteHelpTabsProps, ITab, ITabsProps } from './type'
 
 const Tabs = ({ tabs }: ITabsProps) => {
   const Link = useLink()
@@ -60,23 +48,6 @@ const Tabs = ({ tabs }: ITabsProps) => {
       </nav>
     </div>
   )
-}
-
-interface ISiteHelpTabsProps {
-  tabs: {
-    id: string // unique id
-    title: string // title of the tab
-  }[]
-  currentTabId: string // id of the current tab
-}
-
-export enum ETabsId {
-  TermsAndConditions = 'terms-and-conditions',
-  Warranty = 'warranty',
-  WarrantyExtend = 'warranty-extend',
-  ReturnPolicy = 'return-policy',
-  PrivacyPolicy = 'privacy-policy',
-  GemeDotsLoyaltyProgram = 'geme-dots-loyalty-program',
 }
 
 const staticTabs: Pick<ITab, 'href' | 'icon' | 'id'>[] = [

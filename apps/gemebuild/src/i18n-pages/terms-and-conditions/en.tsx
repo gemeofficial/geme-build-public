@@ -1,5 +1,6 @@
 import { TermsAndConditions, ITermsAndConditionsProps } from './components'
-import { ETabsId, SiteHelpTabs } from '../../components/tabs'
+import { SiteHelpTabs } from '../../components/tabs'
+import { ETabsId } from '../../components/tabs/type'
 import { getWarrantyTabsTextInfo } from '../../helpers/warranty-tabs-text-info'
 
 const tabs = getWarrantyTabsTextInfo('en', ETabsId.TermsAndConditions)

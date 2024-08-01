@@ -1,5 +1,6 @@
 import { PrivacyPolicy } from './components'
-import { SiteHelpTabs, ETabsId } from '../../components/tabs'
+import { SiteHelpTabs } from '../../components/tabs'
+import { ETabsId } from '../../components/tabs/type'
 import type { IPrivacyPolicyProps } from './components'
 import { getWarrantyTabsTextInfo } from '../../helpers/warranty-tabs-text-info'
 

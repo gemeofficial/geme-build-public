@@ -4,7 +4,8 @@ import type {
   IReturnPolicyEndProps,
   IReturnPolicyProps,
 } from './components'
-import { ETabsId, SiteHelpTabs } from '../../components/tabs'
+import { SiteHelpTabs } from '../../components/tabs'
+import { ETabsId } from '../../components/tabs/type'
 import Svg7Days from './components/Svg7Days'
 import Svg30Days from './components/Svg30Days'
 import Svg45Days from './components/Svg45Days'

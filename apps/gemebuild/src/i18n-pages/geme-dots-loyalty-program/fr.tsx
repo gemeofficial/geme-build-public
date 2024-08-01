@@ -1,6 +1,7 @@
 import { GemeDotsLoyaltyProgram } from './components'
 import type { IGemeDotsProps } from './components'
-import { ETabsId, SiteHelpTabs } from '../../components/tabs'
+import { SiteHelpTabs } from '../../components/tabs'
+import { ETabsId } from '../../components/tabs/type'
 import s from './components/index.module.css'
 import cn from 'clsx'
 import { getWarrantyTabsTextInfo } from '../../helpers/warranty-tabs-text-info'

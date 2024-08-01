@@ -1,6 +1,7 @@
 import { Warranty } from './components'
 import type { IWarrantyProps } from './components'
-import { SiteHelpTabs, ETabsId } from '../../components/tabs'
+import { SiteHelpTabs } from '../../components/tabs'
+import { ETabsId } from '../../components/tabs/type'
 import { getWarrantyTabsTextInfo } from '../../helpers/warranty-tabs-text-info'
 
 // 静态页面的navBar内容 配置文件 De版

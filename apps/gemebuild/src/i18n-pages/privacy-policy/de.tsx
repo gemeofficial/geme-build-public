@@ -1,7 +1,8 @@
 import { PrivacyPolicy } from './components'
-import { SiteHelpTabs, ETabsId } from '../../components/tabs'
+import { SiteHelpTabs } from '../../components/tabs'
 import type { IPrivacyPolicyProps } from './components'
 import { getWarrantyTabsTextInfo } from '../../helpers/warranty-tabs-text-info'
+import { ETabsId } from '../../components/tabs/type'
 
 // 静态页面的navBar内容 配置文件 De版
 const tabs = getWarrantyTabsTextInfo('de', ETabsId.PrivacyPolicy)
