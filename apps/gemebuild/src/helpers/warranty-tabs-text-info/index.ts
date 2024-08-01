@@ -1,84 +1,85 @@
 import { LocaleType } from "ui";
-import { ETabsId, ISiteHelpTabsProps } from "../../components/tabs";
+import { ISiteHelpTabsProps } from "../../components/tabs";
+import { ETabsId } from "../../components/tabs/type";
 
 // 静态页面的navBar内容 配置文件 En版
 const tabsMultiLanguage = {
   en: [
     {
       title: 'Terms and Conditions of Service Agreement',
-      id: 'terms-and-conditions',
+      id: ETabsId.TermsAndConditions,
     },
     {
       title: 'Warranty',
-      id: 'warranty',
+      id: ETabsId.Warranty,
     },
     {
       title: 'Warranty Extend',
-      id: 'warranty-extend',
+      id: ETabsId.WarrantyExtend,
     },
     {
       title: 'Return Policy',
-      id: 'return-policy',
+      id: ETabsId.ReturnPolicy,
     },
     {
       title: 'Privacy Policy',
-      id: 'privacy-policy',
+      id: ETabsId.PrivacyPolicy,
     },
     {
       title: 'GEME Dots Loyalty Program',
-      id: 'geme-dots-loyalty-program',
+      id: ETabsId.GemeDotsLoyaltyProgram,
     },
   ],
   de: [
     {
       title: 'Allgemeine Geschäftsbedingungen des Servicevertrags',
-      id: 'terms-and-conditions',
+      id: ETabsId.TermsAndConditions,
     },
     {
       title: 'Garantie',
-      id: 'warranty',
+      id: ETabsId.Warranty,
     },
     {
       title: 'Garantieverlängerung',
-      id: 'warranty-extend',
+      id: ETabsId.WarrantyExtend,
     },
     {
       title: 'Rückgaberecht',
-      id: 'return-policy',
+      id: ETabsId.ReturnPolicy,
     },
     {
       title: 'Datenschutzrichtlinie',
-      id: 'privacy-policy',
+      id: ETabsId.PrivacyPolicy,
     },
     {
       title: 'GEME Dots Treueprogramm',
-      id: 'geme-dots-loyalty-program',
+      id: ETabsId.GemeDotsLoyaltyProgram,
     },
   ],
   fr: [
     {
       title: `Termes et conditions de l'accord de service`,
-      id: 'terms-and-conditions',
+      id: ETabsId.TermsAndConditions,
     },
     {
       title: 'Garantie',
-      id: 'warranty',
+      id: ETabsId.Warranty,
     },
     {
       title: 'Extension de garantie',
-      id: 'warranty-extend',
+      id: ETabsId.WarrantyExtend,
     },
     {
       title: 'Politique de retour',
-      id: 'return-policy',
+      id: ETabsId.ReturnPolicy,
     },
     {
       title: 'Politique de confidentialité',
-      id: 'privacy-policy',
+      id: ETabsId.PrivacyPolicy,
     },
     {
       title: 'Programme de fidélité GEME Dots',
-      id: 'geme-dots-loyalty-program',
+      id: ETabsId.GemeDotsLoyaltyProgram,
     },
   ],
 }
