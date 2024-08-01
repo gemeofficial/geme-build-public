@@ -10,79 +10,81 @@ const tabs = getWarrantyTabsTextInfo('de', ETabsId.GemeDotsLoyaltyProgram)
 
 // 静态页面的内容 配置文件 De版
 const gemeDotsProps: IGemeDotsProps = {
-  title: 'GEME Dots Kundenbindungsprogramm',
+  title: 'GEME Dots Treueprogramm',
   forward: {
-    title: 'GEME Dots Erklärung',
+    title: 'GEME Dots Statement',
     description: `
-        <p class="mb-10">Willkommen beim GEME Dots-Treueprogramm.</p>
+        <p class="mb-10">Willkommen im GEME Dots Treueprogramm.</p>
         <p class="mb-5">Sammeln Sie Ihre GEME Dots - Umweltfreundlichkeit zahlt sich immer aus!</p>
         <ul class="mx-2 my-5 list-inside list-disc">
             <li class="mb-5 ${cn(s.textIndented)}">Entdecken Sie unser GEME Dots Treueprogramm!</li>
-            <li class="mb-5 ${cn(s.textIndented)}">Sammeln Sie Ihre GEME Dots bei jedem Einkauf und sparen Sie Geld.</li>
+            <li class="mb-5 ${cn(s.textIndented)}">Sammeln Sie bei jedem Einkauf Ihre GEME Dots und sparen Sie Geld.</li>
             <li class="mb-5 ${cn(s.textIndented)}">Genießen Sie außergewöhnliche Vorteile und werden Sie für Ihre Umweltfreundlichkeit belohnt.</li>
-            <li class="mb-5 ${cn(s.textIndented)}">Umweltfreundlich zahlt sich immer aus: Sobald Sie 1.000 GEME Dots gesammelt haben, können Sie diese sofort bei Ihrem nächsten Einkauf einlösen oder weiter sammeln. Du kannst bis zu 40.000 GEME Dots pro Einkauf einlösen und erhältst sofort 40€ Cashback!</li>
+            <li class="mb-5 ${cn(s.textIndented)}">Umweltfreundlichkeit zahlt sich immer aus: Sobald Sie 1.000 GEME Dots gesammelt haben, können Sie diese bei Ihrem nächsten Einkauf sofort einlösen oder weiter sammeln. Pro Einkauf können Sie bis zu 40.000 GEME Dots einlösen und erhalten sofort 40 € zurück!</li>
         </ul>
         `,
     imgSrc: '/assets/images/geme-dots-loyalty-program/image.png',
   },
   subTitle: `<p class="mb-5">So funktioniert das GEME Dots Treueprogramm</p>`,
   enrollment: {
-    title: 'Anspruchsberechtigung und Einschreibung',
+    title: 'Berechtigung und Anmeldung',
     questionsAndAnswers: [
       {
-        question: 'Wie kann ich am GEME Dots-Treueprogramm teilnehmen? ',
+        question: 'Wie nehme ich am GEME Dots Treueprogramm teil?',
         answer:
-          'Sie können sich ganz einfach anmelden unter <a href="https://www.geme.bio/signup" class="underline">https://www.geme.bio/signup</a>. Sie können die Daten aus Ihrem Kundenkonto verwenden, wenn Sie bereits Kunde sind.',
+          'Sie können sich ganz einfach unter <a href="https://www.geme.bio/signup" class="underline">https://www.geme.bio/signup</a> registrieren. Wenn Sie bereits Kunde sind, können Sie die Daten Ihres Kundenkontos verwenden.',
       },
       {
-        question: 'Lohnt sich die Teilnahme am GEME Dots Treueprogramm?',
+        question:
+          'Ist die Teilnahme am GEME Dots Treueprogramm kostenpflichtig?',
         answer:
-          'Die Teilnahme am GEME Dots Treueprogramm ist völlig kostenlos.',
+          'Die Mitgliedschaft im GEME Dots Treueprogramm ist völlig kostenlos.',
       },
       {
         question:
           'Muss ich Mitglied im GEME Dots Treueprogramm sein, um Sonderangebote zu erhalten?',
         answer:
-          'Nein, alle unsere Kunden haben Anspruch auf unsere Sonderangebote. Um bei Ihren Einkäufen GEME Dots zu verdienen und exklusive GEME Dots Aktionen zu erhalten, müssen Sie Mitglied im GEME Dots Treueprogramm sein.',
+          'Nein, alle unsere Kunden sind berechtigt, unsere Sonderangebote zu nutzen. Um jedoch GEME Dots bei Ihren Einkäufen zu verdienen und exklusive GEME Dots Aktionen zu erhalten, müssen Sie Mitglied im GEME Dots Treueprogramm sein.',
       },
       {
-        question: 'Wie kann ich GEME Dots verdienen? ',
+        question: 'Wie verdiene ich GEME Dots?',
         answer: `
-            <p>Für jeden Einkauf, den Sie über Ihr Kundenkonto tätigen, erhalten Sie GEME Dots. Für jeden Einkauf im Wert von 1 Euro erhalten Sie 10 GEME Dots oder zusätzlich 10 "GEME Dots" als Belohnung für die Weiterempfehlung zur Registrierung und weitere 100 "GEME Dots" als Belohnung für die Weiterempfehlung zum Kauf. " als Belohnung.
+            <p>Für jeden Einkauf, den Sie über Ihr Kundenkonto tätigen, erhalten Sie GEME Dots. Sie erhalten 10 GEME Dots für jeden Einkauf im Wert von 1 Euro oder zusätzliche 10 "GEME Dots" als Belohnung für die Empfehlung anderer zur Registrierung; und weitere 100 "GEME Dots" als Belohnung für die Empfehlung anderer zum Kauf.
             <br /> <br />
-            Außerdem veranstalten wir regelmäßig Aktionen, bei denen Sie noch mehr GEME Dots verdienen können! Mehr Informationen finden Sie unter <a href="https://www.geme.bio" class="underline">https://www.geme.bio</a>.
+            Darüber hinaus veranstalten wir regelmäßig Aktionen, bei denen Sie noch mehr GEME Dots verdienen können! Weitere Informationen finden Sie unter <a href="https://www.geme.bio" class="underline">https://www.geme.bio</a>.
             </p>`,
       },
       {
-        question: 'Wann werden meine GEME Dots verfügbar sein? ',
+        question: 'Wann werden meine GEME Dots verfügbar sein?',
         answer: `
             <p>
-            Sie können GEME Dots verdienen bei <a href="https://www.geme.bio" class="underline">https://www.geme.bio</a>
+            Sie können GEME Dots unter <a href="https://www.geme.bio" class="underline">https://www.geme.bio</a> verdienen.
             <br />
-            GEME Dots, die Sie beim Einkaufen auf der Website verdient haben, werden Ihrem Konto innerhalb von 14 Werktagen nach dem Versanddatum gutgeschrieben. Bis dahin gelten diese GEME Dots als "GEME Dots in Erwartung einer Bestätigung". Wenn die Bestellung nicht storniert oder geändert wird (ausgenommen Garantieansprüche), werden Ihre GEME Dots erst danach gutgeschrieben.
+            Beim Einkauf auf der Website verdiente GEME Dots werden innerhalb von 14 Werktagen ab Versanddatum Ihrem Konto gutgeschrieben. Bis dahin werden diese GEME Dots als "GEME Dots ausstehend" betrachtet. Wenn die Bestellung nicht storniert oder geändert wird (ausgenommen Garantieansprüche), werden Ihre GEME Dots danach gutgeschrieben.
             </p>
             `,
       },
       {
-        question: 'Wie viele GEME Dots kann ich pro Bestellung verwenden? ',
+        question:
+          'Wie viele Treue-GEME Dots kann ich pro Bestellung verwenden?',
         answer: `<p>
-        Der Wert der Geme Dots, die Sie einlösen, darf den Wert Ihrer Bestellung nicht überschreiten. Darüber hinaus können Sie pro Einkauf bis zu 40.000 GEME Dots einlösen, was einer sofortigen Ermäßigung von 40 € entspricht.
+            Der Wert der eingelösten GEME Dots darf den Wert Ihrer Bestellung nicht überschreiten. Darüber hinaus können Sie pro Einkauf bis zu 40.000 GEME Dots einlösen, was einer sofortigen Reduzierung von 40 € entspricht.
             </p>`,
       },
       {
         question:
-          'Sind bestimmte Produkte aus diesem Sortiment vom GEME Dots Treueprogramm ausgeschlossen? ',
+          'Sind bestimmte Produkte in diesem Sortiment vom GEME Dots Treueprogramm ausgeschlossen?',
         answer: 'Ja, aus rechtlichen Gründen gilt der Rabatt nicht für Bücher.',
       },
       {
-        question: 'Wie löse ich meine GEME Dots ein? ',
+        question: 'Wie löse ich meine GEME Dots ein?',
         answer:
-          'Die bei einer Bestellung gesammelten GEME Dots können in einen Gutschein umgewandelt werden. Die GEME Dots werden in einen Betrag umgewandelt, der von Ihrem Rechnungsbetrag abgezogen wird. Sie können bei jeder Bestellung auf Warenkorbebene entscheiden, ob Sie Ihre GEME Dots eintauschen oder weiter sammeln möchten.',
+          'Beim Bestellen gesammelte GEME Dots können in einen Gutschein umgewandelt werden. GEME Dots werden in einen Betrag umgewandelt, der von Ihrem Rechnungsbetrag abgezogen wird. Sie können bei jeder Bestellung auf Warenkorb-Ebene entscheiden, ob Sie Ihre GEME Dots einlösen oder weiter sammeln möchten.',
       },
       {
-        question: 'Werden meine GEME Dots verfallen? ',
+        question: 'Verfallen meine GEME Dots?',
         answer:
-          'Ja, Ihre GEME Dots verfallen, wenn Sie Ihre GEME Dots drei Jahre lang nicht benutzt haben oder wenn Sie 12 Monate lang keine Bestellung über ein verbundenes Konto aufgegeben haben.',
+          'Ja, Ihre GEME Dots verfallen, wenn Ihre GEME Dots drei Jahre lang nicht verwendet wurden oder wenn Sie innerhalb von 12 Monaten keine Bestellung über ein verknüpftes Konto aufgegeben haben.',
       },
     ],
   },
@@ -90,81 +92,81 @@ const gemeDotsProps: IGemeDotsProps = {
     title: 'Bedingungen für die Teilnahme am GEME Dots Treueprogramm',
     items: [
       {
-        label: 'Zuständigkeiten',
+        label: 'Verantwortlichkeiten',
         description: `
           <p>
-          Der Verwalter des Treueprogramms GEME Dots ist
-          ROKH SRL<br /><br />
-          Boulevard Louis Schmidt 29，<br /><br />
+          Der Manager des GEME Dots Treueprogramms ist
+          ROKH SRL<br /><br />  Brüssel, Belgien  
+          Boulevard Louis Schmidt 29,<br /><br />
           1040 Etterbeek, <br /><br />
           Brüssel, <br /><br />
           Belgien <br /><br />
-          (Nachstehend als "ROKH" bezeichnet)
+          (im Folgenden als "ROKH" bezeichnet)
           </p>
           `,
       },
       {
-        label: 'Zuschussfähigkeit',
-        description: `<p class="mb-5">Teilnahmeberechtigt sind nur natürliche Personen über 18 Jahren.</p>`,
+        label: 'Teilnahmeberechtigung',
+        description: `<p class="mb-5">Nur natürliche Personen über 18 Jahren sind teilnahmeberechtigt.</p>`,
       },
       {
-        label: 'Berechtigung zur Mitgliedschaft',
+        label: 'Mitgliedschaftsberechtigung',
         description: `
             <ul class="m-5 ml-0 list-inside list-decimal">
-                <li class="mb-5 ${cn(s.textIndented)}">Die Teilnahme am GEME Dots Treueprogramm ist kostenlos. Es ist nur über die Website verfügbar <a href="https://www.geme.bio" class="underline">https://www.geme.bio</a> bei der Online-Registrierung auf der Website oder zum Zeitpunkt des Kaufs</li>
-                <li class="${cn(s.textIndented)}">Wenn Sie teilnahmeberechtigt sind (siehe 2. Teilnahmeberechtigung), nehmen Sie unmittelbar nach der Verifizierung Ihrer Anmeldung am GEME Dots Treueprogramm teil. </li>
+                <li class="mb-5 ${cn(s.textIndented)}">Die Teilnahme am GEME Dots Treueprogramm ist kostenlos. Es ist nur über die Website <a href="https://www.geme.bio" class="underline">https://www.geme.bio</a> verfügbar, wenn Sie sich online auf der Website registrieren oder zum Zeitpunkt des Kaufs</li>
+                <li class="${cn(s.textIndented)}">Wenn Sie berechtigt sind (siehe 2. Teilnahmeberechtigung), nehmen Sie unmittelbar nach der Überprüfung Ihrer Registrierung am GEME Dots Treueprogramm teil. </li>
             </ul>`,
       },
       {
-        label: 'GEME Dots Kundenbindungsprogramm',
+        label: 'GEME Dots Treueprogramm',
         description: `
               <p class="mb-5">
-              Als Mitglied des Treueprogramms der Grünen Medaille kommen Sie in den Genuss verschiedener Vorteile. Das GEME Dots Treueprogramm behält sich das Recht vor, den Inhalt dieser Vorteile zu ändern, zu ergänzen oder einzuschränken.
+              Als Mitglied des Green Medal Treueprogramms profitieren Sie von mehreren Vorteilen und das GEME Dots Treueprogramm behält sich das Recht vor, den Inhalt dieser Vorteile zu ändern, zu ergänzen oder zu beschränken.
               </p>
               <ul class="m-5 ml-0 list-inside list-decimal">
               <li class="mb-5">
-                <span class="font-bold">GEME-Punkte sammeln</span>
-                <p class="mt-2 ml-5">Als Mitglied des Programms können Sie bei Ihren Einkäufen auf der <a href="https://www.geme.bio" class="underline">https://www.geme.bio</a> "GEME Dots" verdienen oder zusätzlich 10 "GEME Dots" als Belohnung für die Empfehlung anderer zur Anmeldung und weitere 100 "GEME Dots" als Belohnung für die Empfehlung anderer zum Kauf erhalten. <p class="mt-2 ml-5">
+                <span class="font-bold">GEME Dots verdienen</span>
+                <p class="mt-2 ml-5">Als Mitglied des Programms können Sie während Ihrer Einkäufe auf der <a href="https://www.geme.bio" class="underline">https://www.geme.bio</a> "GEME Dots" verdienen oder zusätzliche 10 "GEME Dots" als Belohnung für die Empfehlung anderer zur Anmeldung verdienen; und zusätzliche 100 "GEME Dots" als Belohnung für die Empfehlung anderer zum Kauf. <p class="mt-2 ml-5">
               <li class="mb-5">
-                 <span class="font-bold">Bestätigung von GEME Dots abwarten</span>
-                 <p class="mt-2 ml-5">Die GEME Dots, die Sie bei Ihren Einkäufen im <a href="https://www.geme.bio" class="underline">https://www.geme.bio</a> Website wird Ihrem Konto innerhalb von 15 Tagen nach Versand Ihrer Bestellung gutgeschrieben. Bis dahin gelten die GEME Dots als "GEME Dots in Erwartung einer Bestätigung". Wenn die Bestellung nicht storniert oder geändert wird (mit Ausnahme von Garantieansprüchen), werden Ihre GEME Dots erst danach gutgeschrieben. <p class="mt-2 ml-5">
+                 <span class="font-bold">Bestätigung der GEME Dots ausstehend</span>
+                 <p class="mt-2 ml-5">Die während Ihrer Einkäufe auf der Website <a href="https://www.geme.bio" class="underline">https://www.geme.bio</a> verdienten GEME Dots werden Ihrem Konto innerhalb von 15 Tagen nach dem Versand Ihrer Bestellung gutgeschrieben. Bis dahin werden diese GEME Dots als "GEME Dots ausstehend" betrachtet. Wenn die Bestellung nicht storniert oder geändert wird (außer Garantieansprüche), werden Ihre GEME Dots danach gutgeschrieben. <p class="mt-2 ml-5">
               </li>
               <li class="mb-5">
-                <span class="font-bold">Gültigkeit und Verfall von GEME Dots</span>
-                <p class="mt-2 ml-5">Verdiente GEME Dots sind ab dem Datum der Gutschrift 12 Monate lang gültig und verfallen, wenn innerhalb dieses Zeitraums keine Bestellung auf dem zugehörigen Konto aufgegeben wird. Darüber hinaus verfallen alle ungenutzten GEME Dots nach 3 Jahren. <p class="mt-2 ml-5">
+                <span class="font-bold">Gültigkeit und Ablauf der GEME Dots</span>
+                <p class="mt-2 ml-5">Die verdienten GEME Dots sind 12 Monate ab dem Datum der Gutschrift gültig und verfallen, wenn während dieses Zeitraums keine Bestellung auf dem zugehörigen Konto aufgegeben wird. Darüber hinaus verfallen alle ungenutzten GEME Dots nach 3 Jahren. <p class="mt-2 ml-5">
               </li>
               <li class="mb-5">
-                <span class="mb-5 font-bold">GEME Dots Mengenmitteilung</span>
-                <p class="mt-2 ml-5">Sie werden in regelmäßigen Abständen über Ihren aktuellen GEME Dots-Betrag informiert. Die Benachrichtigungen werden elektronisch (per E-Mail) oder per Post verschickt. <p class="mt-2 ml-5">
+                <span class="mb-5 font-bold">Benachrichtigung über die Menge der GEME Dots</span>
+                <p class="mt-2 ml-5">Sie werden regelmäßig über Ihre aktuelle Menge an GEME Dots benachrichtigt. Benachrichtigungen werden elektronisch (per E-Mail) oder per Post gesendet. <p class="mt-2 ml-5">
               </li>
               <li class="mb-5">
-                Es gelten die Bedingungen des GEME Dots Treueprogramms zum Zeitpunkt der Transaktion.</p>
+                Die Bedingungen des GEME Dots Treueprogramms gelten zum Zeitpunkt der Transaktion.</p>
               </li>
               <li class="mb-5">
                 Sie werden informiert, wenn die Bedingungen und Vorteile des GEME Dots Treueprogramms geändert, ergänzt oder eingeschränkt werden.
               </li>
               <li class="mb-5">
-                 <span class="font-bold">Physische Boni und Prämien können nicht gegen andere Produkte oder Geld umgetauscht werden.</span>
-                 <p class="mt-2 ml-5">Etwaige Gewährleistungsansprüche für Sachprämien und Boni müssen dem geltenden Recht entsprechen. Dies schließt keine Barzahlungen für "Mehrwert"-Dienstleistungen ein.</p>
+                 <span class="font-bold">Physische Boni und Prämien können nicht gegen andere Produkte oder Geld eingetauscht werden.</span>
+                 <p class="mt-2 ml-5">Alle Garantieansprüche für Sachprämien und Prämien müssen den geltenden Gesetzen entsprechen. Dies umfasst keine Barzahlungen für "Mehrwert" -Dienstleistungen.</p>
               </li>
               <li>
-                Die Stornierung eines Vertrages (z. B. Umtausch) bedeutet nicht, dass der Kauf als Teil der Leistungen des Plans betrachtet wird.
+                 Die Kündigung eines Vertrags (z. B. Umtausch) bedeutet nicht, dass der Kauf als Teil der Planvorteile betrachtet wird.
               </li>
               </ul>
               `,
       },
       {
-        label: 'Terminierung',
+        label: 'Kündigung',
         description: `
               <p>
-                Sie können Ihre Teilnahme am GEME Dots Treueprogramm jederzeit ohne Einhaltung einer Frist durch schriftliche Mitteilung (z.B. per E-Mail) kündigen. Das GEME Dots Treueprogramm kann ohne Angabe von Gründen, jedoch mit einer Frist von 4 Wochen gekündigt werden. Das Recht beider Parteien, aus wichtigem Grund außerordentlich zu kündigen, bleibt unberührt.
+              Sie können Ihre Teilnahme am GEME Dots Treueprogramm jederzeit ohne Angabe von Gründen durch schriftliche Mitteilung (z. B. per E-Mail) kündigen. Das GEME Dots Treueprogramm kann ohne Angabe eines bestimmten Grundes, jedoch mit einer Frist von 4 Wochen, gekündigt werden. Das Recht beider Parteien, aus wichtigem Grund zu kündigen, bleibt unberührt.
               </p>`,
       },
       {
         label: 'Änderung der Teilnahmebedingungen',
         description: `
               <p>
-                ROKH behält sich das Recht vor, die Teilnahmebedingungen jederzeit zu ändern oder zu streichen, indem Sie mindestens 30 Tage vorher per E-Mail informiert werden. Wenn Sie der Änderung nicht vor Ablauf dieser Frist widersprechen, tritt sie ab dem angegebenen Datum in Kraft. Wenn Sie die neuen Teilnahmebedingungen nicht akzeptieren, können Sie der Änderung schriftlich (z.B. per E-Mail) widersprechen oder Ihre Teilnahme am GEME Dots Treueprogramm kündigen. Wenn Sie der Änderung widersprechen, gelten die bisherigen Bedingungen weiter. FARMALINE behält sich in diesem Fall das Recht vor, Ihre Teilnahme an dem Programm zu beenden.
+              ROKH behält sich das Recht vor, die Teilnahmebedingungen jederzeit zu ändern oder zu löschen, indem Sie Ihnen mindestens 30 Tage im Voraus per E-Mail Bescheid geben. Wenn Sie der Änderung vor Ablauf dieser Frist nicht widersprechen, tritt die Änderung zum angegebenen Datum in Kraft. Wenn Sie die neuen Teilnahmebedingungen nicht akzeptieren, können Sie der Änderung schriftlich (z. B. per E-Mail) widersprechen oder Ihre Teilnahme am GEME Dots Treueprogramm kündigen. Wenn Sie der Änderung widersprechen, gelten die vorherigen Bedingungen. In diesem Fall behält sich FARMALINE das Recht vor, Ihre Teilnahme am Programm zu kündigen.
               </p>`,
       },
     ],

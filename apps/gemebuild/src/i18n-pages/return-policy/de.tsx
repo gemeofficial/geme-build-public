@@ -16,28 +16,28 @@ const tabs = getWarrantyTabsTextInfo('de', ETabsId.ReturnPolicy)
 
 // 静态页面的内容一 配置文件 De版
 const returnPolicyCurrentProps: IReturnPolicyCurrentProps = {
-  title: 'Wie Retouren funktionieren',
+  title: 'Wie Rückgaben funktionieren',
   updateTime: 'Aktualisiert: 25. November 2023',
   forward: {
     description: `
-    <p class="mb-5">Unser Team hilft Ihnen gerne bei der Rückgabe von Produkten, die Sie über www.geme.bio gekauft haben. Senden Sie einfach das Widerrufsformular an  <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio </a>. Bitte halten Sie Ihre Bestellnummer oder Produktseriennummer bereit, damit wir Ihnen bei der Bearbeitung helfen können.</p>
+    <p class="mb-5">Unser Team hilft Ihnen gerne beim Rückgabeprozess für Produkte, die über www.geme.bio gekauft wurden. Senden Sie einfach das Widerrufsformular an <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio </a>. Bitte halten Sie Ihre Bestellnummer oder Seriennummer des Produkts bereit, damit wir Ihnen bei der Abwicklung des Vorgangs helfen können.</p>
     <p class="mb-2 text-xs">
-    Hinweis: Wir akzeptieren nur Rücksendungen von Produkten, die direkt über diesen Tisch gekauft wurden.
-    Wenn Sie Ihr Produkt bei einem anderen Händler gekauft haben, wenden Sie sich bitte an diesen Händler bezüglich Ihrer Rückgabe.
+      Hinweis: Wir akzeptieren nur Rücksendungen von Produkten, die direkt aus dieser Tabelle gekauft wurden.
+      Wenn Sie Ihr Produkt bei einem anderen Einzelhändler gekauft haben, wenden Sie sich bitte bezüglich Ihrer Rücksendung an diesen Einzelhändler.
     </p>
 
    <table class="border-collapse border border-slate-400 mb-5 table-auto">
       <thead>
         <tr>
-          <th class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">Quelle Name</th>
-          <th class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">Links speichern</th>
+          <th class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">Quellname</th>
+          <th class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">Shop-Links</th>
           <th class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">Startzeit</th>
         </tr>
       </thead>
 
       <tbody class="pl-2 pr-2 pb-2 pt-2">
         <tr>
-          <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2"">Offizielle Website</td>
+          <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">Offizielle Webseite</td>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">
             <a href="https://www.geme.bio/" target="_blank">www.geme.bio</a>
           </td>
@@ -72,33 +72,33 @@ const returnPolicyCurrentProps: IReturnPolicyCurrentProps = {
   versionInfo: `123`,
   items: [
     {
-      name: 'Rückgabe innerhalb von 30 Kalendertagen',
+      name: 'Rückgaben innerhalb von 30 Kalendertagen',
       hide: false,
       svgSrc: <Svg30Days></Svg30Days>,
       description: `
-        <p class="mb-5">Genießen Sie 30 Tage lang Ihr Glück mit GEME zu Hause! Wenn Sie nicht zufrieden sind, schicken Sie es innerhalb von 30 Tagen zurück. Wir kümmern uns um den Rest und übernehmen das Porto.</p>
-        <p class="mb-5">Wenn Sie GEME-Kobold nicht benutzt haben, erhalten Sie eine volle Rückerstattung, ohne Fragen zu stellen!</p>
-        <p class="mb-5">Benutzt? Kein Problem! Schicken Sie es zurück, wir übernehmen die Versandgebühren. Nur eine bloße $ 70 wird von der ursprünglichen Zahlung für eine gründliche Reinigung und wieder aufzufüllen abgezogen werden.</p>
-        <p class="mb-5">Nur ein freundlicher Tipp: Bevor Sie das Gerät zurückgeben, sollten Sie sicherstellen, dass alle Nebenprodukte, verbrauchten Mikroorganismen oder Lebensmittelreste entfernt werden. Machen Sie Fotos vor und nach dem Verpacken. Diese 2 einfachen Schritte gewährleisten einen reibungslosen Rückgabeprozess und verhindern logistische Probleme.</p>
-        <p class="mb-5">GEME Kobold akzeptiert nur Einzelkäufe von bestehenden Gerätebenutzern. Zu Ihrer Sicherheit werden nach der Lieferung des Kobold keine Rücksendungen und Rückerstattungen akzeptiert.</p>
-        <p class="mb-5">Ihre Zufriedenheit ist unsere Priorität, und wir möchten, dass diese Studie für Sie zu einer angenehmen Erfahrung wird!</p>
+        <p class="mb-5">Genießen Sie 30 Tage Glück mit GEME zu Hause! Wenn Sie nicht zufrieden sind, geben Sie es innerhalb von 30 Tagen zurück (seit Lieferung). Wir kümmern uns um den Rest und übernehmen die Portokosten.</p>
+        <p class="mb-5">Wenn Sie GEME-Kobold noch nicht verwendet haben, erhalten Sie eine volle Rückerstattung, ohne Fragen zu stellen!</p>
+        <p class="mb-5">Benutzt? Kein Problem! Senden Sie es zurück, wir übernehmen trotzdem die Versandkosten. Nur 70 $ werden von der ursprünglichen Zahlung für eine gründliche Reinigung und Auffüllung abgezogen.</p>
+        <p class="mb-5">Ein freundlicher Tipp: Entfernen Sie vor der Rücksendung alle Nebenprodukte, verwendeten Mikroorganismen oder Speisereste. Machen Sie vor und nach dem Verpacken Fotos. Diese 2 einfachen Schritte sorgen für einen reibungslosen Rückgabeprozess und verhindern logistische Probleme.</p>
+        <p class="mb-5">GEME Kobold akzeptiert nur Einzelkäufe von bestehenden Gerätebenutzern. Zu Ihrer Sicherheit werden nach Lieferung des Kobold keine Rücksendungen und Rückerstattungen akzeptiert.</p>
+        <p class="mb-5">Ihre Zufriedenheit hat für uns oberste Priorität, und wir möchten, dass dieser Testlauf für Sie zu einem erfreulichen Erlebnis wird!</p>
       `,
     },
     {
-      name: 'Rücksendungen innerhalb von 45 Kalendertagen',
+      name: 'Rückgaben innerhalb von 45 Kalendertagen',
       hide: false,
       svgSrc: <Svg45Days></Svg45Days>,
       description: `
-      <p class="mb-5">Wenn Sie aus einem anderen Grund mit Ihrem Produkt nicht zufrieden sind, haben Sie bis zu 45 Kalendertage Zeit, um eine Rückgabe zu beantragen. Es wird eine zusätzliche Wiedereinlagerungsgebühr in Höhe von 50 % des Verkaufspreises des Produkts erhoben. Die ursprünglichen Liefer-, Versand- und Servicegebühren werden nicht erstattet. Kontaktieren Sie uns über <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a> um eine Rückgabe zu vereinbaren. </p>
-        `,
+      <p class="mb-5">Wenn Sie aus einem anderen Grund mit Ihrem Produkt nicht zufrieden sind, haben Sie bis zu 45 Kalendertage Zeit, um eine Rücksendung zu beantragen. Es wird eine zusätzliche Wiedereinlagerungsgebühr in Höhe von 50 % des Verkaufspreises des Produkts erhoben. Die ursprünglichen Liefer-, Versand- und Servicegebühren werden nicht erstattet. Kontaktieren Sie uns über <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a>, um eine Rücksendung zu vereinbaren. </p>
+      `,
     },
     {
       name: 'Nach 45 Kalendertagen',
       hide: false,
       svgSrc: <Svg45DaysAfter></Svg45DaysAfter>,
       description: `
-      <p class="mb-5">Wenn die 45-Tage-Frist für die Rückgabe verstrichen ist und Ihr Produkt noch unter Garantie steht, rufen Sie uns bitte an, um einen Garantieservice zu erhalten oder eine Reparatur zu vereinbaren. Es kann eine Gebühr anfallen.</p>
-      <p class="mb-5">Gibt es einen Grund, unglücklich zu sein? Kontaktieren Sie uns über <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a> So können wir besser verstehen, wie wir Ihnen bei der Lösung Ihres Problems helfen können.</p>
+      <p class="mb-5">Wenn das 45-tägige Rückgabefenster abgelaufen ist und Ihr Produkt noch unter Garantie steht, rufen Sie uns bitte an, um Garantiearbeiten oder eine Reparatur zu arrangieren. Eine Gebühr kann anfallen.</p>
+      <p class="mb-5">Jeder Grund zur Unzufriedenheit? Kontaktieren Sie uns über <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a>, damit wir besser verstehen, wie wir Ihnen bei der Lösung Ihres Problems helfen können.</p>
       `,
     },
   ],
@@ -106,53 +106,53 @@ const returnPolicyCurrentProps: IReturnPolicyCurrentProps = {
 
 // 静态页面的内容二 配置文件 De版
 const returnPolicyEndProps: IReturnPolicyEndProps = {
-  title: 'Wie Retouren funktionieren',
+  title: 'Wie Rückgaben funktionieren',
   updateTime: 'Aktualisiert: 1. Januar 2023',
   forward: {
     description: `
-    <p class="mb-5">Unser Team hilft Ihnen gerne beim Rückgabeprozess für über www.geme.bio gekaufte Produkte. Senden Sie einfach das Widerrufsformular an <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio </a>. Bitte halten Sie Ihre Bestellnummer oder Produktseriennummer bereit, damit wir Ihnen bei dem Vorgang helfen können.</p>
-    <p class="mb-5">Hinweis: Wir akzeptieren nur Rücksendungen von Produkten, die direkt bei www.geme.bio gekauft wurden. Wenn Sie Ihr Produkt bei einem anderen Händler gekauft haben, wenden Sie sich bezüglich der Rückgabe bitte an diesen Händler.</p>
+    <p class="mb-5">Unser Team hilft Ihnen gerne beim Rückgabeprozess für Produkte, die über www.geme.bio gekauft wurden. Senden Sie einfach das Widerrufsformular an <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio </a>. Bitte halten Sie Ihre Bestellnummer oder Seriennummer des Produkts bereit, damit wir Ihnen bei der Abwicklung des Vorgangs helfen können.</p>
+    <p class="mb-5">Hinweis: Wir akzeptieren nur Rücksendungen von Produkten, die direkt von www.geme.bio gekauft wurden. Wenn Sie Ihr Produkt bei einem anderen Einzelhändler gekauft haben, wenden Sie sich bitte bezüglich Ihrer Rücksendung an diesen Einzelhändler.</p>
     `,
     imgSrc: '/assets/images/return-policy/1.png',
   },
   items: [
     {
-      name: 'Returns within 7 days - no restocking fee',
+      name: 'Rückgaben innerhalb von 7 Tagen – keine Wiedereinlagerungsgebühr',
       svgSrc: <Svg7Days></Svg7Days>,
       description: `
-      <p class="mb-5">Nach dem belgischen Gesetz über Geschäftspraktiken und Verbraucherinformation und -schutz kann der Käufer dem Verkäufer mitteilen, dass er innerhalb von 7 Tagen nach Erhalt der Ware vom Kauf zurücktreten wird. Die Ware muss innerhalb eines akzeptablen Zeitraums (7 Tage) nach Erhalt der Ware und wenn sie nicht geöffnet und benutzt wurde, zurückverfolgt werden. Wir empfehlen Ihnen, die Ware so weit wie möglich in ihrer Originalverpackung und in ihrem Originalzustand aufzubewahren, damit Sie nicht für eine eventuelle Entwertung der Ware infolge ihrer Entsorgung haften müssen.</p>
-      <p class="mb-5">Sie können eine <a href="/assets/return/revocation-form.docx" target='_blank' class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">withdrawal form</a> to by <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a> um uns mitzuteilen, dass Sie von Ihrem Kauf zurücktreten. Sie müssen dann die Ware auf dem normalen Postweg mit ausreichendem Porto und einer Kopie der Rechnung an die unten stehende Adresse zurücksenden.</p>
-      <p class="mb-5">Damit wir eine Rückerstattung vornehmen können, geben Sie uns bitte auch Ihre Kontonummer an. Nach Erhalt Ihrer Rücksendung stellen wir eine Gutschrift aus und erstatten Ihnen den gezahlten Betrag innerhalb von 14 Tagen. Für das Widerrufsformular gibt es keine Ausnahmen.</p>
-      <p class="mb-5">Wenn Sie ein Produkt erhalten, das nicht dem entspricht, was Sie bestellt haben, oder das beschädigt ist, müssen Sie uns dies auf die gleiche Weise mitteilen und das Produkt auf die gleiche Weise zurücksenden. In diesem Fall erstatten wir Ihnen jedoch auch die Kosten für den Versand per Post.</p>
+      <p class="mb-5">Das belgische Gesetz über Geschäftspraktiken sowie Verbraucherinformationen und -schutz erlaubt es dem Käufer, den Verkäufer innerhalb von 7 Tagen nach Erhalt des Produkts darüber zu informieren, dass er den Kauf abbrechen wird. Die Ware muss innerhalb einer angemessenen Frist (7 Tage) nach Erhalt der Ware verfolgt werden, und wenn sie nicht geöffnet und verwendet wurde. Wir empfehlen Ihnen, die Ware nach Möglichkeit in der Originalverpackung und im Originalzustand aufzubewahren, damit Sie nicht für eine etwaige Wertminderung der Ware durch deren Entsorgung verantwortlich gemacht werden müssen.</p>
+      <p class="mb-5">Sie können ein <a href="/assets/return/revocation-form.docx" target='_blank' class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">Widerrufsformular</a> an <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a> senden, um uns mitzuteilen, dass Sie Ihren Kauf abbrechen. Anschließend müssen Sie die Ware ausreichend frankiert und mit einer Rechnungskopie per Normalpost an die unten angegebene Adresse zurücksenden.</p>
+      <p class="mb-5">Um eine Rückerstattung zu veranlassen, teilen Sie uns bitte auch Ihre Kontonummer mit. Nach Erhalt Ihrer Rücksendung erstellen wir eine Gutschrift und erstatten Ihnen den gezahlten Betrag innerhalb von 14 Tagen. Es gibt keine Ausnahmen von dem Widerrufsformular.</p>
+      <p class="mb-5">Wenn Sie ein Produkt erhalten, das nicht Ihrer Bestellung entspricht oder beschädigt ist, müssen Sie uns auf die gleiche Weise informieren und das Produkt auf die gleiche Weise zurücksenden. Allerdings erstatten wir Ihnen in diesem Fall auch die Versandkosten für den postalischen Versand.</p>
       `,
     },
     {
-      name: 'Rückgabe innerhalb von 30 Kalendertagen',
+      name: 'Rückgaben innerhalb von 30 Kalendertagen',
       svgSrc: <Svg30Days></Svg30Days>,
       description: `
-      <p class="mb-5">Zum Zeitpunkt der Lieferung beschädigte Produkte</p>
-      <p class="mb-5">(Zu den Schäden zählen Kratzer, Dellen, Absplitterungen und andere Schäden, die auf Material- und/oder Verarbeitungsfehler zurückzuführen sind).</p>
-      <p class="mb-5">Wenn Sie feststellen, dass Ihr Produkt beschädigt geliefert wurde, können Sie innerhalb von 30 Kalendertagen über <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a> eine Rückgabe, einen Umtausch oder eine Reparatur beantragen.</p>
+      <p class="mb-5">Produkte, die zum Zeitpunkt der Lieferung beschädigt sind</p>
+      <p class="mb-5">(Schäden umfassen Kratzer, Dellen, Absplitterungen und andere Schäden, die durch Material- und/oder Verarbeitungsfehler verursacht wurden.)</p>
+      <p class="mb-5">Wenn Sie feststellen, dass Ihr Produkt bei der Lieferung beschädigt ist, können Sie innerhalb von 30 Kalendertagen eine Rückgabe, einen Umtausch oder eine Reparatur über <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a> beantragen.</p>
       <ul class="my-5 list-inside list-disc">
-        <li class="mb-5">Für den Umtausch müssen Sie keine zusätzlichen Liefer-, Versand- oder Servicegebühren bezahlen. Je nach der Preisdifferenz des neuen Artikels erhalten Sie eine Gutschrift oder eine Gebühr auf der Kreditkarte, die Sie für den Kauf des ursprünglichen Artikels verwendet haben.</li>
-        <li class="mb-5">Bei Rücksendungen erhalten Sie eine Rückerstattung für das Produkt, aber die Versand-, Fracht- und Servicekosten werden nicht erstattet. Bitte rufen Sie uns an, um die Art des Schadens zu besprechen und zu bestätigen, dass Sie für eine Rückerstattung des Produkts berechtigt sind.</li>
-        <li class="mb-5">Wenn Sie an einer Reparatur interessiert sind, senden Sie einfach eine E-Mail an dieselbe E-Mail-Adresse, um einen Termin zu vereinbaren.</li>
+        <li class="mb-5">Für Umtausch sind keine zusätzlichen Liefer-, Versand- oder Servicegebühren zu zahlen. Abhängig von der Preisdifferenz des neuen Artikels erhalten Sie eine Gutschrift oder Gebühr auf die zum Kauf des Originalartikels verwendete Kreditkarte.</li>
+        <li class="mb-5">Bei Rücksendungen erhalten Sie eine Rückerstattung für das Produkt, aber Versand-, Fracht- und Servicegebühren werden nicht erstattet. Bitte rufen Sie uns an, um die Art des Schadens zu besprechen und zu bestätigen, ob Sie Anspruch auf eine Rückerstattung des Produkts haben.</li>
+        <li class="mb-5">Wenn Sie an einer Reparatur interessiert sind, senden Sie einfach eine E-Mail an dieselbe E-Mail-Adresse, um einen Service zu vereinbaren.</li>
       </ul>
       `,
     },
     {
-      name: 'Rücksendungen innerhalb von 45 Kalendertagen',
+      name: 'Rückgaben innerhalb von 45 Kalendertagen',
       svgSrc: <Svg45Days></Svg45Days>,
       description: `
-      <p class="mb-5">Wenn Sie aus einem anderen Grund mit Ihrem Produkt nicht zufrieden sind, haben Sie bis zu 45 Kalendertage Zeit, um eine Rückgabe zu beantragen. Es wird eine zusätzliche Wiedereinlagerungsgebühr in Höhe von 50 % des Verkaufspreises des Produkts erhoben. Die ursprünglichen Liefer-, Versand- und Servicegebühren werden nicht erstattet. Kontaktieren Sie uns über <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a> eine Rücksendung veranlassen. </p>
-        `,
+      <p class="mb-5">Wenn Sie aus einem anderen Grund mit Ihrem Produkt nicht zufrieden sind, haben Sie bis zu 45 Kalendertage Zeit, um eine Rücksendung zu beantragen. Es wird eine zusätzliche Wiedereinlagerungsgebühr in Höhe von 50 % des Verkaufspreises des Produkts erhoben. Die ursprünglichen Liefer-, Versand- und Servicegebühren werden nicht erstattet. Kontaktieren Sie uns über <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a>, um eine Rücksendung zu vereinbaren. </p>
+      `,
     },
     {
       name: 'Nach 45 Kalendertagen',
       svgSrc: <Svg45DaysAfter></Svg45DaysAfter>,
       description: `
-      <p class="mb-5">Wenn die 45-tägige Rückgabefrist abgelaufen ist und für Ihr Produkt noch Garantie besteht, rufen Sie uns bitte an, um einen Garantieservice zu erhalten oder eine Reparatur zu veranlassen. Es kann eine Gebühr anfallen.</p>
-      <p class="mb-5">Gibt es einen Grund, unglücklich zu sein? Kontaktieren Sie uns über <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a> So können wir besser verstehen, wie wir Ihnen bei der Lösung Ihres Problems helfen können.</p>
+      <p class="mb-5">Wenn das 45-tägige Rückgabefenster abgelaufen ist und Ihr Produkt noch unter Garantie steht, rufen Sie uns bitte an, um Garantiearbeiten oder eine Reparatur zu arrangieren. Eine Gebühr kann anfallen.</p>
+      <p class="mb-5">Jeder Grund zur Unzufriedenheit? Kontaktieren Sie uns über <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a>, damit wir besser verstehen, wie wir Ihnen bei der Lösung Ihres Problems helfen können.</p>
       `,
     },
   ],
