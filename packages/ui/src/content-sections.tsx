@@ -293,7 +293,7 @@ function ContentSection4({
   return (
     <section
       className={classNames(
-        'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 ',
+        'px-4 py-8 mx-auto md:px-8 md:py-12 xl:pt-14 xl:pb-0 xl:max-w-7xl flex flex-col items-center xl:gap-16 ',
       )}
     >
       <div className="xl:flex-1 w-full">
