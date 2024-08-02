@@ -48,7 +48,7 @@ export function ReviewsSectionModule({
   const currentDescription = description || defaultTextInfo.description
 
   return (
-    <div className="bg-white py-10">
+    <div className="bg-white pt-4 pb-10">
       <div className="lg:mt-10 px-4 mx-auto md:px-8 xl:max-w-7xl">
         <SectionTitle>{currentTitle}</SectionTitle>
         <SectionDescription className="mt-4">
