@@ -53,8 +53,8 @@ export default function ReviewsItem({
       style={{ backgroundColor: item.bgColor || defaultBgColor }}
       className={clsx(
         'w-full max-w-[90vw] md:max-w-lg bg-white relative',
-        'shadow-md group border border-solid border-gray-300 rounded-2xl p-6 ',
-        'transition-all duration-300 hover:shadow-xl hover:-translate-y-3 ',
+        'group border border-solid border-transparent rounded-2xl p-6 ',
+        'transition-all duration-300 hover:shadow-md hover:border-gray-300 hover:-translate-y-3 ',
         className,
       )}
     >
