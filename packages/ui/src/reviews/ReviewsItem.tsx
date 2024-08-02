@@ -1,6 +1,7 @@
 import StarIcon from './StarIcon'
 import ImageZoomViewer from '../client-components/ImageZoomViewer'
 import { LocaleType } from './ReviewsSection'
+import clsx from 'clsx'
 
 export interface IReviewsItem {
   content: string //文本内容
@@ -18,6 +19,7 @@ export interface IReviewsItemType {
   index: number // 当前遍历ReviewsItem的index
   locale?: LocaleType
   isShowBgImage?: boolean // 配置选项：是否显示默认背景图
+  className?: string
 }
 
 const defaultBgColors = ['#E8F1EE', '#F8F1EB', '#f5f5f5']
@@ -38,6 +40,7 @@ export default function ReviewsItem({
   locale,
   index,
   isShowBgImage,
+  className,
 }: IReviewsItemType) {
   const clickText = clickTextMultiLang[locale || 'en']
 
@@ -48,7 +51,12 @@ export default function ReviewsItem({
   return (
     <div
       style={{ backgroundColor: item.bgColor || defaultBgColor }}
-      className="w-full max-w-[90vw] md:max-w-lg bg-white relative shadow-md group border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-3 "
+      className={clsx(
+        'w-full max-w-[90vw] md:max-w-lg bg-white relative',
+        'shadow-md group border border-solid border-gray-300 rounded-2xl p-6 ',
+        'transition-all duration-300 hover:shadow-xl hover:-translate-y-3 ',
+        className,
+      )}
     >
       <div className="relative z-[2]">
         {/* star icon */}
@@ -87,7 +95,9 @@ export default function ReviewsItem({
           <div className="flex-1 flex md:justify-end mt-4 md:mt-0">
             <button className="text-sm font-semibold leading-6 text-emerald-600">
               {clickText}
-              <span aria-hidden="true" className='ml-[2px] text-xs'>→</span>
+              <span aria-hidden="true" className="ml-[2px] text-xs">
+                →
+              </span>
             </button>
           </div>
         </div>

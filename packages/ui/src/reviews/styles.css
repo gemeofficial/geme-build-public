@@ -23,6 +23,16 @@
   content: '' !important;
 }
 
+.customSwiperNavigation .swiper-button-prev:after,
+.customSwiperNavigation .swiper-rtl .swiper-button-next:after {
+  content: '' !important;
+}
+
+.customSwiperNavigation .swiper-button-next:after,
+.customSwiperNavigation .swiper-rtl .swiper-button-prev:after {
+  content: '' !important;
+}
+
 /* .reviewsSwiper .swiper-button-next svg,
 .reviewsSwiper .swiper-button-prev svg {
   width: 24px !important;
