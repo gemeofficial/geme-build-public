@@ -41,7 +41,7 @@ function ContentSection1({
   return (
     <section
       className={classNames(
-        'px-4 py-8 mx-auto md:px-8 md:py-12 xl:py-14 xl:max-w-7xl flex flex-col items-center xl:gap-16 ',
+        'px-4 py-4 mx-auto md:px-8 md:pt-12 md:pb-0 xl:pt-14 xl:pb-0 xl:max-w-7xl flex flex-col items-center xl:gap-16 ',
         isDisplayTextOnLeft ? 'xl:flex-row' : 'xl:flex-row-reverse',
       )}
     >
@@ -209,14 +209,14 @@ function ContentSection3({
   items,
 }: IContentSection3Props): JSX.Element {
   return (
-    <section className="px-4 py-8 mx-auto md:px-8 md:py-12 xl:py-14 xl:max-w-7xl ">
+    <section className="px-4 mx-auto pt-8 md:px-8 md:pt-12 md:pb-0 xl:pt-14 xl:pb-0 xl:max-w-7xl ">
       {title && <SectionTitle>{title}</SectionTitle>}
       {description && (
         <SectionDescription className="mt-4 md:mt-8">
           {description}
         </SectionDescription>
       )}
-      <div className="mt-4 md:mt-8 xl:mt-16 grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-8">
+      <div className="mt-4 md:mt-8 xl:mt-12 grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-8">
         {items?.map((item) => {
           return (
             <div key={item.id}>
@@ -293,7 +293,7 @@ function ContentSection4({
   return (
     <section
       className={classNames(
-        'px-4 py-8 mx-auto md:px-8 md:py-12 xl:pt-14 xl:pb-0 xl:max-w-7xl flex flex-col items-center xl:gap-16 ',
+        'px-4 mx-auto md:px-8 pt-8 md:py-12 xl:pt-14 xl:pb-0 xl:max-w-7xl flex flex-col items-center',
       )}
     >
       <div className="xl:flex-1 w-full">
@@ -304,7 +304,7 @@ function ContentSection4({
           </SectionDescription>
         )}
       </div>
-      <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">
+      <div className="mt-4 w-full md:mt-8 xl:flex-1">
         {withMp4VideoOrYoutubeVideo?.type === 'mp4' &&
           withMp4VideoOrYoutubeVideo?.videoSrcUrl != null && (
             <video
@@ -410,7 +410,7 @@ function ContentSection5({
   bottomDescription,
 }: IContentSection5Props): JSX.Element {
   return (
-    <section className="px-4 py-8 mx-auto md:px-8 md:py-12 xl:py-14 xl:max-w-7xl">
+    <section className="mt-4 md:mt-8 xl:mt-14 px-4 py-8 mx-auto md:px-8 md:py-12 xl:py-14 xl:max-w-7xl">
       {title && <SectionTitle>{title}</SectionTitle>}
       {description && (
         <SectionDescription className=" mt-4 md:mt-8">
@@ -599,7 +599,7 @@ function ContentSection6Fixed({
   return (
     <section
       className={classNames(
-        'px-4 py-8 mx-auto md:px-8 md:py-12 xl:py-14 xl:max-w-7xl flex flex-col xl:gap-16 ',
+        'px-4 py-8 mx-auto md:px-8 md:pt-12 md:pb-0 xl:pt-14 xl:pb-0 xl:max-w-7xl flex flex-col xl:gap-16 ',
         isDisplayTextOnLeft ? 'xl:flex-row-reverse' : 'xl:flex-row',
       )}
     >
