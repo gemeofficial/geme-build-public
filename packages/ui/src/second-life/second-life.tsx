@@ -62,7 +62,7 @@ function UiSectionsSecondLife({
           </div>
         </div>
         <div className="container !w-auto">
-          <p className=" v2311-font-body text-[#5c2f13] ">{description}</p>
+          <p className=" v2311-font-body text-[#5c2f13] font-medium">{description}</p>
         </div>
       </div>
       <div className="articles xl:max-w-7xl xl:mx-auto !px-4 !py-8 md:!px-8 md:!py-16 xl:!py-[80px]">
