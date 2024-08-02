@@ -41,7 +41,7 @@ function ContentSection1({
   return (
     <section
       className={classNames(
-        'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 ',
+        'px-4 py-8 mx-auto md:px-8 md:py-12 xl:py-14 xl:max-w-7xl flex flex-col items-center xl:gap-16 ',
         isDisplayTextOnLeft ? 'xl:flex-row' : 'xl:flex-row-reverse',
       )}
     >
@@ -209,7 +209,7 @@ function ContentSection3({
   items,
 }: IContentSection3Props): JSX.Element {
   return (
-    <section className="px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl ">
+    <section className="px-4 py-8 mx-auto md:px-8 md:py-12 xl:py-14 xl:max-w-7xl ">
       {title && <SectionTitle>{title}</SectionTitle>}
       {description && (
         <SectionDescription className="mt-4 md:mt-8">
@@ -293,7 +293,7 @@ function ContentSection4({
   return (
     <section
       className={classNames(
-        'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center xl:gap-16 ',
+        'px-4 py-8 mx-auto md:px-8 md:py-12 xl:pt-14 xl:pb-0 xl:max-w-7xl flex flex-col items-center xl:gap-16 ',
       )}
     >
       <div className="xl:flex-1 w-full">
@@ -410,7 +410,7 @@ function ContentSection5({
   bottomDescription,
 }: IContentSection5Props): JSX.Element {
   return (
-    <section className="px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl">
+    <section className="px-4 py-8 mx-auto md:px-8 md:py-12 xl:py-14 xl:max-w-7xl">
       {title && <SectionTitle>{title}</SectionTitle>}
       {description && (
         <SectionDescription className=" mt-4 md:mt-8">
@@ -599,7 +599,7 @@ function ContentSection6Fixed({
   return (
     <section
       className={classNames(
-        'px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col xl:gap-16 ',
+        'px-4 py-8 mx-auto md:px-8 md:py-12 xl:py-14 xl:max-w-7xl flex flex-col xl:gap-16 ',
         isDisplayTextOnLeft ? 'xl:flex-row-reverse' : 'xl:flex-row',
       )}
     >

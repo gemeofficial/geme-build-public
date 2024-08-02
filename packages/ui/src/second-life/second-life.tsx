@@ -45,10 +45,7 @@ function UiSectionsSecondLife({
         <h2 className="sr-only">
           {titleLeftPart} {titleRightPart}
         </h2>
-        <p
-          aria-hidden="true"
-          className=" v2311-font-h0 text-v2311-fg-dark-black "
-        >
+        <p aria-hidden="true" className="v2311-font-h0 text-[#5c2f13]">
           <ScrollTriggeredAnimatedHeadlineTop
             titleLeftPart={titleLeftPart}
             titleRightPart={titleRightPart}
@@ -58,16 +55,14 @@ function UiSectionsSecondLife({
       <div className="ui-fragments-headline xl:max-w-7xl xl:mx-auto !px-4 !py-8 md:!px-8 md:!py-16 xl:!py-[80px]">
         <div className="line !w-auto">
           <div className="ui-fragments-line rtl animate">
-            <div className="line-container">
+            <div className="line-container text-[#5c2f13]">
               <div className="dot" />
-              <div className="line xl:max-w-7xl xl:mx-auto" />
+              <div className="line xl:max-w-7xl xl:mx-auto text-[#5c2f13]" />
             </div>
           </div>
         </div>
         <div className="container !w-auto">
-          <p className=" v2311-font-body text-v2311-fg-dark-black ">
-            {description}
-          </p>
+          <p className=" v2311-font-body text-[#5c2f13] font-medium">{description}</p>
         </div>
       </div>
       <div className="articles xl:max-w-7xl xl:mx-auto !px-4 !py-8 md:!px-8 md:!py-16 xl:!py-[80px]">
@@ -106,10 +101,7 @@ function UiSectionsEnd({
         <h2 className="sr-only">
           {endTitleLeftPart} {endTitleRightPart}
         </h2>
-        <p
-          aria-hidden="true"
-          className="v2311-font-h0 text-v2311-fg-dark-black"
-        >
+        <p aria-hidden="true" className="v2311-font-h0 text-[#F5CB53]">
           <ScrollTriggeredAnimatedHeadlineBottom
             endTitleLeftPart={endTitleLeftPart}
             endTitleRightPart={endTitleRightPart}

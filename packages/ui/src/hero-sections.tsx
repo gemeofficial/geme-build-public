@@ -1,5 +1,4 @@
 import { ReactNode } from 'react'
-import { IconLogoGeme } from './icons'
 import { ILinkComponent } from '../../../apps/gemebuild/src/contexts/link-context'
 import Image from 'next/image'
 import VideoInlinePlayer, { PlayIcon } from './video-inline-player'
@@ -93,7 +92,15 @@ function HeroSection1({
 
       {/* 文字定位层 */}
       <div className="h-screen xl:mx-auto xl:max-w-7xl absolute z-40 inset-0 flex flex-col items-center xl:items-start justify-center text-center xl:text-left xl:pl-20 2xl:pl-0">
-        <IconLogoGeme className="hidden xl:block w-16" />
+        <Image
+          src="/assets/images/home-v2311/hero-section-logo.svg"
+          alt="hero section logo"
+          priority
+          className="hidden xl:block w-16 h-16"
+          width={64}
+          height={64}
+          quality={100}
+        />
         {title && (
           <h1 className="v2311-font-h0 text-white xl:mt-12">{title}</h1>
         )}
