@@ -209,7 +209,7 @@ function ContentSection3({
   items,
 }: IContentSection3Props): JSX.Element {
   return (
-    <section className="px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl ">
+    <section className="px-4 py-8 mx-auto md:px-8 md:py-12 xl:py-14 xl:max-w-7xl ">
       {title && <SectionTitle>{title}</SectionTitle>}
       {description && (
         <SectionDescription className="mt-4 md:mt-8">
