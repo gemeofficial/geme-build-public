@@ -1,47 +1,21 @@
 import { IWarrantyExtendProps, WarrantyExtend } from './components'
-import { SiteHelpTabs, ISiteHelpTabsProps } from '../../components/tabs'
+import { SiteHelpTabs } from '../../components/tabs'
+import { ETabsId } from '../../components/tabs/type'
+import { getWarrantyTabsTextInfo } from '../../helpers/warranty-tabs-text-info'
 
 // 静态页面的navBar内容 配置文件 De版
-const siteHelpTabsProps: ISiteHelpTabsProps = {
-  tabs: [
-    {
-      title: 'Bedingungen und Konditionen der Dienstleistungsvereinbarung',
-      id: 'terms-and-conditions',
-    },
-    {
-      title: 'Garantie',
-      id: 'warranty',
-    },
-    {
-      title: 'Garantieverlängerung',
-      id: 'warranty-extend',
-    },
-    {
-      title: 'Rückgaberecht',
-      id: 'return-policy',
-    },
-    {
-      title: 'Datenschutzrichtlinie',
-      id: 'privacy-policy',
-    },
-    {
-      title: 'GEME Dots-Treueprogramm',
-      id: 'geme-dots-loyalty-program',
-    },
-  ],
-  currentTabId: 'warranty-extend',
-}
+const tabs = getWarrantyTabsTextInfo('de', ETabsId.WarrantyExtend)
 
 // 静态页面的内容 配置文件 De版
 const warrantyExtendProps: IWarrantyExtendProps = {
-  title: 'Erweiterte Garantie',
+  title: 'Verlängerte Garantie',
   forward: {
-    title: 'Es gelten die folgenden Vertragsbedingungen',
+    title: 'Die folgenden Vertragsbedingungen gelten',
     imgSrc: '/assets/images/warranty-extend/1.png',
   },
   items: [
     {
-      name: 'Duration and start of the warranty',
+      name: 'Dauer und Beginn der Garantie',
       svgSrc: (
         <svg
           className="w-16 h-16"
@@ -54,14 +28,14 @@ const warrantyExtendProps: IWarrantyExtendProps = {
       ),
       description: `
         <ul class="my-5 list-inside list-decimal">
-        <li class="mb-5">ROKH SRL bietet eine Garantiezeit von 1 Jahr ab dem Kaufdatum des Geräts. Durch die Verlängerung der Garantiezeit übernimmt ROKH SRL die Kosten für Reparaturen für ein oder zwei weitere Jahre unmittelbar nach Ablauf der Garantiezeit. Das Ablaufdatum ist auf der Vorderseite des Garantiescheins angegeben.</li>
-        <li class="mb-5">Der einjährige Garantieverlängerungsvertrag wird automatisch um 12 Monate auf 3 Jahre ab dem Kaufdatum des Geräts verlängert. Danach wird der Vertrag automatisch gekündigt. Er kann auch schriftlich bis zu einem Monat vor Ablauf des jährlichen Deckungszeitraums ab dem ersten Tag der Gültigkeit/Verlängerung gekündigt werden. Die automatische Verlängerung tritt in Kraft, wenn der Kunde die zu Beginn der Verlängerung erhaltene Rechnung innerhalb der angegebenen Zahlungsfrist begleicht.</li>
-        <li class="mb-5">Bestehende 1-Jahres-Garantieverlängerungen können innerhalb ihrer Garantiezeit um maximal 3 Jahre verlängert werden.</li>
-        <li class="mb-5">Die ROKH SRL hat das Recht, die Preise jederzeit zu ändern. Beim Erwerb einer Garantieverlängerung gilt der zum Zeitpunkt der Vertragsunterzeichnung gültige Preis. Die Änderung des Preises für eine einjährige Garantieverlängerung kann auf der Jahresrechnung angegeben werden. Eine vorherige schriftliche Information ist nicht vorgesehen. Wird die Rechnung innerhalb der Zahlungsfrist beglichen, wird davon ausgegangen, dass die Preisänderung akzeptiert wurde. Wird die Zahlung verweigert, wird die Garantiezeit nicht verlängert.
-        <p class="mt-2">Alle Preise verstehen sich inklusive der gesetzlichen Mehrwertsteuer.</p>
+        <li class="mb-5">ROKH SRL bietet eine Garantiezeit von 1 Jahr ab Kaufdatum des Geräts. Durch Verlängerung der Garantiezeit übernimmt ROKH SRL die Reparaturkosten für ein weiteres oder zwei Jahre unmittelbar nach Ablauf der Garantiezeit. Das Ablaufdatum ist auf der Vorderseite des Garantiedokuments angegeben.</li>
+        <li class="mb-5">Der einjährige Garantieverlängerungsvertrag wird automatisch um 12 Monate auf 3 Jahre ab Kaufdatum des Geräts verlängert. Danach wird der Vertrag automatisch gekündigt. Es kann auch schriftlich bis zu einem Monat vor Ablauf des jährlichen Deckungszeitraums ab dem ersten Tag der Gültigkeit/Erneuerung gekündigt werden. Die automatische Verlängerung tritt in Kraft, wenn der Kunde die zu Beginn der Verlängerung erhaltene Rechnung innerhalb der angegebenen Zahlungsfrist bezahlt.</li>
+        <li class="mb-5">Vorhandene einjährige Garantieverlängerungen können innerhalb ihrer Garantiezeit maximal um 3 Jahre verlängert werden.</li>
+        <li class="mb-5">ROKH SRL hat das Recht, die Preise jederzeit anzupassen. Beim Kauf einer verlängerten Garantie gilt der zum Zeitpunkt der Vertragsunterzeichnung gültige Preis. Eine Preisänderung für eine einjährige Garantieverlängerung kann auf der jährlichen Rechnung angegeben werden. Eine vorherige schriftliche Information wird nicht bereitgestellt. Wenn die Rechnung innerhalb der Zahlungsfrist bezahlt wird, wird davon ausgegangen, dass die Preisänderung akzeptiert wurde. Bei Zahlungsverweigerung wird die Garantiezeit nicht verlängert.
+        <p class="mt-2">Alle Preise verstehen sich inklusive gesetzlicher Mehrwertsteuer.</p>
         </li>
-        <li class="mb-5">Die politischen Dokumente werden per E-Mail übermittelt.</li>
-        <li class="mb-5">Reparaturen an Geräten oder Ersatzteillieferungen verlängern die Vertragslaufzeit nicht.</li>
+        <li class="mb-5">Die Policendokumente werden per E-Mail bereitgestellt.</li>
+        <li class="mb-5">Gerätereparaturen oder Ersatzteilversorgung verlängern die Vertragslaufzeit nicht.</li>
       </ul>
       `,
     },
@@ -82,21 +56,21 @@ const warrantyExtendProps: IWarrantyExtendProps = {
       ),
       description: `
         <ul class="my-5 list-inside list-decimal">
-        <li class="mb-5">Die Geräte sind im autorisierten Fachhandel oder direkt im Online-Shop von ROKH SRL in den EU-Ländern, Großbritannien, der Schweiz, Norwegen oder den USA erhältlich.</li>
-        <li class="mb-5">Zum Zeitpunkt des Kaufs der erweiterten Garantie befindet sich das Gerät in dem oben genannten Land.</li>
-        <li class="mb-5">Das Versicherungsdokument gilt jeweils für ein bestimmtes Gerät der ROKH SRL und ist nicht übertragbar.</li>
-        <li class="mb-5">Wenn die Ausrüstung den Besitzer wechselt oder der Besitzer an eine andere Adresse umzieht, muss die ROKH SRL benachrichtigt werden, damit das Versicherungsdokument gültig bleibt.</li>
-        <li class="mb-5">Das Versicherungsdokument muss innerhalb der einjährigen Garantiezeit des Geräts registriert und unterzeichnet werden. Eine einjährige Garantieverlängerung kann auch direkt nach einem Servicebesuch durch einen Techniker von ROKH SRL für Geräte, die bis zu 3 Jahre alt sind, beantragt werden.</li>
-        <li class="mb-5">Der Service im Rahmen der erweiterten Garantie wird nur in der EU, Großbritannien, der Schweiz, Norwegen und den USA angeboten.</li>
-        <li class="mb-5">Serviceleistungen im Rahmen der erweiterten Garantie dürfen nur vom ROKH SRL-Kundendienst oder von einem von ROKH SRL autorisierten Servicevertreter durchgeführt werden, der unter <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a> einen Vertrag mit dem ROKH SRL-Kundendienst abgeschlossen hat.</li>
-        <li class="mb-5">Auf Verlangen der ROKH SRL müssen der Kaufbeleg und die Versicherungsunterlagen vorgelegt werden.</li>
-        <li class="mb-5">Hat der Kunde keinen Anspruch auf die verlängerte Garantie, werden die Kosten für Reparaturen und andere Dienstleistungen (z.B. Geräteüberprüfung) nach den aktuellen Tarifen berechnet.</li>
-        <li class="mb-5">Geräte mit Vertragsunterlagen sind nur für nicht-kommerzielle Zwecke bestimmt.</li>
+        <li class="mb-5">Die Geräte werden bei autorisierten Fachhändlern oder direkt im ROKH SRL Online-Shop in EU-Ländern, Großbritannien, der Schweiz, Norwegen oder den USA gekauft.</li>
+        <li class="mb-5">Zum Zeitpunkt des Kaufs der erweiterten Garantie befindet sich das Gerät in dem oben angegebenen Land.</li>
+        <li class="mb-5">Das Policendokument gilt in jedem Fall für ein bestimmtes ROKH SRL Gerät und ist nicht übertragbar.</li>
+        <li class="mb-5">Wenn sich das Eigentum am Gerät ändert oder der Eigentümer an eine andere Adresse umzieht, muss ROKH SRL benachrichtigt werden, damit das Policendokument gültig bleibt.</li>
+        <li class="mb-5">Das Policendokument muss innerhalb der einjährigen Garantiezeit des Geräts registriert und unterschrieben werden. Eine einjährige Garantieverlängerung kann auch direkt nach einem Servicebesuch durch einen ROKH SRL Techniker für Geräte bis zu 3 Jahren erworben werden.</li>
+        <li class="mb-5">Der Service unter der erweiterten Garantie wird nur in der EU, Großbritannien, der Schweiz, Norwegen und den USA verfügbar sein.</li>
+        <li class="mb-5">Der Service unter der erweiterten Garantie darf nur von ROKH SRL Kundenservice oder einem von ROKH SRL autorisierten Serviceagenten durchgeführt werden, kontaktieren Sie <a href="mailto:info@geme.bio" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">info@geme.bio</a> für Verträge mit dem ROKH SRL Kundenservice.</li>
+        <li class="mb-5">Auf Verlangen von ROKH SRL müssen Kaufbeleg und Policendokumente vorgelegt werden.</li>
+        <li class="mb-5">Wenn der Kunde keinen Anspruch auf Leistungen aus der erweiterten Garantie hat, werden die Kosten für Reparaturen und andere erbrachte Dienstleistungen (z. B. Geräteinspektion) nach den aktuellen Sätzen berechnet.</li>
+        <li class="mb-5">Geräte mit Policendokumentation sind nur für den nicht kommerziellen Gebrauch bestimmt.</li>
       </ul>
       `,
     },
     {
-      name: 'Erfassungsbereich',
+      name: 'Deckung',
       svgSrc: (
         <svg
           className="w-16 h-16"
@@ -117,15 +91,15 @@ const warrantyExtendProps: IWarrantyExtendProps = {
       ),
       description: `
         <ul class="my-5 list-inside list-decimal">
-        <li class="mb-5">Mängel an den Geräten werden innerhalb einer angemessenen Frist und kostenlos durch Reparatur oder Ersatz der betreffenden Teile behoben. Alle Reise-, Interventions-, Arbeits- und Ersatzteilkosten werden von der ROKH SRL getragen. Die ersetzten Teile oder Geräte gehen in das Eigentum der ROKH SRL über.</li>
-        <li class="mb-5">Kann das Gerät nicht wirtschaftlich repariert werden oder ist es nicht mehr zu reparieren, erhält der Kunde ein neues identisches oder gleichwertiges Gerät. Bei Ersatzgeräten kann die Kommunikation (Verbindung) mit anderen Geräten und bestehenden Hausanlagen nicht gewährleistet werden. Auf Antrag kann auch der Zeitwert des Geräts erstattet werden. Wenn die ROKH SRL den Zeitwert des Geräts erstattet, wird die Police ungültig. Wenn das Gerät ersetzt wird, wird die in der Police vorgesehene Restgarantiezeit auf das neue Gerät übertragen.</li>
-        <li class="mb-5">Die erweiterte Garantie deckt keine anderen Schadensersatzansprüche gegen die ROKH SRL ab, mit Ausnahme der Haftung aufgrund von grober oder vorsätzlicher Fahrlässigkeit der autorisierten technischen Kundendienstmitarbeiter der ROKH SRL oder aufgrund von Verletzungen mit Todesfolge, Personenschäden oder Gesundheitsschäden am Gerät.</li>
-        <li class="mb-5">Die Lieferung von Verbrauchsmaterial und Zubehör ist nicht Gegenstand dieses Vertrags.</li>
+        <li class="mb-5">Mängel am Gerät werden innerhalb einer angemessenen Zeit kostenlos durch Reparatur oder Austausch der relevanten Teile behoben. Alle Reise-, Eingriffs-, Arbeits- und Ersatzteilkosten werden von ROKH SRL übernommen. Die ersetzten Teile oder Geräte gehen in das Eigentum von ROKH SRL über.</li>
+        <li class="mb-5">Wenn das Gerät nicht wirtschaftlich repariert werden kann oder irreparabel ist, erhält der Kunde ein neues identisches oder gleichwertiges Gerät. Bei Ersatzgeräten kann die Kommunikation (Verbindung) mit anderen Geräten und bestehenden Haussystemen nicht garantiert werden. Der aktuelle Marktwert des Geräts kann auf Anfrage ebenfalls erstattet werden. Erstattet ROKH SRL den aktuellen Marktwert des Geräts, wird das Policendokument ungültig. Wenn das Gerät ersetzt wird, wird der verbleibende Garantiezeitraum, der durch das Policendokument gewährt wird, auf das neue Gerät übertragen.</li>
+        <li class="mb-5">Die erweiterte Garantie deckt keine weiteren Schadensersatzansprüche gegen ROKH SRL ab, außer bei grober oder vorsätzlicher Fahrlässigkeit von autorisierten technischen Servicemitarbeitern von ROKH SRL oder bei tödlichen Verletzungen, Personenschäden oder Schäden an der Gesundheit des Geräts.</li>
+        <li class="mb-5">Die Versorgung mit Verbrauchsmaterialien und Zubehör ist durch diesen Vertrag nicht abgedeckt.</li>
       </ul>
       `,
     },
     {
-      name: 'Beschränkungen',
+      name: 'Einschränkungen',
       svgSrc: (
         <svg
           className="w-16 h-16"
@@ -140,18 +114,18 @@ const warrantyExtendProps: IWarrantyExtendProps = {
         </svg>
       ),
       description: `
-      <p class="mb-5">Garantieverlängerungen decken nicht die Reparaturkosten, wenn der Defekt verursacht wird durch</p>
+      <p class="mb-5">Garantieverlängerungen decken nicht die Reparaturkosten, wenn der Defekt verursacht wurde durch:</p>
         <ul class="my-5 list-inside list-decimal">
-        <li class="mb-5">Unsachgemäße Installation, z. B. Nichteinhaltung der geltenden Sicherheitsvorschriften und der schriftlichen Gebrauchs- und Installationsanweisungen.</li>
-        <li class="mb-5">Unsachgemäße Verwendung und Handhabung, wie z. B. die Verwendung von ungeeigneten Reinigungsmitteln oder Chemikalien und Schäden durch die Aufnahme von Flüssigkeiten, Staub oder Toner.</li>
-        <li class="mb-5">Geräte, die in anderen EU-Mitgliedsstaaten, Großbritannien, der Schweiz, Norwegen oder den USA erworben wurden, funktionieren möglicherweise nicht oder sind aufgrund unterschiedlicher technischer Spezifikationen nur eingeschränkt nutzbar.</li>
-        <li class="mb-5">Äußere Faktoren wie Transportschäden, Stöße und Erschütterungen, raue Umweltbedingungen oder Naturereignisse.</li>
-        <li class="mb-5">Reparaturen oder Änderungen, die nicht von einem von ROKH SRL geschulten und autorisierten Servicemitarbeiter durchgeführt wurden.</li>
-        <li class="mb-5">Schäden, die durch nicht genormte Teile und die Nichtverwendung von ROKH SRL-Originalersatzteilen oder von ROKH SRL autorisierten Teilen verursacht werden.</li>
-        <li class="mb-5">Kaputte Gehäuse und defekte Glühbirnen.</li>
-        <li class="mb-5">Schwankungen der Leistungsbedingungen, die die vom Hersteller angegebenen Toleranzen überschreiten.</li>
-        <li class="mb-5">Nichteinhaltung der Reinigungs- und Wartungsvorschriften.</li>
-        <li class="mb-5">Natürliche und gebrauchsbedingte Abnutzung, die laut Gebrauchsanweisung während der Lebensdauer des Produkts regelmäßig ersetzt werden muss.</li>
+        <li class="mb-5">Unsachgemäße Installation, wie z. B. Nichteinhaltung geltender Sicherheitsvorschriften und schriftlicher Gebrauchsanweisungen und Installationsanweisungen.</li>
+        <li class="mb-5">Unsachgemäße Verwendung und Handhabung, wie die Verwendung ungeeigneter Reinigungsmittel oder Chemikalien und Schäden durch Aufnahme von Flüssigkeiten, Staub oder Toner.</li>
+        <li class="mb-5">In anderen EU-Mitgliedstaaten, Großbritannien, der Schweiz, Norwegen oder den USA gekaufte Geräte funktionieren möglicherweise nicht oder sind aufgrund unterschiedlicher technischer Spezifikationen eingeschränkt nutzbar.</li>
+        <li class="mb-5">Externe Faktoren wie Transportschäden, Stöße und Stürze, raue Umgebungsbedingungen oder Naturphänomene.</li>
+        <li class="mb-5">Reparaturen oder Änderungen, die nicht von einem geschulten und autorisierten Serviceagenten von ROKH SRL durchgeführt wurden.</li>
+        <li class="mb-5">Schäden, die durch nicht standardmäßige Teile verursacht wurden, und das Versäumnis, Original-Ersatzteile von ROKH SRL oder von ROKH SRL autorisierte Teile zu verwenden.</li>
+        <li class="mb-5">Gehäuseschäden und defekte Glühbirnen.</li>
+        <li class="mb-5">Schwankungen der Strombedingungen, die die vom Hersteller angegebenen Toleranzen überschreiten.</li>
+        <li class="mb-5">Nichteinhaltung der Reinigungs- und Wartungsanweisungen.</li>
+        <li class="mb-5">Natürlicher und gebrauchsbedingter Verschleiß, der gemäß Benutzerhandbuch regelmäßig während der Lebensdauer des Produkts ausgetauscht werden muss.</li>
       </ul>
       `,
     },
@@ -176,11 +150,11 @@ const warrantyExtendProps: IWarrantyExtendProps = {
         </svg>
       ),
       description: `
-      <p>Die ROKH SRL sammelt und verarbeitet im Rahmen ihrer Kundendienstleistungen personenbezogene Daten. Weitere Informationen über die Verarbeitung Ihrer personenbezogenen Daten finden Sie in unserer Datenschutzerklärung unter folgender Adresse: <a href="/privacy-policy" target="_blank" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">Datenschutzbestimmungen</a>.<p>
+      <p>Im Rahmen seiner Kundenserviceleistung erhebt und verarbeitet ROKH SRL personenbezogene Daten. Weitere Informationen zur Verarbeitung Ihrer personenbezogenen Daten finden Sie in unserer Datenschutzerklärung unter der folgenden Adresse: <a href="/privacy-policy" target="_blank" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">Datenschutzrichtlinie</a>.<p>
       `,
     },
     {
-      name: 'Recht auf Widerruf',
+      name: 'Widerrufsrecht',
       svgSrc: (
         <svg
           className="w-16 h-16"
@@ -196,8 +170,8 @@ const warrantyExtendProps: IWarrantyExtendProps = {
         </svg>
       ),
       description: `
-      <p class="mb-5">Sie haben das Recht, binnen 30 Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Siehe <a href="/return-policy" target="_blank" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">die Bedingungen der Rückgabe</a> für Einzelheiten.<p>
-      <p class="mb-5">Wenn Sie während der Rückgabefrist mit der Erbringung von Dienstleistungen beginnen möchten, müssen Sie uns einen Betrag zahlen, der dem Anteil der erbrachten Dienstleistungen im Verhältnis zum Gesamtumfang der im Vertrag vorgesehenen Leistungen entspricht, bevor Sie uns über Ihren Widerruf dieses Vertrags unterrichten können.</p>
+      <p class="mb-5">Sie haben das Recht, innerhalb von 30 Tagen ohne Angabe von Gründen von diesem Vertrag zurückzutreten. Einzelheiten finden Sie in den <a href="/return-policy" target="_blank" class="text-accent-6 hover:text-accent-9 transition ease-in-out duration-150 underline">Rückgabebedingungen</a>.<p>
+      <p class="mb-5">Wenn Sie während der Rückgabefrist mit der Erbringung von Dienstleistungen beginnen möchten, müssen Sie uns einen Betrag zahlen, der dem auf Grundlage der Gesamtabdeckung des Vertrags gewährten Betrag entspricht, bevor Sie uns über Ihren Rücktritt von diesem Vertrag benachrichtigen.</p>
       `,
     },
   ],
@@ -207,7 +181,7 @@ function WarrantyExtendPageDe() {
   return (
     <>
       <h1 className="sr-only">Verlängern Sie Ihre GEME Produktgarantie</h1>
-      <SiteHelpTabs {...siteHelpTabsProps} />
+      <SiteHelpTabs {...tabs} />
       <WarrantyExtend {...warrantyExtendProps} />
     </>
   )

@@ -9,20 +9,8 @@ import {
   DocumentTextIcon,
 } from '@heroicons/react/20/solid'
 import classNames from '../../helpers/class-names'
-import { ComponentType, ComponentPropsWithRef } from 'react'
 import { useLink } from '../../contexts/link-context'
-
-interface ITab {
-  id: string
-  title: string
-  href: string
-  icon: ComponentType<ComponentPropsWithRef<'svg'>>
-  current: boolean
-}
-
-interface ITabsProps {
-  tabs: ITab[]
-}
+import { ETabsId, ISiteHelpTabsProps, ITab, ITabsProps } from './type'
 
 const Tabs = ({ tabs }: ITabsProps) => {
   const Link = useLink()
@@ -30,7 +18,7 @@ const Tabs = ({ tabs }: ITabsProps) => {
   return (
     <div className="p-4 bg-gray-50">
       <nav
-        className="-mb-px flex lg:space-x-10 justify-center flex-col lg:flex-row"
+        className="-mb-px flex xl:space-x-10 justify-center flex-col xl:flex-row"
         aria-label="Tabs"
       >
         {tabs.map((tab) => (
@@ -62,48 +50,40 @@ const Tabs = ({ tabs }: ITabsProps) => {
   )
 }
 
-interface ISiteHelpTabsProps {
-  tabs: {
-    id: string // unique id
-    title: string // title of the tab
-  }[]
-  currentTabId: string // id of the current tab
-}
-
 const staticTabs: Pick<ITab, 'href' | 'icon' | 'id'>[] = [
   {
-    id: 'terms-and-conditions',
+    id: ETabsId.TermsAndConditions,
     href: '/terms-and-conditions',
     icon: UserIcon,
   },
   {
-    id: 'warranty',
+    id: ETabsId.Warranty,
     href: '/warranty',
     icon: CheckCircleIcon,
   },
   {
-    id: 'warranty-extend',
+    id: ETabsId.WarrantyExtend,
     href: '/warranty-extend',
     icon: PlusCircleIcon,
   },
   {
-    id: 'return-policy',
+    id: ETabsId.ReturnPolicy,
     href: '/return-policy',
     icon: DocumentIcon,
   },
   {
-    id: 'privacy-policy',
+    id: ETabsId.PrivacyPolicy,
     href: '/privacy-policy',
     icon: CubeIcon,
   },
   {
-    id: 'geme-dots-loyalty-program',
+    id: ETabsId.GemeDotsLoyaltyProgram,
     href: '/geme-dots-loyalty-program',
     icon: DocumentTextIcon,
   },
 ]
 
-function siteHelpTabsPropsToTabsProps({
+function tabsToTabsProps({
   tabs,
   currentTabId,
 }: ISiteHelpTabsProps): ITabsProps {
@@ -117,7 +97,7 @@ function siteHelpTabsPropsToTabsProps({
 }
 
 const SiteHelpTabs = (props: ISiteHelpTabsProps) => {
-  const tabsProps = siteHelpTabsPropsToTabsProps(props)
+  const tabsProps = tabsToTabsProps(props)
   return <Tabs {...tabsProps} />
 }
 

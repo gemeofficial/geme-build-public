@@ -6,47 +6,45 @@ import Image from 'next/image'
 // 页面内容配置文件1  De版本
 const faqGroups: IFaqOffsetWithSupportingTextProps[] = [
   {
-    title: 'Keine Energie',
-    description: `Ich habe Probleme beim Einschalten meines GEME. Die vorderen LED-Leuchten leuchten nicht auf, selbst wenn ich den Netzschalter drücke.`,
+    title: 'Kein Strom',
+    description: `Ich habe Schwierigkeiten, mein GEME einzuschalten. Die vorderen LED-Leuchten leuchten nicht, selbst wenn ich den Netzschalter drücke.`,
     faqs: [
       {
-        question: 'Sind Stecker und Steckdose richtig verbunden?',
-        answer: 'Bitte schließen Sie den Stecker korrekt an die Steckdose an.',
+        question: 'Sind der Stecker und die Steckdose richtig angeschlossen?',
+        answer: 'Bitte stecken Sie den Stecker richtig in die Steckdose.',
       },
       {
-        question: 'Ist die Stromversorgung 110/220 V?',
-        answer: 'Bitte verwenden Sie eine Spannung von 110/220 V.',
+        question: 'Ist die Spannung 110/220V?',
+        answer: 'Bitte verwenden Sie 110/220V Spannung.',
       },
       {
         question: 'Keiner der oben genannten Fälle?',
-        answer: 'Bitte wenden Sie sich an das Kundendienstcenter.',
+        answer: 'Bitte wenden Sie sich an das Kundendienstzentrum.',
       },
     ],
   },
   {
-    title: 'Warnton',
-    description: `Ich habe ein Problem mit meinem GEME. Wenn es läuft, ertönt ein „Bibibi“-Warnton und auf dem LED-Display wird ein Fehlercode angezeigt.`,
+    title: 'Warnsignal',
+    description: `Ich habe ein Problem mit meinem GEME. Wenn es läuft, ertönt ein "bibibi" Warnsignal und das LED-Display zeigt einen Fehlercode an.`,
     faqs: [
       {
         question: 'Wenn der Code wie folgt angezeigt wird:',
         answer: (
           <div className="prose text-gray-600 prose-p:my-0 prose-ul:my-0 prose-img:mb-2">
-            <Image src="/assets/images/self-repair/stirringIndicatorLight.png" alt='code displayed' width={260} height={80} />
-            <p>TSein Code zeigt an, dass die Vermischung abnormal ist.</p>
+            <Image src="/assets/images/self-repair/stirringIndicatorLight.png" alt='code displayed1' width={260} height={80} />
+            <p>Dieser Code weist darauf hin, dass das Mischen abnormal ist.</p>
             <ul>
               <li>
-                Überprüfen Sie, ob ein harter Fremdkörper darin steckt
-                Zersetzungstank.
+                Überprüfen Sie, ob sich ein harter Fremdkörper im
+                Zersetzungstank befindet.
               </li>
               <li>
                 Entfernen Sie den Fremdkörper, schließen Sie den Deckel und
-                prüfen Sie, ob der Fremdkörper vorhanden ist Code wird weiterhin
-                angezeigt.
+                prüfen Sie, ob der Code noch angezeigt wird.
               </li>
               <li>
-                Sollte der obige Code weiterhin angezeigt werden, wenden Sie
-                sich bitte an den Service Wenn der obige Code immer noch
-                angezeigt wird, wenden Sie sich bitte an den Service Center.
+                Wenn der obige Code immer noch angezeigt wird, wenden Sie sich
+                bitte an das Servicecenter.
               </li>
             </ul>
           </div>
@@ -56,11 +54,11 @@ const faqGroups: IFaqOffsetWithSupportingTextProps[] = [
         question: 'Wenn der Code wie folgt angezeigt wird:',
         answer: (
           <div className="prose text-gray-600 prose-p:my-0 prose-ul:my-0 prose-img:mb-2">
-            <Image src="/assets/images/self-repair/uvLampIndicatorLight.png" alt='code displayed' width={260} height={80} />
+            <Image src="/assets/images/self-repair/uvLampIndicatorLight.png" alt='code displayed2' width={260} height={80} />
             <p>
               Bitte{' '}
               <a href="https://youtu.be/VdAtQfpSQ_E" target="_blank">
-                Wechseln Sie die UV-Lampe.
+                wechseln Sie die UV-Lampe.
               </a>
             </p>
           </div>
@@ -69,67 +67,62 @@ const faqGroups: IFaqOffsetWithSupportingTextProps[] = [
     ],
   },
   {
-    title: 'Lärm',
-    description: `Mir ist aufgefallen, dass mein GEME während des Betriebs ungewöhnliche Geräusche macht. Die Geräusche unterscheiden sich deutlich von dem, was ich normalerweise im Normalbetrieb höre.`,
+    title: 'Geräusch',
+    description: `Ich habe festgestellt, dass mein GEME während des Betriebs ungewöhnliche Geräusche macht. Die Geräusche unterscheiden sich deutlich von denen, die ich normalerweise während des normalen Betriebs hören würde.`,
     faqs: [
       {
-        question: 'Befinden sich harte Fremdkörper im Zersetzungstank? ',
+        question:
+          'Befindet sich ein harter Fremdkörper im Zersetzungstank? ',
         answer: 'Bitte entfernen Sie harte Gegenstände.',
       },
       {
         question:
-          'Bitte entfernen Sie harte Gegenstände. Kommt es zu regelmäßigen Geräuschen, wenn der Rührmotor läuft?',
+          'Wird das Geräusch periodisch erzeugt, wenn der Rührmotor läuft?',
         answer: (
           <div className="prose text-gray-600 prose-p:my-0 prose-ul:my-0 prose-img:mb-2">
             Dies wird durch den Rührmotor verursacht. Bitte{' '}
             <a href="https://youtu.be/rthDSasoOrY" target="_blank">
-              Passen Sie die Füße an
+              stellen Sie die Füße
             </a>{' '}
-            des GAME, um das Gerät für einen reibungslosen Betrieb auf einer
-            ebenen Fläche zu halten, oder wenden Sie sich an den Kundendienst.
+            des GEME ein, um das Gerät auf einer ebenen Fläche für einen reibungslosen
+            Betrieb zu halten, oder wenden Sie sich an das Kundendienstzentrum.
           </div>
         ),
       },
       {
         question: 'Kommt das Geräusch vom Lüfter? ',
-        answer: `Bitte überprüfen Sie den Aufstellungsort des Geräts, um sicherzustellen, dass der Luftauslass nicht blockiert ist, oder wenden Sie sich an das Kundendienstzentrum.`,
+        answer: `Bitte überprüfen Sie, wo das Gerät platziert ist, um sicherzustellen, dass der Luftauslass nicht blockiert ist, oder wenden Sie sich an das Kundendienstzentrum.`,
       },
       {
         question:
-          'Klingt das Geräusch wie ein intermittierendes „Du“-Geräusch und ist das Innere des Zersetzungstanks zu trocken?',
-        answer: `Geben Sie etwa 200 bis 500 ml Wasser in den Rottetank oder geben Sie mehr Wasser in den Bioabfall.`,
+          "Klingt das Geräusch wie intermittierendes 'du' und ist das Innere des Zersetzungstanks zu trocken?",
+        answer: `Fügen Sie etwa 200 bis 500 ml Wasser in den Zersetzungstank hinzu oder geben Sie Bio-Abfälle mit mehr Wasser hinein.`,
       },
     ],
   },
   {
     title: 'Schlechter Geruch',
-    description: `Mir ist aufgefallen, dass mein GEME einen unangenehmen Geruch verströmt.`,
+    description: `Ich habe festgestellt, dass mein GEME einen unangenehmen Geruch abgibt.`,
     faqs: [
       {
         question:
-          'Tritt der Geruch aus, unabhängig davon, ob der Deckel geschlossen ist oder nicht?',
+          'Tritt der Geruch unabhängig davon aus, ob der Deckel geschlossen ist oder nicht?',
         answer: (
           <div className="prose text-gray-600 prose-p:my-0 prose-ul:my-0 prose-img:mb-2">
             <p>
-              Bitte prüfen Sie, ob das in Ihrem GEME erzeugte Material zu feucht
-              ist. Durch zu viel Feuchtigkeit ausgelöste anaerobe Fermentation
-              kann entstehen ein Geruch.
+              Bitte überprüfen Sie, ob das in Ihrem GEME erzeugte Material zu feucht ist.
+              Durch zu viel Feuchtigkeit ausgelöste anaerobe Fermentation kann Geruch verursachen.
             </p>
             <ul>
+              <li>Bitte überprüfen Sie, ob die Stromversorgung Ihres Geräts immer eingeschaltet ist.</li>
               <li>
-                Bitte überprüfen Sie, ob die Stromversorgung Ihres Geräts immer
-                eingeschaltet ist.
+                Bitte hören Sie auf, 2-3 Tage lang Bio-Abfälle hinzuzufügen, und drücken Sie die
+                Entodorierungs- und Entfeuchtungstaste.
               </li>
               <li>
-                Bitte unterbrechen Sie die Entsorgung von Bioabfällen für 2-3
-                Tage und drücken Sie die Taste Desodorierungs- und
-                Entfeuchtungstaste.
-              </li>
-              <li>
-                Wenn die Luftfeuchtigkeit des Nebenprodukts zu hoch ist, nehmen
-                Sie es bitte mit aus und legen Sie es an einen belüfteten Ort,
-                damit es vorher trocknen kann indem Sie es erneut zur Verwendung
-                aktivieren.
+                Wenn die Feuchtigkeit des Nebenprodukts zu hoch ist, nehmen Sie es
+                heraus und lassen Sie es an einem belüfteten Ort trocknen, bevor
+                Sie es wieder aktivieren.
               </li>
             </ul>
           </div>
@@ -137,73 +130,73 @@ const faqGroups: IFaqOffsetWithSupportingTextProps[] = [
       },
       {
         question:
-          'Es gibt keinen Geruch von den Nebenprodukten im Inneren von GEME, aber es gibt einen Geruch von dem Gas, das aus der Einheit austritt?',
+          'Es gibt keinen Geruch vom Nebenprodukt im GEME, aber es gibt einen Geruch vom aus dem Gerät abgegebenen Gas?',
         answer: (
           <div className="prose text-gray-600 prose-p:my-0 prose-ul:my-0 prose-img:mb-2">
-            <p>Dies ist ein Problem mit der Desodorierungseinheit.</p>
+            <p>Dies ist ein Problem mit der Entodorierungseinheit.</p>
             <ul>
               <li>Bitte überprüfen Sie, ob der Filter verstopft ist, und reinigen Sie ihn.</li>
               <li>
-              Bitte überprüfen Sie, ob die Auslassöffnung verstopft ist, und reinigen Sie sie
-                 Blockierung.
+                Bitte überprüfen Sie, ob der Auslass blockiert ist, und beseitigen Sie die
+                Blockierung.
               </li>
-              <li>Andernfalls wenden Sie sich bitte an das Kundendienstcenter.</li>
+              <li>Andernfalls wenden Sie sich bitte an das Kundendienstzentrum.</li>
             </ul>
           </div>
         ),
       },
       {
         question: 'GEME hat einen leichten Geruch.',
-        answer: `Bitte drücken Sie die Desodorierungstaste.`,
+        answer: `Bitte drücken Sie die Entodorierungstaste.`,
       },
     ],
   },
   {
-    title: 'Nicht String',
-    description: `Die Rührwelle meines GEME dreht sich nicht mehr.`,
+    title: 'Rührwerk dreht sich nicht',
+    description: `Die Rührwelle meines GEME hat aufgehört zu rotieren.`,
     faqs: [
       {
         question: 'Gibt es zu viele Nebenprodukte?',
         answer: `
-        Behalten Sie die gleiche Menge an Nebenprodukten wie die ursprünglichen Mikroben und schaufeln Sie den Rest heraus.
+        Halten Sie die gleiche Menge an Nebenprodukten wie die ursprünglichen Mikroben und schaufeln Sie den Rest aus.
         `,
       },
       {
-        question: 'Ist der interne Zustand dick genug?',
-        answer: `Hören Sie 2-5 Tage lang auf, es in den Müll zu werfen, und verwenden Sie es nach dem Trocknen normal.`,
+        question: 'Ist der innere Zustand dick genug?',
+        answer: `Hören Sie auf, den Müll 2-5 Tage lang hinzuzufügen, und verwenden Sie ihn nach dem Trocknen normal.`,
       },
       {
         question:
-          'Sind lange Fasern in der Rührwelle verwickelt?',
-        answer: `Bitte entfernen Sie die langen Fasern von der Mischwelle. Bitte zerkleinern Sie so viele Lebensmittelabfälle wie möglich, bevor Sie sie in den GEME geben.`,
+          'Gibt es lange Fasern, die sich um die Rührwelle gewickelt haben?',
+        answer: `Bitte entfernen Sie die langen Fasern von der Rührwelle. Bitte schneiden Sie Ihre Speiseabfälle so klein wie möglich, bevor Sie sie in das GEME geben.`,
       },
       {
         question: 'Läuft der Motor nicht?',
-        answer: `Bitte wenden Sie sich an das Kundendienstzentrum.`,
+        answer: `Bitte konsultieren Sie das Kundendienstzentrum.`,
       },
     ],
   },
   {
     title: 'Abfall nicht zersetzt',
-    description: `Mir ist aufgefallen, dass sich mein Abfall überhaupt nicht zersetzt, nachdem er in mein GEME gegeben wurde, selbst nach 1-3 Tagen Wartezeit.`,
+    description: `Ich habe festgestellt, dass mein Abfall überhaupt nicht zersetzt wird, nachdem er in mein GEME gegeben wurde, selbst nach 1-3 Tagen Warten.`,
     faqs: [
       {
         question:
-          'Ist der Rührwerksmotor abnormal und verursacht eine unzureichende Bewegung?',
-        answer: `Störung des Rührmotors, wenden Sie sich bitte an den Kundendienst.`,
+          'Ist der Rührmotor abnormal und verursacht unzureichende Durchmischung?',
+        answer: `Rührmotorfehler, bitte wenden Sie sich an das Kundendienstzentrum.`,
       },
       {
         question:
-          'Haben Sie zu viel Bioabfall verfüttert? (Die durchschnittliche tägliche Verarbeitungskapazität beträgt etwa 5 kg)',
-        answer: `Bitte stellen Sie 2 bis 5 Tage lang keine Bioabfälle mehr ein und verwenden Sie diese wieder normal, nachdem das Innere des Zersetzungsbehälters trocken ist.`,
+          'Haben Sie zu viel Bio-Abfall hinzugefügt? (die durchschnittliche tägliche Verarbeitungskapazität beträgt etwa 5 kg)',
+        answer: `Bitte hören Sie auf, 2 bis 5 Tage lang Bio-Abfälle hinzuzufügen, und verwenden Sie es nach dem Trocknen im Inneren des Zersetzungstanks normal.`,
       },
       {
-        question: 'Haben Sie Fruchtschalen oder andere faserreiche Bioabfälle eingelagert?',
-        answer: `Schneiden Sie den faserreichen Bioabfall in kleine Stücke, um die Zersetzung zu beschleunigen, oder zersetzen Sie ihn nach einiger Zeit.`,
+        question: 'Haben Sie Obstschalen oder andere faserreiche Bio-Abfälle hinzugefügt?',
+        answer: `Schneiden Sie die faserreichen Bio-Abfälle in kleine Stücke, um die Zersetzung zu beschleunigen oder nach einer gewissen Zeit zu zersetzen.`,
       },
       {
-        question: `Ist alles in Ordnung, aber die Zersetzungsgeschwindigkeit ist nur langsamer als zuvor?`,
-        answer: `Bitte fügen Sie neue Mikroorganismen hinzu oder ersetzen Sie diese.`,
+        question: `Ist alles in Ordnung, aber die Zersetzungsgeschwindigkeit langsamer als zuvor?`,
+        answer: `Bitte fügen Sie neue Mikroorganismen hinzu oder ersetzen Sie sie.`,
       },
     ],
   },
@@ -212,59 +205,59 @@ const faqGroups: IFaqOffsetWithSupportingTextProps[] = [
     description: `Das Nebenprodukt in meinem GEME ist übermäßig nass oder matschig.`,
     faqs: [
       {
-        question: 'Haben Sie zu viel Bioabfall entsorgt?',
+        question: 'Haben Sie übermäßig Bio-Abfall hinzugefügt?',
         answer: `Die durchschnittliche tägliche Verarbeitungskapazität beträgt 5 kg.
-        Bitte stellen Sie 2 bis 5 Tage lang keine Bioabfälle mehr ein und verwenden Sie diese wieder normal, nachdem das Innere des Zersetzungsbehälters trocken ist.`,
+        Bitte hören Sie auf, 2 bis 5 Tage lang Bio-Abfälle hinzuzufügen, und verwenden Sie es nach dem Trocknen im Inneren des Zersetzungstanks normal.`,
       },
       {
-        question: 'Haben Sie Bioabfall entsorgt, der zu viel Wasser enthält?',
-        answer: `Bitte stellen Sie 2 bis 5 Tage lang keine Bioabfälle mehr ein und verwenden Sie diese wieder normal, nachdem das Innere des Zersetzungsbehälters trocken ist.`,
+        question: 'Haben Sie Bio-Abfälle hinzugefügt, die zu viel Wasser enthalten?',
+        answer: `Bitte hören Sie auf, 2 bis 5 Tage lang Bio-Abfälle hinzuzufügen, und verwenden Sie es nach dem Trocknen im Inneren des Zersetzungstanks normal.`,
       },
       {
-        question: 'Hast du den Strom ausgeschaltet?',
-        answer: `Nachdem Sie das Netzteil 1 bis 3 Tage lang verwendet haben, können Sie es normal verwenden.`,
+        question: 'Haben Sie den Strom abgeschaltet?',
+        answer: `Nach der Verwendung der Stromversorgung für 1-3 Tage wird es normal verwendet.`,
       },
     ],
   },
   {
     title: `Kondensation`,
-    description: 'Auf dem Innendeckel meines GAME befinden sich Wassertropfen.',
+    description: 'Es befinden sich Wassertropfen auf der Innenseite meines GEME-Deckels.',
     faqs: [
       {
-        question: 'Haben Sie zu viel Bioabfall entsorgt?',
-        answer: `Drücken Sie die Entfeuchtungstaste und hören Sie für 2–3 Tage auf, Biomüll einzuwerfen.`,
+        question: 'Haben Sie übermäßig Bio-Abfall hinzugefügt?',
+        answer: `Drücken Sie die Entfeuchtungstaste und hören Sie auf, 2-3 Tage lang Bio-Abfälle hinzuzufügen.`,
       },
       {
-        question: 'Wird GEME an einem kühleren Ort installiert (nicht im Winter)?',
-        answer: `Bitte bringen Sie GEME nach drinnen.`,
+        question: 'Ist GEME an einem kühleren Ort installiert (nicht im Winter)?',
+        answer: `Bitte bewegen Sie GEME nach innen.`,
       },
       {
         question: 'Haben Sie vergessen, das Schaumstoffpolster unter dem Produkt zu entfernen?',
-        answer: `Nachdem Sie das Schaumstoffpolster entfernt haben, drücken Sie die Entfeuchtungsfunktionstaste.`,
+        answer: `Entfernen Sie nach dem Entfernen des Schaumstoffpolsters die Entfeuchtungsfunktionstaste.`,
       },
       {
-        question: `Ist der Abgasfilter im Zersetzungstank verstopft?`,
-        answer: `Bitte reinigen Sie den Abluftfilter.`,
+        question: `Ist der Auslassfilter im Zersetzungstank verstopft?`,
+        answer: `Bitte reinigen Sie den Auslassfilter.`,
       },
     ],
   },
   {
     title: 'Insekten',
-    description: `Ich habe Insekten in meinem GEME-Behälter bemerkt, zusammen mit den Lebensmittelabfällen.`,
+    description: `Ich habe Insekten in meinem GEME-Behälter zusammen mit den Lebensmittelabfällen bemerkt.`,
     faqs: [
       {
-        question: 'Hast du den Strom ausgeschaltet?',
-        answer: `Durch neue Mikroorganismen ersetzen.`,
+        question: 'Haben Sie den Strom abgeschaltet?',
+        answer: `Ersetzen Sie es durch neue Mikroorganismen.`,
       },
     ],
   },
   {
     title: 'Zu trocken',
-    description: `Mir ist aufgefallen, dass das Innere des Zersetzungstanks in meinem GEME zu trocken ist und sowohl der Abfall als auch der GEME-Kobold scheinen ebenfalls trocken zu sein. `,
+    description: `Ich habe festgestellt, dass das Innere des Zersetzungstanks in meinem GEME zu trocken ist und sowohl der Abfall als auch der GEME-Kobold ebenfalls trocken zu sein scheinen. `,
     faqs: [
       {
-        question: 'Ist die Menge an Bioabfall zu gering?',
-        answer: `Gießen Sie etwa 200 ml Wasser oder geben Sie eine angemessene Menge Suppe in den Bioabfall.`,
+        question: 'Ist die Menge an Bio-Abfällen zu gering?',
+        answer: `Gießen Sie etwa 200 ml Wasser ein oder geben Sie beim Einfüllen von Bio-Abfällen eine angemessene Menge Suppe hinzu.`,
       },
     ],
   },
@@ -273,7 +266,7 @@ const faqGroups: IFaqOffsetWithSupportingTextProps[] = [
 // 页面内容配置文件2  De版本
 const heroProps: IHeaderCenteredProps = {
   title: 'Selbstreparatur',
-  description: `Willkommen beim Selbstreparatur-Leitfaden von GEME! Entdecken Sie, wie Sie Ihr GEME-Problem beheben können. Unsere Schritt-für-Schritt-Anleitung bietet leicht verständliche Anweisungen und Bilder, die Sie bei der Fehlerbehebung und Reparatur Ihrer Geräte unterstützen. Lassen Sie ein kaputtes Gerät nicht ungenutzt, sondern lernen Sie anhand einer einfachen Checkliste, wie Sie es reparieren können.`,
+  description: `Willkommen im Selbstreparatur-Leitfaden von GEME! Erfahren Sie, wie Sie das Problem Ihres GEME beheben können. Unser Schritt-für-Schritt-Leitfaden bietet leicht verständliche Anweisungen und visuelle Hilfen, um Ihnen bei der Fehlerbehebung und Reparatur Ihrer Geräte zu helfen. Lassen Sie ein defektes Gerät nicht ungenutzt, lernen Sie, es mit einer einfachen Checkliste zu reparieren.`,
 }
 
 function SelfRepairPageDe() {

@@ -1,55 +1,29 @@
 import { Warranty } from './components'
 import type { IWarrantyProps } from './components'
-import { SiteHelpTabs, ISiteHelpTabsProps } from '../../components/tabs'
+import { SiteHelpTabs } from '../../components/tabs'
+import { ETabsId } from '../../components/tabs/type'
+import { getWarrantyTabsTextInfo } from '../../helpers/warranty-tabs-text-info'
 
 // 静态页面的navBar内容 配置文件 De版
-const siteHelpTabsProps: ISiteHelpTabsProps = {
-  tabs: [
-    {
-      title: 'Bedingungen und Konditionen der Dienstleistungsvereinbarung',
-      id: 'terms-and-conditions',
-    },
-    {
-      title: 'Garantie',
-      id: 'warranty',
-    },
-    {
-      title: 'Garantieverlängerung',
-      id: 'warranty-extend',
-    },
-    {
-      title: 'Rückgaberecht',
-      id: 'return-policy',
-    },
-    {
-      title: 'Datenschutzrichtlinie',
-      id: 'privacy-policy',
-    },
-    {
-      title: 'GEME Dots-Treueprogramm',
-      id: 'geme-dots-loyalty-program',
-    },
-  ],
-  currentTabId: 'warranty',
-}
+const tabs = getWarrantyTabsTextInfo('de', ETabsId.Warranty)
 
 // 静态页面的内容 配置文件 De版
 const warrantyProps: IWarrantyProps = {
   title: 'Garantie',
   forward: {
-    title: 'Foreword',
+    title: 'Vorwort',
     description: `
-      ROKH SRL Elektrogeräte werden nach sehr hohen Qualitätsstandards hergestellt.
-      Qualitätsstandards hergestellt. Dennoch sind Ausfälle immer möglich.
-      In solchen Fällen können Reparaturen schnell und professionell durchgeführt werden
-      während oder nach der Garantiezeit schnell und professionell durchgeführt werden, ohne
-      ohne die Lebensdauer des Geräts zu beeinträchtigen.
+      ROKH SRL Elektrogeräte werden nach sehr hohen
+      Qualitätsstandards hergestellt. Trotzdem sind Ausfälle immer
+      möglich. In solchen Fällen können Reparaturen während oder
+      nach der Garantiezeit schnell und professionell durchgeführt
+      werden, ohne die Lebensdauer des Geräts zu beeinträchtigen.
       <br />
       <br />
-      Die Garantiebedingungen der ROKH SRL werden in Übereinstimmung mit
-      der EU-Richtlinie 99/44/EG und der geltenden nationalen Gesetzgebung festgelegt;
-      Sie berühren in keiner Weise die Rechte, die sie dem Verbraucher einräumen
-      Verbraucher.
+      Die Garantiebedingungen von ROKH SRL sind gemäß der
+      EU-Richtlinie 99/44/EG und den geltenden nationalen Gesetzen
+      festgelegt; sie beeinträchtigen in keiner Weise die dem
+      Verbraucher eingeräumten Rechte.
     `,
     imgSrc: '/assets/images/warranty/1.png',
   },
@@ -79,18 +53,18 @@ const warrantyProps: IWarrantyProps = {
       description: `
       <ul class="my-5 list-inside list-disc">
         <li class="mb-5">
-        Die Garantiezeit für den GEME BIO-WASTE COMPOSTER beginnt mit dem Datum des Kaufs durch den Verbraucher. Die Garantiezeit beträgt 12 Monate, wenn und nur wenn der GEME BIO-WASTE COMPOSTER wie hier beschrieben kostenlos für den Hausgebrauch verwendet wird.
+        Die Garantiezeit für den GEME BIO-WASTE COMPOSTER beginnt ab dem Kaufdatum durch den Verbraucher. Die Garantiezeit beträgt 12 Monate, wenn und nur wenn die Garantie während der häuslichen Nutzung kostenlos in Anspruch genommen wird, wie hierin beschrieben.
         <br /> <br />
-        Die 2-Jahres-Garantiezeit wird während der Reparatur oder des Austauschs ausgesetzt. Am Ende dieser Periode hat der Verbraucher keinen Anspruch auf eine neue 2-Jahres-Garantie, aber die begonnene Garantiezeit wird ab dem Zeitpunkt des Austauschs oder der Fertigstellung der Reparatur wieder aufgenommen.
+        Die einjährige Garantiezeit wird während der Reparatur oder des Austauschs ausgesetzt. Am Ende dieses Zeitraums hat der Verbraucher keinen Anspruch auf eine neue einjährige Garantie, aber die begonnene Garantiezeit wird ab dem Zeitpunkt des Austauschs oder Abschlusses der Reparatur wieder aufgenommen.
         </li>
         <li>
-        Bei gewerblichen Geräten richtet sich die Garantiezeit nach den Bestimmungen des Kaufvertrags.
+        Für gewerbliche Geräte richtet sich die Garantiezeit nach den Bedingungen des Kaufvertrags.
         </li>
       </ul>
       `,
     },
     {
-      name: 'Inhalt und Geltungsbereich der Garantie',
+      name: 'Garantieinhalt und -abdeckung',
       svgSrc: (
         <svg
           className="w-16 h-16"
@@ -110,10 +84,10 @@ const warrantyProps: IWarrantyProps = {
         </svg>
       ),
       description: `
-      <p class="mb-5">Die ROKH SRL verpflichtet sich, defekte Teile kostenlos zu reparieren oder zu ersetzen, wenn der ursprüngliche Defekt während der Garantiezeit auftritt oder wenn der Fehler bei ordnungsgemäßem Gebrauch auftritt.</p>
-      <p class="mb-5">Die ersetzten Teile bleiben Eigentum der ROKH SRL. Tritt derselbe Mangel während der Garantiezeit mehrmals auf oder stehen die Reparaturkosten in keinem Verhältnis zum Wert des Geräts, wird dem Verbraucher nach Rücksprache mit ihm ein gleichwertiges Gerät als Ersatz angeboten. In solchen Fällen behält sich die ROKH SRL das Recht vor, dem Verbraucher einen von der Nutzungsdauer abhängigen Betrag in Rechnung zu stellen.</p>
-      <p class="mb-5">Alle Mängel müssen sofort gemeldet werden, um größere Schäden zu vermeiden.</p>
-      <p class="mb-5">Bei schwer zu transportierenden Geräten und Einbaugeräten wird die Reparatur beim Verbraucher zu Hause durchgeführt. Leicht zu transportierende Geräte werden entweder direkt oder über einen Einzelhändler an den Kundendienst der ROKH SRL geliefert oder geschickt.</p>
+      <p class="mb-5">ROKH SRL verpflichtet sich, defekte Teile kostenlos zu reparieren oder zu ersetzen, wenn der ursprüngliche Defekt während der Garantiezeit auftritt oder der Ausfall bei ordnungsgemäßer Verwendung auftritt.</p>
+      <p class="mb-5">Die ersetzten Teile bleiben Eigentum von ROKH SRL. Tritt derselbe Defekt während der Garantiezeit mehrmals auf oder wenn die Reparaturkosten im Verhältnis zum Wert des Geräts als unverhältnismäßig angesehen werden, wird dem Verbraucher nach Rücksprache mit ihm ein Ersatz des gleichwertigen Geräts angeboten. In solchen Fällen behält sich ROKH SRL das Recht vor, dem Verbraucher einen Betrag basierend auf der Nutzungsdauer in Rechnung zu stellen.</p>
+      <p class="mb-5">Mängel müssen sofort gemeldet werden, um schwerwiegendere Schäden zu vermeiden.</p>
+      <p class="mb-5">Für schwer zu transportierende Geräte und Einbaugeräte werden Reparaturen beim Verbraucher zu Hause durchgeführt. Leicht transportierbare Geräte werden direkt oder über einen Einzelhändler an den Kundendienst von ROKH SRL geliefert oder gesendet.</p>
       `,
     },
     {
@@ -137,19 +111,19 @@ const warrantyProps: IWarrantyProps = {
         </svg>
       ),
       description: `
-      <p class="mb-5">Die Garantie gilt nicht in den folgenden Fällen.</p>
+      <p class="mb-5">Die Garantie gilt nicht in folgenden Fällen:</p>
       <ul class="my-5 list-inside list-disc">
-        <li class="mb-5">Geringfügige Abweichungen von der erwarteten Qualität, die den Wert oder das ordnungsgemäße Funktionieren des Geräts nicht beeinträchtigen.</li>
-        <li class="mb-5">Vor der Ausführung des Auftrags vorgenommene Konstruktions- oder Ausführungsänderungen, die den Wert und das gute Funktionieren des Geräts nicht beeinträchtigen.</li>
-        <li class="mb-5">Defekte durch unsachgemäße Montage oder Installation.</li>
-        <li class="mb-5">Folgen äußerer Faktoren, wie z. B.: Transportschäden; nicht bestimmungsgemäßer Gebrauch, der bestimmte empfindliche Komponenten wie Kunststoffteile oder Gummi beschädigen kann; chemische oder elektrochemische Reaktionen durch Wasser; Witterungsbedingungen; anormale Umweltbelastungen.</li>
-        <li class="mb-5">Ungeeignete Einsatz- oder Betriebsbedingungen.</li>
-        <li class="mb-5">Reparaturen oder Änderungen, die von nicht fachlich qualifizierten Dritten durchgeführt werden.</li>
-        <li class="mb-5">Fehlende Identifikationsnummern der Ausrüstung.</li>
-        <li class="mb-5">Außerhalb der Europäischen Union, Norwegens oder der Schweiz, außerhalb der Vereinigten Staaten erworbene Geräte, die aufgrund ihrer technischen Spezifikationen unbrauchbar oder in gewissem Umfang unbrauchbar sind.</li>
-        <li class="mb-5">Unvermeidliche Abnutzung durch den Gebrauch von Teilen oder natürliche Prozesse, die laut Gebrauchsanweisung regelmäßig ausgetauscht werden müssen, z. B. UV-Lampen.</li>
-        <li class="mb-5">Unzureichende Wartung (z. B. nicht ordnungsgemäße Entsorgung von nicht-biologischen Abfällen oder Überlastung des Betriebs) und/oder unsachgemäße Ausführung (z. B. Verwendung aggressiver Reinigungsmittel).</li>
-        <li class="mb-5">Verwendung von nicht-originalem Zubehör oder Teilen.</li>
+        <li class="mb-5">Kleinere Abweichungen in Bezug auf die erwartete Qualität, die den Wert oder die ordnungsgemäße Funktion des Geräts nicht beeinträchtigen.</li>
+        <li class="mb-5">Konstruktions- oder Ausführungsänderungen, die vor Ausführung der Bestellung vorgenommen wurden und den Wert und die ordnungsgemäße Funktion des Geräts nicht beeinträchtigen.</li>
+        <li class="mb-5">Mängel aufgrund unsachgemäßer Montage oder Installation.</li>
+        <li class="mb-5">Folgen äußerer Einflüsse, wie z.B.: Transportschäden; nicht konforme Nutzung, die bestimmte empfindliche Komponenten, wie z. B. synthetische Teile, Gummi, beschädigen kann; chemische oder elektrochemische Reaktionen durch Wasser; Witterungsbedingungen; anomale Umwelteinflüsse.</li>
+        <li class="mb-5">Ungeeignete Betriebs- oder Nutzungsbedingungen.</li>
+        <li class="mb-5">Reparaturen oder Änderungen, die von nicht professionell qualifizierten Dritten durchgeführt werden.</li>
+        <li class="mb-5">Fehlende Geräteidentifikationsnummern.</li>
+        <li class="mb-5">Geräte, die außerhalb der Europäischen Union, Norwegen oder der Schweiz, außerhalb der Vereinigten Staaten gekauft wurden und aufgrund ihrer technischen Spezifikationen unbrauchbar oder in gewissem Maße unbrauchbar sind.</li>
+        <li class="mb-5">Unvermeidlicher Verschleiß durch den Gebrauch von Teilen oder natürliche Prozesse, die laut Benutzerhandbuch regelmäßig ausgetauscht werden müssen, z. B. UV-UV-Lampen.</li>
+        <li class="mb-5">Unzureichende Wartung (z. B. Nichtentfernung von nicht biologischen Abfällen wie vorgeschrieben oder Überlastung des Betriebs) und/oder unsachgemäße Ausführung (z. B. Verwendung aggressiver Reinigungsmittel).</li>
+        <li class="mb-5">Verwendung von nicht originalem Zubehör oder Teilen.</li>
       </ul>
       `,
     },
@@ -157,31 +131,32 @@ const warrantyProps: IWarrantyProps = {
   additionalProvisions: {
     title: 'Zusätzliche Bestimmungen',
     description: `
-    Ansprüche auf Rückgängigmachung des Verkaufs, Wertminderung oder Schadenersatz
-    sind nicht gedeckt, außer in den gesetzlich vorgesehenen Fällen in diesem
-    Bereich vorgesehen sind. Im Falle eines Rechtsbehelfs kann die Entschädigung nicht höher sein als der
-    Wert des Geräts nicht überschreiten.
+    Ansprüche auf Rücktritt vom Kauf, Wertverlust oder Schäden
+    sind außer in den gesetzlich vorgesehenen Fällen nicht abgedeckt.
+    Im Falle einer Berufung darf die Entschädigung den Wert des
+    Geräts nicht überschreiten.
     <br />
     <br />
-    Die Garantiebedingungen gelten für Geräte, die in Belgien gekauft und verwendet werden.
-    Belgien. Im Falle der Verwendung von in Belgien gekauften Geräten im Ausland
-    Belgien gekauften Geräte im Ausland oder im Falle der Nutzung von in Belgien
-    im Ausland gekaufte Geräte, muss der Verbraucher sicherstellen, dass die Geräte den
-    den technischen Bedingungen des Einsatzortes (elektrische
-    Indikatoren, elektrische Frequenz, Installationsnormen, klimatische
-    Bedingungen). Mängel, die sich aus der Nichtübereinstimmung des
-    Geräte mit diesen Anforderungen nicht übereinstimmen, sowie
-    um die Konformität herzustellen, fallen nicht unter die Garantie.
+    Die Garantiebedingungen gelten für in Belgien gekaufte und
+    verwendete Geräte. Im Falle der Verwendung im Ausland gekaufter
+    Geräte in Belgien oder im Falle der Verwendung in Belgien gekaufter
+    Geräte im Ausland muss der Verbraucher sicherstellen, dass die
+    Geräte den technischen Bedingungen des Einsatzortes entsprechen
+    (elektrische Indikatoren, elektrische Frequenz, Installationsstandards,
+    klimatische Bedingungen). Mängel, die durch die Nichteinhaltung dieser
+    Anforderungen und Änderungen zur Anpassung an diese Anforderungen
+    entstehen, sind nicht von der Garantie abgedeckt.
     <br />
     <br />
-    Wenn es mehr als 30 Minuten dauert, das Gerät zu erreichen und
-    wieder in die ursprüngliche Position zu bringen, um die Reparatur abzuschließen, werden die
-    werden die Kosten für die zusätzliche Zeit in Rechnung gestellt. Jede Beschädigung
-    Schäden, die durch eine solche Handhabung entstehen, gehen ebenfalls zu Lasten des
-    der Verbraucher.
+    Wenn die Reparatur mehr als 30 Minuten dauert, um auf das Gerät
+    zuzugreifen und es in seine ursprüngliche Position zurückzubringen,
+    werden die Kosten für die zusätzliche Zeit in Rechnung gestellt.
+    Jegliche Schäden, die durch eine solche Handhabung entstehen können,
+    liegen ebenfalls in der Verantwortung des Verbrauchers.
     <br />
     <br />
-    Für alle Streitigkeiten oder Meinungsverschiedenheiten sind die Gerichte der Region Brüssel zuständig.
+    Für Streitigkeiten oder Meinungsverschiedenheiten sind die Gerichte
+    der Region Brüssel zuständig.
     `,
   },
 }
@@ -190,7 +165,7 @@ function WarrantyPageDe() {
   return (
     <>
       <h1 className="sr-only">GEME Produkt-Garantie-Informationen</h1>
-      <SiteHelpTabs {...siteHelpTabsProps} />
+      <SiteHelpTabs {...tabs} />
       <Warranty {...warrantyProps} />
     </>
   )
