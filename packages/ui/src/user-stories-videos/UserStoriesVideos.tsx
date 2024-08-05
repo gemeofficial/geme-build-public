@@ -3,8 +3,7 @@
 import Image from 'next/image'
 import { SectionContainer, SectionTitle } from '../ui-components'
 import VideosItem, { IVideosItemProps } from './VideosItem'
-import VideoInlinePlayer from '../video-inline-player'
-import ModalContainer from '../client-components/ModalContainer'
+import ModalContainer from './ModalContainer'
 
 export interface IUserStoriesVideoProps {
   title: string
@@ -28,7 +27,7 @@ const data: IUserStoriesVideoProps = {
       coverImageUrl:
         'https://a-us.storyblok.com/f/1019164/936x1248/596a0a6251/customer_02.png/m/780x0',
       coverAlt: 'img',
-      buttonText: 'example',
+      buttonText: 'Youtube',
     },
     {
       type: 'tiktok',
@@ -36,7 +35,7 @@ const data: IUserStoriesVideoProps = {
       coverImageUrl:
         'https://a-us.storyblok.com/f/1019164/2048x3071/3564ef7ea9/customer_01.jpeg/m/780x0',
       coverAlt: 'img',
-      buttonText: 'example',
+      buttonText: 'Tiktok',
     },
   ],
 }
@@ -46,13 +45,14 @@ export function UserStoriesVideos() {
   return (
     <SectionContainer>
       <SectionTitle>{title}</SectionTitle>
-      <div className="mt-4 md:mt-8 grid grid-cols-3 gap-4 md:gap-8">
+      <div className="mt-4 md:mt-8 flex items-center gap-4 xl:gap-8 overflow-auto snap-x snap-mandatory no-scrollbar">
         {videos.map((item) => (
           <ModalContainer
             key={item.src}
             src={item.src}
             coverImageUrl={item.coverImageUrl}
             type={item.type}
+            className='flex-shrink-0 md:flex-1 scroll-mx-4 md:scroll-mx-0 snap-center'
           >
             <VideosItem item={item} />
           </ModalContainer>

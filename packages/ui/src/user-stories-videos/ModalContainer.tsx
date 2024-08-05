@@ -3,7 +3,7 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, PropsWithChildren, useState } from 'react'
 import { XCircleIcon } from '@heroicons/react/24/solid'
-import { videoType } from '../user-stories-videos/VideosItem'
+import { videoType } from './VideosItem'
 import {
   InstagramEmbed,
   FacebookEmbed,
@@ -16,6 +16,7 @@ export interface ModalContainer {
   type: videoType
   src: string
   coverImageUrl: string
+  className?: string
 }
 
 export default function ModalContainer({
@@ -23,6 +24,7 @@ export default function ModalContainer({
   src,
   type,
   children,
+  className,
 }: PropsWithChildren<ModalContainer>) {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -33,13 +35,15 @@ export default function ModalContainer({
     height: 576,
     className: 'absolute inset-0 w-full h-full',
     url: src,
-    embedPlaceholder: <VideoLoading className='min-h-[576px]' />,
+    embedPlaceholder: <VideoLoading className="min-h-[576px]" />,
   }
 
   return (
-    <div>
+    <>
       {/* children */}
-      <div onClick={() => setIsOpen(true)}>{children}</div>
+      <div onClick={() => setIsOpen(true)} className={className}>
+        {children}
+      </div>
 
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-50" onClose={closeModal}>
@@ -107,6 +111,6 @@ export default function ModalContainer({
           </div>
         </Dialog>
       </Transition>
-    </div>
+    </>
   )
 }

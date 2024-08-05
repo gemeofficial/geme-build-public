@@ -1,6 +1,12 @@
 import Image from 'next/image'
 
-export type videoType = 'mp4' | 'youtube' | 'tiktok' | 'facebook' | 'reels' | 'instagram'|''
+export type videoType =
+  | 'mp4'
+  | 'youtube'
+  | 'tiktok'
+  | 'facebook'
+  | 'reels'
+  | 'instagram'
 
 export interface IVideosItemProps {
   type: videoType
@@ -12,11 +18,11 @@ export interface IVideosItemProps {
 
 export default function VideosItem({ item }: { item: IVideosItemProps }) {
   return (
-    <div className="rounded-2xl overflow-hidden cursor-pointer relative group max-h-[512px]">
+    <div className="w-[60vw] md:w-full h-[400px] xl:h-[512px] rounded-2xl overflow-hidden cursor-pointer relative group">
       <Image
         src={item.coverImageUrl}
-        width={400}
-        height={550}
+        width={390}
+        height={512}
         className="w-full h-full object-cover"
         alt={item.coverAlt}
       />
@@ -35,7 +41,9 @@ export default function VideosItem({ item }: { item: IVideosItemProps }) {
               ></path>
             </svg>
           </button>
-          <p className="text-v2311-primary">{item.buttonText}</p>
+          <p className="text-v2311-primary text-sm xl:text-base">
+            {item.buttonText}
+          </p>
         </div>
       </div>
     </div>
