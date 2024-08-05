@@ -42,7 +42,7 @@ const UiCompost = forwardRef(function UiCompost(
     <div
       ref={ref}
       className={classNames(
-        ' bg-transparent absolute top-0 w-full bottom-[4%] lg:bottom-0 transition-opacity duration-500',
+        ' bg-transparent absolute top-0 w-full bottom-[-5%] md:bottom-0 lg:bottom-[-8%] xl:bottom-0 transition-opacity duration-500',
         progress === 0 ? ' opacity-0' : 'opacity-1',
       )}
       style={{ '--vh': `${vhHeight}px` } as Object}

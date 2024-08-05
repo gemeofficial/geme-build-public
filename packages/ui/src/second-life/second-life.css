@@ -445,6 +445,19 @@
   }
 }
 
+@media (min-width: 1280px) {
+  .ui-sections-end {
+    padding: 27.7777777778vw 0 150px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .ui-sections-end {
+    padding: 27.7777777778vw 0 100px;
+  }
+}
+
+
 .uiFragmentsSvg {
   display: block;
 }
