@@ -1,9 +1,15 @@
 'use client'
 
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, PropsWithChildren, useCallback, useState } from 'react'
+import { Fragment, PropsWithChildren, useState } from 'react'
 import { XCircleIcon } from '@heroicons/react/24/solid'
 import { videoType } from '../user-stories-videos/VideosItem'
+import {
+  InstagramEmbed,
+  FacebookEmbed,
+  YouTubeEmbed,
+  TikTokEmbed,
+} from 'react-social-media-embed'
 
 export interface ModalContainer {
   type: videoType
@@ -56,13 +62,16 @@ export default function ModalContainer({
                     className="w-12 h-12 absolute -top-14 right-0  cursor-pointer fill-white/80 hover:fill-white"
                     onClick={closeModal}
                   />
-                  <div className="relative h-0 w-full pb-[56.25%]">
+                  <div className="relative h-full w-full pb-[56.25%]">
                     {/* youtube */}
                     {type === 'youtube' && (
-                      <iframe
-                        src={src}
-                        className="absolute top-0 left-0 w-full h-full"
-                      ></iframe>
+                      <YouTubeEmbed
+                        width="100%"
+                        height={576}
+                        placeholderImageUrl={coverImageUrl}
+                        className="absolute top-0 left-0 w-full"
+                        url={src}
+                      />
                     )}
 
                     {/* mp4 */}
@@ -82,83 +91,32 @@ export default function ModalContainer({
 
                     {/* tiktok */}
                     {type === 'tiktok' && (
-                      <>
-                        {/* <blockquote
-                          className="tiktok-embed max-w-2xl min-w-80 absolute top-0 left-0 h-full"
-                          cite={src}
-                          data-video-id="7312898892079697198"
-                        ></blockquote>
+                      <TikTokEmbed
+                        width="100%"
+                        height={576}
+                        url={src}
+                        className="absolute w-full h-full"
+                      />
+                    )}
 
-                        <script
-                          async
-                          src="https://www.tiktok.com/embed.js"
-                        ></script> */}
-                        <blockquote
-                          className="tiktok-embed"
-                          cite="https://www.tiktok.com/@kc_smithwrites/video/7312898892079697198"
-                          data-video-id="7312898892079697198"
-                          // style="max-width: 605px;min-width: 325px;"
-                        >
-                          {' '}
-                          <section>
-                            {' '}
-                            <a
-                              target="_blank"
-                              title="@kc_smithwrites"
-                              href="https://www.tiktok.com/@kc_smithwrites?refer=embed"
-                            >
-                              @kc_smithwrites
-                            </a>{' '}
-                            Home composter in a tiny apartment &lt3{' '}
-                            <a
-                              title="composting"
-                              target="_blank"
-                              href="https://www.tiktok.com/tag/composting?refer=embed"
-                            >
-                              #composting
-                            </a>{' '}
-                            <a
-                              title="seattle"
-                              target="_blank"
-                              href="https://www.tiktok.com/tag/seattle?refer=embed"
-                            >
-                              #seattle
-                            </a>{' '}
-                            <a
-                              title="homecomposting"
-                              target="_blank"
-                              href="https://www.tiktok.com/tag/homecomposting?refer=embed"
-                            >
-                              #homecomposting
-                            </a>{' '}
-                            <a
-                              title="apartmentcompost"
-                              target="_blank"
-                              href="https://www.tiktok.com/tag/apartmentcompost?refer=embed"
-                            >
-                              #apartmentcompost
-                            </a>{' '}
-                            <a
-                              title="gemecomposter"
-                              target="_blank"
-                              href="https://www.tiktok.com/tag/gemecomposter?refer=embed"
-                            >
-                              #gemecomposter
-                            </a>{' '}
-                            <a
-                              target="_blank"
-                              title="♬ original sound - KC_SmithWrites"
-                              href="https://www.tiktok.com/music/original-sound-7312898910106929966?refer=embed"
-                            >
-                              ♬ original sound - KC_SmithWrites
-                            </a>{' '}
-                          </section>{' '}
-                        </blockquote>{' '}
-                        <script
-                          async
-                          src="https://www.tiktok.com/embed.js"
-                        ></script>
-                      </>
+                    {/* instagram */}
+                    {type === 'instagram' && (
+                      <InstagramEmbed
+                        width="100%"
+                        height={576}
+                        url={src}
+                        className="absolute w-full h-full"
+                      />
+                    )}
+
+                    {/* facebook */}
+                    {type === 'facebook' && (
+                      <FacebookEmbed
+                        width="100%"
+                        height={576}
+                        url={src}
+                        className="absolute w-full h-full"
+                      />
                     )}
                   </div>
                 </Dialog.Panel>

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export type videoType = 'mp4' | 'youtube' | 'tiktok' | 'facebook' | 'reels'
+export type videoType = 'mp4' | 'youtube' | 'tiktok' | 'facebook' | 'reels' | 'instagram'|''
 
 export interface IVideosItemProps {
   type: videoType
