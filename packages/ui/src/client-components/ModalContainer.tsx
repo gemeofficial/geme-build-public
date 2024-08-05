@@ -10,6 +10,7 @@ import {
   YouTubeEmbed,
   TikTokEmbed,
 } from 'react-social-media-embed'
+import { VideoLoading } from '../loading-components'
 
 export interface ModalContainer {
   type: videoType
@@ -26,6 +27,14 @@ export default function ModalContainer({
   const [isOpen, setIsOpen] = useState(false)
 
   const closeModal = () => setIsOpen(false)
+
+  const commonProps = {
+    width: '100%',
+    height: 576,
+    className: 'absolute inset-0 w-full h-full',
+    url: src,
+    embedPlaceholder: <VideoLoading className='min-h-[576px]' />,
+  }
 
   return (
     <div>
@@ -63,17 +72,6 @@ export default function ModalContainer({
                     onClick={closeModal}
                   />
                   <div className="relative h-full w-full pb-[56.25%]">
-                    {/* youtube */}
-                    {type === 'youtube' && (
-                      <YouTubeEmbed
-                        width="100%"
-                        height={576}
-                        placeholderImageUrl={coverImageUrl}
-                        className="absolute top-0 left-0 w-full"
-                        url={src}
-                      />
-                    )}
-
                     {/* mp4 */}
                     {type === 'mp4' && (
                       <video
@@ -89,35 +87,19 @@ export default function ModalContainer({
                       </video>
                     )}
 
+                    {/* youtube */}
+                    {type === 'youtube' && <YouTubeEmbed {...commonProps} />}
+
                     {/* tiktok */}
-                    {type === 'tiktok' && (
-                      <TikTokEmbed
-                        width="100%"
-                        height={576}
-                        url={src}
-                        className="absolute w-full h-full"
-                      />
-                    )}
+                    {type === 'tiktok' && <TikTokEmbed {...commonProps} />}
 
                     {/* instagram */}
                     {type === 'instagram' && (
-                      <InstagramEmbed
-                        width="100%"
-                        height={576}
-                        url={src}
-                        className="absolute w-full h-full"
-                      />
+                      <InstagramEmbed {...commonProps} />
                     )}
 
                     {/* facebook */}
-                    {type === 'facebook' && (
-                      <FacebookEmbed
-                        width="100%"
-                        height={576}
-                        url={src}
-                        className="absolute w-full h-full"
-                      />
-                    )}
+                    {type === 'facebook' && <FacebookEmbed {...commonProps} />}
                   </div>
                 </Dialog.Panel>
               </Transition.Child>

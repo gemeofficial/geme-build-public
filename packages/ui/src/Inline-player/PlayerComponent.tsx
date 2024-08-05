@@ -6,7 +6,7 @@ import { PlayIcon } from '../video-inline-player'
 import mixpanel from 'mixpanel-browser'
 import YouTubePlayer from '../client-components/YouTubePlayer'
 import { hasMixpanel } from '../lib/has-mixpanel'
-import styles from './styles.module.css'
+import { VideoLoading } from '../loading-components'
 
 export interface IPlayerComponentType {
   type: 'mp4' | 'youtube'
@@ -91,11 +91,7 @@ export default function PlayerComponent({
                 playCallback={mixpanelTrackHandle}
                 videoId={videoSrcUrlOrVidioId}
               />
-              {isLoading && (
-                <div className="absolute inset-0 h-full w-full bg-black flex items-center justify-center">
-                  <div className={styles.loader}></div>
-                </div>
-              )}
+              {isLoading && <VideoLoading className="absolute inset-0" />}
             </div>
           )}
         </>
