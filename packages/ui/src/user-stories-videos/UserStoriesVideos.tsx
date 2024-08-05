@@ -61,6 +61,7 @@ export function UserStoriesVideos() {
             src={item.src}
             coverImageUrl={item.coverImageUrl}
             type={item.type}
+            mixpanelFrom='Real customer stories'
             className='flex-shrink-0 md:flex-1 scroll-mx-4 md:scroll-mx-0 snap-center'
           >
             <VideosItem item={item} />
