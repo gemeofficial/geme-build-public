@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-type videoType = 'mp4' | 'youtube' | 'tiktok' | 'facebook' | 'reels'
+export type videoType = 'mp4' | 'youtube' | 'tiktok' | 'facebook' | 'reels'
 
 export interface IVideosItemProps {
   type: videoType
@@ -12,7 +12,7 @@ export interface IVideosItemProps {
 
 export default function VideosItem({ item }: { item: IVideosItemProps }) {
   return (
-    <div className="rounded-2xl overflow-hidden cursor-pointer relative group">
+    <div className="rounded-2xl overflow-hidden cursor-pointer relative group max-h-[512px]">
       <Image
         src={item.coverImageUrl}
         width={400}
