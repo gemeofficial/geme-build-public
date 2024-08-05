@@ -330,12 +330,12 @@ function HowItWorksEn({ ReviewsComponent }: IPdpIntroProps) {
       <div className="py-8 lg:pt-6 lg:pb-16">
         <ShortVideo {...shortVideoProps} />
         <ShortVideo {...imageTextProps} />
+        <InlinePlayer {...inlinePlayerProps} />
         <ExaminingReport {...gemeComposterImageProps} />
         <ExaminingReport {...gemeKoboldImageProps} />
         <ScrollTriggeredAnimatedOxygenCycle {...oxygenCycleProps} />
         <ExaminingReport {...examiningReportProps} />
         <UseCompostContrast {...useCompostContrastProps} />
-        <InlinePlayer {...inlinePlayerProps} />
         <div className="my-4">
           <ReviewsScoreHeader locale="en" />
         </div>

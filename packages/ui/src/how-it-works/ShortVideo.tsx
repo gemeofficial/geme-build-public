@@ -70,7 +70,8 @@ export function ShortVideo({
               className="max-w-full w-full rounded-2xl overflow-hidden object-cover"
               width={1600}
               height={900}
-              src="/assets/images/how-it-works/dehydrator-vs-geme.png"
+              // src="/assets/images/how-it-works/dehydrator-vs-geme.png"
+              src="/assets/images/how-it-works/geme-vs-dehydrator.png"
               alt="GEME composter vs food dehydrators"
             />
           )}
