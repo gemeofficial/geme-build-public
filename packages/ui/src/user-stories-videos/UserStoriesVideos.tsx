@@ -19,7 +19,7 @@ const data: IUserStoriesVideoProps = {
       coverImageUrl:
         'https://a-us.storyblok.com/f/1019164/936x1248/6c44fa2f84/customer_03.png/m/780x0',
       coverAlt: 'img',
-      buttonText: 'Jesse, Devon & Alex',
+      buttonText: 'Mp4',
     },
     {
       type: 'youtube',
@@ -37,6 +37,15 @@ const data: IUserStoriesVideoProps = {
       coverAlt: 'img',
       buttonText: 'Tiktok',
     },
+    {
+      type: 'facebook',
+      src: 'https://www.facebook.com/facebook/videos/10153231379946729',
+      coverImageUrl:
+        'https://a-us.storyblok.com/f/1019164/936x1248/6c44fa2f84/customer_03.png/m/780x0',
+      coverAlt: 'img',
+      buttonText: 'FaceBook',
+    },
+    
   ],
 }
 
