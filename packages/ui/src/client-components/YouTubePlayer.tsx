@@ -69,12 +69,13 @@ const YouTubePlayer = ({
     )
   }
 
-  const opts = {
+  const opts: YouTubeProps['opts'] = {
     height: '100%',
     width: '100%',
     playerVars: {
       // https://developers.google.com/youtube/player_parameters
       autoplay: videoIsAutoPlay ? 1 : 0,
+      
     },
   }
 
