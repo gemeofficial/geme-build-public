@@ -1,3 +1,4 @@
+'use client'
 import { PropsWithChildren, useEffect, useState } from 'react'
 import Countdown, { zeroPad } from 'react-countdown'
 
