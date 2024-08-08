@@ -32,7 +32,7 @@ export default function CountDown({
         renderer={({ days, hours, minutes, seconds, completed }) => {
           // if (completed) return <></>
           return (
-            <div className="flex my-4">
+            <div className="flex my-2 lg:my-3 3xl:my-4">
               <div className="text-center">
                 {days > 0 && (
                   <div className="hidden md:block lg:hidden mb-3">
@@ -79,7 +79,7 @@ function Semicolon() {
 
 function TimeCard({ children }: PropsWithChildren) {
   return (
-    <div className="bg-white text-black rounded-md p-1 px-4 py-5 tracking-wide">
+    <div className="bg-white text-black rounded-md lg:px-2 lg:py-2 3xl:px-4 3xl:py-5 tracking-wide">
       {children}
     </div>
   )
