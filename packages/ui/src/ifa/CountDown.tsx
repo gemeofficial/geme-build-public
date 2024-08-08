@@ -32,7 +32,7 @@ export default function CountDown({
         renderer={({ days, hours, minutes, seconds, completed }) => {
           // if (completed) return <></>
           return (
-            <div className="flex my-2 lg:my-3 3xl:my-4">
+            <div className="flex my-2 lg:my-5 2xl:my-3 3xl:my-4">
               <div className="text-center">
                 {days > 0 && (
                   <div className="hidden md:block lg:hidden mb-3">

@@ -12,25 +12,36 @@ export function IFAHeroSection() {
         width={1920}
         alt="hero section background"
         className="w-full h-full min-h-screen max-h-screen object-cover"
+        priority
       />
-      <div className="flex absolute inset-x-[10%] inset-y-10 md:inset-y-[5%] xl:inset-y-[10%] rounded-lg bg-gradient-to-r from-black/80 to-black/60 text-white p-10">
+      <div className="flex flex-col 2xl:flex-row absolute inset-x-[10%] inset-y-10 md:inset-y-[5%] xl:inset-y-[10%] rounded-lg bg-gradient-to-r from-black/80 to-black/60 text-white p-10">
+        {/* 左侧布局 */}
         <div className="3xl:w-[40%] mr-[10%] relative">
           <h1 className="text-2xl lg:text-4xl 3xl:text-6xl text-nowrap">
             Notice Of Exhibition
           </h1>
-          <div className="text-xl lg:text-2xl 3xl:text-5xl pt-10">GEME</div>
-          <div className="text-xl lg:text-2xl 3xl:text-5xl ml-[30%]">In</div>
-          <div className="text-xl lg:text-2xl 3xl:text-5xl ml-[50%]">
-            <span>IFA</span>
-            <span className="text-lg block">Exhibition</span>
+          {/* pc端显示阶梯布局 */}
+          <div className="hidden 2xl:block">
+            <div className="text-xl lg:text-2xl 3xl:text-5xl pt-10">GEME</div>
+            <div className="text-xl lg:text-2xl 3xl:text-5xl ml-[30%]">In</div>
+            <div className="text-xl lg:text-2xl 3xl:text-5xl ml-[50%]">
+              <span>IFA</span>
+              <span className="text-lg block">Exhibition</span>
+            </div>
           </div>
-          <div className="text-xl mt-8 absolute bottom-0">
+
+          {/* 平板显示正常布局 */}
+          <div className="text-xl lg:text-2xl 3xl:text-5xl pt-10 text-v2311-text-yellow">
+            GEME In IFA Exhibition
+          </div>
+
+          <div className="lg:text-lg 2xl:text-xl mt-8 2xl:absolute 2xl:bottom-0">
             IFA Berlin 6-10 September 2024
           </div>
         </div>
-        <div className="flex-1 flex flex-col text-sm lg:text-base 3xl:text-lg">
+        <div className="flex-1 flex flex-col text-sm lg:text-lg 2xl:text-base 3xl:text-lg lg:mt-20 2xl:mt-0">
           {/* 活动标题 */}
-          <h2 className="text-xl lg:text-2xl 3xl:text-4xl text-center">
+          <h2 className="text-xl lg:text-3xl 3xl:text-4xl text-center">
             Activity
           </h2>
           <div className="mt-4 flex items-start justify-between">
@@ -42,11 +53,17 @@ export function IFAHeroSection() {
               <div>
                 In the run-up to IFA, GEME is hosting one Lucky draw, click the
                 link to participate!
+                <div className="2xl:hidden 3xl:block">
+                  The specific steps are: upload a video of you using the GEME
+                  compost machine in your daily life to us, and you will have
+                  the opportunity to receive a 180-day dose of Kobold provided
+                  by GEME.
+                </div>
               </div>
               {/* 上传视频video */}
               <Link
                 href="/"
-                className="relative overflow-hidden text-sm lg:text-lg 3xl:text-2xl font-bold text-white xl:w-auto flex items-center justify-center border-solid border-2 border-white rounded-xl max-w-[90%] mb-1"
+                className="relative overflow-hidden text-sm lg:text-lg 3xl:text-2xl font-bold text-white xl:w-auto flex items-center justify-center border-solid border-2 border-white rounded-xl max-w-[90%] lg:mt-6 mb-1"
               >
                 <span className="absolute inset-0 flex items-center justify-center">
                   Immediate participation
@@ -73,7 +90,9 @@ export function IFAHeroSection() {
               <div className="">Countdown to the next draw</div>
               <CountDown date={Date.now() + 3600 * 1000 * 48} />
               <div className="">Your current probability of winning is:</div>
-              <div className="text-xl lg:text-2xl 3xl:text-4xl my-2 lg:my-3 3xl:my-4 text-v2311-text-yellow">1 / 8</div>
+              <div className="text-xl lg:text-3xl 2xl:text-2xl 3xl:text-4xl my-2 lg:my-5 2xl:my-3 3xl:my-4 text-v2311-text-yellow">
+                1 / 8
+              </div>
               <div className="absolute bottom-0 text-sm 3xl:text-lg">
                 Description: 1/N, N means there are currently N people
                 participating in the activity, the earlier you participate, the
@@ -82,7 +101,7 @@ export function IFAHeroSection() {
             </div>
             {/* video */}
             <div className="flex flex-col gap-2">
-              <div className="relative h-full w-28 lg:w-40 3xl:w-[350px] overflow-hidden rounded-xl group">
+              <div className="relative h-full w-28 lg:w-[300px] 2xl:w-40 3xl:w-[350px] overflow-hidden rounded-xl group">
                 <div className="relative h-full w-full object-cover transform-gpu transition-transform group-hover:scale-125 duration-[0.25s] ease-[cubic-bezier(0.24, 0.8, 0.4, 1)]">
                   <video
                     className="w-full h-full object-cover"
