@@ -174,7 +174,7 @@ function Button({
           translatexClass,
         )}
       >
-        <div className="w-full h-full bg-gradient-to-r from-v2311-text-yellow/20 to-v2311-text-yellow/60 min-h-8 md:min-h-10 3xl:min-h-14"></div>
+        <div className="w-full h-full bg-gradient-to-r from-v2311-text-yellow/20 to-v2311-text-yellow/60 min-h-[34px] md:min-h-[40px] 3xl:min-h-[56px]"></div>
         <div className="w-full h-full min-h-8 md:min-h-10 3xl:min-h-14"></div>
       </div>
     </Link>
