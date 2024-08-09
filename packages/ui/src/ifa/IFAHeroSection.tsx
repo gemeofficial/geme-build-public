@@ -46,7 +46,7 @@ export function IFAHeroSection({
   const constDownDate = Date.now() + 3600 * 1000 * 48
 
   return (
-    <div className="relative min-h-[900px] max-h-max md:min-h-screen md:max-h-screen lg:min-h-[1100px] lg:max-h-max 2xl:min-h-screen 2xl:max-h-screen">
+    <div className="relative min-h-[900px] max-h-max md:min-h-screen md:max-h-screen lg:min-h-[1100px] lg:max-h-max 2xl:min-h-screen 2xl:max-h-screen font-v2311">
       <Image
         src={bgImageUrl}
         height={1080}
