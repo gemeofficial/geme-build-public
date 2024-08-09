@@ -20,7 +20,7 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
           <span className="text-lg block">Exhibition</span>
         </div>
       </div>
-      <div className="text-xl md:text-2xl 3xl:text-5xl mt-3 md:pt-5 lg:pt-10 text-[#F89B3F]">
+      <div className="2xl:hidden jtext-xl md:text-2xl 3xl:text-5xl mt-3 md:pt-5 lg:pt-10 text-[#F89B3F]">
         GEME In IFA Exhibition
       </div>
     </>

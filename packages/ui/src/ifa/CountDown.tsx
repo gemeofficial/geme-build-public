@@ -138,7 +138,10 @@ function Semicolon() {
 
 function TimeCard({ children }: PropsWithChildren) {
   return (
-    <div className="bg-v2311-text-yellow text-white rounded-md px-2 py-2 3xl:px-4 3xl:py-5 tracking-wide">
+    <div
+      className="bg-v2311-text-yellow text-white rounded-md px-2 py-2 3xl:px-4 3xl:py-5 tracking-wide"
+      suppressHydrationWarning
+    >
       {children}
     </div>
   )
