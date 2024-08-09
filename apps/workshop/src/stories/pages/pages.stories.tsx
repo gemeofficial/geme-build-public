@@ -19,6 +19,7 @@ import {
   aboutContentSection4ExampleData,
   aboutContentSection2ExampleData,
 } from 'ui'
+import IFAPage from './ifa'
 
 const meta: Meta = {
   title: 'pages/pathes',
@@ -57,5 +58,11 @@ export const AboutStory: StoryObj<typeof AboutHeroSection> = {
     </div>
   ),
   name: '/about',
+  args: {},
+}
+
+export const IFAPagetory: StoryObj<typeof AboutHeroSection> = {
+  render: () => <IFAPage />,
+  name: '/ifa',
   args: {},
 }
