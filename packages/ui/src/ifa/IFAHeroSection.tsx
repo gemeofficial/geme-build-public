@@ -14,6 +14,7 @@ export interface IIFAHeroSectionProps {
   location: string
   activityTitle: string
   activityDescription: string
+  winners: string
   activitySteps: string
   immediateParticipationButton: string
   countdownTitle: string
@@ -31,6 +32,7 @@ export function IFAHeroSection({
   activityDescription,
   activitySteps,
   location,
+  winners,
   activityTitle,
   countdownTitle,
   descriptionText,
@@ -57,7 +59,9 @@ export function IFAHeroSection({
         className="w-full h-full min-h-[900px] max-h-max md:min-h-screen md:max-h-screen lg:min-h-[1100px] lg:max-h-max 2xl:min-h-screen 2xl:max-h-screen object-cover"
         priority
       />
+
       <div className="flex flex-col 2xl:flex-row absolute inset-x-[5%] inset-y-10 md:inset-y-[5%] xl:inset-y-[10%] rounded-lg bg-gradient-to-r from-black/80 to-black/60 text-[#f8f1eb] p-6 md:p-10">
+        {/* 左侧区域 */}
         <div className="3xl:w-[40%] 2xl:mr-[10%] relative">
           <h1 className="text-3xl md:text-4xl 3xl:text-6xl text-nowrap text-v2311-text-yellow">
             {noticeTitle}
@@ -68,6 +72,8 @@ export function IFAHeroSection({
             <p>{ifaExhibitionDate}</p>
           </div>
         </div>
+
+        {/* 右侧区域 */}
         <div className="flex-1 flex flex-col text-sm md:text-base lg:text-lg 2xl:text-base 3xl:text-lg mt-10 lg:mt-20 2xl:mt-0">
           <h2 className="text-xl md:text-3xl 3xl:text-4xl text-center text-v2311-text-yellow font-semibold">
             {activityTitle}
@@ -100,6 +106,8 @@ export function IFAHeroSection({
             className="md:hidden mt-4 max-w-full"
             translatexClass="!translate-x-[-25%] hover:!translate-x-[25%]"
           />
+
+          {/* 下半部分区域 */}
           <div className="flex justify-between mt-8 gap-8 flex-1">
             <div className="flex-1 relative">
               <div className="">{countdownTitle}</div>
@@ -140,11 +148,10 @@ export function IFAHeroSection({
               <div className="text-center">{sampleVideoTitle}</div>
             </div>
           </div>
+
           <Description text={descriptionText} className="md:hidden !relative" />
         </div>
       </div>
-
-      {/* 中奖名单 */}
     </div>
   )
 }
