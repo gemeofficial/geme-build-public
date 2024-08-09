@@ -8,8 +8,12 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
   exhibitionTitle: (
     <>
       <div className="hidden 2xl:block font-semibold">
-        <div className="text-xl md:text-2xl 3xl:text-5xl pt-10 text-[#45b83d]">GEME</div>
-        <div className="text-xl md:text-2xl 3xl:text-5xl ml-[30%] text-v2311-text-yellow">In</div>
+        <div className="text-xl md:text-2xl 3xl:text-5xl pt-10 text-[#45b83d]">
+          GEME
+        </div>
+        <div className="text-xl md:text-2xl 3xl:text-5xl ml-[30%] text-v2311-text-yellow">
+          In
+        </div>
         <div className="text-xl md:text-2xl 3xl:text-5xl ml-[50%] text-[#eda152]">
           <span>IFA</span>
           <span className="text-lg block">Exhibition</span>
@@ -21,7 +25,7 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
     </>
   ),
   ifaExhibitionDate: 'IFA Berlin 6-10 September 2024',
-  location:'Location: Messe Berlin',
+  location: 'Location: Messe Berlin',
   activityTitle: 'Activity',
   activityDescription:
     'In the run-up to IFA, GEME is hosting one Lucky draw, click the link to participate!',
@@ -33,7 +37,8 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
   sampleVideoTitle: 'Sample video',
   descriptionText:
     'Description: 1/N, N means there are currently N people participating in the activity, the earlier you participate, the greater your chance of winning!',
-  locale: 'de',
+  winners: 'The winners are',
+  locale: 'en',
 }
 
 function IFAPageDe({ PrefetchLink }: IIFAPageProps) {

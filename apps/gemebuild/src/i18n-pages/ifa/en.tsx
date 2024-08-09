@@ -1,9 +1,21 @@
-import { IFAHeroSection, IIFAHeroSectionProps } from 'ui'
+import {
+  IFAHeroSection,
+  IIFAHeroSectionProps,
+  IWinnersNamesTickerProps,
+  WinnersNamesTicker,
+} from 'ui'
 
 import { ILinkComponent } from '../../contexts/link-context'
+import { winnersNames } from './winnersNames'
 
 export interface IIFAPageProps {
   PrefetchLink?: ILinkComponent
+}
+
+// 中奖名单
+const winnersNamesTickerProps: IWinnersNamesTickerProps = {
+  text: 'The winners are',
+  winnersNames,
 }
 
 const IFAHeroSectionProps: IIFAHeroSectionProps = {
@@ -13,8 +25,12 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
   exhibitionTitle: (
     <>
       <div className="hidden 2xl:block font-semibold">
-        <div className="text-xl md:text-2xl 3xl:text-5xl pt-10 text-[#45b83d]">GEME</div>
-        <div className="text-xl md:text-2xl 3xl:text-5xl ml-[30%] text-v2311-text-yellow">In</div>
+        <div className="text-xl md:text-2xl 3xl:text-5xl pt-10 text-[#45b83d]">
+          GEME
+        </div>
+        <div className="text-xl md:text-2xl 3xl:text-5xl ml-[30%] text-v2311-text-yellow">
+          In
+        </div>
         <div className="text-xl md:text-2xl 3xl:text-5xl ml-[50%] text-[#eda152]">
           <span>IFA</span>
           <span className="text-lg block">Exhibition</span>
@@ -26,7 +42,7 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
     </>
   ),
   ifaExhibitionDate: 'IFA Berlin 6-10 September 2024',
-  location:'Location: Messe Berlin',
+  location: 'Location: Messe Berlin',
   activityTitle: 'Activity',
   activityDescription:
     'In the run-up to IFA, GEME is hosting one Lucky draw, click the link to participate!',
@@ -38,12 +54,15 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
   sampleVideoTitle: 'Sample video',
   descriptionText:
     'Description: 1/N, N means there are currently N people participating in the activity, the earlier you participate, the greater your chance of winning!',
+  winners: 'The winners are',
   locale: 'en',
 }
 
 function IFAPageEn({ PrefetchLink }: IIFAPageProps) {
   return (
     <>
+      {/* 中奖名单 */}
+      <WinnersNamesTicker className="fixed top-[105px] left-0 right-0 z-10" {...winnersNamesTickerProps} />
       <IFAHeroSection {...IFAHeroSectionProps} PrefetchLink={PrefetchLink} />
     </>
   )
