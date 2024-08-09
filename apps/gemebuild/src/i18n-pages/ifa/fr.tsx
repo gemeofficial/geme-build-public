@@ -7,10 +7,10 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
   noticeTitle: 'Notice Of Exhibition',
   exhibitionTitle: (
     <>
-      <div className="hidden 2xl:block">
-        <div className="text-xl md:text-2xl 3xl:text-5xl pt-10">GEME</div>
-        <div className="text-xl md:text-2xl 3xl:text-5xl ml-[30%]">In</div>
-        <div className="text-xl md:text-2xl 3xl:text-5xl ml-[50%]">
+      <div className="hidden 2xl:block font-semibold">
+        <div className="text-xl md:text-2xl 3xl:text-5xl pt-10 text-[#45b83d]">GEME</div>
+        <div className="text-xl md:text-2xl 3xl:text-5xl ml-[30%] text-v2311-text-yellow">In</div>
+        <div className="text-xl md:text-2xl 3xl:text-5xl ml-[50%] text-[#eda152]">
           <span>IFA</span>
           <span className="text-lg block">Exhibition</span>
         </div>

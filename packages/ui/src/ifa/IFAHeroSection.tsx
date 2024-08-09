@@ -55,7 +55,7 @@ export function IFAHeroSection({
         className="w-full h-full min-h-[900px] max-h-max md:min-h-screen md:max-h-screen lg:min-h-[1100px] lg:max-h-max 2xl:min-h-screen 2xl:max-h-screen object-cover"
         priority
       />
-      <div className="flex flex-col 2xl:flex-row absolute inset-x-[5%] inset-y-10 md:inset-y-[5%] xl:inset-y-[10%] rounded-lg bg-gradient-to-r from-black/80 to-black/60 text-white p-6 md:p-10">
+      <div className="flex flex-col 2xl:flex-row absolute inset-x-[5%] inset-y-10 md:inset-y-[5%] xl:inset-y-[10%] rounded-lg bg-gradient-to-r from-black/80 to-black/60 text-[#f8f1eb] p-6 md:p-10">
         <div className="3xl:w-[40%] 2xl:mr-[10%] relative">
           <h1 className="text-3xl md:text-4xl 3xl:text-6xl text-nowrap text-v2311-text-yellow">
             {noticeTitle}
