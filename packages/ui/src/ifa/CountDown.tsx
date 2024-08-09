@@ -1,13 +1,20 @@
 'use client'
 import { PropsWithChildren, useEffect, useState } from 'react'
 import Countdown, { zeroPad } from 'react-countdown'
+import { LocaleType } from '../reviews'
+
+const dayText = {
+  en: ['Day', 'Days'],
+  de: ['Tag', 'Tage'],
+  fr: ['Jour', 'Jours'],
+}
 
 export default function CountDown({
   date,
-  dayText = ['Day', 'Days'],
+  locale,
 }: {
   date: number | Date | string
-  dayText?: string[]
+  locale: LocaleType
 }) {
   const [isLoaded, setIsLoaded] = useState(false)
 
@@ -23,7 +30,7 @@ export default function CountDown({
     const dayIndex = 0
     const daysIndex = 1
     const currentIndex = days === 1 ? dayIndex : daysIndex
-    return dayText[currentIndex] as string
+    return dayText[locale][currentIndex]
   }
 
   return (
