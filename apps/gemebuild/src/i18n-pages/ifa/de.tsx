@@ -21,13 +21,14 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
     </>
   ),
   ifaExhibitionDate: 'IFA Berlin 6-10 September 2024',
+  location:'Location: Messe Berlin',
   activityTitle: 'Activity',
   activityDescription:
     'In the run-up to IFA, GEME is hosting one Lucky draw, click the link to participate!',
   activitySteps:
     'The specific steps are: upload a video of you using the GEME compost machine in your daily life to us, and you will have the opportunity to receive a 180-day dose of Kobold provided by GEME.',
   immediateParticipationButton: 'Immediate participation',
-  countdownTitle: 'Countdown to the next draw',
+  countdownTitle: 'Countdown to the lottery',
   winningProbabilityTitle: 'Your current probability of winning is:',
   sampleVideoTitle: 'Sample video',
   descriptionText:

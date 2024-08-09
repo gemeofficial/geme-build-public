@@ -11,6 +11,7 @@ export interface IIFAHeroSectionProps {
   noticeTitle: string
   exhibitionTitle: ReactNode
   ifaExhibitionDate: string
+  location: string
   activityTitle: string
   activityDescription: string
   activitySteps: string
@@ -29,6 +30,7 @@ export function IFAHeroSection({
   PrefetchLink,
   activityDescription,
   activitySteps,
+  location,
   activityTitle,
   countdownTitle,
   descriptionText,
@@ -62,7 +64,8 @@ export function IFAHeroSection({
           </h1>
           {exhibitionTitle}
           <div className="text-sm md:text-lg 2xl:text-xl mt-4 lg:mt-8 2xl:absolute 2xl:bottom-0">
-            {ifaExhibitionDate}
+            <p>{location}</p>
+            <p>{ifaExhibitionDate}</p>
           </div>
         </div>
         <div className="flex-1 flex flex-col text-sm md:text-base lg:text-lg 2xl:text-base 3xl:text-lg mt-10 lg:mt-20 2xl:mt-0">
@@ -140,6 +143,8 @@ export function IFAHeroSection({
           <Description text={descriptionText} className="md:hidden !relative" />
         </div>
       </div>
+
+      {/* 中奖名单 */}
     </div>
   )
 }
