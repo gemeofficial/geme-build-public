@@ -54,7 +54,7 @@ export default function HeroSection({
           secondaryButton: {
             label: secondaryButtonLabel,
             linkProps: {
-              href: '/customer-service',
+              href: '/help-center',
             },
           },
         }}
