@@ -12,7 +12,7 @@ const dayText = {
 
 // 获取当前月份的所有周一、三、五 并获取下个月的第一个周一/三/五
 function getMondaysWednesdaysFridays(year: number, month: number) {
-  const days = []
+  const days: moment.Moment[] = []
   const startOfMonth = moment([year, month - 1]) // 注意：month 从 0 开始计数
   const endOfMonth = startOfMonth.clone().endOf('month')
 
