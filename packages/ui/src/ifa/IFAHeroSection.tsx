@@ -15,7 +15,6 @@ export interface IIFAHeroSectionProps {
   location: string
   activityTitle: string
   activityDescription: string
-  winners: string
   activitySteps: string
   immediateParticipationButton: string
   countdownTitle: string
@@ -33,7 +32,6 @@ export function IFAHeroSection({
   activityDescription,
   activitySteps,
   location,
-  winners,
   activityTitle,
   countdownTitle,
   descriptionText,
@@ -120,7 +118,7 @@ export function IFAHeroSection({
               <Description text={descriptionText} className="hidden md:block" />
             </div>
             <div className="flex flex-col gap-2">
-              <Video />
+              <Video rootClassName="w-28 h-full max-h-52 md:max-h-max md:w-40 lg:w-[300px] 2xl:w-40 3xl:w-[350px] " />
               <div className="text-center">{sampleVideoTitle}</div>
             </div>
           </div>

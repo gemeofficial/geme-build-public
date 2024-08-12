@@ -13,30 +13,7 @@ export interface IIFAPageProps {
   PrefetchLink?: ILinkComponent
 }
 
-const videoListProps: IVideoListProps = {
-  title: 'Video List',
-  videoList: [
-    {
-      poster: '/assets/images/home-v2311/hero-blurred.webp',
-      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
-    },
-    {
-      poster: '/assets/images/home-v2311/hero-blurred.webp',
-      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
-    },
-    {
-      poster: '/assets/images/home-v2311/hero-blurred.webp',
-      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
-    },
-  ],
-}
-
-// 中奖名单
-const winnersNamesTickerProps: IWinnersNamesTickerProps = {
-  title: 'The winners are',
-  winnersNames,
-}
-
+// Hero Section  En
 const IFAHeroSectionProps: IIFAHeroSectionProps = {
   bgImageUrl: '/assets/images/ifa/hero-bg.png',
   prizeImage: '/assets/images/geme-kobold/product-image-24.jpg',
@@ -73,8 +50,46 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
   sampleVideoTitle: 'Sample video',
   descriptionText:
     'Description: 1/N, N means there are currently N people participating in the activity, the earlier you participate, the greater your chance of winning!',
-  winners: 'The winners are',
   locale: 'en',
+}
+
+// 视频列表   En
+const videoListProps: IVideoListProps = {
+  title: 'Video List',
+  description:
+    'Here are some of the videos uploaded by our award-winning users and how they interact with GEME in their daily lives.',
+  videoList: [
+    {
+      poster: '/assets/images/home-v2311/hero-blurred.webp',
+      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    },
+    {
+      poster: '/assets/images/home-v2311/hero-blurred.webp',
+      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    },
+    {
+      poster: '/assets/images/home-v2311/hero-blurred.webp',
+      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    },
+    {
+      poster: '/assets/images/home-v2311/hero-blurred.webp',
+      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    },
+    {
+      poster: '/assets/images/home-v2311/hero-blurred.webp',
+      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    },
+    {
+      poster: '/assets/images/home-v2311/hero-blurred.webp',
+      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    },
+  ],
+}
+
+// 中奖名单  En
+const winnersNamesTickerProps: IWinnersNamesTickerProps = {
+  title: 'The winners are',
+  winnersNames,
 }
 
 function IFAPageEn({ PrefetchLink }: IIFAPageProps) {
@@ -84,6 +99,7 @@ function IFAPageEn({ PrefetchLink }: IIFAPageProps) {
       <VideoList
         videoListProps={videoListProps}
         winnersNamesTickerProps={winnersNamesTickerProps}
+        PrefetchLink={PrefetchLink}
       />
     </>
   )

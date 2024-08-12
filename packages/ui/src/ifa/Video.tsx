@@ -1,13 +1,15 @@
 import clsx from 'clsx'
 import { PlayIcon } from '../video-inline-player'
 
-export default function Video(
-  props?: React.DetailedHTMLProps<
+export interface IVideoProps
+  extends React.DetailedHTMLProps<
     React.VideoHTMLAttributes<HTMLVideoElement>,
     HTMLVideoElement
-  >,
-) {
+  > {
+  rootClassName?: string
+}
 
+export default function Video(props?: IVideoProps) {
   const currentProps = {
     controls: false,
     autoPlay: true,
@@ -20,7 +22,12 @@ export default function Video(
   }
 
   return (
-    <div className="relative w-28 h-full max-h-52 md:max-h-max md:w-40 lg:w-[300px] 2xl:w-40 3xl:w-[350px] rounded-lg md:rounded-xl overflow-hidden group">
+    <div
+      className={clsx(
+        'relative rounded-lg md:rounded-xl overflow-hidden group',
+        props?.rootClassName,
+      )}
+    >
       <div className="relative h-full w-full object-cover transform-gpu transition-transform group-hover:scale-125 duration-[0.25s] ease-[cubic-bezier(0.24, 0.8, 0.4, 1)]">
         <video
           className={clsx('w-full h-full object-cover', props?.className)}
