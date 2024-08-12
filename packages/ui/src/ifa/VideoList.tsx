@@ -10,7 +10,7 @@ import {
   WinnersNamesTicker,
 } from './WinnersNamesTicker'
 
-interface IVideoList {
+export interface IVideoList {
   title: string
   description: string
   videoList: {

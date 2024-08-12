@@ -36,7 +36,6 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
   sampleVideoTitle: 'Sample video',
   descriptionText:
     'Description: 1/N, N means there are currently N people participating in the activity, the earlier you participate, the greater your chance of winning!',
-  winners: 'The winners are',
   locale: 'en',
 }
 

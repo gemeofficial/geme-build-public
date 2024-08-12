@@ -7,7 +7,7 @@ import {
 
 import { ILinkComponent } from '../../contexts/link-context'
 import { winnersNames } from './winnersNames'
-import VideoList, { IVideoListProps } from 'ui/src/ifa/VideoList'
+import VideoList, { IVideoList, IVideoListProps } from 'ui/src/ifa/VideoList'
 
 export interface IIFAPageProps {
   PrefetchLink?: ILinkComponent
@@ -54,7 +54,7 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
 }
 
 // 视频列表   En
-const videoListProps: IVideoListProps = {
+const videoListProps: IVideoList = {
   title: 'Video List',
   description:
     'Here are some of the videos uploaded by our award-winning users and how they interact with GEME in their daily lives.',
