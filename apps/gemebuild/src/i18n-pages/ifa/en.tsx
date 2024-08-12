@@ -7,14 +7,33 @@ import {
 
 import { ILinkComponent } from '../../contexts/link-context'
 import { winnersNames } from './winnersNames'
+import VideoList, { IVideoListProps } from 'ui/src/ifa/VideoList'
 
 export interface IIFAPageProps {
   PrefetchLink?: ILinkComponent
 }
 
+const videoListProps: IVideoListProps = {
+  title: 'Video List',
+  videoList: [
+    {
+      poster: '/assets/images/home-v2311/hero-blurred.webp',
+      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    },
+    {
+      poster: '/assets/images/home-v2311/hero-blurred.webp',
+      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    },
+    {
+      poster: '/assets/images/home-v2311/hero-blurred.webp',
+      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    },
+  ],
+}
+
 // 中奖名单
 const winnersNamesTickerProps: IWinnersNamesTickerProps = {
-  text: 'The winners are',
+  title: 'The winners are',
   winnersNames,
 }
 
@@ -61,9 +80,11 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
 function IFAPageEn({ PrefetchLink }: IIFAPageProps) {
   return (
     <>
-      {/* 中奖名单 */}
-      <WinnersNamesTicker className="fixed top-[105px] left-0 right-0 z-10" {...winnersNamesTickerProps} />
       <IFAHeroSection {...IFAHeroSectionProps} PrefetchLink={PrefetchLink} />
+      <VideoList
+        videoListProps={videoListProps}
+        winnersNamesTickerProps={winnersNamesTickerProps}
+      />
     </>
   )
 }

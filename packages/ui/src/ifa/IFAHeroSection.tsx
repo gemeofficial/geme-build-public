@@ -6,6 +6,7 @@ import clsx from 'clsx'
 import { ILinkComponent } from '../../../../apps/gemebuild/src/contexts/link-context'
 import { ReactNode } from 'react'
 import { LocaleType } from '../reviews'
+import Video from './Video'
 
 export interface IIFAHeroSectionProps {
   noticeTitle: string
@@ -119,32 +120,7 @@ export function IFAHeroSection({
               <Description text={descriptionText} className="hidden md:block" />
             </div>
             <div className="flex flex-col gap-2">
-              <div className="relative w-28 h-full max-h-52 md:max-h-max md:w-40 lg:w-[300px] 2xl:w-40 3xl:w-[350px] rounded-lg md:rounded-xl overflow-hidden group">
-                <div className="relative h-full w-full object-cover transform-gpu transition-transform group-hover:scale-125 duration-[0.25s] ease-[cubic-bezier(0.24, 0.8, 0.4, 1)]">
-                  <video
-                    className="w-full h-full object-cover"
-                    controls={false}
-                    autoPlay
-                    playsInline
-                    muted
-                    loop
-                    poster={'/assets/images/home-v2311/hero-blurred.webp'}
-                    src={
-                      'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4'
-                    }
-                  >
-                    Your browser does not support HTML5 video.
-                  </video>
-                </div>
-                <button
-                  type="button"
-                  className="absolute inset-0 w-full opacity-80 hover:opacity-100 transition-opacity duration-200"
-                  title="Play fullscreen video"
-                >
-                  <PlayIcon className="m-auto hidden md:block" size="medium" />
-                  <PlayIcon className="m-auto md:hidden" size="small" />
-                </button>
-              </div>
+              <Video />
               <div className="text-center">{sampleVideoTitle}</div>
             </div>
           </div>

@@ -1,26 +1,24 @@
 import clsx from 'clsx'
-import Ticker from 'react-ticker'
 
 export interface IWinnersNamesTickerProps {
-  text: string
+  title: string
   winnersNames: string[]
   className?: string
 }
 
 export function WinnersNamesTicker({
-  text,
+  title,
   className,
   winnersNames,
 }: IWinnersNamesTickerProps) {
   return (
-    <div className={clsx('bg-black/70 w-screen py-1', className)}>
-      <Ticker mode="await" speed={10}>
-        {({ index }) => (
-          <div className="text-white text-nowrap">
-            {text}: {winnersNames.join(' , ')}
-          </div>
-        )}
-      </Ticker>
+    <div className={clsx('', className)}>
+      <h3 className="">{title}</h3>
+      <ul>
+        {winnersNames.map((item, index) => (
+          <li key={item + index}>{item}</li>
+        ))}
+      </ul>
     </div>
   )
 }
