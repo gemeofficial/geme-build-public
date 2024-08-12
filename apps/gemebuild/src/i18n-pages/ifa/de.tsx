@@ -9,7 +9,7 @@ import { ILinkComponent } from '../../contexts/link-context'
 import { winnersNames } from './winnersNames'
 import VideoList, { IVideoList, IVideoListProps } from 'ui/src/ifa/VideoList'
 
-export interface IIFAPageProps {
+interface IIFAPageProps {
   PrefetchLink?: ILinkComponent
 }
 
