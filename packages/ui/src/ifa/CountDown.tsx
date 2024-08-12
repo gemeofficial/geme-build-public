@@ -96,9 +96,7 @@ export default function CountDown({ locale }: { locale: LocaleType }) {
   const currentTime = moment()
 
   // 获取倒计时时间
-  const date = findNextClosestDateTime(drawingDates, currentTime)!.format(
-    'YYYY-MM-DD HH:mm:ss',
-  )
+  const date = findNextClosestDateTime(drawingDates, currentTime)!.valueOf()
 
   // 获取SSR的静态倒计时时间
   const staticTimeInfo = getTimeRemaining(date)
