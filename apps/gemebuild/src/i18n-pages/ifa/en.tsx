@@ -58,7 +58,44 @@ const videoListProps: IVideoList = {
   title: 'Video List',
   description:
     'Here are some of the videos uploaded by our award-winning users and how they interact with GEME in their daily lives.',
+  linkText: 'load more',
   videoList: [
+    {
+      poster: '/assets/images/home-v2311/hero-blurred.webp',
+      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    },
+    {
+      poster: '/assets/images/home-v2311/hero-blurred.webp',
+      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    },
+    {
+      poster: '/assets/images/home-v2311/hero-blurred.webp',
+      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    },
+    {
+      poster: '/assets/images/home-v2311/hero-blurred.webp',
+      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    },
+    {
+      poster: '/assets/images/home-v2311/hero-blurred.webp',
+      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    },
+    {
+      poster: '/assets/images/home-v2311/hero-blurred.webp',
+      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    },
+    {
+      poster: '/assets/images/home-v2311/hero-blurred.webp',
+      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    },
+    {
+      poster: '/assets/images/home-v2311/hero-blurred.webp',
+      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    },
+    {
+      poster: '/assets/images/home-v2311/hero-blurred.webp',
+      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    },
     {
       poster: '/assets/images/home-v2311/hero-blurred.webp',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
@@ -90,6 +127,7 @@ const videoListProps: IVideoList = {
 const winnersNamesTickerProps: IWinnersNamesTickerProps = {
   title: 'The winners are',
   winnersNames,
+  linkText: 'view more',
 }
 
 function IFAPageEn({ PrefetchLink }: IIFAPageProps) {

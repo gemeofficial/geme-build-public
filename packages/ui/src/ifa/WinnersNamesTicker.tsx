@@ -6,12 +6,14 @@ import { ILinkComponent } from '../../../../apps/gemebuild/src/contexts/link-con
 export interface IWinnersNamesTickerProps {
   title: string
   winnersNames: string[]
+  linkText: string
   className?: string
   PrefetchLink?: ILinkComponent
 }
 
 export function WinnersNamesTicker({
   title,
+  linkText,
   className,
   winnersNames,
   PrefetchLink,
@@ -36,9 +38,9 @@ export function WinnersNamesTicker({
       </ul>
       <Link
         className="text-sm font-semibold leading-6 text-emerald-600 flex items-center justify-end"
-        href="/"
+        href="#"
       >
-        view more{' '}
+        {linkText}{' '}
         <span aria-hidden="true" className="ml-2 translate-y-[1px]">
           →
         </span>
