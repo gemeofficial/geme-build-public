@@ -10,6 +10,12 @@ const dayText = {
   fr: ['Jour', 'Jours'],
 }
 
+const drawingText = {
+  en: 'The lottery is being drawn...',
+  de: 'Die Lotterie wird gezogen...',
+  fr: 'Le tirage de la loterie est en cours...',
+}
+
 // 获取当前月份的所有周一、三、五 并获取下个月的第一个周一/三/五
 function getMondaysWednesdaysFridays(year: number, month: number) {
   const days: moment.Moment[] = []
@@ -87,7 +93,7 @@ export default function CountDown({ locale }: { locale: LocaleType }) {
   )
 
   // 获取当前时间
-  const currentTime = moment('2024-08-31 17:00')
+  const currentTime = moment()
 
   // 获取倒计时时间
   const date = findNextClosestDateTime(drawingDates, currentTime)!.format(
@@ -103,7 +109,13 @@ export default function CountDown({ locale }: { locale: LocaleType }) {
         <Countdown
           date={date}
           renderer={({ days, hours, minutes, seconds, completed }) => {
-            // if (completed) return <></>
+            if (completed)
+              return (
+                <h3 className="text-xl md:text-3xl 3xl:text-4xl text-center text-v2311-text-yellow font-semibold">
+                  {drawingText[locale]}
+                </h3>
+              )
+
             return (
               <RenderCountDown
                 dayText={getDayText(days)}

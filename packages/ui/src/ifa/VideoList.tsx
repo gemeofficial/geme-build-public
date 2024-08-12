@@ -19,8 +19,12 @@ export interface IVideoList {
   videoList: {
     src: string
     poster: string
+    from: string
+    useTime: string
   }[]
   linkText: string
+  fromText: string
+  useTimeText: string
 }
 
 export interface IVideoListProps {
@@ -50,10 +54,16 @@ export default function VideoList({
         <SectionDescription className="!text-left mt-4">
           {videoListProps.description}
         </SectionDescription>
-        <ul className="mt-4 md:mt-6 xl:mt-8 grid grid-cols-2 xl:grid-cols-3 gap-4">
+        <ul className="mt-4 xl:mt-6 grid grid-cols-2 xl:grid-cols-3 gap-4">
           {videoListProps.videoList.slice(0, length).map((item, index) => (
-            <li key={item.src + index}>
+            <li key={item.src + index} className='mt-2'>
               <Video autoPlay={false} {...item} />
+              <p className="font-medium xl:text-lg mt-2">
+                {videoListProps.fromText} : {item.from}
+              </p>
+              <p className="text-xs md:text-sm text-gray-500 mt-1">
+                {videoListProps.useTimeText} : {item.useTime}
+              </p>
             </li>
           ))}
         </ul>

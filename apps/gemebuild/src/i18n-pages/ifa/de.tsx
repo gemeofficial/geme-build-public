@@ -59,67 +59,64 @@ const videoListProps: IVideoList = {
   description:
     'Here are some of the videos uploaded by our award-winning users and how they interact with GEME in their daily lives.',
   linkText: 'load more',
+  fromText: 'From',
+  useTimeText: 'Duration of use',
   videoList: [
     {
       poster: '/assets/images/home-v2311/hero-blurred.webp',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+      from: 'America',
+      useTime: 'A year and a half',
     },
     {
       poster: '/assets/images/home-v2311/hero-blurred.webp',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+      from: 'Mexico',
+      useTime: 'Two and a half years',
     },
     {
       poster: '/assets/images/home-v2311/hero-blurred.webp',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+      from: 'Denmark',
+      useTime: 'Four months',
     },
     {
       poster: '/assets/images/home-v2311/hero-blurred.webp',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+      from: 'America',
+      useTime: 'A year and a half',
     },
     {
       poster: '/assets/images/home-v2311/hero-blurred.webp',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+      from: 'Mexico',
+      useTime: 'Two and a half years',
     },
     {
       poster: '/assets/images/home-v2311/hero-blurred.webp',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+      from: 'Denmark',
+      useTime: 'Four months',
     },
     {
       poster: '/assets/images/home-v2311/hero-blurred.webp',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+      from: 'America',
+      useTime: 'A year and a half',
     },
     {
       poster: '/assets/images/home-v2311/hero-blurred.webp',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+      from: 'Mexico',
+      useTime: 'Two and a half years',
     },
     {
       poster: '/assets/images/home-v2311/hero-blurred.webp',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+      from: 'Denmark',
+      useTime: 'Four months',
     },
-    {
-      poster: '/assets/images/home-v2311/hero-blurred.webp',
-      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
-    },
-    {
-      poster: '/assets/images/home-v2311/hero-blurred.webp',
-      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
-    },
-    {
-      poster: '/assets/images/home-v2311/hero-blurred.webp',
-      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
-    },
-    {
-      poster: '/assets/images/home-v2311/hero-blurred.webp',
-      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
-    },
-    {
-      poster: '/assets/images/home-v2311/hero-blurred.webp',
-      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
-    },
-    {
-      poster: '/assets/images/home-v2311/hero-blurred.webp',
-      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
-    },
+    
   ],
 }
 
