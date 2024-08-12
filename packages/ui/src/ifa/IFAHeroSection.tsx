@@ -45,9 +45,6 @@ export function IFAHeroSection({
   prizeImage,
   locale,
 }: IIFAHeroSectionProps) {
-  // 倒计时时间：基于现在的时间  + 48h
-  const constDownDate = Date.now() + 3600 * 1000 * 48
-
   return (
     <div className="relative min-h-[900px] max-h-max md:min-h-screen md:max-h-screen lg:min-h-[1100px] lg:max-h-max 2xl:min-h-screen 2xl:max-h-screen font-v2311">
       <Image
@@ -110,7 +107,7 @@ export function IFAHeroSection({
           <div className="flex justify-between mt-8 gap-8 flex-1">
             <div className="flex-1 relative">
               <div className="">{countdownTitle}</div>
-              <CountDown locale={locale} date={constDownDate} />
+              <CountDown locale={locale} />
               <div className="">{winningProbabilityTitle}</div>
               <div className="text-xl md:text-3xl 2xl:text-2xl 3xl:text-4xl my-2 lg:my-5 2xl:my-3 3xl:my-4 text-v2311-text-yellow">
                 1 / 8
