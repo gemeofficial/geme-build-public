@@ -18,7 +18,7 @@ export interface IVideoProps
   mixpanelTitle?: string
 }
 
-export default function ModalContainer(props: IVideoProps) {
+export default function Video(props: IVideoProps) {
   const [isOpen, setIsOpen] = useState(false)
 
   const closeModal = () => setIsOpen(false)
