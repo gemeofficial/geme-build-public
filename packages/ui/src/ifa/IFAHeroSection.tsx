@@ -142,7 +142,7 @@ function Button({
 
   return (
     <Link
-      href="/"
+      href="/ifa-active-form"
       className={clsx(
         'relative overflow-hidden text-sm md:text-lg 3xl:text-2xl font-bold text-v2311-text-yellow xl:w-auto flex items-center justify-center border-solid border-2 border-v2311-text-yellow rounded-xl max-w-[90%] md:mt-6 mb-1',
         className,
