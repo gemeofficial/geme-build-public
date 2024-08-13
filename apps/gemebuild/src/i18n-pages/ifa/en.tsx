@@ -1,7 +1,9 @@
 import {
   IFAHeroSection,
   IIFAHeroSectionProps,
+  ISubscribeGemeV2Props,
   IWinnersNamesTickerProps,
+  SubscribeGemeV2,
   WinnersNamesTicker,
 } from 'ui'
 
@@ -70,6 +72,20 @@ const winnersNamesTickerProps: IWinnersNamesTickerProps = {
   linkText: 'view more',
 }
 
+const subscribeGemeV2Props: ISubscribeGemeV2Props = {
+  title: 'Join the Movement',
+  description: (
+    <>
+      A new approach to the world&apos;s waste problem begins with each of us,
+      effortless in daily life
+    </>
+  ),
+  emailInputName: 'email-address',
+  emailLabel: 'Email address',
+  emailPlaceholder: 'Enter your email',
+  submitButtonLabel: 'Subscribe',
+}
+
 function IFAPageEn({ PrefetchLink }: IIFAPageProps) {
   return (
     <>
@@ -79,6 +95,7 @@ function IFAPageEn({ PrefetchLink }: IIFAPageProps) {
         winnersNamesTickerProps={winnersNamesTickerProps}
         PrefetchLink={PrefetchLink}
       />
+      <SubscribeGemeV2 {...subscribeGemeV2Props} />
     </>
   )
 }
