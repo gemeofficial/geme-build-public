@@ -411,17 +411,10 @@ const newsltterProps: INewsletterProps = {
 
 export interface IHomePageProps {
   PrefetchLink?: ILinkComponent
-  subscribeHandler?: (params: { email: string }) => Promise<{
-    message: string
-  }>
   reviewsSectionConfig: IReviewsSectionConfig
 }
 
-function HomePageEn({
-  PrefetchLink,
-  reviewsSectionConfig,
-  subscribeHandler,
-}: IHomePageProps) {
+function HomePageEn({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
   heroSection1Props.LinkComponent = PrefetchLink
 
   return (
@@ -452,7 +445,7 @@ function HomePageEn({
 
       <Footprints {...footprintsProps} />
 
-      <Newsletter {...newsltterProps}  subscribeHandler={subscribeHandler}/>
+      <Newsletter {...newsltterProps} />
     </>
   )
 }

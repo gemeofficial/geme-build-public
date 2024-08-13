@@ -435,7 +435,6 @@ const newsltterProps: INewsletterProps = {
 function HomePageDe({
   PrefetchLink,
   reviewsSectionConfig,
-  subscribeHandler,
 }: IHomePageProps) {
   heroSection1Props.LinkComponent = PrefetchLink
   return (
@@ -466,7 +465,7 @@ function HomePageDe({
 
       <Footprints {...footprintsProps} />
 
-      <Newsletter {...newsltterProps} subscribeHandler={subscribeHandler}/>
+      <Newsletter {...newsltterProps}/>
     </>
   )
 }

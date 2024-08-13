@@ -1,24 +1,31 @@
 'use client'
 
-import { useCallback, useState } from 'react'
+import { createContext, useCallback, useContext, useState } from 'react'
 import { NewsletterCenteredCard, SuccessNotice } from 'ui'
 import type { INewsletterCenteredCardProps, ISuccessNoticeProps } from 'ui'
 
+interface INewsletterContext {
+  subscribe: (email: string) => Promise<void>
+}
+
+const NewsletterContext = createContext<INewsletterContext>({
+  subscribe: async (email: string) => {
+    console.log('Subscribing', email)
+    await new Promise((resolve) => setTimeout(resolve, 1000))
+    return
+  },
+})
+
 interface INewsletterProps {
-  subscribeHandler?: (params: { email: string }) => Promise<{
-    message: string
-  }>
   newsletterCenteredCardProps?: INewsletterCenteredCardProps
   successNoticeProps?: ISuccessNoticeProps
 }
 
 function Newsletter({
-  subscribeHandler,
   newsletterCenteredCardProps,
   successNoticeProps,
 }: INewsletterProps) {
-  // 之前的是假订阅 现在修正过来
-  // const { subscribe } = useContext(NewsletterContext)
+  const { subscribe } = useContext(NewsletterContext)
   const [openSuccessNotice, setOpenSuccessNotice] = useState<boolean>(false)
 
   const onSubmit = useCallback(
@@ -30,13 +37,12 @@ function Newsletter({
         newsletterCenteredCardProps?.emailInputName || 'email-address',
       )
 
-      if (typeof email !== 'string' || !subscribeHandler) {
+      if (typeof email !== 'string') {
         return
       }
 
       try {
-        await subscribeHandler({ email })
-
+        await subscribe(email)
         setOpenSuccessNotice(true)
         // sleep 3 seconds
         await new Promise((resolve) => setTimeout(resolve, 2500))
@@ -47,8 +53,8 @@ function Newsletter({
     },
     [
       setOpenSuccessNotice,
+      subscribe,
       newsletterCenteredCardProps?.emailInputName,
-      subscribeHandler,
     ],
   )
 
@@ -63,5 +69,5 @@ function Newsletter({
   )
 }
 
-export { Newsletter }
-export type { INewsletterProps }
+export { Newsletter, NewsletterContext }
+export type { INewsletterProps, INewsletterContext }
