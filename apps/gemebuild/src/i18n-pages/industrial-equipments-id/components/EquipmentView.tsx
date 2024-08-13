@@ -57,7 +57,7 @@ function equipmentToViewProps(
             <div className="shadow rounded-md">
               <a
                 target="_blank"
-                href="https://wa.me/message/JTBS65IY46ACM1"
+                href="https://wa.me/message/N4FXXTIVMMIPA1"
                 className={clsx(
                   'flex w-full items-center justify-center rounded-md border border-transparent',
                   'py-3 px-8 text-base font-medium',
