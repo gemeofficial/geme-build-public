@@ -65,8 +65,8 @@ const videoListProps: IVideoList = {
 // 中奖名单  En
 const winnersNamesTickerProps: IWinnersNamesTickerProps = {
   title: 'The winners are',
-  winnersNames,
   linkText: 'view more',
+  winnersNames,
 }
 
 const subscribeGemeV2Props = {

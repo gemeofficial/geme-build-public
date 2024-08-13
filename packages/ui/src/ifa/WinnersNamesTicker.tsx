@@ -5,7 +5,7 @@ import { ILinkComponent } from '../../../../apps/gemebuild/src/contexts/link-con
 
 export interface IWinnersNamesTickerProps {
   title: string
-  winnersNames: string[]
+  winnersNames: { name: string; date: string }[]
   linkText: string
   className?: string
   PrefetchLink?: ILinkComponent
@@ -26,13 +26,11 @@ export function WinnersNamesTicker({
       <ul className="mt-4">
         {winnersNames.map((item, index) => (
           <li
-            key={item + index}
+            key={item.name + index}
             className="flex items-center justify-between p-2 hover:bg-gray-100"
           >
-            <span>{item}</span>
-            <span className="text-xs xl:text-sm text-[#999]">
-              {'2024-08-10'}
-            </span>
+            <span>{item.name}</span>
+            <span className="text-xs xl:text-sm text-[#999]">{item.date}</span>
           </li>
         ))}
       </ul>
