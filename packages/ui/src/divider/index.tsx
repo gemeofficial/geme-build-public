@@ -4,12 +4,14 @@ interface DividerProps {
   color?: string
   height?: string
   width?: string
+  className?: string
 }
 
 export const Divider: React.FC<DividerProps> = ({
   color = '#fff',
   height = '24px',
   width = '2px',
+  className
 }) => {
   return (
     <span
@@ -20,6 +22,7 @@ export const Divider: React.FC<DividerProps> = ({
         width: width,
         margin: '0 8px', // 间隔符号前后的间距
       }}
+      className={className}
     />
   )
 }

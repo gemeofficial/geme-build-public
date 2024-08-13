@@ -29,8 +29,6 @@ export default function Video(props: IVideoProps) {
     playsInline: true,
     muted: true,
     loop: true,
-    poster: '/assets/images/ifa/ifa-example-video-poster.png',
-    src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/ifa-page-exampl-video.mp4',
     ...props,
   }
 
