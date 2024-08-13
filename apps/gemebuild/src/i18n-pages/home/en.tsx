@@ -411,7 +411,7 @@ const newsltterProps: INewsletterProps = {
 
 export interface IHomePageProps {
   PrefetchLink?: ILinkComponent
-  subscribeHandler?: (email: string) => Promise<void>
+  subscribeHandler?: ({ email }: { email: string }) => Promise<void>
   reviewsSectionConfig: IReviewsSectionConfig
 }
 

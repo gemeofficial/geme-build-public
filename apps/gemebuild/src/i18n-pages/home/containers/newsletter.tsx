@@ -5,7 +5,7 @@ import { NewsletterCenteredCard, SuccessNotice } from 'ui'
 import type { INewsletterCenteredCardProps, ISuccessNoticeProps } from 'ui'
 
 interface INewsletterProps {
-  subscribeHandler?: (email: string) => Promise<void>
+  subscribeHandler?: ({ email }: { email: string }) => Promise<void>
   newsletterCenteredCardProps?: INewsletterCenteredCardProps
   successNoticeProps?: ISuccessNoticeProps
 }
@@ -33,7 +33,7 @@ function Newsletter({
       }
 
       try {
-        await subscribeHandler(email)
+        await subscribeHandler({ email })
 
         setOpenSuccessNotice(true)
         // sleep 3 seconds
