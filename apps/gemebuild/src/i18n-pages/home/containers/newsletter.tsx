@@ -5,7 +5,9 @@ import { NewsletterCenteredCard, SuccessNotice } from 'ui'
 import type { INewsletterCenteredCardProps, ISuccessNoticeProps } from 'ui'
 
 interface INewsletterProps {
-  subscribeHandler?: ({ email }: { email: string }) => Promise<void>
+  subscribeHandler?: (params: { email: string }) => Promise<{
+    message: string
+  }>
   newsletterCenteredCardProps?: INewsletterCenteredCardProps
   successNoticeProps?: ISuccessNoticeProps
 }
