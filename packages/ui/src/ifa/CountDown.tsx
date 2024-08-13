@@ -180,7 +180,7 @@ function RenderCountDown({
   textInfo: ImultiLanguageText
 }) {
   return (
-    <div className="flex items-center gap-8 text-center">
+    <div className="flex items-center gap-4 md:gap-8 text-center">
       <TimeCard textInfo={textInfo} type="day" dayText={dayText}>
         {days}
       </TimeCard>
@@ -224,10 +224,10 @@ function TimeCard({
 }: PropsWithChildren<TimeCard>) {
   return (
     <div
-      className="text-white tracking-wide font-sans  font-semibold"
+      className="text-white tracking-wide font-sans font-semibold"
       suppressHydrationWarning
     >
-      <p className='md:text-2xl xl:text-3xl'>{children}</p>
+      <p className='text-lg md:text-2xl xl:text-3xl'>{children}</p>
       <p className="mt-1 text-v2311-primary md:text-lg xl:text-xl">
         {type === 'day' ? dayText : textInfo[type]}
       </p>

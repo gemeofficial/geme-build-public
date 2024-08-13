@@ -23,14 +23,14 @@ export default function Video(props: IVideoProps) {
 
   const closeModal = () => setIsOpen(false)
 
-  const defaultProps = {
+  const newProps = {
     controls: false,
     autoPlay: true,
     playsInline: true,
     muted: true,
     loop: true,
-    poster: '/assets/images/home-v2311/hero-blurred.webp',
-    src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
+    poster: '/assets/images/ifa/ifa-example-video-poster.png',
+    src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/ifa-page-exampl-video.mp4',
     ...props,
   }
 
@@ -42,20 +42,20 @@ export default function Video(props: IVideoProps) {
           if (hasMixpanel()) {
             mixpanel.track('Watch IFA Page Video', {
               Title: props.mixpanelTitle || 'IFA Activity Video',
-              link: defaultProps.src,
+              link: newProps.src,
             })
           }
           setIsOpen(true)
         }}
         className={clsx(
-          'relative rounded-lg md:rounded-xl overflow-hidden group',
+          'relative rounded-lg overflow-hidden group',
           props?.rootClassName,
         )}
       >
-        <div className="relative h-full w-full object-cover transform-gpu transition-transform group-hover:scale-125 duration-[0.25s] ease-[cubic-bezier(0.24, 0.8, 0.4, 1)]">
+        <div className="relative h-full w-full object-cover transition-transform group-hover:scale-125 duration-[0.25s] ease-[cubic-bezier(0.24, 0.8, 0.4, 1)]">
           <video
-            className={clsx('w-full h-full object-cover', props?.className)}
-            {...defaultProps}
+            {...newProps}
+            className={clsx('object-cover', props?.className)}
           >
             Your browser does not support HTML5 video.
           </video>
@@ -107,10 +107,10 @@ export default function Video(props: IVideoProps) {
                       muted
                       loop
                       controls
-                      className="overflow-hidden object-cover absolute top-0 left-0 w-full h-full"
-                      poster={defaultProps.poster}
+                      className="overflow-hidden object-contain absolute top-0 left-0 w-full h-full"
+                      poster={newProps.poster}
                     >
-                      <source src={defaultProps.src} type="video/mp4" />
+                      <source src={newProps.src} type="video/mp4" />
                       Your browser does not support HTML5 video.
                     </video>
                   </div>

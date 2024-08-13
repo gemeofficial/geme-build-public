@@ -3,7 +3,7 @@ import DefaultLink from 'next/link'
 import CountDown from './CountDown'
 import clsx from 'clsx'
 import { ILinkComponent } from '../../../../apps/gemebuild/src/contexts/link-context'
-import { ReactNode } from 'react'
+import { PropsWithChildren, ReactNode } from 'react'
 import { LocaleType } from '../reviews'
 import Video from './Video'
 import { Divider } from '../divider'
@@ -48,19 +48,19 @@ export function IFAHeroSection({
   locale,
 }: IIFAHeroSectionProps) {
   return (
-    <div className="relative min-h-[900px] max-h-max md:min-h-screen md:max-h-screen lg:min-h-[1100px] lg:max-h-max 2xl:min-h-screen 2xl:max-h-screen font-v2311">
+    <div className="relative h-[900px] md:h-screen font-v2311">
       <Image
         src={bgImageUrl}
         height={1080}
         width={1920}
         alt="hero section background"
-        className="w-full h-full min-h-[900px] max-h-max md:min-h-screen md:max-h-screen lg:min-h-[1100px] lg:max-h-max 2xl:min-h-screen 2xl:max-h-screen object-cover"
+        className="w-full h-[900px] md:h-screen object-cover"
         priority
       />
 
-      <div className="flex flex-col 2xl:flex-row absolute inset-0 bg-black/60 text-[#f8f1eb] p-6 md:p-20 3xl:px-52 3xl:py-32">
+      <div className="flex flex-col xl:flex-row absolute inset-0 bg-black/60 text-[#f8f1eb] p-6 md:p-10 lg:p-14 xl:p-20 3xl:px-52 3xl:py-32">
         {/* 左侧区域 */}
-        <div className="2xl:w-[40%] 2xl:mr-[10%] 3xl:mr-[20%] relative">
+        <div className="xl:w-[40%] xl:mr-[10%] relative">
           {/* Logo */}
           <div className="flex items-center gap-4">
             <Image
@@ -92,7 +92,7 @@ export function IFAHeroSection({
             <p className="text-sm md:text-lg 2xl:text-xl text-v2311-text-yellow">
               {prizeDesc}
             </p>
-            <p className="text-xs md:text-sm 3xl:text-base text-white/80 font-normal 2xl:max-w-[450px]">
+            <p className="text-xs md:text-sm 3xl:text-base text-white/80 font-normal lg:max-w-[450px]">
               {activityDescription}
             </p>
 
@@ -105,37 +105,40 @@ export function IFAHeroSection({
         </div>
 
         {/* 右侧区域 */}
-        <div className="flex-1 flex flex-col gap-4 2xl:gap-6 text-sm md:text-lg 2xl:text-xl font-semibold">
+        <div className="flex-1 flex flex-col gap-4 2xl:gap-6 text-sm md:text-lg 2xl:text-xl 3xl:text-2xl font-semibold max-w-[600px] mt-8 2xl:mt-0">
           {/* <h2 className="text-xl md:text-3xl 3xl:text-4xl text-center text-v2311-text-yellow font-semibold">
             {activityTitle}
           </h2> */}
-          <p className="">{countdownTitle}</p>
+          <p>{countdownTitle}</p>
 
           <CountDown locale={locale} />
 
-          <p className="">{winningProbabilityTitle}</p>
+          <p>{winningProbabilityTitle}</p>
           <div className="flex items-center w-full gap-4 2xl:gap-8">
             <p className="text-xl md:text-3xl 2xl:text-2xl 3xl:text-4xl text-nowrap">
               1 / 8
             </p>
-            <Divider color='#058669' height='50px' />
-            <p className="font-normal text-xs xl:text-sm max-w-96">{descriptionText}</p>
+            <Divider color="#058669" height="56px" width="5px" />
+            <p className="font-normal text-xs md:text-sm xl:text-base">
+              {descriptionText}
+            </p>
           </div>
 
           {/* 下半部分区域 */}
-          <div className="mt-4 flex items-center justify-between">
-            <Image
-              src={prizeImage}
-              height={400}
-              width={400}
-              alt="geme kobold"
-              className="w-28 h-28 md:w-40 md:h-40 3xl:w-52 3xl:h-52 object-cover rounded-lg"
-            />
+          <div className="mt-4 flex items-center justify-between lg:gap-8 lg:justify-normal lg:items-stretch">
+            <MediaBox textInfo={prizeImageTitle} className="lg:flex-1 xl:flex-none 2xl:flex-1">
+              <Image
+                src={prizeImage}
+                height={400}
+                width={400}
+                alt="geme kobold"
+                className="w-40 h-40 md:w-56 md:h-56 lg:w-full lg:h-full xl:w-60 xl:h-60 2xl:w-full 2xl:h-full object-cover rounded-lg max-h-[292px]"
+              />
+            </MediaBox>
 
-            <div className="flex flex-col gap-2">
-              <Video rootClassName="w-28 h-full max-h-52 md:max-h-max md:w-40 lg:w-[300px] 2xl:w-40 3xl:w-[350px] " />
-              <div className="text-center">{sampleVideoTitle}</div>
-            </div>
+            <MediaBox textInfo={sampleVideoTitle} className="lg:flex-1 xl:flex-none 2xl:flex-1">
+              <Video className="w-40 h-40 md:w-56 md:h-56 lg:w-full lg:h-full xl:w-60 xl:h-60 2xl:w-full 2xl:h-full max-h-[292px]" />
+            </MediaBox>
           </div>
         </div>
       </div>
@@ -158,11 +161,33 @@ function Button({
     <Link
       href="/ifa-active-form"
       className={clsx(
-        'relative items-center rounded-md border border-transparent bg-v2311-bg-dark-green hover:bg-v2311-primary px-3 py-1 md:px-8 md:py-3 text-xs font-medium text-white shadow-sm md:text-base focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-1 md:focus:ring-offset-2 max-w-max',
+        'relative items-center rounded-md  bg-v2311-bg-dark-green shadow-sm md:text-base',
+        'hover:bg-v2311-primary px-6 py-3 md:px-8 md:py-3 text-sm font-medium text-white max-w-max',
+        'border-2 border-[#5A9C6D]  lg:border-[3px]',
         className,
       )}
     >
       {text}
     </Link>
+  )
+}
+
+function MediaBox({
+  children,
+  textInfo,
+  className,
+}: PropsWithChildren<{ textInfo: string; className?: string }>) {
+  return (
+    <div
+      className={clsx(
+        'flex flex-col text-center bg-v2311-bg-dark-green rounded-lg',
+        className,
+      )}
+    >
+      {children}
+      <p className="text-white text-nowrap text-xs md:text-sm lg:text-base py-2">
+        {textInfo}
+      </p>
+    </div>
   )
 }
