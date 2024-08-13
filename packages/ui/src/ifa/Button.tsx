@@ -1,3 +1,5 @@
+'use client'
+
 import DefaultLink from 'next/link'
 import { ILinkComponent } from '../../../../apps/gemebuild/src/contexts/link-context'
 import { hasMixpanel } from '../lib'

@@ -10,10 +10,7 @@ import {
 import { ILinkComponent } from '../../contexts/link-context'
 import { winnersNames } from './winnersNames'
 import VideoList, { IVideoList, IVideoListProps } from 'ui/src/ifa/VideoList'
-
-interface IIFAPageProps {
-  PrefetchLink?: ILinkComponent
-}
+import { FC } from 'react'
 
 // Hero Section  En
 const IFAHeroSectionProps: IIFAHeroSectionProps = {
@@ -53,14 +50,14 @@ const videoListProps: IVideoList = {
     {
       // poster: '/assets/images/home-v2311/hero-blurred.webp',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/ifa-page-user-video-1.mp4',
-      from: 'America',
-      useTime: 'A year and a half',
+      from: 'MN',
+      useTime: 'Nine months',
     },
     {
       // poster: '/assets/images/home-v2311/hero-blurred.webp',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/ifa-page-user-video-2.mp4',
-      from: 'Mexico',
-      useTime: 'Two and a half years',
+      from: 'OH',
+      useTime: 'Ten months',
     },
   ],
 }
@@ -72,21 +69,27 @@ const winnersNamesTickerProps: IWinnersNamesTickerProps = {
   linkText: 'view more',
 }
 
-const subscribeGemeV2Props: ISubscribeGemeV2Props = {
-  title: 'Join the Movement',
+const subscribeGemeV2Props = {
+  title: 'Join the GEME II waiting list',
   description: (
     <>
       A new approach to the world&apos;s waste problem begins with each of us,
       effortless in daily life
     </>
   ),
-  emailInputName: 'email-address',
-  emailLabel: 'Email address',
   emailPlaceholder: 'Enter your email',
   submitButtonLabel: 'Subscribe',
 }
 
-function IFAPageEn({ PrefetchLink }: IIFAPageProps) {
+export interface IIFAPageProps {
+  PrefetchLink?: ILinkComponent
+  SubscribeComponent?: FC<{
+    inputPlaceholder: string
+    submitButtonLabel: string
+  }>
+}
+
+function IFAPageEn({ PrefetchLink, SubscribeComponent }: IIFAPageProps) {
   return (
     <>
       <IFAHeroSection {...IFAHeroSectionProps} PrefetchLink={PrefetchLink} />
@@ -95,7 +98,10 @@ function IFAPageEn({ PrefetchLink }: IIFAPageProps) {
         winnersNamesTickerProps={winnersNamesTickerProps}
         PrefetchLink={PrefetchLink}
       />
-      <SubscribeGemeV2 {...subscribeGemeV2Props} />
+      <SubscribeGemeV2
+        {...subscribeGemeV2Props}
+        SubscribeComponent={SubscribeComponent}
+      />
     </>
   )
 }
