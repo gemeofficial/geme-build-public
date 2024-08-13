@@ -1,12 +1,12 @@
 import Image from 'next/image'
-import DefaultLink from 'next/link'
 import CountDown from './CountDown'
 import clsx from 'clsx'
 import { ILinkComponent } from '../../../../apps/gemebuild/src/contexts/link-context'
-import { PropsWithChildren, ReactNode } from 'react'
+import { PropsWithChildren } from 'react'
 import { LocaleType } from '../reviews'
 import Video from './Video'
 import { Divider } from '../divider'
+import { Button } from './Button'
 
 export interface IIFAHeroSectionProps {
   noticeTitle: string
@@ -156,32 +156,6 @@ export function IFAHeroSection({
         </div>
       </div>
     </div>
-  )
-}
-
-function Button({
-  className,
-  PrefetchLink,
-  text,
-}: {
-  text: string
-  className?: string
-  PrefetchLink?: ILinkComponent
-}) {
-  const Link = PrefetchLink ? PrefetchLink : DefaultLink
-
-  return (
-    <Link
-      href="/ifa-active-form"
-      className={clsx(
-        'relative items-center rounded-md  bg-v2311-bg-dark-green shadow-sm md:text-base',
-        'hover:bg-v2311-primary px-6 py-3 md:px-8 md:py-3 text-sm font-medium text-white max-w-max',
-        'border-2 border-[#5A9C6D]  lg:border-[3px]',
-        className,
-      )}
-    >
-      {text}
-    </Link>
   )
 }
 

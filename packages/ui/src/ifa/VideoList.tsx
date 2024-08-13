@@ -12,6 +12,8 @@ import {
   IWinnersNamesTickerProps,
   WinnersNamesTicker,
 } from './WinnersNamesTicker'
+import { hasMixpanel } from '../lib'
+import mixpanel from 'mixpanel-browser'
 
 export interface IVideoList {
   title: string
@@ -64,8 +66,24 @@ export default function VideoList({
                 {videoListProps.videoList
                   .slice(0, length)
                   .map((item, index) => (
-                    <li key={item.src + index} className="mt-2">
-                      <Video autoPlay={false} src={item.src} poster={item.poster} className='w-full max-h-40 object-cover' />
+                    <li
+                      key={item.src + index}
+                      className="mt-2"
+                      onClick={() => {
+                        if (hasMixpanel()) {
+                          mixpanel.track('Watch IFA Page Video', {
+                            videoSrc: item.src,
+                            ...item,
+                          })
+                        }
+                      }}
+                    >
+                      <Video
+                        autoPlay={false}
+                        src={item.src}
+                        poster={item.poster}
+                        className="w-full max-h-40 object-cover"
+                      />
                       <p className="font-medium xl:text-lg mt-2">
                         {videoListProps.fromText} : {item.from}
                       </p>
@@ -99,7 +117,6 @@ export default function VideoList({
               )}
             </>
           )}
-
         </div>
       </div>
       {/* 中奖名单 */}
