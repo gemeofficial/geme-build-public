@@ -1,19 +1,41 @@
 'use client'
+
 import { PropsWithChildren, useEffect, useState } from 'react'
 import Countdown, { zeroPad } from 'react-countdown'
 import { LocaleType } from '../reviews'
 import moment from 'moment'
+import { Divider } from '../divider'
 
-const dayText = {
-  en: ['Day', 'Days'],
-  de: ['Tag', 'Tage'],
-  fr: ['Jour', 'Jours'],
+interface ImultiLanguageText {
+  days: string[]
+  drawing: string
+  hour: string
+  min: string
+  sec: string
 }
 
-const drawingText = {
-  en: 'The lottery is being drawn...',
-  de: 'Die Lotterie wird gezogen...',
-  fr: 'Le tirage de la loterie est en cours...',
+const multiLanguageText = {
+  en: {
+    days: ['DAY', 'DAYS'],
+    drawing: 'The lottery is being drawn...',
+    hour: 'HOUR',
+    min: 'MIN',
+    sec: 'SEC',
+  },
+  de: {
+    days: ['TAG', 'TAGE'],
+    drawing: 'Die Verlosung wird gezogen...',
+    hour: 'STUNDE',
+    min: 'MIN',
+    sec: 'SEK',
+  },
+  fr: {
+    days: ['JOUR', 'JOURS'],
+    drawing: 'Le tirage au sort est en cours...',
+    hour: 'HEURE',
+    min: 'MIN',
+    sec: 'SEC',
+  },
 }
 
 // 获取当前月份的所有周一、三、五 并获取下个月的第一个周一/三/五
@@ -79,13 +101,6 @@ export default function CountDown({ locale }: { locale: LocaleType }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []) // No deps required
 
-  function getDayText(days: number) {
-    const dayIndex = 0
-    const daysIndex = 1
-    const currentIndex = days <= 1 ? dayIndex : daysIndex
-    return dayText[locale][currentIndex]
-  }
-
   // 获取当月的一三五开奖日期
   const drawingDates = getMondaysWednesdaysFridays(
     moment().year(),
@@ -101,6 +116,15 @@ export default function CountDown({ locale }: { locale: LocaleType }) {
   // 获取SSR的静态倒计时时间
   const staticTimeInfo = getTimeRemaining(date)
 
+  // 获取文本
+  function getDayText(days: number) {
+    const dayIndex = 0
+    const daysIndex = 1
+    const currentIndex = days <= 1 ? dayIndex : daysIndex
+    return multiLanguageText[locale].days[currentIndex]
+  }
+  const textInfo = multiLanguageText[locale]
+
   return (
     <>
       {isLoaded && (
@@ -110,12 +134,13 @@ export default function CountDown({ locale }: { locale: LocaleType }) {
             if (completed)
               return (
                 <h3 className="text-xl md:text-3xl 3xl:text-4xl text-center text-v2311-text-yellow font-semibold">
-                  {drawingText[locale]}
+                  {textInfo.drawing}
                 </h3>
               )
 
             return (
               <RenderCountDown
+                textInfo={textInfo}
                 dayText={getDayText(days)}
                 days={days}
                 hours={hours}
@@ -130,6 +155,7 @@ export default function CountDown({ locale }: { locale: LocaleType }) {
       {/* 静态的倒计时DOM SSR渲染用 */}
       {!isLoaded && (
         <RenderCountDown
+          textInfo={textInfo}
           dayText={getDayText(staticTimeInfo.days)}
           {...staticTimeInfo}
         />
@@ -144,47 +170,38 @@ function RenderCountDown({
   minutes,
   seconds,
   dayText,
+  textInfo,
 }: {
   days: number
   hours: number
   minutes: number
   seconds: number
   dayText: string
+  textInfo: ImultiLanguageText
 }) {
   return (
-    <div className="flex my-4 md:my-2 lg:my-5 2xl:my-3 3xl:my-4">
-      <div className="text-center">
-        {days > 0 && (
-          <div className="md:hidden mb-3">
-            <TimeCard>
-              {days}
-              <span className="pl-1">{dayText}</span>
-            </TimeCard>
-          </div>
-        )}
-        <div className="md:text-xl flex items-center">
-          {days > 0 && (
-            <div className="hidden md:flex">
-              <TimeCard>
-                <span className="px-1 md:px-2">{days}</span>
-              </TimeCard>
-              <span className="px-2 inline-flex justify-center items-center text-white">
-                {dayText}
-              </span>
-            </div>
-          )}
+    <div className="flex items-center gap-8 text-center">
+      <TimeCard textInfo={textInfo} type="day" dayText={dayText}>
+        {days}
+      </TimeCard>
 
-          <TimeCard>{zeroPad(hours)}</TimeCard>
+      <Divider color="#058669" height="56px" />
 
-          <Semicolon />
+      <TimeCard textInfo={textInfo} type="hour">
+        {zeroPad(hours)}
+      </TimeCard>
 
-          <TimeCard>{zeroPad(minutes)}</TimeCard>
+      <Divider color="#058669" height="56px" />
 
-          <Semicolon />
+      <TimeCard textInfo={textInfo} type="min">
+        {zeroPad(minutes)}
+      </TimeCard>
 
-          <TimeCard>{zeroPad(seconds)}</TimeCard>
-        </div>
-      </div>
+      <Divider color="#058669" height="56px" />
+
+      <TimeCard textInfo={textInfo} type="sec">
+        {zeroPad(seconds)}
+      </TimeCard>
     </div>
   )
 }
@@ -193,13 +210,27 @@ function Semicolon() {
   return <span className="mx-2 text-white">:</span>
 }
 
-function TimeCard({ children }: PropsWithChildren) {
+interface TimeCard {
+  type: 'day' | 'hour' | 'min' | 'sec'
+  textInfo: ImultiLanguageText
+  dayText?: string
+}
+
+function TimeCard({
+  children,
+  type,
+  dayText,
+  textInfo,
+}: PropsWithChildren<TimeCard>) {
   return (
     <div
-      className="bg-v2311-text-yellow text-white rounded-md px-2 py-2 3xl:px-4 3xl:py-5 tracking-wide font-sans"
+      className="text-white tracking-wide font-sans  font-semibold"
       suppressHydrationWarning
     >
-      {children}
+      <p className='md:text-2xl xl:text-3xl'>{children}</p>
+      <p className="mt-1 text-v2311-primary md:text-lg xl:text-xl">
+        {type === 'day' ? dayText : textInfo[type]}
+      </p>
     </div>
   )
 }
