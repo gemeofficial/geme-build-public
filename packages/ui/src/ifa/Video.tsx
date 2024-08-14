@@ -9,27 +9,30 @@ import mixpanel from 'mixpanel-browser'
 import { PlayIcon } from '../video-inline-player'
 import clsx from 'clsx'
 
-export interface IVideoProps
-  extends React.DetailedHTMLProps<
+export interface IVideoProps {
+  videoConfig: React.DetailedHTMLProps<
     React.VideoHTMLAttributes<HTMLVideoElement>,
     HTMLVideoElement
-  > {
+  >
   rootClassName?: string
   mixpanelTitle?: string
 }
 
-export default function Video(props: IVideoProps) {
+export default function Video({
+  videoConfig,
+  mixpanelTitle,
+  rootClassName,
+}: IVideoProps) {
   const [isOpen, setIsOpen] = useState(false)
 
   const closeModal = () => setIsOpen(false)
-
   const newProps = {
     controls: false,
     autoPlay: true,
     playsInline: true,
     muted: true,
     loop: true,
-    ...props,
+    ...videoConfig,
   }
 
   return (
@@ -39,7 +42,7 @@ export default function Video(props: IVideoProps) {
         onClick={() => {
           if (hasMixpanel()) {
             mixpanel.track('Watch IFA Page Video', {
-              Title: props.mixpanelTitle || 'IFA Example Video',
+              Title: mixpanelTitle || 'IFA Example Video',
               srcUrl: newProps.src,
             })
           }
@@ -47,13 +50,13 @@ export default function Video(props: IVideoProps) {
         }}
         className={clsx(
           'relative rounded-lg overflow-hidden group',
-          props?.rootClassName,
+          rootClassName,
         )}
       >
         <div className="relative h-full w-full object-cover transition-transform group-hover:scale-125 duration-[0.25s] ease-[cubic-bezier(0.24, 0.8, 0.4, 1)]">
           <video
             {...newProps}
-            className={clsx('object-cover', props?.className)}
+            className={clsx('object-cover', videoConfig?.className)}
           >
             Your browser does not support HTML5 video.
           </video>

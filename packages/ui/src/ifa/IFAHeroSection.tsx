@@ -145,10 +145,13 @@ export function IFAHeroSection({
                 className="lg:flex-1 xl:flex-none 2xl:flex-1"
               >
                 <Video
-                  autoPlay
-                  poster="/assets/images/ifa/ifa-example-video-poster.png"
-                  src="https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/ifa-page-exampl-video.mp4"
-                  className="w-40 h-40 md:w-56 md:h-56 lg:w-full lg:h-full xl:w-56 xl:h-56 2xl:w-full 2xl:h-full max-h-[292px]"
+                  videoConfig={{
+                    autoPlay: true,
+                    src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/ifa-page-exampl-video.mp4',
+                    poster: '/assets/images/ifa/ifa-example-video-poster.png',
+                    className:
+                      'w-40 h-40 md:w-56 md:h-56 lg:w-full lg:h-full xl:w-56 xl:h-56 2xl:w-full 2xl:h-full max-h-[292px]',
+                  }}
                 />
               </MediaBox>
             </div>

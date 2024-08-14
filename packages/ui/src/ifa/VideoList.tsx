@@ -69,10 +69,12 @@ export default function VideoList({
                     <li key={item.src + index} className="mt-2">
                       <Video
                         mixpanelTitle="IFA Page Video List"
-                        autoPlay={false}
-                        src={item.src}
-                        poster={item.poster}
-                        className="w-full h-24 md:h-40 object-cover"
+                        videoConfig={{
+                          autoPlay: false,
+                          src: item.src,
+                          poster: item.poster,
+                          className: 'w-full h-24 md:h-40 object-cover',
+                        }}
                       />
                       <p className="font-medium xl:text-lg mt-2">
                         {videoListProps.fromText} : {item.from}

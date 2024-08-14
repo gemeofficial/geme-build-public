@@ -68,6 +68,7 @@ const winnersNamesTickerProps: IWinnersNamesTickerProps = {
   winnersNames,
 }
 
+// 订阅模块 En
 const subscribeGemeV2Props: ISubscribeGemeV2Props = {
   title: 'Join the GEME II waiting list',
   description: (
