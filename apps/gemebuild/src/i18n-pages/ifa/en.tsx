@@ -4,7 +4,6 @@ import {
   ISubscribeGemeV2Props,
   IWinnersNamesTickerProps,
   SubscribeGemeV2,
-  WinnersNamesTicker,
 } from 'ui'
 
 import { ILinkComponent } from '../../contexts/link-context'
@@ -51,13 +50,13 @@ const videoListProps: IVideoList = {
       // poster: '/assets/images/home-v2311/hero-blurred.webp',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/ifa-page-user-video-1.mp4',
       from: 'MN',
-      useTime: 'Nine months',
+      useTime: '9 months',
     },
     {
       // poster: '/assets/images/home-v2311/hero-blurred.webp',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/ifa-page-user-video-2.mp4',
       from: 'OH',
-      useTime: 'Ten months',
+      useTime: '10 months',
     },
   ],
 }
@@ -69,16 +68,38 @@ const winnersNamesTickerProps: IWinnersNamesTickerProps = {
   winnersNames,
 }
 
-const subscribeGemeV2Props = {
+const subscribeGemeV2Props: ISubscribeGemeV2Props = {
   title: 'Join the GEME II waiting list',
   description: (
     <>
-      A new approach to the world&apos;s waste problem begins with each of us,
-      effortless in daily life
+      GEME second generation machine is preparing for the market, you can
+      subscribe first, when the second generation machine is released, we will
+      send an email to notify you!
     </>
   ),
   emailPlaceholder: 'Enter your email',
   submitButtonLabel: 'Subscribe',
+  productSectionTitle: 'Product preview',
+  imageList: [
+    {
+      src: '/assets/images/geme-v2-product/geme-v2-1.jpg',
+      alt: 'Geme II Product Picture 1',
+      title: 'New upgrade',
+      desc: 'More functions',
+    },
+    {
+      src: '/assets/images/geme-v2-product/geme-v2-2.png',
+      alt: 'Geme II Product Picture 2',
+      title: 'Newly upgraded appearance',
+      desc: 'More delicate material',
+    },
+    {
+      src: '/assets/images/geme-v2-product/geme-v2-3.png',
+      alt: 'Geme II Product Picture 3',
+      title: 'Easy to use',
+      desc: 'Anytime, anywhere',
+    },
+  ],
 }
 
 export interface IIFAPageProps {

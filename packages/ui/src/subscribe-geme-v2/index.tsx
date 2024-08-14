@@ -1,6 +1,12 @@
 import { FC, ReactNode } from 'react'
+import {
+  SectionContainer,
+  SectionDescription,
+  SectionTitle,
+} from '../ui-components'
+import ProductSection, { IGemeV2ProductSection } from './ProductSection'
 
-export interface ISubscribeGemeV2Props {
+export interface ISubscribeGemeV2Props extends IGemeV2ProductSection {
   title: ReactNode
   description: ReactNode
   emailPlaceholder: string
@@ -18,12 +24,16 @@ export function SubscribeGemeV2({
   emailPlaceholder,
   submitButtonLabel,
   SubscribeComponent,
+  imageList,
+  productSectionTitle,
 }: ISubscribeGemeV2Props) {
   return (
-    <div className="bg-v2311-bg-dark-green ">
-      <section className=" px-4 md:px-8 py-8 mx-auto md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center text-center">
-        <h2 className="v2311-font-h1 text-white"> {title} </h2>
-        <p className="v2311-font-body text-white mt-4 md:mt-8">{description}</p>
+    <div className="bg-v2311-bg-dark-green">
+      <SectionContainer>
+        <SectionTitle className="!text-white"> {title} </SectionTitle>
+        <SectionDescription className=" !text-white mt-4 md:mt-6">
+          {description}
+        </SectionDescription>
 
         {SubscribeComponent && (
           <SubscribeComponent
@@ -31,7 +41,12 @@ export function SubscribeGemeV2({
             submitButtonLabel={submitButtonLabel}
           />
         )}
-      </section>
+
+        <ProductSection
+          imageList={imageList}
+          productSectionTitle={productSectionTitle}
+        />
+      </SectionContainer>
     </div>
   )
 }
