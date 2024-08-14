@@ -62,7 +62,7 @@ const videoListProps: IVideoList = {
 
 // 中奖名单  En
 const winnersNamesTickerProps: IWinnersNamesTickerProps = {
-  title: 'The winners are',
+  title: 'History Winners',
   linkText: 'view more',
   winnersNames,
 }
@@ -79,7 +79,7 @@ const subscribeGemeV2Props: ISubscribeGemeV2Props = {
   ),
   emailPlaceholder: 'Enter your email',
   submitButtonLabel: 'Subscribe',
-  productSectionTitle: 'Product preview',
+  productSectionTitle: 'Preview',
   imageList: [
     {
       src: '/assets/images/geme-v2-product/geme-v2-1.jpg',
