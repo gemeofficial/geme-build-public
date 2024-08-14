@@ -34,15 +34,17 @@ export function WinnersNamesTicker({
           </li>
         ))}
       </ul>
-      <Link
-        className="text-sm font-semibold leading-6 text-emerald-600 flex items-center justify-end"
-        href="#"
-      >
-        {linkText}{' '}
-        <span aria-hidden="true" className="ml-2 translate-y-[1px]">
-          →
-        </span>
-      </Link>
+      {false && (
+        <Link
+          className="text-sm font-semibold leading-6 text-emerald-600 flex items-center justify-end"
+          href="#"
+        >
+          {linkText}{' '}
+          <span aria-hidden="true" className="ml-2 translate-y-[1px]">
+            →
+          </span>
+        </Link>
+      )}
     </div>
   )
 }

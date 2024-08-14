@@ -59,7 +59,7 @@ export function IFAHeroSection({
       />
 
       <div className="flex items-center justify-center absolute inset-0 bg-black/60 text-[#f8f1eb]">
-        <div className="flex flex-col xl:flex-row">
+        <div className="flex flex-col xl:flex-row px-4 md:px-8 lg:px-0">
           {/* 左侧区域 */}
           <div className="xl:w-[40%] xl:mr-[10%] 3xl:ml-[10%] 4xl:ml-[13%] relative">
             {/* Logo */}

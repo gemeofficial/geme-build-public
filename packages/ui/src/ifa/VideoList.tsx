@@ -82,7 +82,7 @@ export default function VideoList({
                         autoPlay={false}
                         src={item.src}
                         poster={item.poster}
-                        className="w-full max-h-40 object-cover"
+                        className="w-full h-24 md:h-40 object-cover"
                       />
                       <p className="font-medium xl:text-lg mt-2">
                         {videoListProps.fromText} : {item.from}
