@@ -70,35 +70,29 @@ const winnersNamesTickerProps: IWinnersNamesTickerProps = {
 
 // 订阅模块 En
 const subscribeGemeV2Props: ISubscribeGemeV2Props = {
-  title: 'Join the GEME II waiting list',
-  description: (
-    <>
-      GEME second generation machine is preparing for the market, you can
-      subscribe first, when the second generation machine is released, we will
-      send an email to notify you!
-    </>
-  ),
+  title: 'Meet GEME II',
+  description: <>Get interested? Join the wasting list!</>,
   emailPlaceholder: 'Enter your email',
-  submitButtonLabel: 'Subscribe',
+  submitButtonLabel: 'Notify Me',
   productSectionTitle: 'Preview',
   imageList: [
     {
       src: '/assets/images/geme-v2-product/geme-v2-1.jpg',
       alt: 'Geme II Product Picture 1',
-      title: 'New upgrade',
-      desc: 'More functions',
+      title: 'Affordable',
+      desc: 'Neat and slim, but yet powerful',
     },
     {
       src: '/assets/images/geme-v2-product/geme-v2-2.png',
       alt: 'Geme II Product Picture 2',
-      title: 'Newly upgraded appearance',
-      desc: 'More delicate material',
+      title: 'Intelligent',
+      desc: 'The best experience for food trash you have never thought',
     },
     {
-      src: '/assets/images/geme-v2-product/geme-v2-3.png',
+      src: '/assets/images/geme-v2-product/geme-network.png',
       alt: 'Geme II Product Picture 3',
-      title: 'Easy to use',
-      desc: 'Anytime, anywhere',
+      title: 'Software & Network',
+      desc: 'Make money by sharing real compost from your food waste',
     },
   ],
 }
