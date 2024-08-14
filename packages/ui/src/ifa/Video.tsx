@@ -39,8 +39,8 @@ export default function Video(props: IVideoProps) {
         onClick={() => {
           if (hasMixpanel()) {
             mixpanel.track('Watch IFA Page Video', {
-              Title: props.mixpanelTitle || 'IFA Activity Video',
-              link: newProps.src,
+              Title: props.mixpanelTitle || 'IFA Example Video',
+              srcUrl: newProps.src,
             })
           }
           setIsOpen(true)

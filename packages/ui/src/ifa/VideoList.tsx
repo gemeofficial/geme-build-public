@@ -66,19 +66,9 @@ export default function VideoList({
                 {videoListProps.videoList
                   .slice(0, length)
                   .map((item, index) => (
-                    <li
-                      key={item.src + index}
-                      className="mt-2"
-                      onClick={() => {
-                        if (hasMixpanel()) {
-                          mixpanel.track('Watch IFA Page Video', {
-                            videoSrc: item.src,
-                            ...item,
-                          })
-                        }
-                      }}
-                    >
+                    <li key={item.src + index} className="mt-2">
                       <Video
+                        mixpanelTitle="IFA Page Video List"
                         autoPlay={false}
                         src={item.src}
                         poster={item.poster}

@@ -22,7 +22,7 @@ export function Button({
       href="/ifa-active-form"
       onClick={() => {
         if (hasMixpanel()) {
-          mixpanel.track('Click IFA Page Submit Button', {
+          mixpanel.track('Click IFA Page Submit Video Button', {
             PageUrl: location.href,
           })
         }
