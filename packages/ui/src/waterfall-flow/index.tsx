@@ -1,9 +1,9 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import ImageZoomViewer from '../client-components/ImageZoomViewer'
-import { useLink } from '../../../../apps/gemebuild/src/contexts/link-context'
+import { ILinkComponent } from '../../../../apps/gemebuild/src/contexts/link-context'
 import clsx from 'clsx'
+import DefaultLink from 'next/link'
 
 export interface IListItem {
   src: string
@@ -17,6 +17,7 @@ export interface IWaterfallFlowProps {
   pictures: IListItem[]
   buttonText: string
   lazy?: boolean
+  PrefetchLink?: ILinkComponent
 }
 
 // 将list 均匀的分割为3份
@@ -126,12 +127,14 @@ function ReviewsPictureCart({
   item,
   buttonText,
   lazy = false,
+  PrefetchLink,
 }: {
   item: IListItem
   buttonText: string
   lazy?: boolean
+  PrefetchLink?: ILinkComponent
 }) {
-  const Link = useLink()
+  const Link = PrefetchLink ? PrefetchLink : DefaultLink
   return (
     <div className="relative  bg-white border border-transparent rounded-lg shadow-lg hover:-translate-y-4 hover:shadow-2xl transition-all duration-300 cursor-pointer">
       <img

@@ -3,6 +3,7 @@ import { SectionTitle } from 'ui'
 import WaterfallFlow, { IListItem } from 'ui/src/waterfall-flow'
 import { Link, Element } from 'react-scroll'
 import ImageZoomViewer from 'ui/src/client-components/ImageZoomViewer'
+import { ILinkComponent } from '../../../contexts/link-context'
 
 export interface IDataListProps {
   title: string
@@ -12,9 +13,14 @@ export interface IDataListProps {
 export interface ISectionProps {
   datas: IDataListProps[]
   buttonText: string
+  PrefetchLink?: ILinkComponent
 }
 
-export default function Section({ datas, buttonText }: ISectionProps) {
+export default function Section({
+  datas,
+  buttonText,
+  PrefetchLink,
+}: ISectionProps) {
   const titles = datas.map((item, index) => ({ id: index, title: item.title }))
   return (
     <>
@@ -53,6 +59,7 @@ export default function Section({ datas, buttonText }: ISectionProps) {
                 </SectionTitle>
                 <div className="mt-4 md:mt-6 xl:mt-8">
                   <WaterfallFlow
+                    PrefetchLink={PrefetchLink}
                     pictures={item.pictures}
                     lazy={index > 0}
                     buttonText={buttonText}

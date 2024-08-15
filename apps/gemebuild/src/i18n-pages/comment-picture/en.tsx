@@ -1,3 +1,4 @@
+import { ILinkComponent } from '../../contexts/link-context'
 import Section, { ISectionProps } from './components/Section'
 
 // 配置文件 En
@@ -167,7 +168,12 @@ const sectionDatas: ISectionProps = {
   buttonText: 'View Detail',
 }
 
-function CommentPicturePageEn() {
-  return <Section {...sectionDatas} />
+export interface ICommentPicturePageProps {
+  PrefetchLink?: ILinkComponent
 }
+
+function CommentPicturePageEn({ PrefetchLink }: ICommentPicturePageProps) {
+  return <Section {...sectionDatas} PrefetchLink={PrefetchLink} />
+}
+
 export { CommentPicturePageEn }

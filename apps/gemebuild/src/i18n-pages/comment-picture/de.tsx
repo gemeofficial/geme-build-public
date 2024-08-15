@@ -1,4 +1,5 @@
 import Section, { ISectionProps } from './components/Section'
+import { ICommentPicturePageProps } from './en'
 
 // 配置文件 En
 const sectionDatas: ISectionProps = {
@@ -167,7 +168,8 @@ const sectionDatas: ISectionProps = {
   buttonText: 'View Detail',
 }
 
-function CommentPicturePageDe() {
-  return <Section {...sectionDatas} />
+function CommentPicturePageDe({ PrefetchLink }: ICommentPicturePageProps) {
+  return <Section {...sectionDatas} PrefetchLink={PrefetchLink} />
 }
+
 export { CommentPicturePageDe }
