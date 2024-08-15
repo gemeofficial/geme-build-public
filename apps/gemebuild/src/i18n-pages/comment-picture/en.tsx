@@ -1,5 +1,6 @@
 import Section, { IDataListProps } from './components/Section'
 
+// 配置文件 En
 const sectionDatas: IDataListProps[] = [
   {
     title: 'The Good',
@@ -7,7 +8,8 @@ const sectionDatas: IDataListProps[] = [
       {
         src: '/assets/images/reviews-picture/1-robert.png',
         alt: 'Reviews pictures 1-robert.png',
-        desc: '',
+        desc: 'This user liked our product so much that he bought a few for his friends for Christmas.',
+        link:'/gk'
       },
       {
         src: '/assets/images/reviews-picture/2-satoko.png',
@@ -163,10 +165,6 @@ const sectionDatas: IDataListProps[] = [
 ]
 
 function CommentPicturePageEn() {
-  return (
-    <>
-      <Section datas={sectionDatas} />
-    </>
-  )
+  return <Section datas={sectionDatas} />
 }
 export { CommentPicturePageEn }
