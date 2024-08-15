@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react'
 import { ILinkComponent } from '../../../../apps/gemebuild/src/contexts/link-context'
 import clsx from 'clsx'
 import DefaultLink from 'next/link'
+import Image from 'next/image'
+import ImageZoomViewer from '../client-components/ImageZoomViewer'
 
 export interface IListItem {
   src: string
@@ -16,7 +18,7 @@ export interface IListItem {
 export interface IWaterfallFlowProps {
   pictures: IListItem[]
   buttonText: string
-  lazy?: boolean
+  priority?: boolean
   PrefetchLink?: ILinkComponent
 }
 
@@ -46,7 +48,7 @@ function splitIntoThreePartsForList(list: any[]) {
 
 export function WaterfallFlow({
   pictures,
-  lazy,
+  priority,
   buttonText,
 }: IWaterfallFlowProps) {
   const [defaultList1, defaultList2, defaultList3] =
@@ -94,7 +96,7 @@ export function WaterfallFlow({
           <ReviewsPictureCart
             item={item}
             key={item.src + index}
-            lazy={lazy}
+            priority={priority}
             buttonText={buttonText}
           />
         ))}
@@ -104,7 +106,7 @@ export function WaterfallFlow({
           <ReviewsPictureCart
             item={item}
             key={item.src + index}
-            lazy={lazy}
+            priority={priority}
             buttonText={buttonText}
           />
         ))}
@@ -114,7 +116,7 @@ export function WaterfallFlow({
           <ReviewsPictureCart
             item={item}
             key={item.src + index}
-            lazy={lazy}
+            priority={priority}
             buttonText={buttonText}
           />
         ))}
@@ -126,23 +128,29 @@ export function WaterfallFlow({
 function ReviewsPictureCart({
   item,
   buttonText,
-  lazy = false,
+  priority = false,
   PrefetchLink,
 }: {
   item: IListItem
   buttonText: string
-  lazy?: boolean
+  priority?: boolean
   PrefetchLink?: ILinkComponent
 }) {
+  console.log('priority', priority)
   const Link = PrefetchLink ? PrefetchLink : DefaultLink
   return (
-    <div className="relative  bg-white border border-transparent rounded-lg shadow-lg hover:-translate-y-4 hover:shadow-2xl transition-all duration-300 cursor-pointer">
-      <img
-        className="w-full h-auto rounded-lg object-contain block"
-        src={item.src}
-        alt={item.alt}
-        loading={lazy ? 'lazy' : 'eager'}
-      />
+    <div className="relative  bg-white border border-transparent rounded-lg shadow-lg xl:hover:-translate-y-4 xl:hover:shadow-2xl transition-all duration-300 cursor-pointer">
+      <ImageZoomViewer>
+        <Image
+          width={800}
+          height={670}
+          priority={priority}
+          className="w-full h-auto rounded-lg object-contain block"
+          src={item.src}
+          alt={item.alt}
+          // loading={priority ? 'priority' : 'eager'}
+        />
+      </ImageZoomViewer>
       {/* {item.desc && (
         <div className="bg-gradient-to-b from-transparent to-black opacity-50 absolute inset-0">
           <div className="p-3 lg:p-6 absolute bottom-0 left-0 right-0 text-white text-sm lg:text-base">
@@ -164,7 +172,6 @@ function ReviewsPictureCart({
           {item.link && (
             <Link
               href={item.link}
-              prefetch={true}
               className="text-xs md:text-sm mt-1 font-semibold leading-6 text-emerald-600 hover:underline text-right inline-block w-full"
             >
               {buttonText}

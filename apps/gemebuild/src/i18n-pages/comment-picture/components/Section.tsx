@@ -4,7 +4,6 @@ import clsx from 'clsx'
 import { SectionTitle } from 'ui'
 import { WaterfallFlow, IListItem } from 'ui/src/waterfall-flow'
 import { Link, Element } from 'react-scroll'
-import ImageZoomViewer from 'ui/src/client-components/ImageZoomViewer'
 import { ILinkComponent } from '../../../contexts/link-context'
 
 export interface IDataListProps {
@@ -52,7 +51,6 @@ export default function Section({
       </div>
 
       <div className="bg-v2311-bg-dark-green/95">
-        <ImageZoomViewer>
           {datas.map((item, index) => (
             <Element name={String(titles[index].id)} key={titles[index].id}>
               <div className="p-4 md:p-6 lg:p-8" key={index}>
@@ -63,14 +61,13 @@ export default function Section({
                   <WaterfallFlow
                     PrefetchLink={PrefetchLink}
                     pictures={item.pictures}
-                    lazy={index > 0}
+                    priority={index === 0}
                     buttonText={buttonText}
                   />
                 </div>
               </div>
             </Element>
           ))}
-        </ImageZoomViewer>
       </div>
     </>
   )
