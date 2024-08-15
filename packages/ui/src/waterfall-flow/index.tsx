@@ -5,7 +5,7 @@ import ImageZoomViewer from '../client-components/ImageZoomViewer'
 import { useLink } from '../../../../apps/gemebuild/src/contexts/link-context'
 import clsx from 'clsx'
 
-interface IListItem {
+export interface IListItem {
   src: string
   alt: string
   desc?: string
@@ -15,6 +15,7 @@ interface IListItem {
 
 export interface IWaterfallFlowProps {
   pictures: IListItem[]
+  buttonText: string
   lazy?: boolean
 }
 
@@ -42,7 +43,11 @@ function splitIntoThreePartsForList(list: any[]) {
   return [defaultList1, defaultList2, defaultList3]
 }
 
-export default function WaterfallFlow({ pictures, lazy }: IWaterfallFlowProps) {
+export default function WaterfallFlow({
+  pictures,
+  lazy,
+  buttonText,
+}: IWaterfallFlowProps) {
   const [defaultList1, defaultList2, defaultList3] =
     splitIntoThreePartsForList(pictures)
 
@@ -85,17 +90,32 @@ export default function WaterfallFlow({ pictures, lazy }: IWaterfallFlowProps) {
     <div className="grid grid-cols-2 xl:grid-cols-3 gap-4 md:gap-8 xl:gap-16">
       <div className="grid gap-4 md:gap-8 xl:gap-16 h-max">
         {list1.map((item, index) => (
-          <ReviewsPictureCart item={item} key={item.src + index} lazy={lazy} />
+          <ReviewsPictureCart
+            item={item}
+            key={item.src + index}
+            lazy={lazy}
+            buttonText={buttonText}
+          />
         ))}
       </div>
       <div className="grid gap-4 md:gap-8 xl:gap-16 h-max">
         {list2.map((item, index) => (
-          <ReviewsPictureCart item={item} key={item.src + index} lazy={lazy} />
+          <ReviewsPictureCart
+            item={item}
+            key={item.src + index}
+            lazy={lazy}
+            buttonText={buttonText}
+          />
         ))}
       </div>
       <div className="grid gap-4 md:gap-8 xl:gap-16 h-max">
         {list3.map((item, index) => (
-          <ReviewsPictureCart item={item} key={item.src + index} lazy={lazy} />
+          <ReviewsPictureCart
+            item={item}
+            key={item.src + index}
+            lazy={lazy}
+            buttonText={buttonText}
+          />
         ))}
       </div>
     </div>
@@ -104,9 +124,11 @@ export default function WaterfallFlow({ pictures, lazy }: IWaterfallFlowProps) {
 
 function ReviewsPictureCart({
   item,
+  buttonText,
   lazy = false,
 }: {
   item: IListItem
+  buttonText: string
   lazy?: boolean
 }) {
   const Link = useLink()
@@ -142,7 +164,7 @@ function ReviewsPictureCart({
               prefetch={true}
               className="text-xs md:text-sm mt-1 font-semibold leading-6 text-emerald-600 hover:underline text-right inline-block w-full"
             >
-              View Detail
+              {buttonText}
               <span aria-hidden="true" className="ml-1 text-xs">
                 →
               </span>

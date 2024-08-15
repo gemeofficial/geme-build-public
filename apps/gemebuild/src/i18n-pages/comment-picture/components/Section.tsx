@@ -1,14 +1,20 @@
 import clsx from 'clsx'
 import { SectionTitle } from 'ui'
-import WaterfallFlow, { IWaterfallFlowProps } from 'ui/src/waterfall-flow'
+import WaterfallFlow, { IListItem } from 'ui/src/waterfall-flow'
 import { Link, Element } from 'react-scroll'
 import ImageZoomViewer from 'ui/src/client-components/ImageZoomViewer'
 
-export interface IDataListProps extends IWaterfallFlowProps {
+export interface IDataListProps {
   title: string
+  pictures: IListItem[]
 }
 
-export default function Section({ datas }: { datas: IDataListProps[] }) {
+export interface ISectionProps {
+  datas: IDataListProps[]
+  buttonText: string
+}
+
+export default function Section({ datas, buttonText }: ISectionProps) {
   const titles = datas.map((item, index) => ({ id: index, title: item.title }))
   return (
     <>
@@ -46,7 +52,11 @@ export default function Section({ datas }: { datas: IDataListProps[] }) {
                   {item.title}
                 </SectionTitle>
                 <div className="mt-4 md:mt-6 xl:mt-8">
-                  <WaterfallFlow pictures={item.pictures} lazy={index > 0} />
+                  <WaterfallFlow
+                    pictures={item.pictures}
+                    lazy={index > 0}
+                    buttonText={buttonText}
+                  />
                 </div>
               </div>
             </Element>
