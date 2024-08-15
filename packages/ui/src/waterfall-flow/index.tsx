@@ -44,7 +44,7 @@ function splitIntoThreePartsForList(list: any[]) {
   return [defaultList1, defaultList2, defaultList3]
 }
 
-export default function WaterfallFlow({
+export function WaterfallFlow({
   pictures,
   lazy,
   buttonText,

@@ -1,6 +1,8 @@
+'use client'
+
 import clsx from 'clsx'
 import { SectionTitle } from 'ui'
-import WaterfallFlow, { IListItem } from 'ui/src/waterfall-flow'
+import { WaterfallFlow, IListItem } from 'ui/src/waterfall-flow'
 import { Link, Element } from 'react-scroll'
 import ImageZoomViewer from 'ui/src/client-components/ImageZoomViewer'
 import { ILinkComponent } from '../../../contexts/link-context'
