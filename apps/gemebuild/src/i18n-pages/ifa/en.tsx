@@ -89,7 +89,7 @@ const subscribeGemeV2Props: ISubscribeGemeV2Props = {
       desc: 'The best experience for food trash you have never thought',
     },
     {
-      src: '/assets/images/geme-v2-product/geme-network.png',
+      src: '/assets/images/geme-v2-product/geme-4r.jpeg',
       alt: 'Geme II Product Picture 3',
       title: 'Software & Network',
       desc: 'Make money by sharing real compost from your food waste',
