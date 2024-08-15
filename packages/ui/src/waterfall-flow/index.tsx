@@ -148,7 +148,6 @@ function ReviewsPictureCart({
           className="w-full h-auto rounded-lg object-contain block"
           src={item.src}
           alt={item.alt}
-          // loading={priority ? 'priority' : 'eager'}
         />
       </ImageZoomViewer>
       {/* {item.desc && (
@@ -172,7 +171,7 @@ function ReviewsPictureCart({
           {item.link && (
             <Link
               href={item.link}
-              className="text-xs md:text-sm mt-1 font-semibold leading-6 text-emerald-600 hover:underline text-right inline-block w-full"
+              className="text-xs xl:text-sm mt-1 font-semibold leading-6 text-emerald-600 hover:underline text-right inline-block w-full"
             >
               {buttonText}
               <span aria-hidden="true" className="ml-1 text-xs">
