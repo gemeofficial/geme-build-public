@@ -162,7 +162,68 @@ const sectionDatas: ISectionProps = {
     },
     {
       title: 'The Ugly',
-      pictures: [],
+      pictures: [
+        {
+          src: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg',
+          alt: 'Reviews pictures image.jpg',
+          desc: '',
+        },
+        {
+          src: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg',
+          alt: 'Reviews pictures image-1.jpg',
+          desc: '',
+        },
+        {
+          src: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg',
+          alt: 'Reviews pictures image-2.jpg',
+          desc: '',
+        },
+        {
+          src: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg',
+          alt: 'Reviews pictures image-3.jpg',
+          desc: '',
+        },
+        {
+          src: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg',
+          alt: 'Reviews pictures image-4.jpg',
+          desc: '',
+        },
+        {
+          src: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg',
+          alt: 'Reviews pictures image-5.jpg',
+          desc: '',
+        },
+        {
+          src: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg',
+          alt: 'Reviews pictures image-6.jpg',
+          desc: '',
+        },
+        {
+          src: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg',
+          alt: 'Reviews pictures image-7.jpg',
+          desc: '',
+        },
+        {
+          src: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg',
+          alt: 'Reviews pictures image-8.jpg',
+          desc: '',
+        },
+        {
+          src: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg',
+          alt: 'Reviews pictures image-9.jpg',
+          desc: '',
+        },
+        {
+          src: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg',
+          alt: 'Reviews pictures image-10.jpg',
+          desc: '',
+        },
+        {
+          src: 'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg',
+          alt: 'Reviews pictures image-11.jpg',
+          desc: '',
+        },
+      ],
     },
   ],
   buttonText: 'View Detail',

@@ -51,23 +51,33 @@ export default function Section({
       </div>
 
       <div className="bg-v2311-bg-dark-green/95">
-          {datas.map((item, index) => (
-            <Element name={String(titles[index].id)} key={titles[index].id}>
-              <div className="p-4 md:p-6 lg:p-8" key={index}>
-                <SectionTitle className="!text-white mt-4 lg:mt-8">
-                  {item.title}
-                </SectionTitle>
-                <div className="mt-4 md:mt-6 xl:mt-8">
-                  <WaterfallFlow
-                    PrefetchLink={PrefetchLink}
-                    pictures={item.pictures}
-                    priority={index === 0}
-                    buttonText={buttonText}
-                  />
-                </div>
+        {datas.map((item, index) => (
+          <Element name={String(titles[index].id)} key={titles[index].id}>
+            <div
+              className={clsx(
+                'p-4 md:p-6 lg:p-8',
+                index === 0
+                  ? 'bg-gray-50'
+                  : index === 1
+                    ? 'bg-[#cfcfcf]'
+                    : 'bg-[#8b8b8b]',
+              )}
+              key={index}
+            >
+              <SectionTitle className="!text-black mt-4 lg:mt-8">
+                {item.title}
+              </SectionTitle>
+              <div className="mt-4 md:mt-6 xl:mt-8">
+                <WaterfallFlow
+                  PrefetchLink={PrefetchLink}
+                  pictures={item.pictures}
+                  priority={index === 0}
+                  buttonText={buttonText}
+                />
               </div>
-            </Element>
-          ))}
+            </div>
+          </Element>
+        ))}
       </div>
     </>
   )
