@@ -21,7 +21,7 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
   ifaExhibitionDate: 'GEME at IFA Berlin, September 6-10, 2024',
   prizeDesc: 'Win a 180-day supply of Kobold Now!',
   activityTitle: 'Activity',
-  activityDescription: `In the lead-up to IFA, EME is hosting a lucky draw. Simply click
+  activityDescription: `In the lead-up to IFA, GEME is hosting a lucky draw. Simply click
 the link and upload a video showing how you use the GEME
 compost machine daily. The sooner you enter, the better
 your chances of winning a 180-day supply of Kobold!`,
@@ -77,7 +77,7 @@ const subscribeGemeV2Props: ISubscribeGemeV2Props = {
   productSectionTitle: 'Preview',
   imageList: [
     {
-      src: '/assets/images/geme-v2-product/geme-v2-1.jpg',
+      src: '/assets/images/geme-v2-product/geme-v2-1-color.png',
       alt: 'Geme II Product Picture 1',
       title: 'Affordable',
       desc: 'Neat and slim, but yet powerful',
