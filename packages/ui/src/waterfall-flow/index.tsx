@@ -136,10 +136,9 @@ function ReviewsPictureCart({
   priority?: boolean
   PrefetchLink?: ILinkComponent
 }) {
-  console.log('priority', priority)
   const Link = PrefetchLink ? PrefetchLink : DefaultLink
   return (
-    <div className="relative  bg-white border border-transparent rounded-lg shadow-lg xl:hover:-translate-y-4 xl:hover:shadow-2xl transition-all duration-300 cursor-pointer">
+    <div className="relative  bg-white border border-transparent rounded-lg shadow-lg xl:hover:-translate-y-4 xl:hover:shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden">
       <ImageZoomViewer>
         <Image
           width={800}
@@ -158,7 +157,7 @@ function ReviewsPictureCart({
         </div>
       )} */}
       {item.desc && (
-        <div className="p-2 lg:p-4">
+        <div className="p-2 lg:p-4 bg-gray-200">
           <div
             className={clsx(
               'italic text-xs lg:text-base',
@@ -171,9 +170,9 @@ function ReviewsPictureCart({
           {item.link && (
             <Link
               href={item.link}
-              className="text-xs xl:text-sm mt-1 font-semibold leading-6 text-emerald-600 hover:underline text-right inline-block w-full"
+              className="text-xs xl:text-sm mt-1 group font-semibold leading-6 text-emerald-600 text-right inline-block w-full"
             >
-              {buttonText}
+              <span className="group-hover:underline">{buttonText}</span>
               <span aria-hidden="true" className="ml-1 text-xs">
                 →
               </span>
