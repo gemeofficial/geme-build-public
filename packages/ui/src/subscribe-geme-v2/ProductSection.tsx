@@ -4,7 +4,7 @@ import ImageZoomViewer from '../client-components/ImageZoomViewer'
 import { SectionTitle } from '../ui-components'
 
 export interface IGemeV2ProductSection {
-  productSectionTitle:string
+  productSectionTitle: string
   imageList: {
     src: string
     alt: string
@@ -14,7 +14,10 @@ export interface IGemeV2ProductSection {
   }[]
 }
 
-export default function ProductSection({ imageList,productSectionTitle }: IGemeV2ProductSection) {
+export default function ProductSection({
+  imageList,
+  productSectionTitle,
+}: IGemeV2ProductSection) {
   return (
     <div className="bg-gray-50 mt-6 md:mt-8 mx-auto max-w-7xl p-4 sm:p-8 lg:p-12">
       <SectionTitle>{productSectionTitle}</SectionTitle>
@@ -52,8 +55,8 @@ export default function ProductSection({ imageList,productSectionTitle }: IGemeV
                 index === 0 ? '' : 'sm:absolute sm:inset-0',
               )}
             >
-              <div>
-                <h3 className="font-semibold text-white">
+              <div className="bg-[#1b1b1b] bg-opacity-40">
+                <h3 className="font-semibold text-white ">
                   <span className="absolute inset-0">
                     <ImageZoomViewer>
                       <picture>

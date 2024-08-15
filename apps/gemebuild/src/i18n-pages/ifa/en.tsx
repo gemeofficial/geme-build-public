@@ -17,7 +17,8 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
   prizeImage: '/assets/images/geme-kobold/product-image-24.jpg',
   gemeLogo: '/assets/images/ifa/white-logo.png',
   ifaLogo: '/assets/images/ifa/ifa-berlin-seeklogo.png',
-  noticeTitle: 'Notice Of Exhibition',
+  noticeTitle:
+    'Stay in tune with our IFA news and stand a chance to win a GEME composter',
   ifaExhibitionDate: 'GEME at IFA Berlin, September 6-10, 2024',
   prizeDesc: 'Win a 180-day supply of Kobold Now!',
   activityTitle: 'Activity',
@@ -91,8 +92,8 @@ const subscribeGemeV2Props: ISubscribeGemeV2Props = {
     {
       src: '/assets/images/geme-v2-product/geme-4r.jpeg',
       alt: 'Geme II Product Picture 3',
-      title: 'Software & Network',
-      desc: 'Make money by sharing real compost from your food waste',
+      title: 'Care & Love',
+      desc: 'Not only a product, but a connected sustainable community',
     },
   ],
 }
