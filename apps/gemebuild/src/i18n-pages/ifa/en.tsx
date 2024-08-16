@@ -26,7 +26,7 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
       </p>
       <span className="text-2xl md:text-3xl 3xl:text-4xl">
         Share your GEME story,
-        <br className="md:hidden xl:block" />
+        <br />
         Win a GEME conposter!
       </span>
     </>
@@ -61,8 +61,8 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
   buttonText: 'Submit Your Video!',
   countdownTitle: 'Countdown to the next draw :',
   winningProbabilityTitle: 'Current winning probability of refill kobold:',
-  prizeImageTitle: 'What You could win',
-  sampleVideoTitle: 'Vidoo Submission ldeas',
+  prizeImageTitle: 'Rewards',
+  sampleVideoTitle: 'Video Submission ideas',
   descriptionText: (
     <>
       <ul>

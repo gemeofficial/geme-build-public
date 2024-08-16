@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import {
   IFAHeroSection,
   IIFAHeroSectionProps,
@@ -6,100 +7,149 @@ import {
   SubscribeGemeV2,
 } from 'ui'
 
+import { ILinkComponent } from '../../contexts/link-context'
 import { winnersNames } from './winnersNames'
-import VideoList, { IVideoList, IVideoListProps } from 'ui/src/ifa/VideoList'
-import { IIFAPageProps } from './en'
+import VideoList, { IVideoList } from 'ui/src/ifa/VideoList'
+import { FC } from 'react'
 
-// Hero Section  En
+// Hero Section  Fr
 const IFAHeroSectionProps: IIFAHeroSectionProps = {
   bgImageUrl: '/assets/images/ifa/hero-bg.png',
-  prizeImage: '/assets/images/geme-kobold/product-image-24.jpg',
+  prizeImage: '/assets/images/ifa/prize.jpg',
   gemeLogo: '/assets/images/ifa/white-logo.png',
   ifaLogo: '/assets/images/ifa/ifa-berlin-seeklogo.png',
-  noticeTitle: 'Notice Of Exhibition',
-  ifaExhibitionDate: 'GEME at IFA Berlin, September 6-10, 2024',
-  prizeDesc: 'Win a 180-day supply of Kobold Now!',
-  activityTitle: 'Activity',
-  activityDescription: `In the lead-up to IFA, EME is hosting a lucky draw. Simply click
-the link and upload a video showing how you use the GEME
-compost machine daily. The sooner you enter, the better
-your chances of winning a 180-day supply of Kobold!`,
-  buttonText: 'Submit Your Video!',
-  countdownTitle: 'Countdown to the next draw :',
-  winningProbabilityTitle: 'Current probability of winning:',
-  prizeImageTitle: 'What You could win',
-  sampleVideoTitle: 'Vidoo Submission ldeas',
-  descriptionText:
-    'Description: 1/N, N means there are currently N people participating in the activity, the earlier you participate, the greater your chance of winning!',
-  locale: 'en',
+  noticeTitle: (
+    <>
+      <p className="leading-tight">
+        Briller avec GEME <br />
+        <span className="text-[#ea3c58]">À l'IFA Berlin 2024</span>
+      </p>
+      <span className="text-2xl md:text-3xl 3xl:text-4xl">
+        Partagez votre histoire GEME,
+        <br />
+        gagnez un composteur GEME!
+      </span>
+    </>
+  ),
+  ifaExhibitionDate: `GEME à l'IFA Berlin, du 6 au 10 septembre 2024`,
+  prizeDesc: (
+    <>
+      <span className="text-lg md:text-xl xl:text-3xl">
+        2 grands tirages sont en cours! <br />
+      </span>
+      {/* <span className="text-sm md:text-base 2xl:text-lg">
+        Pour marquer la présence de GEME à l'IFA Berlin.
+      </span> */}
+    </>
+  ),
+  activityTitle: 'Activité',
+  activityDescription: (
+    <>
+      <strong>Gains Hebdomadaires: </strong>
+      <p>
+        Du 19 août au 6 septembre, gagnez un pack de recharge Kobold de 59,9 $
+        chaque lundi, mercredi et vendredi.
+      </p>
+      <br />
+      <strong>Grand Prix: </strong>
+      <p>
+        Un heureux gagnant parmi tous les participants remportera un composteur
+        GEME le 14 septembre.
+      </p>
+    </>
+  ),
+  buttonText: 'Soumettez votre vidéo!',
+  countdownTitle: `Compte à rebours jusqu'au prochain tirage :`,
+  winningProbabilityTitle:
+    'Probabilité actuelle de gagner un pack de recharge Kobold :',
+  prizeImageTitle: 'Récompenses',
+  sampleVideoTitle: 'Idées de soumission vidéo',
+  descriptionText: (
+    <>
+      <ul>
+        <li className="list-disc">
+          1/N représente votre probabilité de gagner à chaque tirage.
+        </li>
+        <li className="list-disc">
+          Nous tirerons au sort des gagnants chaque lundi, mercredi et vendredi.
+        </li>
+        <li className="list-disc">
+          La probabilité de gagner sera actualisée après chaque tirage.
+        </li>
+      </ul>
+    </>
+  ),
+  locale: 'fr',
 }
 
-// 视频列表   En
+// 视频列表   Fr
 const videoListProps: IVideoList = {
-  title: 'Video List',
+  title: 'Liste de Vidéos',
   description:
-    'Here are some of the videos uploaded by our award-winning users and how they interact with GEME in their daily lives.',
-  linkText: 'load more',
-  fromText: 'From',
-  useTimeText: 'Duration of use',
+    'Voici quelques-unes des vidéos téléchargées par nos utilisateurs primés et comment ils interagissent avec GEME dans leur vie quotidienne.',
+  linkText: 'charger plus',
+  fromText: 'De',
+  useTimeText: "Durée d'utilisation",
   emptyTexy:
-    'The video list data will be displayed after this drawing, please wait patiently.',
+    'Les données de la liste des vidéos seront affichées après ce tirage, veuillez patienter.',
   videoList: [
     {
       // poster: '/assets/images/home-v2311/hero-blurred.webp',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/ifa-page-user-video-1.mp4',
       from: 'MN',
-      useTime: '9 months',
+      useTime: '9 mois',
     },
     {
       // poster: '/assets/images/home-v2311/hero-blurred.webp',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/ifa-page-user-video-2.mp4',
       from: 'OH',
-      useTime: '10 months',
+      useTime: '10 mois',
     },
   ],
 }
 
-// 中奖名单  En
+// 中奖名单  Fr
 const winnersNamesTickerProps: IWinnersNamesTickerProps = {
-  title: 'History Winners',
-  linkText: 'view more',
+  title: 'Gagnants Historiques',
+  linkText: 'voir plus',
   winnersNames,
 }
 
-// 订阅模块 En
+// 订阅模块 Fr
 const subscribeGemeV2Props: ISubscribeGemeV2Props = {
-  title: 'Join the GEME II waiting list',
-  description: (
-    <>
-      GEME second generation machine is preparing for the market, you can
-      subscribe first, when the second generation machine is released, we will
-      send an email to notify you!
-    </>
-  ),
-  emailPlaceholder: 'Enter your email',
-  submitButtonLabel: 'Subscribe',
-  productSectionTitle: 'Preview',
+  title: 'Découvrez GEME II',
+  description: <>Intéressé ? Rejoignez la liste d'attente !</>,
+  emailPlaceholder: 'Entrez votre email',
+  submitButtonLabel: 'Prévenez-moi',
+  productSectionTitle: 'Aperçu',
   imageList: [
     {
-      src: '/assets/images/geme-v2-product/geme-v2-1.jpg',
-      alt: 'Geme II Product Picture 1',
-      title: 'New upgrade',
-      desc: 'More functions',
+      src: '/assets/images/geme-v2-product/geme-v2-1-color.png',
+      alt: 'Image du produit Geme II 1',
+      title: 'Abordable',
+      desc: 'Net et mince, mais puissant',
     },
     {
       src: '/assets/images/geme-v2-product/geme-v2-2.png',
-      alt: 'Geme II Product Picture 2',
-      title: 'Newly upgraded appearance',
-      desc: 'More delicate material',
+      alt: 'Image du produit Geme II 2',
+      title: 'Intelligent',
+      desc: "La meilleure expérience pour les déchets alimentaires que vous n'avez jamais imaginée",
     },
     {
-      src: '/assets/images/geme-v2-product/geme-v2-3.png',
-      alt: 'Geme II Product Picture 3',
-      title: 'Easy to use',
-      desc: 'Anytime, anywhere',
+      src: '/assets/images/geme-v2-product/geme-4r.jpeg',
+      alt: 'Image du produit Geme II 3',
+      title: 'Soin & Amour',
+      desc: 'Pas seulement un produit, mais une communauté durable connectée',
     },
   ],
+}
+
+export interface IIFAPageProps {
+  PrefetchLink?: ILinkComponent
+  SubscribeComponent?: FC<{
+    inputPlaceholder: string
+    submitButtonLabel: string
+  }>
 }
 
 function IFAPageFr({ PrefetchLink, SubscribeComponent }: IIFAPageProps) {
