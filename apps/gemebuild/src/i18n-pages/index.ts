@@ -20,7 +20,7 @@ export * from './gk'
 export * from './green-city-networks'
 export * from './customer-service'
 export * from './geme-care'
-export * from './comment-picture'
+export * from './reviews'
 
 // contexts
 export * from '../contexts/link-context'
