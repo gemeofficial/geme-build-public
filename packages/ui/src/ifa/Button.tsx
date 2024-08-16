@@ -28,9 +28,9 @@ export function Button({
         }
       }}
       className={clsx(
-        'relative items-center rounded-md  bg-v2311-bg-dark-green shadow-sm md:text-base',
-        'hover:bg-v2311-primary px-6 py-3 md:px-8 md:py-3 text-sm font-medium text-white max-w-max',
-        'border-2 border-[#5A9C6D]  lg:border-[3px]',
+        'flex items-center rounded-md  bg-v2311-bg-dark-green shadow-sm md:text-base',
+        'hover:bg-v2311-primary px-6 py-3 md:px-8 md:py-3 text-sm font-medium ',
+        'text-white max-w-max',
         className,
       )}
     >

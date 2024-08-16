@@ -20,7 +20,10 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
   ifaLogo: '/assets/images/ifa/ifa-berlin-seeklogo.png',
   noticeTitle: (
     <>
-      <p className="leading-tight">Shining with GEME in IFA Berlin2024</p>
+      <p className="leading-tight">
+        Shining with GEME <br />
+        <span className="text-[#ea3c58]">In IFA Berlin 2024</span>
+      </p>
       <span className="text-2xl md:text-3xl 3xl:text-4xl">
         Share your GEME story,
         <br className="md:hidden xl:block" />
@@ -31,29 +34,33 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
   ifaExhibitionDate: 'GEME at IFA Berlin, September 6-10, 2024',
   prizeDesc: (
     <>
-      <span className="md:text-lg 2xl:text-[22px]">
+      <span className="text-lg md:text-xl xl:text-3xl">
         2 grand giveaways are underway! <br />
       </span>
-      <span className="text-sm md:text-base 2xl:text-lg">
+      {/* <span className="text-sm md:text-base 2xl:text-lg">
         To mark GEME's appearance at IFA Berlin.
-      </span>
+      </span> */}
     </>
   ),
   activityTitle: 'Activity',
   activityDescription: (
     <>
       <strong>Weekly Wins: </strong>
-      From Aug 19th to Sep 6th, win a $59.9 Kobold refill pack every Monday,
-      Wednesday, and Friday.
+      <p>
+        From Aug 19th to Sep 6th, win a $59.9 Kobold refill pack every Monday,
+        Wednesday, and Friday.
+      </p>
       <br />
       <strong>Grand Prize: </strong>
-      One lucky winner from all the participant will win a GEME composter on Sep
-      14th.
+      <p>
+        One lucky winner from all the participant will win a GEME composter on
+        Sep 14th.
+      </p>
     </>
   ),
   buttonText: 'Submit Your Video!',
   countdownTitle: 'Countdown to the next draw :',
-  winningProbabilityTitle: 'Current probability of winning:',
+  winningProbabilityTitle: 'Current winning probability of refill kobold:',
   prizeImageTitle: 'What You could win',
   sampleVideoTitle: 'Vidoo Submission ldeas',
   descriptionText: (
