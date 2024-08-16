@@ -84,7 +84,7 @@ export function IFAHeroSection({
             </div>
 
             <div className="flex flex-col gap-4 lg:gap-6 3xl:gap-8 mt-4 xl:mt-8 font-semibold">
-              <h1 className="text-3xl md:text-4xl 3xl:text-6xl text-nowrap">
+              <h1 className="text-3xl md:text-4xl 3xl:text-5xl text-nowrap">
                 {noticeTitle}
               </h1>
               <p className="text-sm md:text-lg 2xl:text-xl">

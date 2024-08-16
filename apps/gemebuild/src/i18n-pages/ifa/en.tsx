@@ -17,11 +17,12 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
   prizeImage: '/assets/images/geme-kobold/product-image-24.jpg',
   gemeLogo: '/assets/images/ifa/white-logo.png',
   ifaLogo: '/assets/images/ifa/ifa-berlin-seeklogo.png',
-  noticeTitle: 'Notice Of Exhibition',
+  noticeTitle:
+    'Stay in tune with our IFA news and stand a chance to win a GEME composter',
   ifaExhibitionDate: 'GEME at IFA Berlin, September 6-10, 2024',
   prizeDesc: 'Win a 180-day supply of Kobold Now!',
   activityTitle: 'Activity',
-  activityDescription: `In the lead-up to IFA, EME is hosting a lucky draw. Simply click
+  activityDescription: `In the lead-up to IFA, GEME is hosting a lucky draw. Simply click
 the link and upload a video showing how you use the GEME
 compost machine daily. The sooner you enter, the better
 your chances of winning a 180-day supply of Kobold!`,
@@ -70,35 +71,29 @@ const winnersNamesTickerProps: IWinnersNamesTickerProps = {
 
 // 订阅模块 En
 const subscribeGemeV2Props: ISubscribeGemeV2Props = {
-  title: 'Join the GEME II waiting list',
-  description: (
-    <>
-      GEME second generation machine is preparing for the market, you can
-      subscribe first, when the second generation machine is released, we will
-      send an email to notify you!
-    </>
-  ),
+  title: 'Meet GEME II',
+  description: <>Get interested? Join the wasting list!</>,
   emailPlaceholder: 'Enter your email',
-  submitButtonLabel: 'Subscribe',
+  submitButtonLabel: 'Notify Me',
   productSectionTitle: 'Preview',
   imageList: [
     {
-      src: '/assets/images/geme-v2-product/geme-v2-1.jpg',
+      src: '/assets/images/geme-v2-product/geme-v2-1-color.png',
       alt: 'Geme II Product Picture 1',
-      title: 'New upgrade',
-      desc: 'More functions',
+      title: 'Affordable',
+      desc: 'Neat and slim, but yet powerful',
     },
     {
       src: '/assets/images/geme-v2-product/geme-v2-2.png',
       alt: 'Geme II Product Picture 2',
-      title: 'Newly upgraded appearance',
-      desc: 'More delicate material',
+      title: 'Intelligent',
+      desc: 'The best experience for food trash you have never thought',
     },
     {
-      src: '/assets/images/geme-v2-product/geme-v2-3.png',
+      src: '/assets/images/geme-v2-product/geme-4r.jpeg',
       alt: 'Geme II Product Picture 3',
-      title: 'Easy to use',
-      desc: 'Anytime, anywhere',
+      title: 'Care & Love',
+      desc: 'Not only a product, but a connected sustainable community',
     },
   ],
 }
