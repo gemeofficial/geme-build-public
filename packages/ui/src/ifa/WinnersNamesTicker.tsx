@@ -2,10 +2,17 @@ import clsx from 'clsx'
 import { SectionTitle } from '../ui-components'
 import DefaultLink from 'next/link'
 import { ILinkComponent } from '../../../../apps/gemebuild/src/contexts/link-context'
+import ImageZoomViewer from '../client-components/ImageZoomViewer'
+
+export interface IWinnersNamesTickerItem {
+  name: string
+  date: string
+  imageUrl: string
+}
 
 export interface IWinnersNamesTickerProps {
   title: string
-  winnersNames: { name: string; date: string }[]
+  winnersNames: IWinnersNamesTickerItem[]
   linkText: string
   className?: string
   PrefetchLink?: ILinkComponent
@@ -25,13 +32,24 @@ export function WinnersNamesTicker({
       <SectionTitle className="!text-left">{title}</SectionTitle>
       <ul className="mt-4">
         {winnersNames.map((item, index) => (
-          <li
-            key={item.name + index}
-            className="flex items-center justify-between p-2 hover:bg-gray-100"
-          >
-            <span>{item.name}</span>
-            <span className="text-xs xl:text-sm text-[#999]">{item.date}</span>
-          </li>
+          <ImageZoomViewer>
+            <li
+              key={item.name + index}
+              className="flex items-center justify-between p-2 hover:bg-gray-100 relative"
+            >
+              <span>{item.name}</span>
+              <span className="text-xs xl:text-sm text-[#999]">
+                {item.date}
+              </span>
+              <picture>
+                <img
+                  src={item.imageUrl}
+                  alt={item.name + 'Winning screenshot'}
+                  className="absolute inset-0 opacity-0"
+                />
+              </picture>
+            </li>
+          </ImageZoomViewer>
         ))}
       </ul>
       {false && (

@@ -12,6 +12,7 @@ import {
   IWinnersNamesTickerProps,
   WinnersNamesTicker,
 } from './WinnersNamesTicker'
+import { Button } from './Button'
 
 export interface IVideoList {
   title: string
@@ -31,12 +32,14 @@ export interface IVideoList {
 export interface IVideoListProps {
   winnersNamesTickerProps: IWinnersNamesTickerProps
   videoListProps: IVideoList
+  buttonText: string
   PrefetchLink?: ILinkComponent
 }
 
 export function VideoList({
   winnersNamesTickerProps,
   videoListProps,
+  buttonText,
   PrefetchLink,
 }: IVideoListProps) {
   const [length, setLength] = useState(6)
@@ -107,6 +110,9 @@ export function VideoList({
               )}
             </>
           )}
+        </div>
+        <div className="mt-4 xl:mt-6">
+          <Button text={buttonText} PrefetchLink={PrefetchLink} />
         </div>
       </div>
       {/* 中奖名单 */}

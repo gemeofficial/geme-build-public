@@ -95,13 +95,13 @@ const videoListProps: IVideoList = {
     'Les données de la liste des vidéos seront affichées après ce tirage, veuillez patienter.',
   videoList: [
     {
-      // poster: '/assets/images/home-v2311/hero-blurred.webp',
+      poster: '/assets/images/ifa/poster1.png',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/ifa-page-user-video-1.mp4',
       from: 'MN',
       useTime: '9 mois',
     },
     {
-      // poster: '/assets/images/home-v2311/hero-blurred.webp',
+      poster: '/assets/images/ifa/poster2.png',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/ifa-page-user-video-2.mp4',
       from: 'OH',
       useTime: '10 mois',
@@ -150,6 +150,7 @@ function IFAPageFr({ PrefetchLink, SubscribeComponent }: IIFAPageProps) {
     <>
       <IFAHeroSection {...IFAHeroSectionProps} PrefetchLink={PrefetchLink} />
       <VideoList
+        buttonText={IFAHeroSectionProps.buttonText}
         videoListProps={videoListProps}
         winnersNamesTickerProps={winnersNamesTickerProps}
         PrefetchLink={PrefetchLink}
