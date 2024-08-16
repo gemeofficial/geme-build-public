@@ -86,7 +86,7 @@ export default function ModalContainer({
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="transform text-left align-middle shadow-xl transition-all relative w-full -translate-y-[50%]">
+                <Dialog.Panel className="transform text-left align-middle shadow-xl transition-all relative w-full -translate-y-[50%] md:translate-y-0">
                   <XCircleIcon
                     className="w-12 h-12 absolute -top-14 right-0  cursor-pointer fill-white/80 hover:fill-white"
                     onClick={closeModal}
