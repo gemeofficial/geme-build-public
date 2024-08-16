@@ -441,14 +441,14 @@ const newsltterProps: INewsletterProps = {
   },
 }
 
-function HomePageEn({
-  PrefetchLink,
-  reviewsSectionConfig,
-}: {
+export interface IHomePageProps {
   PrefetchLink?: ILinkComponent
   reviewsSectionConfig: IReviewsSectionConfig
-}) {
+}
+
+function HomePageEn({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
   heroSection1Props.LinkComponent = PrefetchLink
+
   return (
     <>
       <HeroSection1 {...heroSection1Props} />

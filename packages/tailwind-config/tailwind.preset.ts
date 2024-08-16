@@ -35,6 +35,7 @@ const tailwindPreset: Config = {
       },
       screens: {
         '3xl': '1920px',
+        '4xl': '2380px',
       },
     },
   },
@@ -43,6 +44,7 @@ const tailwindPreset: Config = {
     typography,
     aspectRatio,
     forms,
+    // @ts-ignore
     function ({ addUtilities }) {
       const newUtilities = {
         '.no-scrollbar::-webkit-scrollbar': {

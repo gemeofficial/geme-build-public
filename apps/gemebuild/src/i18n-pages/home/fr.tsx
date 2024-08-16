@@ -29,6 +29,7 @@ import { Footprints, type IFootprintsProps } from '../../components/footprints'
 import { Newsletter, INewsletterProps } from './containers/newsletter'
 import { ILinkComponent } from '../../contexts/link-context'
 import { ReviewsSectionModule } from '../../components/reviews-section-module'
+import { IHomePageProps } from './en'
 
 // 首页video部分的内容数据配置 Fr
 const heroSection1Props: IHeroSection1Props = {
@@ -458,13 +459,7 @@ const newsltterProps: INewsletterProps = {
   },
 }
 
-function HomePageFr({
-  PrefetchLink,
-  reviewsSectionConfig,
-}: {
-  PrefetchLink?: ILinkComponent
-  reviewsSectionConfig: IReviewsSectionConfig
-}) {
+function HomePageFr({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
   heroSection1Props.LinkComponent = PrefetchLink
   return (
     <>

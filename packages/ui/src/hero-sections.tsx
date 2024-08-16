@@ -1,8 +1,8 @@
 import { ReactNode } from 'react'
 import { ILinkComponent } from '../../../apps/gemebuild/src/contexts/link-context'
 import Image from 'next/image'
-import VideoInlinePlayer, { PlayIcon } from './video-inline-player'
 import HeroSectionsButton from './client-components/HeroSectionsButton'
+import { PlayIcon, VideoInlinePlayer } from './video-inline-player'
 
 interface IHeroSection1Props {
   title?: ReactNode
