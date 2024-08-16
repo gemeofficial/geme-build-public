@@ -11,6 +11,7 @@ import {
   CompostStep2,
   CompostStep3,
   SecondLife,
+  UserStoriesVideos,
 } from 'ui'
 import type {
   IHeroSection1Props,
@@ -22,6 +23,7 @@ import type {
   IContentSection6FixedProps,
   ISecondLifeProps,
   IReviewsSectionConfig,
+  IUserStoriesVideoProps,
 } from 'ui'
 import { Footprints, type IFootprintsProps } from '../../components/footprints'
 import { Newsletter, INewsletterProps } from './containers/newsletter'
@@ -370,11 +372,41 @@ const contentSection5Props: IContentSection5Props = {
   ),
 }
 
-// 首页第十部分（好评卡片）的内容数据配置 En
+// 首页第十部分（好评卡片）的内容数据配置 En -- 暂时弃用
 const reviewsSectionProps = {
   title: 'What Real Users Say',
   description:
     'Click below to see real people dish the dirt, good and bad - the unfiltered truth you need.',
+}
+
+// 首页第十部分（用户使用视频）的内容数据配置 En
+const userStoriesVideosProps: IUserStoriesVideoProps = {
+  title: 'What Customers Say',
+  videos: [
+    {
+      type: 'youtube',
+      src: 'https://youtu.be/TwCYDZgoUl0?si=w5mzwn4dQJr6x0vD',
+      coverImageUrl: '/assets/images/user-stories-videos/youtube.png',
+      coverAlt: 'Real life usage reviews from Amazon',
+      buttonText: '@Mister and Miss Ginger Jones',
+    },
+    {
+      type: 'instagram',
+      src: 'https://www.instagram.com/reel/CxBKZOYRKQN/?utm_source=ig_web_copy_link',
+      coverImageUrl:
+        '/assets/images/user-stories-videos/instagram.png',
+      coverAlt: 'Real use video from twin brothers',
+      buttonText: '@Messitttwins',
+    },
+    {
+      type: 'tiktok',
+      src: 'https://www.tiktok.com/@kc_smithwrites/video/7312898892079697198',
+      coverImageUrl:
+        '/assets/images/user-stories-videos/tiktok2.png',
+      coverAlt: 'Users from tiktok use videos',
+      buttonText: '@kc_smithwrites',
+    },
+  ],
 }
 
 // 首页第十一部分（地图）的内容数据配置 En
@@ -437,11 +469,13 @@ function HomePageEn({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
         <ContentSection5 {...contentSection5Props} />
       </div>
 
-      <ReviewsSectionModule
+      {/* <ReviewsSectionModule
         locale="en"
         reviewsSectionConfig={reviewsSectionConfig}
         {...reviewsSectionProps}
-      />
+      /> */}
+
+      <UserStoriesVideos {...userStoriesVideosProps} />
 
       <Footprints {...footprintsProps} />
 
