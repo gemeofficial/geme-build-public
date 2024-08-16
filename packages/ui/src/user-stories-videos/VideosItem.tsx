@@ -26,7 +26,7 @@ export default function VideosItem({ item }: { item: IVideosItemProps }) {
         className="w-full h-full object-cover"
         alt={item.coverAlt}
       />
-      <div className="absolute bottom-[12%] inset-x-0 flex justify-center group-hover:scale-105 transition-all duration-300">
+      <div className="absolute bottom-[12%] inset-x-6 flex justify-center group-hover:scale-105 transition-all duration-300">
         <div className="flex p-2 pr-4 items-center justify-center gap-x-2 bg-gray-200 rounded-full">
           <button className="bg-v2311-bg-dark-green p-2 rounded-full">
             <svg

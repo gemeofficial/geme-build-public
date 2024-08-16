@@ -388,7 +388,7 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
       src: 'https://youtu.be/TwCYDZgoUl0?si=w5mzwn4dQJr6x0vD',
       coverImageUrl: '/assets/images/user-stories-videos/youtube.png',
       coverAlt: 'Real life usage reviews from Amazon',
-      buttonText: 'Blaine',
+      buttonText: '@Mister and Miss Ginger Jones',
     },
     {
       type: 'instagram',
@@ -396,7 +396,7 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
       coverImageUrl:
         '/assets/images/user-stories-videos/instagram.png',
       coverAlt: 'Real use video from twin brothers',
-      buttonText: 'Messitttwins',
+      buttonText: '@Messitttwins',
     },
     {
       type: 'tiktok',
@@ -404,7 +404,7 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
       coverImageUrl:
         '/assets/images/user-stories-videos/tiktok2.png',
       coverAlt: 'Users from tiktok use videos',
-      buttonText: 'kc_smithwrites',
+      buttonText: '@kc_smithwrites',
     },
   ],
 }
