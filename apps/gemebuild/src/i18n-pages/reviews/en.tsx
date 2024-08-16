@@ -229,12 +229,12 @@ const sectionDatas: ISectionProps = {
   buttonText: 'View Detail',
 }
 
-export interface ICommentPicturePageProps {
+export interface IReviewsPageProps {
   PrefetchLink?: ILinkComponent
 }
 
-function CommentPicturePageEn({ PrefetchLink }: ICommentPicturePageProps) {
+function ReviewsPageEn({ PrefetchLink }: IReviewsPageProps) {
   return <Section {...sectionDatas} PrefetchLink={PrefetchLink} />
 }
 
-export { CommentPicturePageEn }
+export { ReviewsPageEn }

@@ -38,8 +38,8 @@ export default function Section({
                 to={String(tab.id)}
                 offset={-50}
                 className={clsx(
-                  'inline-block px-1 pt-0.5 pb-px md:px-4 xl:px-6 xl:py-2 font-bold cursor-pointer',
-                  'hover:bg-white hover:text-[#047857] hover:rounded-lg',
+                  'border-b-2 border-transparent inline-block px-1 pt-0.5 pb-px md:px-4 xl:px-6 xl:py-2 font-bold cursor-pointer',
+                  'hover:border-white box-border',
                   'whitespace-nowrap',
                 )}
               >
@@ -50,35 +50,42 @@ export default function Section({
         </ul>
       </div>
 
-      <div className="bg-v2311-bg-dark-green/95">
-        {datas.map((item, index) => (
-          <Element name={String(titles[index].id)} key={titles[index].id}>
-            <div
+      {datas.map((item, index) => (
+        <Element name={String(titles[index].id)} key={titles[index].id}>
+          <div
+            className={clsx(
+              'p-4 md:p-6 lg:p-8 bg-gradient-to-b from-white',
+              index === 0
+                ? ' to-[#e8f1ee]'
+                : index === 1
+                  ? 'to-[#fcf3de]'
+                  : 'to-[#f8f1eb]',
+            )}
+            key={index}
+          >
+            <SectionTitle
               className={clsx(
-                'p-4 md:p-6 lg:p-8',
+                ' mt-4 lg:mt-8',
                 index === 0
-                  ? 'bg-gray-50'
+                  ? '!text-v2311-bg-dark-green'
                   : index === 1
-                    ? 'bg-[#cfcfcf]'
-                    : 'bg-[#8b8b8b]',
+                    ? '!text-v2311-text-yellow'
+                    : '!text-[#eda152]',
               )}
-              key={index}
             >
-              <SectionTitle className="!text-black mt-4 lg:mt-8">
-                {item.title}
-              </SectionTitle>
-              <div className="mt-4 md:mt-6 xl:mt-8">
-                <WaterfallFlow
-                  PrefetchLink={PrefetchLink}
-                  pictures={item.pictures}
-                  priority={index === 0}
-                  buttonText={buttonText}
-                />
-              </div>
+              {item.title}
+            </SectionTitle>
+            <div className="mt-4 md:mt-6 xl:mt-8">
+              <WaterfallFlow
+                PrefetchLink={PrefetchLink}
+                pictures={item.pictures}
+                priority={index === 0}
+                buttonText={buttonText}
+              />
             </div>
-          </Element>
-        ))}
-      </div>
+          </div>
+        </Element>
+      ))}
     </>
   )
 }

@@ -1,30 +1,30 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
 import {
-  CommentPicturePageDe,
-  CommentPicturePageEn,
-  CommentPicturePageFr,
+  ReviewsPageDe,
+  ReviewsPageEn,
+  ReviewsPageFr,
 } from '.'
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Pages/comment-picture',
-} satisfies Meta<typeof CommentPicturePageEn>
+  title: 'Pages/reviews',
+} satisfies Meta<typeof ReviewsPageEn>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const En: Story = {
   name: 'en',
-  render: () => <CommentPicturePageEn />,
+  render: () => <ReviewsPageEn />,
 }
 
 export const Fr: Story = {
   name: 'fr',
-  render: () => <CommentPicturePageFr />,
+  render: () => <ReviewsPageFr />,
 }
 
 export const De: Story = {
   name: 'de',
-  render: () => <CommentPicturePageDe />,
+  render: () => <ReviewsPageDe />,
 }

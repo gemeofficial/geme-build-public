@@ -1,5 +1,5 @@
 import Section, { ISectionProps } from './components/Section'
-import { ICommentPicturePageProps } from './en'
+import { IReviewsPageProps } from './en'
 
 // 配置文件 En
 const sectionDatas: ISectionProps = {
@@ -168,8 +168,8 @@ const sectionDatas: ISectionProps = {
   buttonText: 'View Detail',
 }
 
-function CommentPicturePageDe({ PrefetchLink }: ICommentPicturePageProps) {
+function ReviewsPageFr({ PrefetchLink }: IReviewsPageProps) {
   return <Section {...sectionDatas} PrefetchLink={PrefetchLink} />
 }
 
-export { CommentPicturePageDe }
+export { ReviewsPageFr }
