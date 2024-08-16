@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import {
   IFAHeroSection,
   IIFAHeroSectionProps,
@@ -14,22 +15,30 @@ import { FC } from 'react'
 // Hero Section  En
 const IFAHeroSectionProps: IIFAHeroSectionProps = {
   bgImageUrl: '/assets/images/ifa/hero-bg.png',
-  prizeImage: '/assets/images/geme-kobold/product-image-24.jpg',
+  prizeImage: '/assets/images/ifa/prize.jpg',
   gemeLogo: '/assets/images/ifa/white-logo.png',
   ifaLogo: '/assets/images/ifa/ifa-berlin-seeklogo.png',
   noticeTitle: (
     <>
-      Shining with GEME in IFA Berlin2024
-      <br />
-      <span className='text-2xl md:text-3xl 3xl:text-4xl'>
+      <p className="leading-tight">Shining with GEME in IFA Berlin2024</p>
+      <span className="text-2xl md:text-3xl 3xl:text-4xl">
         Share your GEME story,
-        <br className='md:hidden xl:block' />
+        <br className="md:hidden xl:block" />
         Win a GEME conposter!
       </span>
     </>
   ),
   ifaExhibitionDate: 'GEME at IFA Berlin, September 6-10, 2024',
-  prizeDesc: `2 grand giveaways are underway to mark GEME's appearance at IFA Berlin!`,
+  prizeDesc: (
+    <>
+      <span className="md:text-lg 2xl:text-[22px]">
+        2 grand giveaways are underway! <br />
+      </span>
+      <span className="text-sm md:text-base 2xl:text-lg">
+        To mark GEME's appearance at IFA Berlin.
+      </span>
+    </>
+  ),
   activityTitle: 'Activity',
   activityDescription: (
     <>

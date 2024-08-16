@@ -7,11 +7,12 @@ import { LocaleType } from '../reviews'
 import Video from './Video'
 import { Divider } from '../divider'
 import { Button } from './Button'
+import ImageZoomViewer from '../client-components/ImageZoomViewer'
 
 export interface IIFAHeroSectionProps {
   noticeTitle: ReactNode
   ifaExhibitionDate: string
-  prizeDesc: string
+  prizeDesc: ReactNode
   activityTitle: string
   activityDescription: ReactNode
   buttonText: string
@@ -131,13 +132,15 @@ export function IFAHeroSection({
                 textInfo={prizeImageTitle}
                 className="lg:flex-1 xl:flex-none 2xl:flex-1"
               >
-                <Image
-                  src={prizeImage}
-                  height={400}
-                  width={400}
-                  alt="geme kobold"
-                  className="w-40 h-40 md:w-56 md:h-56 lg:w-full lg:h-full xl:w-56 xl:h-56 2xl:w-full 2xl:h-full object-cover rounded-lg max-h-[292px]"
-                />
+                <ImageZoomViewer>
+                  <Image
+                    src={prizeImage}
+                    height={400}
+                    width={400}
+                    alt="geme kobold"
+                    className="w-40 h-40 md:w-56 md:h-56 lg:w-full lg:h-full xl:w-56 xl:h-56 2xl:w-full 2xl:h-full object-cover rounded-lg max-h-[292px]"
+                  />
+                </ImageZoomViewer>
               </MediaBox>
 
               <MediaBox
