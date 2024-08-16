@@ -11,6 +11,7 @@ import {
   CompostStep2,
   CompostStep3,
   SecondLife,
+  UserStoriesVideos,
 } from 'ui'
 import type {
   IHeroSection1Props,
@@ -22,6 +23,7 @@ import type {
   IContentSection6FixedProps,
   ISecondLifeProps,
   IReviewsSectionConfig,
+  IUserStoriesVideoProps,
 } from 'ui'
 import { Footprints, type IFootprintsProps } from '../../components/footprints'
 import { Newsletter, INewsletterProps } from './containers/newsletter'
@@ -391,11 +393,39 @@ const contentSection5Props: IContentSection5Props = {
   ),
 }
 
-// 首页第十部分（好评卡片）的内容数据配置 De
+// 首页第十部分（好评卡片）的内容数据配置 De -- 暂时弃用
 const reviewsSectionProps = {
   title: 'Was echte Benutzer sagen',
   description:
     'Klicken Sie unten, um zu sehen, wie echte Menschen ihre Meinung sagen, gut und schlecht - die ungefilterte Wahrheit, die Sie brauchen.',
+}
+
+// 首页第十部分（用户使用视频）的内容数据配置 De
+const userStoriesVideosProps: IUserStoriesVideoProps = {
+  title: 'Was Kunden sagen',
+  videos: [
+    {
+      type: 'youtube',
+      src: 'https://youtu.be/TwCYDZgoUl0?si=w5mzwn4dQJr6x0vD',
+      coverImageUrl: '/assets/images/user-stories-videos/youtube.png',
+      coverAlt: 'Real life usage reviews from Amazon',
+      buttonText: 'Blaine',
+    },
+    {
+      type: 'instagram',
+      src: 'https://www.instagram.com/reel/CxBKZOYRKQN/?utm_source=ig_web_copy_link',
+      coverImageUrl: '/assets/images/user-stories-videos/instagram.png',
+      coverAlt: 'Real use video from twin brothers',
+      buttonText: 'Messitttwins',
+    },
+    {
+      type: 'tiktok',
+      src: 'https://www.tiktok.com/@kc_smithwrites/video/7312898892079697198',
+      coverImageUrl: '/assets/images/user-stories-videos/tiktok2.png',
+      coverAlt: 'Users from tiktok use videos',
+      buttonText: 'kc_smithwrites',
+    },
+  ],
 }
 
 // 首页第十一部分（地图）的内容数据配置 De
@@ -459,11 +489,13 @@ function HomePageDe({
         <ContentSection5 {...contentSection5Props} />
       </div>
 
-      <ReviewsSectionModule
+      {/* <ReviewsSectionModule
         locale="de"
         reviewsSectionConfig={reviewsSectionConfig}
         {...reviewsSectionProps}
-      />
+      /> */}
+
+      <UserStoriesVideos {...userStoriesVideosProps} />
 
       <Footprints {...footprintsProps} />
 
