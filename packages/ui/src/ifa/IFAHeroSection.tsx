@@ -94,12 +94,12 @@ export function IFAHeroSection({
 
               {/* 黑白底色背景 */}
               <div className="rounded-lg bg-black/50 lg:bg-white/20 p-4 md:p-6 xl:p-8 h-max flex flex-col gap-4 lg:gap-6 md:w-[500px] lg:w-max">
-                <p className="text-sm md:text-lg 2xl:text-xl text-v2311-text-yellow">
+                <div className="text-sm md:text-lg 2xl:text-xl text-v2311-text-yellow">
                   {prizeDesc}
-                </p>
-                <p className="text-xs md:text-sm 3xl:text-base text-white font-normal lg:max-w-[450px]">
+                </div>
+                <div className="text-xs md:text-sm 3xl:text-base text-white font-normal lg:max-w-[450px]">
                   {activityDescription}
-                </p>
+                </div>
 
                 <Button PrefetchLink={PrefetchLink} text={buttonText} />
               </div>
@@ -124,9 +124,9 @@ export function IFAHeroSection({
                 1 / 2
               </p>
               <Divider color="#058669" height="130px" width="3px" />
-              <p className="font-normal text-xs md:text-sm xl:text-base">
+              <div className="font-normal text-xs md:text-sm xl:text-base">
                 {descriptionText}
-              </p>
+              </div>
             </div>
 
             {/* 下半部分区域 */}

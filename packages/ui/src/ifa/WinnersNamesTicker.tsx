@@ -32,20 +32,17 @@ export function WinnersNamesTicker({
       <SectionTitle className="!text-left">{title}</SectionTitle>
       <ul className="mt-4">
         {winnersNames.map((item, index) => (
-          <ImageZoomViewer>
-            <li
-              key={item.name + index}
-              className="flex items-center justify-between p-2 hover:bg-gray-100 relative"
-            >
+          <ImageZoomViewer key={item.name + index}>
+            <li className="flex items-center justify-between p-2 hover:bg-gray-100 relative overflow-hidden">
               <span>{item.name}</span>
               <span className="text-xs xl:text-sm text-[#999]">
                 {item.date}
               </span>
-              <picture>
+              <picture className="absolute inset-0 opacity-0">
                 <img
                   src={item.imageUrl}
                   alt={item.name + 'Winning screenshot'}
-                  className="absolute inset-0 opacity-0"
+                  className="w-full h-full"
                 />
               </picture>
             </li>
