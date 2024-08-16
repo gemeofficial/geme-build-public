@@ -51,11 +51,11 @@ export default function ProductSection({
             />
             <div
               className={clsx(
-                'flex items-end p-3 xl:p-6 cursor-pointer',
+                'flex items-end p-1 xl:p-3 cursor-pointer',
                 index === 0 ? '' : 'sm:absolute sm:inset-0',
               )}
             >
-              <div className="bg-[#1b1b1b] bg-opacity-40">
+              <div>
                 <h3 className="font-semibold text-white ">
                   <span className="absolute inset-0">
                     <ImageZoomViewer>

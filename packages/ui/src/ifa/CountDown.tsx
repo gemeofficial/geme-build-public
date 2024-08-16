@@ -227,11 +227,11 @@ function TimeCard({
       className="text-white tracking-wide font-sans font-semibold"
       suppressHydrationWarning
     >
-      <p className="text-lg md:text-2xl xl:text-3xl" suppressHydrationWarning>
+      <p className="text-lg md:text-2xl xl:text-3xl 3xl:text-4xl" suppressHydrationWarning>
         {children}
       </p>
       <p
-        className="mt-1 text-v2311-primary md:text-lg xl:text-xl"
+        className="mt-1 text-v2311-primary md:text-lg xl:text-xl 3xl:text-2xl"
         suppressHydrationWarning
       >
         {type === 'day' ? dayText : textInfo[type]}

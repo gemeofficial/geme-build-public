@@ -8,7 +8,7 @@ import {
 
 import { ILinkComponent } from '../../contexts/link-context'
 import { winnersNames } from './winnersNames'
-import VideoList, { IVideoList, IVideoListProps } from 'ui/src/ifa/VideoList'
+import VideoList, { IVideoList } from 'ui/src/ifa/VideoList'
 import { FC } from 'react'
 
 // Hero Section  En
@@ -17,22 +17,49 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
   prizeImage: '/assets/images/geme-kobold/product-image-24.jpg',
   gemeLogo: '/assets/images/ifa/white-logo.png',
   ifaLogo: '/assets/images/ifa/ifa-berlin-seeklogo.png',
-  noticeTitle:
-    'Stay in tune with our IFA news and stand a chance to win a GEME composter',
+  noticeTitle: (
+    <>
+      Shining with GEME in IFA Berlin2024
+      <br /> <br />
+      Share your GEME story,
+      <br />
+      Win a GEME conposter!
+    </>
+  ),
   ifaExhibitionDate: 'GEME at IFA Berlin, September 6-10, 2024',
-  prizeDesc: 'Win a 180-day supply of Kobold Now!',
+  prizeDesc: `2 grand giveaways are underway to mark GEME's appearance at IFA Berlin!`,
   activityTitle: 'Activity',
-  activityDescription: `In the lead-up to IFA, GEME is hosting a lucky draw. Simply click
-the link and upload a video showing how you use the GEME
-compost machine daily. The sooner you enter, the better
-your chances of winning a 180-day supply of Kobold!`,
+  activityDescription: (
+    <>
+      <strong>Weekly Wins: </strong>
+      From Aug 19th to Sep 6th, win a $59.9 Kobold refill pack every Monday,
+      Wednesday, and Friday.
+      <br />
+      <strong>Grand Prize: </strong>
+      One lucky winner from all the participant will win a GEME composter on Sep
+      14th.
+    </>
+  ),
   buttonText: 'Submit Your Video!',
   countdownTitle: 'Countdown to the next draw :',
   winningProbabilityTitle: 'Current probability of winning:',
   prizeImageTitle: 'What You could win',
   sampleVideoTitle: 'Vidoo Submission ldeas',
-  descriptionText:
-    'Description: 1/N, N means there are currently N people participating in the activity, the earlier you participate, the greater your chance of winning!',
+  descriptionText: (
+    <>
+      <ul>
+        <li className="list-disc">
+          1/N represents your probability of winning in each draw.
+        </li>
+        <li className="list-disc">
+          We will draw winners every Monday, Wednesday, and Friday.
+        </li>
+        <li className="list-disc">
+          The winning probability will be refreshed after each draw.
+        </li>
+      </ul>
+    </>
+  ),
   locale: 'en',
 }
 
