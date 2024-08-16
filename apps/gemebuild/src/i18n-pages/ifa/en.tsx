@@ -9,7 +9,7 @@ import {
 
 import { ILinkComponent } from '../../contexts/link-context'
 import { winnersNames } from './winnersNames'
-import VideoList, { IVideoList } from 'ui/src/ifa/VideoList'
+import { VideoList, IVideoList } from 'ui'
 import { FC } from 'react'
 
 // Hero Section  En

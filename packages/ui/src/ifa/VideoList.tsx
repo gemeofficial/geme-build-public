@@ -12,8 +12,6 @@ import {
   IWinnersNamesTickerProps,
   WinnersNamesTicker,
 } from './WinnersNamesTicker'
-import { hasMixpanel } from '../lib'
-import mixpanel from 'mixpanel-browser'
 
 export interface IVideoList {
   title: string
@@ -36,7 +34,7 @@ export interface IVideoListProps {
   PrefetchLink?: ILinkComponent
 }
 
-export default function VideoList({
+export function VideoList({
   winnersNamesTickerProps,
   videoListProps,
   PrefetchLink,

@@ -1,11 +1,11 @@
 import { ReactNode, SVGProps } from 'react'
 import { CompostStep1, CompostStep2, CompostStep3 } from './compost-steps'
 import classNames from './lib/classNames'
-import VideoInlinePlayer from './video-inline-player'
 import { IImgProps } from './image'
 import { IVideoPlayerProps, VideoPlayer } from './video'
 import Image, { getImageProps } from 'next/image'
 import { SectionDescription, SectionTitle } from './ui-components'
+import { VideoInlinePlayer } from './video-inline-player'
 
 interface IContentSection1Props {
   title?: ReactNode

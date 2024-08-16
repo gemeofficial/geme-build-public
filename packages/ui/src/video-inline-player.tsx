@@ -32,7 +32,7 @@ export function PlayIcon({
   )
 }
 
-function VideoInlinePlayer({
+export function VideoInlinePlayer({
   videoUrl,
   description,
   playButtonSize,
@@ -163,5 +163,3 @@ export interface IVideoInlinePlayerProps {
     payload?: { [key: string]: any }
   }
 }
-
-export default VideoInlinePlayer

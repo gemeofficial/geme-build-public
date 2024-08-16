@@ -3,8 +3,8 @@ import Image from 'next/image'
 import classNames from 'ui/src/lib/classNames'
 import { ILinkComponent } from '../../i18n-pages'
 import defaultLink from 'next/link'
-import VideoInlinePlayer from 'ui/src/video-inline-player'
 import { ReactNode } from 'react'
+import { VideoInlinePlayer } from 'ui'
 
 // Ref: https://tailwindui.com/components/marketing/sections/heroes#component-e5c15b9d1a503738005e35302043c802
 function SplitWithNavBar({
