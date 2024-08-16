@@ -51,7 +51,7 @@ export default function ProductSection({
             />
             <div
               className={clsx(
-                'flex items-end p-1 xl:p-3 cursor-pointer',
+                'flex items-end p-2 md:p-3 cursor-pointer',
                 index === 0 ? '' : 'sm:absolute sm:inset-0',
               )}
             >
