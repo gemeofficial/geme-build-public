@@ -48,20 +48,20 @@ export function IFAHeroSection({
   locale,
 }: IIFAHeroSectionProps) {
   return (
-    <div className="relative h-[900px] md:h-screen font-v2311">
+    <div className="relative h-[1000px] md:h-[1100px] lg:h-[1200px] xl:h-screen font-v2311">
       <Image
         src={bgImageUrl}
         height={1080}
         width={1920}
         alt="hero section background"
-        className="w-full h-[900px] md:h-screen object-cover"
+        className="w-full h-[1000px] md:h-[1100px] lg:h-[1200px] xl:h-screen object-cover"
         priority
       />
 
       <div className="flex items-center justify-center absolute inset-0 bg-black/60 text-[#f8f1eb]">
-        <div className="flex flex-col xl:flex-row px-4 md:px-8 lg:px-0">
+        <div className="flex flex-col xl:flex-row px-4 md:px-8 lg:px-0 xl:mx-10">
           {/* 左侧区域 */}
-          <div className="xl:w-[40%] 2xl:w-[50%] xl:mr-[10%] relative">
+          <div className="xl:flex-1 xl:mr-[5%] 2xl:mr-[10%] relative">
             {/* Logo */}
             <div className="flex items-center gap-4 lg:gap-6 3xl:gap-8">
               <Image
@@ -106,7 +106,7 @@ export function IFAHeroSection({
           </div>
 
           {/* 右侧区域 */}
-          <div className="flex-1 flex flex-col gap-4 2xl:gap-6 text-sm md:text-lg 2xl:text-xl 3xl:text-2xl font-semibold max-w-[600px] 3xl:max-w-[800px] mt-8 2xl:mt-0">
+          <div className="flex-1 flex flex-col gap-4 2xl:gap-6 text-sm md:text-lg 2xl:text-xl 3xl:text-2xl font-semibold max-w-[600px] lg:max-w-[550px] 2xl:max-w-[600px] 3xl:max-w-[800px] mt-8 2xl:mt-0">
             {/* <h2 className="text-xl md:text-3xl 3xl:text-4xl text-center text-v2311-text-yellow font-semibold">
             {activityTitle}
           </h2> */}

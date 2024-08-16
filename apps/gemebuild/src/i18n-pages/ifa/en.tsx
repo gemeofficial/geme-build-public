@@ -20,10 +20,12 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
   noticeTitle: (
     <>
       Shining with GEME in IFA Berlin2024
-      <br /> <br />
-      Share your GEME story,
       <br />
-      Win a GEME conposter!
+      <span className='text-2xl md:text-3xl 3xl:text-4xl'>
+        Share your GEME story,
+        <br className='md:hidden xl:block' />
+        Win a GEME conposter!
+      </span>
     </>
   ),
   ifaExhibitionDate: 'GEME at IFA Berlin, September 6-10, 2024',
