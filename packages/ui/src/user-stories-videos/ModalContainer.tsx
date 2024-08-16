@@ -49,9 +49,10 @@ export default function ModalContainer({
     if (type === 'instagram' && window.innerWidth >= 768) {
       setcommonProps({
         ...commonProps,
-        height: '85vh',
+        height: '90vh',
+        embedPlaceholder: <VideoLoading className="min-h-[90vh]" />,
       })
-      setPaddingBottom('85vh')
+      setPaddingBottom('90vh')
     } else {
       setcommonProps(defaultCommonProps)
       setPaddingBottom('56.25%')
