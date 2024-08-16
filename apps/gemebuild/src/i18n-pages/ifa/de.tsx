@@ -11,6 +11,7 @@ import { ILinkComponent } from '../../contexts/link-context'
 import { winnersNames } from './winnersNames'
 import VideoList, { IVideoList } from 'ui/src/ifa/VideoList'
 import { FC } from 'react'
+import { IIFAPageProps } from './en'
 
 // Hero Section  De
 const IFAHeroSectionProps: IIFAHeroSectionProps = {
@@ -142,14 +143,6 @@ const subscribeGemeV2Props: ISubscribeGemeV2Props = {
       desc: 'Nicht nur ein Produkt, sondern eine vernetzte nachhaltige Gemeinschaft',
     },
   ],
-}
-
-export interface IIFAPageProps {
-  PrefetchLink?: ILinkComponent
-  SubscribeComponent?: FC<{
-    inputPlaceholder: string
-    submitButtonLabel: string
-  }>
 }
 
 function IFAPageDe({ PrefetchLink, SubscribeComponent }: IIFAPageProps) {
