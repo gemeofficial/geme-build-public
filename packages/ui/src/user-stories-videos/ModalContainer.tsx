@@ -1,7 +1,7 @@
 'use client'
 
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, PropsWithChildren, useState } from 'react'
+import { Fragment, PropsWithChildren, useEffect, useState } from 'react'
 import { XCircleIcon } from '@heroicons/react/24/solid'
 import { videoType } from './VideosItem'
 import {
@@ -32,15 +32,31 @@ export default function ModalContainer({
 }: PropsWithChildren<ModalContainer>) {
   const [isOpen, setIsOpen] = useState(false)
 
-  const closeModal = () => setIsOpen(false)
-
-  const commonProps = {
+  const defaultCommonProps = {
     width: '100%',
     height: 576,
     className: 'absolute inset-0 w-full h-full',
     url: src,
     embedPlaceholder: <VideoLoading className="min-h-[576px]" />,
   }
+
+  const closeModal = () => setIsOpen(false)
+  
+  const [paddingBottom, setPaddingBottom] = useState('56.25%')
+  const [commonProps, setcommonProps] = useState<any>(defaultCommonProps)
+
+  useEffect(() => {
+    if (type === 'instagram' && window.innerWidth >= 768) {
+      setcommonProps({
+        ...commonProps,
+        height: '85vh',
+      })
+      setPaddingBottom('85vh')
+    } else {
+      setcommonProps(defaultCommonProps)
+      setPaddingBottom('56.25%')
+    }
+  }, [type, isOpen])
 
   return (
     <>
@@ -91,7 +107,12 @@ export default function ModalContainer({
                     className="w-12 h-12 absolute -top-14 right-0  cursor-pointer fill-white/80 hover:fill-white"
                     onClick={closeModal}
                   />
-                  <div className="relative h-full w-full pb-[56.25%]">
+                  <div
+                    style={{
+                      paddingBottom: paddingBottom,
+                    }}
+                    className="relative h-full w-full pb-[56.25%]"
+                  >
                     {/* mp4 */}
                     {type === 'mp4' && (
                       <video
@@ -115,7 +136,7 @@ export default function ModalContainer({
 
                     {/* instagram */}
                     {type === 'instagram' && (
-                      <InstagramEmbed {...commonProps} />
+                      <InstagramEmbed captioned {...commonProps} />
                     )}
 
                     {/* facebook */}
