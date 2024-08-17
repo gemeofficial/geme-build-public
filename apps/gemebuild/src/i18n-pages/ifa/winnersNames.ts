@@ -1,14 +1,14 @@
-import { IWinnersNamesTickerItem } from "ui";
+import { IWinnersNamesTickerItem } from 'ui'
 
 export const winnersNames: IWinnersNamesTickerItem[] = [
   {
-    name: 'Martin',
+    name: 'Jean Ruddell',
     date: '2024-08-14',
     imageUrl: '/assets/images/ifa/winning-1.jpg',
   },
   {
-    name: ' Ruddell',
+    name: 'Heather Martin',
     date: '2024-08-14',
     imageUrl: '/assets/images/ifa/winning-2.jpg',
-  }
+  },
 ]
