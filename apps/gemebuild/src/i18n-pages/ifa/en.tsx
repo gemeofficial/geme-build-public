@@ -27,7 +27,7 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
       <span className="text-2xl md:text-3xl 3xl:text-4xl">
         Share your GEME story,
         <br />
-        Win a GEME conposter!
+        Win a GEME Composter!
       </span>
     </>
   ),
