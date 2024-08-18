@@ -106,7 +106,7 @@ const introProps: IPdpIntroProps = {
 
   // Introduction 第5部分 En
   contentSection21Props: {
-    title: 'Keep Throwing Garbage, GEME Take Care of the Rest',
+    title: 'No Cleaning Required, Take Months to Fill Up',
     description: (
       <>
         🫳&nbsp;&nbsp;Add waste at anytime <br />
