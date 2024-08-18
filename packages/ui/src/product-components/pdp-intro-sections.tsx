@@ -387,7 +387,7 @@ interface IPdpIntroSection7Props {
 
 const pdpIntroSection7Props: IPdpIntroSection7Props = {
   title: 'Big, More & Long Term',
-  description: 'Work 7x24 But Energy Saving',
+  description: '',
   features: [
     '·  10+ people family daily using',
     '·  3 months no cleaning required',
@@ -406,23 +406,24 @@ function PdpIntroSection7({
         {/*<SvgDeviceCompare className=" xl:hidden " />*/}
         {/*<SvgDeviceCompareLarge className=" hidden xl:block " />*/}
         <Image
-          width={58}
-          height={75}
-          src="/assets/images/pdp-v2311/introduction/device-compare.svg"
+          width={580}
+          height={750}
+          // src="/assets/images/pdp-v2311/introduction/device-compare.svg"
+          src="/assets/images/pdp-v2311/introduction/big-more-and-long-term-mobile.png"
           alt="Introduction GEME Composter Super Large Volume"
           className=" z-0 xl:hidden w-full h-full"
         />
         <Image
           width={1920}
           height={1080}
-          src="/assets/images/pdp-v2311/introduction/device-compare-large.svg"
+          src="/assets/images/pdp-v2311/introduction/big-more-and-long-term-pc.png"
           alt="Introduction GEME Composter Super Large Volume"
           className=" z-0 hidden xl:block w-full h-full"
         />
 
         <div className=" absolute top-0 w-full h-full flex flex-col xl:flex-row items-center justify-between xl:items-start">
           <div className="hidden xl:block xl:flex-1"></div>
-          <div className=" px-4 pt-8 md:px-8 md:pt-16 xl:px-0 xl:pt-[12%] text-center xl:text-left xl:flex-1">
+          <div className=" px-14 pt-8 md:px-8 md:pt-16 xl:px-0 xl:pt-[12%] text-center xl:text-left xl:flex-1">
             {title && (
               <h2 className="v2311-font-h1 text-v2311-primary">{title}</h2>
             )}
@@ -433,12 +434,12 @@ function PdpIntroSection7({
             )}
           </div>
           {features && (
-            <ul className=" px-4 pb-8 md:px-8 md:pb-16 text-left xl:hidden ">
+            <ul className=" px-4 pb-4 md:px-8 md:pb-16 text-left md:hidden xl:hidden ">
               {features.map((feature, idx) => {
                 return (
                   <li
                     key={`${feature}_${idx}`}
-                    className="v2311-font-body text-v2311-fg-black"
+                    className="v2311-font-body text-black"
                   >
                     {feature}
                   </li>
