@@ -81,7 +81,7 @@ const introProps: IPdpIntroProps = {
 
   // Introduction 第3部分 En
   contentSection72Props: {
-    title: 'Silent Operation',
+    title: 'Work While You Sleep, Energy Saving and Quiet',
     description:
       'GEME Sound level around 35-45 dB, the quietest composter on the marketing.',
     withImageOrVideo: {
@@ -106,7 +106,7 @@ const introProps: IPdpIntroProps = {
 
   // Introduction 第5部分 En
   contentSection21Props: {
-    title: 'No Cleaning Required, Take Months to Fill Up',
+    title: 'No Cleaning Job Required, Take Months to Fill Up',
     description: (
       <>
         🫳&nbsp;&nbsp;Add waste at anytime <br />
@@ -124,7 +124,7 @@ const introProps: IPdpIntroProps = {
 
   // Introduction 第6部分 En
   contentSection22Props: {
-    title: 'Innovative Microbes Based Garbage Disposal, Work Quickly & Safely',
+    title: 'Microorganism Breakdown, Not Electrical Heating',
     description: (
       <>
         🔥&nbsp;&nbsp;Not dehydrating, it's real composting <br />
@@ -139,7 +139,7 @@ const introProps: IPdpIntroProps = {
 
   // Introduction 第7部分 En
   pdpIntroSection6Props: {
-    title: 'Composting Made Easy',
+    title: 'Real Composting Made Easy',
     description: 'Loved by 100k+ gardeners',
     items: [
       {
