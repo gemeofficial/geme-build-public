@@ -22,7 +22,7 @@ export default function DownLoadMediaKit() {
       {items.map((item, index) => (
         <div
           key={index}
-          className="bg-gray-100 rounded-xl p-6 flex-1 flex flex-col justify-between min-h-60 lg:min-h-80"
+          className="bg-gray-100 rounded-xl p-6 flex-1 flex flex-col justify-between min-h-[240px] lg:min-h-[320px]"
         >
           <div>
             <div className="md:text-lg lg:text-xl xl:text-2xl font-bold">
