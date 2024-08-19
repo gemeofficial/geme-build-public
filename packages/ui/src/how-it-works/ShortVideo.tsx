@@ -12,6 +12,7 @@ export interface IShortVideoProps {
   title: ReactNode
   description: ReactNode
   imageUrl?: string
+  imageAlt?: string
   videoPosterUrl?: string
   videoSrcUrl?: string
   isReverse?: boolean
@@ -21,6 +22,7 @@ export function ShortVideo({
   title,
   description,
   imageUrl,
+  imageAlt,
   videoPosterUrl,
   videoSrcUrl,
   isReverse,
@@ -70,9 +72,8 @@ export function ShortVideo({
               className="max-w-full w-full rounded-2xl overflow-hidden object-cover"
               width={1600}
               height={900}
-              // src="/assets/images/how-it-works/dehydrator-vs-geme.png"
-              src="/assets/images/how-it-works/geme-vs-dehydrator.png"
-              alt="GEME composter vs food dehydrators"
+              src={imageUrl}
+              alt={imageAlt || 'GEME composter vs food dehydrators'}
             />
           )}
         </div>
