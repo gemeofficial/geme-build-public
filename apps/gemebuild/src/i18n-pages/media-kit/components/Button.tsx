@@ -30,7 +30,7 @@ export default function Button({
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        className={clsx('size-6', iconClassName)}
+        className={clsx('size-4 md:size-5 lg:size-6', iconClassName)}
       >
         <path
           stroke-linecap="round"

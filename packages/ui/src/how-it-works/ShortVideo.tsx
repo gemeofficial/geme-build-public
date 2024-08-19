@@ -16,6 +16,7 @@ export interface IShortVideoProps {
   videoPosterUrl?: string
   videoSrcUrl?: string
   isReverse?: boolean
+  compact?: boolean
 }
 
 export function ShortVideo({
@@ -26,6 +27,7 @@ export function ShortVideo({
   videoPosterUrl,
   videoSrcUrl,
   isReverse,
+  compact,
 }: IShortVideoProps) {
   let videoPosterSrc: undefined | string
   if (videoPosterUrl != null) {
@@ -38,7 +40,7 @@ export function ShortVideo({
   }
 
   return (
-    <SectionContainer className="flex flex-col lg:flex-row">
+    <SectionContainer className="flex flex-col lg:flex-row" compact={compact}>
       {/* mobile title-desc */}
       <div className="lg:hidden">
         <SectionTitle>{title}</SectionTitle>

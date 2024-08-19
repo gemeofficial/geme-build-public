@@ -1,9 +1,9 @@
 import { IShortVideoProps, ShortVideo } from 'ui'
-import Section1 from './components/Section1'
+import HeroSection from './components/HeroSection'
 import DownLoadMediaKit from './components/DownLoadMediaKit'
 import HignLightBar from './components/HignLightBar'
 
-// 图文section
+// Section2
 const imageTextProps: IShortVideoProps = {
   title: 'IFA Berlin',
   description: (
@@ -31,8 +31,8 @@ const imageTextProps: IShortVideoProps = {
 export function MediaKitPageEn() {
   return (
     <>
-      <Section1 />
-      <ShortVideo {...imageTextProps} />
+      <HeroSection />
+      <ShortVideo {...imageTextProps} compact />
       <DownLoadMediaKit />
       <HignLightBar />
     </>

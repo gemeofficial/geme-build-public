@@ -21,6 +21,7 @@ export * from './green-city-networks'
 export * from './customer-service'
 export * from './geme-care'
 export * from './ifa'
+export * from './media-kit'
 
 // contexts
 export * from '../contexts/link-context'
