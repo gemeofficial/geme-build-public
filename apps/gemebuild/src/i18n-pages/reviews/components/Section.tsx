@@ -1,13 +1,14 @@
 'use client'
 
 import clsx from 'clsx'
-import { SectionTitle } from 'ui'
+import { SectionDescription, SectionTitle } from 'ui'
 import { WaterfallFlow, IListItem } from 'ui/src/waterfall-flow'
 import { Link, Element } from 'react-scroll'
 import { ILinkComponent } from '../../../contexts/link-context'
 
 export interface IDataListProps {
   title: string
+  description: string
   pictures: IListItem[]
 }
 
@@ -75,8 +76,12 @@ export default function Section({
             >
               {item.title}
             </SectionTitle>
+            <SectionDescription className="mt-4">
+              {item.description}
+            </SectionDescription>
             <div className="mt-4 md:mt-6 xl:mt-8">
               <WaterfallFlow
+                type={index === 0 ? 'good' : index === 1 ? 'bad' : 'ugly'}
                 PrefetchLink={PrefetchLink}
                 pictures={item.pictures}
                 priority={index === 0}

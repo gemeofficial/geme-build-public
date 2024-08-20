@@ -6,6 +6,7 @@ const sectionDatas: ISectionProps = {
   datas: [
     {
       title: 'The Good',
+      description: 'The Good The Good The Good The Good The Good The Good The Good',
       pictures: [
         {
           src: '/assets/images/reviews-picture/next-16-heather-white-masked.png',
@@ -92,6 +93,7 @@ const sectionDatas: ISectionProps = {
     },
     {
       title: 'The Bad',
+      description: 'The Bad',
       pictures: [
         {
           src: '/assets/images/reviews-picture/bad/1-qr-code.png',
@@ -121,6 +123,7 @@ const sectionDatas: ISectionProps = {
     },
     {
       title: 'The Ugly',
+      description: 'The Ugly',
       pictures: [
         {
           src: '/assets/images/reviews-picture/ugly/1-star-giver.png',

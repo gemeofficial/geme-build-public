@@ -15,9 +15,12 @@ export interface IListItem {
   link?: string
 }
 
+type PictureType = 'good' | 'bad' | 'ugly'
+
 export interface IWaterfallFlowProps {
   pictures: IListItem[]
   buttonText: string
+  type: PictureType
   priority?: boolean
   PrefetchLink?: ILinkComponent
 }
@@ -49,7 +52,9 @@ function splitIntoThreePartsForList(list: any[]) {
 export function WaterfallFlow({
   pictures,
   priority,
+  type,
   buttonText,
+  PrefetchLink,
 }: IWaterfallFlowProps) {
   const [defaultList1, defaultList2, defaultList3] =
     splitIntoThreePartsForList(pictures)
@@ -95,9 +100,11 @@ export function WaterfallFlow({
         {list1.map((item, index) => (
           <ReviewsPictureCart
             item={item}
+            type={type}
             key={item.src + index}
             priority={priority}
             buttonText={buttonText}
+            PrefetchLink={PrefetchLink}
           />
         ))}
       </div>
@@ -105,9 +112,11 @@ export function WaterfallFlow({
         {list2.map((item, index) => (
           <ReviewsPictureCart
             item={item}
+            type={type}
             key={item.src + index}
             priority={priority}
             buttonText={buttonText}
+            PrefetchLink={PrefetchLink}
           />
         ))}
       </div>
@@ -115,9 +124,11 @@ export function WaterfallFlow({
         {list3.map((item, index) => (
           <ReviewsPictureCart
             item={item}
+            type={type}
             key={item.src + index}
             priority={priority}
             buttonText={buttonText}
+            PrefetchLink={PrefetchLink}
           />
         ))}
       </div>
@@ -128,11 +139,13 @@ export function WaterfallFlow({
 function ReviewsPictureCart({
   item,
   buttonText,
+  type,
   priority = false,
   PrefetchLink,
 }: {
   item: IListItem
   buttonText: string
+  type: PictureType
   priority?: boolean
   PrefetchLink?: ILinkComponent
 }) {
@@ -157,7 +170,16 @@ function ReviewsPictureCart({
         </div>
       )} */}
       {item.desc && (
-        <div className="p-2 lg:p-4 bg-gray-200">
+        <div
+          className={clsx(
+            'p-2 lg:p-4 ',
+            type === 'good'
+              ? 'bg-[#AEE4C1]'
+              : type === 'bad'
+                ? 'bg-v2311-text-yellow/90'
+                : 'bg-[#eda152]/90',
+          )}
+        >
           <div
             className={clsx(
               'italic text-xs lg:text-base',
@@ -169,6 +191,7 @@ function ReviewsPictureCart({
 
           {item.link && (
             <Link
+              target="_blank"
               href={item.link}
               className="text-xs xl:text-sm mt-1 group font-semibold leading-6 text-emerald-600 text-right inline-block w-full"
             >
