@@ -125,7 +125,8 @@ const sectionDatas: ISectionProps = {
     },
     {
       title: 'The Ugly',
-      description: 'Sometimes, people will attach us for some reason.',
+      description:
+        'Sometimes, people will just attack us for some reason or no reason.',
       pictures: [
         {
           src: '/assets/images/reviews-picture/ugly/1-star-giver.png',
@@ -138,6 +139,12 @@ const sectionDatas: ISectionProps = {
           alt: 'GEME Composter Reviews Pictures Ugly',
           desc: 'Review for pricing without even using it, it is not fair!',
           link: 'https://www.amazon.de/-/en/gp/customer-reviews/R141WZ4N2FODBD/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0CJY4K9J3',
+        },
+        {
+          src: '/assets/images/reviews-picture/ugly/3-scam.png',
+          alt: 'GEME Composter Reviews Pictures Ugly',
+          desc: 'Very serious attack from our hater.',
+          link: 'https://www.reddit.com/r/composting/comments/yxvc4u/scam_compost_product_advertises_composting_dog/',
         },
       ],
     },
