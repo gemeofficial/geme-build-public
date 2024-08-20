@@ -5,7 +5,7 @@ import { IReviewsPageProps } from './en'
 const sectionDatas: ISectionProps = {
   datas: [
     {
-      title: 'Das Gute',
+      title: 'The Good',
       description:
         'Direktes Feedback von unseren Kunden in unseren täglichen Kunden-Support-E-Mails. Wir behandeln den Kunden-Support ernsthaft und solche warmen Worte treiben uns voran!',
       pictures: [
@@ -93,7 +93,7 @@ const sectionDatas: ISectionProps = {
       ],
     },
     {
-      title: 'Das Schlechte',
+      title: 'The Bad',
       description:
         'Nun, schlechte Bewertungen passieren manchmal, es gibt keine Entschuldigung, wir werden uns wie immer weiter verbessern.',
       pictures: [
@@ -124,8 +124,9 @@ const sectionDatas: ISectionProps = {
       ],
     },
     {
-      title: 'Das Hässliche',
-      description: 'Manchmal greifen uns Leute aus irgendeinem Grund an.',
+      title: 'The Ugly',
+      description:
+        'Manchmal werden Menschen uns aus irgendeinem Grund oder ohne Grund angreifen.',
       pictures: [
         {
           src: '/assets/images/reviews-picture/ugly/1-star-giver.png',
@@ -139,12 +140,17 @@ const sectionDatas: ISectionProps = {
           desc: 'Bewertung des Preises ohne es überhaupt zu benutzen, das ist nicht fair!',
           link: 'https://www.amazon.de/-/en/gp/customer-reviews/R141WZ4N2FODBD/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0CJY4K9J3',
         },
+        {
+          src: '/assets/images/reviews-picture/ugly/3-scam.png',
+          alt: 'GEME Komposter Bewertungen Bilder Hässlich',
+          desc: 'Sehr ernster Angriff von einem unserer Hasser.',
+          link: 'https://www.reddit.com/r/composting/comments/yxvc4u/scam_compost_product_advertises_composting_dog/',
+        },
       ],
     },
   ],
   buttonText: 'Details ansehen',
 }
-
 
 function ReviewsPageDe({ PrefetchLink }: IReviewsPageProps) {
   return <Section {...sectionDatas} PrefetchLink={PrefetchLink} />

@@ -5,7 +5,7 @@ import { IReviewsPageProps } from './en'
 const sectionDatas: ISectionProps = {
   datas: [
     {
-      title: 'Le Bon',
+      title: 'The Good',
       description: `Retour direct de nos clients dans nos e-mails de support client quotidiens. Nous prenons le support client au sérieux et ces mots chaleureux nous poussent à aller de l'avant !`,
       pictures: [
         {
@@ -92,7 +92,7 @@ const sectionDatas: ISectionProps = {
       ],
     },
     {
-      title: 'Le Mauvais',
+      title: 'The Bad',
       description:
         "Eh bien, les mauvaises critiques arrivent parfois, il n'y a pas d'excuse, nous continuerons à nous améliorer comme nous l'avons toujours fait.",
       pictures: [
@@ -123,9 +123,9 @@ const sectionDatas: ISectionProps = {
       ],
     },
     {
-      title: 'Le Laid',
+      title: 'The Ugly',
       description:
-        'Parfois, les gens nous attaquent pour une raison quelconque.',
+        'Parfois, les gens nous attaqueront pour une raison ou sans raison.',
       pictures: [
         {
           src: '/assets/images/reviews-picture/ugly/1-star-giver.png',
@@ -138,6 +138,12 @@ const sectionDatas: ISectionProps = {
           alt: "Photos d'avis sur le composteur GEME Laid",
           desc: "Revue pour le prix sans même l'avoir utilisé, ce n'est pas juste !",
           link: 'https://www.amazon.de/-/en/gp/customer-reviews/R141WZ4N2FODBD/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0CJY4K9J3',
+        },
+        {
+          src: '/assets/images/reviews-picture/ugly/3-scam.png',
+          alt: 'GEME Composteur Avis Photos Laides',
+          desc: "Attaque très sérieuse de la part d'un de nos détracteurs.",
+          link: 'https://www.reddit.com/r/composting/comments/yxvc4u/scam_compost_product_advertises_composting_dog/',
         },
       ],
     },
