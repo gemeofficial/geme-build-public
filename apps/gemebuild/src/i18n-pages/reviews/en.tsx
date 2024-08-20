@@ -131,13 +131,13 @@ const sectionDatas: ISectionProps = {
         {
           src: '/assets/images/reviews-picture/ugly/1-star-giver.png',
           alt: 'GEME Composter Reviews Pictures Ugly',
-          desc: 'Anna Meer reviewed for paid obviously, shame!',
+          desc: 'Anna Meer, to her shame, was paid to write the review. She left same reviews to 3 different product at the same time.',
           link: 'https://www.amazon.com/gp/customer-reviews/R3LVX9XYFMZNZ3/ref=cm_cr_getr_d_rvw_ttl?ie=UTF8&ASIN=B0BV31KTCN',
         },
         {
           src: '/assets/images/reviews-picture/ugly/2-too-expensive.png',
           alt: 'GEME Composter Reviews Pictures Ugly',
-          desc: 'Review for pricing without even using it, it is not fair!',
+          desc: "It's unfair to review a product based on price without trying it.",
           link: 'https://www.amazon.de/-/en/gp/customer-reviews/R141WZ4N2FODBD/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B0CJY4K9J3',
         },
         {
