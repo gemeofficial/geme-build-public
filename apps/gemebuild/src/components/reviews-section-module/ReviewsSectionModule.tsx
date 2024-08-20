@@ -1,3 +1,4 @@
+import { ReactNode } from 'react'
 import {
   IReviewsSectionConfig,
   ReviewsSection,
@@ -5,6 +6,8 @@ import {
   SectionTitle,
 } from 'ui'
 import { LocaleType } from 'ui'
+import { ILinkComponent } from '../../i18n-pages'
+import DefaultLink from 'next/link'
 
 interface IMutilLanguageTextInfo {
   en: ITextInfo
@@ -14,7 +17,15 @@ interface IMutilLanguageTextInfo {
 
 interface ITextInfo {
   title: string
-  description: string
+  description: ReactNode
+}
+
+export interface IReviewsSectionModuleProps {
+  reviewsSectionConfig: IReviewsSectionConfig
+  locale: LocaleType
+  title?: string
+  description?: string
+  PrefetchLink?: ILinkComponent
 }
 
 const mutilLanguageTextInfo: IMutilLanguageTextInfo = {
@@ -32,20 +43,24 @@ const mutilLanguageTextInfo: IMutilLanguageTextInfo = {
   },
 }
 
+const linkTextInfo = {
+  en: 'Check more evidence',
+  de: 'Mehr Beweise prüfen',
+  fr: 'Vérifiez plus de preuves',
+}
+
 export function ReviewsSectionModule({
   reviewsSectionConfig,
   locale,
   description,
   title,
-}: {
-  reviewsSectionConfig: IReviewsSectionConfig
-  locale: LocaleType
-  title?: string
-  description?: string
-}) {
+  PrefetchLink,
+}: IReviewsSectionModuleProps) {
   const defaultTextInfo = mutilLanguageTextInfo[locale]
   const currentTitle = title || defaultTextInfo.title
   const currentDescription = description || defaultTextInfo.description
+
+  const Link = PrefetchLink ? PrefetchLink : DefaultLink
 
   return (
     <div className="bg-white pt-10 xl:pt-14 pb-10">
@@ -53,6 +68,12 @@ export function ReviewsSectionModule({
         <SectionTitle>{currentTitle}</SectionTitle>
         <SectionDescription className="mt-4">
           {currentDescription}
+          <Link
+            href="/reviews"
+            className="ml-2 text-sm font-semibold leading-6 text-emerald-600 hover:underline"
+          >
+            {linkTextInfo[locale]}
+          </Link>
         </SectionDescription>
       </div>
       <ReviewsSection
