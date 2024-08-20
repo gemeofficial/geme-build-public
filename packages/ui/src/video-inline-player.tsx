@@ -32,7 +32,7 @@ export function PlayIcon({
   )
 }
 
-function VideoInlinePlayer({
+export function VideoInlinePlayer({
   videoUrl,
   description,
   playButtonSize,
@@ -122,7 +122,7 @@ function VideoInlinePlayer({
 }
 
 interface IPlayButtonProps extends IVideoInlinePlayerProps {
-  onClick?: MouseEventHandler<HTMLDivElement> 
+  onClick?: MouseEventHandler<HTMLDivElement>
   size?: 'small' | 'medium' | 'large'
 }
 
@@ -134,23 +134,21 @@ function PlayButton({
   hiddenPlayIcon = false,
 }: PropsWithChildren<IPlayButtonProps>) {
   return (
-    <div
-      onClick={onClick}
-      className="group"
-    >
+    <div onClick={onClick} className="group">
       <span className="sr-only">{description}</span>
       {children}
-      <span
-        className="absolute inset-0 flex h-full w-full items-center justify-center"
-        aria-hidden="true"
-      >
-        {!hiddenPlayIcon && (
+
+      {!hiddenPlayIcon && (
+        <span
+          className="absolute inset-0 flex h-full w-full items-center justify-center"
+          aria-hidden="true"
+        >
           <PlayIcon
             size={size}
             className="opacity-80 group-focus:opacity-100 group-hover:opacity-100 group-active:opacity-100 xl:opacity-50 xl:group-hover:opacity-100 transition-opacity"
           />
-        )}
-      </span>
+        </span>
+      )}
     </div>
   )
 }
@@ -165,5 +163,3 @@ export interface IVideoInlinePlayerProps {
     payload?: { [key: string]: any }
   }
 }
-
-export default VideoInlinePlayer

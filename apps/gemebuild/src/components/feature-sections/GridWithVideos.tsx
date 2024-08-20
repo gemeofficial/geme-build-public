@@ -4,7 +4,7 @@
 // cf: https://tailwindui.com/components/marketing/sections/feature-sections#component-cdca7eda27bdaceb45026dca4c17efe7
 import React, { ReactNode } from 'react'
 import Image from 'next/image'
-import VideoInlinePlayer from 'ui/src/video-inline-player'
+import { VideoInlinePlayer } from 'ui'
 
 export interface IGridWithVideosProps {
   heading?: string

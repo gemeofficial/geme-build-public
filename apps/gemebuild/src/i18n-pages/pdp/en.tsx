@@ -62,7 +62,7 @@ const introProps: IPdpIntroProps = {
   contentSection71Props: {
     title: 'From Waste To Wonder',
     description:
-      "Let's dive into the tiny superheroes that create a significant impact: microbes (GEME Kobold). Similar to the friendly microbes aiding digestion in your gut, with ideal conditions and regular rotation mixing, they quickly transform food scraps into organic compost.",
+      "Let's dive into the tiny superheroes that create a significant impact: microbes (GEME Kobold). Similar to the good bacteria aiding digestion in your gut, with ideal conditions and regular rotation mixing, they quickly transform food scraps into organic compost.",
 
     withImageOrVideo: {
       type: 'video',
@@ -81,7 +81,7 @@ const introProps: IPdpIntroProps = {
 
   // Introduction 第3部分 En
   contentSection72Props: {
-    title: 'Silent Operation',
+    title: 'Work While You Sleep, Energy Saving and Quiet',
     description:
       'GEME Sound level around 35-45 dB, the quietest composter on the marketing.',
     withImageOrVideo: {
@@ -106,7 +106,7 @@ const introProps: IPdpIntroProps = {
 
   // Introduction 第5部分 En
   contentSection21Props: {
-    title: 'Keep Throwing Garbage, GEME Take Care of the Rest',
+    title: 'No Daily Cleaning Required, Take Months to Fill Up',
     description: (
       <>
         🫳&nbsp;&nbsp;Add waste at anytime <br />
@@ -124,7 +124,7 @@ const introProps: IPdpIntroProps = {
 
   // Introduction 第6部分 En
   contentSection22Props: {
-    title: 'Innovative Microbes Based Garbage Disposal, Work Quickly & Safely',
+    title: 'Microorganism Breakdown, Not Electrical Heating',
     description: (
       <>
         🔥&nbsp;&nbsp;Not dehydrating, it's real composting <br />
@@ -139,7 +139,7 @@ const introProps: IPdpIntroProps = {
 
   // Introduction 第7部分 En
   pdpIntroSection6Props: {
-    title: 'Composting Made Easy',
+    title: 'Real Composting Made Easy',
     description: 'Loved by 100k+ gardeners',
     items: [
       {
@@ -188,10 +188,10 @@ const introProps: IPdpIntroProps = {
   // Introduction 第8部分 En
   pdpIntroSection7Props: {
     title: 'Big, More & Long Term',
-    description: 'Work 7x24 But Energy Saving',
+    description: '',
     features: [
-      '😄 10+ people family daily using',
-      '📅 3 months no cleaning required',
+      '🏡 10+ people family daily using',
+      '🐳 11£/5kg daily feed capacity',
       '💰 Worth the price',
     ],
   },
