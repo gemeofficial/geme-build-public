@@ -6,7 +6,8 @@ const sectionDatas: ISectionProps = {
   datas: [
     {
       title: 'The Good',
-      description: 'The Good The Good The Good The Good The Good The Good The Good',
+      description:
+        'Direct feedback from our customers in our daily customer support emails. We treat customer support seriously and such warm words keep us moving forward!',
       pictures: [
         {
           src: '/assets/images/reviews-picture/next-16-heather-white-masked.png',
@@ -34,9 +35,9 @@ const sectionDatas: ISectionProps = {
           desc: 'Customer Michale get a problem, we fix it.',
         },
         {
-          src: '/assets/images/reviews-picture/5-greer.png',
-          alt: 'GEME Composter Reviews Pictures 5-greer.png',
-          desc: 'Amazing super quickly breakdown speed!',
+          src: '/assets/images/reviews-picture/11-louis.png',
+          alt: 'GEME Composter Reviews Pictures 11-louis.png',
+          desc: '',
         },
         {
           src: '/assets/images/reviews-picture/4-brian-m.png',
@@ -60,14 +61,14 @@ const sectionDatas: ISectionProps = {
           desc: 'Change kitchen habits',
         },
         {
+          src: '/assets/images/reviews-picture/5-greer.png',
+          alt: 'GEME Composter Reviews Pictures 5-greer.png',
+          desc: 'Amazing super quickly breakdown speed!',
+        },
+        {
           src: '/assets/images/reviews-picture/10-justin.png',
           alt: 'GEME Composter Reviews Pictures 10-justin.png',
           desc: 'One GEME beats 2 Reencle',
-        },
-        {
-          src: '/assets/images/reviews-picture/11-louis.png',
-          alt: 'GEME Composter Reviews Pictures 11-louis.png',
-          desc: '',
         },
         {
           src: '/assets/images/reviews-picture/12-willi.png',
@@ -93,7 +94,8 @@ const sectionDatas: ISectionProps = {
     },
     {
       title: 'The Bad',
-      description: 'The Bad',
+      description:
+        'Well, bad reviews happen sometimes, there is no excuse, we will keep improving as we always did.',
       pictures: [
         {
           src: '/assets/images/reviews-picture/bad/1-qr-code.png',
@@ -123,7 +125,7 @@ const sectionDatas: ISectionProps = {
     },
     {
       title: 'The Ugly',
-      description: 'The Ugly',
+      description: 'Sometimes, people will attach us for some reason.',
       pictures: [
         {
           src: '/assets/images/reviews-picture/ugly/1-star-giver.png',
