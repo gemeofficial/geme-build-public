@@ -426,10 +426,12 @@ const specProps: IPdpSpecProps = {
       {
         id: 5,
         name: 'Leistung',
-        description: `
-          <p>AC110V-60Hz(Modell G601N-2K für Nordamerika)</p>
-          <p>AC220V-50Hz(Modell G601U-2K für Europa)</p>
-        `,
+        description: (
+          <>
+            <p>AC110V-60Hz(Modell G601N-2K für Nordamerika)</p>
+            <p>AC220V-50Hz(Modell G601U-2K für Europa)</p>
+          </>
+        ),
       },
       {
         id: 6,
