@@ -427,10 +427,12 @@ const specProps: IPdpSpecProps = {
       {
         id: 5,
         name: 'Puissance',
-        description: `
-          <p>AC110V-60Hz(Modèle G601N-2K pour l'Amérique du Nord)</p>
-          <p>AC220V-50Hz(Modèle G601U-2K pour l'Europe)</p>
-        `,
+        description: (
+          <>
+            <p>AC110V-60Hz(Modèle G601N-2K pour l'Amérique du Nord)</p>
+            <p>AC220V-50Hz(Modèle G601U-2K pour l'Europe)</p>
+          </>
+        ),
       },
       {
         id: 6,
