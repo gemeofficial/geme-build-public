@@ -3,8 +3,8 @@ import {
   TruckIcon,
   ChatBubbleLeftRightIcon,
 } from '@heroicons/react/24/solid'
-import { ILinkComponent } from '../../../../apps/gemebuild/src/contexts/link-context'
-import { SectionDescription, SectionTitle } from '../ui-components'
+import { SectionDescription, SectionTitle } from 'ui'
+import { ILinkComponent } from '../../../../contexts/link-context'
 
 export interface IPdpWarranty {
   title: string
@@ -62,9 +62,7 @@ export function PdpWarranty({
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <SectionTitle>{title}</SectionTitle>
-        <SectionDescription className="mt-6">
-          {description}
-        </SectionDescription>
+        <SectionDescription className="mt-6">{description}</SectionDescription>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {features.map((feature) => (

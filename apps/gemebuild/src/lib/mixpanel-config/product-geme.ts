@@ -20,7 +20,7 @@ interface IMixpanelEventHandles {
   clickBuyNowFromCompare: MixpanelEventHandleType
   changeUserStory: MixpanelEventHandleType
   clickPrevReviews: MixpanelEventHandleType
-  clickReviewsCard: MixpanelEventHandleType
+  viewReviewsImage: MixpanelEventHandleType
   clickNextReviews: MixpanelEventHandleType
   postReview: MixpanelEventHandleType
   writeReview: MixpanelEventHandleType
@@ -103,9 +103,9 @@ export const productGemeMixpanelEventHandles: IMixpanelEventHandles = {
       payload,
     })
   },
-  clickReviewsCard(payload) {
+  viewReviewsImage(payload) {
     mixpanelTrack({
-      eventName: EMixpanelEvent.ClickReviewsCard,
+      eventName: EMixpanelEvent.ViewReviewsImage,
       from: EFrom.Product_Geme,
       payload,
     })

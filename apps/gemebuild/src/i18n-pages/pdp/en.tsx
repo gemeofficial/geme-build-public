@@ -1,13 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { FC } from 'react'
 import { ILinkComponent } from '../../contexts/link-context'
-import {
-  IPdpUserStoryTeamSectionsProps,
-  IReviewsSectionConfig,
-  LocaleType,
-  PdpIntroSection3,
-  PdpIntroSection4,
-} from 'ui'
+import { IReviewsSectionConfig, LocaleType } from 'ui'
 import PdpIntroEnContent, { IPdpContentProps, IPdpTabsText } from './components'
 import { IPdpIntroProps } from './components/Intro'
 import { IPdpCompareProps } from './components/Compare'
@@ -17,6 +11,11 @@ import {
   TruckIcon,
   ChatBubbleLeftRightIcon,
 } from '@heroicons/react/24/solid'
+import {
+  IPdpUserStoryTeamSectionsProps,
+  PdpIntroSection3,
+  PdpIntroSection4,
+} from './components/product-components'
 
 export interface IProductProps {
   ReviewsComponent: FC<{}>

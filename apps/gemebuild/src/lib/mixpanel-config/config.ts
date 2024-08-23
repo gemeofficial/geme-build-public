@@ -50,7 +50,7 @@ export enum EMixpanelEvent {
   ClickBuyNow = 'Click Buy Now',
   ChangeUserStory = 'Change User Story',
   ClickPrevReviews = 'Click Prev Reviews',
-  ClickReviewsCard = 'Click Reviews Card',
+  ViewReviewsImage = 'View Reviews Image',
   ClickNextReviews = 'Click Next Reviews',
   PostReview = 'Post Review',
   WriteReview = 'Write Review',

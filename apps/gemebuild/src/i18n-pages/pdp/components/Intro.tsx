@@ -1,22 +1,25 @@
 /* eslint-disable react/no-unescaped-entities */
 import {
-  PdpIntroSection1,
-  ContentSection7,
   ContentSection2,
+  ContentSection7,
+  ContentSection8,
+  type IContentSection2Props,
+  type IContentSection7Props,
+  type IContentSection8Props,
+} from 'ui'
+
+import {
+  PdpIntroSection1,
   PdpIntroSection5,
   PdpIntroSection6,
   PdpIntroSection7,
-  ContentSection8,
-} from 'ui'
+} from './product-components'
 import type {
   IPdpIntroSection1Props,
-  IContentSection7Props,
-  IContentSection2Props,
   IPdpIntroSection5Props,
   IPdpIntroSection6Props,
   IPdpIntroSection7Props,
-  IContentSection8Props,
-} from 'ui'
+} from './product-components'
 
 export interface IPdpIntroProps {
   pdpIntroSection1Props: IPdpIntroSection1Props

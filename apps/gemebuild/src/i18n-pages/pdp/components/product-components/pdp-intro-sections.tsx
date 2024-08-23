@@ -1,14 +1,15 @@
 import { ReactNode, SVGProps } from 'react'
-import classNames from '../lib/classNames'
 import {
   IconCheckCycle,
+  IconCycleArrow,
   IconXCycle,
   SvgGreenArrow,
   usingCompostIcons,
-} from '../pdp-intro-svgs'
-import { IconCycleArrow } from '../icons'
+} from 'ui'
+
 import Image from 'next/image'
-import { SectionDescription, SectionTitle } from '../ui-components'
+import { SectionDescription, SectionTitle } from 'ui'
+import classNames from 'ui/src/lib/classNames'
 interface IPdpIntroSection1Props {
   title?: ReactNode
   description?: ReactNode

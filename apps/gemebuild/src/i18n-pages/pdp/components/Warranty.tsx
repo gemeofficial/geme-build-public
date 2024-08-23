@@ -1,5 +1,5 @@
 import { ILinkComponent } from '../../../contexts/link-context'
-import { IPdpWarranty, PdpWarranty } from 'ui'
+import { IPdpWarranty, PdpWarranty } from './product-components'
 
 export interface IPdpWarrantyProps extends IPdpWarranty {
   Link?: ILinkComponent
