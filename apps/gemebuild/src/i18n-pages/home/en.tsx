@@ -29,6 +29,7 @@ import { Footprints, type IFootprintsProps } from '../../components/footprints'
 import { Newsletter, INewsletterProps } from './containers/newsletter'
 import { ILinkComponent } from '../../contexts/link-context'
 import { ReviewsSectionModule } from '../../components/reviews-section-module'
+import { mixpanelEventHandles } from '../../lib/mixpanel-config'
 
 // 首页video部分的内容数据配置 En
 const heroSection1Props: IHeroSection1Props = {
@@ -449,11 +450,17 @@ function HomePageEn({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
 
   return (
     <>
-      <HeroSection1 {...heroSection1Props} />
+      <HeroSection1
+        {...heroSection1Props}
+        heroSectionsButtonOnClick={mixpanelEventHandles.homeHeroButton}
+        onPlayCallback={mixpanelEventHandles.homeWatchVideoFromHero}
+      />
 
-      {/*<ContentSection2 {...contentSection2Props} />*/}
       <ContentSection3 {...contentSection3Props} />
-      <ContentSection4 {...contentSection4Props} />
+      <ContentSection4
+        {...contentSection4Props}
+        onPlayCallback={mixpanelEventHandles.homeWatchVideoFromStopLandfilling}
+      />
 
       <SecondLife {...secondLifeProps} />
 
@@ -473,7 +480,12 @@ function HomePageEn({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
         {...reviewsSectionProps}
       /> */}
 
-      <UserStoriesVideos {...userStoriesVideosProps} />
+      <UserStoriesVideos
+        {...userStoriesVideosProps}
+        onPlayCallback={(payload) => {
+          mixpanelEventHandles.homeWatchVideoFromWhatCustomersSay(payload)
+        }}
+      />
 
       <Footprints {...footprintsProps} />
 

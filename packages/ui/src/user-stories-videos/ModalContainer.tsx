@@ -11,24 +11,28 @@ import {
   TikTokEmbed,
 } from 'react-social-media-embed'
 import { VideoLoading } from '../loading-components'
-import { hasMixpanel } from '../lib'
-import mixpanel from 'mixpanel-browser'
 
 export interface ModalContainer {
   type: videoType
   src: string
   coverImageUrl: string
+  name: string
   className?: string
-  mixpanelFrom?: string
+  onPlayCallback?: (payload: {
+    src: string
+    type: string
+    name: string
+  }) => void
 }
 
 export default function ModalContainer({
   coverImageUrl,
   src,
   type,
+  name,
   children,
   className,
-  mixpanelFrom,
+  onPlayCallback,
 }: PropsWithChildren<ModalContainer>) {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -41,7 +45,7 @@ export default function ModalContainer({
   }
 
   const closeModal = () => setIsOpen(false)
-  
+
   const [paddingBottom, setPaddingBottom] = useState('56.25%')
   const [commonProps, setcommonProps] = useState<any>(defaultCommonProps)
 
@@ -64,13 +68,7 @@ export default function ModalContainer({
       {/* children */}
       <div
         onClick={() => {
-          if (hasMixpanel()) {
-            mixpanel.track('Watch Video', {
-              From: mixpanelFrom || '',
-              link: src,
-              videoType: type,
-            })
-          }
+          onPlayCallback && onPlayCallback({ src, type, name })
           setIsOpen(true)
         }}
         className={className}
