@@ -1,10 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import {
-  IPdpUserStoryTeamSectionsProps,
-  LocaleType,
-  PdpIntroSection3,
-  PdpIntroSection4,
-} from 'ui'
+import { LocaleType } from 'ui'
 import PdpIntroEnContent, { IPdpContentProps, IPdpTabsText } from './components'
 import { IPdpIntroProps } from './components/Intro'
 import { IPdpCompareProps } from './components/Compare'
@@ -14,6 +9,11 @@ import {
   TruckIcon,
   ChatBubbleLeftRightIcon,
 } from '@heroicons/react/24/solid'
+import {
+  IPdpUserStoryTeamSectionsProps,
+  PdpIntroSection3,
+  PdpIntroSection4,
+} from './components/product-components'
 import { IProductProps } from './en'
 
 const locale: LocaleType = 'fr'

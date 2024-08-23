@@ -8,13 +8,14 @@ import { ReactNode, useMemo } from 'react'
 
 import {
   IPdpTabsProps,
-  IPdpUserStoryTeamSectionsProps,
   LocaleType,
   ReviewsScoreHeader,
 } from 'ui'
 import { ReviewsSectionModule } from '../../../components/reviews-section-module'
 import Compare, { IPdpCompareProps } from './Compare'
 import { IProductProps } from '../en'
+import { productGemeMixpanelEventHandles } from '../../../lib/mixpanel-config/product-geme'
+import { IPdpUserStoryTeamSectionsProps } from './product-components'
 
 export interface IPdpTabsText {
   intro: ReactNode
@@ -113,7 +114,14 @@ function PdpContent(props: IPdpContentProps) {
     [],
   )
 
-  return <ScrollablePdpTabsWithAnchorOffset {...datas} />
+  return (
+    <ScrollablePdpTabsWithAnchorOffset
+      {...datas}
+      onClickCallback={(tabsName) => {
+        productGemeMixpanelEventHandles.changeTabs({ tabsName })
+      }}
+    />
+  )
 }
 
 export default PdpContent

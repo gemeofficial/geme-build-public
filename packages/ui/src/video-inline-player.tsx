@@ -4,7 +4,6 @@ import { Dialog, Transition } from '@headlessui/react'
 import { MouseEventHandler, PropsWithChildren, useState, Fragment } from 'react'
 import { XCircleIcon } from '@heroicons/react/24/solid'
 import classNames from './lib/classNames'
-import mixpanel from 'mixpanel-browser'
 
 export function PlayIcon({
   size = 'large',
@@ -38,7 +37,7 @@ export function VideoInlinePlayer({
   playButtonSize,
   children,
   hiddenPlayIcon,
-  mixpanelStatPayload,
+  onPlayCallback,
 }: PropsWithChildren<IVideoInlinePlayerProps>) {
   let [isOpen, setIsOpen] = useState(false)
 
@@ -50,16 +49,6 @@ export function VideoInlinePlayer({
     setIsOpen(true)
   }
 
-  // 向后台发送统计信息
-  function mixpanelStatHandler() {
-    if (mixpanelStatPayload) {
-      mixpanel.track(
-        mixpanelStatPayload.title,
-        mixpanelStatPayload?.payload || {},
-      )
-    }
-  }
-
   return (
     <>
       <PlayButton
@@ -68,7 +57,7 @@ export function VideoInlinePlayer({
         size={playButtonSize}
         onClick={() => {
           openModal()
-          mixpanelStatHandler()
+          onPlayCallback && onPlayCallback()
         }}
         hiddenPlayIcon={hiddenPlayIcon}
       >
@@ -158,8 +147,5 @@ export interface IVideoInlinePlayerProps {
   description?: string
   playButtonSize?: IPlayButtonProps['size']
   hiddenPlayIcon?: boolean
-  mixpanelStatPayload?: {
-    title: string
-    payload?: { [key: string]: any }
-  }
+  onPlayCallback?: () => void
 }

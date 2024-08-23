@@ -1,5 +1,7 @@
-import { PdpUserStoryTeamSections } from 'ui'
-import type { IPdpUserStoryTeamSectionsProps } from 'ui'
+import {
+  IPdpUserStoryTeamSectionsProps,
+  PdpUserStoryTeamSections,
+} from './product-components'
 
 function UserStory({
   pdpUserStoryTeamSectionsProps,

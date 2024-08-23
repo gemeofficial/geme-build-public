@@ -255,6 +255,8 @@ interface IContentSection4Props {
         videoPosterImage?: IImgProps
         videoSrcUrl?: string
       }
+
+  onPlayCallback?: () => void
 }
 
 const contentSection4Props: IContentSection4Props = {
@@ -289,6 +291,7 @@ function ContentSection4({
   title,
   description,
   withMp4VideoOrYoutubeVideo,
+  onPlayCallback
 }: IContentSection4Props): JSX.Element {
   return (
     <section
@@ -332,6 +335,7 @@ function ContentSection4({
               <VideoInlinePlayer
                 videoUrl={withMp4VideoOrYoutubeVideo?.videoSrcUrl}
                 description="Watch our video to learn more"
+                onPlayCallback={onPlayCallback}
               >
                 <Image
                   src={withMp4VideoOrYoutubeVideo?.videoPosterImage?.src || ''}

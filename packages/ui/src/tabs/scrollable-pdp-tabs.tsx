@@ -7,6 +7,7 @@ import { IPdpTabsProps } from './pdp-tabs'
 
 interface IScrollablePdpTabsProps extends IPdpTabsProps {
   anchorOffset?: number
+  onClickCallback?: (tabs?: string) => void
 }
 
 const scrollablePdpTabsProps: IScrollablePdpTabsProps = {
@@ -58,13 +59,19 @@ const tabLabelToIdMaps = new Map<string, string>([
   ['Warranty', 'pdp-warranty-section'],
 ])
 
-function ScrollablePdpTabs({ tabs, anchorOffset }: IScrollablePdpTabsProps) {
+function ScrollablePdpTabs({
+  tabs,
+  anchorOffset,
+  onClickCallback,
+}: IScrollablePdpTabsProps) {
   const tabsClickHandler = (tabOriginName: string | undefined) => {
     const id = tabLabelToIdMaps.get(tabOriginName as string)
     if (!id) return
 
     const el = document.getElementById(id)
     if (el) el.style.height = '100%'
+
+    onClickCallback && onClickCallback(tabOriginName)
   }
 
   return (

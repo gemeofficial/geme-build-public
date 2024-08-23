@@ -13,6 +13,8 @@ interface IHeroSection1Props {
     src: string // 视频源的URL
     posterUrl: string // 视频源封面
   }
+  heroSectionsButtonOnClick?: () => void
+  onPlayCallback?: () => void
   LinkComponent?: ILinkComponent
   fullScreenVideoUrl?: string
   heroImageUrlPc: string // 首屏大图URL
@@ -50,6 +52,8 @@ const heroSection1Props: IHeroSection1Props = {
   },
   heroImageUrlPc: '/assets/images/home-v2311/cover-v3.jpg',
   heroImageUrlMobile: '/assets/images/home-v2311/cover-v3-mobile.jpg',
+  heroSectionsButtonOnClick() {},
+  onPlayCallback() {},
 }
 
 function HeroSection1({
@@ -62,6 +66,8 @@ function HeroSection1({
   fullScreenVideoUrl,
   heroImageUrlPc,
   heroImageUrlMobile,
+  heroSectionsButtonOnClick,
+  onPlayCallback,
 }: IHeroSection1Props) {
   return (
     <div className="h-screen ">
@@ -110,23 +116,21 @@ function HeroSection1({
           </p>
         )}
         <HeroSectionsButton
+          onClick={heroSectionsButtonOnClick}
           LinkComponent={LinkComponent}
           linkText={linkText}
           linkUrl={linkUrl}
         />
       </div>
 
-      {/* 全屏播放器 */}
+      {/* 视频播放器 */}
       <VideoInlinePlayer
         videoUrl={
           fullScreenVideoUrl || 'https://www.youtube.com/embed/ROJYZBp0jcM'
         }
         description="Watch our video to learn more"
         hiddenPlayIcon={true}
-        mixpanelStatPayload={{
-          title: 'Watch video',
-          payload: { From: 'Home hero video' },
-        }}
+        onPlayCallback={onPlayCallback}
       >
         <div className="portrait:w-48 portrait:h-28 absolute right-[18px] bottom-[18px] z-40">
           {/* 右下角视频小窗 */}

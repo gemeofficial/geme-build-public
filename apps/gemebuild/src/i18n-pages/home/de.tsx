@@ -27,9 +27,9 @@ import type {
 } from 'ui'
 import { Footprints, type IFootprintsProps } from '../../components/footprints'
 import { Newsletter, INewsletterProps } from './containers/newsletter'
-import { ILinkComponent } from '../../contexts/link-context'
 import { ReviewsSectionModule } from '../../components/reviews-section-module'
 import { IHomePageProps } from './en'
+import { homeMixpanelEventHandles } from '../../lib/mixpanel-config/home'
 
 // 首页video部分的内容数据配置 De
 const heroSection1Props: IHeroSection1Props = {
@@ -469,11 +469,17 @@ function HomePageDe({
   heroSection1Props.LinkComponent = PrefetchLink
   return (
     <>
-      <HeroSection1 {...heroSection1Props} />
+      <HeroSection1
+        {...heroSection1Props}
+        heroSectionsButtonOnClick={homeMixpanelEventHandles.heroButton}
+        onPlayCallback={homeMixpanelEventHandles.watchVideoFromHero}
+      />
 
-      {/*<ContentSection2 {...contentSection2Props} />*/}
       <ContentSection3 {...contentSection3Props} />
-      <ContentSection4 {...contentSection4Props} />
+      <ContentSection4
+        {...contentSection4Props}
+        onPlayCallback={homeMixpanelEventHandles.watchVideoFromStopLandfilling}
+      />
 
       <SecondLife {...secondLifeProps} />
 
@@ -483,21 +489,26 @@ function HomePageDe({
         <ContentSection1 {...contentSection1Props3} />
       </div>
 
-      <div className=" bg-v2311-bg-light-green ">
+      <div className=" bg-v2311-bg-light-green">
         <ContentSection5 {...contentSection5Props} />
       </div>
 
       {/* <ReviewsSectionModule
-        locale="de"
+        locale="en"
         reviewsSectionConfig={reviewsSectionConfig}
         {...reviewsSectionProps}
       /> */}
 
-      <UserStoriesVideos {...userStoriesVideosProps} />
+      <UserStoriesVideos
+        {...userStoriesVideosProps}
+        onPlayCallback={(payload) => {
+          homeMixpanelEventHandles.watchVideoFromWhatCustomersSay(payload)
+        }}
+      />
 
       <Footprints {...footprintsProps} />
 
-      <Newsletter {...newsltterProps}/>
+      <Newsletter {...newsltterProps} />
     </>
   )
 }
