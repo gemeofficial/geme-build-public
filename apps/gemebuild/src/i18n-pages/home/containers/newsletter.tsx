@@ -3,7 +3,7 @@
 import { createContext, useCallback, useContext, useState } from 'react'
 import { NewsletterCenteredCard, SuccessNotice } from 'ui'
 import type { INewsletterCenteredCardProps, ISuccessNoticeProps } from 'ui'
-import { mixpanelEventHandles } from '../../../lib/mixpanel-config'
+import { homeMixpanelEventHandles } from '../../../lib/mixpanel-config/config'
 
 interface INewsletterContext {
   subscribe: (email: string) => Promise<void>
@@ -42,7 +42,7 @@ function Newsletter({
         return
       }
 
-      mixpanelEventHandles.homeSubscribeFromPageBottomButton({ email })
+      homeMixpanelEventHandles.subscribeFromPageBottomButton({ email })
 
       try {
         await subscribe(email)

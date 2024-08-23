@@ -27,4 +27,4 @@ export * from './ifa'
 export * from '../contexts/link-context'
 
 // libs
-export * from '../lib/mixpanel-config'
+export * from '../lib/mixpanel-config/config'
