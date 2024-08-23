@@ -26,9 +26,8 @@ export function mixpanelTrack(
   })
 }
 
-// Note：
-// Mixpanel的事件统计是按照EventName来划分的，所以最好将From也一起编写在Event中，筛选统计数据时才清晰明了
-// MixpanelEvent Enum 只负责编写事件名称，在执行Mixpanel函数时会要求传入From，最终会拼接成一个字符串发送给Mixpanel
+// Note1: Config说明
+// EMixpanelEvent 只编写事件名称，在执行Mixpanel函数时会要求传入From，最终会拼接成一个字符串发送给Mixpanel
 // 格式说明：MixpanelEvent + From + Detail(可选)
 // eg: Go Product Page [Home](Hero)
 //     Go Product Page [Header]
@@ -41,6 +40,20 @@ export enum EMixpanelEvent {
   GoProductPage = 'Go Product Page',
   WatchVideo = 'Watch Video',
   Subscribe = 'Subscribe',
+
+  EnterDiscountCode = 'Enter Discount Code',
+  ChangeShipTo = 'Change Ship To',
+  ChangeProductImage = 'Change Product Image',
+  ChangeTabs = 'Change Tabs',
+  BuyItNow = 'Buy It Now',
+  AddToCart = 'Add To Cart',
+  ClickBuyNow = 'Click Buy Now',
+  ChangeUserStory = 'Change User Story',
+  ClickPrevReviews = 'Click Prev Reviews',
+  ClickReviewsCard = 'Click Reviews Card',
+  ClickNextReviews = 'Click Next Reviews',
+  PostReview = 'Post Review',
+  WriteReview = 'Write Review',
 }
 
 // Mixpanel事件来源配置（一般是页面 / 组件）
