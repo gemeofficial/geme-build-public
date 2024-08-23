@@ -1,9 +1,8 @@
 'use client'
 
 import { ILinkComponent } from '../../../../apps/gemebuild/src/contexts/link-context'
+// import { mixpanelEventHandles } from '../../../../apps/gemebuild/src/lib/mixpanel-config'
 import { IconCycleArrow } from '../icons'
-import mixpanel from 'mixpanel-browser'
-
 interface IHeroSection1Props {
   linkText?: string
   linkUrl?: string
@@ -16,9 +15,8 @@ export default function HeroSectionsButton({
   linkUrl,
 }: IHeroSection1Props) {
   const linkClickedTrack = () => {
-    mixpanel.track('Go Product Page', {
-      From: 'Hero Primary Button',
-    })
+    // mixpanelEventHandles
+    // TestExport
   }
 
   // 修复在bio中传入自定义的Prefetch Link 时多语言路径不正确问题
