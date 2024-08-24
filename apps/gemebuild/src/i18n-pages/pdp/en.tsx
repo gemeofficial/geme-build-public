@@ -536,32 +536,6 @@ const userStoryProps: IPdpUserStoryTeamSectionsProps = {
   people: [
     {
       id: 1,
-      name: 'Alex Egertson',
-      role: 'Director of Sustainability',
-      image: {
-        src: '/assets/images/pdp-v2311/user-stories/user-stories-llc.jpg',
-        alt: 'Alex Egertson',
-      },
-      bio: (
-        <>
-          Alex work in Lutheran Retreats, Camps & Conferences, aka{' '}
-          <a
-            className="text-emerald-600"
-            href="https://lrcchome.com/"
-            target="_blank"
-          >
-            LRCC
-          </a>{' '}
-          is a camp school that kids are learning and living a green life.
-          <br />
-          With GEME more children can learn composting by doing it easily in
-          their daily lives.
-        </>
-      ),
-      quote: 'Happy to help. Seems like a great product so far.',
-    },
-    {
-      id: 2,
       name: 'Rainforest Inn',
       role: 'Bill, Boss',
       image: {
@@ -595,7 +569,7 @@ const userStoryProps: IPdpUserStoryTeamSectionsProps = {
         'Looking for a clean easy composter that can be in the kitchen as our big compost bins are too far. It works very efficient.  Quiet and clean.',
     },
     {
-      id: 3,
+      id: 2,
       name: 'LAE. Angeles Delgado',
       role: 'Finance CEO',
       image: {
@@ -617,7 +591,7 @@ const userStoryProps: IPdpUserStoryTeamSectionsProps = {
         'I want to buy my composters !  I am ready for 2 more now. Maybe the three.',
     },
     {
-      id: 4,
+      id: 3,
       name: 'Vasil Borukov',
       role: 'Senior IT Support Engineer',
       image: {
@@ -640,6 +614,32 @@ const userStoryProps: IPdpUserStoryTeamSectionsProps = {
         '          worry-stress free life. Totally recommend it to all my surroundings!',
       mobileQuote:
         'It combines everything you need for an easier worry-stress free life.',
+    },
+    {
+      id: 4,
+      name: 'Alex Egertson',
+      role: 'Director of Sustainability',
+      image: {
+        src: '/assets/images/pdp-v2311/user-stories/user-stories-llc.jpg',
+        alt: 'Alex Egertson',
+      },
+      bio: (
+        <>
+          Alex work in Lutheran Retreats, Camps & Conferences, aka{' '}
+          <a
+            className="text-emerald-600"
+            href="https://lrcchome.com/"
+            target="_blank"
+          >
+            LRCC
+          </a>{' '}
+          is a camp school that kids are learning and living a green life.
+          <br />
+          With GEME more children can learn composting by doing it easily in
+          their daily lives.
+        </>
+      ),
+      quote: 'Happy to help. Seems like a great product so far.',
     },
   ],
   locale: 'en',
