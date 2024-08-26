@@ -421,7 +421,7 @@ function PdpIntroSection7({
           className=" z-0 hidden xl:block w-full h-full"
         />
 
-        <div className=" absolute top-0 w-full h-full flex flex-col xl:flex-row items-center justify-between xl:items-start">
+        <div className=" absolute top-0 w-full h-full flex flex-col xl:flex-row items-center xl:justify-between xl:items-start">
           <div className="hidden xl:block xl:flex-1"></div>
           <div className=" px-14 pt-8 md:px-8 md:pt-16 xl:px-0 xl:pt-[12%] text-center xl:text-left xl:flex-1">
             {title && (
@@ -434,12 +434,12 @@ function PdpIntroSection7({
             )}
           </div>
           {features && (
-            <ul className=" px-4 pb-4 md:px-8 md:pb-16 text-left md:hidden xl:hidden ">
+            <ul className="mt-4 xl:mt-0 px-4 pb-4 md:px-8 md:pb-16 text-left xl:hidden ">
               {features.map((feature, idx) => {
                 return (
                   <li
                     key={`${feature}_${idx}`}
-                    className="v2311-font-body text-black"
+                    className="v2311-font-body text-v2311-primary"
                   >
                     {feature}
                   </li>
