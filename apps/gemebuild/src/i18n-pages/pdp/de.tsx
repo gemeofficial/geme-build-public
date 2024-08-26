@@ -175,15 +175,15 @@ const introProps: IPdpIntroProps = {
   },
 
   // Introduction 第8部分 De
-  pdpIntroSection7Props: {
-    title: 'Groß, mehr und langfristig',
-    description: 'Arbeitet 7x24, aber energiesparend',
-    features: [
-      '😄 10+ Personen Familiennutzung täglich',
-      '📅 3 Monate keine Reinigung erforderlich',
-      '💰 Preiswert',
-    ],
-  },
+pdpIntroSection7Props: {
+  title: 'Groß, Mehr & Langfristig',
+  description: '',
+  features: [
+    '🏡 Für den täglichen Gebrauch in Familien mit über 10 Personen geeignet',
+    '🐳 Tägliche Fütterungskapazität: 11 Pfund/5 kg',
+    '💰 Preiswert',
+  ],
+},
 
   // Introduction 第9部分 De
   contentSection23Props: {

@@ -176,12 +176,12 @@ const introProps: IPdpIntroProps = {
 
   // Introduction 第8部分 Fr
   pdpIntroSection7Props: {
-    title: 'Grand, plus et à long terme',
-    description: "Fonctionne 7x24 mais économise de l'énergie",
+    title: 'Grand, Plus & Durable',
+    description: '',
     features: [
-      '😄 Utilisation quotidienne pour une famille de plus de 10 personnes',
-      '📅 3 mois sans nettoyage requis',
-      '💰 Vaut le prix',
+      '🏡 Utilisation quotidienne pour des familles de plus de 10 personnes',
+      "🐳 Capacité d'alimentation quotidienne de 11 livres/5 kg",
+      '💰 Bon rapport qualité-prix',
     ],
   },
 
