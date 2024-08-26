@@ -3,6 +3,7 @@ import { ILinkComponent } from '../../../apps/gemebuild/src/contexts/link-contex
 import Image from 'next/image'
 import HeroSectionsButton from './client-components/HeroSectionsButton'
 import { PlayIcon, VideoInlinePlayer } from './video-inline-player'
+import HeroSectionVideo from './hero-section-video'
 
 interface IHeroSection1Props {
   title?: ReactNode
@@ -115,51 +116,17 @@ function HeroSection1({
           linkUrl={linkUrl}
         />
       </div>
-
-      {/* 全屏播放器 */}
-      <VideoInlinePlayer
-        videoUrl={
-          fullScreenVideoUrl || 'https://www.youtube.com/embed/ROJYZBp0jcM'
-        }
-        description="Watch our video to learn more"
-        hiddenPlayIcon={true}
+      
+      <HeroSectionVideo
         mixpanelStatPayload={{
           title: 'Watch video',
           payload: { From: 'Home hero video' },
         }}
-      >
-        <div className="portrait:w-48 portrait:h-28 absolute right-[18px] bottom-[18px] z-40">
-          {/* 右下角视频小窗 */}
-          <div className="relative h-full landscape:w-[180px] landscape:h-[111px] landscape:lg:w-[270px] landscape:lg:h-[152px]  landscape:2xl:w-[400px] landscape:2xl:h-[230px] rounded-xl landscape:rounded-xl overflow-hidden group">
-            <div className="relative h-full w-full object-cover transform-gpu transition-transform group-hover:scale-125 duration-[0.25s] ease-[cubic-bezier(0.24, 0.8, 0.4, 1)]">
-              <video
-                className="w-full h-full object-cover"
-                controls={false}
-                autoPlay
-                playsInline
-                muted
-                loop
-                poster={videoProps.posterUrl}
-                src={videoProps.src}
-              >
-                Your browser does not support HTML5 video.
-              </video>
-            </div>
-
-            <button
-              type="button"
-              className="absolute inset-0 w-full opacity-80 hover:opacity-100 transition-opacity duration-200"
-              title="Play fullscreen video"
-            >
-              {/* 大屏显示大按钮 */}
-              <PlayIcon className="m-auto hidden lg:block" size="medium" />
-
-              {/* 1024以下显示小按钮 */}
-              <PlayIcon className="m-auto lg:hidden" size="small" />
-            </button>
-          </div>
-        </div>
-      </VideoInlinePlayer>
+        videoProps={videoProps}
+        fullScreenVideoUrl={
+          fullScreenVideoUrl || 'https://www.youtube.com/embed/ROJYZBp0jcM'
+        }
+      />
     </div>
   )
 }
