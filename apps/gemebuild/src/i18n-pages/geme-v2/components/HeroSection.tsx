@@ -40,32 +40,15 @@ export default function HeroSection({
             </h1>
             <p className="text-lg leading-8 text-gray-300">{description}</p>
 
-            <form className="flex flex-col md:flex-row max-w-md gap-4">
-              {SubscribeComponent && (
-                <SubscribeComponent
-                  inputPlaceholder={inputPlaceholder}
-                  submitButtonLabel={submitButtonLabel}
-                />
-              )}
-              <label htmlFor="email-address" className="sr-only">
-                Email address
-              </label>
-              <input
-                id="email-address"
-                name="email"
-                type="email"
-                required
-                placeholder="Enter your email"
-                autoComplete="email"
-                className="min-w-0 flex-auto rounded-md border-2 border-white placeholder:text-white bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:leading-6"
+            {SubscribeComponent && (
+              <SubscribeComponent
+                inputPlaceholder={inputPlaceholder}
+                submitButtonLabel={submitButtonLabel}
+                formClassName="flex-col md:flex-row gap-y-4"
+                inputClassName="!min-w-0 !flex-auto !rounded-md !border-2 !border-white placeholder:!text-white !bg-white/5 !px-3.5 !py-2 !text-white !shadow-sm !ring-1 !ring-inset !ring-white/10 focus:!ring-2 focus:!ring-inset focus:!ring-white sm:!leading-6"
+                buttonClassName="!rounded-md !bg-white !px-3.5 !py-2.5 md:!px-6 md:!py-3 !text-sm md:!text-base lg:!text-lg xl:!text-xl !font-semibold !text-gray-900 !shadow-sm hover:!bg-gray-100 focus-visible:!outline focus-visible:!outline-2 focus-visible:!outline-offset-2 focus-visible:!outline-white"
               />
-              <button
-                type="submit"
-                className="rounded-md bg-white px-3.5 py-2.5 md:px-6 md:py-3 text-sm md:text-base lg:text-lg xl:text-xl font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-              >
-                Notify me
-              </button>
-            </form>
+            )}
           </div>
 
           <HeroSectionVideo
