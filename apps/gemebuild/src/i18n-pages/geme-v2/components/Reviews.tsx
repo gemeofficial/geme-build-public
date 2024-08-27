@@ -1,5 +1,6 @@
 'use client'
 import clsx from 'clsx'
+import Image from 'next/image'
 import { ReactNode, useEffect, useState } from 'react'
 import { SectionContainer, SectionDescription, SectionTitle } from 'ui'
 
@@ -34,7 +35,7 @@ export default function Reviews({
   featuredTestimonial,
   testimonials,
 }: IReviewsProps) {
-  const [list, setList] = useState(testimonials)
+  const [list, setList] = useState<Testimonial[][][]>([])
 
   useEffect(
     () => {
@@ -50,7 +51,6 @@ export default function Reviews({
         } else {
           setList(testimonials)
         }
-        console.log(123)
       }
 
       initHandler()
@@ -134,13 +134,16 @@ export default function Reviews({
                   <p>{`“${featuredTestimonial.body}”`}</p>
                 </blockquote>
                 <figcaption className="flex items-center gap-x-4 border-t border-gray-900/10 px-6 py-4">
-                  <picture>
-                    <img
-                      alt={`${featuredTestimonial.author.name} head`}
-                      src={featuredTestimonial.author.imageUrl}
-                      className="h-10 w-10 object-cover flex-none rounded-full bg-gray-50"
-                    />
-                  </picture>
+                  <Image
+                    width={128}
+                    height={128}
+                    alt={`${featuredTestimonial.author.name} head`}
+                    src={
+                      featuredTestimonial.author.imageUrl ||
+                      '/assets/images/geme-v2/default-avatar/3.svg'
+                    }
+                    className="h-10 w-10 object-cover flex-none rounded-full bg-gray-50"
+                  />
                   <div className="flex-auto">
                     <div className="font-semibold">
                       {featuredTestimonial.author.name}
@@ -152,13 +155,13 @@ export default function Reviews({
                     )}
                   </div>
                   {featuredTestimonial.author.logoUrl && (
-                    <picture>
-                      <img
-                        alt={`${featuredTestimonial.author.name} logo`}
-                        src={featuredTestimonial.author.logoUrl}
-                        className="h-10 w-auto flex-none"
-                      />
-                    </picture>
+                    <Image
+                      width={512}
+                      height={264}
+                      alt={`${featuredTestimonial.author.name} logo`}
+                      src={featuredTestimonial.author.logoUrl}
+                      className="h-10 w-auto flex-none"
+                    />
                   )}
                 </figcaption>
               </figure>
@@ -197,16 +200,16 @@ export default function Reviews({
                             <p>{`“${testimonial.body}”`}</p>
                           </blockquote>
                           <figcaption className="mt-6 flex items-center gap-x-4">
-                            <picture>
-                              <img
-                                alt={`${testimonial.author.name} head`}
-                                src={
-                                  testimonial.author.imageUrl ||
-                                  getDefaultAvatar()
-                                }
-                                className="h-10 w-10 object-cover rounded-full bg-gray-50"
-                              />
-                            </picture>
+                            <Image
+                              width={128}
+                              height={128}
+                              alt={`${testimonial.author.name} head`}
+                              src={
+                                testimonial.author.imageUrl ||
+                                getDefaultAvatar()
+                              }
+                              className="h-10 w-10 object-cover rounded-full bg-gray-50"
+                            />
                             <div className="flex-1">
                               <div className="font-semibold">
                                 {testimonial.author.name}

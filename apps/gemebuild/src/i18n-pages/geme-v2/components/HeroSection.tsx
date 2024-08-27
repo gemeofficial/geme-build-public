@@ -25,10 +25,10 @@ export default function HeroSection({
       <div className="relative isolate overflow-hidden pt-14 min-h-screen">
         <Image
           priority
-          width={1920}
-          height={1080}
+          width={1080}
+          height={720}
           alt="hero image"
-          src="https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?q=80&w=3881&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src="/assets/images/geme-v2/hero-bg.webp"
           className="absolute inset-0 -z-10 h-full w-full object-cover"
         />
         <div className="absolute inset-0 -z-10 h-full w-full bg-black/50"></div>
