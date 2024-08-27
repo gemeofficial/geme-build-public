@@ -5,12 +5,10 @@ import LogoCloud, { ILogoCloudProps } from './components/LogoCloud'
 import { IShortVideoProps, ShortVideo } from 'ui'
 import Reviews, { IReviewsProps } from './components/Reviews'
 import Faq, { IFaqProps } from './components/Faq'
-import Subscribe, { ISubscribeProps } from './components/Subscribe'
-
-export interface IGemeV2PageProps {
-  PrefetchLink?: ILinkComponent
-  SubscribeComponent?: FC<{}>
-}
+import Subscribe, {
+  ISubscribeComponent,
+  ISubscribeProps,
+} from './components/Subscribe'
 
 // Hero section
 const heroSectionProps: IHeroSectionProps = {
@@ -22,6 +20,8 @@ const heroSectionProps: IHeroSectionProps = {
     src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
     posterUrl: '/assets/images/home-v2311/hero-blurred.webp',
   },
+  inputPlaceholder: 'Enter your email',
+  submitButtonLabel: 'Notify Me',
 }
 
 // Logo cloud
@@ -373,6 +373,13 @@ const subscribeProps: ISubscribeProps = {
   title: 'Subscribe to our newsletter.',
   description: `Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt dolore.`,
   productImage: '/assets/images/geme-v2-product/geme-v2-1-color.png',
+  inputPlaceholder: 'Enter your email',
+  submitButtonLabel: 'Notify Me',
+}
+
+export interface IGemeV2PageProps {
+  PrefetchLink?: ILinkComponent
+  SubscribeComponent?: FC<ISubscribeComponent>
 }
 
 export function GemeV2PageEn({

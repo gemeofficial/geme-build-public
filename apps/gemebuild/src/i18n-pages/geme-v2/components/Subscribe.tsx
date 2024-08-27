@@ -1,17 +1,26 @@
 import Image from 'next/image'
 import { FC, ReactNode } from 'react'
 
-export interface ISubscribeProps {
+export interface ISubscribeComponent {
+  inputPlaceholder: string
+  submitButtonLabel: string
+  inputClassName?: string
+  buttonClassName?: string
+}
+
+export interface ISubscribeProps extends ISubscribeComponent {
   title: ReactNode
   description: ReactNode
   productImage: string
-  SubscribeComponent?: FC<{}>
+  SubscribeComponent?: FC<ISubscribeComponent>
 }
 
 export default function Subscribe({
   title,
   description,
   productImage,
+  inputPlaceholder,
+  submitButtonLabel,
   SubscribeComponent,
 }: ISubscribeProps) {
   return (
@@ -26,7 +35,12 @@ export default function Subscribe({
               {description}
             </p>
             <div className="mt-6">
-              {SubscribeComponent && <SubscribeComponent />}
+              {SubscribeComponent && (
+                <SubscribeComponent
+                  inputPlaceholder={inputPlaceholder}
+                  submitButtonLabel={submitButtonLabel}
+                />
+              )}
             </div>
           </div>
           <Image

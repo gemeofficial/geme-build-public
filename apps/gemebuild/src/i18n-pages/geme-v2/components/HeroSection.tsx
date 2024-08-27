@@ -1,10 +1,14 @@
 import Image from 'next/image'
-import { ReactNode } from 'react'
+import { FC, ReactNode } from 'react'
 import HeroSectionVideo, { IHeroSectionVideo } from 'ui/src/hero-section-video'
+import { ISubscribeComponent } from './Subscribe'
 
-export interface IHeroSectionProps extends IHeroSectionVideo {
+export interface IHeroSectionProps
+  extends IHeroSectionVideo,
+    ISubscribeComponent {
   title: ReactNode
   description: ReactNode
+  SubscribeComponent?: FC<ISubscribeComponent>
 }
 
 export default function HeroSection({
@@ -12,6 +16,9 @@ export default function HeroSection({
   videoProps,
   title,
   description,
+  inputPlaceholder,
+  submitButtonLabel,
+  SubscribeComponent,
 }: IHeroSectionProps) {
   return (
     <div className="bg-gray-900 min-h-screen">
@@ -32,7 +39,14 @@ export default function HeroSection({
               {title}
             </h1>
             <p className="text-lg leading-8 text-gray-300">{description}</p>
+
             <form className="flex flex-col md:flex-row max-w-md gap-4">
+              {SubscribeComponent && (
+                <SubscribeComponent
+                  inputPlaceholder={inputPlaceholder}
+                  submitButtonLabel={submitButtonLabel}
+                />
+              )}
               <label htmlFor="email-address" className="sr-only">
                 Email address
               </label>
