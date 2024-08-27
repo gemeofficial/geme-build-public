@@ -39,6 +39,8 @@ export default function Subscribe({
                 <SubscribeComponent
                   inputPlaceholder={inputPlaceholder}
                   submitButtonLabel={submitButtonLabel}
+                  inputClassName="text-v2311-fg-dark-black border-solid border-2 border-white rounded-xl !py-3 focus:border-v2311-bg-light-green focus:ring-v2311-bg-light-green"
+                  buttonClassName="!text-white border-solid border-2 rounded-xl focus:border-v2311-bg-light-green focus:ring-v2311-bg-light-green !bg-transparent hover:scale-105 transition-all !border-white"
                 />
               )}
             </div>

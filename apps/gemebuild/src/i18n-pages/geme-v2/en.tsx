@@ -388,7 +388,7 @@ export function GemeV2PageEn({
 }: IGemeV2PageProps) {
   return (
     <>
-      <HeroSection {...heroSectionProps} />
+      <HeroSection {...heroSectionProps} SubscribeComponent={SubscribeComponent} />
       <LogoCloud {...logoCloudProps} />
 
       <ShortVideo {...shortVideoProps} compact />
