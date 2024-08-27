@@ -44,9 +44,9 @@ export default function HeroSection({
               <SubscribeComponent
                 inputPlaceholder={inputPlaceholder}
                 submitButtonLabel={submitButtonLabel}
-                formClassName="flex-col md:flex-row gap-y-4"
-                inputClassName="!min-w-0 !flex-auto !rounded-md !border-2 !border-white placeholder:!text-white !bg-white/5 !px-3.5 !py-2 !text-white !shadow-sm !ring-1 !ring-inset !ring-white/10 focus:!ring-2 focus:!ring-inset focus:!ring-white sm:!leading-6"
-                buttonClassName="!rounded-md !bg-white !px-3.5 !py-2.5 md:!px-6 md:!py-3 !text-sm md:!text-base lg:!text-lg xl:!text-xl !font-semibold !text-gray-900 !shadow-sm hover:!bg-gray-100 focus-visible:!outline focus-visible:!outline-2 focus-visible:!outline-offset-2 focus-visible:!outline-white"
+                formClassName="flex-col md:flex-row gap-y-4 !mx-0"
+                inputClassName="!min-w-0 !flex-auto !rounded-md !border-2 !border-white placeholder:!text-white !bg-white/5 !px-3.5 !py-2 !text-white !shadow-sm !ring-1 !ring-inset !ring-white/10 focus:!ring-2 focus:!ring-inset focus:!ring-white sm:!leading-6 !text-sm md:!text-base lg:!text-lg xl:!text-xl"
+                buttonClassName="!rounded-md !bg-white !px-3.5 !py-2.5 md:!px-6 md:!py-3 !text-sm md:!text-base lg:!text-lg xl:!text-xl !font-semibold !text-gray-900 !shadow-sm hover:!bg-gray-100 focus-visible:!outline focus-visible:!outline-2 focus-visible:!outline-offset-2 focus-visible:!outline-white md:max-w-max"
               />
             )}
           </div>
