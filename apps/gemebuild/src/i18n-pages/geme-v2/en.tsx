@@ -4,6 +4,7 @@ import { IHeroSectionVideo } from 'ui/src/hero-section-video'
 import HeroSection, { IHeroSectionProps } from './components/HeroSection'
 import LogoCloud, { ILogoCloudProps } from './components/LogoCloud'
 import { IShortVideoProps, ShortVideo } from 'ui'
+import Reviews, { IReviewsProps } from './components/Reviews'
 
 export interface IGemeV2PageProps {
   PrefetchLink?: ILinkComponent
@@ -133,6 +134,123 @@ const imageTextProps2: IShortVideoProps = {
   imageUrl: '/assets/images/pdp-v2311/introduction/no-filters.jpg',
 }
 
+// Reviews
+const reviewsProps: IReviewsProps = {
+  featuredTestimonial: {
+    body: 'I went to internet and looked more and found out yours and the adertising says that it is bio composter and saw videos and at last i found yours i loved it. I want to buy my composters !  I am ready for 2 more now. Maybe the three.',
+    author: {
+      name: 'LAE. Angeles Delgado',
+      role: 'Finance CEO',
+      imageUrl:
+        '/assets/images/pdp-v2311/user-stories/user-stories-angelita.jpeg',
+    },
+  },
+
+  testimonials: [
+    [
+      [
+        {
+          body: 'Looking for a clean easy composter that can be in the kitchen as our big compost bins are too far. It works very efficient.  Quiet and clean.',
+          author: {
+            name: 'Rainforest Inn',
+            role: 'Bill, Boss',
+            imageUrl:
+              '/assets/images/pdp-v2311/user-stories/user-stories-rainforest.jpg',
+          },
+        },
+        {
+          body: 'I REALLY love this product. We have used it a lot and look forward to seeing the garden this year, which we have supplemented with Geme compost!',
+          author: {
+            name: 'Michael R.',
+          },
+        },
+        {
+          body: 'We have order a second one. Our family cannot live without this machine',
+          author: {
+            name: 'Robert G.',
+          },
+        },
+        {
+          body: 'I was very surprised to see the waste from dinner was almost completely composted by this morning.',
+          author: {
+            name: 'Canada Buyer',
+          },
+        },
+
+        // More testimonials...
+      ],
+      [
+        {
+          body: 'this composter has changed my kitchen habits for the better.',
+          author: {
+            name: 'Ethel M H.',
+          },
+        },
+        {
+          body: 'This method is amazing. I used to have an outdoor compost. This is such a great upgrade.',
+          author: {
+            name: 'Sotoko',
+          },
+        },
+        {
+          body: 'I am living in the US and really like my GEME. I would love to order another on for my sister in Australia.',
+          author: {
+            name: 'Willi S.',
+          },
+        },
+        // More testimonials...
+      ],
+    ],
+    [
+      [
+        {
+          body: 'I am very impressed with the efficiency of the composter and have been telling / showing it to many people.',
+          author: {
+            name: 'Paul',
+          },
+        },
+        {
+          body: 'We have used the compost now to fertilize our fruit plants and trees earlier this season, and there was definitely an explosion of growth after that.',
+          author: {
+            name: 'Brian M.',
+          },
+        },
+        {
+          body: 'En passant, je suis très satisfait du GEME.',
+          author: {
+            name: 'Louis T.',
+          },
+        },
+        // More testimonials...
+      ],
+      [
+        {
+          body: `I always wanted to get involved more & more in everything around me for one better sustainable life and this is why I really wanted to get so much GEME. It combines everything you need for an easier worry-stress free life. Totally recommend it to all my surroundings!`,
+          author: {
+            name: 'Vasil Borukov',
+            role: 'Senior IT Support Engineer',
+            imageUrl:
+              '/assets/images/pdp-v2311/user-stories/user-stories-vasil.png',
+          },
+        },
+        {
+          body: 'I never imagined anything could break down the matter so quickly. And all of those conerns about "smelly"? I have no such problem',
+          author: {
+            name: 'Greer',
+          },
+        },
+        {
+          body: 'Yesterday I put mozzarrella balls and shredded carrots and eggshells - gone like magic',
+          author: {
+            name: 'Elilyn',
+          },
+        },
+        // More testimonials...
+      ],
+    ],
+  ],
+}
+
 export function GemeV2PageEn({
   PrefetchLink,
   SubscribeComponent,
@@ -145,6 +263,7 @@ export function GemeV2PageEn({
       <ShortVideo {...shortVideoProps} compact />
       <ShortVideo {...imageTextProps} compact />
       <ShortVideo {...imageTextProps2} compact />
+      <Reviews {...reviewsProps} />
     </>
   )
 }
