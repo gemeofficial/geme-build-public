@@ -1,5 +1,6 @@
+'use client'
 import clsx from 'clsx'
-import { ReactNode } from 'react'
+import { ReactNode, useEffect, useState } from 'react'
 import { SectionContainer, SectionDescription, SectionTitle } from 'ui'
 
 export interface IReviewsProps {
@@ -33,6 +34,35 @@ export default function Reviews({
   featuredTestimonial,
   testimonials,
 }: IReviewsProps) {
+  const [list, setList] = useState(testimonials)
+
+  useEffect(
+    () => {
+      function initHandler() {
+        if (window.innerWidth < 625) {
+          const copyTestimonials: IReviewsProps['testimonials'] = JSON.parse(
+            JSON.stringify(testimonials),
+          )
+          if (copyTestimonials[0]?.[1]) {
+            copyTestimonials[0][1] = [featuredTestimonial]
+          }
+          setList(copyTestimonials)
+        } else {
+          setList(testimonials)
+        }
+        console.log(123)
+      }
+
+      initHandler()
+
+      window.addEventListener('resize', initHandler)
+
+      return () => window.removeEventListener('resize', initHandler)
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [],
+  )
+
   return (
     <SectionContainer compact>
       <SectionTitle>What Real Users Say</SectionTitle>
@@ -97,7 +127,7 @@ export default function Reviews({
               className="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-v2311-primary to-2311from-v2311-bg-dark-green xl:ml-0 xl:mr-[calc(50%-12rem)]"
             />
           </div>
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl md:px-8">
             <div className="mx-auto grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
               <figure className="col-span-2 hidden sm:block sm:rounded-2xl sm:bg-white sm:shadow-lg sm:ring-1 sm:ring-gray-900/5 xl:col-start-2 xl:row-end-1">
                 <blockquote className="p-12 text-xl font-semibold leading-8 tracking-tight text-gray-900">
@@ -132,10 +162,13 @@ export default function Reviews({
                   )}
                 </figcaption>
               </figure>
-              {testimonials.map((columnGroup, columnGroupIdx) => (
+              {list.map((columnGroup, columnGroupIdx) => (
                 <div
                   key={columnGroupIdx}
-                  className="space-y-8 xl:contents xl:space-y-0"
+                  className={clsx(
+                    'xl:contents xl:space-y-0',
+                    columnGroupIdx === 1 ? '' : 'space-y-8 ',
+                  )}
                 >
                   {columnGroup.map((column, columnIdx) => (
                     <div
@@ -146,13 +179,19 @@ export default function Reviews({
                             columnIdx === columnGroup.length - 1)
                           ? 'xl:row-span-2'
                           : 'xl:row-start-1',
+                        columnGroupIdx === 1 && columnIdx === 0
+                          ? 'hidden sm:block'
+                          : '',
                         'space-y-8',
                       )}
                     >
                       {column.map((testimonial, index) => (
                         <figure
                           key={testimonial.author.name + index}
-                          className="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
+                          className={clsx(
+                            'rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5',
+                            index !== 0 ? 'hidden sm:block' : '',
+                          )}
                         >
                           <blockquote className="text-gray-900">
                             <p>{`“${testimonial.body}”`}</p>
