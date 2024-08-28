@@ -175,15 +175,15 @@ const introProps: IPdpIntroProps = {
   },
 
   // Introduction 第8部分 De
-  pdpIntroSection7Props: {
-    title: 'Groß, mehr und langfristig',
-    description: 'Arbeitet 7x24, aber energiesparend',
-    features: [
-      '😄 10+ Personen Familiennutzung täglich',
-      '📅 3 Monate keine Reinigung erforderlich',
-      '💰 Preiswert',
-    ],
-  },
+pdpIntroSection7Props: {
+  title: 'Groß, Mehr & Langfristig',
+  description: '',
+  features: [
+    '🏡 Für den täglichen Gebrauch in Familien mit über 10 Personen geeignet',
+    '🐳 Tägliche Fütterungskapazität: 11 Pfund/5 kg',
+    '💰 Preiswert',
+  ],
+},
 
   // Introduction 第9部分 De
   contentSection23Props: {
@@ -426,10 +426,12 @@ const specProps: IPdpSpecProps = {
       {
         id: 5,
         name: 'Leistung',
-        description: `
-          <p>AC110V-60Hz(Modell G601N-2K für Nordamerika)</p>
-          <p>AC220V-50Hz(Modell G601U-2K für Europa)</p>
-        `,
+        description: (
+          <>
+            <p>AC110V-60Hz(Modell G601N-2K für Nordamerika)</p>
+            <p>AC220V-50Hz(Modell G601U-2K für Europa)</p>
+          </>
+        ),
       },
       {
         id: 6,

@@ -124,7 +124,7 @@ const contentSection3Props: IContentSection3Props = {
         <>
           Enrich your garden with nutrient-dense soil
           <br />
-          Nurture your plants and watch them flourish
+          Feed your plants with free fertilizer
         </>
       ),
       imageSrc: '/assets/images/home-v2311/planting.jpg',
@@ -393,16 +393,14 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
     {
       type: 'instagram',
       src: 'https://www.instagram.com/reel/CxBKZOYRKQN/?utm_source=ig_web_copy_link',
-      coverImageUrl:
-        '/assets/images/user-stories-videos/instagram.png',
+      coverImageUrl: '/assets/images/user-stories-videos/instagram.png',
       coverAlt: 'Real use video from twin brothers',
       buttonText: '@Messitttwins',
     },
     {
       type: 'tiktok',
       src: 'https://www.tiktok.com/@kc_smithwrites/video/7312898892079697198',
-      coverImageUrl:
-        '/assets/images/user-stories-videos/tiktok2.png',
+      coverImageUrl: '/assets/images/user-stories-videos/tiktok2.png',
       coverAlt: 'Users from tiktok use videos',
       buttonText: '@kc_smithwrites',
     },

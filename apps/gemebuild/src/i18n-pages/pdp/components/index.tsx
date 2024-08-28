@@ -98,6 +98,7 @@ function PdpContent(props: IPdpContentProps) {
               <ReviewsSectionModule
                 reviewsSectionConfig={reviewsSectionConfig}
                 locale={locale}
+                PrefetchLink={PrefetchLink}
               />
               <div className="my-4">
                 <ReviewsScoreHeader locale={locale} />
