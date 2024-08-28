@@ -12,18 +12,22 @@ export interface IShortVideoProps {
   title: ReactNode
   description: ReactNode
   imageUrl?: string
+  imageAlt?: string
   videoPosterUrl?: string
   videoSrcUrl?: string
   isReverse?: boolean
+  compact?: boolean
 }
 
 export function ShortVideo({
   title,
   description,
   imageUrl,
+  imageAlt,
   videoPosterUrl,
   videoSrcUrl,
   isReverse,
+  compact,
 }: IShortVideoProps) {
   let videoPosterSrc: undefined | string
   if (videoPosterUrl != null) {
@@ -36,7 +40,7 @@ export function ShortVideo({
   }
 
   return (
-    <SectionContainer className="flex flex-col lg:flex-row">
+    <SectionContainer className="flex flex-col lg:flex-row" compact={compact}>
       {/* mobile title-desc */}
       <div className="lg:hidden">
         <SectionTitle>{title}</SectionTitle>
@@ -70,9 +74,8 @@ export function ShortVideo({
               className="max-w-full w-full rounded-2xl overflow-hidden object-cover"
               width={1600}
               height={900}
-              // src="/assets/images/how-it-works/dehydrator-vs-geme.png"
-              src="/assets/images/how-it-works/geme-vs-dehydrator.png"
-              alt="GEME composter vs food dehydrators"
+              src={imageUrl}
+              alt={imageAlt || 'GEME composter vs food dehydrators'}
             />
           )}
         </div>

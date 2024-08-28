@@ -2,8 +2,10 @@
 import {
   IFAHeroSection,
   IIFAHeroSectionProps,
+  IShortVideoProps,
   ISubscribeGemeV2Props,
   IWinnersNamesTickerProps,
+  ShortVideo,
   SubscribeGemeV2,
 } from 'ui'
 
@@ -11,6 +13,7 @@ import { ILinkComponent } from '../../contexts/link-context'
 import { winnersNames } from './winnersNames'
 import { VideoList, IVideoList } from 'ui'
 import { FC } from 'react'
+import ImageZoomViewer from 'ui/src/client-components/ImageZoomViewer'
 
 // Hero Section  En
 const IFAHeroSectionProps: IIFAHeroSectionProps = {
@@ -79,6 +82,21 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
     </>
   ),
   locale: 'en',
+}
+
+// 场馆路线说明Section En
+const section2Props: IShortVideoProps = {
+  title: 'Meet GEME in IFA',
+  description: (
+    <ul>
+      <li className="list-decimal"></li>
+      <li className="list-decimal"></li>
+      <li className="list-decimal"></li>
+      <li className="list-decimal"></li>
+    </ul>
+  ),
+  imageUrl: '/assets/images/pdp-v2311/introduction/geme-composter-size-v2.jpeg',
+  imageAlt: '',
 }
 
 // 视频列表   En
@@ -155,6 +173,9 @@ function IFAPageEn({ PrefetchLink, SubscribeComponent }: IIFAPageProps) {
   return (
     <>
       <IFAHeroSection {...IFAHeroSectionProps} PrefetchLink={PrefetchLink} />
+      <ImageZoomViewer>
+        <ShortVideo {...section2Props} compact />
+      </ImageZoomViewer>
       <VideoList
         buttonText={IFAHeroSectionProps.buttonText}
         videoListProps={videoListProps}
