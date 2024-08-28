@@ -103,6 +103,7 @@ const imageTextProps: IShortVideoProps = {
     </>
   ),
   imageUrl: '/assets/images/pdp-v2311/introduction/geme-composter-size-v2.jpeg',
+  imageAlt: '',
   isReverse: true,
 }
 
@@ -131,16 +132,19 @@ const imageTextProps2: IShortVideoProps = {
     </>
   ),
   imageUrl: '/assets/images/pdp-v2311/introduction/no-filters.jpg',
+  imageAlt: '',
 }
 
 // Reviews
 const reviewsProps: IReviewsProps = {
+  subTitle: 'Testimonials',
+  title: 'We have worked with thousands of amazing people',
   featuredTestimonial: {
     body: 'I went to internet and looked more and found out yours and the adertising says that it is bio composter and saw videos and at last i found yours i loved it. I want to buy my composters !  I am ready for 2 more now. Maybe the three.',
     author: {
       name: 'LAE. Angeles Delgado',
       role: 'Finance CEO',
-      imageUrl:
+      avatar:
         '/assets/images/pdp-v2311/user-stories/user-stories-angelita.jpeg',
     },
   },
@@ -153,7 +157,7 @@ const reviewsProps: IReviewsProps = {
           author: {
             name: 'Rainforest Inn',
             role: 'Bill, Boss',
-            imageUrl:
+            avatar:
               '/assets/images/pdp-v2311/user-stories/user-stories-rainforest.jpg',
           },
         },
@@ -162,18 +166,24 @@ const reviewsProps: IReviewsProps = {
           author: {
             name: 'Michael R.',
           },
+          imageUrl:
+            'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/images/users-feedback/3-michale.png',
         },
         {
           body: 'We have order a second one. Our family cannot live without this machine',
           author: {
             name: 'Robert G.',
           },
+          imageUrl:
+            'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/images/users-feedback/1-robert.png',
         },
         {
           body: 'I was very surprised to see the waste from dinner was almost completely composted by this morning.',
           author: {
             name: 'Canada Buyer',
           },
+          imageUrl:
+            'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/images/users-feedback/9-canada.png',
         },
 
         // More testimonials...
@@ -184,18 +194,24 @@ const reviewsProps: IReviewsProps = {
           author: {
             name: 'Ethel M H.',
           },
+          imageUrl:
+            'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/images/users-feedback/8-ethel.png',
         },
         {
           body: 'This method is amazing. I used to have an outdoor compost. This is such a great upgrade.',
           author: {
             name: 'Sotoko',
           },
+          imageUrl:
+            'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/images/users-feedback/2-satoko.png',
         },
         {
           body: 'I am living in the US and really like my GEME. I would love to order another on for my sister in Australia.',
           author: {
             name: 'Willi S.',
           },
+          imageUrl:
+            'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/images/users-feedback/12-willi.png',
         },
         // More testimonials...
       ],
@@ -207,18 +223,24 @@ const reviewsProps: IReviewsProps = {
           author: {
             name: 'Paul',
           },
+          imageUrl:
+            'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/images/users-feedback/7-paul.png',
         },
         {
           body: 'We have used the compost now to fertilize our fruit plants and trees earlier this season, and there was definitely an explosion of growth after that.',
           author: {
             name: 'Brian M.',
           },
+          imageUrl:
+            'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/images/users-feedback/4-brian-m.png',
         },
         {
           body: 'En passant, je suis très satisfait du GEME.',
           author: {
             name: 'Louis T.',
           },
+          imageUrl:
+            'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/images/users-feedback/11-louis.png',
         },
         // More testimonials...
       ],
@@ -228,7 +250,7 @@ const reviewsProps: IReviewsProps = {
           author: {
             name: 'Vasil Borukov',
             role: 'Senior IT Support Engineer',
-            imageUrl:
+            avatar:
               '/assets/images/pdp-v2311/user-stories/user-stories-vasil.png',
           },
         },
@@ -237,16 +259,73 @@ const reviewsProps: IReviewsProps = {
           author: {
             name: 'Greer',
           },
+          imageUrl:
+            'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/images/users-feedback/5-greer.png',
         },
         {
           body: 'Yesterday I put mozzarrella balls and shredded carrots and eggshells - gone like magic',
           author: {
             name: 'Elilyn',
           },
+          imageUrl:
+            'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/images/users-feedback/6-elilyn.png',
         },
         // More testimonials...
       ],
     ],
+  ],
+
+  mobileTestimonials: [
+    {
+      body: 'I went to internet and looked more and found out yours and the adertising says that it is bio composter and saw videos and at last i found yours i loved it. I want to buy my composters !  I am ready for 2 more now. Maybe the three.',
+      author: {
+        name: 'LAE. Angeles Delgado',
+        role: 'Finance CEO',
+        avatar:
+          '/assets/images/pdp-v2311/user-stories/user-stories-angelita.jpeg',
+      },
+    },
+    {
+      body: 'Looking for a clean easy composter that can be in the kitchen as our big compost bins are too far. It works very efficient.  Quiet and clean.',
+      author: {
+        name: 'Rainforest Inn',
+        role: 'Bill, Boss',
+        avatar:
+          '/assets/images/pdp-v2311/user-stories/user-stories-rainforest.jpg',
+      },
+    },
+    {
+      body: `I always wanted to get involved more & more in everything around me for one better sustainable life and this is why I really wanted to get so much GEME. It combines everything you need for an easier worry-stress free life. Totally recommend it to all my surroundings!`,
+      author: {
+        name: 'Vasil Borukov',
+        role: 'Senior IT Support Engineer',
+        avatar: '/assets/images/pdp-v2311/user-stories/user-stories-vasil.png',
+      },
+    },
+    {
+      body: 'I REALLY love this product. We have used it a lot and look forward to seeing the garden this year, which we have supplemented with Geme compost!',
+      author: {
+        name: 'Michael R.',
+      },
+      imageUrl:
+        'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/images/users-feedback/3-michale.png',
+    },
+    {
+      body: 'We have used the compost now to fertilize our fruit plants and trees earlier this season, and there was definitely an explosion of growth after that.',
+      author: {
+        name: 'Brian M.',
+      },
+      imageUrl:
+        'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/images/users-feedback/4-brian-m.png',
+    },
+    {
+      body: 'I never imagined anything could break down the matter so quickly. And all of those conerns about "smelly"? I have no such problem',
+      author: {
+        name: 'Greer',
+      },
+      imageUrl:
+        'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/images/users-feedback/5-greer.png',
+    },
   ],
 }
 
