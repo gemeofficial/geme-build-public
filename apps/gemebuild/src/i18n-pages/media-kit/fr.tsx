@@ -12,14 +12,17 @@ import Link from 'next/link'
 const heroSectionProps: IHeroSection = {
   title: 'Kit Média GEME',
   description: (
-    <div className="flex flex-col gap-4 md:text-xl">
+    <div className="flex flex-col gap-2 md:gap-4 md:text-xl">
       <p>
         Bienvenue au Centre Médias GEME ! Vous y trouverez une variété de
         ressources, y compris des logos haute résolution, des images de produits
         et des histoires de marques, pour vous aider à en apprendre davantage
         sur GEME et à intégrer notre marque dans vos couvertures médiatiques,
-        vos campagnes marketing, et plus encore. N'hésitez pas à télécharger et
-        à utiliser ces ressources pour promouvoir un mode de vie durable.
+        vos campagnes marketing, et plus encore.
+      </p>
+      <p>
+        N'hésitez pas à télécharger et à utiliser ces ressources pour promouvoir
+        un mode de vie durable.
       </p>
       <p>
         Vous souhaitez utiliser nos marques d'une manière non couverte par ces
@@ -39,19 +42,19 @@ const heroSectionProps: IHeroSection = {
 const downloadMediaKitProps: IDownLoadMediaKitProps = {
   downLoadItmes: [
     {
-      title: 'Logos',
+      title: 'Kit de Logos',
       desc: 'Bibliothèque de Logos GEME : Accédez à une variété de logos GEME dans différentes tailles et résolutions pour répondre à vos besoins spécifiques.',
       buttonText: 'Download',
       href: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/media-kit/GEME_LOGO.zip',
     },
     {
-      title: 'Kit média de produits GEME',
+      title: 'Kit Média de Produits GEME',
       desc: 'Kit Média de Produits GEME : Téléchargez des images de produits haute qualité, des PDF de produits détaillés, et plus encore pour améliorer vos supports marketing.',
       buttonText: 'Download',
       href: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/media-kit/GEME_Product_Guiding.zip',
     },
     {
-      title: 'Centre de marque GEME',
+      title: 'Centre de Marque GEME',
       desc: 'Découvrez tous les éléments de la marque Slack, y compris le logo, la couleur, la typographie, le texte, les illustrations et bien plus encore, dans notre centre de propriété en ligne et de guides complet.',
       buttonText: 'Enter',
       href: '/brand-hq',

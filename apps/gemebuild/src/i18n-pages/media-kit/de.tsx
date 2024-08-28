@@ -11,14 +11,17 @@ import Link from 'next/link'
 const heroSectionProps: IHeroSection = {
   title: 'GEME Medienkit',
   description: (
-    <div className="flex flex-col gap-4 md:text-xl">
+    <div className="flex flex-col gap-2 md:gap-4 md:text-xl">
       <p>
         Willkommen im GEME Media Center! Hier finden Sie eine Vielzahl von
         Ressourcen, darunter hochauflösende Logos, Produktbilder und
         Markengeschichten, die Ihnen helfen, mehr über GEME zu erfahren und
         unsere Marke in Ihre Medienberichterstattung, Marketingkampagnen und
-        mehr zu integrieren. Fühlen Sie sich frei, diese Ressourcen
-        herunterzuladen und zu nutzen, um nachhaltiges Leben zu fördern.
+        mehr zu integrieren.
+      </p>
+      <p>
+        Fühlen Sie sich frei, diese Ressourcen herunterzuladen und zu nutzen, um
+        nachhaltiges Leben zu fördern.
       </p>
       <p>
         Möchten Sie unsere Markenzeichen auf eine Weise nutzen, die in diesen
@@ -38,7 +41,7 @@ const heroSectionProps: IHeroSection = {
 const downloadMediaKitProps: IDownLoadMediaKitProps = {
   downLoadItmes: [
     {
-      title: 'Logos',
+      title: 'Logo-Kit',
       desc: 'GEME Logo-Bibliothek: Greifen Sie auf eine Vielzahl von GEME-Logos in verschiedenen Größen und Auflösungen zu, um Ihre spezifischen Bedürfnisse zu erfüllen.',
       buttonText: 'Download',
       href: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/media-kit/GEME_LOGO.zip',
