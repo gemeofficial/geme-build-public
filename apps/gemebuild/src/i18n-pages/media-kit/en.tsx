@@ -60,18 +60,19 @@ const downloadMediaKitProps: IDownLoadMediaKitProps = {
 const termsOfService: ITermsOfServiceProps = {
   textInfo: (
     <>
-      By using the GEMEmarks you agree to follow these guidelines as well as our{' '}
+      By using the GEME marks you agree to follow these guidelines as well as
+      our{' '}
       <Link
         href="/privacy-policy"
         target="_blank"
         rel="noopener noreferrer"
         className="text-v2311-primary underline underline-offset-[6px] inline-block"
       >
-        Terms of Service
+        Privacy Policy
       </Link>{' '}
-      and all our rules and policies. GEMEreserves the right to cancel, modify,
+      and all our rules and policies. GEME reserves the right to cancel, modify,
       or change the permission in these guidelines at any time at its sole
-      discretion. For further information about use of the GEMEname and
+      discretion. For further information about use of the GEME name and
       trademarks, please contact{' '}
       <a
         href="mailto:info@geme.bio"
