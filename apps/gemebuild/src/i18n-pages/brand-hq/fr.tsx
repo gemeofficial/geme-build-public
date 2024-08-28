@@ -4,16 +4,17 @@ import UnderConstruction, {
 import { IBrandHqPageProps } from './en'
 
 const props: IUnderConstructionProps = {
-  title: 'The GEME brand center is under construction',
+  title: 'Le centre de marque GEME est en construction',
   description: (
     <>
-      In the meantime, please visit the media kit. <br /> Or you can check out
-      our about page to find the material.
+      En attendant, veuillez visiter le kit média. <br /> Ou vous pouvez
+      consulter notre page à propos pour trouver les documents.
     </>
   ),
-  mediaKitButtonText: 'Media Kit',
-  aboutButtonText: 'About',
+  mediaKitButtonText: 'Kit Média',
+  aboutButtonText: 'À propos',
 }
+
 
 export function BrandHqPageFr({ PrefetchLink }: IBrandHqPageProps) {
   return <UnderConstruction {...props} PrefetchLink={PrefetchLink} />
