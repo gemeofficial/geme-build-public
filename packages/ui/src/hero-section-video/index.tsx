@@ -28,7 +28,7 @@ export default function HeroSectionVideo({
     >
       <div
         className={clsx(
-          'portrait:w-48 portrait:h-28 absolute right-[18px] bottom-[18px] z-40',
+          'portrait:w-48 portrait:h-28 portrait:lg:w-72 portrait:lg:h-44 absolute right-[18px] bottom-[18px] z-40',
           className,
         )}
       >

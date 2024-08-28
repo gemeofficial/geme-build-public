@@ -97,15 +97,22 @@ export default function Reviews({
               {title}
             </p>
           </div>
-          <div className="hidden sm:block">
-            <GridItemsView
-              featuredTestimonial={featuredTestimonial}
-              testimonials={testimonials}
-            />
-          </div>
-          <div className="sm:hidden">
-            <MobileItemsView mobileTestimonials={mobileTestimonials} />
-          </div>
+          <ImageZoomViewer
+            toolbar={false}
+            navbar={false}
+            loop={false}
+            keyboard={false}
+          >
+            <div className="hidden sm:block">
+              <GridItemsView
+                featuredTestimonial={featuredTestimonial}
+                testimonials={testimonials}
+              />
+            </div>
+            <div className="sm:hidden">
+              <MobileItemsView mobileTestimonials={mobileTestimonials} />
+            </div>
+          </ImageZoomViewer>
         </div>
       </div>
     </div>
@@ -158,7 +165,10 @@ function GridItemsView({
         </figcaption>
       </figure>
       {testimonials.map((columnGroup, columnGroupIdx) => (
-        <div key={columnGroupIdx} className="xl:contents xl:space-y-0">
+        <div
+          key={columnGroupIdx}
+          className="space-y-8 xl:contents xl:space-y-0"
+        >
           {columnGroup.map((column, columnIdx) => (
             <div
               key={columnIdx}
@@ -240,15 +250,13 @@ function Item({ testimonials }: { testimonials: Testimonial[] }) {
           </figcaption>
 
           {testimonial.imageUrl && (
-            <ImageZoomViewer className="size-full absolute inset-0 z-[2]">
-              <Image
-                width={1080}
-                height={720}
-                alt={`${testimonial.author.name} imageUrl`}
-                src={testimonial.imageUrl}
-                className="size-full absolute inset-0 z-[2] opacity-0"
-              />
-            </ImageZoomViewer>
+            <Image
+              width={1080}
+              height={720}
+              alt={`${testimonial.author.name} imageUrl`}
+              src={testimonial.imageUrl}
+              className="w-full h-full absolute inset-0 z-[2] opacity-0"
+            />
           )}
         </figure>
       ))}
