@@ -31,11 +31,11 @@ export default function HeroSection() {
   const { description, subTitle, title } = props
   return (
     <SectionContainer className="flex flex-col gap-4 xl:gap-6" compact>
-      <SectionTitle className="!text-left">{title}</SectionTitle>
-      <div className="md:text-lg lg:text-xl xl:text-2xl font-bold text-v2311-text-yellow">
+      <SectionTitle className="text-black/90">{title}</SectionTitle>
+      <div className="md:text-lg lg:text-xl xl:text-2xl font-bold text-v2311-text-yellow text-center">
         {subTitle}
       </div>
-      <SectionDescription className="!text-left">
+      <SectionDescription className="text-black">
         {description}
       </SectionDescription>
     </SectionContainer>

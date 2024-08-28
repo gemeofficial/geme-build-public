@@ -31,10 +31,12 @@ const imageTextProps: IShortVideoProps = {
 export function MediaKitPageEn() {
   return (
     <>
-      <HeroSection />
-      <ShortVideo {...imageTextProps} compact />
+      <div className="bg-[#F4EDE4] mb-14">
+        <HeroSection />
+      </div>
+      {/* <ShortVideo {...imageTextProps} compact /> */}
       <DownLoadMediaKit />
-      <HignLightBar />
+      {/* <HignLightBar /> */}
     </>
   )
 }
