@@ -37,15 +37,15 @@ const heroSectionProps: IHeroSection = {
 const downloadMediaKitProps: IDownLoadMediaKitProps = {
   downLoadItmes: [
     {
-      title: 'Logo Kit',
-      desc: 'Download our media kit ZIP here,Download our media kit ZIP here',
-      buttonText: 'Download here',
+      title: 'Logos',
+      desc: 'GEME Logo Library: Access a variety of GEME logos in different sizes and resolutions to suit your specific needs.',
+      buttonText: 'Download',
       href: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/media-kit/GEME_LOGO.zip',
     },
     {
-      title: 'Press Images Leif Lindner',
-      desc: 'Download our media kit ZIP here,Download our media kit ZIP here',
-      buttonText: 'Download material',
+      title: 'GEME products media kit',
+      desc: 'GEME Product Media Kit: Download high-quality product images, detailed product PDFs, and more to enhance your marketing materials.',
+      buttonText: 'Download',
       href: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/media-kit/GEME_Product_Guiding.zip',
     },
     {
@@ -87,7 +87,7 @@ const termsOfService: ITermsOfServiceProps = {
 export function MediaKitPageEn() {
   return (
     <>
-      <div className="bg-[#F4EDE4] mb-14 py-20">
+      <div className="bg-[#F4EDE4] mb-14 md:py-14 lg:py-20 xl:pt-8 xl:pb-14">
         <HeroSection {...heroSectionProps} />
       </div>
       <DownLoadMediaKit {...downloadMediaKitProps} />

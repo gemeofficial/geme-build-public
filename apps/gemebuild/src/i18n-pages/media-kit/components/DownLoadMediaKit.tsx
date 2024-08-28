@@ -34,7 +34,7 @@ export default function DownLoadMediaKit({
           <Button
             text={item.buttonText}
             href={item.href}
-            className="max-w-max min-w-[70%]"
+            className="max-w-max min-w-[70%] md:min-w-[50%] lg:min-w-[70%]"
           />
         </div>
       ))}

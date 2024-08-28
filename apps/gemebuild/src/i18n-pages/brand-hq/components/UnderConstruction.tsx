@@ -19,7 +19,7 @@ export default function UnderConstruction({
 }: IUnderConstructionProps) {
   return (
     <div className="h-screen overflow-hidden relative text-center flex items-center justify-center px-4">
-      <div className="min-h-[1500px] bg-gradient-to-b from-white to-v2311-primary absolute inset-0 -z-10"></div>
+      <div className="min-h-[1500px] bg-gradient-to-b from-white to-v2311-primary absolute inset-0 z-0"></div>
       <div className="flex items-center justify-center flex-col gap-4 md:gap-6 lg:gap-8 md:max-w-[800px] xl:max-w-[900px] mx-auto translate-y-[-50%]">
         <h1 className="text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-black">
           {title}
