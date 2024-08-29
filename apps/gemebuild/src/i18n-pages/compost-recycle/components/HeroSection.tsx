@@ -7,11 +7,15 @@ import PrimaryButton from 'ui/src/ui-components/PrimaryButton'
 export interface IHeroSection {
   title: ReactNode
   description: ReactNode
+  imageUrl: string
+  alt?: string
   PrefetchLink?: ILinkComponent
 }
 export default function HeroSection({
   description,
   title,
+  imageUrl,
+  alt,
   PrefetchLink,
 }: IHeroSection) {
   return (
@@ -25,9 +29,8 @@ export default function HeroSection({
           <Image
             width={400}
             height={300}
-            alt=""
-            // src="/assets/images/compost-recycle/hero-image.webp"
-            src="https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80"
+            alt={alt || 'Hero Section Image'}
+            src={imageUrl}
             className="lg:hidden w-full rounded-2xl object-cover"
           />
           <div className="flex-1 flex flex-col gap-6 lg:min-w-[40%]">
