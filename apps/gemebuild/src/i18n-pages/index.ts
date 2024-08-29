@@ -23,6 +23,8 @@ export * from './geme-care'
 export * from './reviews'
 export * from './ifa'
 export * from './geme-v2'
+export * from './media-kit'
+export * from './brand-hq'
 
 // contexts
 export * from '../contexts/link-context'

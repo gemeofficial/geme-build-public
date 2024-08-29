@@ -12,6 +12,7 @@ import { winnersNames } from './winnersNames'
 import { VideoList, IVideoList } from 'ui'
 import { FC } from 'react'
 import { IIFAPageProps } from './en'
+import LocationSection from 'ui/src/ifa/LocationSection'
 
 // Hero Section  De
 const IFAHeroSectionProps: IIFAHeroSectionProps = {
@@ -25,10 +26,8 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
         Glänzen mit GEME <br />
         <span className="text-[#ea3c58]">Auf der IFA Berlin 2024</span>
       </p>
-      <span className="text-2xl md:text-3xl 3xl:text-4xl">
-        Teilen Sie Ihre GEME-Geschichte,
-        <br />
-        gewinnen Sie einen GEME-Komposter!
+      <span className="text-lg md:text-3xl 3xl:text-4xl">
+        Teilen Sie Ihre GEME-Geschichte, gewinnen Sie einen GEME-Komposter!
       </span>
     </>
   ),
@@ -149,6 +148,9 @@ function IFAPageDe({ PrefetchLink, SubscribeComponent }: IIFAPageProps) {
   return (
     <>
       <IFAHeroSection {...IFAHeroSectionProps} PrefetchLink={PrefetchLink} />
+      <div className="bg-[#fffbf8]">
+        <LocationSection />
+      </div>
       <VideoList
         buttonText={IFAHeroSectionProps.buttonText}
         videoListProps={videoListProps}

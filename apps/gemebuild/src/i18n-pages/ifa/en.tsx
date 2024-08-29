@@ -11,6 +11,9 @@ import { ILinkComponent } from '../../contexts/link-context'
 import { winnersNames } from './winnersNames'
 import { VideoList, IVideoList } from 'ui'
 import { FC } from 'react'
+import ImageZoomViewer from 'ui/src/client-components/ImageZoomViewer'
+import Image from 'next/image'
+import LocationSection from 'ui/src/ifa/LocationSection'
 
 // Hero Section  En
 const IFAHeroSectionProps: IIFAHeroSectionProps = {
@@ -155,6 +158,10 @@ function IFAPageEn({ PrefetchLink, SubscribeComponent }: IIFAPageProps) {
   return (
     <>
       <IFAHeroSection {...IFAHeroSectionProps} PrefetchLink={PrefetchLink} />
+
+      <div className="bg-[#fffbf8]">
+        <LocationSection />
+      </div>
       <VideoList
         buttonText={IFAHeroSectionProps.buttonText}
         videoListProps={videoListProps}
