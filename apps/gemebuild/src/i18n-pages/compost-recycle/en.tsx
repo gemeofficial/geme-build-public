@@ -196,7 +196,7 @@ export function CompostRecyclePageEn({
       <RecycleSection {...recycleSectionProps} />
       <div className="bg-[#FCFCFC]">
         <FaqListSection {...faqListSectionProps} />
-      </div>{' '}
+      </div>
     </>
   )
 }
