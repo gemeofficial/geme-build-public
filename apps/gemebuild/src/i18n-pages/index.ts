@@ -24,6 +24,7 @@ export * from './reviews'
 export * from './ifa'
 export * from './media-kit'
 export * from './brand-hq'
+export * from './compost-recycle'
 
 // contexts
 export * from '../contexts/link-context'
