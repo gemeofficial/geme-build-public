@@ -18,6 +18,8 @@ const heroSectionProps: IHeroSectionProps = {
   },
   inputPlaceholder: 'Enter your email',
   submitButtonLabel: 'Notify Me',
+  heroBgImagePc: '/assets/images/geme-v2/hero-bg.jpg',
+  heroBgImageMobile: '/assets/images/geme-v2/hero-bg-mobile.png',
 }
 
 // Logo cloud

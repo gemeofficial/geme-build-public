@@ -8,6 +8,8 @@ export interface IHeroSectionProps
     ISubscribeComponent {
   title: ReactNode
   description: ReactNode
+  heroBgImagePc: string
+  heroBgImageMobile: string
   SubscribeComponent?: FC<ISubscribeComponent>
 }
 
@@ -16,6 +18,8 @@ export default function HeroSection({
   videoProps,
   title,
   description,
+  heroBgImagePc,
+  heroBgImageMobile,
   inputPlaceholder,
   submitButtonLabel,
   SubscribeComponent,
@@ -23,12 +27,24 @@ export default function HeroSection({
   return (
     <div className="bg-black min-h-[85vh] xl:min-h-screen relative">
       <Image
-        width={1080}
-        height={720}
-        alt="hero image"
-        src="/assets/images/geme-v2/hero-bg.jpg"
-        className="absolute inset-0 h-full w-full object-cover"
+        src={heroBgImagePc}
+        alt="hero background picture pc"
         priority
+        className="hidden md:block absolute inset-0 h-full w-full object-cover"
+        fill
+        // width={1080}
+        // height={720}
+        sizes="(max-width: 768px) 1vw,(min-width: 1281px) 60vw, (min-width: 1920px) 80vw,(min-width: 2420px) 100vw, 1vw"
+      />
+      <Image
+        src={heroBgImageMobile}
+        alt="hero background picture mobile"
+        priority
+        className="md:hidden absolute inset-0 h-full w-full object-cover"
+        // width={375}
+        // height={750}
+        fill
+        sizes="(max-width: 768px) 100vw, (min-width: 769px) 1vw, 1vw"
       />
       <div className="absolute inset-0 h-full w-full bg-black/50"></div>
 
