@@ -10,7 +10,7 @@ export default function CardSection2({ title, cardList }: ICardSectionProps2) {
   return (
     <SectionContainer compact>
       <SectionTitle className="!text-[#333]">{title}</SectionTitle>
-      <ul className="mt-4 md:mt-8 flex flex-col lg:flex-row gap-4 md:gap-6">
+      <ul className="mt-4 md:mt-8 flex gap-4 md:gap-6 overflow-auto no-scrollbar snap-x snap-mandatory">
         {cardList.map((item, index) => (
           <CardItem key={index} {...item} />
         ))}
@@ -28,7 +28,7 @@ type CardItemType = {
 
 function CardItem({ description, imageUrl, alt, title }: CardItemType) {
   return (
-    <li className="lg:max-w-sm flex flex-col gap-4">
+    <li className="max-w-[85%] md:max-w-xs flex flex-col gap-4 flex-shrink-0 scroll-mx-4 md:scroll-mx-0 snap-center">
       <Image
         width={660}
         height={440}
