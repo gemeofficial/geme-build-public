@@ -37,18 +37,23 @@ export default function HomeHeroSectionSwiper({
 }: IHomeHeroSectionSwiperProps) {
   return (
     <Swiper
-      className="!w-full h-screen"
+      className="!w-full h-full"
       modules={[Autoplay]}
       speed={600}
       slidesPerView={1}
       loop
-      // autoplay={{
-      //   delay: 5000,
-      //   disableOnInteraction: false,
-      // }}
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: false,
+      }}
     >
       <SwiperSlide className="w-full h-full">
-        <HeroSection1 {...section1} LinkComponent={LinkComponent} />
+        <HeroSection1
+          {...section1}
+          LinkComponent={LinkComponent}
+          videoClassName={clsx('bottom-36 xl:bottom-24')}
+          containerClassName="-translate-y-28"
+        />
       </SwiperSlide>
       <SwiperSlide className="w-full h-full">
         <SwiperItem2 {...section2} LinkComponent={LinkComponent} />
@@ -73,7 +78,7 @@ function SwiperItem2({
     <div className="h-screen ">
       {/* 大屏图片层 */}
       <div className="overflow-hidden h-full relative">
-        <div className="z-10 absolute inset-0 bg-black/55"></div>
+        <div className="z-10 absolute inset-0 bg-opacity-30 md:bg-opacity-40 bg-black "></div>
         <Image
           src={heroImageUrlPc}
           alt="hero background picture 2"
