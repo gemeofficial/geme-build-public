@@ -35,25 +35,26 @@ import HomeHeroSectionSwiper, {
 
 // 首页video部分的内容数据配置 Fr
 const heroSection1Props: IHeroSection1Props = {
-  title: `World's First Bio Waste Composter`,
+  title: `Le premier composteur de déchets biologiques au monde`,
   description: (
     <>
       <span className=" hidden xl:inline ">
-        Meet GEME, the modern electric composter for home
+        Découvrez GEME, le composteur électrique moderne pour la maison
         <br />
-        Turn your daily food waste into organic compost
+        Transformez vos déchets alimentaires quotidiens en compost organique
         <br />
-        Less landfill, more garden soil.
+        Moins de décharges, pour votre plants et végétations
       </span>
       <span className=" xl:hidden ">
-        Meet GEME, the modern electric home composter <br />
-        Turn your daily food waste into organic compost
+        Découvrez GEME, le composteur électrique <br />
+        moderne pour la maison Transformez vos déchets <br />
+        alimentaires quotidiens en compost organique
         <br />
-        Less landfill, more gardening.
+        Moins de décharges, pour votre plants et végétations
       </span>
     </>
   ),
-  linkText: 'Shop Now',
+  linkText: 'Acheter maintenant',
   linkUrl: '/product/geme',
   videoProps: {
     src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',

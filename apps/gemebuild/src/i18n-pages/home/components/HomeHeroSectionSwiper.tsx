@@ -2,7 +2,7 @@
 
 import { ReactNode } from 'react'
 import Image from 'next/image'
-import { Autoplay, Navigation, Pagination } from 'swiper/modules'
+import { Autoplay, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import clsx from 'clsx'
 import { ILinkComponent } from '../../../contexts/link-context'
@@ -11,7 +11,6 @@ import HeroSectionsButton from 'ui/src/client-components/HeroSectionsButton'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import './styles.css'
 
 export interface ISwiperSectionProps {
   title: ReactNode
@@ -38,7 +37,7 @@ export default function HomeHeroSectionSwiper({
 }: IHomeHeroSectionSwiperProps) {
   return (
     <Swiper
-      className="!w-full h-full homePageHeroSwiper"
+      className="!w-full h-full"
       modules={[Autoplay, Pagination]}
       pagination={{
         enabled: true,
