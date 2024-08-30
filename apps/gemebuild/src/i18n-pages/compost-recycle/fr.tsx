@@ -1,5 +1,4 @@
 import { FaqListSection, IFaqListSectionProps } from 'ui'
-import { ILinkComponent } from '../../contexts/link-context'
 import CardSection, { ICardSectionProps } from './components/CardSection'
 import HeroSection, { IHeroSection } from './components/HeroSection'
 import RecycleSection, {
