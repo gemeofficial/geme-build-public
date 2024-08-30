@@ -18,11 +18,7 @@ export default function LocationsCardSection({
   return (
     <SectionContainer compact>
       <SectionTitle className="!text-[#333] !text-left">{title}</SectionTitle>
-      <ul
-        className="mt-4 md:mt-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6"
-        data-aos="slide-up"
-        data-aos-once="true"
-      >
+      <ul className="mt-4 md:mt-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6">
         {cardList.map((item, index) => (
           <CardItem
             key={index}
