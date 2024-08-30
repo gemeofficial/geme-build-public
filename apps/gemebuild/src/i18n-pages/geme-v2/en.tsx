@@ -30,24 +30,28 @@ const heroSectionProps: IHeroSectionProps = {
 const logoCloudProps: ILogoCloudProps = {
   images: [
     {
-      src: 'https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg',
-      alt: 'Transistor',
+      src: '/assets/images/geme-v2/press/europa-press.png',
+      alt: 'Europa Press',
     },
     {
-      src: 'https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg',
+      src: '/assets/images/geme-v2/press/adnkronos.svg',
+      alt: 'Adn Kronos',
+    },
+    {
+      src: '/assets/images/geme-v2/press/bolsamania.png',
+      alt: 'Bolsamania',
+    },
+    {
+      src: '/assets/images/geme-v2/press/wallstreet-online-horizontal.svg',
       alt: 'Reform',
     },
     {
-      src: 'https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg',
-      alt: 'Tuple',
+      src: '/assets/images/geme-v2/press/yahoo-finance.png',
+      alt: 'Yahoo Finance',
     },
     {
-      src: 'https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg',
-      alt: 'SavvyCal',
-    },
-    {
-      src: 'https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg',
-      alt: 'Statamic',
+      src: '/assets/images/geme-v2/press/advfn.png',
+      alt: 'ADVFN',
     },
   ],
 }
