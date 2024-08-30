@@ -63,7 +63,7 @@ export default function HomeHeroSectionSwiper({
         <HeroSection1
           {...section1}
           LinkComponent={LinkComponent}
-          videoClassName={clsx('bottom-36 xl:bottom-24')}
+          videoClassName={clsx('!bottom-36 xl:!bottom-24')}
           containerClassName="-translate-y-28"
         />
       </SwiperSlide>
@@ -187,7 +187,7 @@ function SwiperItem3({
             {title}
           </div>
           {description}
-          <div className="flex justify-center xl:justify-end">
+          {/* <div className="flex justify-center xl:justify-end">
             <div className="max-w-max">
               <HeroSectionsButton
                 mixpanelTitle="Go Geme V2 Page"
@@ -197,7 +197,7 @@ function SwiperItem3({
                 linkUrl={linkUrl}
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
