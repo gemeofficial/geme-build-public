@@ -23,7 +23,7 @@ export default function CardSection({
           <CardItem key={index} {...item} />
         ))}
       </ul>
-      <div className="flex items-center justify-center mt-4">
+      <div className="flex items-center justify-center mt-4 md:mt-8">
         <PrimaryButton
           PrefetchLink={PrefetchLink}
           href="#"

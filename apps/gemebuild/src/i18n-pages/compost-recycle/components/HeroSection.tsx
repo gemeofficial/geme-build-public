@@ -48,7 +48,7 @@ export default function HeroSection({
               <SectionDescription className="!text-left">
                 {description}
               </SectionDescription>
-              <div className="mt-10 flex items-center gap-x-10">
+              <div className="mt-10 flex items-center gap-x-10 pl-1">
                 <PrimaryButton
                   href="#"
                   PrefetchLink={PrefetchLink}
@@ -69,10 +69,9 @@ export default function HeroSection({
           <Image
             width={900}
             height={700}
-            alt=""
-            // src="/assets/images/compost-recycle/hero-image.webp"
-            src="https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80"
-            className="hidden lg:block flex-1 aspect-[6/5] rounded-2xl object-cover"
+            alt={alt || 'Hero Section Image'}
+            src={imageUrl}
+            className="hidden lg:block flex-1 max-w-[640px] aspect-[6/5] rounded-2xl object-cover"
           />
         </div>
       </div>

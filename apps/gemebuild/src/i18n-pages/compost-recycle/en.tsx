@@ -22,7 +22,8 @@ const heroSectionProps: IHeroSection = {
   ),
   // "/assets/images/compost-recycle/hero-image.webp"
   imageUrl:
-    'https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80',
+    // 'https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80',
+    '/assets/images/pdp-v2311/introduction/geme-composter-size-v2.jpeg',
   primaryButtonText: 'Join Our',
   linkButtonText: 'See Future Locations',
 }
@@ -68,15 +69,14 @@ const cardSectionProps2: ICardSectionProps2 = {
     {
       title: 'Fill Your Lomi Earth Bin',
       description: `Add all your Lomi Earth into the reusable bin we provide and, once it's full, you can schedule your pickup with us. We’ll take it and leave a new bin to fill up.`,
-      imageUrl:
-        '/assets/images/pdp-v2311/introduction/geme-take-care-of-the-rest.jpg',
+      imageUrl: '/assets/images/how-it-works/how-geme-kobold-works.png',
     },
     {
       title: 'Use the App to Schedule Pickup',
       description:
         'Lomi Earth pickup is scheduled right in our app. Leave your bin outside your door and we’ll take and donate it to local farms and partners to regenerate the soil. ',
       imageUrl:
-        '/assets/images/pdp-v2311/introduction/geme-take-care-of-the-rest.jpg',
+        '/assets/images/pdp-v2311/introduction/geme-garbage-disposal.jpg',
     },
   ],
 }

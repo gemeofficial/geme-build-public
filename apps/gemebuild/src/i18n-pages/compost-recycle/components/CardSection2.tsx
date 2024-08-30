@@ -28,11 +28,11 @@ type CardItemType = {
 
 function CardItem({ description, imageUrl, alt, title }: CardItemType) {
   return (
-    <li className="max-w-[85%] md:max-w-xs flex flex-col gap-4 flex-shrink-0 scroll-mx-4 md:scroll-mx-0 snap-center">
+    <li className="max-w-[85%] md:max-w-xs lg:max-w-none flex flex-col gap-4 flex-shrink-0 lg:flex-shrink lg:flex-1 scroll-mx-4 md:scroll-mx-0 snap-center">
       <Image
         width={660}
         height={440}
-        className="object-cover min-h-36 md:min-h-[240px] w-full max-h-[400px] rounded-xl rounded-tr-[50px]"
+        className="object-cover min-h-36 md:min-h-[240px] w-full max-h-[400px] rounded-xl"
         src={imageUrl}
         alt={alt || title}
       />
