@@ -28,7 +28,7 @@ import type {
   IHomeHeroSectionSwiperProps,
 } from 'ui'
 import { Footprints, type IFootprintsProps } from '../../components/footprints'
-import { Newsletter, INewsletterProps } from './containers/newsletter'
+import { Newsletter, INewsletterProps } from './components/newsletter'
 import { ILinkComponent } from '../../contexts/link-context'
 import { ReviewsSectionModule } from '../../components/reviews-section-module'
 
