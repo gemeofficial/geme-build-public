@@ -2,7 +2,7 @@
 
 import { ReactNode } from 'react'
 import Image from 'next/image'
-import { Autoplay, Pagination } from 'swiper/modules'
+import { Autoplay, Keyboard, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import clsx from 'clsx'
 import { ILinkComponent } from '../../../contexts/link-context'
@@ -38,7 +38,7 @@ export default function HomeHeroSectionSwiper({
   return (
     <Swiper
       className="!w-full h-full"
-      modules={[Autoplay, Pagination]}
+      modules={[Autoplay, Pagination, Keyboard]}
       pagination={{
         enabled: true,
         clickable: true,
