@@ -12,9 +12,9 @@ import Subscribe, {
 
 // Hero section
 const heroSectionProps: IHeroSectionProps = {
-  title: 'GEME V2 Product Upcoming release',
+  title: 'GEME Terra 2:>>>>>>>> Waste Less, Grow More',
   description:
-    'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.',
+    'Meet GEME Terra 2, the smarter, more affordable electric kitchen composter for small home. Turn food waste into real compost the effortless way.',
   fullScreenVideoUrl: 'https://www.youtube.com/embed/ROJYZBp0jcM',
   videoProps: {
     src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
