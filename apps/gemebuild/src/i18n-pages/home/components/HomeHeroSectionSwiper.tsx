@@ -12,7 +12,7 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-interface ISwiperSectionProps {
+export interface ISwiperSectionProps {
   title: ReactNode
   description: ReactNode
   linkText: string
@@ -21,14 +21,15 @@ interface ISwiperSectionProps {
   heroImageUrlMobile: string
   LinkComponent?: ILinkComponent
 }
-interface IHomeHeroSectionSwiperProps {
+
+export interface IHomeHeroSectionSwiperProps {
   section1: IHeroSection1Props
   section2: ISwiperSectionProps
   section3: ISwiperSectionProps
   LinkComponent?: ILinkComponent
 }
 
-function HomeHeroSectionSwiper({
+export default function HomeHeroSectionSwiper({
   section1,
   section2,
   section3,

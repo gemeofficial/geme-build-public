@@ -12,7 +12,6 @@ import {
   CompostStep3,
   SecondLife,
   UserStoriesVideos,
-  HomeHeroSectionSwiper,
 } from 'ui'
 import type {
   IHeroSection1Props,
@@ -25,12 +24,14 @@ import type {
   ISecondLifeProps,
   IReviewsSectionConfig,
   IUserStoriesVideoProps,
-  IHomeHeroSectionSwiperProps,
 } from 'ui'
 import { Footprints, type IFootprintsProps } from '../../components/footprints'
 import { Newsletter, INewsletterProps } from './components/newsletter'
 import { ILinkComponent } from '../../contexts/link-context'
 import { ReviewsSectionModule } from '../../components/reviews-section-module'
+import HomeHeroSectionSwiper, {
+  IHomeHeroSectionSwiperProps,
+} from './components/HomeHeroSectionSwiper'
 
 // 首页video部分的内容数据配置 En
 const heroSection1Props: IHeroSection1Props = {
