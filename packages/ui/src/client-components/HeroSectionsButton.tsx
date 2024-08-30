@@ -3,28 +3,35 @@
 import { ILinkComponent } from '../../../../apps/gemebuild/src/contexts/link-context'
 import { IconCycleArrow } from '../icons'
 import mixpanel from 'mixpanel-browser'
+import { hasMixpanel } from '../lib'
 
-interface IHeroSection1Props {
+interface IHeroSectionsButtonProps {
   linkText?: string
   linkUrl?: string
   LinkComponent?: ILinkComponent
+  mixpanelTitle?: string
+  mixpanelFrom?: string
 }
 
 export default function HeroSectionsButton({
   LinkComponent,
   linkText,
   linkUrl,
-}: IHeroSection1Props) {
+  mixpanelTitle,
+  mixpanelFrom,
+}: IHeroSectionsButtonProps) {
   const linkClickedTrack = () => {
-    mixpanel.track('Go Product Page', {
-      From: 'Hero Primary Button',
-    })
+    if (hasMixpanel()) {
+      mixpanel.track(mixpanelTitle || 'Go Product Page', {
+        From: mixpanelFrom || 'Hero Primary Button',
+      })
+    }
   }
 
   // 修复在bio中传入自定义的Prefetch Link 时多语言路径不正确问题
   let newLinkUrl = ''
   if (LinkComponent) {
-    newLinkUrl = linkUrl?.replace('/de','').replace('/fr','') as string
+    newLinkUrl = linkUrl?.replace('/de', '').replace('/fr', '') as string
   }
 
   return (

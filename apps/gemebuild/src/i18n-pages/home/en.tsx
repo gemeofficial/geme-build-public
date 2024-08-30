@@ -86,9 +86,9 @@ const heroSectionSwiperProps: IHomeHeroSectionSwiperProps = {
       </>
     ),
     linkText: 'Learn More',
-    linkUrl: '/product/geme',
-    heroImageUrlPc: '/assets/images/home-v2311/cover-v3.jpg',
-    heroImageUrlMobile: '/assets/images/home-v2311/cover-v3-mobile.jpg',
+    linkUrl: '/ifa',
+    heroImageUrlPc: '/assets/images/home-v2311/hero-bg-2.jpg',
+    heroImageUrlMobile: '/assets/images/home-v2311/hero-bg-mobile-2.jpg',
   },
 
   section3: {
@@ -104,9 +104,9 @@ const heroSectionSwiperProps: IHomeHeroSectionSwiperProps = {
       </>
     ),
     linkText: 'KNOW MORE',
-    linkUrl: '/product/geme',
-    heroImageUrlPc: '/assets/images/home-v2311/cover-v3.jpg',
-    heroImageUrlMobile: '/assets/images/home-v2311/cover-v3-mobile.jpg',
+    linkUrl: '/geme-v2',
+    heroImageUrlPc: '/assets/images/home-v2311/hero-bg-3.jpg',
+    heroImageUrlMobile: '/assets/images/home-v2311/hero-bg-mobile-3.jpg',
   },
 }
 
@@ -496,12 +496,14 @@ export interface IHomePageProps {
 function HomePageEn({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
   heroSection1Props.LinkComponent = PrefetchLink
 
-  const isOpenSwiperContent =
-    process.env.NEXT_PUBLIC_HOME_HERO_SWIPER &&
-    process.env.NEXT_PUBLIC_HOME_HERO_SWIPER == 'true'
-      ? true
-      : false
-      
+  // const isOpenSwiperContent =
+  //   process.env.NEXT_PUBLIC_HOME_HERO_SWIPER &&
+  //   process.env.NEXT_PUBLIC_HOME_HERO_SWIPER == 'true'
+  //     ? true
+  //     : false
+
+  const isOpenSwiperContent = true
+
   return (
     <>
       {isOpenSwiperContent && (

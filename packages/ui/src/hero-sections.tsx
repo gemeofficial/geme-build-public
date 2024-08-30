@@ -237,7 +237,7 @@ function SwiperItem2({
         <Image
           src={heroImageUrlPc}
           alt="hero background picture 2"
-          className="w-full h-full object-cover"
+          className="hidden xl:block w-full h-full object-cover"
           fill
           sizes="(max-width: 1280px) 1vw,(min-width: 1281px) 60vw, (min-width: 1920px) 80vw,(min-width: 2420px) 100vw, 1vw"
         />
@@ -260,7 +260,7 @@ function SwiperItem2({
           'xl:text-left xl:pl-20 2xl:pl-0 font-bold text-white',
         )}
       >
-        <div className="mt-20 md:mt-40 xl:mr-44 2xl:mr-64 3xl:mr-96">
+        <div className="mt-20 xl:mr-44 2xl:mr-64 3xl:mr-96">
           <div
             className={clsx(
               'text-2xl md:text-3xl lg:text-4xl ',
@@ -271,6 +271,8 @@ function SwiperItem2({
           </div>
           <div className="px-10 md:px-0">
             <HeroSectionsButton
+              mixpanelTitle="Go IFA Page"
+              mixpanelFrom="Home Hero Primary Button"
               LinkComponent={LinkComponent}
               linkText={linkText}
               linkUrl={linkUrl}
@@ -300,7 +302,7 @@ function SwiperItem3({
         <Image
           src={heroImageUrlPc}
           alt="hero background picture 3"
-          className="w-full h-full object-cover"
+          className="hidden xl:block w-full h-full object-cover"
           fill
           sizes="(max-width: 1280px) 1vw,(min-width: 1281px) 60vw, (min-width: 1920px) 80vw,(min-width: 2420px) 100vw, 1vw"
         />
@@ -331,6 +333,8 @@ function SwiperItem3({
           <div className="flex justify-center xl:justify-end">
             <div className="max-w-max">
               <HeroSectionsButton
+                mixpanelTitle="Go Geme V2 Page"
+                mixpanelFrom="Home Hero Primary Button"
                 LinkComponent={LinkComponent}
                 linkText={linkText}
                 linkUrl={linkUrl}
