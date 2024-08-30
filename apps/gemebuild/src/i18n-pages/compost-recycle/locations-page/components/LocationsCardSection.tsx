@@ -67,7 +67,7 @@ function CardItem({
   const href = isOpen ? '#' : '#'
 
   return (
-    <li className="lg:max-w-sm bg-gray-100 shadow p-6 flex flex-col gap-4">
+    <li className="bg-gray-100 shadow p-6 flex flex-col gap-4">
       <Image
         width={660}
         height={440}
