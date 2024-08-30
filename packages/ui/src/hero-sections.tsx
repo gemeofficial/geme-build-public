@@ -3,6 +3,13 @@ import { ILinkComponent } from '../../../apps/gemebuild/src/contexts/link-contex
 import Image from 'next/image'
 import HeroSectionsButton from './client-components/HeroSectionsButton'
 import { PlayIcon, VideoInlinePlayer } from './video-inline-player'
+import { Autoplay } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import clsx from 'clsx'
 
 interface IHeroSection1Props {
   title?: ReactNode
@@ -17,6 +24,22 @@ interface IHeroSection1Props {
   fullScreenVideoUrl?: string
   heroImageUrlPc: string // 首屏大图URL
   heroImageUrlMobile: string // 首屏大图URL
+}
+
+interface ISwiperSectionProps {
+  title: ReactNode
+  description: ReactNode
+  linkText: string
+  linkUrl: string
+  heroImageUrlPc: string
+  heroImageUrlMobile: string
+  LinkComponent?: ILinkComponent
+}
+interface IHomeHeroSectionSwiperProps {
+  section1: IHeroSection1Props
+  section2: ISwiperSectionProps
+  section3: ISwiperSectionProps
+  LinkComponent?: ILinkComponent
 }
 
 const heroSection1Props: IHeroSection1Props = {
@@ -64,107 +87,267 @@ function HeroSection1({
   heroImageUrlMobile,
 }: IHeroSection1Props) {
   return (
+    <>
+      <div className="h-screen ">
+        {/* 大屏图片层 */}
+        <div className="overflow-hidden h-full relative">
+          <div className="z-10 absolute inset-0 bg-opacity-30 md:bg-opacity-40 bg-black "></div>
+          <Image
+            src={heroImageUrlPc}
+            alt="hero background picture"
+            priority
+            className="hidden xl:block w-full h-full object-cover"
+            fill
+            // width={1920}
+            // height={1080}
+            sizes="(max-width: 1280px) 1vw,(min-width: 1281px) 60vw, (min-width: 1920px) 80vw,(min-width: 2420px) 100vw, 1vw"
+          />
+          <Image
+            src={heroImageUrlMobile}
+            alt="hero background picture"
+            priority
+            className="xl:hidden w-full h-full object-cover"
+            // width={375}
+            // height={750}
+            fill
+            sizes="(max-width: 1280px) 100vw, (min-width: 1281px) 1vw, 1vw"
+          />
+        </div>
+
+        {/* 文字定位层 */}
+        <div className="h-screen xl:mx-auto xl:max-w-7xl absolute z-40 inset-0 flex flex-col items-center xl:items-start justify-center text-center xl:text-left xl:pl-20 2xl:pl-0">
+          <Image
+            src="/assets/images/home-v2311/hero-section-logo.svg"
+            alt="hero section logo"
+            priority
+            className="hidden xl:block w-16 h-16"
+            width={64}
+            height={64}
+            quality={100}
+          />
+          {title && (
+            <h1 className="v2311-font-h0 text-white xl:mt-12">{title}</h1>
+          )}
+          {description && (
+            <p className="v2311-font-h2 font-normal text-white mt-4 md:mt-12 xl:mt-12">
+              {description}
+            </p>
+          )}
+          <HeroSectionsButton
+            LinkComponent={LinkComponent}
+            linkText={linkText}
+            linkUrl={linkUrl}
+          />
+        </div>
+
+        {/* 全屏播放器 */}
+        <VideoInlinePlayer
+          videoUrl={
+            fullScreenVideoUrl || 'https://www.youtube.com/embed/ROJYZBp0jcM'
+          }
+          description="Watch our video to learn more"
+          hiddenPlayIcon={true}
+          mixpanelStatPayload={{
+            title: 'Watch video',
+            payload: { From: 'Home hero video' },
+          }}
+        >
+          <div className="portrait:w-48 portrait:h-28 absolute right-[18px] bottom-[18px] z-40">
+            {/* 右下角视频小窗 */}
+            <div className="relative h-full landscape:w-[180px] landscape:h-[111px] landscape:lg:w-[270px] landscape:lg:h-[152px]  landscape:2xl:w-[400px] landscape:2xl:h-[230px] rounded-xl landscape:rounded-xl overflow-hidden group">
+              <div className="relative h-full w-full object-cover transform-gpu transition-transform group-hover:scale-125 duration-[0.25s] ease-[cubic-bezier(0.24, 0.8, 0.4, 1)]">
+                <video
+                  className="w-full h-full object-cover"
+                  controls={false}
+                  autoPlay
+                  playsInline
+                  muted
+                  loop
+                  poster={videoProps.posterUrl}
+                  src={videoProps.src}
+                >
+                  Your browser does not support HTML5 video.
+                </video>
+              </div>
+
+              <button
+                type="button"
+                className="absolute inset-0 w-full opacity-80 hover:opacity-100 transition-opacity duration-200"
+                title="Play fullscreen video"
+              >
+                {/* 大屏显示大按钮 */}
+                <PlayIcon className="m-auto hidden lg:block" size="medium" />
+
+                {/* 1024以下显示小按钮 */}
+                <PlayIcon className="m-auto lg:hidden" size="small" />
+              </button>
+            </div>
+          </div>
+        </VideoInlinePlayer>
+      </div>
+    </>
+  )
+}
+
+function HomeHeroSectionSwiper({
+  section1,
+  section2,
+  section3,
+  LinkComponent,
+}: IHomeHeroSectionSwiperProps) {
+  return (
+    <Swiper
+      className="!w-full h-screen"
+      modules={[Autoplay]}
+      speed={600}
+      slidesPerView={1}
+      loop
+      // autoplay={{
+      //   delay: 5000,
+      //   disableOnInteraction: false,
+      // }}
+    >
+      <SwiperSlide className="w-full h-full">
+        <HeroSection1 {...section1} LinkComponent={LinkComponent} />
+      </SwiperSlide>
+      <SwiperSlide className="w-full h-full">
+        <SwiperItem2 {...section2} LinkComponent={LinkComponent} />
+      </SwiperSlide>
+      <SwiperSlide className="w-full h-full">
+        <SwiperItem3 {...section3} LinkComponent={LinkComponent} />
+      </SwiperSlide>
+    </Swiper>
+  )
+}
+
+function SwiperItem2({
+  title,
+  description,
+  linkText,
+  linkUrl,
+  LinkComponent,
+  heroImageUrlPc,
+  heroImageUrlMobile,
+}: ISwiperSectionProps) {
+  return (
     <div className="h-screen ">
       {/* 大屏图片层 */}
       <div className="overflow-hidden h-full relative">
         <div className="z-10 absolute inset-0 bg-opacity-30 md:bg-opacity-40 bg-black "></div>
         <Image
           src={heroImageUrlPc}
-          alt="hero background picture"
-          priority
-          className="hidden xl:block w-full h-full object-cover"
+          alt="hero background picture 2"
+          className="w-full h-full object-cover"
           fill
-          // width={1920}
-          // height={1080}
           sizes="(max-width: 1280px) 1vw,(min-width: 1281px) 60vw, (min-width: 1920px) 80vw,(min-width: 2420px) 100vw, 1vw"
         />
         <Image
           src={heroImageUrlMobile}
-          alt="hero background picture"
+          alt="hero background mobile picture 2"
           priority
           className="xl:hidden w-full h-full object-cover"
-          // width={375}
-          // height={750}
           fill
           sizes="(max-width: 1280px) 100vw, (min-width: 1281px) 1vw, 1vw"
         />
       </div>
 
       {/* 文字定位层 */}
-      <div className="h-screen xl:mx-auto xl:max-w-7xl absolute z-40 inset-0 flex flex-col items-center xl:items-start justify-center text-center xl:text-left xl:pl-20 2xl:pl-0">
+      <div
+        className={clsx(
+          'h-screen xl:mx-auto absolute z-40 inset-0 ',
+          'flex xl:flex-row xl:items-center justify-center text-center',
+          'flex-col-reverse md:px-[10%] xl:px-0',
+          'xl:text-left xl:pl-20 2xl:pl-0 font-bold text-white',
+        )}
+      >
+        <div className="mt-20 md:mt-40 xl:mr-44 2xl:mr-64 3xl:mr-96">
+          <div
+            className={clsx(
+              'text-2xl md:text-3xl lg:text-4xl ',
+              'xl:text-5xl 2xl:text-6xl 3xl:text-7xl',
+            )}
+          >
+            {title}
+          </div>
+          <div className="px-10 md:px-0">
+            <HeroSectionsButton
+              LinkComponent={LinkComponent}
+              linkText={linkText}
+              linkUrl={linkUrl}
+            />
+          </div>
+        </div>
+        <div className="flex flex-col gap-8">{description}</div>
+      </div>
+    </div>
+  )
+}
+
+function SwiperItem3({
+  title,
+  description,
+  linkText,
+  linkUrl,
+  LinkComponent,
+  heroImageUrlPc,
+  heroImageUrlMobile,
+}: ISwiperSectionProps) {
+  return (
+    <div className="h-screen ">
+      {/* 大屏图片层 */}
+      <div className="overflow-hidden h-full relative">
+        <div className="z-10 absolute inset-0 bg-opacity-30 md:bg-opacity-40 bg-black "></div>
         <Image
-          src="/assets/images/home-v2311/hero-section-logo.svg"
-          alt="hero section logo"
-          priority
-          className="hidden xl:block w-16 h-16"
-          width={64}
-          height={64}
-          quality={100}
+          src={heroImageUrlPc}
+          alt="hero background picture 3"
+          className="w-full h-full object-cover"
+          fill
+          sizes="(max-width: 1280px) 1vw,(min-width: 1281px) 60vw, (min-width: 1920px) 80vw,(min-width: 2420px) 100vw, 1vw"
         />
-        {title && (
-          <h1 className="v2311-font-h0 text-white xl:mt-12">{title}</h1>
-        )}
-        {description && (
-          <p className="v2311-font-h2 font-normal text-white mt-4 md:mt-12 xl:mt-12">
-            {description}
-          </p>
-        )}
-        <HeroSectionsButton
-          LinkComponent={LinkComponent}
-          linkText={linkText}
-          linkUrl={linkUrl}
+        <Image
+          src={heroImageUrlMobile}
+          alt="hero background mobile picture 3"
+          priority
+          className="xl:hidden w-full h-full object-cover"
+          fill
+          sizes="(max-width: 1280px) 100vw, (min-width: 1281px) 1vw, 1vw"
         />
       </div>
 
-      {/* 全屏播放器 */}
-      <VideoInlinePlayer
-        videoUrl={
-          fullScreenVideoUrl || 'https://www.youtube.com/embed/ROJYZBp0jcM'
-        }
-        description="Watch our video to learn more"
-        hiddenPlayIcon={true}
-        mixpanelStatPayload={{
-          title: 'Watch video',
-          payload: { From: 'Home hero video' },
-        }}
+      {/* 文字定位层 */}
+      <div
+        className={clsx(
+          'h-screen xl:mx-auto absolute z-40 inset-0 ',
+          'flex flex-col items-center justify-center',
+          'text-center xl:text-right px-8 md:px-20 xl:pr-32',
+          'font-bold text-white',
+        )}
       >
-        <div className="portrait:w-48 portrait:h-28 absolute right-[18px] bottom-[18px] z-40">
-          {/* 右下角视频小窗 */}
-          <div className="relative h-full landscape:w-[180px] landscape:h-[111px] landscape:lg:w-[270px] landscape:lg:h-[152px]  landscape:2xl:w-[400px] landscape:2xl:h-[230px] rounded-xl landscape:rounded-xl overflow-hidden group">
-            <div className="relative h-full w-full object-cover transform-gpu transition-transform group-hover:scale-125 duration-[0.25s] ease-[cubic-bezier(0.24, 0.8, 0.4, 1)]">
-              <video
-                className="w-full h-full object-cover"
-                controls={false}
-                autoPlay
-                playsInline
-                muted
-                loop
-                poster={videoProps.posterUrl}
-                src={videoProps.src}
-              >
-                Your browser does not support HTML5 video.
-              </video>
+        <div className="flex flex-col gap-4 md:gap-12 xl:gap-4 w-full">
+          <div className="xl:leading-[0.65] leading-none text-7xl md:text-[100px] lg:text-[150px] xl:text-[200px] 2xl:text-[300px] 3xl:text-[400px]">
+            {title}
+          </div>
+          {description}
+          <div className="flex justify-center xl:justify-end">
+            <div className="max-w-max">
+              <HeroSectionsButton
+                LinkComponent={LinkComponent}
+                linkText={linkText}
+                linkUrl={linkUrl}
+              />
             </div>
-
-            <button
-              type="button"
-              className="absolute inset-0 w-full opacity-80 hover:opacity-100 transition-opacity duration-200"
-              title="Play fullscreen video"
-            >
-              {/* 大屏显示大按钮 */}
-              <PlayIcon className="m-auto hidden lg:block" size="medium" />
-
-              {/* 1024以下显示小按钮 */}
-              <PlayIcon className="m-auto lg:hidden" size="small" />
-            </button>
           </div>
         </div>
-      </VideoInlinePlayer>
+      </div>
     </div>
   )
 }
 
 const EXAMPLE_HERO_SECTION_PROPS = { heroSection1Props }
 
-export { HeroSection1, EXAMPLE_HERO_SECTION_PROPS }
-export type { IHeroSection1Props }
+export { HeroSection1, EXAMPLE_HERO_SECTION_PROPS, HomeHeroSectionSwiper }
+export type {
+  IHeroSection1Props,
+  ISwiperSectionProps,
+  IHomeHeroSectionSwiperProps,
+}
