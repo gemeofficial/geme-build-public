@@ -73,7 +73,7 @@ function SwiperItem2({
     <div className="h-screen ">
       {/* 大屏图片层 */}
       <div className="overflow-hidden h-full relative">
-        <div className="z-10 absolute inset-0 bg-opacity-30 md:bg-opacity-40 bg-black "></div>
+        <div className="z-10 absolute inset-0 bg-black/55"></div>
         <Image
           src={heroImageUrlPc}
           alt="hero background picture 2"

@@ -88,8 +88,8 @@ const heroSectionSwiperProps: IHomeHeroSectionSwiperProps = {
     ),
     linkText: 'Learn More',
     linkUrl: '/ifa',
-    heroImageUrlPc: '/assets/images/home-v2311/hero-bg-2.jpg',
-    heroImageUrlMobile: '/assets/images/home-v2311/hero-bg-mobile-2.jpg',
+    heroImageUrlPc: '/assets/images/ifa/hero-bg.png',
+    heroImageUrlMobile: '/assets/images/ifa/hero-bg.png',
   },
 
   section3: {
@@ -497,13 +497,11 @@ export interface IHomePageProps {
 function HomePageEn({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
   heroSection1Props.LinkComponent = PrefetchLink
 
-  // const isOpenSwiperContent =
-  //   process.env.NEXT_PUBLIC_HOME_HERO_SWIPER &&
-  //   process.env.NEXT_PUBLIC_HOME_HERO_SWIPER == 'true'
-  //     ? true
-  //     : false
-
-  const isOpenSwiperContent = true
+  const isOpenSwiperContent =
+    process.env.NEXT_PUBLIC_HOME_HERO_SWIPER &&
+    process.env.NEXT_PUBLIC_HOME_HERO_SWIPER == 'true'
+      ? true
+      : false
 
   return (
     <>

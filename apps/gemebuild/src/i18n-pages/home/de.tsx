@@ -27,39 +27,33 @@ import type {
 } from 'ui'
 import { Footprints, type IFootprintsProps } from '../../components/footprints'
 import { Newsletter, INewsletterProps } from './components/newsletter'
-import { ILinkComponent } from '../../contexts/link-context'
 import { ReviewsSectionModule } from '../../components/reviews-section-module'
 import { IHomePageProps } from './en'
+import HomeHeroSectionSwiper, {
+  IHomeHeroSectionSwiperProps,
+} from './components/HomeHeroSectionSwiper'
 
 // 首页video部分的内容数据配置 De
 const heroSection1Props: IHeroSection1Props = {
-  title: (
-    <>
-      <span className="hidden xl:inline">
-        Weltweit erster Bioabfallkomposter
-      </span>
-      <span className="xl:hidden">Weltweit erster Bioabfallkomposter</span>
-    </>
-  ),
+  title: `World's First Bio Waste Composter`,
   description: (
     <>
       <span className=" hidden xl:inline ">
-        Lernen Sie GEME kennen, den modernen elektrischen Komposter für Zuhause
+        Meet GEME, the modern electric composter for home
         <br />
-        Verwandeln Sie Ihre täglichen Lebensmittelabfälle in organischen Kompost
+        Turn your daily food waste into organic compost
         <br />
-        Weniger Deponie, mehr fruchtbare Erde.
+        Less landfill, more garden soil.
       </span>
       <span className=" xl:hidden ">
-        Lernen Sie GEME kennen, den modernen elektrischen Komposter für Zuhause{' '}
+        Meet GEME, the modern electric home composter <br />
+        Turn your daily food waste into organic compost
         <br />
-        Verwandeln Sie Ihre täglichen Lebensmittelabfälle in organischen Kompost
-        <br />
-        Weniger Deponie, mehr fruchtbare Erde.
+        Less landfill, more gardening.
       </span>
     </>
   ),
-  linkText: 'Jetzt kaufen',
+  linkText: 'Shop Now',
   linkUrl: '/product/geme',
   videoProps: {
     src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
@@ -68,6 +62,52 @@ const heroSection1Props: IHeroSection1Props = {
   fullScreenVideoUrl: 'https://www.youtube.com/embed/ROJYZBp0jcM',
   heroImageUrlPc: '/assets/images/home-v2311/cover-v3.jpg',
   heroImageUrlMobile: '/assets/images/home-v2311/cover-v3-mobile.jpg',
+}
+
+// 首页Swiper滚动轮播区域的内容数据配置 De
+const heroSectionSwiperProps: IHomeHeroSectionSwiperProps = {
+  section1: heroSection1Props,
+  section2: {
+    title: (
+      <>
+        Messedamm 22 <br /> Halle 12 Stand Nr. 312
+      </>
+    ),
+    description: (
+      <>
+        <div className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 3xl:text-[100px]">
+          Treffen Sie GEME auf der
+        </div>
+        <div className="xl:leading-[0.65] leading-none text-7xl md:text-[100px] lg:text-[150px] xl:text-[200px] 2xl:text-[300px] 3xl:text-[400px]">
+          IFA
+        </div>
+        <div className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 3xl:text-[100px]">
+          Berlin 2024
+        </div>
+      </>
+    ),
+    linkText: 'Mehr erfahren',
+    linkUrl: '/ifa',
+    heroImageUrlPc: '/assets/images/ifa/hero-bg.png',
+    heroImageUrlMobile: '/assets/images/ifa/hero-bg.png',
+  },
+  section3: {
+    title: 'TERRA 2',
+    description: (
+      <>
+        <div className="mt-10 xl:mt-20 3xl:mt-44 text-2xl md:text-5xl lg:text-6xl xl:text-4xl 3xl:text-6xl md:leading-none">
+          NEUE GENERATION DES GEME KOMPOSTIERERS
+        </div>
+        <div className="text-2xl md:text-5xl lg:text-6xl xl:text-4xl 3xl:text-6xl md:leading-none">
+          DEMNÄCHST ERHÄLTLICH
+        </div>
+      </>
+    ),
+    linkText: 'Mehr erfahren',
+    linkUrl: '/geme-v2',
+    heroImageUrlPc: '/assets/images/home-v2311/hero-bg-3.jpg',
+    heroImageUrlMobile: '/assets/images/home-v2311/hero-bg-mobile-3.jpg',
+  },
 }
 
 // 首页第二部分的内容数据配置 De
@@ -462,14 +502,20 @@ const newsltterProps: INewsletterProps = {
   },
 }
 
-function HomePageDe({
-  PrefetchLink,
-  reviewsSectionConfig,
-}: IHomePageProps) {
+function HomePageDe({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
   heroSection1Props.LinkComponent = PrefetchLink
+  const isOpenSwiperContent =
+    process.env.NEXT_PUBLIC_HOME_HERO_SWIPER &&
+    process.env.NEXT_PUBLIC_HOME_HERO_SWIPER == 'true'
+      ? true
+      : false
+
   return (
     <>
-      <HeroSection1 {...heroSection1Props} />
+      {isOpenSwiperContent && (
+        <HomeHeroSectionSwiper {...heroSectionSwiperProps} />
+      )}
+      {!isOpenSwiperContent && <HeroSection1 {...heroSection1Props} />}
 
       {/*<ContentSection2 {...contentSection2Props} />*/}
       <ContentSection3 {...contentSection3Props} />
@@ -497,7 +543,7 @@ function HomePageDe({
 
       <Footprints {...footprintsProps} />
 
-      <Newsletter {...newsltterProps}/>
+      <Newsletter {...newsltterProps} />
     </>
   )
 }
