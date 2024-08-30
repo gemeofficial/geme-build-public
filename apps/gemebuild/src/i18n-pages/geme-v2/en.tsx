@@ -58,28 +58,20 @@ const logoCloudProps: ILogoCloudProps = {
 
 // 图文section1
 const shortVideoProps: IShortVideoProps = {
-  title: 'Compost Pile in A Box',
+  title: 'Real Composting',
   description: (
     <>
       <ul className="list-disc ml-4 mt-4">
+        <li className="mt-4">Simulates a pile in a box</li>
         <li className="mt-4">
-          <a href="product/geme">GEME Composter</a> quickly breaks down food
-          scraps and pet waste using special microbes.
+          Creates <strong>an ideal environment</strong> for microbes
         </li>
-
+        <li className="mt-4">Aerobic composting method</li>
         <li className="mt-4">
-          The mixer increases the surface area of food waste for microbes to
-          attach.
+          Uses microbiota(<a href="/geme-kobold">GEME Kobold</a>)
         </li>
-
-        <li className="mt-4">
-          It creates <strong>ideal environment for microbes</strong> to thrive
-          and decompose waste.
-        </li>
-
-        <li className="mt-4">
-          Similar to outdoor composting, but in a neat and convenient container.
-        </li>
+        <li className="mt-4">Temperature control</li>
+        <li className="mt-4">Auto turnover</li>
       </ul>
     </>
   ),
@@ -90,26 +82,17 @@ const shortVideoProps: IShortVideoProps = {
 
 // 图文section2
 const imageTextProps: IShortVideoProps = {
-  title: 'Microbes, Not Dehydrate',
+  title: 'Smaller but Powerful',
   description: (
     <>
-      <p>
-        Many food dehydrator machines are marketed misleadingly as composters.
-        However, they are simply bread makers that cook and dehydrate food, not
-        actually composting it.
-      </p>
-      <p>These dehydrators use electricity to heat and dry food scraps.</p>
-      <hr className="mt-4 mb-4" />
-      <p>
-        In contrast, the GEME Composter utilizes{' '}
-        <a href="/geme-kobold">GEME Kobold</a> to accelerate the composting
-        process.
-      </p>
-      <p>
-        It uses electricity to{' '}
-        <strong>simulate and maintain the optimal environment</strong>, for
-        microbes to thrive, effectively breaking down organic waste.
-      </p>
+      <ul className="list-disc ml-4 mt-4">
+        <li className="mt-4">Affordable pricing</li>
+        <li className="mt-4">Faster breakdown</li>
+        <li className="mt-4">More efficient aerobic air exchange</li>
+        <li className="mt-4">More powerful odor filter system</li>
+        <li className="mt-4">Quieter</li>
+        <li className="mt-4">Fit on countertop and floor</li>
+      </ul>
     </>
   ),
   imageUrl: '/assets/images/pdp-v2311/introduction/geme-composter-size-v2.jpeg',
@@ -119,26 +102,17 @@ const imageTextProps: IShortVideoProps = {
 
 // 图文section3
 const imageTextProps2: IShortVideoProps = {
-  title: 'Microbes, Not Dehydrate',
+  title: 'Smarter than Ever',
   description: (
     <>
-      <p>
-        Many food dehydrator machines are marketed misleadingly as composters.
-        However, they are simply bread makers that cook and dehydrate food, not
-        actually composting it.
-      </p>
-      <p>These dehydrators use electricity to heat and dry food scraps.</p>
-      <hr className="mt-4 mb-4" />
-      <p>
-        In contrast, the GEME Composter utilizes{' '}
-        <a href="/geme-kobold">GEME Kobold</a> to accelerate the composting
-        process.
-      </p>
-      <p>
-        It uses electricity to{' '}
-        <strong>simulate and maintain the optimal environment</strong>, for
-        microbes to thrive, effectively breaking down organic waste.
-      </p>
+      <ul className="list-disc ml-4 mt-4">
+        <li className="mt-4">Visible processing</li>
+        <li className="mt-4">Harvest indication</li>
+        <li className="mt-4">Overweight reminder</li>
+        <li className="mt-4">Moisture measurement</li>
+        <li className="mt-4">Reactive opening</li>
+        <li className="mt-4">Child safety lock</li>
+      </ul>
     </>
   ),
   imageUrl: '/assets/images/pdp-v2311/introduction/no-filters.jpg',
