@@ -5,20 +5,20 @@ import { ILinkComponent } from '../../../../apps/gemebuild/src/contexts/link-con
 import DefaultLink from 'next/link'
 import { ComponentProps, PropsWithChildren } from 'react'
 
-export interface IPrimaryButton extends ComponentProps<typeof DefaultLink> {
+export interface IButtonProps extends ComponentProps<typeof DefaultLink> {
   href: string
   PrefetchLink?: ILinkComponent
   className?: string
   onClick?: (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void
 }
 
-export default function PrimaryButton({
+export function PrimaryButton({
   href,
   children,
   PrefetchLink,
   className,
   onClick,
-}: PropsWithChildren<IPrimaryButton>) {
+}: PropsWithChildren<IButtonProps>) {
   const Link = PrefetchLink ? PrefetchLink : DefaultLink
 
   return (
@@ -36,5 +36,19 @@ export default function PrimaryButton({
     >
       {children}
     </Link>
+  )
+}
+
+export function LinkButton(props: PropsWithChildren<IButtonProps>) {
+  return (
+    <PrimaryButton
+      {...props}
+      className={clsx(
+        '!p-0 underline underline-offset-[6px] !text-[#333] !bg-transparent focus:!ring-transparent !shadow-none !border-none focus:!ring-offset-0',
+        props.className,
+      )}
+    >
+      {props.children}
+    </PrimaryButton>
   )
 }

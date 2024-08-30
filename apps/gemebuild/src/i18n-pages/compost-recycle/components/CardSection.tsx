@@ -1,7 +1,6 @@
-import { SectionContainer, SectionTitle } from 'ui'
+import { PrimaryButton, SectionContainer, SectionTitle } from 'ui'
 import { ILinkComponent } from '../../../contexts/link-context'
 import Image from 'next/image'
-import PrimaryButton from 'ui/src/ui-components/PrimaryButton'
 
 export interface ICardSectionProps {
   title: string

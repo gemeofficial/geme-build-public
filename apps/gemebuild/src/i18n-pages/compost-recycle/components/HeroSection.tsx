@@ -1,13 +1,20 @@
 import Image from 'next/image'
 import { ReactNode } from 'react'
-import { SectionContainer, SectionDescription, SectionTitle } from 'ui'
+import {
+  LinkButton,
+  PrimaryButton,
+  SectionContainer,
+  SectionDescription,
+  SectionTitle,
+} from 'ui'
 import { ILinkComponent } from '../../../contexts/link-context'
-import PrimaryButton from 'ui/src/ui-components/PrimaryButton'
 
 export interface IHeroSection {
   title: ReactNode
   description: ReactNode
   imageUrl: string
+  primaryButtonText: string
+  linkButtonText: string
   alt?: string
   PrefetchLink?: ILinkComponent
 }
@@ -15,6 +22,8 @@ export default function HeroSection({
   description,
   title,
   imageUrl,
+  primaryButtonText,
+  linkButtonText,
   alt,
   PrefetchLink,
 }: IHeroSection) {
@@ -45,22 +54,21 @@ export default function HeroSection({
                   PrefetchLink={PrefetchLink}
                   className="!px-6 !py-3"
                 >
-                  Join Kelowna , BC
+                  {primaryButtonText}
                 </PrimaryButton>
 
-                <PrimaryButton
-                  href="#"
+                <LinkButton
+                  href="compost-recycle/locations"
                   PrefetchLink={PrefetchLink}
-                  className="!p-0 underline underline-offset-[6px] !text-[#333] !bg-transparent focus:!ring-transparent"
                 >
-                  See Future Locations
-                </PrimaryButton>
+                  {linkButtonText}
+                </LinkButton>
               </div>
             </div>
           </div>
           <Image
-            width={400}
-            height={300}
+            width={900}
+            height={700}
             alt=""
             // src="/assets/images/compost-recycle/hero-image.webp"
             src="https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80"
