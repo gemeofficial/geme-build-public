@@ -1,0 +1,42 @@
+.homePageHeroSwiper {
+  --swiper-navigation-color: #fff;
+  --swiper-pagination-color: #fff;
+}
+
+
+/* .reviewsSwiper .swiper-button-prev:after,
+.reviewsSwiper .swiper-rtl .swiper-button-next:after {
+  content: '' !important;
+}
+
+.reviewsSwiper .swiper-button-next:after,
+.reviewsSwiper .swiper-rtl .swiper-button-prev:after {
+  content: '' !important;
+}
+
+.customSwiperNavigation .swiper-button-prev:after,
+.customSwiperNavigation .swiper-rtl .swiper-button-next:after {
+  content: '' !important;
+}
+
+.customSwiperNavigation .swiper-button-next:after,
+.customSwiperNavigation .swiper-rtl .swiper-button-prev:after {
+  content: '' !important;
+} */
+
+/* .reviewsSwiper .swiper-button-next svg,
+.reviewsSwiper .swiper-button-prev svg {
+  width: 24px !important;
+  height: 24px !important;
+} */
+
+/* .reviewsSwiper > .swiper-wrapper {
+  @apply !py-24 !px-8;
+  padding-top: 3rem !important;
+}
+
+@media (min-width: 1280px) {
+  .reviewsSwiper .swiper-wrapper:nth-child(1) {
+    padding-left: 20% !important;
+  }
+} */
