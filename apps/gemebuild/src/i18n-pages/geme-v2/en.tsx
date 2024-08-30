@@ -122,7 +122,7 @@ const imageTextProps2: IShortVideoProps = {
 // Reviews
 const reviewsProps: IReviewsProps = {
   subTitle: 'Testimonials',
-  title: 'We have worked with thousands of amazing people',
+  title: 'Satisfying 1000+ Customers',
   featuredTestimonial: {
     body: 'I went to internet and looked more and found out yours and the adertising says that it is bio composter and saw videos and at last i found yours i loved it. I want to buy my composters !  I am ready for 2 more now. Maybe the three.',
     author: {
@@ -315,7 +315,7 @@ const reviewsProps: IReviewsProps = {
 
 // Faqs
 const faqProps: IFaqProps = {
-  title: 'Frequently asked questions',
+  title: 'Frequently Asked Questions',
   description: '',
   faqs: [
     {
