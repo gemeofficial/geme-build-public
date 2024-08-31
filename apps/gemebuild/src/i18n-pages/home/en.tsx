@@ -172,7 +172,7 @@ const contentSection3Props: IContentSection3Props = {
       id: 4,
       description: (
         <>
-          Enrich your garden with nutrient-dense soil
+          Revitalize your soil and garden
           <br />
           Feed your plants with free fertilizer
         </>
