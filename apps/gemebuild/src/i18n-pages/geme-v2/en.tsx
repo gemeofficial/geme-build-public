@@ -77,7 +77,7 @@ const shortVideoProps: IShortVideoProps = {
           Uses microbiota(<a href="/geme-kobold">GEME Kobold</a>)
         </li>
         <li className="mt-4">Temperature control</li>
-        <li className="mt-4">Auto turnover</li>
+        <li className="mt-4">Auto turning</li>
       </ul>
     </>
   ),
@@ -112,10 +112,10 @@ const imageTextProps2: IShortVideoProps = {
   description: (
     <>
       <ul className="list-disc ml-4 mt-4">
+        <li className="mt-4">Intelligent monitoring</li>
         <li className="mt-4">Visible processing</li>
         <li className="mt-4">Harvest indication</li>
         <li className="mt-4">Overweight reminder</li>
-        <li className="mt-4">Moisture measurement</li>
         <li className="mt-4">Reactive opening</li>
         <li className="mt-4">Child safety lock</li>
       </ul>
