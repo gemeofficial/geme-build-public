@@ -329,6 +329,10 @@ const faqProps: IFaqProps = {
       question: 'How it works?',
       answer: (
         <>
+          <h4>
+            <strong>Simulate compost pile in a box</strong> ✅,{' '}
+            <del>not dehydrate and heat</del> ❌
+          </h4>
           GEME Composters are all home appliances provide and maintain{' '}
           <strong>an ideal environment</strong> for GEME's special microbes(GEME
           Kobold) to break down the bio waste. Terra 2 works in the same
@@ -339,25 +343,19 @@ const faqProps: IFaqProps = {
               <strong>The machine</strong>: Simulates a compost pile in a
               container, make sure it will not smell.
               <br />
-              There are some subsystems in the machine
-              <ul>
-                <li>1. Ventilation </li>
-                <li></li>
-                <li></li>
-              </ul>
               <img src="/assets/images/how-it-works/how-geme-composter-works.jpg" />
             </li>
-            <li>The Kobold</li>
+            <li>
+              <strong>The Kobold</strong>: Microbes handle the majority of the
+              workload. They reproduce quickly and absorb energy from the food
+              waste. Just like worms eat food, microbes also consume food waste.
+              Both produce compost.
+              <img src="/assets/images/geme-v2/microbes-grow.png" />
+              Bacteria reproduce primarily by binary fission, Under ideal
+              conditions, some bacterial species may divide every 10–15
+              minutes—a doubling of the population at these time intervals.
+            </li>
           </ul>
-          No more smelly, leaking garbage, puffing fruit flies, yard full of
-          mice, maggots in the yard waste bin or throwing away food scraps to
-          rot in the landfill.
-          <br />
-          With GEME, you will be able to turn your waste into nutrient-rich
-          organic compost.
-          <br />
-          Revolutionize the way you dispose of your waste while returning
-          nutrient-rich soil to the earth.
         </>
       ),
     },
