@@ -441,19 +441,26 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
       buttonText: '@Mister and Miss Ginger Jones',
     },
     {
+      type: 'youtube',
+      src: 'https://youtu.be/-qkjLB3GcKo',
+      coverImageUrl: '/assets/images/user-stories-videos/youtube.jpg',
+      coverAlt: 'Real composter vs other dehydrate food recyclers',
+      buttonText: '@Mister and Miss Ginger Jones',
+    },
+    {
       type: 'instagram',
       src: 'https://www.instagram.com/reel/CxBKZOYRKQN/?utm_source=ig_web_copy_link',
       coverImageUrl: '/assets/images/user-stories-videos/instagram.png',
       coverAlt: 'Real use video from twin brothers',
       buttonText: '@Messitttwins',
     },
-    {
-      type: 'tiktok',
-      src: 'https://www.tiktok.com/@kc_smithwrites/video/7312898892079697198',
-      coverImageUrl: '/assets/images/user-stories-videos/tiktok2.png',
-      coverAlt: 'Users from tiktok use videos',
-      buttonText: '@kc_smithwrites',
-    },
+    // {
+    //   type: 'tiktok',
+    //   src: 'https://www.tiktok.com/@kc_smithwrites/video/7312898892079697198',
+    //   coverImageUrl: '/assets/images/user-stories-videos/tiktok2.png',
+    //   coverAlt: 'Users from tiktok use videos',
+    //   buttonText: '@kc_smithwrites',
+    // },
   ],
 }
 
