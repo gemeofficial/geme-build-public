@@ -463,7 +463,7 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
     {
       type: 'youtube',
       src: 'https://youtu.be/-qkjLB3GcKo',
-      coverImageUrl: '/assets/images/user-stories-videos/youtube.jpg',
+      coverImageUrl: '/assets/images/user-stories-videos/youtube2.png',
       coverAlt: 'Real composter vs other dehydrate food recyclers',
       buttonText: '@Mister and Miss Ginger Jones',
     },
