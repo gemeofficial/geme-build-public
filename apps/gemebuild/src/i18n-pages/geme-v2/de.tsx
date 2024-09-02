@@ -126,7 +126,7 @@ const imageTextProps2: IShortVideoProps = {
 // Compare Section
 const compareProps: ICompareProps = {
   title: 'Real Composting Made Easy',
-  desctiption: 'We are different from other compost products on the market',
+  description: 'We are different from other compost products on the market',
   items: [
     {
       title: 'Brand 1',

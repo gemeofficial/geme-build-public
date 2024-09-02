@@ -129,7 +129,7 @@ const imageTextProps2: IShortVideoProps = {
 // Compare Section
 const compareProps: ICompareProps = {
   title: 'Totally Different from Others',
-  desctiption:
+  description:
     'Those products are not food waste dehydrators, not real composter. So far GEME composters are unique among the marketing!',
   items: [
     {
