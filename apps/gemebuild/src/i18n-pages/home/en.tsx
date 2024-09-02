@@ -504,12 +504,12 @@ export interface IHomePageProps {
 function HomePageEn({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
   heroSection1Props.LinkComponent = PrefetchLink
 
-  const isOpenSwiperContent = true
-  // const isOpenSwiperContent =
-  //   process.env.NEXT_PUBLIC_HOME_HERO_SWIPER &&
-  //   process.env.NEXT_PUBLIC_HOME_HERO_SWIPER == 'true'
-  //     ? true
-  //     : false
+  // const isOpenSwiperContent = true
+  const isOpenSwiperContent =
+    process.env.NEXT_PUBLIC_HOME_HERO_SWIPER &&
+    process.env.NEXT_PUBLIC_HOME_HERO_SWIPER == 'true'
+      ? true
+      : false
 
   return (
     <>
