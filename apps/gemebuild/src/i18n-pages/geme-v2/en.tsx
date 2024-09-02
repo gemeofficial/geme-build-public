@@ -639,10 +639,10 @@ const faqProps: IFaqProps = {
                     Price
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    {`$300 < x < $600`}
+                    {`< $600`}
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    {`$200 < x < $500`}
+                    {`$150 < x < $500`}
                   </td>
                 </tr>
                 <tr>
@@ -1207,7 +1207,7 @@ const faqProps: IFaqProps = {
     {
       slug: 'when-will-it-be-on-sale? and-what-is-the-price',
       question: 'When will it be on sale? and what is the price?',
-      answer: `The final testing is almost complete, and the estimated timeline for sale is early next year. The price range will be between $300 and $600.`,
+      answer: `The final testing is almost complete, and the estimated timeline for sale is early next year. The price less than $600.`,
     },
   ],
 }
