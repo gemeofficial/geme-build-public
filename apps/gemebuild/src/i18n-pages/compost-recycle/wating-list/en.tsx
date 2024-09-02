@@ -1,3 +1,4 @@
+import { FC } from 'react'
 import { ILinkComponent } from '../../../contexts/link-context'
 import CardSection2, { ICardSectionProps2 } from '../components/CardSection2'
 import RecycleSection, {
@@ -6,6 +7,9 @@ import RecycleSection, {
 import Compare, { ICompareProps } from './components/Compare'
 import HeroSection, { IHeroSectionProps } from './components/HeroSection'
 import Reviews, { IReviewsProps } from './components/Reviews'
+import WatingListSection, {
+  IWatingListSectionProps,
+} from './components/WatingListSection'
 
 // hero Section
 const heroSectionprops: IHeroSectionProps = {
@@ -14,6 +18,12 @@ const heroSectionprops: IHeroSectionProps = {
   title: 'Finally Phoenix! A local food waste recycling program',
   description: 'Easy, clean, convenient. A local service with local impact.',
   buttonText: 'Sign Up Now',
+}
+
+// Wating List Section
+const watingListSectionProps: IWatingListSectionProps = {
+  title: 'Launching Soon',
+  description: `Be one of the first to change the way Penticton handles food waste.`,
 }
 
 // How It Works卡片Section
@@ -116,14 +126,20 @@ const reviewsProps: IReviewsProps = {
 
 export interface ICompostRecycleWatingListPageProps {
   PrefetchLink?: ILinkComponent
+  WatingListFC?: FC
 }
 
 export function CompostRecycleWatingListPageEn({
   PrefetchLink,
+  WatingListFC,
 }: ICompostRecycleWatingListPageProps) {
   return (
     <>
       <HeroSection {...heroSectionprops} PrefetchLink={PrefetchLink} />
+      <WatingListSection
+        {...watingListSectionProps}
+        WatingListFC={WatingListFC}
+      />
       <CardSection2 {...cardSectionProps2} priority={true} />
       <RecycleSection {...recycleSectionProps} />
       <Compare {...compareProps} />

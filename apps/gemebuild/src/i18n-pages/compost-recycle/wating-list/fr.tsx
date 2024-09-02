@@ -5,6 +5,9 @@ import RecycleSection, {
 import Compare, { ICompareProps } from './components/Compare'
 import HeroSection, { IHeroSectionProps } from './components/HeroSection'
 import Reviews, { IReviewsProps } from './components/Reviews'
+import WatingListSection, {
+  IWatingListSectionProps,
+} from './components/WatingListSection'
 import { ICompostRecycleWatingListPageProps } from './en'
 
 // hero Section
@@ -14,6 +17,12 @@ const heroSectionprops: IHeroSectionProps = {
   title: 'Finally Phoenix! A local food waste recycling program',
   description: 'Easy, clean, convenient. A local service with local impact.',
   buttonText: 'Sign Up Now',
+}
+
+// Wating List Section
+const watingListSectionProps: IWatingListSectionProps = {
+  title: 'Launching Soon',
+  description: `Be one of the first to change the way Penticton handles food waste.`,
 }
 
 // How It Works卡片Section
@@ -116,10 +125,15 @@ const reviewsProps: IReviewsProps = {
 
 export function CompostRecycleWatingListPageFr({
   PrefetchLink,
+  WatingListFC,
 }: ICompostRecycleWatingListPageProps) {
   return (
     <>
       <HeroSection {...heroSectionprops} PrefetchLink={PrefetchLink} />
+      <WatingListSection
+        {...watingListSectionProps}
+        WatingListFC={WatingListFC}
+      />
       <CardSection2 {...cardSectionProps2} priority={true} />
       <RecycleSection {...recycleSectionProps} />
       <Compare {...compareProps} />
