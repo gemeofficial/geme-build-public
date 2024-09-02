@@ -3,7 +3,10 @@ import { ILinkComponent } from '../../../apps/gemebuild/src/contexts/link-contex
 import Image from 'next/image'
 import HeroSectionsButton from './client-components/HeroSectionsButton'
 import { PlayIcon, VideoInlinePlayer } from './video-inline-player'
+<<<<<<< HEAD
 import HeroSectionVideo from './hero-section-video'
+=======
+>>>>>>> 17ea4b84af17f1057b9ba29c971d593d57ed56b9
 import clsx from 'clsx'
 
 interface IHeroSection1Props {
