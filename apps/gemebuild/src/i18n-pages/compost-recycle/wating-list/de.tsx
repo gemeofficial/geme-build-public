@@ -126,6 +126,7 @@ const reviewsProps: IReviewsProps = {
 export function CompostRecycleWatingListPageDe({
   PrefetchLink,
   WatingListFC,
+  currentCity,
 }: ICompostRecycleWatingListPageProps) {
   return (
     <>

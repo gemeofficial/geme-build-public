@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 export interface ILocationsCardSectionProps {
   title: string
-  locale: LocaleType
   cardList: CardItemType[]
+  locale?: LocaleType
   PrefetchLink?: ILinkComponent
 }
 
@@ -24,7 +24,7 @@ export default function LocationsCardSection({
             key={index}
             {...item}
             PrefetchLink={PrefetchLink}
-            locale={locale}
+            locale={locale!}
           />
         ))}
       </ul>
@@ -33,6 +33,7 @@ export default function LocationsCardSection({
 }
 
 type CardItemType = {
+  id: string
   title: string
   imageUrl: string
   isOpen?: boolean
@@ -53,6 +54,7 @@ const joinWaitlistTranslations = {
 }
 
 function CardItem({
+  id,
   isOpen,
   imageUrl,
   alt,
@@ -64,7 +66,7 @@ function CardItem({
   const watingList = joinWaitlistTranslations[locale]
   const buttonText = isOpen ? signUp : watingList
 
-  const href = isOpen ? '#' : '#'
+  const href = isOpen ? '#' : `/compost-recycle/${id}`
 
   return (
     <li className="bg-gray-100 shadow p-6 flex flex-col gap-4">
