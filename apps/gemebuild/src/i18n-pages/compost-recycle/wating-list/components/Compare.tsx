@@ -97,7 +97,7 @@ export default function Compare({ title, description, items }: ICompareProps) {
                     className={clsx(
                       'text-sm md:text-base inline-block pb-2 md:pb-0',
                       item.type === 'bad'
-                        ? 'h-full md:leading-10 xl:leading-[48px]'
+                        ? 'h-full md:leading-10 xl:leading-[48px] font-light'
                         : '',
                     )}
                   >
