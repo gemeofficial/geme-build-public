@@ -9,6 +9,7 @@ import Subscribe, {
   ISubscribeComponent,
   ISubscribeProps,
 } from './components/Subscribe'
+// import YouTubeEmbed from '@next/third-parties/YouTubeEmbed'
 
 // Hero section
 const heroSectionProps: IHeroSectionProps = {
@@ -785,6 +786,15 @@ const faqProps: IFaqProps = {
               </tbody>
             </table>
           </div>
+
+          <iframe
+            className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
+            src="https://www.youtube.com/embed/-qkjLB3GcKo"
+            frameBorder="0"
+            title="Product Overview Video"
+            aria-hidden="true"
+          />
+          {/*<YouTubeEmbed videoid="-qkjLB3GcKo" height={400} width={720}/>*/}
         </>
       ),
     },
@@ -796,7 +806,40 @@ const faqProps: IFaqProps = {
     {
       slug: 'what-s-bio-waste',
       question: 'What kinds of food waste can I put?',
-      answer: ``,
+      answer: (
+        <>
+          <div className="max-w-3xl mx-auto p-6">
+            <p className="text-gray-700 text-lg leading-relaxed mb-6">
+              Almost all food you eat can go into GEME.
+            </p>
+            <div className="flex flex-col md:flex-row items-start md:items-center mb-6">
+              <img
+                src="https://www.geme.bio/help-center/assets/images/supported-foodwaste-guide-055cef03c7c375f24ce99e1625de5d6f.png"
+                alt="GEME Composter Supported Food Waste"
+              />
+            </div>
+
+            <p className="text-gray-700 text-lg leading-relaxed mb-6">
+              It also support liquid waste like soup.
+              <iframe
+                className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
+                src="https://www.youtube.com/embed/yGkcEaeXlQQ"
+                frameBorder="0"
+                title="Product Overview Video"
+                aria-hidden="true"
+              />
+            </p>
+
+            <p className="text-gray-700 text-lg leading-relaxed">
+              It also can breakdown pet poop, like dog pop and cat litter.
+            </p>
+            <img
+              src="/assets/images/geme-v2/cat-litter.png"
+              alt="GEME Composter Supported Food Waste"
+            />
+          </div>
+        </>
+      ),
     },
     // {
     //   slug: 'what-is-the-electricity-cost',
