@@ -78,7 +78,7 @@ const heroSectionSwiperProps: IHomeHeroSectionSwiperProps = {
   section2: {
     title: (
       <>
-        Messedamm 22 <br /> Halle 12 Stand Nr. 312
+        Messedamm 22 <br /> Halle 1.2 Stand Nr. 312
       </>
     ),
     description: (
