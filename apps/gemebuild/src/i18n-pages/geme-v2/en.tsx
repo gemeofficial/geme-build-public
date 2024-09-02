@@ -850,24 +850,148 @@ const faqProps: IFaqProps = {
     {
       slug: 'how-long-will-it-take-for-geme-to-turn-my-food-waste-into-compost',
       question: 'How long will it take to turn my food waste into compost?',
-      answer: ``,
+      answer: (
+        <>
+          For most of the daily left over, it takes around 6 to 8 hours to
+          breakdown the waste.
+          <br />
+          Check this uncut 7 hours video.(BTW,{' '}
+          <b className="text-gray-500">
+            none of our competitors dare share such live video to public
+          </b>
+          )
+          <iframe
+            className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
+            src="https://www.youtube.com/embed/asNRoqkC_BA"
+            frameBorder="0"
+            title="GEME breakdown food wate in 7 hours uncut video"
+            aria-hidden="true"
+          />
+          However, for some food waste like orange peels, it will take slightly
+          longer. Because the fibers are hard to breakdown. Small bones take
+          even longer.
+          <img
+            src="https://www.geme.bio/help-center/assets/images/supported-foodwaste-guide-055cef03c7c375f24ce99e1625de5d6f.png"
+            alt="GEME Composter Supported Food Waste"
+          />
+          <strong>Note</strong>, it takes few hours or days to breakdown, it is
+          turning into the state of compost. However, it still need more time to
+          become finished compost. We recommend wait more than 45 days to take
+          them our to use. Or you can mix the unfinished compost with soil in
+          1:8 to grow your plant.
+        </>
+      ),
     },
     {
       slug: 'what-is-the-electricity-cost',
       question: 'Is it smell? How often should I replace the carbon filter?',
-      answer: ``,
+      answer: (
+        <>
+          <div>
+            It won't smell, it uses the{' '}
+            <strong>metal ion catalytic oxidation</strong> technology to process
+            the odor. It does not use any carbon filters. Hence, you don't need
+            to replace the filter. The filter can use for life time long.
+          </div>
+          <div className="container mx-auto p-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-white rounded-lg shadow-md">
+                <img
+                  src="/assets/images/geme-v2/odor/1.jpg"
+                  alt="Image 1"
+                  className="w-full h-auto rounded-t-lg"
+                />
+                <div className="p-4">
+                  <h2 className="text-xl font-semibold mb-2">Layer 1</h2>
+                  <p className="text-gray-700">
+                    Photocatalyst, UV light will kill most of the harmful
+                    bacteria
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg shadow-md">
+                <img
+                  src="/assets/images/geme-v2/odor/2.jpg"
+                  alt="Image 2"
+                  className="w-full h-auto rounded-t-lg"
+                />
+                <div className="p-4">
+                  <h2 className="text-xl font-semibold mb-2">Layer 2</h2>
+                  <p className="text-gray-700">Metal ion catalytic oxidation</p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg shadow-md">
+                <img
+                  src="/assets/images/geme-v2/odor/3.jpg"
+                  alt="Image 3"
+                  className="w-full h-auto rounded-t-lg"
+                />
+                <div className="p-4">
+                  <h2 className="text-xl font-semibold mb-2">Layer 3</h2>
+                  <p className="text-gray-700">
+                    Powerful aerobic air exchange system
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      ),
     },
 
     {
       slug: 'what-is-the-electricity-cost',
       question: 'How often should I clean the bin?',
-      answer: ``,
+      answer: (
+        <>
+          Technically, there is no need to clean the bin. It does not look good
+          and a little smell when you open the lid. But when you close the lid,
+          it is clean and odorless. <br />
+          The real question you want to ask might be, how often should I harvest
+          the compost?
+          <div className="container mx-auto p-6">
+            <h5 className="text-1xl font-semibold text-gray-800 mb-4">
+              Don't over pass the full limit line
+            </h5>
+            <p className="text-gray-700 mb-6">
+              This is a hard limit, if it get full, remove the compost out ASAP.
+            </p>
+
+            <h5 className="text-1xl font-semibold text-gray-800 mb-4">
+              Don't empty all of them out
+            </h5>
+            <p className="text-gray-700 mb-6">
+              Every time you remove the compost, remain some of them in the
+              base, so the bacteria in GEME Kobold can reproduce and accept new
+              food waste again.
+              <strong className="text-v2311-primary">
+                Keep the compost the same level as the agitator shaft
+              </strong>
+            </p>
+
+            <h5 className="text-1xl font-semibold text-gray-800 mb-4">
+              Recommend: remove when the paddle get fully buried
+            </h5>
+            <p className="text-gray-700 mb-6">
+              See the yellow line of the picture. This is a best practice, you
+              can gain your compost quickly and reduce the workload of machine
+              for longevity.
+            </p>
+          </div>
+          <img
+            src="/assets/images/geme-v2/harvest-compost/best-practice-removal.png"
+            alt="Best practice to remove GEME Compost"
+          />
+        </>
+      ),
     },
 
     {
-      slug: 'what-is-the-price',
+      slug: 'what-is-the-maintenance-cost-for-keep-the-unit',
       question: 'What is the maintenance cost for keep the unit?',
-      answer: ``,
+      answer: <></>,
     },
 
     {
