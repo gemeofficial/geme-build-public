@@ -991,13 +991,80 @@ const faqProps: IFaqProps = {
     {
       slug: 'what-is-the-maintenance-cost-for-keep-the-unit',
       question: 'What is the maintenance cost for keep the unit?',
-      answer: <></>,
+      answer: (
+        <div className="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+          <h1 className="text-2xl font-bold text-gray-800 mb-6">
+            GEME Composter Annual Maintenance Cost Evaluation
+          </h1>
+
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold text-gray-700 mb-2">
+              1. Electricity Costs
+            </h2>
+            <p className="text-gray-700 mb-4">
+              The GEME Composter uses about the same amount of electricity as a
+              MacBook Pro, approximately 60 watts (0.06 kWh) when in use.
+            </p>
+            <ul className="list-disc list-inside text-gray-700">
+              <li>
+                <strong>24-Hour Operation:</strong> 0.06 kWh × 24 hours ={' '}
+                <strong>1.44 kWh/day</strong>
+              </li>
+              <li>
+                <strong>Annual Energy Consumption:</strong> 1.44 kWh/day × 365
+                days/year = <strong>525.6 kWh/year</strong>
+              </li>
+              <li>
+                <strong>Average Electricity Cost:</strong> $0.13 per kWh
+              </li>
+              <li>
+                <strong>Annual Electricity Cost:</strong> 525.6 kWh/year ×
+                $0.13/kWh = <strong>$68.33/year</strong>
+              </li>
+            </ul>
+          </div>
+
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold text-gray-700 mb-2">
+              2. Consumable Costs
+            </h2>
+            <p className="text-gray-700">
+              The GEME Composter requires $99 worth of consumables annually.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-xl font-semibold text-gray-700 mb-2">
+              3. Total Annual Maintenance Cost
+            </h2>
+            <p className="text-gray-700 mb-4">
+              The total annual cost, combining electricity and consumables, is
+              calculated as follows:
+            </p>
+            <ul className="list-disc list-inside text-gray-700">
+              <li>
+                <strong>Total Annual Cost:</strong> $68.33/year (electricity) +
+                $99/year (consumables) = <strong>$167.33/year</strong>
+              </li>
+            </ul>
+          </div>
+
+          <div className="mt-6 p-4 bg-gray-100 rounded-lg">
+            <h3 className="text-lg font-semibold text-gray-800">Summary</h3>
+            <p className="text-gray-700">
+              The total annual maintenance cost for the GEME Composter is
+              approximately <strong>$167.33</strong> per year. This includes
+              both electricity and consumable costs.
+            </p>
+          </div>
+        </div>
+      ),
     },
 
     {
       slug: 'what-is-the-price',
       question: 'When will it be on sale? and what is the price?',
-      answer: ``,
+      answer: `It's almost finish the final testing, estimate timeline for sale will be early next year. Price range will be $300 to $600.`,
     },
 
     //--
