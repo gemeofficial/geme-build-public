@@ -102,7 +102,7 @@ const imageTextProps: IShortVideoProps = {
       </ul>
     </>
   ),
-  imageUrl: '/assets/images/pdp-v2311/introduction/geme-composter-size-v2.jpeg',
+  imageUrl: '/assets/images/geme-v2/product-s2.jpg',
   imageAlt: '',
   isReverse: true,
 }
@@ -122,7 +122,7 @@ const imageTextProps2: IShortVideoProps = {
       </ul>
     </>
   ),
-  imageUrl: '/assets/images/pdp-v2311/introduction/no-filters.jpg',
+  imageUrl: '/assets/images/geme-v2/product-s3.png',
   imageAlt: '',
 }
 
@@ -130,37 +130,42 @@ const imageTextProps2: IShortVideoProps = {
 const compareProps: ICompareProps = {
   title: 'Totally Different from Others',
   description:
-    'Those products are not food waste dehydrators, not real composters. So far GEME composters are unique among the marketing!',
+    'Those products are not all food waste dehydrators, not real composters. GEME is not like them, GEME is for real composting!',
   items: [
     {
-      title: 'Brand 1',
-      imageUrl: '/assets/images/compare-section/compare-section-lomi.png',
+      title: 'Lomi',
+      imageUrl: '/assets/images/geme-v2/compare/lomi.png',
       alt: '',
     },
+    // {
+    //   title: 'Vitamix Food Cycler',
+    //   imageUrl: '/assets/images/geme-v2/compare/vitamix.png',
+    //   alt: '',
+    // },
     {
-      title: 'Brand 2',
+      title: 'Airthereal',
+      imageUrl: '/assets/images/geme-v2/compare/airthereal.png',
+      alt: 'Airthereal Electric Kitchen Composter',
+    },
+    {
+      title: 'Fylecen',
+      imageUrl: '/assets/images/geme-v2/compare/fylecen.png',
+      alt: 'Fylecen 4L Electric Composter',
+    },
+    {
+      title: 'Moreborn',
+      imageUrl: '/assets/images/geme-v2/compare/moreborn.png',
+      alt: 'Moreborn composter',
+    },
+    {
+      title: 'Mill',
       imageUrl: '/assets/images/compare-section/compare-section-mill.png',
-      alt: '',
+      alt: 'Mill Composter',
     },
     {
-      title: 'Brand 3',
-      imageUrl: '/assets/images/compare-section/compare-section-reencle.png',
-      alt: '',
-    },
-    {
-      title: 'Brand 4',
-      imageUrl: '/assets/images/compare-section/compare-section-lomi.png',
-      alt: '',
-    },
-    {
-      title: 'Brand 5',
-      imageUrl: '/assets/images/compare-section/compare-section-mill.png',
-      alt: '',
-    },
-    {
-      title: 'Brand 6',
-      imageUrl: '/assets/images/compare-section/compare-section-reencle.png',
-      alt: '',
+      title: 'Soilkind',
+      imageUrl: '/assets/images/geme-v2/compare/soilkind.png',
+      alt: 'soilkind Komposter',
     },
   ],
 }
