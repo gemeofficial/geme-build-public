@@ -70,7 +70,7 @@ const heroSectionSwiperProps: IHomeHeroSectionSwiperProps = {
   section2: {
     title: (
       <>
-        Messedamm 22 <br /> Hall12 Stand No.312
+        Messedamm 22 <br /> Hall1.2 Stand No.312
       </>
     ),
     description: (
@@ -172,7 +172,7 @@ const contentSection3Props: IContentSection3Props = {
       id: 4,
       description: (
         <>
-          Enrich your garden with nutrient-dense soil
+          Revitalize your soil and garden
           <br />
           Feed your plants with free fertilizer
         </>
@@ -441,19 +441,26 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
       buttonText: '@Mister and Miss Ginger Jones',
     },
     {
+      type: 'youtube',
+      src: 'https://youtu.be/-qkjLB3GcKo',
+      coverImageUrl: '/assets/images/user-stories-videos/youtube2.png',
+      coverAlt: 'Real composter vs other dehydrate food recyclers',
+      buttonText: '@Mister and Miss Ginger Jones',
+    },
+    {
       type: 'instagram',
       src: 'https://www.instagram.com/reel/CxBKZOYRKQN/?utm_source=ig_web_copy_link',
       coverImageUrl: '/assets/images/user-stories-videos/instagram.png',
       coverAlt: 'Real use video from twin brothers',
       buttonText: '@Messitttwins',
     },
-    {
-      type: 'tiktok',
-      src: 'https://www.tiktok.com/@kc_smithwrites/video/7312898892079697198',
-      coverImageUrl: '/assets/images/user-stories-videos/tiktok2.png',
-      coverAlt: 'Users from tiktok use videos',
-      buttonText: '@kc_smithwrites',
-    },
+    // {
+    //   type: 'tiktok',
+    //   src: 'https://www.tiktok.com/@kc_smithwrites/video/7312898892079697198',
+    //   coverImageUrl: '/assets/images/user-stories-videos/tiktok2.png',
+    //   coverAlt: 'Users from tiktok use videos',
+    //   buttonText: '@kc_smithwrites',
+    // },
   ],
 }
 
@@ -497,12 +504,12 @@ export interface IHomePageProps {
 function HomePageEn({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
   heroSection1Props.LinkComponent = PrefetchLink
 
-  const isOpenSwiperContent = true
-  // const isOpenSwiperContent =
-  //   process.env.NEXT_PUBLIC_HOME_HERO_SWIPER &&
-  //   process.env.NEXT_PUBLIC_HOME_HERO_SWIPER == 'true'
-  //     ? true
-  //     : false
+  // const isOpenSwiperContent = true
+  const isOpenSwiperContent =
+    process.env.NEXT_PUBLIC_HOME_HERO_SWIPER &&
+    process.env.NEXT_PUBLIC_HOME_HERO_SWIPER == 'true'
+      ? true
+      : false
 
   return (
     <>
