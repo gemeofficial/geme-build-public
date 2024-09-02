@@ -427,7 +427,7 @@ const faqProps: IFaqProps = {
 
                 <tr className="bg-gray-50">
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Days to Fill up
+                    Days to Fill
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     45days+
@@ -566,7 +566,227 @@ const faqProps: IFaqProps = {
       slug: 'what-s-bio-waste',
       question:
         'What is the difference between other electric composters like Lomi?',
-      answer: ``,
+      answer: (
+        <>
+          <div className="overflow-x-auto">
+            <table className="min-w-full bg-white border border-gray-300">
+              <thead>
+                <tr>
+                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                    Features
+                  </th>
+                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                    GEME Terra 2
+                  </th>
+                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                    Lomi-like Dehydrators
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Price
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    {`$300 < x < $600`}
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    {`$200 < x < $500`}
+                  </td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Size
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    14L
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    3L - 4L
+                  </td>
+                </tr>
+
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Working Mode
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Continues composting
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Periodically grind and dehydrate
+                  </td>
+                </tr>
+
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    End Result
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Real compost
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Dry and cooked waste
+                  </td>
+                </tr>
+
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Interaction
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Add waste anytime
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Wait cycle completed
+                  </td>
+                </tr>
+
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Filter System
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Permanent filter,
+                    <br />
+                    No need to replace
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Carbon filter,
+                    <br />
+                    Replace every 3 months
+                  </td>
+                </tr>
+
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Clean up
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    No need to clean
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Easily clogged
+                  </td>
+                </tr>
+
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Days to Fill
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    45 days+
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    {`1 day`}
+                  </td>
+                </tr>
+
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Sound Level
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    25dB to 40dB
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    60dB+
+                  </td>
+                </tr>
+
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Energy Cost
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    1.2~1.7 kWh/day
+                    <br />
+                    similar to a MacBook Pro
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    500W+ Power
+                    <br />
+                    similar to an oven
+                  </td>
+                </tr>
+
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Space
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Floor, Countertop
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Countertop only
+                  </td>
+                </tr>
+
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    How to start
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Throw and close the lid
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Prepare tuning, carefully align lid
+                  </td>
+                </tr>
+
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Liquid Waste
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Yes
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    No
+                  </td>
+                </tr>
+
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Meat
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Yes
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    No
+                  </td>
+                </tr>
+
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Support Pet Poop
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Yes
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    No
+                  </td>
+                </tr>
+
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Up to 3kg
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Yes
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    No
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </>
+      ),
     },
     // {
     //   slug: 'can-I-add-food-waste-when-it-is-running',
