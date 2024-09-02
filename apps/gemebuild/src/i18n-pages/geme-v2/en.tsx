@@ -992,72 +992,152 @@ const faqProps: IFaqProps = {
       slug: 'what-is-the-maintenance-cost-for-keep-the-unit',
       question: 'What is the maintenance cost for keep the unit?',
       answer: (
-        <div className="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg">
-          <h1 className="text-2xl font-bold text-gray-800 mb-6">
-            GEME Composter Annual Maintenance Cost Evaluation
-          </h1>
-
-          <div className="mb-6">
-            <h2 className="text-xl font-semibold text-gray-700 mb-2">
-              1. Electricity Costs
+        <>
+          <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">
+              GEME Composter Annual Costs: A Detailed Reasoning
             </h2>
-            <p className="text-gray-700 mb-4">
-              The GEME Composter uses about the same amount of electricity as a
-              MacBook Pro, approximately 60 watts (0.06 kWh) when in use.
-            </p>
-            <ul className="list-disc list-inside text-gray-700">
-              <li>
-                <strong>24-Hour Operation:</strong> 0.06 kWh × 24 hours ={' '}
-                <strong>1.44 kWh/day</strong>
-              </li>
-              <li>
-                <strong>Annual Energy Consumption:</strong> 1.44 kWh/day × 365
-                days/year = <strong>525.6 kWh/year</strong>
-              </li>
-              <li>
-                <strong>Average Electricity Cost:</strong> $0.13 per kWh
-              </li>
-              <li>
-                <strong>Annual Electricity Cost:</strong> 525.6 kWh/year ×
-                $0.13/kWh = <strong>$68.33/year</strong>
-              </li>
-            </ul>
-          </div>
 
-          <div className="mb-6">
-            <h2 className="text-xl font-semibold text-gray-700 mb-2">
-              2. Consumable Costs
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                1. Daily Energy Consumption
+              </h3>
+              <p className="text-gray-700">
+                The GEME Composter consumes approximately{' '}
+                <strong>1.44 kWh per day</strong>. This is comparable to the
+                daily energy usage of a standard laptop running continuously.
+              </p>
+            </div>
+
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                2. Annual Energy Consumption
+              </h3>
+              <p className="text-gray-700">
+                Given that the appliance operates 24 hours a day, the total
+                energy consumption over a year can be calculated as:
+              </p>
+              <p className="text-gray-700 font-mono bg-gray-100 p-2 rounded-lg">
+                1.44 kWh/day × 365 days/year = 525.6 kWh/year
+              </p>
+              <p className="text-gray-700">
+                This means that over the course of a year, the GEME Composter
+                uses a total of <strong>525.6 kWh</strong>.
+              </p>
+            </div>
+
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                3. Electricity Cost
+              </h3>
+              <p className="text-gray-700">
+                The average electricity cost in the United States is around{' '}
+                <strong>$0.13 per kWh</strong>. Therefore, the annual cost of
+                running the GEME Composter can be calculated as:
+              </p>
+              <p className="text-gray-700 font-mono bg-gray-100 p-2 rounded-lg">
+                525.6 kWh/year × $0.13/kWh = $68.33/year
+              </p>
+              <p className="text-gray-700">
+                This calculation shows that the GEME Composter’s electricity
+                cost amounts to approximately <strong>$68.33 per year</strong>.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                4. Conclusion
+              </h3>
+              <p className="text-gray-700">
+                The annual operating cost of the GEME Composter, when
+                considering only electricity usage, is relatively low at{' '}
+                <strong>$68.33</strong>. This makes it an economical choice for
+                those looking to reduce food waste and produce compost, all
+                while maintaining low operating expenses.
+              </p>
+            </div>
+
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">
+              Annual Electricity Cost Comparison
             </h2>
-            <p className="text-gray-700">
-              The GEME Composter requires $99 worth of consumables annually.
-            </p>
+            <div className="overflow-x-auto">
+              <table className="min-w-full bg-white border border-gray-300">
+                <thead>
+                  <tr>
+                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                      Device
+                    </th>
+                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                      Daily Energy Consumption (kWh)
+                    </th>
+                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                      Annual Energy Consumption (kWh)
+                    </th>
+                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                      Average Electricity Cost ($/kWh)
+                    </th>
+                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                      Annual Electricity Cost ($)
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="bg-gray-50">
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      GEME Composter
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      1.44
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      525.6
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      $0.13
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      $68.33
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Refrigerator
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      1.5
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      547.5
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      $0.13
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      $71.18
+                    </td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Air Conditioner
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      5.0 (during summer)
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      600
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      $0.13
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      $78.00
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-
-          <div>
-            <h2 className="text-xl font-semibold text-gray-700 mb-2">
-              3. Total Annual Maintenance Cost
-            </h2>
-            <p className="text-gray-700 mb-4">
-              The total annual cost, combining electricity and consumables, is
-              calculated as follows:
-            </p>
-            <ul className="list-disc list-inside text-gray-700">
-              <li>
-                <strong>Total Annual Cost:</strong> $68.33/year (electricity) +
-                $99/year (consumables) = <strong>$167.33/year</strong>
-              </li>
-            </ul>
-          </div>
-
-          <div className="mt-6 p-4 bg-gray-100 rounded-lg">
-            <h3 className="text-lg font-semibold text-gray-800">Summary</h3>
-            <p className="text-gray-700">
-              The total annual maintenance cost for the GEME Composter is
-              approximately <strong>$167.33</strong> per year. This includes
-              both electricity and consumable costs.
-            </p>
-          </div>
-        </div>
+        </>
       ),
     },
 
