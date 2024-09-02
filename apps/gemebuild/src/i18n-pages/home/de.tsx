@@ -26,10 +26,12 @@ import type {
   IUserStoriesVideoProps,
 } from 'ui'
 import { Footprints, type IFootprintsProps } from '../../components/footprints'
-import { Newsletter, INewsletterProps } from './containers/newsletter'
-import { ILinkComponent } from '../../contexts/link-context'
+import { Newsletter, INewsletterProps } from './components/newsletter'
 import { ReviewsSectionModule } from '../../components/reviews-section-module'
 import { IHomePageProps } from './en'
+import HomeHeroSectionSwiper, {
+  IHomeHeroSectionSwiperProps,
+} from './components/HomeHeroSectionSwiper'
 
 // 首页video部分的内容数据配置 De
 const heroSection1Props: IHeroSection1Props = {
@@ -68,6 +70,52 @@ const heroSection1Props: IHeroSection1Props = {
   fullScreenVideoUrl: 'https://www.youtube.com/embed/ROJYZBp0jcM',
   heroImageUrlPc: '/assets/images/home-v2311/cover-v3.jpg',
   heroImageUrlMobile: '/assets/images/home-v2311/cover-v3-mobile.jpg',
+}
+
+// 首页Swiper滚动轮播区域的内容数据配置 De
+const heroSectionSwiperProps: IHomeHeroSectionSwiperProps = {
+  section1: heroSection1Props,
+  section2: {
+    title: (
+      <>
+        Messedamm 22 <br /> Halle 12 Stand Nr. 312
+      </>
+    ),
+    description: (
+      <>
+        <div className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 3xl:text-[100px]">
+          Treffen Sie GEME auf der
+        </div>
+        <div className="xl:leading-[0.65] leading-none text-7xl md:text-[100px] lg:text-[150px] xl:text-[200px] 2xl:text-[300px] 3xl:text-[400px]">
+          IFA
+        </div>
+        <div className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 3xl:text-[100px]">
+          Berlin 2024
+        </div>
+      </>
+    ),
+    linkText: 'Mehr erfahren',
+    linkUrl: '/ifa',
+    heroImageUrlPc: '/assets/images/ifa/hero-bg.png',
+    heroImageUrlMobile: '/assets/images/ifa/hero-bg.png',
+  },
+  section3: {
+    title: 'TERRA 2',
+    description: (
+      <>
+        <div className="mt-10 xl:mt-20 3xl:mt-44 text-2xl md:text-5xl lg:text-6xl xl:text-4xl 3xl:text-6xl md:leading-none">
+          NEUE GENERATION DES GEME KOMPOSTIERERS
+        </div>
+        <div className="text-2xl md:text-5xl lg:text-6xl xl:text-4xl 3xl:text-6xl md:leading-none">
+          DEMNÄCHST ERHÄLTLICH
+        </div>
+      </>
+    ),
+    linkText: 'Mehr erfahren',
+    linkUrl: '/geme-v2',
+    heroImageUrlPc: '/assets/images/home-v2311/hero-bg-3.jpg',
+    heroImageUrlMobile: '/assets/images/home-v2311/hero-bg-mobile-3.jpg',
+  },
 }
 
 // 首页第二部分的内容数据配置 De
@@ -413,19 +461,26 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
       buttonText: '@Mister and Miss Ginger Jones',
     },
     {
+      type: 'youtube',
+      src: 'https://youtu.be/-qkjLB3GcKo',
+      coverImageUrl: '/assets/images/user-stories-videos/youtube2.png',
+      coverAlt: 'Real composter vs other dehydrate food recyclers',
+      buttonText: '@Mister and Miss Ginger Jones',
+    },
+    {
       type: 'instagram',
       src: 'https://www.instagram.com/reel/CxBKZOYRKQN/?utm_source=ig_web_copy_link',
       coverImageUrl: '/assets/images/user-stories-videos/instagram.png',
       coverAlt: 'Real use video from twin brothers',
       buttonText: '@Messitttwins',
     },
-    {
-      type: 'tiktok',
-      src: 'https://www.tiktok.com/@kc_smithwrites/video/7312898892079697198',
-      coverImageUrl: '/assets/images/user-stories-videos/tiktok2.png',
-      coverAlt: 'Users from tiktok use videos',
-      buttonText: '@kc_smithwrites',
-    },
+    // {
+    //   type: 'tiktok',
+    //   src: 'https://www.tiktok.com/@kc_smithwrites/video/7312898892079697198',
+    //   coverImageUrl: '/assets/images/user-stories-videos/tiktok2.png',
+    //   coverAlt: 'Users from tiktok use videos',
+    //   buttonText: '@kc_smithwrites',
+    // },
   ],
 }
 
@@ -462,14 +517,20 @@ const newsltterProps: INewsletterProps = {
   },
 }
 
-function HomePageDe({
-  PrefetchLink,
-  reviewsSectionConfig,
-}: IHomePageProps) {
+function HomePageDe({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
   heroSection1Props.LinkComponent = PrefetchLink
+  const isOpenSwiperContent =
+    process.env.NEXT_PUBLIC_HOME_HERO_SWIPER &&
+    process.env.NEXT_PUBLIC_HOME_HERO_SWIPER == 'true'
+      ? true
+      : false
+
   return (
     <>
-      <HeroSection1 {...heroSection1Props} />
+      {isOpenSwiperContent && (
+        <HomeHeroSectionSwiper {...heroSectionSwiperProps} />
+      )}
+      {!isOpenSwiperContent && <HeroSection1 {...heroSection1Props} />}
 
       {/*<ContentSection2 {...contentSection2Props} />*/}
       <ContentSection3 {...contentSection3Props} />
@@ -497,7 +558,7 @@ function HomePageDe({
 
       <Footprints {...footprintsProps} />
 
-      <Newsletter {...newsltterProps}/>
+      <Newsletter {...newsltterProps} />
     </>
   )
 }

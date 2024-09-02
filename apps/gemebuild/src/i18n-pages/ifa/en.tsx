@@ -107,6 +107,12 @@ const videoListProps: IVideoList = {
       from: 'OH',
       useTime: '10 months',
     },
+    {
+      poster: '/assets/images/ifa/poster3.png',
+      src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/geme_val.mp4',
+      from: 'Germany',
+      useTime: '1.5 months',
+    },
   ],
 }
 
@@ -159,15 +165,17 @@ function IFAPageEn({ PrefetchLink, SubscribeComponent }: IIFAPageProps) {
     <>
       <IFAHeroSection {...IFAHeroSectionProps} PrefetchLink={PrefetchLink} />
 
-      <div className="bg-[#fffbf8]">
-        <LocationSection />
+      <LocationSection />
+
+      <div className="bg-gray-50">
+        <VideoList
+          buttonText={IFAHeroSectionProps.buttonText}
+          videoListProps={videoListProps}
+          winnersNamesTickerProps={winnersNamesTickerProps}
+          PrefetchLink={PrefetchLink}
+        />
       </div>
-      <VideoList
-        buttonText={IFAHeroSectionProps.buttonText}
-        videoListProps={videoListProps}
-        winnersNamesTickerProps={winnersNamesTickerProps}
-        PrefetchLink={PrefetchLink}
-      />
+
       <SubscribeGemeV2
         {...subscribeGemeV2Props}
         SubscribeComponent={SubscribeComponent}
