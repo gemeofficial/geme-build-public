@@ -1064,7 +1064,7 @@ const faqProps: IFaqProps = {
     {
       slug: 'what-is-the-price',
       question: 'When will it be on sale? and what is the price?',
-      answer: `It's almost finish the final testing, estimate timeline for sale will be early next year. Price range will be $300 to $600.`,
+      answer: `The final testing is almost complete, and the estimated timeline for sale is early next year. The price range will be between $300 and $600.`,
     },
 
     //--
