@@ -32,8 +32,6 @@ export default function HeroSection({
         priority
         className="hidden md:block absolute inset-0 h-full w-full object-cover"
         fill
-        // width={1080}
-        // height={720}
         sizes="(max-width: 768px) 1vw,(min-width: 1281px) 60vw, (min-width: 1920px) 80vw,(min-width: 2420px) 100vw, 1vw"
       />
       <Image
@@ -41,8 +39,6 @@ export default function HeroSection({
         alt="hero background picture mobile"
         priority
         className="md:hidden absolute inset-0 h-full w-full object-cover"
-        // width={375}
-        // height={750}
         fill
         sizes="(max-width: 768px) 100vw, (min-width: 769px) 1vw, 1vw"
       />

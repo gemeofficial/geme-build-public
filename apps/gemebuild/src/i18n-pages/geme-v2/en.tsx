@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import { ILinkComponent } from '../../contexts/link-context'
 import HeroSection, { IHeroSectionProps } from './components/HeroSection'
 import LogoCloud, { ILogoCloudProps } from './components/LogoCloud'
 import { IShortVideoProps, ShortVideo } from 'ui'
@@ -9,7 +8,7 @@ import Subscribe, {
   ISubscribeComponent,
   ISubscribeProps,
 } from './components/Subscribe'
-// import YouTubeEmbed from '@next/third-parties/YouTubeEmbed'
+import Compare, { ICompareProps } from './components/Compare'
 
 // Hero section
 const heroSectionProps: IHeroSectionProps = {
@@ -35,6 +34,7 @@ const heroSectionProps: IHeroSectionProps = {
 
 // Logo cloud
 const logoCloudProps: ILogoCloudProps = {
+  title: 'Press Mentions',
   images: [
     {
       src: '/assets/images/geme-v2/press/europa-press.png',
@@ -124,6 +124,44 @@ const imageTextProps2: IShortVideoProps = {
   ),
   imageUrl: '/assets/images/pdp-v2311/introduction/no-filters.jpg',
   imageAlt: '',
+}
+
+// Compare Section
+const compareProps: ICompareProps = {
+  title: 'Real Composting Made Easy',
+  desctiption: 'We are different from other compost products on the market',
+  items: [
+    {
+      title: 'Brand 1',
+      imageUrl: '/assets/images/compare-section/compare-section-lomi.png',
+      alt: '',
+    },
+    {
+      title: 'Brand 2',
+      imageUrl: '/assets/images/compare-section/compare-section-mill.png',
+      alt: '',
+    },
+    {
+      title: 'Brand 3',
+      imageUrl: '/assets/images/compare-section/compare-section-reencle.png',
+      alt: '',
+    },
+    {
+      title: 'Brand 4',
+      imageUrl: '/assets/images/compare-section/compare-section-lomi.png',
+      alt: '',
+    },
+    {
+      title: 'Brand 5',
+      imageUrl: '/assets/images/compare-section/compare-section-mill.png',
+      alt: '',
+    },
+    {
+      title: 'Brand 6',
+      imageUrl: '/assets/images/compare-section/compare-section-reencle.png',
+      alt: '',
+    },
+  ],
 }
 
 // Reviews
@@ -344,20 +382,24 @@ const faqProps: IFaqProps = {
               <strong>The machine</strong>: Simulates a compost pile in a
               container, make sure it will not smell.
               <br />
-              <img
-                alt="How electric composter works"
-                src="/assets/images/how-it-works/how-geme-composter-works.jpg"
-              />
+              <picture>
+                <img
+                  alt="How electric composter works"
+                  src="/assets/images/how-it-works/how-geme-composter-works.jpg"
+                />
+              </picture>
             </li>
             <li>
               <strong>The Kobold</strong>: Microbes handle the majority of the
               workload. They reproduce quickly and absorb energy from the food
               waste. Just like worms eat food, microbes also consume food waste.
               Both produce compost.
-              <img
-                alt="How microbes grow"
-                src="/assets/images/geme-v2/microbes-grow.png"
-              />
+              <picture>
+                <img
+                  alt="How microbes grow"
+                  src="/assets/images/geme-v2/microbes-grow.png"
+                />
+              </picture>
               Bacteria reproduce primarily by binary fission, Under ideal
               conditions, some bacterial species may divide every 10–15
               minutes—a doubling of the population at these time intervals.
@@ -819,10 +861,12 @@ const faqProps: IFaqProps = {
               Almost all food you eat can go into GEME.
             </p>
             <div className="flex flex-col md:flex-row items-start md:items-center mb-6">
-              <img
-                src="https://www.geme.bio/help-center/assets/images/supported-foodwaste-guide-055cef03c7c375f24ce99e1625de5d6f.png"
-                alt="GEME Composter Supported Food Waste"
-              />
+              <picture>
+                <img
+                  src="https://www.geme.bio/help-center/assets/images/supported-foodwaste-guide-055cef03c7c375f24ce99e1625de5d6f.png"
+                  alt="GEME Composter Supported Food Waste"
+                />
+              </picture>
             </div>
 
             <p className="text-gray-700 text-lg leading-relaxed mb-6">
@@ -839,10 +883,12 @@ const faqProps: IFaqProps = {
             <p className="text-gray-700 text-lg leading-relaxed">
               It also can breakdown pet poop, like dog pop and cat litter.
             </p>
-            <img
-              src="/assets/images/geme-v2/cat-litter.png"
-              alt="GEME Composter Supported Food Waste"
-            />
+            <picture>
+              <img
+                src="/assets/images/geme-v2/cat-litter.png"
+                alt="GEME Composter Supported Food Waste"
+              />
+            </picture>
           </div>
         </>
       ),
@@ -876,10 +922,12 @@ const faqProps: IFaqProps = {
           However, for some food waste like orange peels, it will take slightly
           longer. Because the fibers are hard to breakdown. Small bones take
           even longer.
-          <img
-            src="https://www.geme.bio/help-center/assets/images/supported-foodwaste-guide-055cef03c7c375f24ce99e1625de5d6f.png"
-            alt="GEME Composter Supported Food Waste"
-          />
+          <picture>
+            <img
+              src="https://www.geme.bio/help-center/assets/images/supported-foodwaste-guide-055cef03c7c375f24ce99e1625de5d6f.png"
+              alt="GEME Composter Supported Food Waste"
+            />
+          </picture>
           <strong>Note</strong>, it takes few hours or days to breakdown, it is
           turning into the state of compost. However, it still need more time to
           become finished compost. We recommend wait more than 45 days to take
@@ -902,11 +950,13 @@ const faqProps: IFaqProps = {
           <div className="container mx-auto p-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white rounded-lg shadow-md">
-                <img
-                  src="/assets/images/geme-v2/odor/1.jpg"
-                  alt="Image 1"
-                  className="w-full h-auto rounded-t-lg"
-                />
+                <picture>
+                  <img
+                    src="/assets/images/geme-v2/odor/1.jpg"
+                    alt="Image 1"
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                </picture>
                 <div className="p-4">
                   <h2 className="text-xl font-semibold mb-2">Layer 1</h2>
                   <p className="text-gray-700">
@@ -917,11 +967,13 @@ const faqProps: IFaqProps = {
               </div>
 
               <div className="bg-white rounded-lg shadow-md">
-                <img
-                  src="/assets/images/geme-v2/odor/2.jpg"
-                  alt="Image 2"
-                  className="w-full h-auto rounded-t-lg"
-                />
+                <picture>
+                  <img
+                    src="/assets/images/geme-v2/odor/2.jpg"
+                    alt="Image 2"
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                </picture>
                 <div className="p-4">
                   <h2 className="text-xl font-semibold mb-2">Layer 2</h2>
                   <p className="text-gray-700">Metal ion catalytic oxidation</p>
@@ -929,11 +981,13 @@ const faqProps: IFaqProps = {
               </div>
 
               <div className="bg-white rounded-lg shadow-md">
-                <img
-                  src="/assets/images/geme-v2/odor/3.jpg"
-                  alt="Image 3"
-                  className="w-full h-auto rounded-t-lg"
-                />
+                <picture>
+                  <img
+                    src="/assets/images/geme-v2/odor/3.jpg"
+                    alt="Image 3"
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                </picture>
                 <div className="p-4">
                   <h2 className="text-xl font-semibold mb-2">Layer 3</h2>
                   <p className="text-gray-700">
@@ -986,10 +1040,12 @@ const faqProps: IFaqProps = {
               for longevity.
             </p>
           </div>
-          <img
-            src="/assets/images/geme-v2/harvest-compost/best-practice-removal.png"
-            alt="Best practice to remove GEME Compost"
-          />
+          <picture>
+            <img
+              src="/assets/images/geme-v2/harvest-compost/best-practice-removal.png"
+              alt="Best practice to remove GEME Compost"
+            />
+          </picture>
         </>
       ),
     },
@@ -1165,14 +1221,10 @@ const subscribeProps: ISubscribeProps = {
 }
 
 export interface IGemeV2PageProps {
-  PrefetchLink?: ILinkComponent
   SubscribeComponent?: FC<ISubscribeComponent>
 }
 
-export function GemeV2PageEn({
-  PrefetchLink,
-  SubscribeComponent,
-}: IGemeV2PageProps) {
+export function GemeV2PageEn({ SubscribeComponent }: IGemeV2PageProps) {
   return (
     <>
       <HeroSection
@@ -1185,6 +1237,7 @@ export function GemeV2PageEn({
       <ShortVideo {...imageTextProps} compact />
       <ShortVideo {...imageTextProps2} compact />
 
+      <Compare {...compareProps} />
       <Reviews {...reviewsProps} />
       <Faq {...faqProps} />
       <Subscribe {...subscribeProps} SubscribeComponent={SubscribeComponent} />
