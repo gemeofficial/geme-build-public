@@ -10,15 +10,13 @@ export interface IFaqProps {
   faqs: {
     slug: string
     question: string
-    answer: string
+    answer: React.ReactNode
   }[]
 }
 
 export default function Faq({ faqs, title, description }: IFaqProps) {
   return (
-    <SectionContainer
-      compact
-    >
+    <SectionContainer compact>
       <SectionTitle>{title}</SectionTitle>
       {description && <SectionDescription>{description}</SectionDescription>}
       <dl className="mt-10 space-y-6 divide-y divide-gray-900/10 max-w-4xl mx-auto">
