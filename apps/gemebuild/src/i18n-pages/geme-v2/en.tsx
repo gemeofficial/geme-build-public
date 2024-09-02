@@ -326,7 +326,7 @@ const faqProps: IFaqProps = {
   description: '',
   faqs: [
     {
-      slug: 'what-is-geme',
+      slug: 'how-it-works',
       question: 'How it works?',
       answer: (
         <>
@@ -335,23 +335,29 @@ const faqProps: IFaqProps = {
             <del>not dehydrate and heat</del>
           </h4>
           GEME Composters are all home appliances provide and maintain{' '}
-          <strong>an ideal environment</strong> for GEME's special microbes(GEME
-          Kobold) to break down the bio waste. Terra 2 works in the same
-          principle.
+          <strong>an ideal environment</strong> for {`GEME's`} special
+          microbes(GEME Kobold) to break down the bio waste. Terra 2 works in
+          the same principle.
           <br />
           <ul>
             <li>
               <strong>The machine</strong>: Simulates a compost pile in a
               container, make sure it will not smell.
               <br />
-              <img src="/assets/images/how-it-works/how-geme-composter-works.jpg" />
+              <img
+                alt="How electric composter works"
+                src="/assets/images/how-it-works/how-geme-composter-works.jpg"
+              />
             </li>
             <li>
               <strong>The Kobold</strong>: Microbes handle the majority of the
               workload. They reproduce quickly and absorb energy from the food
               waste. Just like worms eat food, microbes also consume food waste.
               Both produce compost.
-              <img src="/assets/images/geme-v2/microbes-grow.png" />
+              <img
+                alt="How microbes grow"
+                src="/assets/images/geme-v2/microbes-grow.png"
+              />
               Bacteria reproduce primarily by binary fission, Under ideal
               conditions, some bacterial species may divide every 10–15
               minutes—a doubling of the population at these time intervals.
@@ -361,7 +367,7 @@ const faqProps: IFaqProps = {
       ),
     },
     {
-      slug: 'what-s-bio-waste',
+      slug: 'what-is-the-difference-between-geme-one',
       question: 'What is the difference between GEME One?',
       answer: (
         <>
@@ -564,7 +570,7 @@ const faqProps: IFaqProps = {
       ),
     },
     {
-      slug: 'what-s-bio-waste',
+      slug: 'what-is-the-difference-between-other-electric-composters-like-lomi',
       question:
         'What is the difference between other electric composters like Lomi?',
       answer: (
@@ -804,7 +810,7 @@ const faqProps: IFaqProps = {
     //   answer: ``,
     // },
     {
-      slug: 'what-s-bio-waste',
+      slug: 'what-kinds-of-food-waste-can-i-put',
       question: 'What kinds of food waste can I put?',
       answer: (
         <>
@@ -883,15 +889,15 @@ const faqProps: IFaqProps = {
       ),
     },
     {
-      slug: 'what-is-the-electricity-cost',
+      slug: 'is-it-smell-how-often-should-i-replace-the-carbon-filter',
       question: 'Is it smell? How often should I replace the carbon filter?',
       answer: (
         <>
           <div>
-            It won't smell, it uses the{' '}
+            {`It won't smell`}, it uses the{' '}
             <strong>metal ion catalytic oxidation</strong> technology to process
-            the odor. It does not use any carbon filters. Hence, you don't need
-            to replace the filter. The filter can use for life time long.
+            the odor. It does not use any carbon filters. Hence, you {`don't`}{' '}
+            need to replace the filter. The filter can use for life time long.
           </div>
           <div className="container mx-auto p-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -942,7 +948,7 @@ const faqProps: IFaqProps = {
     },
 
     {
-      slug: 'what-is-the-electricity-cost',
+      slug: 'how-often-should-i-clean-the-bin',
       question: 'How often should I clean the bin?',
       answer: (
         <>
@@ -953,14 +959,14 @@ const faqProps: IFaqProps = {
           the compost?
           <div className="container mx-auto p-6">
             <h5 className="text-1xl font-semibold text-gray-800 mb-4">
-              Don't over pass the full limit line
+              {`Don't over pass the full limit line`}
             </h5>
             <p className="text-gray-700 mb-6">
               This is a hard limit, if it get full, remove the compost out ASAP.
             </p>
 
             <h5 className="text-1xl font-semibold text-gray-800 mb-4">
-              Don't empty all of them out
+              Do not empty all of them out
             </h5>
             <p className="text-gray-700 mb-6">
               Every time you remove the compost, remain some of them in the
@@ -1142,96 +1148,10 @@ const faqProps: IFaqProps = {
     },
 
     {
-      slug: 'what-is-the-price',
+      slug: 'when-will-it-be-on-sale? and-what-is-the-price',
       question: 'When will it be on sale? and what is the price?',
       answer: `The final testing is almost complete, and the estimated timeline for sale is early next year. The price range will be between $300 and $600.`,
     },
-
-    //--
-    // {
-    //   slug: 'why-is-short-time-composting-possible',
-    //   question: 'What kinds of food waste can not put',
-    //   answer: `
-    //     <img
-    //       src="/assets/images/faq/why-is-short-time-composting-possible.png"
-    //       alt="short-time composting is possible"
-    //     />
-    //     Unlike previous facilities that call themselves fast composters,
-    //     GEME replicates the entire process of natural composting,
-    //     accelerating the decomposition of bio-waste by providing a more
-    //     suitable environment for the microbiota to multiply and decompose.
-    //     <br />
-    //     GEME-Kobold is the world's only proven high-temperature resistant
-    //     microbial complex from nature, and it is this microbial complex
-    //     that plays a key role in composting.
-    //     <br />
-    //     Therefore, GEME not only achieves short composting times, but
-    //     because of GEME-Kobold, the compost has high activity and high
-    //     nutritional value.
-    //   `,
-    // },
-    // {
-    //   slug: 'can-food-waste-be-composted',
-    //   question: 'Can food waste be composted?',
-    //   answer: `Yes, it is possible. Unlike traditional garden composting, GEME was designed for food waste! Food waste is rich in protein and is one of the best sources of input for composting. So let your little GEME help you eat the greasy leftovers and produce organic fertilizer! Tip: Remember to drain the vegetable broth, too wet environment is not conducive to composting, although the GEME can automatically sense dehumidification, but the effort to save a little energy consumption, is not a good thing!`,
-    // },
-    // {
-    //   slug: 'is-it-possible-to-avoid-the-use-of-microbiome',
-    //   question: 'Is it possible to avoid the use of microbiome?',
-    //   answer: `
-    //     The essence of composting is a dynamic process achieved by the
-    //     interaction of multiple microbial communities with very rapid
-    //     community structure succession. The initial heating and high
-    //     temperature stage can play a role in killing harmful substances
-    //     such as pathogenic pathogens, insect eggs, weed seeds, etc., but
-    //     the main role of microorganisms in this process also includes
-    //     metabolism and reproduction, while producing a small amount of
-    //     metabolites, which are neither stable nor easy to be absorbed by
-    //     plants; after the cooling and decomposition period in the late
-    //     stage of composting, microorganisms will carry out the
-    //     humification of organic matter, and in this process produce a
-    //     large number of metabolites that are beneficial to plant growth
-    //     and absorption. Therefore, traditional composting generally takes
-    //     4-6 months.
-    //     <br />
-    //     No microorganism in nature can establish an effective and stable
-    //     microbial population within 24 hours, and the minimum incubation
-    //     time is generally 48-72 hours, which refers to the process of
-    //     adapting microorganisms to the new environment at the beginning of
-    //     composting, that is, the process of domestication. After the end
-    //     of the domestication process, it enters the middle temperature
-    //     growth stage and the high temperature stage, which represents the
-    //     settlement of microorganisms in the reactor and the initiation of
-    //     the degradation process. Therefore, if the microbiota is not
-    //     added, then after drying and dehydrating through the equipment in
-    //     24 hours or even less, only the charred and dehydrated garbage is
-    //     obtained, not organic fertilizer. This is also the biggest
-    //     difference between GEME and other short-term waste drying
-    //     processors.
-    //     <br />
-    //     So the microbiome must be added.
-    //   `,
-    // },
-    // {
-    //   slug: 'can-geme-kobold-regenerate',
-    //   question: 'Can GEME-Kobold regenerate?',
-    //   answer: `GEME-Kobold is a highly regenerative microbiota. But don't forget
-    // that after rapid composting, the organic fertilizer produced is only
-    // 5% of the volume of biological waste that was originally put in, and
-    // if a large amount of biological waste is continuously poured after
-    // this, the effect and speed of decomposition must be affected. So we
-    // recommend that you add GEME-Kobold in a very small amount every two
-    // weeks, and only 20g can keep your GEME-Kobold permanently active.`,
-    // },
-    // {
-    //   slug: 'how-long-will-it-take-for-geme-to-turn-my-food-waste-into-compost',
-    //   question:
-    //     'How long will it take for GEME to turn my food waste into compost?',
-    //   answer: `It has been experimentally determined that more than 380 kinds of
-    // biological waste can be rapidly decomposed in GEME within 6-8 hours.
-    // If you break up your waste as much as possible, the increased
-    // surface area will result in faster decomposition.`,
-    // },
   ],
 }
 
