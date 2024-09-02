@@ -82,7 +82,7 @@ const imageTextProps: IShortVideoProps = {
       </p>
     </>
   ),
-  imageUrl: '/assets/images/how-it-works/geme-vs-dehydrators.png',
+  imageUrl: '/assets/images/how-it-works/geme-vs-dehydrator.png',
   isReverse: true,
 }
 

@@ -4,6 +4,7 @@ import Image from 'next/image'
 import HeroSectionsButton from './client-components/HeroSectionsButton'
 import { PlayIcon, VideoInlinePlayer } from './video-inline-player'
 import HeroSectionVideo from './hero-section-video'
+import clsx from 'clsx'
 
 interface IHeroSection1Props {
   title?: ReactNode
@@ -18,6 +19,8 @@ interface IHeroSection1Props {
   fullScreenVideoUrl?: string
   heroImageUrlPc: string // 首屏大图URL
   heroImageUrlMobile: string // 首屏大图URL
+  videoClassName?: string
+  containerClassName?: string
 }
 
 const heroSection1Props: IHeroSection1Props = {
@@ -63,6 +66,8 @@ function HeroSection1({
   fullScreenVideoUrl,
   heroImageUrlPc,
   heroImageUrlMobile,
+  videoClassName,
+  containerClassName,
 }: IHeroSection1Props) {
   return (
     <div className="h-screen ">
@@ -92,7 +97,12 @@ function HeroSection1({
       </div>
 
       {/* 文字定位层 */}
-      <div className="h-screen xl:mx-auto xl:max-w-7xl absolute z-40 inset-0 flex flex-col items-center xl:items-start justify-center text-center xl:text-left xl:pl-20 2xl:pl-0">
+      <div
+        className={clsx(
+          'h-screen xl:mx-auto xl:max-w-7xl absolute z-40 inset-0 flex flex-col items-center xl:items-start justify-center text-center xl:text-left xl:pl-20 2xl:pl-0',
+          containerClassName,
+        )}
+      >
         <Image
           src="/assets/images/home-v2311/hero-section-logo.svg"
           alt="hero section logo"
@@ -116,7 +126,7 @@ function HeroSection1({
           linkUrl={linkUrl}
         />
       </div>
-      
+
       <HeroSectionVideo
         mixpanelStatPayload={{
           title: 'Watch video',
@@ -126,6 +136,7 @@ function HeroSection1({
         fullScreenVideoUrl={
           fullScreenVideoUrl || 'https://www.youtube.com/embed/ROJYZBp0jcM'
         }
+        className={videoClassName}
       />
     </div>
   )
