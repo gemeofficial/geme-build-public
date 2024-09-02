@@ -36,8 +36,9 @@ export default function HeroSection({
         />
         <div className="mx-auto max-w-2xl lg:mx-0 flex flex-col gap-10 lg:flex-row md:max-w-max lg:max-w-none">
           <Image
-            width={400}
-            height={300}
+            priority
+            width={800}
+            height={600}
             alt={alt || 'Hero Section Image'}
             src={imageUrl}
             className="lg:hidden w-full rounded-2xl object-cover"

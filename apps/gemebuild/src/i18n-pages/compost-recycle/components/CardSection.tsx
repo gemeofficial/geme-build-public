@@ -47,6 +47,7 @@ function CardItem({ description, imageUrl, alt, title }: CardItemType) {
   return (
     <li className="lg:max-w-sm bg-gray-100 shadow p-6 flex flex-col gap-4">
       <Image
+        priority
         width={660}
         height={440}
         className="object-cover min-h-36 md:max-h-[300px] lg:max-h-[220px] w-full"

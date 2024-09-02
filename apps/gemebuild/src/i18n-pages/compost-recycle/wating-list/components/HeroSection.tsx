@@ -19,6 +19,7 @@ export default function HeroSection({
   buttonText,
   description,
   title,
+  PrefetchLink,
 }: IHeroSectionProps) {
   const clickHandler = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault()
@@ -28,6 +29,7 @@ export default function HeroSection({
   return (
     <div className="relative md:py-32 xl:py-40 overflow-hidden">
       <Image
+        priority
         width={1080}
         height={500}
         src={bgImageUrl}
@@ -49,6 +51,7 @@ export default function HeroSection({
               href="#"
               onClick={clickHandler}
               className="!rounded-3xl !py-3 !px-8 w-max"
+              PrefetchLink={PrefetchLink}
             >
               {buttonText}
             </PrimaryButton>

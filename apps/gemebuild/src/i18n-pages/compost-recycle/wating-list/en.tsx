@@ -7,6 +7,7 @@ import Compare, { ICompareProps } from './components/Compare'
 import HeroSection, { IHeroSectionProps } from './components/HeroSection'
 import Reviews, { IReviewsProps } from './components/Reviews'
 
+// hero Section
 const heroSectionprops: IHeroSectionProps = {
   city: 'Whistler',
   bgImageUrl: '/assets/images/compost-recycle/citys/Whistler.jpg',
@@ -82,6 +83,7 @@ const compareProps: ICompareProps = {
   ],
 }
 
+// Reviews Section
 const reviewsProps: IReviewsProps = {
   title: 'What People Are Saying About GEME',
   buttonText: 'Join the waitlist',
@@ -91,6 +93,7 @@ const reviewsProps: IReviewsProps = {
       name: 'Michael R.',
       content:
         'I REALLY love this product. We have used it a lot and look forward to seeing the garden this year, which we have supplemented with Geme compost!',
+      title: 'I REALLY love this product. We have used it a lot.',
       imageUrl:
         'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/images/users-feedback/3-michale.png',
     },
@@ -121,7 +124,7 @@ export function CompostRecycleWatingListPageEn({
   return (
     <>
       <HeroSection {...heroSectionprops} PrefetchLink={PrefetchLink} />
-      <CardSection2 {...cardSectionProps2} />
+      <CardSection2 {...cardSectionProps2} priority={true} />
       <RecycleSection {...recycleSectionProps} />
       <Compare {...compareProps} />
       <div className="bg-[#FCFCFC]">
