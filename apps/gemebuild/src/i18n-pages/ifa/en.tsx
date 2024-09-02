@@ -96,19 +96,19 @@ const videoListProps: IVideoList = {
     'The video list data will be displayed after this drawing, please wait patiently.',
   videoList: [
     {
-      poster: '/assets/images/ifa/poster1.png',
+      poster: '/assets/images/ifa/poster-images/poster1.png',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/ifa-page-user-video-1.mp4',
       from: 'MN',
       useTime: '9 months',
     },
     {
-      poster: '/assets/images/ifa/poster2.png',
+      poster: '/assets/images/ifa/poster-images/poster2.png',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/ifa-page-user-video-2.mp4',
       from: 'OH',
       useTime: '10 months',
     },
     {
-      poster: '/assets/images/ifa/poster3.png',
+      poster: '/assets/images/ifa/poster-images/poster3.png',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/geme_val.mp4',
       from: 'Germany',
       useTime: '1.5 months',
