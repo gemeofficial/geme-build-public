@@ -68,7 +68,7 @@ const compareProps: ICompareProps = {
     },
     {
       title: 'Kitchen Garbage',
-      imageUrl: '/assets/images/compost-recycle/garbage.webp',
+      imageUrl: '/assets/images/compost-recycle/garbage2.webp',
       features: [
         `Fruit flies love these`,
         'Messy, smelly, leaky ',
@@ -76,7 +76,7 @@ const compareProps: ICompareProps = {
         'Needs regular emptying',
         'Food in landfills',
       ],
-      type: 'good',
+      type: 'bad',
     },
   ],
 }
