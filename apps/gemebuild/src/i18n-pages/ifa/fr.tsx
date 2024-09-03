@@ -1,18 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
 import {
+  ComposterSurvey,
+  IComposterSurveyProps,
   IFAHeroSection,
   IIFAHeroSectionProps,
   ISubscribeGemeV2Props,
   IWinnersNamesTickerProps,
+  LocationSection,
   SubscribeGemeV2,
 } from 'ui'
 
-import { ILinkComponent } from '../../contexts/link-context'
 import { winnersNames } from './winnersNames'
 import { VideoList, IVideoList } from 'ui'
-import { FC } from 'react'
 import { IIFAPageProps } from './en'
-import LocationSection from 'ui/src/ifa/LocationSection'
 
 // Hero Section  Fr
 const IFAHeroSectionProps: IIFAHeroSectionProps = {
@@ -117,6 +117,13 @@ const winnersNamesTickerProps: IWinnersNamesTickerProps = {
   winnersNames,
 }
 
+// 问卷调查 Fr
+const composterSurveyProps: IComposterSurveyProps = {
+  title: 'Enquête sur le composteur',
+  desc: 'Donnez-nous votre avis sur votre idée de gestion des déchets',
+  buttonText: 'Aller publier',
+}
+
 // 订阅模块 Fr
 const subscribeGemeV2Props: ISubscribeGemeV2Props = {
   title: 'Découvrez GEME II',
@@ -150,15 +157,20 @@ function IFAPageFr({ PrefetchLink, SubscribeComponent }: IIFAPageProps) {
   return (
     <>
       <IFAHeroSection {...IFAHeroSectionProps} PrefetchLink={PrefetchLink} />
-      <div className="bg-[#fffbf8]">
-        <LocationSection />
+
+      <LocationSection />
+
+      <div className="bg-[#fcfcfc]">
+        <VideoList
+          buttonText={IFAHeroSectionProps.buttonText}
+          videoListProps={videoListProps}
+          winnersNamesTickerProps={winnersNamesTickerProps}
+          PrefetchLink={PrefetchLink}
+        />
       </div>
-      <VideoList
-        buttonText={IFAHeroSectionProps.buttonText}
-        videoListProps={videoListProps}
-        winnersNamesTickerProps={winnersNamesTickerProps}
-        PrefetchLink={PrefetchLink}
-      />
+
+      <ComposterSurvey {...composterSurveyProps} PrefetchLink={PrefetchLink} />
+
       <SubscribeGemeV2
         {...subscribeGemeV2Props}
         SubscribeComponent={SubscribeComponent}

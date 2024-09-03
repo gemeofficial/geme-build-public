@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import {
+  IComposterSurveyProps,
   IFAHeroSection,
   IIFAHeroSectionProps,
   ISubscribeGemeV2Props,
@@ -11,9 +12,8 @@ import { ILinkComponent } from '../../contexts/link-context'
 import { winnersNames } from './winnersNames'
 import { VideoList, IVideoList } from 'ui'
 import { FC } from 'react'
-import ImageZoomViewer from 'ui/src/client-components/ImageZoomViewer'
-import Image from 'next/image'
-import LocationSection from 'ui/src/ifa/LocationSection'
+import { LocationSection } from 'ui'
+import { ComposterSurvey } from 'ui'
 
 // Hero Section  En
 const IFAHeroSectionProps: IIFAHeroSectionProps = {
@@ -123,6 +123,13 @@ const winnersNamesTickerProps: IWinnersNamesTickerProps = {
   winnersNames,
 }
 
+// 问卷调查 En
+const composterSurveyProps: IComposterSurveyProps = {
+  title: 'Composter Survey',
+  desc: 'Give us some insight about your waste management idea',
+  buttonText: 'Go to Publish',
+}
+
 // 订阅模块 En
 const subscribeGemeV2Props: ISubscribeGemeV2Props = {
   title: 'Meet GEME II',
@@ -167,7 +174,7 @@ function IFAPageEn({ PrefetchLink, SubscribeComponent }: IIFAPageProps) {
 
       <LocationSection />
 
-      <div className="bg-gray-50">
+      <div className="bg-[#fcfcfc]">
         <VideoList
           buttonText={IFAHeroSectionProps.buttonText}
           videoListProps={videoListProps}
@@ -175,6 +182,8 @@ function IFAPageEn({ PrefetchLink, SubscribeComponent }: IIFAPageProps) {
           PrefetchLink={PrefetchLink}
         />
       </div>
+
+      <ComposterSurvey {...composterSurveyProps} PrefetchLink={PrefetchLink} />
 
       <SubscribeGemeV2
         {...subscribeGemeV2Props}
