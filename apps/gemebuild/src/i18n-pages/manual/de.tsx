@@ -21,21 +21,21 @@ const manualHeroSectionProps: IManualHeroSectionProps = {
       <br></br>
       <div className="flex flex-col justify-center items-center lg:block">
         <ol className="text-left">
-          <li>1. Wie man auspackt und einrichtet</li>
-          <li>2. Vorsichtsmaßnahmen & Hinweise</li>
-          <li>3. Wie man GEME-Kobold aktiviert</li>
-          <li>4. Tägliche Nutzungsvorführung</li>
-          <li>5. Verwendung von Nebenprodukten (Kompost)</li>
-          <li>6. Wie man GEME stabil macht</li>
-          <li>7. Bedienung des Kontrollpanels und Fehlerbehebung</li>
-          <li>8. Wie man die UV-Lampe wechselt</li>
-          <li>9. Was in GEME hineingelegt werden kann und was nicht</li>
+          <li>1. Auspacken und Einrichten</li>
+          <li>2. Vorsichten und Hinweise</li>
+          <li>3. Wie aktiviere ich GEME-Kobold?</li>
+          <li>4. Demo für den täglichen Gebrauch</li>
+          <li>5. Kompost Verwendung</li>
+          <li>6. Wie Sie Ihren GEME stabilisieren können?</li>
+          <li>7. Verwendung des Bedienteils und Fehlerbehebungen</li>
+          <li>8. Austausch der UV-Lampe</li>
+          <li>9. Was kann in GEME eingegeben werden und was nicht?</li>
         </ol>
       </div>
     </>
   ),
-  primaryButtonLabel: 'Hilfe über WhatsApp erhalten',
-  secondaryButtonLabel: 'Kundendienst',
+  primaryButtonLabel: 'Hilfe über WhatsApp anfordern',
+  secondaryButtonLabel: 'Kunden-Service',
   hintsLinkLabel: 'PDF-Handbuch herunterladen',
   buttonLn: true,
 }
@@ -43,8 +43,7 @@ const manualHeroSectionProps: IManualHeroSectionProps = {
 // 第2部分配置文件 De版
 const featuresWithVideos: IFeaturesWithVideos = {
   title: 'Benutzerhandbuch！',
-  description:
-    'Sehen Sie sich Videos zu verschiedenen Benutzerhandbuchthemen an',
+  description: 'Videos zu verschiedenen Themen aus Benutzerhandbuch',
   features: [
     {
       name: 'Auspacken',
@@ -56,18 +55,17 @@ const featuresWithVideos: IFeaturesWithVideos = {
       videoImageAlt: 'GEME Composter Auspacken',
     },
     {
-      name: 'Vorsichtsmaßnahmen',
+      name: 'Vorsichten',
       description:
-        'Beim Gebrauch des GEME-Komposters ist Vorsicht geboten, es ist nur wenig Aufmerksamkeit erforderlich.',
+        'Bitte beachten Sie bei der Verwendung des GEME Komposters die folgenden Hinweise.',
       icon: featureIcon(2),
       videoUrl: 'https://www.youtube.com/embed/f09NNpAnyTQ',
       videoImageSrc: '/assets/images/manual/video-cover-cautions.png',
-      videoImageAlt: 'GEME Composter Vorsichtsmaßnahmen',
+      videoImageAlt: 'GEME Composter Vorsichten',
     },
     {
       name: 'Mikrobiota aktivieren',
-      description:
-        '1. Setzen Sie GEME-Kobold in den Behälter; 2. Gießen Sie 800 ml Wasser ein; 3. Warten Sie 6+ Stunden',
+      description: `GEME-kobold in den Tank geben; 800ml Wasser einfüllen; 6+ Stunden warten`,
       icon: featureIcon(3),
       videoUrl: 'https://www.youtube.com/embed/hSpq48ymKrA',
       videoImageSrc:
@@ -78,16 +76,16 @@ const featuresWithVideos: IFeaturesWithVideos = {
     {
       name: 'Tägliche Nutzung',
       description:
-        'Die tägliche Nutzung von GEME ist so einfach wie bei normalen Mülleimern, nichts zu erklären',
+        'Benutzen Sie GEME wie einen normalen Mülleimer für Bioabfälle',
       icon: featureIcon(4),
       videoUrl: 'https://www.youtube.com/embed/mi8fwlJdt68',
       videoImageSrc: '/assets/images/manual/video-cover-daily-usage.png',
       videoImageAlt: 'GEME Composter Tägliche Nutzung',
     },
     {
-      name: 'Verwendung von Nebenprodukten (Kompost)',
+      name: 'Kompost Verwendung',
       description:
-        'Nehmen Sie das Nebenprodukt heraus und mischen Sie es mit Erde, dann gehen Sie weiter und nähren Sie Ihre Pflanzen',
+        'Entnehmen Sie den Kompost und mischen Sie es mit Erde, dann können Sie Ihre Pflanzen ernähren',
       icon: featureIcon(5),
       videoUrl: 'https://www.youtube.com/embed/qHo9WgCKUsw',
       videoImageSrc: '/assets/images/manual/video-cover-by-product-usage.png',
@@ -95,9 +93,9 @@ const featuresWithVideos: IFeaturesWithVideos = {
         'GEME Composter Verwendung von Nebenprodukten (Organischer Kompost)',
     },
     {
-      name: 'Wie man stabil macht',
+      name: 'Wie Sie Ihren GEME stabilisieren können?',
       description:
-        'Heben Sie GEME ein wenig an und schrauben Sie einen der Füße fest, um es stabil zu machen',
+        'Heben Sie GEME ein wenig an und schrauben Sie einen der Füße fest',
       icon: featureIcon(6),
       videoUrl: 'https://www.youtube.com/embed/rthDSasoOrY',
       videoImageSrc: '/assets/images/manual/video-cover-make-steady.png',
@@ -114,18 +112,18 @@ const featuresWithVideos: IFeaturesWithVideos = {
       videoImageAlt: 'GEME Composter Fehlerbehebung am Bedienfeld',
     },
     {
-      name: 'Wie man die UV-Lampe wechselt',
+      name: 'Austausch der UV-Lampe',
       description:
-        'GEME verwendet eine UV-Lampe zur Desinfektion, sie kann über 15.000 Stunden arbeiten. Wenn sie jedoch kaputt ist, können Sie sie wechseln.',
+        'GEME verwendet eine UV-Lampe zur Desinfektion, mit 15.000+ Stunden Lebensdauer. Sie können es jedoch austauschen, wenn es kaputt ist.',
       icon: featureIcon(8),
       videoUrl: 'https://www.youtube.com/embed/VdAtQfpSQ_E',
       videoImageSrc: '/assets/images/manual/video-cover-change-uv-lamp.png',
       videoImageAlt: 'GEME Composter UV-Lampe wechseln',
     },
     {
-      name: 'Was hinein darf und was nicht',
+      name: 'Was kann in GEME eingegeben werden und was nicht?',
       description:
-        'Bis zu 90 % Bioabfall können in GEME gegeben werden. Es gibt jedoch einige Abfälle, die GEME nicht gut verarbeiten kann.',
+        'Bis zu 90% Bioabfälle können in GEME eingegeben werden. Es gibt einige Abfälle, mit denen GEME nicht gut verarbeiten kann.',
       icon: featureIcon(9),
       videoUrl: 'https://www.youtube.com/embed/2DSFcxFRSos',
       videoImageSrc: '/assets/images/manual/video-cover-can-and-can-not.png',
@@ -138,7 +136,7 @@ const featuresWithVideos: IFeaturesWithVideos = {
 const geemDailyUsageProps = {
   title: 'Tägliche Nutzung',
   description:
-    'Keine Tasten drücken, kein Anpassen des Kohlenstoff-Stickstoff-Verhältnisses des Komposts, kein Wenden des Komposts, kein Ersetzen des Filters erforderlich. Geben Sie Ihren Abfall jederzeit hinein, entnehmen Sie den Kompost, wann immer Sie möchten. Nichts Besonderes.',
+    'Sie müssen die Buttons nicht drücken; Sie müssen das Kohlenstoff-Stickstoff-Verhältnis des Komposts nicht einstellen; Sie müssen den Kompost nicht wenden und den Filter nicht wechseln. Sie können Ihre Abfälle jederzeit reinwerfen und den Kompost herausnehmen, wann immer Sie wollen. Nichts Besonderes.',
   categories: [
     {
       imageSrc: '/assets/images/meet-geme/m1.png',
@@ -157,20 +155,20 @@ const geemDailyUsageProps = {
 
 // 第4部分配置文件 De版
 const canNotCompostItemsProps: ICanNotCompostItemsProps = {
-  title: 'Legen Sie diese Gegenstände nicht in GEME',
+  title: 'Geben Sie diese Gegenstände NICHT in GEME ein',
   description:
-    'GEME ist nur für die Behandlung der meisten Bioabfälle geeignet',
+    'GEME ist nur für die Verarbeitung der meisten Bioabfälle geeignet',
   features: [
     {
       name: 'Knochen',
       description:
-        'Große Knochen beschädigen die Welle, es sei denn, sie werden zerschlagen',
+        'Große Knochen verletzen den Schacht, wenn sie nicht zerkleinert sind.',
       icon: noSymbolIcon(),
     },
     {
       name: 'Schalen',
       description:
-        'Sie beschädigen die Maschine, es sei denn, sie werden zerbrochen',
+        'Sie beschädigen die Maschine, wenn sie nicht zerbrochen werden.',
       icon: noSymbolIcon(),
     },
     {

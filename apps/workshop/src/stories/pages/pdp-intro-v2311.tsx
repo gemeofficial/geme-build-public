@@ -317,6 +317,10 @@ const pdpIntroSection6Props: IPdpIntroSection6Props = {
 }
 
 const pdpIntroSection7Props: IPdpIntroSection7Props = {
+  mobileBgImageUrl:
+    '/assets/images/pdp-v2311/introduction/big-more-and-long-term-mobile.png',
+  pcBgImageUrl:
+    '/assets/images/pdp-v2311/introduction/big-more-and-long-term-pc.png',
   title: 'Big, More & Long Term',
   description: 'Work 7x24 But Energy Saving',
   features: [

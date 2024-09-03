@@ -23,11 +23,11 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
   noticeTitle: (
     <>
       <p className="leading-tight">
-        Glänzen mit GEME <br />
+        Entdecken GEME <br />
         <span className="text-[#ea3c58]">Auf der IFA Berlin 2024</span>
       </p>
       <span className="text-lg md:text-3xl 3xl:text-4xl">
-        Teilen Sie Ihre GEME-Geschichte, gewinnen Sie einen GEME-Komposter!
+        Teilen Sie uns Ihre GEME-Geschichte,Gewinnen Sie einen GEME Komposter!
       </span>
     </>
   ),
@@ -51,7 +51,7 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
         Freitag ein $59.9 Kobold-Nachfüllpack.
       </p>
       <br />
-      <strong>Hauptpreis: </strong>
+      <strong>Großer Preis: </strong>
       <p>
         Ein glücklicher Gewinner aus allen Teilnehmern wird am 14. September
         einen GEME-Komposter gewinnen.
@@ -59,7 +59,7 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
     </>
   ),
   buttonText: 'Reichen Sie Ihr Video ein!',
-  countdownTitle: 'Countdown zum nächsten Ziehung :',
+  countdownTitle: 'Countdown zu der nächsten Auslosung:',
   winningProbabilityTitle:
     'Aktuelle Gewinnwahrscheinlichkeit des Kobold-Nachfüllpacks:',
   prizeImageTitle: 'Belohnungen',
@@ -110,7 +110,7 @@ const videoListProps: IVideoList = {
 
 // 中奖名单  De
 const winnersNamesTickerProps: IWinnersNamesTickerProps = {
-  title: 'Geschichte Gewinner',
+  title: 'Frühere Gewinner',
   linkText: 'mehr anzeigen',
   winnersNames,
 }
@@ -124,7 +124,7 @@ const composterSurveyProps: IComposterSurveyProps = {
 
 // 订阅模块 De
 const subscribeGemeV2Props: ISubscribeGemeV2Props = {
-  title: 'Lernen Sie GEME II kennen',
+  title: 'Entdecken Sie GEME II',
   description: <>Interessiert? Treten Sie der Warteliste bei!</>,
   emailPlaceholder: 'Geben Sie Ihre E-Mail ein',
   submitButtonLabel: 'Benachrichtigen Sie mich',

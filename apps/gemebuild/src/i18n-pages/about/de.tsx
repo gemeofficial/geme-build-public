@@ -21,36 +21,36 @@ import type {
 // 第一部分 De
 const aboutHeroSectionProps: IAboutHeroSection = {
   title: 'Weniger Abfall, mehr Grün',
-  mTitle: `ROKHs Weg zu einer nachhaltigen Zukunft`,
+  mTitle: `Der Weg von ROKH zu einer nachhaltigen Zukunft`,
   descriptionSection: (
     <div className="w-full mt-3 md:mt-5 max-w-md text-base text-v2311-text-gary md:max-w-3xl">
       <div>
-        Bei ROKH teilen wir eine einheitliche Vision: Abfall in eine Ressource
-        zu verwandeln und eine Welt zu schaffen, in der die Natur neben dem
-        menschlichen Fortschritt gedeiht. Unsere Leidenschaft für
-        wissenschaftliche Innovation treibt uns an, einen positiven Einfluss auf
-        die Welt zu haben. Durch die Kommerzialisierung unserer bahnbrechenden
-        Biotechnologielösungen verwandeln wir Forschung in greifbare Vorteile,
-        die das menschliche Wohlbefinden verbessern und globale
-        Herausforderungen angehen.
+        Wir, bei ROKH, haben eine gemeinsame Vision: Wir wollen Abfall in eine
+        Ressource umwandeln und eine Welt schaffen, in der die Natur mit dem
+        menschlichen Fortschritt zusammenwächst. Unsere Passion für
+        wissenschaftliche Innovationen bringt uns dazu, die Welt positiv zu
+        beeinflussen. Durch die Kommerzialisierung unserer innovativen
+        biotechnologischen Lösungen verwirklichen wir Forschungsergebnisse, die
+        das menschliche Wohlbefinden verbessern und globale Herausforderungen
+        angehen.
       </div>
       <div>
         <ul className="space-y-1">
           <li className="my-2">Unser Team besteht aus:</li>
           <li>
-            <strong>Erfahrene Fachleute</strong>: Mit über 20 Jahren Erfahrung
-            in der Behandlung von festen Abfallressourcen bringen wir tiefes
-            Fachwissen in unsere Arbeit ein.
+            <strong>Erfahrenen Fachleuten</strong>: Mit mehr als 20 Jahren
+            Erfahrung in der Verarbeitung fester Abfallressourcen bringen wir
+            fundierte Fachkenntnisse in unsere Arbeit ein.
           </li>
           <li className="md:w-[60%] lg:w-full">
-            <strong>Engagierte Wissenschaftler</strong>: Unsere Mikrobiologen
-            und Agronomen erforschen kontinuierlich neue Wege, die Natur für ein
-            nachhaltiges Abfallmanagement zu nutzen.
+            <strong>Engagierten Wissenschaftlern</strong>: Unsere Mikrobiologen
+            und Agronomen erforschen ständig neue Wege, um eine nachhaltige
+            Abfallwirtschaft zu verwirklichen.
           </li>
           <li className="md:w-[60%] lg:w-full">
-            <strong>Träumer und Macher</strong>: Wir sind bestrebt, unsere
-            Vision in die Realität umzusetzen, eine innovative Lösung nach der
-            anderen.
+            <strong>Träumer und Macher</strong>: Wir setzen uns dafür ein,
+            unsere Visionen in die Realität umzusetzen, eine innovative Lösung
+            nach der anderen.
           </li>
         </ul>
       </div>
@@ -74,29 +74,29 @@ const aboutContentSection1Props: IAboutContentSection1 = {
   mTitle: 'Unsere Mission',
   title: 'Alles lebt für immer und in Harmonie mit der Erde',
   descriptions: [
-    'Lebensmittelverschwendung ist eine der größten Herausforderungen der Welt, und wir können sie gemeinsam mit Ihnen lösen. Aber es geht nicht nur um Lebensmittelabfälle - auch Tierkot und alle biologisch abbaubaren Abfälle können effektiv zersetzt werden.',
-    'Durch die Kombination von Biotechnologie mit moderner Fertigung bietet GEME eine Lösung für ein besseres Abfallrecycling: Reduzieren & Recyceln vor Ort.',
-    'Ähnlich wie beim Cache-Konzept in Computernetzwerken ist der effizienteste Weg, Abfälle, insbesondere Bioabfälle, zu verwalten, sie dort zu verarbeiten, wo sie entstehen, was den Recyclingweg erheblich verkürzt.',
-    'GEME schafft Produkte, um diese Idee Wirklichkeit werden zu lassen. Umweltfreundlichkeit und der Schutz der Natur sind für uns nicht nur ein Slogan; sie sind durch jeden kleinen Schritt bei der Entsorgung unserer täglichen Abfälle umsetzbar.',
-    'GEME ist mehr als ein Produkt; es ist eine technologische Lösung.',
-    'Wir nutzen Technologie, um ein Netzwerk zu schaffen, das Wissenschaftsteams, Vertriebspartner, nachhaltige Restaurants, Recyclinggemeinschaften, Bio-Bauernhöfe, Entsorgungsstationen, Abfallmanagementorganisationen und Einzelpersonen verbindet. Jeder Knotenpunkt profitiert, genau wie alle Dinge, die in Harmonie auf unserem Planeten leben.',
+    'Lebensmittelabfälle sind eine der größten Herausforderungen der Welt, und wir tragen gemeinsam mit Ihnen dazu bei, dieses Problem zu lösen. Aber es sind nicht nur Lebensmittelabfälle - auch Tierkot und alle biologisch abbaubaren Abfälle, die effektiv zersetzt werden können.',
+    'Durch die Kombination von Biotechnologie und moderner Produktion bietet GEME eine Lösung für ein besseres Abfallrecycling: Direkt-Reduzieren und Recyceln am Ort.',
+    'Wie beim Cache-Konzept in Computernetzwerken, die effizienteste Art um Abfälle, insbesondere Bioabfälle, zu verwalten, ist dort zu verarbeiten, wo sie entstehen, um den Recyclingweg erheblich zu verkürzen.',
+    'GEME entwickelt Produkte, die diese Idee in die Tat umsetzen. Umweltfreundlich zu sein und die Natur zu schützen ist für uns nicht nur ein Slogan, sondern in jedem kleinen Schritt, den wir bei der Entsorgung unseres täglichen Abfalls machen, umsetzbar.',
+    'GEME ist mehr als ein Produkt, sondern eine technologische Lösung.',
+    'Wir verwenden Technologien, um ein Netzwerk aus Wissenschaftlerteams, Vertriebspartner, nachhaltige Restaurants, Recyclinggemeinschaften, Biobetriebe, Entsorgungsstationen, Abfallwirtschaftsorganisationen und Einzelpersonen zu schaffen. Jeder Stakeholder profitiert davon, und ermöglicht Harmonie.',
   ],
   points: [
     {
-      title: 'Neu überdenken',
-      desc: 'Einen ganzheitlichen Blick auf den Umweltschutz annehmen. Behandeln Sie Bioabfall nicht als Müll, sondern als Ressource für Gärten und den Planeten. Verstehen Sie, dass unsere Handlungen tiefgreifende Auswirkungen auf die Erde haben.',
+      title: 'Neues Konzept',
+      desc: 'EineÜbernehmen Sie eine neue Sichtweise des Umweltschutzes. Behandeln Sie Bioabfälle nicht als Müll, sondern als Ressource für den Garten und den Planeten. Dieses Verhalten hat  tiefgreifende Auswirkungen auf die Erde.',
     },
     {
-      title: 'Reduzieren',
-      desc: 'Reduzieren Sie den Ressourcenverbrauch und die Abfallmenge. Folgen Sie nachhaltigen Praktiken, um Ressourcen zu sparen und die Umwelt zu schützen. Handhaben Sie Abfälle an der Quelle, um ihre Auswirkungen zu verringern.',
+      title: 'Reduzierung ',
+      desc: 'Reduzieren Sie Ressourcenverbrauch und Abfall. Nachhaltige Praktiken sparen Ressourcen und schützen die Umwelt. Verarbeitung des Abfalls an der Quelle, verringert seine negativen Auswirkungen.',
     },
     {
-      title: 'Wiederverwenden',
-      desc: 'Recyceln, wiederverwenden und Materialien aufwerten. Verwandeln Sie verschiedene Arten von Abfällen in nützliche Ressourcen, verlängern Sie deren Lebensdauer und reduzieren Sie den Bedarf an neuen Materialien.',
+      title: 'Recycling',
+      desc: 'Verschiedene Arten von Abfällen werden in nützliche Ressourcen umwandelt, sodass der Bedarf an neuen Materialien aufgrund der verlängerten Lebensdauer verringert wird.',
     },
     {
       title: 'Wiederherstellen',
-      desc: 'Schützen und beleben Sie natürliche Ökosysteme. Verbessern Sie die Bodengesundheit, säubern Sie Verschmutzungen und reparieren Sie beschädigte Umgebungen, um das Wohlbefinden unseres Planeten zu gewährleisten.',
+      desc: 'Schützen Sie natürliche Ökosysteme und revitalisieren Sie sie wieder. Die Bodengesundheit wird verbessert, die Verschmutzungen werden beseitigt und die beschädigten Umgebungen werden repariert, sodass das Wohlergehen unseres Planeten gewährleistet wird.',
     },
   ],
   fullImgUrl: '/assets/images/about/v2406/s2-family.png',
@@ -104,29 +104,30 @@ const aboutContentSection1Props: IAboutContentSection1 = {
 
 // 第三部分 De版
 const aboutContentSection15Props: IAboutContentSection15 = {
-  mTitle: 'Unsere Leute',
+  mTitle: 'Unsere Mitarbeiter',
   title: 'Pioniergeister, leidenschaftliche Herzen',
   bodyTexts: (
     <>
       <div>
-        <strong>Visionäre</strong>: Unsere visionären Führungskräfte setzen die
-        Richtung, inspirieren uns, über das Gewöhnliche hinaus zu denken und
-        konventionelle Ansätze zur Abfallbewirtschaftung in Frage zu stellen.
+        <strong>Visionäre</strong>: Unsere visionären Führungskräfte geben die
+        Richtung vor und inspirieren uns dazu, über das Gewöhnliche
+        hinauszudenken und konventionelle Ansätze in der Abfallwirtschaft in
+        Frage zu stellen.
       </div>
       <div>
         <strong>Wissenschaftler</strong>: Unsere brillanten Wissenschaftler
-        stehen an der Spitze der Forschung und erforschen ständig neue Wege, die
-        Kraft der Natur für nachhaltige Abfalllösungen zu nutzen.
+        stehen an der Spitze der Forschung und erforschen ständig neue
+        nachhaltige Abfalllösungen mithilfe von der Kraft der Natur.
       </div>
       <div>
-        <strong>Ingenieure</strong>: Unsere erfahrenen Ingenieure setzen Ideen
-        in die Tat um, verwandeln innovative Konzepte in greifbare Lösungen, die
-        einen echten Unterschied in der Welt machen.
+        <strong>Ingenieure</strong>: Unsere qualifizierten Ingenieure setzen
+        Ideen in Produkt und innovative Konzepte in greifbare Lösungen und
+        Produkten um, die einen echten Unterschied in der Welt machen.
       </div>
       <div>
-        <strong>Kooperationspartner</strong>: Wir fördern einen Geist der
-        Zusammenarbeit, ermutigen zu offener Kommunikation und zum Austausch von
-        Ideen auf allen Ebenen der Organisation.
+        <strong>Kooperationspartner</strong>: Wir ermutigen den Geist der
+        Zusammenarbeit, indem wir eine offene Kommunikation und den Austausch
+        von Ideen auf allen Ebenen des Unternehmens unterstützen.
       </div>
     </>
   ),
@@ -140,11 +141,11 @@ const aboutContentSection15Props: IAboutContentSection15 = {
 const aboutContentSection2Props: IAboutContentSection2 = {
   mTitle: 'Unsere Werte',
   title: 'Den weniger begangenen Weg gehen',
-  desc: 'Wir basieren unser Handeln auf Wahrheit und grundlegenden Prinzipien. Mit einem klaren Ziel vor Augen träumen wir ehrgeizig, aber gehen kalkulierte Schritte, um es zu erreichen.',
+  desc: 'Wir richten unser Verhalten auf Wahrheit und Prinzipien. Wie träumen ambitioniert aber gehen kalkulierte Schritte, um die klaren Ziele zu erreichen.',
   dataList: [
     {
       title: 'Weltklasse sein',
-      desc: `Wir setzen die höchsten Standards und streben unermüdlich nach Exzellenz in allen Aspekten unserer Arbeit, wobei Nachhaltigkeit im Mittelpunkt steht.`,
+      desc: `Wir setzen die höchsten Standard und streben in allen Aspekten unserer Arbeit unermüdlich nach Spitzenleistungen, mit Nachhaltigkeit im Mittelpunkt.`,
     },
     {
       title: 'Offen und kooperativ',
@@ -228,16 +229,16 @@ const aboutContentSection6Props: IAboutContentSection6 = {
       ),
     },
     {
-      name: 'Großflächiges Kompostieren mit GEME',
+      name: 'Großflächenkompostierung mit GEME',
       link: '/industrial-equipments',
       imageSrc: '/assets/images/about/icons/composting.png',
-      description: `Von Häusern bis zu Fabriken, maßgeschneiderte Biotechnologie für industrielle Kompostierung auf höchstem Niveau.`,
+      description: `Vom Haus bis zur Fabrik: Passende Biotechnologie für die Kompostierung im industriellen Maßstab`,
     },
     {
-      name: 'Teilnehmen am GEME-Netzwerk',
+      name: 'Sei Mitglied im GEME Networking',
       link: '/geme-network-survey',
       imageSrc: '/assets/images/about/icons/networking.png',
-      description: `Kostenlose Komposttauschgemeinschaft! Teilen Sie, was Sie nicht benötigen, und schaffen Sie gemeinsam eine grünere Zukunft.`,
+      description: `Kostenlose Kompost-Tauschbörse! Tauschen Sie, was Sie nicht brauchen, und bauen Sie gemeinsam an einer grüneren Zukunft.`,
     },
     {
       name: 'Mit GEME affiliieren',
@@ -246,16 +247,16 @@ const aboutContentSection6Props: IAboutContentSection6 = {
       description: `Werden Sie ein GEME-Champion! Treten Sie unserer Affiliate-Union bei und führen Sie die nachhaltige Revolution an.`,
     },
     {
-      name: 'Mit GEME Einzelhandel oder Vertrieb',
+      name: 'Einzelhandeln oder Vertrieb',
       link: 'https://eu.jotform.com/form/221943772954062',
       imageSrc: '/assets/images/about/icons/distribution.png',
-      description: `Erweitern Sie Ihre Reichweite und treten Sie der GEME-Bewegung bei. Wir suchen weltweit starke Vertriebspartner.`,
+      description: `Erweitern Sie Ihre Reichweite und schließen Sie sich der GEME Bewegung an. Wir verstäken uns weltweit mit Vertriebspartnern.`,
     },
     {
-      name: 'Mit GEME investieren',
+      name: 'GEME investieren',
       link: 'mailto:admin@geme.bio',
       imageSrc: '/assets/images/about/icons/profits.png',
-      description: `Treiben Sie die Zukunft an! Investieren Sie in GEME und schließen Sie sich einer bahnbrechenden nachhaltigen Bewegung an. (admin@geme.bio).`,
+      description: `Treibe die Zukunft an! Investieren Sie in GEME und werden Sie Teil einer zukunftsweisenden, nachhaltigen Bewegung. (admin@geme.bio).`,
     },
   ],
 }
