@@ -24,7 +24,7 @@ const tabs: IPdpTabsText = {
   compare: 'Vergleichen',
   spec: 'Spezifikationen',
   warranty: 'Garantie',
-  userStories: 'Benutzergeschichten',
+  userStories: 'Kundenfeedback',
   reviews: 'Bewertungen',
 }
 
@@ -35,7 +35,7 @@ const introProps: IPdpIntroProps = {
   pdpIntroSection1Props: {
     title: 'Erster Bio-Abfall-Komposter der Welt',
     description:
-      'Verwendet Mikroorganismen, um Lebensmittelabfälle schnell abzubauen, 100-mal schneller als herkömmliches Kompostieren, völlig anders als elektrische "Komposter" auf der Arbeitsplatte.',
+      'GEME verwendet Mikrobiota, um Lebensmittelabfälle 100-mal schneller als bei der herkömmlichen Kompostierung abzubauen, ganz anders als bei elektrischen „Kompostierern“, die auf der Arbeitsplatte stehen und trocknen.',
     bgImageSrc:
       '/assets/images/pdp-v2311/dividers/geme-with-compost-background-min.jpg',
     comparisonText: {
@@ -52,7 +52,7 @@ const introProps: IPdpIntroProps = {
   // Introduction 第2部分 De
   contentSection71Props: {
     title: 'Vom Abfall zum Wunder',
-    description: `Tauchen wir ein in die winzigen Superhelden, die eine bedeutende Wirkung entfalten: Mikroben (GEME Kobold). Ähnlich wie die freundlichen Mikroben, die die Verdauung in Ihrem Darm unterstützen, verwandeln sie bei idealen Bedingungen und regelmäßiger Rotation schnell Lebensmittelabfälle in organischen Kompost.`,
+    description: `Lassen wir den kleinen Superhelden, die eine bedeutende Rolle hat, kennenlernen: Mikroben (GEME Kobold). Ähnlich wie den Enzymen, die die Verdauung im Darm unterstützen, verwandeln sie bei idealen Bedingungen und regelmäßiger Rotation Lebensmittelabfälle schnell in organischen Kompost.`,
 
     withImageOrVideo: {
       type: 'video',
@@ -83,19 +83,20 @@ const introProps: IPdpIntroProps = {
 
   // Introduction 第4部分 De
   pdpIntroSection5Props: {
-    title: 'Fast alle Abfälle können in GEME',
+    title: 'Fast alle Abfallarten können in GEME verarbeitet werden',
     leftNotes: (
       <>
         <strong>400+</strong>
         <br />
-        Arten von Abfall
+        Abfallarten
       </>
     ),
   },
 
   // Introduction 第5部分 De
   contentSection21Props: {
-    title: 'Werfen Sie weiterhin Müll, GEME kümmert sich um den Rest',
+    title:
+      'Werfen Sie den Müll einfach in den Komposter, GEME kümmert sich um den Rest',
     description: (
       <>
         🫳&nbsp;&nbsp;Abfälle jederzeit hinzufügen <br />
@@ -175,15 +176,15 @@ const introProps: IPdpIntroProps = {
   },
 
   // Introduction 第8部分 De
-pdpIntroSection7Props: {
-  title: 'Groß, Mehr & Langfristig',
-  description: '',
-  features: [
-    '🏡 Für den täglichen Gebrauch in Familien mit über 10 Personen geeignet',
-    '🐳 Tägliche Fütterungskapazität: 11 Pfund/5 kg',
-    '💰 Preiswert',
-  ],
-},
+  pdpIntroSection7Props: {
+    title: 'Groß, Mehr & Langfristig',
+    description: '',
+    features: [
+      '🏡 Für den täglichen Gebrauch in Familien mit über 10 Personen geeignet',
+      '🐳 Tägliche Fütterungskapazität: 11 Pfund/5 kg',
+      '💰 Preiswert',
+    ],
+  },
 
   // Introduction 第9部分 De
   contentSection23Props: {
@@ -194,7 +195,7 @@ pdpIntroSection7Props: {
         👪&nbsp;&nbsp;Für Familien mit mehr als 10 Personen täglich geeignet{' '}
         <br />
         📅&nbsp;&nbsp;3+ Monate ohne Reinigung erforderlich <br />
-        💰&nbsp;&nbsp;Der Preis für so einen großen Kerl lohnt sich <br />
+        {/* 💰&nbsp;&nbsp;Der Preis für so einen großen Kerl lohnt sich <br /> */}
         🐳&nbsp;&nbsp;19L Volumen, 11£/5kg tägliche Zuführkapazität <br />
         🐘&nbsp;&nbsp;45,5x32x66,5(cm) 18x12,6x26,2 (Zoll)
       </>
@@ -215,8 +216,8 @@ pdpIntroSection7Props: {
         <br />
         Diese Technologie ist leistungsstark und erfordert keinerlei Ersatz.
         <br />
-        Andere „Komposter“ müssen den Filter alle 3 Monate wechseln, große
-        versteckte Kosten!
+        Andere Marken vom „Komposter“ müssen den Filter alle 3 Monate
+        austauschen mit großen versteckten Kosten!
         <br />
         <br />
         👃🏻&nbsp;&nbsp;Kein Geruch <br />
@@ -253,7 +254,7 @@ pdpIntroSection7Props: {
 // 产品页 compareSection模块内容配置 De
 const compareProps: IPdpCompareProps = {
   compareSectionProps: {
-    title: 'Vergleichen wir',
+    title: 'Marken vergleichen',
     description: 'Entdecken Sie, was GEME anders macht.',
     compareList: [
       {
@@ -266,11 +267,11 @@ const compareProps: IPdpCompareProps = {
           },
           {
             title: 'Kein Filterwechsel erforderlich',
-            desc: 'Keine Kosten, industrieller Filter, kein Kohlenstoffmaterial',
+            desc: 'Keine zusätzliche Kosten',
           },
           {
             title: '19L super großes Volumen',
-            desc: 'Dauert Monate, um sich zu füllen',
+            desc: 'Dauert Monate, bis sie gefüllt sind',
           },
           {
             title: 'Auch für Tierkot und Suppe geeignet',
@@ -292,7 +293,7 @@ const compareProps: IPdpCompareProps = {
       },
       {
         imgUrl: '/assets/images/compare-section/compare-section-lomi.png',
-        devicename: 'Brand 1', // Lomi
+        devicename: 'Marke 1', // Lomi
         compareItems: [
           {
             title: 'Kein echter Kompost',
@@ -300,7 +301,7 @@ const compareProps: IPdpCompareProps = {
           },
           {
             title: 'Kohlenstofffilter regelmäßig wechseln',
-            desc: 'Bis zu $240/Jahr für Filterwechsel',
+            desc: 'Bis zu €240/Jahr für Filterwechsel',
           },
           {
             title: '3L kleines Volumen',
@@ -308,7 +309,7 @@ const compareProps: IPdpCompareProps = {
           },
           {
             title: 'Begrenzte Lebensmittelabfälle',
-            desc: 'Kann kein Fleisch und keine Suppe verarbeiten',
+            desc: 'Verarbeitet kein Fleisch und keine Suppe',
           },
           {
             title: 'Täglich entleeren',
@@ -326,7 +327,7 @@ const compareProps: IPdpCompareProps = {
       },
       {
         imgUrl: '/assets/images/compare-section/compare-section-mill.png',
-        devicename: 'Brand 2', // mill
+        devicename: 'Marke 2', // mill
         compareItems: [
           {
             title: 'Kein echter Kompost',
@@ -334,7 +335,7 @@ const compareProps: IPdpCompareProps = {
           },
           {
             title: 'Kohlenstoffgeruchsfilter',
-            desc: '$60+ für jeden Filterwechsel',
+            desc: '€60+ für jeden Filterwechsel',
           },
           {
             title: '6,5L Volumen',
@@ -342,7 +343,7 @@ const compareProps: IPdpCompareProps = {
           },
           {
             title: 'Begrenzte Lebensmittelabfälle',
-            desc: 'Kann kein Fleisch und keine Suppe verarbeiten',
+            desc: 'Verarbeitet kein Fleisch und keine Suppe',
           },
           {
             title: 'Wöchentlich entleeren',
@@ -360,7 +361,7 @@ const compareProps: IPdpCompareProps = {
       },
       {
         imgUrl: '/assets/images/compare-section/compare-section-reencle.png',
-        devicename: 'Brand 3', // Reencle
+        devicename: 'Marke 3', // Reencle
         compareItems: [
           {
             title: 'Echter Kompost',
@@ -368,7 +369,7 @@ const compareProps: IPdpCompareProps = {
           },
           {
             title: 'Kohlenstofffilter regelmäßig wechseln',
-            desc: 'Kosten $35+ pro Ersatz',
+            desc: 'Kosten €35+ pro Ersatz',
           },
           {
             title: '6L Volumen',
@@ -376,7 +377,7 @@ const compareProps: IPdpCompareProps = {
           },
           {
             title: 'Nur Lebensmittelabfälle',
-            desc: 'Kann keine Tierkot verarbeiten',
+            desc: 'Verarbeitet kein Tierkot',
           },
           {
             title: 'Reinigung bei Bedarf',
@@ -518,10 +519,10 @@ const warrantyProps = {
 
 // 产品页 User Stories 模块配置内容 De
 const userStoryProps: IPdpUserStoryTeamSectionsProps = {
-  title: 'Lernen Sie die Geschichten der GEME-Kunden kennen',
+  title: 'Entdecken Sie die User-Stories von GEME-Kunden',
   description: (
     <>
-      Wie sich das Leben unserer Kunden nach der Nutzung von GEME verändert hat
+      Wie GEME das Leben unserer Kunden verändert hat
     </>
   ),
   people: [
