@@ -187,7 +187,7 @@ function SwiperItem3({
             {title}
           </div>
           {description}
-          {/* <div className="flex justify-center xl:justify-end">
+          <div className="flex justify-center xl:justify-end">
             <div className="max-w-max">
               <HeroSectionsButton
                 mixpanelTitle="Go Geme V2 Page"
@@ -197,7 +197,7 @@ function SwiperItem3({
                 linkUrl={linkUrl}
               />
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
