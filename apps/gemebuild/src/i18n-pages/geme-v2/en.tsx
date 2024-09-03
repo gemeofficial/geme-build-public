@@ -130,7 +130,7 @@ const imageTextProps2: IShortVideoProps = {
 const compareProps: ICompareProps = {
   title: 'You are Wrong if You Think We are Them',
   description:
-    'Those products are not all food waste dehydrators, not real composters. GEME is not like them, GEME is for real composting!',
+    'Those products are not all food waste dehydrators, not real composters. GEME is not like them, GEME is for real composting. It is totally different.',
   items: [
     {
       title: 'Lomi',
