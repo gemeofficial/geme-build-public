@@ -3,7 +3,7 @@ import { SectionContainer, SectionDescription, SectionTitle } from 'ui'
 
 export interface ICompareProps {
   title: string
-  description: string
+  description: React.ReactNode
   items: {
     title: string
     imageUrl: string

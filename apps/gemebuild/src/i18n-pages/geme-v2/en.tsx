@@ -129,8 +129,15 @@ const imageTextProps2: IShortVideoProps = {
 // Compare Section
 const compareProps: ICompareProps = {
   title: 'You are Wrong if You Think We are Them',
-  description:
-    'Those products are not all food waste dehydrators, not real composters. GEME is not like them, GEME is for real composting. It is totally different.',
+  description: (
+    <>
+      Those products are not all food waste dehydrators, not real composters.
+      GEME is not like them, GEME is for real composting. It is totally
+      different.<br></br>
+      It means that you can not really use the output from those machines as
+      fertilizer, but all those brands keep misleading the marketing.
+    </>
+  ),
   items: [
     {
       title: 'Lomi',
