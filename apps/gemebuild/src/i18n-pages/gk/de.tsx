@@ -35,7 +35,7 @@ const gkHeroSectionProps: IGKHeroSectionProps = {
 // 第2部分配置文件 De版
 const theLongTermDependenceProps: IWithSquareImagesProps = {
   title:
-    'Die langfristige Abhängigkeit von Düngemitteln auf Ackerland führt zu',
+    'Die langfristige Abhängigkeit von Düngemitteln auf Ackerland führt zu...',
   features: [
     {
       name: 'Bodenversauerung',
