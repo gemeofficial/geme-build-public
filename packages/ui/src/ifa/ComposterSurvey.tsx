@@ -15,7 +15,7 @@ export function ComposterSurvey({
   PrefetchLink,
 }: IComposterSurveyProps) {
   return (
-    <div className="bg-v2311-text-yellow mb-20 md:mb-28 xl:mb-32">
+    <div className="bg-v2311-text-yellow mb-20">
       <SectionContainer
         className="flex flex-col lg:flex-row gap-4 items-center justify-between"
         compact

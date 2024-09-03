@@ -4,9 +4,9 @@ import {
   SectionDescription,
   SectionTitle,
 } from '../ui-components'
-import ProductSection, { IGemeV2ProductSection } from './ProductSection'
+import ProductSection, { IGemeTerra2ProductSection } from './ProductSection'
 
-export interface ISubscribeGemeV2Props extends IGemeV2ProductSection {
+export interface ISubscribeGemeTerra2Props extends IGemeTerra2ProductSection {
   title: ReactNode
   description: ReactNode
   emailPlaceholder: string
@@ -18,7 +18,7 @@ export interface ISubscribeGemeV2Props extends IGemeV2ProductSection {
   }>
 }
 
-export function SubscribeGemeV2({
+export function SubscribeGemeTerra2({
   title,
   description,
   emailPlaceholder,
@@ -26,7 +26,7 @@ export function SubscribeGemeV2({
   SubscribeComponent,
   imageList,
   productSectionTitle,
-}: ISubscribeGemeV2Props) {
+}: ISubscribeGemeTerra2Props) {
   return (
     <div className="bg-v2311-bg-dark-green">
       <SectionContainer>

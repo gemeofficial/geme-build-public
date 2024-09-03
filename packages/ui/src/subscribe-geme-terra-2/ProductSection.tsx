@@ -3,7 +3,7 @@ import Image from 'next/image'
 import ImageZoomViewer from '../client-components/ImageZoomViewer'
 import { SectionTitle } from '../ui-components'
 
-export interface IGemeV2ProductSection {
+export interface IGemeTerra2ProductSection {
   productSectionTitle: string
   imageList: {
     src: string
@@ -17,7 +17,7 @@ export interface IGemeV2ProductSection {
 export default function ProductSection({
   imageList,
   productSectionTitle,
-}: IGemeV2ProductSection) {
+}: IGemeTerra2ProductSection) {
   return (
     <div className="bg-gray-50 mt-6 md:mt-8 mx-auto max-w-7xl p-4 sm:p-8 lg:p-12">
       <SectionTitle>{productSectionTitle}</SectionTitle>

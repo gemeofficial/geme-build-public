@@ -28,8 +28,8 @@ const heroSectionProps: IHeroSectionProps = {
   },
   inputPlaceholder: 'Enter your email',
   submitButtonLabel: 'Notify Me',
-  heroBgImagePc: '/assets/images/geme-v2/hero-bg.jpg',
-  heroBgImageMobile: '/assets/images/geme-v2/hero-bg-mobile.png',
+  heroBgImagePc: '/assets/images/geme-terra-2/hero-bg.jpg',
+  heroBgImageMobile: '/assets/images/geme-terra-2/hero-bg-mobile.png',
 }
 
 // Logo cloud
@@ -37,27 +37,27 @@ const logoCloudProps: ILogoCloudProps = {
   title: 'Press Mentions',
   images: [
     {
-      src: '/assets/images/geme-v2/press/europa-press.png',
+      src: '/assets/images/geme-terra-2/press/europa-press.png',
       alt: 'Europa Press',
     },
     {
-      src: '/assets/images/geme-v2/press/adnkronos.svg',
+      src: '/assets/images/geme-terra-2/press/adnkronos.svg',
       alt: 'Adn Kronos',
     },
     {
-      src: '/assets/images/geme-v2/press/bolsamania.png',
+      src: '/assets/images/geme-terra-2/press/bolsamania.png',
       alt: 'Bolsamania',
     },
     {
-      src: '/assets/images/geme-v2/press/wallstreet-online-horizontal.svg',
+      src: '/assets/images/geme-terra-2/press/wallstreet-online-horizontal.svg',
       alt: 'Reform',
     },
     {
-      src: '/assets/images/geme-v2/press/yahoo-finance.png',
+      src: '/assets/images/geme-terra-2/press/yahoo-finance.png',
       alt: 'Yahoo Finance',
     },
     {
-      src: '/assets/images/geme-v2/press/advfn.png',
+      src: '/assets/images/geme-terra-2/press/advfn.png',
       alt: 'ADVFN',
     },
   ],
@@ -102,7 +102,7 @@ const imageTextProps: IShortVideoProps = {
       </ul>
     </>
   ),
-  imageUrl: '/assets/images/geme-v2/product-s2.jpg',
+  imageUrl: '/assets/images/geme-terra-2/product-s2.jpg',
   imageAlt: '',
   isReverse: true,
 }
@@ -122,7 +122,7 @@ const imageTextProps2: IShortVideoProps = {
       </ul>
     </>
   ),
-  imageUrl: '/assets/images/geme-v2/product-s3.png',
+  imageUrl: '/assets/images/geme-terra-2/product-s3.png',
   imageAlt: '',
 }
 
@@ -141,27 +141,27 @@ const compareProps: ICompareProps = {
   items: [
     {
       title: 'Lomi',
-      imageUrl: '/assets/images/geme-v2/compare/lomi.png',
+      imageUrl: '/assets/images/geme-terra-2/compare/lomi.png',
       alt: '',
     },
     // {
     //   title: 'Vitamix Food Cycler',
-    //   imageUrl: '/assets/images/geme-v2/compare/vitamix.png',
+    //   imageUrl: '/assets/images/geme-terra-2/compare/vitamix.png',
     //   alt: '',
     // },
     {
       title: 'Airthereal',
-      imageUrl: '/assets/images/geme-v2/compare/airthereal.png',
+      imageUrl: '/assets/images/geme-terra-2/compare/airthereal.png',
       alt: 'Airthereal Electric Kitchen Composter',
     },
     {
       title: 'Fylecen',
-      imageUrl: '/assets/images/geme-v2/compare/fylecen.png',
+      imageUrl: '/assets/images/geme-terra-2/compare/fylecen.png',
       alt: 'Fylecen 4L Electric Composter',
     },
     {
       title: 'Moreborn',
-      imageUrl: '/assets/images/geme-v2/compare/moreborn.png',
+      imageUrl: '/assets/images/geme-terra-2/compare/moreborn.png',
       alt: 'Moreborn composter',
     },
     {
@@ -171,7 +171,7 @@ const compareProps: ICompareProps = {
     },
     {
       title: 'Soilkind',
-      imageUrl: '/assets/images/geme-v2/compare/soilkind.png',
+      imageUrl: '/assets/images/geme-terra-2/compare/soilkind.png',
       alt: 'soilkind Komposter',
     },
   ],
@@ -410,7 +410,7 @@ const faqProps: IFaqProps = {
               <picture>
                 <img
                   alt="How microbes grow"
-                  src="/assets/images/geme-v2/microbes-grow.png"
+                  src="/assets/images/geme-terra-2/microbes-grow.png"
                 />
               </picture>
               Bacteria reproduce primarily by binary fission, Under ideal
@@ -898,7 +898,7 @@ const faqProps: IFaqProps = {
             </p>
             <picture>
               <img
-                src="/assets/images/geme-v2/cat-litter.png"
+                src="/assets/images/geme-terra-2/cat-litter.png"
                 alt="GEME Composter Supported Food Waste"
               />
             </picture>
@@ -965,7 +965,7 @@ const faqProps: IFaqProps = {
               <div className="bg-white rounded-lg shadow-md">
                 <picture>
                   <img
-                    src="/assets/images/geme-v2/odor/1.jpg"
+                    src="/assets/images/geme-terra-2/odor/1.jpg"
                     alt="Image 1"
                     className="w-full h-auto rounded-t-lg"
                   />
@@ -982,7 +982,7 @@ const faqProps: IFaqProps = {
               <div className="bg-white rounded-lg shadow-md">
                 <picture>
                   <img
-                    src="/assets/images/geme-v2/odor/2.jpg"
+                    src="/assets/images/geme-terra-2/odor/2.jpg"
                     alt="Image 2"
                     className="w-full h-auto rounded-t-lg"
                   />
@@ -996,7 +996,7 @@ const faqProps: IFaqProps = {
               <div className="bg-white rounded-lg shadow-md">
                 <picture>
                   <img
-                    src="/assets/images/geme-v2/odor/3.jpg"
+                    src="/assets/images/geme-terra-2/odor/3.jpg"
                     alt="Image 3"
                     className="w-full h-auto rounded-t-lg"
                   />
@@ -1055,7 +1055,7 @@ const faqProps: IFaqProps = {
           </div>
           <picture>
             <img
-              src="/assets/images/geme-v2/harvest-compost/best-practice-removal.png"
+              src="/assets/images/geme-terra-2/harvest-compost/best-practice-removal.png"
               alt="Best practice to remove GEME Compost"
             />
           </picture>
@@ -1233,11 +1233,11 @@ const subscribeProps: ISubscribeProps = {
   submitButtonLabel: 'Notify Me',
 }
 
-export interface IGemeV2PageProps {
+export interface IGemeTerra2PageProps {
   SubscribeComponent?: FC<ISubscribeComponent>
 }
 
-export function GemeV2PageEn({ SubscribeComponent }: IGemeV2PageProps) {
+export function GemeTerra2PageEn({ SubscribeComponent }: IGemeTerra2PageProps) {
   return (
     <>
       <HeroSection

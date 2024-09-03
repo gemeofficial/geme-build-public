@@ -3,9 +3,9 @@ import {
   IComposterSurveyProps,
   IFAHeroSection,
   IIFAHeroSectionProps,
-  ISubscribeGemeV2Props,
+  ISubscribeGemeTerra2Props,
   IWinnersNamesTickerProps,
-  SubscribeGemeV2,
+  SubscribeGemeTerra2,
 } from 'ui'
 
 import { ILinkComponent } from '../../contexts/link-context'
@@ -131,7 +131,7 @@ const composterSurveyProps: IComposterSurveyProps = {
 }
 
 // 订阅模块 En
-const subscribeGemeV2Props: ISubscribeGemeV2Props = {
+const subscribeGemeTerra2Props: ISubscribeGemeTerra2Props = {
   title: 'Meet GEME II',
   description: <>Get interested? Join the wasting list!</>,
   emailPlaceholder: 'Enter your email',
@@ -185,8 +185,8 @@ function IFAPageEn({ PrefetchLink, SubscribeComponent }: IIFAPageProps) {
 
       <ComposterSurvey {...composterSurveyProps} PrefetchLink={PrefetchLink} />
 
-      <SubscribeGemeV2
-        {...subscribeGemeV2Props}
+      <SubscribeGemeTerra2
+        {...subscribeGemeTerra2Props}
         SubscribeComponent={SubscribeComponent}
       />
     </>

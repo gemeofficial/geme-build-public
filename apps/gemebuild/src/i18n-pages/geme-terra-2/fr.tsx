@@ -5,7 +5,7 @@ import Reviews, { IReviewsProps } from './components/Reviews'
 import Faq, { IFaqProps } from './components/Faq'
 import Subscribe, { ISubscribeProps } from './components/Subscribe'
 import Compare, { ICompareProps } from './components/Compare'
-import { IGemeV2PageProps } from './en'
+import { IGemeTerra2PageProps } from './en'
 
 // Hero section
 const heroSectionProps: IHeroSectionProps = {
@@ -25,8 +25,8 @@ const heroSectionProps: IHeroSectionProps = {
   },
   inputPlaceholder: 'Enter your email',
   submitButtonLabel: 'Notify Me',
-  heroBgImagePc: '/assets/images/geme-v2/hero-bg.jpg',
-  heroBgImageMobile: '/assets/images/geme-v2/hero-bg-mobile.png',
+  heroBgImagePc: '/assets/images/geme-terra-2/hero-bg.jpg',
+  heroBgImageMobile: '/assets/images/geme-terra-2/hero-bg-mobile.png',
 }
 
 // Logo cloud
@@ -34,27 +34,27 @@ const logoCloudProps: ILogoCloudProps = {
   title: 'Press Mentions',
   images: [
     {
-      src: '/assets/images/geme-v2/press/europa-press.png',
+      src: '/assets/images/geme-terra-2/press/europa-press.png',
       alt: 'Europa Press',
     },
     {
-      src: '/assets/images/geme-v2/press/adnkronos.svg',
+      src: '/assets/images/geme-terra-2/press/adnkronos.svg',
       alt: 'Adn Kronos',
     },
     {
-      src: '/assets/images/geme-v2/press/bolsamania.png',
+      src: '/assets/images/geme-terra-2/press/bolsamania.png',
       alt: 'Bolsamania',
     },
     {
-      src: '/assets/images/geme-v2/press/wallstreet-online-horizontal.svg',
+      src: '/assets/images/geme-terra-2/press/wallstreet-online-horizontal.svg',
       alt: 'Reform',
     },
     {
-      src: '/assets/images/geme-v2/press/yahoo-finance.png',
+      src: '/assets/images/geme-terra-2/press/yahoo-finance.png',
       alt: 'Yahoo Finance',
     },
     {
-      src: '/assets/images/geme-v2/press/advfn.png',
+      src: '/assets/images/geme-terra-2/press/advfn.png',
       alt: 'ADVFN',
     },
   ],
@@ -81,7 +81,7 @@ const shortVideoProps: IShortVideoProps = {
   ),
   videoPosterUrl: '/assets/images/home-v2311/use-compost-cover.jpg',
   videoSrcUrl:
-    'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/geme-genereate-compost-12s-480p.mp4',
+    'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/0902-geme-terra-2-8s-480p.mp4',
 }
 
 // 图文section2
@@ -99,7 +99,7 @@ const imageTextProps: IShortVideoProps = {
       </ul>
     </>
   ),
-  imageUrl: '/assets/images/pdp-v2311/introduction/geme-composter-size-v2.jpeg',
+  imageUrl: '/assets/images/geme-terra-2/product-s2.jpg',
   imageAlt: '',
   isReverse: true,
 }
@@ -119,44 +119,57 @@ const imageTextProps2: IShortVideoProps = {
       </ul>
     </>
   ),
-  imageUrl: '/assets/images/pdp-v2311/introduction/no-filters.jpg',
+  imageUrl: '/assets/images/geme-terra-2/product-s3.png',
   imageAlt: '',
 }
 
 // Compare Section
 const compareProps: ICompareProps = {
-  title: 'Real Composting Made Easy',
-  description: 'We are different from other compost products on the market',
+  title: 'You are Wrong if You Think We are Them',
+  description: (
+    <>
+      Those products are not all food waste dehydrators, not real composters.
+      GEME is not like them, GEME is for real composting. It is totally
+      different.<br></br>
+      It means that you can not really use the output from those machines as
+      fertilizer, but all those brands keep misleading the marketing.
+    </>
+  ),
   items: [
     {
-      title: 'Brand 1',
-      imageUrl: '/assets/images/compare-section/compare-section-lomi.png',
+      title: 'Lomi',
+      imageUrl: '/assets/images/geme-terra-2/compare/lomi.png',
       alt: '',
     },
+    // {
+    //   title: 'Vitamix Food Cycler',
+    //   imageUrl: '/assets/images/geme-terra-2/compare/vitamix.png',
+    //   alt: '',
+    // },
     {
-      title: 'Brand 2',
+      title: 'Airthereal',
+      imageUrl: '/assets/images/geme-terra-2/compare/airthereal.png',
+      alt: 'Airthereal Electric Kitchen Composter',
+    },
+    {
+      title: 'Fylecen',
+      imageUrl: '/assets/images/geme-terra-2/compare/fylecen.png',
+      alt: 'Fylecen 4L Electric Composter',
+    },
+    {
+      title: 'Moreborn',
+      imageUrl: '/assets/images/geme-terra-2/compare/moreborn.png',
+      alt: 'Moreborn composter',
+    },
+    {
+      title: 'Mill',
       imageUrl: '/assets/images/compare-section/compare-section-mill.png',
-      alt: '',
+      alt: 'Mill Composter',
     },
     {
-      title: 'Brand 3',
-      imageUrl: '/assets/images/compare-section/compare-section-reencle.png',
-      alt: '',
-    },
-    {
-      title: 'Brand 4',
-      imageUrl: '/assets/images/compare-section/compare-section-lomi.png',
-      alt: '',
-    },
-    {
-      title: 'Brand 5',
-      imageUrl: '/assets/images/compare-section/compare-section-mill.png',
-      alt: '',
-    },
-    {
-      title: 'Brand 6',
-      imageUrl: '/assets/images/compare-section/compare-section-reencle.png',
-      alt: '',
+      title: 'Soilkind',
+      imageUrl: '/assets/images/geme-terra-2/compare/soilkind.png',
+      alt: 'soilkind Komposter',
     },
   ],
 }
@@ -394,7 +407,7 @@ const faqProps: IFaqProps = {
               <picture>
                 <img
                   alt="How microbes grow"
-                  src="/assets/images/geme-v2/microbes-grow.png"
+                  src="/assets/images/geme-terra-2/microbes-grow.png"
                 />
               </picture>
               Bacteria reproduce primarily by binary fission, Under ideal
@@ -407,7 +420,7 @@ const faqProps: IFaqProps = {
     },
     {
       slug: 'what-is-the-difference-between-geme-one',
-      question: 'What is the difference between GEME One?',
+      question: 'What is the difference between GEME Terra 2 and GEME One?',
       answer: (
         <>
           <div className="overflow-x-auto">
@@ -431,7 +444,7 @@ const faqProps: IFaqProps = {
                     Price
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    {`$300 < x < $600`}
+                    {`< $600`}
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     $899.99
@@ -635,10 +648,10 @@ const faqProps: IFaqProps = {
                     Price
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    {`$300 < x < $600`}
+                    {`< $600`}
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    {`$200 < x < $500`}
+                    {`$150 < x < $500`}
                   </td>
                 </tr>
                 <tr>
@@ -882,7 +895,7 @@ const faqProps: IFaqProps = {
             </p>
             <picture>
               <img
-                src="/assets/images/geme-v2/cat-litter.png"
+                src="/assets/images/geme-terra-2/cat-litter.png"
                 alt="GEME Composter Supported Food Waste"
               />
             </picture>
@@ -949,7 +962,7 @@ const faqProps: IFaqProps = {
               <div className="bg-white rounded-lg shadow-md">
                 <picture>
                   <img
-                    src="/assets/images/geme-v2/odor/1.jpg"
+                    src="/assets/images/geme-terra-2/odor/1.jpg"
                     alt="Image 1"
                     className="w-full h-auto rounded-t-lg"
                   />
@@ -966,7 +979,7 @@ const faqProps: IFaqProps = {
               <div className="bg-white rounded-lg shadow-md">
                 <picture>
                   <img
-                    src="/assets/images/geme-v2/odor/2.jpg"
+                    src="/assets/images/geme-terra-2/odor/2.jpg"
                     alt="Image 2"
                     className="w-full h-auto rounded-t-lg"
                   />
@@ -980,7 +993,7 @@ const faqProps: IFaqProps = {
               <div className="bg-white rounded-lg shadow-md">
                 <picture>
                   <img
-                    src="/assets/images/geme-v2/odor/3.jpg"
+                    src="/assets/images/geme-terra-2/odor/3.jpg"
                     alt="Image 3"
                     className="w-full h-auto rounded-t-lg"
                   />
@@ -1039,7 +1052,7 @@ const faqProps: IFaqProps = {
           </div>
           <picture>
             <img
-              src="/assets/images/geme-v2/harvest-compost/best-practice-removal.png"
+              src="/assets/images/geme-terra-2/harvest-compost/best-practice-removal.png"
               alt="Best practice to remove GEME Compost"
             />
           </picture>
@@ -1203,7 +1216,7 @@ const faqProps: IFaqProps = {
     {
       slug: 'when-will-it-be-on-sale? and-what-is-the-price',
       question: 'When will it be on sale? and what is the price?',
-      answer: `The final testing is almost complete, and the estimated timeline for sale is early next year. The price range will be between $300 and $600.`,
+      answer: `The final testing is almost complete, and the estimated timeline for sale is early next year. The price less than $600.`,
     },
   ],
 }
@@ -1217,7 +1230,7 @@ const subscribeProps: ISubscribeProps = {
   submitButtonLabel: 'Notify Me',
 }
 
-export function GemeV2PageDe({ SubscribeComponent }: IGemeV2PageProps) {
+export function GemeTerra2PageFr({ SubscribeComponent }: IGemeTerra2PageProps) {
   return (
     <>
       <HeroSection
