@@ -26,8 +26,11 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
         Entdecken GEME <br />
         <span className="text-[#ea3c58]">Auf der IFA Berlin 2024</span>
       </p>
-      <span className="text-lg md:text-3xl 3xl:text-4xl">
-        Teilen Sie uns Ihre GEME-Geschichte,Gewinnen Sie einen GEME Komposter!
+      <p className="text-lg md:text-3xl 3xl:text-3xl">
+        Teilen Sie uns Ihre GEME-Geschichte <br></br>
+      </p>
+      <span className="text-lg md:text-3xl 3xl:text-3xl">
+        Gewinnen Sie einen GEME Komposter!
       </span>
     </>
   ),
