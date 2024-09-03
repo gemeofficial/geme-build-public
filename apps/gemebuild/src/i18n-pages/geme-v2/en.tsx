@@ -128,7 +128,7 @@ const imageTextProps2: IShortVideoProps = {
 
 // Compare Section
 const compareProps: ICompareProps = {
-  title: 'Totally Different from Others',
+  title: 'You are Wrong if You Think We are Them',
   description:
     'Those products are not all food waste dehydrators, not real composters. GEME is not like them, GEME is for real composting!',
   items: [
@@ -416,7 +416,7 @@ const faqProps: IFaqProps = {
     },
     {
       slug: 'what-is-the-difference-between-geme-one',
-      question: 'What is the difference between GEME One?',
+      question: 'What is the difference between GEME Terra 2 and GEME One?',
       answer: (
         <>
           <div className="overflow-x-auto">
@@ -440,7 +440,7 @@ const faqProps: IFaqProps = {
                     Price
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    {`$300 < x < $600`}
+                    {`< $600`}
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     $899.99
