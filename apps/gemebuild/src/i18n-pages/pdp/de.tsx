@@ -177,6 +177,10 @@ const introProps: IPdpIntroProps = {
 
   // Introduction 第8部分 De
   pdpIntroSection7Props: {
+    mobileBgImageUrl:
+      '/assets/images/pdp-v2311/introduction/big-more-and-long-term-mobile-de.png',
+    pcBgImageUrl:
+      '/assets/images/pdp-v2311/introduction/big-more-and-long-term-pc-de.png',
     title: 'Groß, Mehr & Langfristig',
     description: '',
     features: [
