@@ -3,7 +3,7 @@ import { SectionContainer, SectionDescription, SectionTitle } from 'ui'
 
 export interface ICompareProps {
   title: string
-  desctiption: string
+  description: React.ReactNode
   items: {
     title: string
     imageUrl: string
@@ -11,12 +11,12 @@ export interface ICompareProps {
   }[]
 }
 
-export default function Compare({ desctiption, title, items }: ICompareProps) {
+export default function Compare({ description, title, items }: ICompareProps) {
   return (
     <SectionContainer compact>
       <SectionTitle>{title}</SectionTitle>
       <SectionDescription className="mt-4 md:mt-6">
-        {desctiption}
+        {description}
       </SectionDescription>
 
       <ul className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-8">
@@ -29,7 +29,9 @@ export default function Compare({ desctiption, title, items }: ICompareProps) {
               height={300}
               className="object-contain w-full h-full"
             />
-            <div className="text-center md:text-lg xl:text-xl">{item.title}</div>
+            <div className="text-center md:text-lg xl:text-xl">
+              {item.title}
+            </div>
           </li>
         ))}
       </ul>

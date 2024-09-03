@@ -84,7 +84,7 @@ const shortVideoProps: IShortVideoProps = {
   ),
   videoPosterUrl: '/assets/images/home-v2311/use-compost-cover.jpg',
   videoSrcUrl:
-    'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/geme-genereate-compost-12s-480p.mp4',
+    'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/0902-geme-terra-2-8s-480p.mp4',
 }
 
 // 图文section2
@@ -102,7 +102,7 @@ const imageTextProps: IShortVideoProps = {
       </ul>
     </>
   ),
-  imageUrl: '/assets/images/pdp-v2311/introduction/geme-composter-size-v2.jpeg',
+  imageUrl: '/assets/images/geme-v2/product-s2.jpg',
   imageAlt: '',
   isReverse: true,
 }
@@ -122,44 +122,57 @@ const imageTextProps2: IShortVideoProps = {
       </ul>
     </>
   ),
-  imageUrl: '/assets/images/pdp-v2311/introduction/no-filters.jpg',
+  imageUrl: '/assets/images/geme-v2/product-s3.png',
   imageAlt: '',
 }
 
 // Compare Section
 const compareProps: ICompareProps = {
-  title: 'Real Composting Made Easy',
-  desctiption: 'We are different from other compost products on the market',
+  title: 'You are Wrong if You Think We are Them',
+  description: (
+    <>
+      Those products are not all food waste dehydrators, not real composters.
+      GEME is not like them, GEME is for real composting. It is totally
+      different.<br></br>
+      It means that you can not really use the output from those machines as
+      fertilizer, but all those brands keep misleading the marketing.
+    </>
+  ),
   items: [
     {
-      title: 'Brand 1',
-      imageUrl: '/assets/images/compare-section/compare-section-lomi.png',
+      title: 'Lomi',
+      imageUrl: '/assets/images/geme-v2/compare/lomi.png',
       alt: '',
     },
+    // {
+    //   title: 'Vitamix Food Cycler',
+    //   imageUrl: '/assets/images/geme-v2/compare/vitamix.png',
+    //   alt: '',
+    // },
     {
-      title: 'Brand 2',
+      title: 'Airthereal',
+      imageUrl: '/assets/images/geme-v2/compare/airthereal.png',
+      alt: 'Airthereal Electric Kitchen Composter',
+    },
+    {
+      title: 'Fylecen',
+      imageUrl: '/assets/images/geme-v2/compare/fylecen.png',
+      alt: 'Fylecen 4L Electric Composter',
+    },
+    {
+      title: 'Moreborn',
+      imageUrl: '/assets/images/geme-v2/compare/moreborn.png',
+      alt: 'Moreborn composter',
+    },
+    {
+      title: 'Mill',
       imageUrl: '/assets/images/compare-section/compare-section-mill.png',
-      alt: '',
+      alt: 'Mill Composter',
     },
     {
-      title: 'Brand 3',
-      imageUrl: '/assets/images/compare-section/compare-section-reencle.png',
-      alt: '',
-    },
-    {
-      title: 'Brand 4',
-      imageUrl: '/assets/images/compare-section/compare-section-lomi.png',
-      alt: '',
-    },
-    {
-      title: 'Brand 5',
-      imageUrl: '/assets/images/compare-section/compare-section-mill.png',
-      alt: '',
-    },
-    {
-      title: 'Brand 6',
-      imageUrl: '/assets/images/compare-section/compare-section-reencle.png',
-      alt: '',
+      title: 'Soilkind',
+      imageUrl: '/assets/images/geme-v2/compare/soilkind.png',
+      alt: 'soilkind Komposter',
     },
   ],
 }
@@ -410,7 +423,7 @@ const faqProps: IFaqProps = {
     },
     {
       slug: 'what-is-the-difference-between-geme-one',
-      question: 'What is the difference between GEME One?',
+      question: 'What is the difference between GEME Terra 2 and GEME One?',
       answer: (
         <>
           <div className="overflow-x-auto">
@@ -434,7 +447,7 @@ const faqProps: IFaqProps = {
                     Price
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    {`$300 < x < $600`}
+                    {`< $600`}
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     $899.99
@@ -638,10 +651,10 @@ const faqProps: IFaqProps = {
                     Price
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    {`$300 < x < $600`}
+                    {`< $600`}
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    {`$200 < x < $500`}
+                    {`$150 < x < $500`}
                   </td>
                 </tr>
                 <tr>
@@ -1206,7 +1219,7 @@ const faqProps: IFaqProps = {
     {
       slug: 'when-will-it-be-on-sale? and-what-is-the-price',
       question: 'When will it be on sale? and what is the price?',
-      answer: `The final testing is almost complete, and the estimated timeline for sale is early next year. The price range will be between $300 and $600.`,
+      answer: `The final testing is almost complete, and the estimated timeline for sale is early next year. The price less than $600.`,
     },
   ],
 }
