@@ -83,7 +83,7 @@ const heroSectionSwiperProps: IHomeHeroSectionSwiperProps = {
     ),
     description: (
       <>
-        <div className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 3xl:text-[100px]">
+        <div className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl 3xl:text-[100px] max-w-5xl">
           Treffen Sie sich GEME auf der
         </div>
         <div className="xl:leading-[0.65] leading-none text-7xl md:text-[100px] lg:text-[150px] xl:text-[200px] 2xl:text-[300px] 3xl:text-[400px]">
