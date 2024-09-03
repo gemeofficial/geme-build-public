@@ -8,24 +8,24 @@ import HeroSection, { IHeroSectionProps } from './components/HeroSection'
 // kobold页第一部分配置项 De
 const heroSectionProps: IHeroSectionProps = {
   title: 'GEME KOBOLD',
-  description: `Die magische Kraft, Bioabfälle in hochaktiven organischen Kompost zu verwandeln.`,
+  description: `Die magische Kraft, Bioabfälle in einen hochaktiven organischen Kompost umzuwandeln.`,
   highlights: [
     {
       id: 1,
       title: 'Schädlingsabwehr',
-      description: `Halten Sie Pflanzen frei von Krankheiten und Schädlingen.`,
+      description: `Hält die Pflanzen frei von Krankheiten und Schädlingen.`,
       iconPath: '/assets/images/geme-kobold/highlight-icon-1.svg',
     },
     {
       id: 2,
       title: 'Blüten- und Fruchtschub',
-      description: `Lassen Sie Blumen besser riechen, Früchte süßer schmecken und mehr ernten.`,
+      description: `Blumen riecht besser, Früchte werden süßer und ernten mehr.`,
       iconPath: '/assets/images/geme-kobold/highlight-icon-2.svg',
     },
     {
       id: 3,
       title: 'Land- und Flussrevitalisierung',
-      description: `Machen Sie das Land fruchtbarer, die Flüsse klarer und die Umwelt besser.`,
+      description: `Das Land wird fruchtbarer, die Flüsse werden klarer und die Umwelt wird besser.`,
       iconPath: '/assets/images/geme-kobold/highlight-icon-3.svg',
     },
   ],
@@ -36,41 +36,42 @@ const featuresProps = {
   section1Title: 'Natürliche Mikrobiota',
   section1Description: (
     <>
-      GEME-Kobold ist die weltweit einzige bekannte hitzebeständige
-      zusammengesetzte Mikrobiota, eine alte Gemeinschaft mit jahrzehntelangem
-      evolutionärem Erfolg. Es ist kein künstlich entwickeltes Mikroorganismus,
-      sondern ein Praktiker des natürlichen Kreislaufgesetzes.
+      GEME-Kobold ist die weltweit einzige bekannte hochtemperaturbeständige
+      zusammengesetzte Mikrobiota, eine bestehende Gemeinschaft mit
+      jahrzehntelangem evolutionärem Erfolg. Es handelt sich nicht um eine
+      künstlich entwickelte Mikrobe, sondern um einen Praktiker der natürlichen
+      Kreislaufgesetze.
     </>
   ),
   section2Title: 'Einzigartig in der Welt',
   section2Description: (
     <>
-      Im Hochleistungs-Bioabfallverarbeitungssystem wird Bioabfall durch die
-      Wirkung von GEME-Kobold schnell auf 75℃ erhitzt, fermentiert und
-      getrocknet.
+      Im Kreislaufsystem des hocheffizienten Bioabfallverwerters wird der
+      Bioabfall durch die Wirkung von GEME-Kobold schnell auf 75℃ erhitzt,
+      fermentiert und getrocknet.
       <br />
       <br />
       Diese aerobe Hochtemperaturbelastung tötet potenzielle Krankheitserreger
-      ab und neutralisiert die Schädlichkeit von Fermentationsprodukten.
+      ab und neutralisiert die Schädlichkeit der Gärungsprodukte.
     </>
   ),
   section3Title: 'Komplexe Mikrobiota',
   section3Description: (
     <>
-      GEME-Kobold trägt erheblich zur Wiederverwertung organischer Stoffe bei.
-      Es umfasst 46 komplexe, hitzebeständige aerobe Bacillus-Bakterien.
+      GEME-Kobold trägt wesentlich zum Recycling organischer Stoffe bei. Es
+      besteht aus 46 komplexen, hitzetoleranten aeroben Bacillus-Bakterien.
       <br />
       <br />
       Innerhalb von 6-8 Stunden kann es verschiedene Bioabfälle zersetzen und
-      hochaktive organische Düngemittel produzieren. Es aktiviert auch
-      Mikroorganismen im Boden und Wasser und verjüngt sie.
+      einen hochaktiven organischen Dünger erzeugen. Außerdem aktiviert es die
+      Mikroorganismen in Boden und Wasser und verjüngt sie.
     </>
   ),
 }
 
 // kobold页第三部分配置项 De
 const featuresWithIconsProps: IGridWithOffsetIconsLiteProps = {
-  title: 'Ernährungsüberlegenheit',
+  title: 'Ernährungsphysiologische Vorteile',
   description: 'Reich an den nützlichen Mikrobiota von GEME-Kobold',
   features: [
     {
@@ -80,8 +81,8 @@ const featuresWithIconsProps: IGridWithOffsetIconsLiteProps = {
         'Landwirtschaftliche Methoden, die aus dem natürlichen Kreislaufsystem abgeleitet sind.',
     },
     {
-      icon: FeatureIcon(2, 'Hochsicher'),
-      name: 'Hochsicher',
+      icon: FeatureIcon(2, 'Sicherheit'),
+      name: 'Sicherheit',
       description:
         'Durch die Verwendung der ursprünglichen Mikroorganismen im Boden wird das Ökosystem nicht zerstört. Keine Notwendigkeit für Pestizide.',
     },
@@ -135,14 +136,13 @@ const enjoyYourLifeProps: IEnjoyYourLifeProps = {
   title: 'Probieren Sie Kobold aus',
   description: (
     <>
-      Hören Sie auf, zusätzliche Kosten für Dünger zu zahlen, sich um das Wenden
-      des Haufens zu sorgen und Ihre Lebensmittelabfälle zu verschwenden.
-      Beginnen Sie, Früchte, Gemüse und Blumen auf dem Balkon und im Hinterhof
-      zu ernten!
+      Mithilfe von Kobold, zahlen Sie nicht mehr zusätzliche Kosten für Dünger,
+      sorgen Sie sich nicht mehr an das Umdrehen des Haufens, verschwenden Sie
+      keine Lebensmittelabfälle mehr. Sie könnten einfach Obst, Gemüse und
+      Blumen auf dem Balkon und im Garten ernten!
     </>
   ),
 }
-
 
 export function GemeKoboldPageDe() {
   return (

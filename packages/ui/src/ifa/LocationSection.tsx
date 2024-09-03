@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import ImageZoomViewer from '../client-components/ImageZoomViewer'
 
-export default function LocationSection() {
+export function LocationSection() {
   return (
     <ImageZoomViewer>
       <Image

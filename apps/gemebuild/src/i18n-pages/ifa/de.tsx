@@ -1,18 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
 import {
+  ComposterSurvey,
+  IComposterSurveyProps,
   IFAHeroSection,
   IIFAHeroSectionProps,
   ISubscribeGemeV2Props,
   IWinnersNamesTickerProps,
+  LocationSection,
   SubscribeGemeV2,
 } from 'ui'
 
-import { ILinkComponent } from '../../contexts/link-context'
 import { winnersNames } from './winnersNames'
 import { VideoList, IVideoList } from 'ui'
-import { FC } from 'react'
 import { IIFAPageProps } from './en'
-import LocationSection from 'ui/src/ifa/LocationSection'
 
 // Hero Section  De
 const IFAHeroSectionProps: IIFAHeroSectionProps = {
@@ -23,11 +23,11 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
   noticeTitle: (
     <>
       <p className="leading-tight">
-        Glänzen mit GEME <br />
+        Entdecken GEME <br />
         <span className="text-[#ea3c58]">Auf der IFA Berlin 2024</span>
       </p>
       <span className="text-lg md:text-3xl 3xl:text-4xl">
-        Teilen Sie Ihre GEME-Geschichte, gewinnen Sie einen GEME-Komposter!
+        Teilen Sie uns Ihre GEME-Geschichte,Gewinnen Sie einen GEME Komposter!
       </span>
     </>
   ),
@@ -51,7 +51,7 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
         Freitag ein $59.9 Kobold-Nachfüllpack.
       </p>
       <br />
-      <strong>Hauptpreis: </strong>
+      <strong>Großer Preis: </strong>
       <p>
         Ein glücklicher Gewinner aus allen Teilnehmern wird am 14. September
         einen GEME-Komposter gewinnen.
@@ -59,7 +59,7 @@ const IFAHeroSectionProps: IIFAHeroSectionProps = {
     </>
   ),
   buttonText: 'Reichen Sie Ihr Video ein!',
-  countdownTitle: 'Countdown zum nächsten Ziehung :',
+  countdownTitle: 'Countdown zu der nächsten Auslosung:',
   winningProbabilityTitle:
     'Aktuelle Gewinnwahrscheinlichkeit des Kobold-Nachfüllpacks:',
   prizeImageTitle: 'Belohnungen',
@@ -94,13 +94,13 @@ const videoListProps: IVideoList = {
     'Die Videoliste wird nach dieser Ziehung angezeigt, bitte haben Sie etwas Geduld.',
   videoList: [
     {
-      poster: '/assets/images/ifa/poster1.png',
+      poster: '/assets/images/ifa/poster-images/poster1.png',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/ifa-page-user-video-1.mp4',
       from: 'MN',
       useTime: '9 Monate',
     },
     {
-      poster: '/assets/images/ifa/poster2.png',
+      poster: '/assets/images/ifa/poster-images/poster2.png',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/ifa-page-user-video-2.mp4',
       from: 'OH',
       useTime: '10 Monate',
@@ -110,14 +110,21 @@ const videoListProps: IVideoList = {
 
 // 中奖名单  De
 const winnersNamesTickerProps: IWinnersNamesTickerProps = {
-  title: 'Geschichte Gewinner',
+  title: 'Frühere Gewinner',
   linkText: 'mehr anzeigen',
   winnersNames,
 }
 
+// 问卷调查 De
+const composterSurveyProps: IComposterSurveyProps = {
+  title: 'Kompostierer-Umfrage',
+  desc: 'Geben Sie uns einige Einblicke in Ihre Ideen zur Abfallbewirtschaftung',
+  buttonText: 'Zur Veröffentlichung gehen',
+}
+
 // 订阅模块 De
 const subscribeGemeV2Props: ISubscribeGemeV2Props = {
-  title: 'Lernen Sie GEME II kennen',
+  title: 'Entdecken Sie GEME II',
   description: <>Interessiert? Treten Sie der Warteliste bei!</>,
   emailPlaceholder: 'Geben Sie Ihre E-Mail ein',
   submitButtonLabel: 'Benachrichtigen Sie mich',
@@ -148,15 +155,20 @@ function IFAPageDe({ PrefetchLink, SubscribeComponent }: IIFAPageProps) {
   return (
     <>
       <IFAHeroSection {...IFAHeroSectionProps} PrefetchLink={PrefetchLink} />
-      <div className="bg-[#fffbf8]">
-        <LocationSection />
+
+      <LocationSection />
+
+      <div className="bg-[#fcfcfc]">
+        <VideoList
+          buttonText={IFAHeroSectionProps.buttonText}
+          videoListProps={videoListProps}
+          winnersNamesTickerProps={winnersNamesTickerProps}
+          PrefetchLink={PrefetchLink}
+        />
       </div>
-      <VideoList
-        buttonText={IFAHeroSectionProps.buttonText}
-        videoListProps={videoListProps}
-        winnersNamesTickerProps={winnersNamesTickerProps}
-        PrefetchLink={PrefetchLink}
-      />
+
+      <ComposterSurvey {...composterSurveyProps} PrefetchLink={PrefetchLink} />
+
       <SubscribeGemeV2
         {...subscribeGemeV2Props}
         SubscribeComponent={SubscribeComponent}

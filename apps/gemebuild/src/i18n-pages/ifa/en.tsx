@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import {
+  IComposterSurveyProps,
   IFAHeroSection,
   IIFAHeroSectionProps,
   ISubscribeGemeV2Props,
@@ -11,9 +12,8 @@ import { ILinkComponent } from '../../contexts/link-context'
 import { winnersNames } from './winnersNames'
 import { VideoList, IVideoList } from 'ui'
 import { FC } from 'react'
-import ImageZoomViewer from 'ui/src/client-components/ImageZoomViewer'
-import Image from 'next/image'
-import LocationSection from 'ui/src/ifa/LocationSection'
+import { LocationSection } from 'ui'
+import { ComposterSurvey } from 'ui'
 
 // Hero Section  En
 const IFAHeroSectionProps: IIFAHeroSectionProps = {
@@ -96,19 +96,19 @@ const videoListProps: IVideoList = {
     'The video list data will be displayed after this drawing, please wait patiently.',
   videoList: [
     {
-      poster: '/assets/images/ifa/poster1.png',
+      poster: '/assets/images/ifa/poster-images/poster1.png',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/ifa-page-user-video-1.mp4',
       from: 'MN',
       useTime: '9 months',
     },
     {
-      poster: '/assets/images/ifa/poster2.png',
+      poster: '/assets/images/ifa/poster-images/poster2.png',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/ifa-page-user-video-2.mp4',
       from: 'OH',
       useTime: '10 months',
     },
     {
-      poster: '/assets/images/ifa/poster3.png',
+      poster: '/assets/images/ifa/poster-images/poster3.png',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/geme_val.mp4',
       from: 'Germany',
       useTime: '1.5 months',
@@ -121,6 +121,13 @@ const winnersNamesTickerProps: IWinnersNamesTickerProps = {
   title: 'History Winners',
   linkText: 'view more',
   winnersNames,
+}
+
+// 问卷调查 En
+const composterSurveyProps: IComposterSurveyProps = {
+  title: 'Composter Survey',
+  desc: 'Give us some insight about your waste management idea',
+  buttonText: 'Go to Publish',
 }
 
 // 订阅模块 En
@@ -167,7 +174,7 @@ function IFAPageEn({ PrefetchLink, SubscribeComponent }: IIFAPageProps) {
 
       <LocationSection />
 
-      <div className="bg-gray-50">
+      <div className="bg-[#fcfcfc]">
         <VideoList
           buttonText={IFAHeroSectionProps.buttonText}
           videoListProps={videoListProps}
@@ -175,6 +182,8 @@ function IFAPageEn({ PrefetchLink, SubscribeComponent }: IIFAPageProps) {
           PrefetchLink={PrefetchLink}
         />
       </div>
+
+      <ComposterSurvey {...composterSurveyProps} PrefetchLink={PrefetchLink} />
 
       <SubscribeGemeV2
         {...subscribeGemeV2Props}

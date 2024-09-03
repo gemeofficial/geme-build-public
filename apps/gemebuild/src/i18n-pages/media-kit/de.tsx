@@ -17,11 +17,11 @@ const heroSectionProps: IHeroSection = {
         Ressourcen, darunter hochauflösende Logos, Produktbilder und
         Markengeschichten, die Ihnen helfen, mehr über GEME zu erfahren und
         unsere Marke in Ihre Medienberichterstattung, Marketingkampagnen und
-        mehr zu integrieren.
+        vieles mehr einzubinden.
       </p>
       <p>
-        Fühlen Sie sich frei, diese Ressourcen herunterzuladen und zu nutzen, um
-        nachhaltiges Leben zu fördern.
+        Laden Sie sich diese Ressourcen herunter und nutzen Sie sie, um einen
+        nachhaltigen Lebensstil zu unterstützen.
       </p>
       <p>
         Möchten Sie unsere Markenzeichen auf eine Weise nutzen, die in diesen
