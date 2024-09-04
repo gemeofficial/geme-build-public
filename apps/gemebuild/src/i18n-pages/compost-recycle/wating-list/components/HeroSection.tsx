@@ -21,9 +21,10 @@ export default function HeroSection({
   title,
   PrefetchLink,
 }: IHeroSectionProps) {
+  title = title.replace('{city}', city)
+  
   const clickHandler = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault()
-    console.log(123456)
   }
 
   return (

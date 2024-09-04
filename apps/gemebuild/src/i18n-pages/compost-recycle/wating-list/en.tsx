@@ -13,9 +13,9 @@ import WatingListSection, {
 
 // hero Section
 const heroSectionprops: IHeroSectionProps = {
-  city: 'Whistler',
+  city: '',
   bgImageUrl: '/assets/images/compost-recycle/citys/Whistler.jpg',
-  title: 'Finally Phoenix! A local food waste recycling program',
+  title: 'Finally {city}! A local food waste recycling program',
   description: 'Easy, clean, convenient. A local service with local impact.',
   buttonText: 'Sign Up Now',
 }
@@ -135,6 +135,7 @@ export function CompostRecycleWatingListPageEn({
   WatingListFC,
   currentCity,
 }: ICompostRecycleWatingListPageProps) {
+  heroSectionprops.city = currentCity
   return (
     <>
       <HeroSection {...heroSectionprops} PrefetchLink={PrefetchLink} />
