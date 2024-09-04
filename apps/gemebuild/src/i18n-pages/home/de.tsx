@@ -311,9 +311,9 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep1,
       description: (
         <>
-          keine lange Wartezeit
+          Keine lange Wartezeit
           <br />
-          einfache Wartung
+          Einfache Wartung
         </>
       ),
     },
@@ -322,8 +322,8 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep2,
       description: (
         <>
-          kein Schmutz und Geruch <br />
-          sauber und geruchlos
+          Kein Schmutz und Geruch <br />
+          Sauber und geruchlos
         </>
       ),
     },
@@ -332,8 +332,8 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep3,
       description: (
         <>
-          kein Wenden erfoderlich, <br />
-          funktioniert in jedem Wetterkondition
+          Kein Wenden erfoderlich, <br />
+          Funktioniert in jedem Wetterkondition
         </>
       ),
     },
