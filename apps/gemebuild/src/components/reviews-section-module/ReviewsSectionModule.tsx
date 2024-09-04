@@ -34,8 +34,8 @@ const mutilLanguageTextInfo: IMutilLanguageTextInfo = {
     description: `You might want to click and see the detail review, to see how our customers feel about our product, you can see the real product review and our customer service as well.`,
   },
   de: {
-    title: 'Was echte Benutzer sagen',
-    description: `Achten Sie nicht zu sehr auf Influencer-Bewertungen, von denen viele bezahlte Werbeanzeigen sind. Hören Sie stattdessen auf alltägliche Menschen wie Sie, die ihre ehrlichen Erfahrungen mit uns teilen, auch wenn sie keine Bewertungen online hinterlassen haben.`,
+    title: 'Was unsere Benutzer sagen',
+    description: `Hier befinden sich die Detail-Bewertung, wie unsere Kunden sich über unser Produkt fühlen und wie unseren Kundenservice ist. `,
   },
   fr: {
     title: 'Ce que disent les vrais utilisateurs',

@@ -14,29 +14,28 @@ import EmpiricalComparison, {
 
 // 第1部分配置文件 De版
 const gkHeroSectionProps: IGKHeroSectionProps = {
-  title: 'GK Ressourcenkreislauf-Technologie',
-  highlightTitle: 'Ordentlicher Kreislauf, der den Gesetzen der Natur folgt',
+  title: 'GK Resource Recycling Technology',
+  highlightTitle: 'Geregelter Kreislauf, der den Naturgesetz folgt',
   description: (
     <>
       <p>
-        Verwirklichen Sie den geschlossenen Betrieb des biologischen Kreislaufs
-        "vom Land und zurück zum Land"
+        Verwirklichung des geschlossenen biologischen Kreislaufs „vom Land und
+        zurück zum Land“.
       </p>
       <p className="mt-4">
-        Verwirklichen Sie "erneuerbare Ressourcen, freundlichere Umwelt,
-        gesündere Böden und sicherere Lebensmittel".
+        Realisierung der „erneuerbaren Ressourcen, der freundlicheren Umwelt,
+        gesünderen Böden und sichereren Lebensmittel“.
       </p>
-      <p className="mt-4">
-        Es wurde nach mehr als 50 Jahren Praxis erfolgreich verifiziert
-      </p>
+      <p className="mt-4">Erfolgsgarantie mit mehr als 50 Jahren Praxis.</p>
     </>
   ),
-  imageAlt: 'GK Ressourcenkreislauf-Technologie',
+  imageAlt: 'GK Resource Recycling Technology',
 }
 
 // 第2部分配置文件 De版
 const theLongTermDependenceProps: IWithSquareImagesProps = {
-  title: 'Die langfristige Abhängigkeit von Düngemitteln auf Ackerland hat zu',
+  title:
+    'Die langfristige Abhängigkeit von Düngemitteln auf Ackerland führt zu...',
   features: [
     {
       name: 'Bodenversauerung',
@@ -51,16 +50,16 @@ const theLongTermDependenceProps: IWithSquareImagesProps = {
       imageAlt: 'Sekundäre Versalzung',
     },
     {
-      name: 'Boden ist arm und degradiert',
-      title: 'Boden ist arm und degradiert',
+      name: 'Arme und degradierte Böden',
+      title: 'Arme und degradierte Böden',
       imageSrc: '/assets/images/gk/s1-3.png',
-      imageAlt: 'Boden ist arm und degradiert',
+      imageAlt: 'Arme und degradierte Böden',
     },
     {
-      name: 'Zunahme bodenbürtiger Krankheiten',
-      title: 'Zunahme bodenbürtiger Krankheiten',
+      name: 'Mehr bodenübertragene Krankheiten',
+      title: 'Mehr bodenübertragene Krankheiten',
       imageSrc: '/assets/images/gk/s1-4.png',
-      imageAlt: 'Zunahme bodenbürtiger Krankheiten',
+      imageAlt: 'Mehr bodenübertragene Krankheiten',
     },
   ],
   textColorClassName: '!text-gray-900',
@@ -77,14 +76,14 @@ const currentStatusProps: IAlternativeSideBySideWithImagesProps = {
             <div>
               <div className="mt-6">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-                  Aktueller Status des Gehalts an organischer Substanz im Boden
-                  <span>wie schnell sich Lebensmittelabfälle zersetzen</span>
+                  Aktueller Bestandsteile der organischen Substanz im Boden -
+                  Wie schnell sich Lebensmittelabfälle abgebaut werden?
                 </h2>
                 <div className="prose mt-4 text-lg text-gray-500">
                   <ul>
                     <li>
-                      Internationaler gesunder Gehalt an organischer Substanz im
-                      Boden 5%
+                      Internationaler Bestandsteile an gesunder organischer
+                      Bodensubstanz Boden 5%
                     </li>
                     <li>Japan 6%</li>
                     <li>USA 5%</li>
@@ -117,24 +116,26 @@ const currentStatusProps: IAlternativeSideBySideWithImagesProps = {
               <div className="mt-6">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900">
                   <span className="block text-gray-900 xl:inline">
-                    Wie lange dauert es, bis der Gehalt an organischer Substanz
-                    im Boden um 0,1% steigt?
+                    Wie lange dauert es, bis die organische Substanz im Boden um
+                    0,1 % ohne Dehydrierung zunimmt?
                   </span>
-                  <span>keine Dehydrierung</span>
                 </h2>
                 <div className="prose mt-4 text-lg text-gray-500">
                   <ul>
-                    <li>Unter natürlicher Brache dauert es 79 Jahre</li>
+                    <li>Bei natürlicher Brache dauert es 79 Jahre.</li>
                     <li>
-                      Grüner Dünger frisches Gras benötigt 5 Jahre, um 6 Tonnen
-                      pro Acre hinzuzufügen
+                      Bei Gründüngung mit frischem Gras dauert es 5 Jahre, um 6
+                      Tonnen pro Acker zu erhalten.
                     </li>
                     <li>
                       Gewöhnlicher organischer Dünger benötigt 2 Jahre, um 9
-                      Tonnen pro Acre hinzuzufügen
+                      Tonnen pro Acker zu erhalten.
                     </li>
                     <li>
-                      GK benötigt 1 Jahr, um 2,4 Tonnen pro Acre hinzuzufügen
+                      <strong>
+                        Mit GK dauert es nur 1 Jahr, um 2,4 Tonnen pro Acre zu
+                        erreichen
+                      </strong>
                     </li>
                   </ul>
                 </div>
@@ -160,16 +161,12 @@ const currentStatusProps: IAlternativeSideBySideWithImagesProps = {
 
 // 第4部分配置文件 De版
 const organicWasteProps: IThreeColumnWithDescriptionProps = {
-  title: 'Organische Abfälle sind die hochwertigste organische Materie',
+  title: 'Bioabfälle sind die hochwertigste Ressource für organisches Material',
   description: (
     <>
       <p>
-        Bioabfall, insbesondere Küchenabfall, ist die hochwertigste organische
-        Materie
-      </p>
-      <p>
-        Das in 50 Millionen Tonnen Küchenabfall enthaltene Protein entspricht
-        der Proteinproduktion von 3,3 Millionen Hektar Sojabohnen pro Jahr
+        Das Eiweiß in 50 Millionen Tonnen Küchenabfällen entspricht der
+        Eiweißproduktion von 3,3 Millionen Hektar Sojabohnen pro Jahr
       </p>
     </>
   ),
@@ -196,7 +193,7 @@ const organicWasteProps: IThreeColumnWithDescriptionProps = {
 // 第5部分配置文件 De版
 const soilImprovementProps: IAlternativeSideBySideWithImagesProps = {
   title:
-    'Bodenverbesserungsprogramme der GK-Technologie - Bringen Sie den Boden schnell wieder zum Leben',
+    'Bodenverbesserungsprogramme von GK-Technology - Böden schnell wieder zum Leben bringen',
   description:
     'GK-Bodensanierung/-verbesserung, Bodenverbesserung Gesamtkonzept Kernlösung:',
   textAndImageblocks: [
@@ -208,20 +205,20 @@ const soilImprovementProps: IAlternativeSideBySideWithImagesProps = {
             <div>
               <div className="mt-6">
                 <h3 className="text-2xl font-bold tracking-tight text-gray-900">
-                  Organische Materialverbesserung
+                  Verbesserung der organischen Substanz
                 </h3>
                 <p className="mt-4 text-lg text-gray-500">
-                  Schnell wirkender Kohlenstoff und stabiler Kohlenstoff wirken
-                  mit Mineralnährstoffen zusammen, um die physikalischen und
-                  chemischen Eigenschaften des Bodens zu verbessern
+                  Gleichmäßige schnell wirkende Kohlenstoff im Boden harmonieren
+                  mit mineralischen Nährstoffen zur Verbesserung der
+                  physikalischen und chemischen Eigenschaften des Bodens.
                 </p>
                 <h3 className="mt-6 text-2xl font-bold tracking-tight text-gray-900">
-                  Revitalisierung von nützlichen Bakterien +
-                  pflanzenspezifischer mikrobieller Komplex
+                  Revitalisierung hilfreichen Bakterien + pflanzenspezifischer
+                  mikrobieller Komplex
                 </h3>
                 <p className="mt-4 text-lg text-gray-500">
                   Komplexe Mikroflora und Biostimulanzien regulieren das
-                  dynamische Gleichgewicht der mikrobiellen Gemeinschaften
+                  dynamische Gleichgewicht der mikrobiellen Einheiten.
                 </p>
               </div>
             </div>
@@ -253,18 +250,16 @@ const empiricalComparisonProps: IEmpiricalComparisonProps = {
   ),
   description1: (
     <>
-      Die Wachstumsverteilung der Wurzeln kann nicht nur bestimmen, wie effektiv
-      der lebende Bakterienfermentationsdünger für die Gesundheit und das
-      Wachstum der Pflanze ist, sondern auch die Verbesserung der Bodenqualität
-      sehen
+      Das Wachstum der Wurzeln zeigt die Wirksamkeit der
+      Lebendbakterien-Gärungsdünger auf die Pflanzen-Gesundheit,
+      Wachstumspotenzial, und die Verbesserung der Bodenqualität
     </>
   ),
   description2: (
     <>
-      Im Vergleichsexperiment können Sie deutlich die Wirksamkeit von GK bei der
-      Wiederherstellung der Bodenlebendigkeit und der Förderung von
-      GEME-Kobold-reichem Boden auf Pflanzenwachstum und Krankheitsresistenz
-      beobachten
+      Im Vergleichsexperiment sieht man deutlich die Wirksamkeit von GK auf die
+      Wiederherstellung der Bodenvitalität und die Auswirkung von
+      GEME-Kobold-reichem Boden auf Pflanzenwachstum und Krankheitsresisten.
     </>
   ),
   pictureDescription1: 'Linkes Bild: Versuchsgruppe mit GK-Technologie',
@@ -303,8 +298,8 @@ const empiricalComparisonProps: IEmpiricalComparisonProps = {
 const empiricalComparison2Props: IEmpiricalComparisonProps = {
   title: (
     <>
-      Empirischer Vergleich der kontaminierten Boden- und Wasserbehandlung in
-      Vietnam mit GEME-Kobold
+      Empirischer Vergleich der Behandlungen von kontaminiertem Boden und Wasser
+      in Vietnam mit GEME-Kobold
     </>
   ),
   featuresImage: {

@@ -10,8 +10,7 @@ import { mapItemsToProducts } from '../../helpers/industrial-equipments/tool'
 // Hero组件内容的配置数据 De版
 const heroConfigProps: IHeroWithImageTilesProps = {
   title: 'GEME für Unternehmen',
-  description: `Wo auch immer Bio-Abfall entsteht, dort verändert GEME die Welt.
-      Verschiedene Größen von GEME werden in Gemeinden, Schulen, Krankenhäusern, Bürogebäuden, Einkaufszentren, touristischen Attraktionen, Resorts, Restaurants, Hotels usw. weit verbreitet verwendet.`,
+  description: `Überall wo Bioabfall anfällt, verändert GEME die Welt. GEME wird in verschiedenen Größen in Gemeinden, Schulen, Krankenhäusern, Bürogebäuden, Einkaufszentren, Touristenattraktionen, Resorts, Restaurants, Hotels usw. eingesetzt.`,
   primaryButtonLabel: 'Kontaktieren Sie uns',
   primaryButtonProps: {
     href: '/business-inquiry',
@@ -77,7 +76,7 @@ const equipmentPreviewConfigProps: IEquipmentPreviewProps = {
 const equipmentListConfigProps: IProductListsWithTallImagesProps = {
   title: 'Gewerbliche Geräte',
   description:
-    'Diese Geräte sind stille Umwelthelden und spielen eine wesentliche Rolle in verschiedenen Teilen der Welt. Sie verwenden mikrobiologische Fermentationsabbauverfahren, um Lebensmittelabfälle in großem Umfang zu reduzieren.',
+    'Die Geräte sind versteckte Umwelthelden, die in verschiedenen Teilen der Welt eine wichtige Rolle spielen. Sie nutzen mikrobielle Fermentationsverfahren, um die Lebensmittelverschwendung in großem Umfang zu reduzieren.',
   products: mapItemsToProducts(items, 'tägliche Verarbeitungskapazität'),
   productImageAspectRadioClassName: 'aspect-w-9! aspect-h-6!',
   productsContainerClassName: 'gap-y-16 sm:gap-y-10',

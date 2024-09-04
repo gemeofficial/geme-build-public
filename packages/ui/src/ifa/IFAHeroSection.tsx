@@ -154,7 +154,7 @@ export function IFAHeroSection({
                   videoConfig={{
                     autoPlay: true,
                     src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/ifa-page-exampl-video.mp4',
-                    poster: '/assets/images/ifa/ifa-example-video-poster.png',
+                    poster: '/assets/images/ifa/poster-images/ifa-example-video-poster.png',
                     className:
                       'w-40 h-40 md:w-56 md:h-56 lg:w-[259px] lg:h-64 xl:w-56 xl:h-56 2xl:w-full 2xl:h-[292px] max-h-[292px] ',
                   }}

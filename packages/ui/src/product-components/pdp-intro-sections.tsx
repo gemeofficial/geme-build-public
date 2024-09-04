@@ -380,12 +380,18 @@ function PdpIntroSection6({
 }
 
 interface IPdpIntroSection7Props {
+  mobileBgImageUrl: string
+  pcBgImageUrl: string
   title?: ReactNode
   description?: ReactNode
   features?: ReactNode[]
 }
 
 const pdpIntroSection7Props: IPdpIntroSection7Props = {
+  mobileBgImageUrl:
+    '/assets/images/pdp-v2311/introduction/big-more-and-long-term-mobile.png',
+  pcBgImageUrl:
+    '/assets/images/pdp-v2311/introduction/big-more-and-long-term-pc.png',
   title: 'Big, More & Long Term',
   description: '',
   features: [
@@ -396,6 +402,8 @@ const pdpIntroSection7Props: IPdpIntroSection7Props = {
 }
 
 function PdpIntroSection7({
+  mobileBgImageUrl,
+  pcBgImageUrl,
   title,
   description,
   features,
@@ -409,14 +417,14 @@ function PdpIntroSection7({
           width={580}
           height={750}
           // src="/assets/images/pdp-v2311/introduction/device-compare.svg"
-          src="/assets/images/pdp-v2311/introduction/big-more-and-long-term-mobile.png"
+          src={mobileBgImageUrl}
           alt="Introduction GEME Composter Super Large Volume"
           className=" z-0 xl:hidden w-full h-full"
         />
         <Image
           width={1920}
           height={1080}
-          src="/assets/images/pdp-v2311/introduction/big-more-and-long-term-pc.png"
+          src={pcBgImageUrl}
           alt="Introduction GEME Composter Super Large Volume"
           className=" z-0 hidden xl:block w-full h-full"
         />

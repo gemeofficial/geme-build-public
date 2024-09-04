@@ -1,18 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
 import {
+  ComposterSurvey,
+  IComposterSurveyProps,
   IFAHeroSection,
   IIFAHeroSectionProps,
   ISubscribeGemeV2Props,
   IWinnersNamesTickerProps,
+  LocationSection,
   SubscribeGemeV2,
 } from 'ui'
 
-import { ILinkComponent } from '../../contexts/link-context'
 import { winnersNames } from './winnersNames'
 import { VideoList, IVideoList } from 'ui'
-import { FC } from 'react'
 import { IIFAPageProps } from './en'
-import LocationSection from 'ui/src/ifa/LocationSection'
 
 // Hero Section  Fr
 const IFAHeroSectionProps: IIFAHeroSectionProps = {
@@ -96,13 +96,13 @@ const videoListProps: IVideoList = {
     'Les données de la liste des vidéos seront affichées après ce tirage, veuillez patienter.',
   videoList: [
     {
-      poster: '/assets/images/ifa/poster1.png',
+      poster: '/assets/images/ifa/poster-images/poster1.png',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/ifa-page-user-video-1.mp4',
       from: 'MN',
       useTime: '9 mois',
     },
     {
-      poster: '/assets/images/ifa/poster2.png',
+      poster: '/assets/images/ifa/poster-images/poster2.png',
       src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/user-videos/ifa-page-user-video-2.mp4',
       from: 'OH',
       useTime: '10 mois',
@@ -115,6 +115,13 @@ const winnersNamesTickerProps: IWinnersNamesTickerProps = {
   title: 'Gagnants Historiques',
   linkText: 'voir plus',
   winnersNames,
+}
+
+// 问卷调查 Fr
+const composterSurveyProps: IComposterSurveyProps = {
+  title: 'Enquête sur le composteur',
+  desc: 'Donnez-nous votre avis sur votre idée de gestion des déchets',
+  buttonText: 'Aller publier',
 }
 
 // 订阅模块 Fr
@@ -150,15 +157,20 @@ function IFAPageFr({ PrefetchLink, SubscribeComponent }: IIFAPageProps) {
   return (
     <>
       <IFAHeroSection {...IFAHeroSectionProps} PrefetchLink={PrefetchLink} />
-      <div className="bg-[#fffbf8]">
-        <LocationSection />
+
+      <LocationSection />
+
+      <div className="bg-[#fcfcfc]">
+        <VideoList
+          buttonText={IFAHeroSectionProps.buttonText}
+          videoListProps={videoListProps}
+          winnersNamesTickerProps={winnersNamesTickerProps}
+          PrefetchLink={PrefetchLink}
+        />
       </div>
-      <VideoList
-        buttonText={IFAHeroSectionProps.buttonText}
-        videoListProps={videoListProps}
-        winnersNamesTickerProps={winnersNamesTickerProps}
-        PrefetchLink={PrefetchLink}
-      />
+
+      <ComposterSurvey {...composterSurveyProps} PrefetchLink={PrefetchLink} />
+
       <SubscribeGemeV2
         {...subscribeGemeV2Props}
         SubscribeComponent={SubscribeComponent}
