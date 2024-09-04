@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import CardSection2, { ICardSectionProps2 } from '../components/CardSection2'
 import RecycleSection, {
   IRecycleSectionProps,
@@ -21,8 +23,17 @@ const heroSectionprops: IHeroSectionProps = {
 
 // Wating List Section
 const watingListSectionProps: IWatingListSectionProps = {
+  introText: (
+    <>
+      The GEME Food Recycling Program is creating a cleaner, greener way to deal
+      with food waste. With our local service you're reducing food waste going
+      to landfills and also returning vital nutrients to the soil: that's good
+      for the local community and for the environment.
+    </>
+  ),
+  city: '',
   title: 'Launching Soon',
-  description: `Be one of the first to change the way Penticton handles food waste.`,
+  description: `Be one of the first to change the way {city} handles food waste.`,
 }
 
 // How It Works卡片Section
@@ -126,9 +137,11 @@ const reviewsProps: IReviewsProps = {
 export function CompostRecycleWatingListPageFr({
   PrefetchLink,
   WatingListFC,
-  currentCity,
+  cityItem,
 }: ICompostRecycleWatingListPageProps) {
-  heroSectionprops.city = currentCity
+  heroSectionprops.city = cityItem.title
+  heroSectionprops.bgImageUrl = cityItem.imageUrl
+  watingListSectionProps.city = cityItem.title
   return (
     <>
       <HeroSection {...heroSectionprops} PrefetchLink={PrefetchLink} />

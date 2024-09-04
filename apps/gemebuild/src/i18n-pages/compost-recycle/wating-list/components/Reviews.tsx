@@ -48,7 +48,9 @@ export default function Reviews({
           {buttonText}
         </PrimaryButton>
       </div>
-      <SectionTitle className="!text-[#333] mt-6 md:mt-8">{title}</SectionTitle>
+      <SectionTitle className="!text-[#333] mt-6 md:mt-8 md:text-center">
+        {title}
+      </SectionTitle>
       {description && (
         <SectionDescription className="mt-4 md:mt-6">
           {description}
@@ -69,7 +71,11 @@ export default function Reviews({
             <div className="flex justify-center">
               <StarIcon score={5} className="!text-v2311-primary !mb-0" />
             </div>
-            {item.title && <div className="text-black text-base md:text-lg">{item.title}</div>}
+            {item.title && (
+              <div className="text-black text-base md:text-lg">
+                {item.title}
+              </div>
+            )}
             <div className="text-black/60">"{item.content}"</div>
             <div className="xl:text-lg font-bold text-[#333] text-center">
               {item.name}

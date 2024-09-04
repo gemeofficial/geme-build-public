@@ -103,17 +103,23 @@ export const LocationsDe: Story = {
   ),
 }
 
+const exampleCityItem = {
+  title: 'Denver, Colorado',
+  imageUrl: '/assets/images/compost-recycle/citys/Denver_Colorado.jpg',
+  id: 'denver',
+}
+
 export const WatingListEn: Story = {
   name: 'watiung-list-en',
-  render: () => <CompostRecycleWatingListPageEn currentCity="Washington" />,
+  render: () => <CompostRecycleWatingListPageEn cityItem={exampleCityItem} />,
 }
 
 export const WatingListFr: Story = {
   name: 'watiung-list-fr',
-  render: () => <CompostRecycleWatingListPageFr currentCity="Washington" />,
+  render: () => <CompostRecycleWatingListPageFr cityItem={exampleCityItem} />,
 }
 
 export const WatingListDe: Story = {
   name: 'watiung-list-de',
-  render: () => <CompostRecycleWatingListPageDe currentCity="Washington" />,
+  render: () => <CompostRecycleWatingListPageDe cityItem={exampleCityItem} />,
 }

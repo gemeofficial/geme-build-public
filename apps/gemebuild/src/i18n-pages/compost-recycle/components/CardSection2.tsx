@@ -1,20 +1,25 @@
 import { SectionContainer, SectionTitle } from 'ui'
 import Image from 'next/image'
+import clsx from 'clsx'
 
 export interface ICardSectionProps2 {
   title: string
   cardList: CardItemType[]
   priority?: boolean
+  titleClassName?: string
 }
 
 export default function CardSection2({
   title,
   cardList,
   priority = false,
+  titleClassName,
 }: ICardSectionProps2) {
   return (
     <SectionContainer compact>
-      <SectionTitle className="!text-[#333]">{title}</SectionTitle>
+      <SectionTitle className={clsx('!text-[#333]', titleClassName)}>
+        {title}
+      </SectionTitle>
       <ul className="mt-4 md:mt-8 flex gap-4 md:gap-6 overflow-auto no-scrollbar snap-x snap-mandatory">
         {cardList.map((item, index) => (
           <CardItem key={index} {...item} priority={priority} />

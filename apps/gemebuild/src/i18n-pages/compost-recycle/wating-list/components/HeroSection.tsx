@@ -22,7 +22,7 @@ export default function HeroSection({
   PrefetchLink,
 }: IHeroSectionProps) {
   title = title.replace('{city}', city)
-  
+
   const clickHandler = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault()
   }
@@ -31,10 +31,11 @@ export default function HeroSection({
     <div className="relative md:py-32 xl:py-40 overflow-hidden">
       <Image
         priority
-        width={1080}
-        height={500}
+        width={1920}
+        height={700}
+        quality={100}
         src={bgImageUrl}
-        alt=""
+        alt={'Photos of ' + title}
         className="object-cover w-full h-full min-h-[30vh] md:min-h-full md:absolute md:inset-0 z-0"
       />
       <div className="w-full h-full flex items-center justify-center relative z-[1]">

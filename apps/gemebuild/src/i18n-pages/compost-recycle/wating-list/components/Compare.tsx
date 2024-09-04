@@ -16,8 +16,10 @@ export interface ICompareProps {
 export default function Compare({ title, description, items }: ICompareProps) {
   return (
     <SectionContainer compact>
-      <SectionTitle className="!text-[#333]">{title}</SectionTitle>
-      <SectionDescription className="mt-4 md:mt-6">
+      <SectionTitle className="!text-[#333] md:text-center">
+        {title}
+      </SectionTitle>
+      <SectionDescription className="mt-4 md:mt-6 md:text-center">
         {description}
       </SectionDescription>
 
