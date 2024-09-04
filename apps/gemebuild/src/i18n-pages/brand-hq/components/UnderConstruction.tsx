@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import { ILinkComponent } from '../../../contexts/link-context'
-import PrimaryButton from 'ui/src/ui-components/PrimaryButton'
+import { PrimaryButton } from 'ui'
 
 export interface IUnderConstructionProps {
   title: string
