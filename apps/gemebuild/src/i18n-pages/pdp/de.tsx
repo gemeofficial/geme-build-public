@@ -88,7 +88,9 @@ const introProps: IPdpIntroProps = {
       <>
         <strong>400+</strong>
         <br />
-        Abfallarten
+        Abfall
+        <br />
+        -arten
       </>
     ),
   },
@@ -524,11 +526,7 @@ const warrantyProps = {
 // 产品页 User Stories 模块配置内容 De
 const userStoryProps: IPdpUserStoryTeamSectionsProps = {
   title: 'Entdecken Sie die User-Stories von GEME-Kunden',
-  description: (
-    <>
-      Wie GEME das Leben unserer Kunden verändert hat
-    </>
-  ),
+  description: <>Wie GEME das Leben unserer Kunden verändert hat</>,
   people: [
     {
       id: 1,
