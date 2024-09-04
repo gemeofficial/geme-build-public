@@ -28,8 +28,7 @@ const heroSectionProps: IHeroSectionProps = {
   },
   inputPlaceholder: 'Enter your email',
   submitButtonLabel: 'Notify Me',
-  // heroBgImagePc: '/assets/images/geme-terra-2/hero-bg.jpg',
-  heroBgImagePc: '/assets/images/geme-terra-2/product-kitchen-shadow.png',
+  heroBgImagePc: '/assets/images/geme-terra-2/hero-bg-desktop.png',
   heroBgImageMobile: '/assets/images/geme-terra-2/hero-bg-mobile.png',
 }
 
@@ -103,7 +102,7 @@ const imageTextProps: IShortVideoProps = {
       </ul>
     </>
   ),
-  imageUrl: '/assets/images/geme-terra-2/product-kitchen-shadow.png',
+  imageUrl: '/assets/images/geme-terra-2/product-bright.png',
   imageAlt: '',
   isReverse: true,
 }
