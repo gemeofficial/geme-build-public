@@ -11,6 +11,7 @@ import {
 import StarIcon from 'ui/src/reviews/StarIcon'
 import { ILinkComponent } from '../../../../contexts/link-context'
 import ImageZoomViewer from 'ui/src/client-components/ImageZoomViewer'
+import { scrollToWatingListHeading } from './WatingListSection'
 
 export interface IReviewsProps {
   title: string
@@ -34,9 +35,10 @@ export default function Reviews({
   description,
   PrefetchLink,
 }: IReviewsProps) {
-  const clickHandler = (
-    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
-  ) => {}
+  const clickHandler = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault()
+    scrollToWatingListHeading()
+  }
   return (
     <SectionContainer compact>
       <div className="flex justify-center mt-4 md:mt-6">
@@ -44,6 +46,7 @@ export default function Reviews({
           href="#"
           onClick={clickHandler}
           className="!rounded-3xl !py-3 !px-10 w-max"
+          PrefetchLink={PrefetchLink}
         >
           {buttonText}
         </PrimaryButton>

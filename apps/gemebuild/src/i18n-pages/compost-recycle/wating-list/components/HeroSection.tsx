@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { PrimaryButton, SectionDescription, SectionTitle } from 'ui'
 import { ILinkComponent } from '../../../../contexts/link-context'
+import { scrollToWatingListHeading } from './WatingListSection'
 
 export interface IHeroSectionProps {
   city: string
@@ -25,6 +26,7 @@ export default function HeroSection({
 
   const clickHandler = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault()
+    scrollToWatingListHeading()
   }
 
   return (
