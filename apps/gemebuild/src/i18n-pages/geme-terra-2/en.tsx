@@ -379,22 +379,22 @@ const faqProps: IFaqProps = {
   faqs: [
     {
       slug: 'how-it-works',
-      question: 'How it works?',
+      question: 'How does it work?',
       answer: (
         <>
           <h4>
-            ✅ <strong>Simulate compost pile in a box</strong>, ❌
-            <del>not dehydrate and heat</del>
+            ✅ <strong>Simulates a compost pile in a box</strong>, ❌
+            <del>not just dehydration and heat</del>
           </h4>
-          GEME Composters are all home appliances provide and maintain{' '}
-          <strong>an ideal environment</strong> for {`GEME's`} special
-          microbes(GEME Kobold) to break down the bio waste. Terra 2 works in
-          the same principle.
+          GEME Composters are home appliances that provide and maintain{' '}
+          <strong>an ideal environment</strong> for {`GEME's`} special microbes
+          (GEME Kobold) to break down bio-waste. Terra 2 works on the same
+          principle.
           <br />
           <ul>
             <li>
-              <strong>The machine</strong>: Simulates a compost pile in a
-              container, make sure it will not smell.
+              <strong>The Machine</strong>: It simulates a compost pile in a
+              contained environment, ensuring that it will not smell.
               <br />
               <picture>
                 <img
@@ -404,19 +404,18 @@ const faqProps: IFaqProps = {
               </picture>
             </li>
             <li>
-              <strong>The Kobold</strong>: Microbes handle the majority of the
-              workload. They reproduce quickly and absorb energy from the food
-              waste. Just like worms eat food, microbes also consume food waste.
-              Both produce compost.
+              <strong>The Kobold</strong>: Microbes perform most of the work.
+              They reproduce quickly and absorb energy from the food waste. Just
+              like worms consume food, microbes break down waste and produce
+              compost.
               <picture>
                 <img
                   alt="How microbes grow"
                   src="/assets/images/geme-terra-2/microbes-grow.png"
                 />
               </picture>
-              Bacteria reproduce primarily by binary fission, Under ideal
-              conditions, some bacterial species may divide every 10–15
-              minutes—a doubling of the population at these time intervals.
+              Under ideal conditions, some bacterial species can divide every
+              10–15 minutes, doubling the population at these intervals.
             </li>
           </ul>
         </>
@@ -651,12 +650,8 @@ const faqProps: IFaqProps = {
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     Price
                   </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    {`< $600`}
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    {`$150 < x < $500`}
-                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">{`< $600`}</td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">{`$150 < x < $500`}</td>
                 </tr>
                 <tr>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
@@ -669,20 +664,18 @@ const faqProps: IFaqProps = {
                     3L - 4L
                   </td>
                 </tr>
-
                 <tr className="bg-gray-50">
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     Working Mode
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Continues composting
+                    Continuous composting
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Periodically grind and dehydrate
+                    Periodic grinding and dehydrating
                   </td>
                 </tr>
-
-                <tr className="bg-gray-50">
+                <tr>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     End Result
                   </td>
@@ -690,10 +683,9 @@ const faqProps: IFaqProps = {
                     Real compost
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Dry and cooked waste
+                    Dried and cooked waste
                   </td>
                 </tr>
-
                 <tr className="bg-gray-50">
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     Interaction
@@ -702,11 +694,10 @@ const faqProps: IFaqProps = {
                     Add waste anytime
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Wait cycle completed
+                    Wait for cycle to complete
                   </td>
                 </tr>
-
-                <tr className="bg-gray-50">
+                <tr>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     Filter System
                   </td>
@@ -721,10 +712,9 @@ const faqProps: IFaqProps = {
                     Replace every 3 months
                   </td>
                 </tr>
-
                 <tr className="bg-gray-50">
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Clean up
+                    Clean-up
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     No need to clean
@@ -733,20 +723,16 @@ const faqProps: IFaqProps = {
                     Easily clogged
                   </td>
                 </tr>
-
-                <tr className="bg-gray-50">
+                <tr>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     Days to Fill
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     45 days+
                   </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    {`1 day`}
-                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">{`1 day`}</td>
                 </tr>
-
-                <tr className="bg-gray-50">
+                <tr>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     Sound Level
                   </td>
@@ -757,7 +743,6 @@ const faqProps: IFaqProps = {
                     60dB+
                   </td>
                 </tr>
-
                 <tr className="bg-gray-50">
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     Energy Cost
@@ -765,39 +750,36 @@ const faqProps: IFaqProps = {
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     1.2~1.7 kWh/day
                     <br />
-                    similar to a MacBook Pro
+                    Similar to a MacBook Pro
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     500W+ Power
                     <br />
-                    similar to an oven
+                    Similar to an oven
                   </td>
                 </tr>
-
                 <tr className="bg-gray-50">
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     Space
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Floor, Countertop
+                    Floor, countertop
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     Countertop only
                   </td>
                 </tr>
-
-                <tr className="bg-gray-50">
+                <tr>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    How to start
+                    How to Start
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Throw and close the lid
+                    Throw in and close the lid
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Prepare tuning, carefully align lid
+                    Align lid carefully
                   </td>
                 </tr>
-
                 <tr className="bg-gray-50">
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     Liquid Waste
@@ -809,8 +791,7 @@ const faqProps: IFaqProps = {
                     No
                   </td>
                 </tr>
-
-                <tr className="bg-gray-50">
+                <tr>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     Meat
                   </td>
@@ -821,10 +802,9 @@ const faqProps: IFaqProps = {
                     No
                   </td>
                 </tr>
-
                 <tr className="bg-gray-50">
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Support Pet Poop
+                    Supports Pet Waste
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     Yes
@@ -833,8 +813,7 @@ const faqProps: IFaqProps = {
                     No
                   </td>
                 </tr>
-
-                <tr className="bg-gray-50">
+                <tr>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
                     Up to 3kg
                   </td>
@@ -848,7 +827,6 @@ const faqProps: IFaqProps = {
               </tbody>
             </table>
           </div>
-
           <iframe
             className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
             src="https://www.youtube.com/embed/-qkjLB3GcKo"
@@ -856,7 +834,6 @@ const faqProps: IFaqProps = {
             title="Product Overview Video"
             aria-hidden="true"
           />
-          {/*<YouTubeEmbed videoid="-qkjLB3GcKo" height={400} width={720}/>*/}
         </>
       ),
     },
@@ -872,7 +849,7 @@ const faqProps: IFaqProps = {
         <>
           <div className="max-w-3xl mx-auto p-6">
             <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              Almost all food you eat can go into GEME.
+              Almost all food you eat can go into the GEME composter.
             </p>
             <div className="flex flex-col md:flex-row items-start md:items-center mb-6">
               <picture>
@@ -884,7 +861,7 @@ const faqProps: IFaqProps = {
             </div>
 
             <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              It also support liquid waste like soup.
+              It also supports liquid waste, like soup.
               <iframe
                 className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
                 src="https://www.youtube.com/embed/yGkcEaeXlQQ"
@@ -895,71 +872,67 @@ const faqProps: IFaqProps = {
             </p>
 
             <p className="text-gray-700 text-lg leading-relaxed">
-              It also can breakdown pet poop, like dog pop and cat litter.
+              It can also break down pet waste, such as dog poop and cat litter.
             </p>
             <picture>
               <img
                 src="/assets/images/geme-terra-2/cat-litter.png"
-                alt="GEME Composter Supported Food Waste"
+                alt="GEME Composter Supported Pet Waste"
               />
             </picture>
           </div>
         </>
       ),
     },
-    // {
-    //   slug: 'what-is-the-electricity-cost',
-    //   question:
-    //     'Aside from food waste, can I put other waste like tissue, paper, or bioplastics?',
-    //   answer: ``,
-    // },
     {
       slug: 'how-long-will-it-take-for-geme-to-turn-my-food-waste-into-compost',
       question: 'How long will it take to turn my food waste into compost?',
       answer: (
         <>
-          For most of the daily left over, it takes around 6 to 8 hours to
-          breakdown the waste.
+          For most daily leftovers, it takes around 6 to 8 hours to break down
+          the waste.
           <br />
-          Check this uncut 7 hours video.(BTW,{' '}
+          Check out this uncut 7-hour video. (
           <b className="text-gray-500">
-            none of our competitors dare share such live video to public
+            none of our competitors dare to share such live videos with the
+            public
           </b>
           )
           <iframe
             className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
             src="https://www.youtube.com/embed/asNRoqkC_BA"
             frameBorder="0"
-            title="GEME breakdown food wate in 7 hours uncut video"
+            title="GEME breaks down food waste in 7 hours - uncut video"
             aria-hidden="true"
           />
-          However, for some food waste like orange peels, it will take slightly
-          longer. Because the fibers are hard to breakdown. Small bones take
-          even longer.
+          However, for certain food waste, like orange peels, it will take
+          slightly longer due to their tough fibers. Small bones take even more
+          time.
           <picture>
             <img
               src="https://www.geme.bio/help-center/assets/images/supported-foodwaste-guide-055cef03c7c375f24ce99e1625de5d6f.png"
               alt="GEME Composter Supported Food Waste"
             />
           </picture>
-          <strong>Note</strong>, it takes few hours or days to breakdown, it is
-          turning into the state of compost. However, it still need more time to
-          become finished compost. We recommend wait more than 45 days to take
-          them our to use. Or you can mix the unfinished compost with soil in
-          1:8 to grow your plant.
+          <strong>Note:</strong> While it takes a few hours or days to break
+          down into compost, this is not yet finished compost. We recommend
+          waiting at least 45 days before using it. Alternatively, you can mix
+          the unfinished compost with soil at a 1:8 ratio to grow your plants.
         </>
       ),
     },
     {
       slug: 'is-it-smell-how-often-should-i-replace-the-carbon-filter',
-      question: 'Is it smell? How often should I replace the carbon filter?',
+      question: 'Does it smell? How often should I replace the carbon filter?',
       answer: (
         <>
           <div>
-            {`It won't smell`}, it uses the{' '}
-            <strong>metal ion catalytic oxidation</strong> technology to process
-            the odor. It does not use any carbon filters. Hence, you {`don't`}{' '}
-            need to replace the filter. The filter can use for life time long.
+            {`It doesn't smell`} because it uses{' '}
+            <strong>metal ion catalytic oxidation</strong> technology to
+            neutralize odors. Unlike traditional composters,{' '}
+            {`it doesn't use
+            carbon filters, so there's no need to replace them. The filter is
+            designed to last a lifetime.`}
           </div>
           <div className="container mx-auto p-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -967,15 +940,14 @@ const faqProps: IFaqProps = {
                 <picture>
                   <img
                     src="/assets/images/geme-terra-2/odor/1.jpg"
-                    alt="Image 1"
+                    alt="Photocatalyst UV Layer"
                     className="w-full h-auto rounded-t-lg"
                   />
                 </picture>
                 <div className="p-4">
                   <h2 className="text-xl font-semibold mb-2">Layer 1</h2>
                   <p className="text-gray-700">
-                    Photocatalyst, UV light will kill most of the harmful
-                    bacteria
+                    Photocatalyst and UV light that eliminate harmful bacteria.
                   </p>
                 </div>
               </div>
@@ -984,13 +956,15 @@ const faqProps: IFaqProps = {
                 <picture>
                   <img
                     src="/assets/images/geme-terra-2/odor/2.jpg"
-                    alt="Image 2"
+                    alt="Metal Ion Oxidation Layer"
                     className="w-full h-auto rounded-t-lg"
                   />
                 </picture>
                 <div className="p-4">
                   <h2 className="text-xl font-semibold mb-2">Layer 2</h2>
-                  <p className="text-gray-700">Metal ion catalytic oxidation</p>
+                  <p className="text-gray-700">
+                    Metal ion catalytic oxidation process.
+                  </p>
                 </div>
               </div>
 
@@ -998,14 +972,14 @@ const faqProps: IFaqProps = {
                 <picture>
                   <img
                     src="/assets/images/geme-terra-2/odor/3.jpg"
-                    alt="Image 3"
+                    alt="Aerobic Air Exchange Layer"
                     className="w-full h-auto rounded-t-lg"
                   />
                 </picture>
                 <div className="p-4">
                   <h2 className="text-xl font-semibold mb-2">Layer 3</h2>
                   <p className="text-gray-700">
-                    Powerful aerobic air exchange system
+                    A powerful aerobic air exchange system for odor control.
                   </p>
                 </div>
               </div>
@@ -1020,44 +994,45 @@ const faqProps: IFaqProps = {
       question: 'How often should I clean the bin?',
       answer: (
         <>
-          Technically, there is no need to clean the bin. It does not look good
-          and a little smell when you open the lid. But when you close the lid,
-          it is clean and odorless. <br />
-          The real question you want to ask might be, how often should I harvest
+          Technically, there is no need to clean the bin. It may not look great,
+          and there might be a slight odor when you open the lid, but once the
+          lid is closed, it remains clean and odorless. <br />
+          The real question you might want to ask is: How often should I harvest
           the compost?
           <div className="container mx-auto p-6">
-            <h5 className="text-1xl font-semibold text-gray-800 mb-4">
-              {`Don't over pass the full limit line`}
+            <h5 className="text-xl font-semibold text-gray-800 mb-4">
+              {`Don't exceed the full limit line`}
             </h5>
             <p className="text-gray-700 mb-6">
-              This is a hard limit, if it get full, remove the compost out ASAP.
+              This is a hard limit. If it gets full, remove the compost as soon
+              as possible.
             </p>
 
-            <h5 className="text-1xl font-semibold text-gray-800 mb-4">
-              Do not empty all of them out
+            <h5 className="text-xl font-semibold text-gray-800 mb-4">
+              Do not empty all of the compost
             </h5>
             <p className="text-gray-700 mb-6">
-              Every time you remove the compost, remain some of them in the
-              base, so the bacteria in GEME Kobold can reproduce and accept new
-              food waste again.
+              Every time you remove compost, leave some at the base so that the
+              bacteria in the GEME Kobold can reproduce and continue processing
+              new food waste.
               <strong className="text-v2311-primary">
-                Keep the compost the same level as the agitator shaft
+                Keep the compost level aligned with the agitator shaft.
               </strong>
             </p>
 
-            <h5 className="text-1xl font-semibold text-gray-800 mb-4">
-              Recommend: remove when the paddle get fully buried
+            <h5 className="text-xl font-semibold text-gray-800 mb-4">
+              Recommended: Remove compost when the paddle is fully buried
             </h5>
             <p className="text-gray-700 mb-6">
-              See the yellow line of the picture. This is a best practice, you
-              can gain your compost quickly and reduce the workload of machine
-              for longevity.
+              Look for the yellow line in the picture below. This is a best
+              practice that allows you to collect compost more efficiently while
+              reducing the machine’s workload, helping to extend its lifespan.
             </p>
           </div>
           <picture>
             <img
               src="/assets/images/geme-terra-2/harvest-compost/best-practice-removal.png"
-              alt="Best practice to remove GEME Compost"
+              alt="Best practice to remove GEME compost"
             />
           </picture>
         </>
@@ -1066,7 +1041,7 @@ const faqProps: IFaqProps = {
 
     {
       slug: 'what-is-the-maintenance-cost-for-keep-the-unit',
-      question: 'What is the maintenance cost for keep the unit?',
+      question: 'What is the maintenance cost to keep the unit?',
       answer: (
         <>
           <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg">
@@ -1219,16 +1194,16 @@ const faqProps: IFaqProps = {
 
     {
       slug: 'when-will-it-be-on-sale? and-what-is-the-price',
-      question: 'When will it be on sale? and what is the price?',
-      answer: `The final testing is almost complete, and the estimated timeline for sale is early next year. The price less than $600.`,
+      question: 'When will it go on sale, and what will the price be?',
+      answer: `he final testing is almost complete, and the estimated timeline for sales is early next year. The price will be less than $600.`,
     },
   ],
 }
 
 // subscribe
 const subscribeProps: ISubscribeProps = {
-  title: 'Subscribe to our newsletter.',
-  description: `Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt dolore.`,
+  title: 'Subscribe to our waiting list',
+  description: `Be the first to use the GEME Terra 2. You will be notified in the priority queue and receive the early bird price.`,
   productImage: '/assets/images/geme-v2-product/geme-v2-1-color.png',
   inputPlaceholder: 'Enter your email',
   submitButtonLabel: 'Notify Me',
