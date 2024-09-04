@@ -32,7 +32,7 @@ export default function HeroSection({
         priority
         className="hidden md:block absolute inset-0 h-full w-full object-cover"
         fill
-        sizes="(max-width: 768px) 1vw,(min-width: 1281px) 60vw, (min-width: 1920px) 80vw,(min-width: 2420px) 100vw, 1vw"
+        sizes="(min-width: 768px) 60vw,(min-width: 1920px) 80vw,(min-width: 2420px) 100vw, 1vw"
       />
       <Image
         src={heroBgImageMobile}
@@ -40,7 +40,7 @@ export default function HeroSection({
         priority
         className="md:hidden absolute inset-0 h-full w-full object-cover"
         fill
-        sizes="(max-width: 768px) 100vw, (min-width: 769px) 1vw, 1vw"
+        sizes="(max-width: 768px) 100vw, 1vw"
       />
       <div className="absolute inset-0 h-full w-full bg-black/50"></div>
 
@@ -65,14 +65,14 @@ export default function HeroSection({
             )}
           </div>
 
-          <HeroSectionVideo
+          {/* <HeroSectionVideo
             fullScreenVideoUrl={fullScreenVideoUrl}
             videoProps={videoProps}
             mixpanelStatPayload={{
               title: 'Watch video',
-              payload: { From: 'Geme-v2 hero video' },
+              payload: { From: 'Geme Terra 2 hero video' },
             }}
-          />
+          /> */}
         </div>
       </div>
     </div>

@@ -53,10 +53,18 @@ export default function Faq({ faqs, title, description }: IFaqProps) {
 
                 <Transition
                   show={openIndex === index}
-                  enter="transition-all duration-300 ease-out"
+                  enter={clsx(
+                    openIndex === index
+                      ? 'transition-all duration-300 ease-out'
+                      : '',
+                  )}
                   enterFrom="transform max-h-0 opacity-50"
                   enterTo="transform max-h-[2000px] opacity-100"
-                  leave="transition-all duration-300 ease-out"
+                  leave={clsx(
+                    openIndex === index
+                      ? 'transition-all duration-300 ease-out'
+                      : '',
+                  )}
                   leaveFrom="transform max-h-[2000px] opacity-100"
                   leaveTo="transform max-h-0 opacity-50"
                 >
