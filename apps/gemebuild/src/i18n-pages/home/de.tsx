@@ -112,7 +112,7 @@ const heroSectionSwiperProps: IHomeHeroSectionSwiperProps = {
       </>
     ),
     linkText: 'Mehr erfahren',
-    linkUrl: '/geme-v2',
+    linkUrl: '/geme-terra-2',
     heroImageUrlPc: '/assets/images/home-v2311/hero-bg-3.jpg',
     heroImageUrlMobile: '/assets/images/home-v2311/hero-bg-mobile-3.jpg',
   },

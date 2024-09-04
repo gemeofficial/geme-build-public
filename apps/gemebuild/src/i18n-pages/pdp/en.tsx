@@ -106,7 +106,7 @@ const introProps: IPdpIntroProps = {
 
   // Introduction 第5部分 En
   contentSection21Props: {
-    title: 'No Daily Cleaning Required, Take Months to Fill Up',
+    title: 'No Daily Cleaning Required, Take Months to Fill',
     description: (
       <>
         🫳&nbsp;&nbsp;Add waste at anytime <br />
@@ -283,7 +283,7 @@ const compareProps: IPdpCompareProps = {
           },
           {
             title: '19L super large volume',
-            desc: 'Take months to fill up',
+            desc: 'Take months to fill',
           },
           {
             title: 'Also pet poops & soup',

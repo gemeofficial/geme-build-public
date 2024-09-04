@@ -22,6 +22,7 @@ export * from './customer-service'
 export * from './geme-care'
 export * from './reviews'
 export * from './ifa'
+export * from './geme-terra-2'
 export * from './media-kit'
 export * from './brand-hq'
 
