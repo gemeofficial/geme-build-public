@@ -4,7 +4,7 @@ import { Disclosure, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/24/outline'
 import clsx from 'clsx'
 import { useState } from 'react'
-import { SectionContainer, SectionDescription, SectionTitle } from 'ui'
+import { SectionContainer, SectionDescription, SectionTitle } from '../index'
 
 export interface IFaqProps {
   title: string
@@ -16,7 +16,7 @@ export interface IFaqProps {
   }[]
 }
 
-export default function Faq({ faqs, title, description }: IFaqProps) {
+export function Faq({ faqs, title, description }: IFaqProps) {
   const [openIndex, setOpenIndex] = useState(-1)
 
   return (

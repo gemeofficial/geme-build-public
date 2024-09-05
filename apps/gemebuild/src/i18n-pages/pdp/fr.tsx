@@ -26,6 +26,7 @@ const tabs: IPdpTabsText = {
   warranty: 'Garantie',
   userStories: `Histoires d'utilisateurs`,
   reviews: 'Avis',
+  faq: 'FAQ',
 }
 
 // ----------------  产品页 Introduction模块内容配置 Fr start  ----------------------
