@@ -262,11 +262,38 @@ export const pdpFaqProps: IFaqProps = {
         </>
       ),
     },
-    // {
-    //   slug: 'can-I-add-food-waste-when-it-is-running',
-    //   question: 'Can I add food waste when it is running?',
-    //   answer: ``,
-    // },
+    {
+      slug: 'can-I-add-food-waste-when-it-is-running',
+      question: 'Can I add food waste when it is running?',
+      answer: `Yes`,
+    },
+    {
+      slug: 'how-much-food-waste-can-i-add-at-once',
+      question: 'How much food waste can I add at once?',
+      answer: (
+        <>
+          You can add <strong>up to 2kg</strong> at one time. You can add food
+          waste multiple times in one day, but{' '}
+          <strong>please do not exceed 5kg</strong> in a single day.
+          <br />
+          <br />
+          <em>Note:</em> The container can hold up to <strong>19L</strong>, but
+          this {"doesn't"} mean you can fill it completely at once.
+          <br />
+          <br />
+          Adding <strong>5kg of waste at once</strong> is possible and has pass
+          factory benchmark testing, but it is{' '}
+          <strong>not recommended for daily use</strong>.
+          <iframe
+            className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
+            src="https://www.youtube.com/embed/JV0nZtaRaD0"
+            frameBorder="0"
+            title="GEME breaks down food waste in 7 hours - uncut video"
+            aria-hidden="true"
+          />
+        </>
+      ),
+    },
     {
       slug: 'what-kinds-of-food-waste-can-i-put',
       question: 'What kinds of food waste can I put?',
