@@ -426,11 +426,11 @@ export const pdpFaqProps: IFaqProps = {
           Technically, there is no need to clean the bin. It may not look great,
           and there might be a slight odor when you open the lid, but once the
           lid is closed, it remains clean and odorless. <br />
-          The real question you might want to ask is: How often should I harvest
-          the compost?
-          <div className="container mx-auto p-6">
+          The real question you might want to ask is:{' '}
+          <strong>How often should I harvest the compost?</strong>
+          <div className="container mx-auto p-4">
             <h5 className="text-xl font-semibold text-gray-800 mb-4">
-              {`Don't exceed the full limit line`}
+              {`1. Don't exceed the full limit line`}
             </h5>
             <p className="text-gray-700 mb-6">
               This is a hard limit. If it gets full, remove the compost as soon
@@ -438,7 +438,7 @@ export const pdpFaqProps: IFaqProps = {
             </p>
 
             <h5 className="text-xl font-semibold text-gray-800 mb-4">
-              Do not empty all of the compost
+              2. Do not empty all of the compost
             </h5>
             <p className="text-gray-700 mb-6">
               Every time you remove compost, leave some at the base so that the
@@ -450,7 +450,7 @@ export const pdpFaqProps: IFaqProps = {
             </p>
 
             <h5 className="text-xl font-semibold text-gray-800 mb-4">
-              Recommended: Remove compost when the paddle is fully buried
+              3. Recommended: Remove compost when the paddle is fully buried
             </h5>
             <p className="text-gray-700 mb-6">
               Look for the yellow line in the picture below. This is a best
@@ -464,6 +464,21 @@ export const pdpFaqProps: IFaqProps = {
               alt="Best practice to remove GEME compost"
             />
           </picture>
+        </>
+      ),
+    },
+
+    {
+      slug: 'can-i-feed-the-output-compost-to-my-worm-bin',
+      question:
+        'Can I feed the output from GEME to my worm bin for vermin composting?',
+      answer: (
+        <>
+          Yes, you can! The microbes from <a href="/geme-kobold">GEME Kobold</a>{' '}
+          are collected and extracted from nature. They are not harmful to
+          animals and good to the soil. They can work perfectly with worms in
+          the worm bin. The unfinished organic material will be the best food
+          for the worms while the decomposed material remains high nutrient.
         </>
       ),
     },
