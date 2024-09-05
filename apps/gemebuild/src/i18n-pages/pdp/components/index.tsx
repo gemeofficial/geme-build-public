@@ -16,7 +16,7 @@ import {
 import { ReviewsSectionModule } from '../../../components/reviews-section-module'
 import Compare, { IPdpCompareProps } from './Compare'
 import { IProductProps } from '../en'
-import { pdpFaqProps } from './faq-data'
+import { getPdpFaqProps } from './faq-data'
 
 export interface IPdpTabsText {
   intro: ReactNode
@@ -113,7 +113,7 @@ function PdpContent(props: IPdpContentProps) {
         {
           id: 7,
           tabLabel: tabs.faq,
-          tabPanel: <Faq {...pdpFaqProps} />,
+          tabPanel: <Faq {...getPdpFaqProps(locale)} />,
         },
       ],
     }),
