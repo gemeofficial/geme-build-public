@@ -50,209 +50,6 @@ export const pdpFaqProps: IFaqProps = {
       ),
     },
     {
-      slug: 'what-is-the-difference-between-geme-one',
-      question: 'What is the difference between GEME Terra 2 and GEME One?',
-      answer: (
-        <>
-          <div className="overflow-x-auto">
-            <table className="min-w-full bg-white border border-gray-300">
-              <thead>
-                <tr>
-                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
-                    Features
-                  </th>
-                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
-                    GEME Terra 2
-                  </th>
-                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
-                    GEME Classic
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="bg-gray-50">
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Price
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    {`< $600`}
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    $899.99
-                  </td>
-                </tr>
-                <tr>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Size
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    14L
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    19L
-                  </td>
-                </tr>
-                <tr>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Weight
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    {`<= 13kg`}
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    20 kg
-                  </td>
-                </tr>
-                <tr className="bg-gray-50">
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Process Capacity
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    3kg/day
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    5kg/day
-                  </td>
-                </tr>
-
-                <tr className="bg-gray-50">
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Days to Fill
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    45days+
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    60days+
-                  </td>
-                </tr>
-
-                <tr className="bg-gray-50">
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Sound Level
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    25dB to 40dB
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    30dB to 45dB
-                  </td>
-                </tr>
-
-                <tr className="bg-gray-50">
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Energy Saving
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Smart
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Simple
-                  </td>
-                </tr>
-
-                <tr className="bg-gray-50">
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Space
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Floor, Countertop
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Floor
-                  </td>
-                </tr>
-
-                <tr className="bg-gray-50">
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Permanent Filter
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Yes
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Yes
-                  </td>
-                </tr>
-
-                <tr className="bg-gray-50">
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Intelligent Monitoring
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Yes
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    No
-                  </td>
-                </tr>
-
-                <tr className="bg-gray-50">
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Harvest Indication
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Yes
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    No
-                  </td>
-                </tr>
-
-                <tr className="bg-gray-50">
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Reactive Opening
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Yes
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    No
-                  </td>
-                </tr>
-
-                <tr className="bg-gray-50">
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Overweight Reminder
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Yes
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    No
-                  </td>
-                </tr>
-
-                <tr className="bg-gray-50">
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Visible Processing
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Yes
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    No
-                  </td>
-                </tr>
-
-                <tr className="bg-gray-50">
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Child Lock
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Yes
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    No
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </>
-      ),
-    },
-    {
       slug: 'what-is-the-difference-between-other-electric-composters-like-lomi',
       question:
         'What is the difference between other electric composters like Lomi?',
@@ -556,11 +353,15 @@ export const pdpFaqProps: IFaqProps = {
         <>
           <div>
             {`It doesn't smell`} because it uses{' '}
-            <strong>metal ion catalytic oxidation</strong> technology to
-            neutralize odors. Unlike traditional composters,{' '}
-            {`it doesn't use
-            carbon filters, so there's no need to replace them. The filter is
-            designed to last a lifetime.`}
+            <strong className="text-v2311-primary">
+              metal ion catalytic oxidation
+            </strong>{' '}
+            technology to neutralize odors. Unlike traditional composters,{' '}
+            {`it doesn't use carbon filters, so there's `}
+            <strong className="text-v2311-primary">
+              no need to replace them
+            </strong>
+            . The filter is designed to last a lifetime.
           </div>
           <div className="container mx-auto p-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -669,7 +470,7 @@ export const pdpFaqProps: IFaqProps = {
 
     {
       slug: 'what-is-the-maintenance-cost-for-keep-the-unit',
-      question: 'What is the maintenance cost to keep the unit?',
+      question: 'What is the electricity cost to keep the unit?',
       answer: (
         <>
           <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg">
@@ -818,12 +619,6 @@ export const pdpFaqProps: IFaqProps = {
           </div>
         </>
       ),
-    },
-
-    {
-      slug: 'when-will-it-be-on-sale? and-what-is-the-price',
-      question: 'When will it go on sale, and what will the price be?',
-      answer: `he final testing is almost complete, and the estimated timeline for sales is early next year. The price will be less than $600.`,
     },
   ],
 }
