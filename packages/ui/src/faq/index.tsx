@@ -14,14 +14,15 @@ export interface IFaqProps {
     question: string
     answer: React.ReactNode
   }[]
+  titleClassName?: string
 }
 
-export function Faq({ faqs, title, description }: IFaqProps) {
+export function Faq({ faqs, title, description, titleClassName }: IFaqProps) {
   const [openIndex, setOpenIndex] = useState(-1)
 
   return (
     <SectionContainer compact>
-      <SectionTitle>{title}</SectionTitle>
+      <SectionTitle className={clsx(titleClassName)}>{title}</SectionTitle>
       {description && <SectionDescription>{description}</SectionDescription>}
       <dl className="mt-10 space-y-6 divide-y divide-gray-900/10 max-w-4xl mx-auto">
         {faqs.map((faq, index) => (
@@ -59,13 +60,13 @@ export function Faq({ faqs, title, description }: IFaqProps) {
                       : '',
                   )}
                   enterFrom="transform max-h-0 opacity-50"
-                  enterTo="transform max-h-[2000px] opacity-100"
+                  enterTo="transform max-h-max opacity-100"
                   leave={clsx(
                     openIndex === index
                       ? 'transition-all duration-300 ease-out'
                       : '',
                   )}
-                  leaveFrom="transform max-h-[2000px] opacity-100"
+                  leaveFrom="transform max-h-max opacity-100"
                   leaveTo="transform max-h-0 opacity-50"
                 >
                   <Disclosure.Panel static as="dd" className="mt-2 pr-12">
