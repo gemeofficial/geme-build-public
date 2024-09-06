@@ -126,17 +126,29 @@ function HeroSection1({
         />
       </div>
 
-      <HeroSectionVideo
-        mixpanelStatPayload={{
-          title: 'Watch video',
-          payload: { From: 'Home hero video' },
-        }}
-        videoProps={videoProps}
-        fullScreenVideoUrl={
-          fullScreenVideoUrl || 'https://www.youtube.com/embed/ROJYZBp0jcM'
-        }
-        className={videoClassName}
-      />
+      <iframe
+        className="portrait:w-48 portrait:h-28 portrait:lg:w-72 portrait:lg:h-44 absolute right-[18px] bottom-[18px] z-40"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Rw7isYdlCPo?si=a2aDoNNMWhjymtOt"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      ></iframe>
+
+      {/*<HeroSectionVideo*/}
+      {/*  mixpanelStatPayload={{*/}
+      {/*    title: 'Watch video',*/}
+      {/*    payload: { From: 'Home hero video' },*/}
+      {/*  }}*/}
+      {/*  videoProps={videoProps}*/}
+      {/*  fullScreenVideoUrl={*/}
+      {/*    fullScreenVideoUrl || 'https://www.youtube.com/embed/ROJYZBp0jcM'*/}
+      {/*  }*/}
+      {/*  className={videoClassName}*/}
+      {/*/>*/}
     </div>
   )
 }
