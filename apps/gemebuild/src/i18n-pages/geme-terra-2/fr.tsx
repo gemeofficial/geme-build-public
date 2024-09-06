@@ -178,7 +178,7 @@ const compareProps: ICompareProps = {
 // Reviews
 const reviewsProps: IReviewsProps = {
   subTitle: 'Testimonials',
-  title: 'Satisfying 1000+ Customers',
+  title: 'Satisfying 10000+ Customers',
   featuredTestimonial: {
     body: 'I went to internet and looked more and found out yours and the adertising says that it is bio composter and saw videos and at last i found yours i loved it. I want to buy my composters !  I am ready for 2 more now. Maybe the three.',
     author: {
