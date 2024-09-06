@@ -60,13 +60,13 @@ export function Faq({ faqs, title, description, titleClassName }: IFaqProps) {
                       : '',
                   )}
                   enterFrom="transform max-h-0 opacity-50"
-                  enterTo="transform max-h-[2000px] opacity-100"
+                  enterTo="transform max-h-max opacity-100"
                   leave={clsx(
                     openIndex === index
                       ? 'transition-all duration-300 ease-out'
                       : '',
                   )}
-                  leaveFrom="transform max-h-[2000px] opacity-100"
+                  leaveFrom="transform max-h-max opacity-100"
                   leaveTo="transform max-h-0 opacity-50"
                 >
                   <Disclosure.Panel static as="dd" className="mt-2 pr-12">

@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+/* eslint-disable @next/next/no-img-element */
 
 import { IFaqProps } from 'ui'
 
@@ -76,10 +77,8 @@ export const koboldFaqPropsEn: IFaqProps = {
         <>
           <div className="mb-8">
             <h2
-              // className="bold"
               style={{
                 fontWeight: 'bold',
-                // marginBottom: '20px'
               }}
             >
               How Does the GEME Composter Work?
@@ -88,8 +87,6 @@ export const koboldFaqPropsEn: IFaqProps = {
             <h3
               style={{
                 fontWeight: '600',
-                // marginTop: '20px',
-                // marginBottom: '10px',
               }}
             >
               1. Simulating a Compost Pile in a Controlled Environment
@@ -112,8 +109,6 @@ export const koboldFaqPropsEn: IFaqProps = {
             <h4
               style={{
                 fontWeight: '500',
-                // marginTop: '20px',
-                // marginBottom: '10px',
               }}
             >
               The Technology Behind GEME Composters
@@ -204,8 +199,6 @@ export const koboldFaqPropsEn: IFaqProps = {
             <h3
               style={{
                 fontWeight: '600',
-                // marginTop: '30px',
-                // marginBottom: '10px',
               }}
             >
               2. The Machine: Containing the Composting Process
@@ -227,8 +220,6 @@ export const koboldFaqPropsEn: IFaqProps = {
             <h3
               style={{
                 fontWeight: '600',
-                // marginTop: '30px',
-                // marginBottom: '10px',
               }}
             >
               3. The Microbes: The Real Workhorses
@@ -245,8 +236,6 @@ export const koboldFaqPropsEn: IFaqProps = {
             <h4
               style={{
                 fontWeight: '500',
-                // marginTop: '20px',
-                // marginBottom: '10px',
               }}
             >
               Microbial Growth and Activity
@@ -269,8 +258,6 @@ export const koboldFaqPropsEn: IFaqProps = {
             <h4
               style={{
                 fontWeight: '500',
-                // marginTop: '30px',
-                // marginBottom: '10px',
               }}
             >
               Conclusion
@@ -286,6 +273,7 @@ export const koboldFaqPropsEn: IFaqProps = {
         </>
       ),
     },
+
     {
       slug: 'what-is-the-difference-between-the-starter-kobold-and-the-refill-kobold',
       question:
@@ -309,7 +297,6 @@ export const koboldFaqPropsEn: IFaqProps = {
               display: 'flex',
               justifyContent: 'flex-start',
               alignItems: 'flex-start',
-              // marginTop: '10px',
             }}
           >
             <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
@@ -350,7 +337,6 @@ export const koboldFaqPropsEn: IFaqProps = {
               display: 'flex',
               justifyContent: 'flex-start',
               alignItems: 'flex-start',
-              // marginTop: '10px',
             }}
           >
             <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
@@ -650,7 +636,6 @@ export const koboldFaqPropsEn: IFaqProps = {
         </>
       ),
     },
-
     {
       slug: 'how-often-should-i-replace-the-kobold',
       question:
@@ -689,7 +674,6 @@ export const koboldFaqPropsEn: IFaqProps = {
         </>
       ),
     },
-
     {
       slug: 'how-often-should-i-replace-the-kobold',
       question:
@@ -709,7 +693,6 @@ export const koboldFaqPropsEn: IFaqProps = {
         </>
       ),
     },
-
     {
       slug: 'where-can-i-buy-more-kobold',
       question: 'Where can I buy more Kobold?',
@@ -723,540 +706,716 @@ export const koboldFaqPropsDe: IFaqProps = {
   description: '',
   faqs: [
     {
+      slug: 'what-is-geme-kobold',
+      question: 'Was ist GEME Kobold?',
+      answer: (
+        <>
+          <p>
+            GEME Kobold ist ein Produkt, das eine Gruppe von Mikroben enthält.
+            Diese Mikroben sind der Schlüssel zur Zersetzung von
+            Lebensmittelresten und Bioabfällen. Sobald sie auf organische
+            Abfälle aufgetragen werden, beginnt der schnelle
+            Kompostierungsprozess. Die Mikroben bilden eine Mikrobiota und
+            regenerieren sich schnell. Lebensmittelabfälle dienen als perfektes
+            Futter für diese Mikroben, wodurch sie sich ernähren und vermehren
+            können. Diese Mikroben werden sorgfältig aus komplexen natürlichen
+            Quellen ausgewählt und durch eine Reihe von mikrobiologischen
+            Verfahren verfeinert.
+          </p>
+
+          <p className="mt-4">
+            Um die Rolle von GEME Kobold besser zu verstehen, betrachten Sie
+            diese Beispiele: Genauso wie Hühner auf einem Bauernhof
+            Küchenabfälle fressen und Würmer in einem Wurmbehälter
+            Lebensmittelreste zersetzen, zersetzen die GEME Kobold Mikroben
+            Lebensmittelabfälle im GEME Komposter. Jeder spielt eine
+            einzigartige Rolle bei der Abfallreduzierung, indem natürliche
+            Prozesse zur Wiederverwertung von organischen Materialien genutzt
+            werden.
+          </p>
+
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'flex-start',
+              alignItems: 'flex-start',
+              marginTop: '20px',
+            }}
+          >
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <h3>Hühner</h3>
+              <img
+                src="/assets/images/geme-kobold/faq/chicken-farm.png"
+                alt="Hühner fressen Abfälle"
+              />
+              <p>Abfälle auf dem Bauernhof</p>
+            </div>
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <h3>Würmer</h3>
+              <img
+                src="/assets/images/geme-kobold/faq/worm-bin.png"
+                alt="Würmer im Wurmbehälter"
+              />
+              <p>Abfälle im Wurmbehälter</p>
+            </div>
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <h3>Kobold Mikroben</h3>
+              <img
+                src="/assets/images/geme-kobold/faq/geme-composter.jpg"
+                alt="Kobold Mikroben im Komposter"
+              />
+              <p>Abfälle im GEME Komposter</p>
+            </div>
+          </div>
+        </>
+      ),
+    },
+    {
       slug: 'how-it-works',
       question: 'Wie funktioniert es?',
       answer: (
         <>
-          <h4>
-            ✅ <strong>Simuliert einen Komposthaufen in einer Box</strong>, ❌
-            <del>nicht nur Dehydration und Hitze</del>
-          </h4>
-          GEME Komposter sind Haushaltsgeräte, die eine{' '}
-          <strong>ideale Umgebung</strong> für {`GEME's`} spezielle Mikroben
-          (GEME Kobold) bieten und aufrechterhalten, um Bioabfälle abzubauen.
-          Terra 2 funktioniert nach dem gleichen Prinzip.
-          <br />
-          <ul>
-            <li>
-              <strong>Die Maschine</strong>: Sie simuliert einen Komposthaufen
-              in einer geschlossenen Umgebung und stellt sicher, dass es nicht
-              riecht.
-              <br />
-              <picture>
-                <img
-                  alt="Wie der elektrische Komposter funktioniert"
-                  src="/assets/images/how-it-works/how-geme-composter-works.jpg"
-                />
-              </picture>
-            </li>
-            <li>
-              <strong>Der Kobold</strong>: Mikroben erledigen die meiste Arbeit.
-              Sie vermehren sich schnell und nehmen Energie aus den
-              Lebensmittelabfällen auf. Genau wie Würmer Nahrung konsumieren,
-              bauen Mikroben Abfälle ab und produzieren Kompost.
-              <picture>
-                <img
-                  alt="Wie Mikroben wachsen"
-                  src="/assets/images/geme-terra-2/microbes-grow.png"
-                />
-              </picture>
-              Unter idealen Bedingungen können sich einige Bakterienarten alle
-              10–15 Minuten teilen und die Population in diesen Intervallen
-              verdoppeln.
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      slug: 'what-is-the-difference-between-other-electric-composters-like-lomi',
-      question:
-        'Was ist der Unterschied zu anderen elektrischen Kompostern wie Lomi?',
-      answer: (
-        <>
-          <div className="overflow-x-auto">
-            <table className="min-w-full bg-white border border-gray-300">
-              <thead>
-                <tr>
-                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
-                    Merkmale
-                  </th>
-                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
-                    GEME Terra 2
-                  </th>
-                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
-                    Lomi-ähnliche Dehydratoren
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="bg-gray-50">
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Preis
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">{`< 600 €`}</td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">{`150 € < x < 500 €`}</td>
-                </tr>
-                <tr>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Größe
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    14L
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    3L - 4L
-                  </td>
-                </tr>
-                <tr className="bg-gray-50">
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Arbeitsmodus
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Kontinuierliches Kompostieren
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Periodisches Mahlen und Dehydrieren
-                  </td>
-                </tr>
-                <tr>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Endergebnis
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Echter Kompost
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Getrockneter und gekochter Abfall
-                  </td>
-                </tr>
-                {/* Additional rows omitted for brevity */}
-              </tbody>
-            </table>
-          </div>
-          <iframe
-            className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
-            src="https://www.youtube.com/embed/-qkjLB3GcKo"
-            frameBorder="0"
-            title="Produktübersicht Video"
-            aria-hidden="true"
-          />
-        </>
-      ),
-    },
-
-    {
-      slug: 'can-I-add-food-waste-when-it-is-running',
-      question: 'Kann ich während des Betriebs Lebensmittelabfälle hinzufügen?',
-      answer: `Ja`,
-    },
-    {
-      slug: 'how-much-food-waste-can-i-add-at-once',
-      question: 'Wie viel Lebensmittelabfall kann ich auf einmal hinzufügen?',
-      answer: (
-        <>
-          Sie können <strong>bis zu 2kg</strong> auf einmal hinzufügen. Es ist
-          möglich, Lebensmittelabfälle mehrmals am Tag hinzuzufügen, aber bitte{' '}
-          <strong>überschreiten Sie nicht 5kg</strong> an einem Tag.
-          <br />
-          <br />
-          <em>Hinweis:</em> Der Behälter kann bis zu <strong>19L</strong>{' '}
-          fassen, aber das bedeutet nicht, dass er auf einmal vollständig
-          gefüllt werden kann.
-          <br />
-          <br />
-          Es ist möglich, <strong>5kg Abfall auf einmal</strong> hinzuzufügen,
-          was bei den Werksprüfungen getestet wurde, aber es wird{' '}
-          <strong>nicht für den täglichen Gebrauch empfohlen</strong>.
-          <iframe
-            className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
-            src="https://www.youtube.com/embed/JV0nZtaRaD0"
-            frameBorder="0"
-            title="GEME zersetzt Lebensmittelabfälle in 7 Stunden - ungeschnittenes Video"
-            aria-hidden="true"
-          />
-        </>
-      ),
-    },
-
-    {
-      slug: 'what-kinds-of-food-waste-can-i-put',
-      question: 'Welche Arten von Lebensmittelabfällen kann ich hineinlegen?',
-      answer: (
-        <>
-          <div className="max-w-3xl mx-auto p-6">
-            <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              Fast alle Lebensmittel, die Sie essen, können in den GEME
-              Komposter gegeben werden.
-            </p>
-            <div className="flex flex-col md:flex-row items-start md:items-center mb-6">
-              <picture>
-                <img
-                  src="https://www.geme.bio/help-center/assets/images/supported-foodwaste-guide-055cef03c7c375f24ce99e1625de5d6f.png"
-                  alt="GEME Komposter unterstützte Lebensmittelabfälle"
-                />
-              </picture>
-            </div>
-
-            <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              Er unterstützt auch flüssige Abfälle, wie Suppe.
-              <iframe
-                className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
-                src="https://www.youtube.com/embed/yGkcEaeXlQQ"
-                frameBorder="0"
-                title="Produktübersicht Video"
-                aria-hidden="true"
-              />
-            </p>
-
-            <p className="text-gray-700 text-lg leading-relaxed">
-              Er kann auch Haustierabfälle wie Hundekot und Katzenstreu abbauen.
-            </p>
-            <picture>
-              <img
-                src="/assets/images/geme-terra-2/cat-litter.png"
-                alt="GEME Komposter unterstützte Haustierabfälle"
-              />
-            </picture>
-          </div>
-        </>
-      ),
-    },
-    {
-      slug: 'how-long-will-it-take-for-geme-to-turn-my-food-waste-into-compost',
-      question:
-        'Wie lange dauert es, bis meine Lebensmittelabfälle zu Kompost werden?',
-      answer: (
-        <>
-          Für die meisten täglichen Speisereste dauert es etwa 6 bis 8 Stunden,
-          um den Abfall zu zersetzen.
-          <br />
-          Sehen Sie sich dieses ungeschnittene 7-Stunden-Video an. (
-          <b className="text-gray-500">
-            Keiner unserer Wettbewerber wagt es, solche Live-Videos der
-            Öffentlichkeit zu zeigen
-          </b>
-          )
-          <iframe
-            className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
-            src="https://www.youtube.com/embed/asNRoqkC_BA"
-            frameBorder="0"
-            title="GEME zersetzt Lebensmittelabfälle in 7 Stunden - ungeschnittenes Video"
-            aria-hidden="true"
-          />
-          Für bestimmte Lebensmittelabfälle, wie Orangenschalen, dauert es
-          jedoch etwas länger, da sie zähe Fasern haben. Kleine Knochen brauchen
-          noch mehr Zeit.
-          <picture>
-            <img
-              src="https://www.geme.bio/help-center/assets/images/supported-foodwaste-guide-055cef03c7c375f24ce99e1625de5d6f.png"
-              alt="GEME Komposter unterstützte Lebensmittelabfälle"
-            />
-          </picture>
-          <strong>Hinweis:</strong> Obwohl es nur wenige Stunden oder Tage
-          dauert, bis es zu Kompost wird, ist dies noch kein fertiger Kompost.
-          Wir empfehlen, mindestens 45 Tage zu warten, bevor Sie ihn verwenden.
-          Alternativ können Sie den unfertigen Kompost mit Erde im Verhältnis
-          1:8 mischen, um Ihre Pflanzen zu düngen.
-        </>
-      ),
-    },
-
-    {
-      slug: 'is-it-smell-how-often-should-i-replace-the-carbon-filter',
-      question: 'Riecht es? Wie oft sollte ich den Kohlefilter austauschen?',
-      answer: (
-        <>
-          <div>
-            {`Es riecht nicht`} da es die{' '}
-            <strong className="text-v2311-primary">
-              Metallionen-Katalyse-Oxidation
-            </strong>{' '}
-            Technologie verwendet, um Gerüche zu neutralisieren. Anders als bei
-            herkömmlichen Kompostern {`wird kein Kohlefilter verwendet, daher `}
-            <strong className="text-v2311-primary">
-              muss dieser nicht ersetzt werden
-            </strong>
-            . Der Filter ist so konzipiert, dass er ein Leben lang hält.
-          </div>
-          <div className="container mx-auto p-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white rounded-lg shadow-md">
-                <picture>
-                  <img
-                    src="/assets/images/geme-terra-2/odor/1.jpg"
-                    alt="Photokatalysator UV-Schicht"
-                    className="w-full h-auto rounded-t-lg"
-                  />
-                </picture>
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold mb-2">Schicht 1</h2>
-                  <p className="text-gray-700">
-                    Photokatalysator und UV-Licht zur Beseitigung schädlicher
-                    Bakterien.
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-lg shadow-md">
-                <picture>
-                  <img
-                    src="/assets/images/geme-terra-2/odor/2.jpg"
-                    alt="Metallionen-Oxidationsschicht"
-                    className="w-full h-auto rounded-t-lg"
-                  />
-                </picture>
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold mb-2">Schicht 2</h2>
-                  <p className="text-gray-700">
-                    Metallionen-Katalyse-Oxidationsprozess.
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-lg shadow-md">
-                <picture>
-                  <img
-                    src="/assets/images/geme-terra-2/odor/3.jpg"
-                    alt="Aerobe Luftaustauschschicht"
-                    className="w-full h-auto rounded-t-lg"
-                  />
-                </picture>
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold mb-2">Schicht 3</h2>
-                  <p className="text-gray-700">
-                    Ein leistungsstarkes aerober Luftaustauschsystem zur
-                    Geruchskontrolle.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </>
-      ),
-    },
-    {
-      slug: 'how-often-should-i-clean-the-bin',
-      question: 'Wie oft sollte ich den Behälter reinigen?',
-      answer: (
-        <>
-          Technisch gesehen muss der Behälter nicht gereinigt werden. Es sieht
-          vielleicht nicht gut aus und es könnte ein leichter Geruch auftreten,
-          wenn Sie den Deckel öffnen, aber sobald der Deckel geschlossen ist,
-          bleibt er sauber und geruchlos. <br />
-          Die eigentliche Frage, die Sie sich stellen könnten, lautet:{' '}
-          <strong>Wie oft sollte ich den Kompost ernten?</strong>
-          <div className="container mx-auto p-4">
-            <h5 className="text-xl font-semibold text-gray-800 mb-4">
-              {`1. Überschreiten Sie nicht die maximale Fülllinie`}
-            </h5>
-            <p className="text-gray-700 mb-6">
-              Dies ist eine feste Grenze. Wenn der Behälter voll ist, entfernen
-              Sie den Kompost so schnell wie möglich.
-            </p>
-
-            <h5 className="text-xl font-semibold text-gray-800 mb-4">
-              2. Leeren Sie nicht den gesamten Kompost
-            </h5>
-            <p className="text-gray-700 mb-6">
-              Jedes Mal, wenn Sie Kompost entfernen, lassen Sie etwas am Boden,
-              damit sich die Bakterien im GEME Kobold vermehren und weiterhin
-              neue Lebensmittelabfälle verarbeiten können.
-              <strong className="text-v2311-primary">
-                Halten Sie das Kompostniveau in Übereinstimmung mit der
-                Mischwelle.
-              </strong>
-            </p>
-
-            <h5 className="text-xl font-semibold text-gray-800 mb-4">
-              3. Empfehlung: Entfernen Sie den Kompost, wenn das Rührwerk
-              vollständig bedeckt ist
-            </h5>
-            <p className="text-gray-700 mb-6">
-              Achten Sie auf die gelbe Linie im Bild unten. Dies ist eine
-              bewährte Methode, um Kompost effizienter zu sammeln und
-              gleichzeitig die Arbeitsbelastung der Maschine zu reduzieren, was
-              ihre Lebensdauer verlängert.
-            </p>
-          </div>
-          <picture>
-            <img
-              src="/assets/images/geme-terra-2/harvest-compost/best-practice-removal.png"
-              alt="Beste Vorgehensweise zur Entnahme von GEME Kompost"
-            />
-          </picture>
-        </>
-      ),
-    },
-
-    {
-      slug: 'can-i-feed-the-output-compost-to-my-worm-bin',
-      question:
-        'Kann ich den Ausgangskompost von GEME meinem Wurmbehälter zur Wurmkompostierung hinzufügen?',
-      answer: (
-        <>
-          Ja, das können Sie! Die Mikroben von{' '}
-          <a href="/geme-kobold">GEME Kobold</a> werden aus der Natur gewonnen
-          und extrahiert. Sie sind für Tiere nicht schädlich und gut für den
-          Boden. Sie funktionieren perfekt mit Würmern im Wurmbehälter. Das
-          nicht vollständig zersetzte organische Material ist das beste Futter
-          für die Würmer, während das zersetzte Material weiterhin
-          nährstoffreich bleibt.
-        </>
-      ),
-    },
-    {
-      slug: 'what-is-the-maintenance-cost-for-keep-the-unit',
-      question: 'Was kostet der Stromverbrauch zur Erhaltung des Geräts?',
-      answer: (
-        <>
-          <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              Jährliche Kosten des GEME Komposters: Eine detaillierte Begründung
+          <div className="mb-8">
+            <h2
+              style={{
+                fontWeight: 'bold',
+              }}
+            >
+              Wie funktioniert der GEME Komposter?
             </h2>
 
-            <div className="mb-4">
-              <h3 className="text-xl font-semibold text-gray-700 mb-2">
-                1. Täglicher Energieverbrauch
-              </h3>
-              <p className="text-gray-700">
-                Der GEME Komposter verbraucht ungefähr{' '}
-                <strong>1,44 kWh pro Tag</strong>. Dies ist vergleichbar mit dem
-                täglichen Energieverbrauch eines Standard-Laptops im
-                Dauerbetrieb.
-              </p>
-            </div>
+            <h3
+              style={{
+                fontWeight: '600',
+              }}
+            >
+              1. Simulation eines Komposthaufens in einer kontrollierten
+              Umgebung
+            </h3>
+            <p>
+              GEME Komposter schaffen die perfekte Umgebung für die
+              Kompostierung, indem sie nicht nur auf Dehydration und Hitze
+              angewiesen sind. Sie replizieren die Bedingungen eines
+              Komposthaufens, halten jedoch alles geschlossen und geruchsfrei.
+            </p>
 
-            <div className="mb-4">
-              <h3 className="text-xl font-semibold text-gray-700 mb-2">
-                2. Jährlicher Energieverbrauch
-              </h3>
-              <p className="text-gray-700">
-                Da das Gerät 24 Stunden am Tag arbeitet, kann der gesamte
-                Energieverbrauch pro Jahr wie folgt berechnet werden:
-              </p>
-              <p className="text-gray-700 font-mono bg-gray-100 p-2 rounded-lg">
-                1,44 kWh/Tag × 365 Tage/Jahr = 525,6 kWh/Jahr
-              </p>
-              <p className="text-gray-700">
-                Das bedeutet, dass der GEME Komposter über das Jahr hinweg
-                insgesamt <strong>525,6 kWh</strong> verbraucht.
-              </p>
-            </div>
+            <iframe
+              className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
+              src="https://www.youtube.com/embed/asNRoqkC_BA"
+              frameBorder="0"
+              title="GEME zersetzt Lebensmittelabfälle in 7 Stunden - ungeschnittenes Video"
+              aria-hidden="true"
+            />
 
-            <div className="mb-4">
-              <h3 className="text-xl font-semibold text-gray-700 mb-2">
-                3. Stromkosten
-              </h3>
-              <p className="text-gray-700">
-                Der durchschnittliche Strompreis in den Vereinigten Staaten
-                liegt bei etwa <strong>$0,13 pro kWh</strong>. Daher lassen sich
-                die jährlichen Betriebskosten des GEME Komposters wie folgt
-                berechnen:
-              </p>
-              <p className="text-gray-700 font-mono bg-gray-100 p-2 rounded-lg">
-                525,6 kWh/Jahr × $0,13/kWh = $68,33/Jahr
-              </p>
-              <p className="text-gray-700">
-                Diese Berechnung zeigt, dass die Stromkosten des GEME Komposters
-                bei etwa <strong>$68,33 pro Jahr</strong> liegen.
-              </p>
-            </div>
+            <h4
+              style={{
+                fontWeight: '500',
+              }}
+            >
+              Die Technologie hinter den GEME Kompostern
+            </h4>
+            <p>
+              GEME Komposter sind so konzipiert, dass sie eine{' '}
+              <strong>ideale Umgebung</strong> für die speziellen Mikroben (GEME
+              Kobold) aufrechterhalten, um Bioabfälle abzubauen. Diese Umgebung
+              imitiert den natürlichen Kompostierungsprozess, beschleunigt ihn
+              jedoch und hält ihn geschlossen.
+            </p>
 
-            <div>
-              <h3 className="text-xl font-semibold text-gray-700 mb-2">
-                4. Fazit
-              </h3>
-              <p className="text-gray-700">
-                Die jährlichen Betriebskosten des GEME Komposters, wenn man nur
-                den Stromverbrauch berücksichtigt, sind mit{' '}
-                <strong>$68,33</strong> relativ niedrig. Dies macht ihn zu einer
-                wirtschaftlichen Wahl für diejenigen, die Lebensmittelabfälle
-                reduzieren und Kompost produzieren möchten, und gleichzeitig
-                niedrige Betriebskosten beibehalten.
-              </p>
-            </div>
-
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              Vergleich der jährlichen Stromkosten
-            </h2>
             <div className="overflow-x-auto">
               <table className="min-w-full bg-white border border-gray-300">
                 <thead>
                   <tr>
                     <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
-                      Gerät
+                      Eigenschaften
                     </th>
                     <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
-                      Täglicher Energieverbrauch (kWh)
+                      GEME Komposter
                     </th>
                     <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
-                      Jährlicher Energieverbrauch (kWh)
-                    </th>
-                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
-                      Durchschnittliche Stromkosten ($/kWh)
-                    </th>
-                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
-                      Jährliche Stromkosten ($)
+                      Andere Lomi-ähnliche Dehydratoren
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="bg-gray-50">
                     <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      GEME Komposter
+                      Heiße Kompostierungstemperatur
                     </td>
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      1,44
-                    </td>
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      525,6
-                    </td>
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      $0,13
-                    </td>
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      $68,33
-                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">{`✅Ja (45°C < 85°C)`}</td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">{`❌Nein (120°C+, Gute Bakterien werden getötet)`}</td>
                   </tr>
                   <tr>
                     <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      Kühlschrank
+                      Feuchtigkeitskontrolle
                     </td>
                     <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      1,5
+                      ✅Ja
                     </td>
                     <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      547,5
-                    </td>
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      $0,13
-                    </td>
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      $71,18
+                      ❌Nein
                     </td>
                   </tr>
                   <tr className="bg-gray-50">
                     <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      Klimaanlage
+                      Aerober Austausch
                     </td>
                     <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      5,0 (im Sommer)
+                      ✅Ja
                     </td>
                     <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      600
+                      ❌Nein
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Umwälzung
                     </td>
                     <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      $0,13
+                      ✅Ja (Sanftes Drehen)
                     </td>
                     <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      $78,00
+                      ❌Nein (Schneiden und Zerkleinern mit Klingen)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Filtersystem
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Metallionen-Katalyseoxidation,
+                      <br />
+                      Keine Notwendigkeit zu ersetzen
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Kohlefilter,
+                      <br />
+                      Alle 3 Monate ersetzen
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
+
+            <h3
+              style={{
+                fontWeight: '600',
+              }}
+            >
+              2. Die Maschine: Der Kompostierungsprozess in einem geschlossenen
+              System
+            </h3>
+            <p>
+              Die Maschine fungiert wie ein Komposthaufen in einer Box. Sie
+              stellt sicher, dass die Bioabfälle effizient zersetzt werden, ohne
+              Gerüche zu erzeugen. Dies wird durch die Steuerung von
+              Feuchtigkeit, Temperatur und Luftzirkulation erreicht, die alle
+              für die mikrobielle Aktivität optimiert sind.
+            </p>
+            <picture>
+              <img
+                alt="Wie der elektrische Komposter funktioniert"
+                src="/assets/images/how-it-works/how-geme-composter-works.jpg"
+                style={{ maxWidth: '100%', marginTop: '15px' }}
+              />
+            </picture>
+
+            <h3
+              style={{
+                fontWeight: '600',
+              }}
+            >
+              3. Die Mikroben: Die wahren Arbeitstiere
+            </h3>
+            <p>
+              Das Herzstück des Kompostierungsprozesses liegt bei{' '}
+              <strong>GEME Kobold</strong> – einer sorgfältig ausgewählten
+              Gruppe von Mikroben. Diese Mikroben wirken wie die „Würmer“ der
+              traditionellen Kompostierung, arbeiten jedoch schneller und
+              effizienter. Sie vermehren sich rasch, ernähren sich von den
+              Lebensmittelabfällen und verwandeln sie in nährstoffreichen
+              Kompost.
+            </p>
+
+            <h4
+              style={{
+                fontWeight: '500',
+              }}
+            >
+              Mikrobielle Wachstum und Aktivität
+            </h4>
+            <p>
+              Unter idealen Bedingungen können sich bestimmte Bakterienarten
+              alle 10-15 Minuten teilen und ihre Population in sehr kurzer Zeit
+              verdoppeln. Dieses exponentielle Wachstum ist der Schlüssel zur
+              Effizienz der GEME Komposter, da es die Zersetzung organischer
+              Materialien in Kompost beschleunigt.
+            </p>
+            <picture>
+              <img
+                alt="Wie Mikroben wachsen"
+                src="/assets/images/geme-terra-2/microbes-grow.png"
+                style={{ maxWidth: '100%', marginTop: '15px' }}
+              />
+            </picture>
+
+            <h4
+              style={{
+                fontWeight: '500',
+              }}
+            >
+              Fazit
+            </h4>
+            <p>
+              Zusammenfassend lässt sich sagen, dass GEME Komposter den
+              natürlichen Kompostierungsprozess in einer geschlossenen,
+              effizienten und geruchslosen Umgebung nachahmen. Durch den Einsatz
+              fortschrittlicher Mikroben-Technologie bieten diese Geräte eine
+              praktische und umweltfreundliche Lösung für die Bewältigung von
+              Haushaltsabfällen.
+            </p>
           </div>
+        </>
+      ),
+    },
+
+    {
+      slug: 'what-is-the-difference-between-the-starter-kobold-and-the-refill-kobold',
+      question:
+        'Was ist der Unterschied zwischen dem Starter Kobold und dem Nachfüll-Kobold?',
+      answer: (
+        <>
+          <h3
+            style={{
+              fontWeight: 'bold',
+            }}
+          >
+            Der Starter (Großer Beutel Kobold)
+          </h3>
+          <p>
+            Der Große Beutel Kobold bezieht sich in der Regel auf den 2kg/1,5kg
+            Beutel GEME Kobold. Dieser wird als Kompost-Starter verwendet und
+            sollte in der <strong>Einrichtungsphase</strong> auf einmal
+            verwendet werden.
+          </p>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'flex-start',
+              alignItems: 'flex-start',
+            }}
+          >
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <h3>Starter 2kg </h3>
+              <img
+                src="/assets/images/geme-kobold/faq/geme-kobold-old.png"
+                alt="Hühner fressen Abfälle"
+              />
+              <p>Klassischer Kobold (2022.01 ~ 2023.10)</p>
+            </div>
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <h3>Starter 1,5kg (neueste Version)</h3>
+              <img
+                src="/assets/images/geme-kobold/product-image-max.jpg"
+                alt="Würmer im Wurmbehälter"
+              />
+              <p>Verbesserter Kobold (2023.10 ~)</p>
+            </div>
+          </div>
+          <h3
+            style={{
+              fontWeight: 'bold',
+            }}
+          >
+            Die Nachfüllpacks (Kleiner Beutel Kobold)
+          </h3>
+          <p>
+            Der Kleine Beutel Kobold, auch als Nachfüllpack bezeichnet, ist eine
+            kleinere und reinere Version des GEME Kobold und wird nicht als
+            Starter, sondern als Nachfüllpack verwendet. Es sollte regelmäßig
+            (alle 2 oder 3 Wochen) nach der Einrichtung verwendet werden, wenn
+            die erste Charge nach etwa 60 Tagen entfernt wird.
+          </p>
+
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'flex-start',
+              alignItems: 'flex-start',
+            }}
+          >
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <img
+                src="/assets/images/geme-kobold/product-image-back-garden.jpg"
+                alt="Ein Nachfüllpack von GEME Kobold"
+              />
+              <p>Nachfüll-Kobold (Einzeln)</p>
+            </div>
+
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <img
+                src="/assets/images/geme-kobold/product-image-6.jpg"
+                alt="Ein Nachfüllpack von GEME Kobold"
+              />
+              <p>Nachfüll-Kobold (Quartalsweise)</p>
+            </div>
+
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <img
+                src="/assets/images/geme-kobold/product-image-12.jpg"
+                alt="12 Nachfüllpacks von GEME Kobold"
+              />
+
+              <p>Nachfüll-Kobold (Halbjährlich)</p>
+            </div>
+
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <img
+                src="/assets/images/geme-kobold/product-image-24.jpg"
+                alt="24 Nachfüllpacks von GEME Kobold"
+              />
+              <p>Nachfüll-Kobold (Ganzjährig)</p>
+            </div>
+          </div>
+
+          <h3
+            style={{
+              fontWeight: 'bold',
+            }}
+          >
+            Schnellvergleich der Spezifikationen
+          </h3>
+          <div className="overflow-x-auto">
+            <table className="min-w-full bg-white border border-gray-300">
+              <thead>
+                <tr>
+                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                    Typen
+                  </th>
+                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                    Name
+                  </th>
+                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                    Gewicht
+                  </th>
+                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                    Beschreibung
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Starter
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Klassischer GEME Kobold Starter{' '}
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    2kg
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Seit 2022 bis 2023-10
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Starter
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Verbessert GEME Kobold Starter{' '}
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    1,5kg
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Seit 2023-10
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Nachfüllpack
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Nachfüllpack
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    20g
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Wie eine kleine Kaffeetüte
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Nachfüllpack
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Nachfüllpack Quartal
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    -
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Nachfüllpack x 6
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Nachfüllpack
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Nachfüllpack Halbjahr
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    -
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Nachfüllpack x 12
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Nachfüllpack
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Nachfüllpack Ganzjahr
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    -
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Nachfüllpack x 24
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            Weitere Informationen finden Sie im{' '}
+            <a
+              className="text-v2311-primary"
+              href="/help-center/docs/faq/geme-kobold/what-is-the-difference-between-big-bag-kobold-and-small-bag-kobold"
+            >
+              Hilfecenter-Artikel
+            </a>
+          </p>
+        </>
+      ),
+    },
+
+    {
+      slug: 'what-is-the-difference-between-the-starter-kobold-and-the-refill-kobold',
+      question:
+        'Was ist der Unterschied zwischen dem GEME Kobold und anderen Zusätzen wie dem Lomi Pod?',
+      answer: (
+        <>
+          Der GEME Kobold enthält eine Mischung aus Mikroorganismen, darunter
+          Bakterien, Pilze und hitzebeständige Stämme, die darauf ausgelegt
+          sind, Lebensmittelabfälle effizient abzubauen. Außerdem enthält er
+          Lignin und Feuchtigkeitsregulatoren, die als Kohlenstoffzusätze zur
+          Ausbalancierung des Kohlenstoff-Stickstoff-Verhältnisses im Kompost
+          dienen. Die schnelle Vermehrung dieser Mikroben treibt den
+          Zersetzungsprozess voran. Im Gegensatz dazu funktionieren Lomi Pods
+          hauptsächlich als <strong>Placebos</strong>, bei denen die Zersetzung
+          weitgehend durch hohe Hitze und Mahlvorgänge erfolgt und auf einem
+          völlig anderen Prinzip basiert.
+        </>
+      ),
+    },
+    {
+      slug: 'what-is-the-difference-between-big-bag-kobold-and-small-bag-kobold',
+      question:
+        'Wann kann ich den Kompost ernten und wie viel sollte ich im GEME lassen?',
+      answer: (
+        <>
+          <div className="container mx-auto p-4">
+            <h5 className="text-xl font-semibold text-gray-800 mb-4">
+              {`1. Überschreiten Sie nicht die Füllstandsgrenze`}
+            </h5>
+            <p className="text-gray-700 mb-6">
+              Dies ist eine feste Grenze. Wenn der Komposter voll ist, sollten
+              Sie den Kompost so schnell wie möglich entfernen.
+            </p>
+
+            <h5 className="text-xl font-semibold text-gray-800 mb-4">
+              2. Entfernen Sie nicht den gesamten Kompost
+            </h5>
+            <p className="text-gray-700 mb-6">
+              Lassen Sie jedes Mal, wenn Sie Kompost entfernen, etwas am Boden,
+              damit sich die Bakterien im GEME Kobold weiter vermehren und neue
+              Lebensmittelabfälle zersetzen können.
+              <strong className="text-v2311-primary">
+                Halten Sie den Kompoststand in Höhe der Rührwelle.
+              </strong>
+            </p>
+
+            <h5 className="text-xl font-semibold text-gray-800 mb-4">
+              3. Empfehlung: Entfernen Sie den Kompost, wenn das Rührwerk
+              vollständig vergraben ist
+            </h5>
+            <p className="text-gray-700 mb-6">
+              Achten Sie auf die gelbe Linie im untenstehenden Bild. Dies ist
+              eine bewährte Methode, mit der Sie den Kompost effizienter sammeln
+              können, während die Arbeitslast der Maschine verringert wird, was
+              deren Lebensdauer verlängert.
+            </p>
+          </div>
+          <picture>
+            <img
+              src="/assets/images/geme-terra-2/harvest-compost/best-practice-removal.png"
+              alt="Beste Methode zum Entfernen von GEME-Kompost"
+            />
+          </picture>
+        </>
+      ),
+    },
+    {
+      slug: 'how-often-should-i-replace-the-kobold',
+      question: 'Wie oft sollte ich den Kobold ersetzen?',
+      answer: (
+        <>
+          Wenn der Kobold richtig gepflegt wird, muss er nicht vollständig
+          ersetzt werden. Wenn Sie jedoch feststellen, dass das Material im
+          Komposter zu feucht oder verdichtet ist, sollten Sie es besser durch
+          einen neuen Starter ersetzen.
+          <picture>
+            <img
+              alt="GEME Kobold ersetzen"
+              src="/assets/images/geme-kobold/faq/geme-kobold-get-rock.png"
+              style={{ maxWidth: '100%', marginTop: '15px' }}
+            />
+          </picture>
+        </>
+      ),
+    },
+
+    {
+      slug: 'how-often-should-i-add-geme-kobold',
+      question: 'Wie oft sollte ich GEME Kobold hinzufügen?',
+      answer: (
+        <>
+          <p>
+            Dieser Prozess basiert mehr auf Erfahrung als auf einer festen Zahl.
+            Wie oft Sie GEME Kobold hinzufügen müssen, hängt von der Menge der
+            Abfälle ab, die Sie einfüllen, und wie oft Sie den Kompost
+            entfernen.
+          </p>
+          <br></br>
+
+          <p>
+            Ihr GEME-Gerät wird mit einem 1,5 kg Starterpack von GEME Kobold und
+            feuchtigkeitsregulierenden Materialien geliefert. Je mehr Abfall Sie
+            hinzufügen und je häufiger Sie den Kompost entfernen, desto öfter
+            müssen Sie neuen GEME Kobold hinzufügen.
+          </p>
+          <br></br>
+
+          <p>
+            Nach der Aktivierung von GEME-Kobold fügen Sie täglich 500g Abfall
+            hinzu. Entfernen Sie den Kompost alle zwei Monate und lassen Sie
+            etwas zurück, um den verbleibenden GEME-Kobold zu bereichern. Fügen
+            Sie alle zwei Wochen ein kleines Päckchen GEME Kobold hinzu.
+          </p>
+          <br></br>
+          <p>
+            Zum Beispiel: Eine Familie mit zwei Personen, die täglich 100g
+            Abfall hinzufügt, muss den Kompost nur einmal im Jahr entfernen.
+            Beginnen Sie dann, GEME Kobold hinzuzufügen. Wenn der
+            Zersetzungsprozess langsamer wird, beginnen Sie früher damit.
+          </p>
+
+          <picture>
+            <img
+              alt="GEME Kobold ersetzen"
+              src="/assets/images/geme-kobold/faq/when-and-how-to-add-kobold.png"
+              style={{ maxWidth: '100%', marginTop: '15px' }}
+            />
+          </picture>
+
+          <p>
+            Weitere Informationen finden Sie im{' '}
+            <a
+              className="text-v2311-primary"
+              href="/help-center/docs/faq/how-to-use/how-often-should-i-add-geme-kobold"
+            >
+              Hilfecenter-Artikel
+            </a>
+            .
+          </p>
+        </>
+      ),
+    },
+    {
+      slug: 'how-often-should-i-replace-the-kobold',
+      question:
+        'Da Kobold Bakterien enthält, ist es schädlich für Menschen und Tiere?',
+      answer: (
+        <>
+          Nein, die Bakterien in GEME Kobold sind nicht schädlich. Es handelt
+          sich um speziell ausgewählte, nützliche Mikroben, die eine wichtige
+          Rolle im Kompostierungsprozess spielen. In der Mikrobiologie sind
+          viele Bakterien dafür bekannt, natürliche Prozesse zu unterstützen,
+          wie das Zersetzen organischer Materialien in Kompost. Diese Mikroben
+          sind den Bakterien ähnlich, die in gesunder Erde oder fermentierten
+          Lebensmitteln vorkommen. Sie konzentrieren sich darauf,
+          Lebensmittelabfälle effizient zu zersetzen, ohne ein Risiko für
+          Menschen, Haustiere oder die Umwelt darzustellen. Die sorgfältig
+          ausgewählten Stämme sorgen für eine sichere und effektive
+          Kompostierung. Außerdem wurde dies umfassend getestet und
+          zertifiziert.
+        </>
+      ),
+    },
+
+    {
+      slug: 'how-often-should-i-replace-the-kobold',
+      question: 'Kann ich GEME Kobold außerhalb des GEME Komposters verwenden?',
+      answer: (
+        <>
+          Nein, GEME Kobold ist speziell für die Verwendung im GEME Komposter
+          entwickelt. Die Mikroben in GEME Kobold benötigen eine kontrollierte
+          Umgebung, wie sie im GEME Komposter vorliegt, wo Bedingungen wie
+          Temperatur, Feuchtigkeit und Luftstrom für eine effektive
+          Kompostierung optimiert sind. Wenn GEME Kobold außerhalb dieser
+          Umgebung verwendet wird, sind möglicherweise nicht die gewünschten
+          Ergebnisse zu erzielen, da die erforderlichen Bedingungen für das
+          Wachstum und die Zersetzung der Mikroben fehlen.
+          <br />
+          <br />
+          <b>Hinweis</b>: Wenn Sie Kobold ohne GEME Komposter kaufen und
+          verwenden, übernimmt GEME keine Verantwortung für das Ergebnis.
+        </>
+      ),
+    },
+    {
+      slug: 'how-often-should-i-replace-the-kobold',
+      question:
+        'Kann ich andere Kompoststarter-Materialien im GEME Komposter verwenden?',
+      answer: (
+        <>
+          Während andere Kompoststarter in verschiedenen Kompostiersystemen
+          funktionieren können, ist GEME Kobold speziell für den GEME Komposter
+          entwickelt. Seine einzigartige Mischung von Mikroben sorgt für eine
+          optimale Zersetzung in der kontrollierten Umgebung der Maschine. Die
+          Verwendung anderer Startermaterialien führt möglicherweise nicht zu
+          denselben effizienten Ergebnissen, da sie nicht auf den spezifischen
+          Prozess von GEME abgestimmt sind.
+          <br />
+          <br />
+          <b>Hinweis</b>: Wenn Sie andere Starter oder Materialien mit dem GEME
+          Komposter verwenden, übernimmt GEME keine Verantwortung für das
+          Ergebnis.
+        </>
+      ),
+    },
+    {
+      slug: 'where-can-i-buy-more-kobold',
+      question: 'Wo kann ich mehr Kobold kaufen?',
+      answer: (
+        <>
+          Hier, auf dieser Seite. Scrollen Sie nach oben, um jetzt zu bestellen.
         </>
       ),
     },
@@ -1268,342 +1427,534 @@ export const koboldFaqPropsFr: IFaqProps = {
   description: '',
   faqs: [
     {
-      slug: 'how-it-works',
-      question: 'Comment ça marche ?',
+      slug: 'what-is-geme-kobold',
+      question: 'Qu’est-ce que GEME Kobold?',
       answer: (
         <>
-          <h4>
-            ✅ <strong>Simule un tas de compost dans une boîte</strong>, ❌
-            <del>pas seulement de la déshydratation et de la chaleur</del>
-          </h4>
-          Les composteurs GEME sont des appareils ménagers qui créent et
-          maintiennent un <strong>environnement idéal</strong> pour les microbes
-          spéciaux de {`GEME`} (GEME Kobold) pour décomposer les déchets
-          organiques. Terra 2 fonctionne sur le même principe.
-          <br />
-          <ul>
-            <li>
-              <strong>La machine</strong>: Elle simule un tas de compost dans un
-              environnement fermé, garantissant qu'il n'y a pas de mauvaises
-              odeurs.
-              <br />
-              <picture>
-                <img
-                  alt="Comment fonctionne le composteur électrique"
-                  src="/assets/images/how-it-works/how-geme-composter-works.jpg"
-                />
-              </picture>
-            </li>
-            <li>
-              <strong>Le Kobold</strong>: Les microbes font la plupart du
-              travail. Ils se reproduisent rapidement et absorbent l'énergie des
-              déchets alimentaires. Tout comme les vers consomment de la
-              nourriture, les microbes décomposent les déchets et produisent du
-              compost.
-              <picture>
-                <img
-                  alt="Comment les microbes se développent"
-                  src="/assets/images/geme-terra-2/microbes-grow.png"
-                />
-              </picture>
-              Dans des conditions idéales, certaines espèces bactériennes
-              peuvent se diviser toutes les 10 à 15 minutes, doublant ainsi leur
-              population à ces intervalles.
-            </li>
-          </ul>
+          <p>
+            GEME Kobold est un produit qui contient un ensemble de microbes. Ces
+            microbes sont le facteur clé dans la décomposition des restes
+            alimentaires et des déchets organiques. Lorsqu'ils sont appliqués
+            aux déchets organiques, le processus de compostage rapide commence.
+            Les microbes forment une microbiote et se régénèrent rapidement. Les
+            déchets alimentaires servent de nourriture parfaite pour ces
+            microbes, leur permettant de se nourrir et de se reproduire. Ces
+            microbes sont soigneusement sélectionnés à partir de sources
+            naturelles complexes et sont affinés grâce à une série de processus
+            d'ingénierie microbienne.
+          </p>
+
+          <p className="mt-4">
+            Pour mieux comprendre le rôle de GEME Kobold, voici des exemples :
+            tout comme les poulets dans une ferme consomment les restes de
+            cuisine, et que les vers dans un bac à vers décomposent les déchets
+            alimentaires, les microbes de GEME Kobold décomposent les déchets
+            alimentaires dans le composteur GEME. Chacun joue un rôle unique
+            dans la réduction des déchets, en utilisant des processus naturels
+            pour recycler les matières organiques.
+          </p>
+
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'flex-start',
+              alignItems: 'flex-start',
+              marginTop: '20px',
+            }}
+          >
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <h3>Poulets</h3>
+              <img
+                src="/assets/images/geme-kobold/faq/chicken-farm.png"
+                alt="Poulets mangeant des restes"
+              />
+              <p>Restes dans une ferme de poulets</p>
+            </div>
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <h3>Vers</h3>
+              <img
+                src="/assets/images/geme-kobold/faq/worm-bin.png"
+                alt="Vers dans un bac à vers"
+              />
+
+              <p>Aliments dans des bacs à vers</p>
+            </div>
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <h3>Microbes Kobold</h3>
+              <img
+                src="/assets/images/geme-kobold/faq/geme-composter.jpg"
+                alt="Microbes Kobold dans un composteur"
+              />
+              <p>Déchets dans le composteur GEME</p>
+            </div>
+          </div>
         </>
       ),
     },
     {
-      slug: 'what-is-the-difference-between-other-electric-composters-like-lomi',
-      question:
-        'Quelle est la différence avec d’autres composteurs électriques comme Lomi ?',
+      slug: 'how-it-works',
+      question: 'Comment ça fonctionne?',
       answer: (
         <>
+          <div className="mb-8">
+            <h2
+              style={{
+                fontWeight: 'bold',
+              }}
+            >
+              Comment fonctionne le composteur GEME?
+            </h2>
+
+            <h3
+              style={{
+                fontWeight: '600',
+              }}
+            >
+              1. Simulation d'un tas de compost dans un environnement contrôlé
+            </h3>
+            <p>
+              Les composteurs GEME créent l'environnement parfait pour le
+              compostage, sans se contenter de la déshydratation et de la
+              chaleur. Ils reproduisent les conditions d'un tas de compost tout
+              en maintenant tout fermé et sans odeur.
+            </p>
+
+            <iframe
+              className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
+              src="https://www.youtube.com/embed/asNRoqkC_BA"
+              frameBorder="0"
+              title="GEME décompose les déchets alimentaires en 7 heures - vidéo non coupée"
+              aria-hidden="true"
+            />
+
+            <h4
+              style={{
+                fontWeight: '500',
+              }}
+            >
+              La technologie derrière les composteurs GEME
+            </h4>
+            <p>
+              Les composteurs GEME sont conçus pour maintenir un{' '}
+              <strong>environnement idéal</strong> pour les microbes spéciaux
+              (GEME Kobold) afin de décomposer les déchets organiques. Cet
+              environnement imite le processus naturel de compostage mais
+              l'accélère et le garde fermé.
+            </p>
+
+            <div className="overflow-x-auto">
+              <table className="min-w-full bg-white border border-gray-300">
+                <thead>
+                  <tr>
+                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                      Caractéristiques
+                    </th>
+                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                      Composteur GEME
+                    </th>
+                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                      Autres déshydrateurs de type Lomi
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="bg-gray-50">
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Température de compostage à chaud
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">{`✅Oui (45°C < 85°C)`}</td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">{`❌Non (120°C+, Les bonnes bactéries sont tuées)`}</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Contrôle de l'humidité
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      ✅Oui
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      ❌Non
+                    </td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Échange aérobie
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      ✅Oui
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      ❌Non
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Remuage
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      ✅Oui (Lentement retourné)
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      ❌Non (Lames coupant et broyant)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Système de filtre
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Oxydation catalytique par ion métallique,
+                      <br />
+                      Pas besoin de remplacer
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Filtre à charbon,
+                      <br />
+                      Remplacer tous les 3 mois
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3
+              style={{
+                fontWeight: '600',
+              }}
+            >
+              2. La machine : Contenir le processus de compostage
+            </h3>
+            <p>
+              La machine agit comme un tas de compost dans une boîte. Elle
+              permet aux déchets organiques de se décomposer efficacement sans
+              produire de mauvaises odeurs. Ceci est réalisé grâce au contrôle
+              de l'humidité, de la température et de la circulation de l'air,
+              tous optimisés pour l'activité microbienne.
+            </p>
+            <picture>
+              <img
+                alt="Comment fonctionne le composteur électrique"
+                src="/assets/images/how-it-works/how-geme-composter-works.jpg"
+                style={{ maxWidth: '100%', marginTop: '15px' }}
+              />
+            </picture>
+
+            <h3
+              style={{
+                fontWeight: '600',
+              }}
+            >
+              3. Les microbes : Les véritables acteurs
+            </h3>
+            <p>
+              Le cœur du processus de compostage repose sur{' '}
+              <strong>GEME Kobold</strong> – un ensemble de microbes
+              soigneusement sélectionnés. Ces microbes agissent comme les "vers"
+              du compostage traditionnel, mais ils travaillent plus rapidement
+              et plus efficacement. Ils se reproduisent rapidement, se
+              nourrissent des déchets alimentaires et les transforment en
+              compost riche en nutriments.
+            </p>
+
+            <h4
+              style={{
+                fontWeight: '500',
+              }}
+            >
+              Croissance et activité microbienne
+            </h4>
+            <p>
+              Dans des conditions idéales, certaines espèces bactériennes
+              peuvent se diviser toutes les 10 à 15 minutes, doublant ainsi leur
+              population en très peu de temps. Cette croissance exponentielle
+              est essentielle à l'efficacité des composteurs GEME, car elle
+              accélère la décomposition des matières organiques en compost.
+            </p>
+            <picture>
+              <img
+                alt="Comment les microbes se développent"
+                src="/assets/images/geme-terra-2/microbes-grow.png"
+                style={{ maxWidth: '100%', marginTop: '15px' }}
+              />
+            </picture>
+
+            <h4
+              style={{
+                fontWeight: '500',
+              }}
+            >
+              Conclusion
+            </h4>
+            <p>
+              En résumé, les composteurs GEME reproduisent le processus naturel
+              de compostage dans un environnement fermé, efficace et sans odeur.
+              En exploitant une technologie microbienne avancée, ces appareils
+              offrent une solution pratique et respectueuse de l'environnement
+              pour gérer les déchets alimentaires domestiques.
+            </p>
+          </div>
+        </>
+      ),
+    },
+
+    {
+      slug: 'what-is-the-difference-between-the-starter-kobold-and-the-refill-kobold',
+      question:
+        'Quelle est la différence entre le Starter Kobold et le Refill Kobold?',
+      answer: (
+        <>
+          <h3
+            style={{
+              fontWeight: 'bold',
+            }}
+          >
+            Le Starter (Grand Sac Kobold)
+          </h3>
+          <p>
+            Le Grand Sac Kobold fait généralement référence au sac de 2kg/1,5kg
+            de GEME Kobold. Il est utilisé comme démarreur de compost et doit
+            être utilisé en une seule fois lors de la{' '}
+            <strong>phase d'installation</strong>.
+          </p>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'flex-start',
+              alignItems: 'flex-start',
+            }}
+          >
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <h3>Starter 2kg</h3>
+              <img
+                src="/assets/images/geme-kobold/faq/geme-kobold-old.png"
+                alt="Poulets mangeant des restes"
+              />
+              <p>Kobold Classique (2022.01 ~ 2023.10)</p>
+            </div>
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <h3>Starter 1,5kg (dernière version)</h3>
+              <img
+                src="/assets/images/geme-kobold/product-image-max.jpg"
+                alt="Vers dans un bac à vers"
+              />
+              <p>Kobold Amélioré (2023.10 ~)</p>
+            </div>
+          </div>
+          <h3
+            style={{
+              fontWeight: 'bold',
+            }}
+          >
+            Les Packs de Recharges (Petit Sac Kobold)
+          </h3>
+          <p>
+            Le Petit Sac Kobold, aussi appelé pack de recharge, est une version
+            plus petite et plus pure du GEME Kobold. Ce n'est pas un starter,
+            mais plutôt un pack de recharge. Il doit être fourni périodiquement
+            (toutes les 2 ou 3 semaines) après la configuration initiale et
+            l'utilisation pendant un certain temps. Lorsque le premier lot est
+            retiré, environ 60 jours plus tard.
+          </p>
+
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'flex-start',
+              alignItems: 'flex-start',
+            }}
+          >
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <img
+                src="/assets/images/geme-kobold/product-image-back-garden.jpg"
+                alt="Une recharge de GEME Kobold"
+              />
+              <p>Recharge Kobold (Unité)</p>
+            </div>
+
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <img
+                src="/assets/images/geme-kobold/product-image-6.jpg"
+                alt="Une recharge de GEME Kobold"
+              />
+              <p>Recharge Kobold (Trimestrielle)</p>
+            </div>
+
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <img
+                src="/assets/images/geme-kobold/product-image-12.jpg"
+                alt="12 Recharges de GEME Kobold"
+              />
+
+              <p>Recharge Kobold (Semestrielle)</p>
+            </div>
+
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <img
+                src="/assets/images/geme-kobold/product-image-24.jpg"
+                alt="24 Recharges de GEME Kobold"
+              />
+              <p>Recharge Kobold (Annuelle)</p>
+            </div>
+          </div>
+
+          <h3
+            style={{
+              fontWeight: 'bold',
+            }}
+          >
+            Comparaison rapide des spécifications
+          </h3>
           <div className="overflow-x-auto">
             <table className="min-w-full bg-white border border-gray-300">
               <thead>
                 <tr>
                   <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
-                    Caractéristiques
+                    Types
                   </th>
                   <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
-                    GEME Terra 2
+                    Nom
                   </th>
                   <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
-                    Déshydrateurs de type Lomi
+                    Poids
+                  </th>
+                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                    Description
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="bg-gray-50">
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Prix
-                  </td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">{`< 600 €`}</td>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">{`150 € < x < 500 €`}</td>
-                </tr>
-                <tr>
-                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Taille
+                    Starter
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    14L
+                    GEME Kobold Starter Classique{' '}
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    3L - 4L
+                    2kg
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Depuis 2022 jusqu'à 2023-10
                   </td>
                 </tr>
                 <tr className="bg-gray-50">
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Mode de fonctionnement
+                    Starter
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Compostage continu
+                    GEME Kobold Starter Amélioré{' '}
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Broyage et déshydratation périodiques
+                    1,5kg
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Depuis 2023-10
                   </td>
                 </tr>
-                <tr>
+                <tr className="bg-gray-50">
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Résultat final
+                    Recharge
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Véritable compost
+                    Pack de Recharge GEME Kobold
                   </td>
                   <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                    Déchets séchés et cuits
+                    20g
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Comme un petit sachet de café
                   </td>
                 </tr>
-                {/* Additional rows omitted for brevity */}
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Recharge
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Pack de Recharge Trimestriel GEME Kobold
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    -
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Pack de Recharge GEME Kobold x 6
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Recharge
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Pack de Recharge Semestriel GEME Kobold
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    -
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Pack de Recharge GEME Kobold x 12
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Recharge
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Pack de Recharge Annuel GEME Kobold
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    -
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Pack de Recharge GEME Kobold x 24
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
-          <iframe
-            className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
-            src="https://www.youtube.com/embed/-qkjLB3GcKo"
-            frameBorder="0"
-            title="Vidéo de présentation du produit"
-            aria-hidden="true"
-          />
+
+          <p>
+            Pour plus de détails, consultez l{' '}
+            <a
+              className="text-v2311-primary"
+              href="/help-center/docs/faq/geme-kobold/what-is-the-difference-between-big-bag-kobold-and-small-bag-kobold"
+            >
+              article du centre d'aide
+            </a>
+          </p>
         </>
       ),
     },
 
     {
-      slug: 'can-I-add-food-waste-when-it-is-running',
+      slug: 'what-is-the-difference-between-the-starter-kobold-and-the-refill-kobold',
       question:
-        'Puis-je ajouter des déchets alimentaires lorsqu’il est en marche?',
-      answer: `Oui`,
+        'Quelle est la différence entre le GEME Kobold et d’autres additifs comme le Lomi Pod?',
+      answer: (
+        <>
+          Le GEME Kobold contient un mélange de micro-organismes, y compris des
+          bactéries, des champignons et des souches résistantes à la chaleur,
+          conçus pour décomposer efficacement les déchets alimentaires. Il
+          comprend également de la lignine et des régulateurs d'humidité, qui
+          agissent comme des suppléments de carbone pour équilibrer le rapport
+          carbone-azote dans le compost. La reproduction rapide de ces microbes
+          accélère le processus de décomposition. En revanche, les Lomi Pods
+          fonctionnent principalement comme <strong>placebos</strong>, où la
+          décomposition est principalement réalisée par la chaleur élevée et le
+          broyage, fonctionnant sur un principe complètement différent.
+        </>
+      ),
     },
     {
-      slug: 'how-much-food-waste-can-i-add-at-once',
+      slug: 'what-is-the-difference-between-big-bag-kobold-and-small-bag-kobold',
       question:
-        'Quelle quantité de déchets alimentaires puis-je ajouter à la fois?',
+        'Quand puis-je commencer à récolter le compost et combien dois-je laisser dans le GEME?',
       answer: (
         <>
-          Vous pouvez ajouter <strong>jusqu'à 2kg</strong> à la fois. Il est
-          possible d'ajouter des déchets alimentaires plusieurs fois dans la
-          même journée, mais <strong>ne dépassez pas 5kg</strong> en une seule
-          journée.
-          <br />
-          <br />
-          <em>Remarque :</em> Le récipient peut contenir jusqu'à{' '}
-          <strong>19L</strong>, mais cela ne signifie pas que vous pouvez le
-          remplir complètement d’un coup.
-          <br />
-          <br />
-          Ajouter <strong>5kg de déchets à la fois</strong> est possible et a
-          été testé selon les critères de référence de l'usine, mais cela{' '}
-          <strong>n'est pas recommandé pour une utilisation quotidienne</strong>
-          .
-          <iframe
-            className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
-            src="https://www.youtube.com/embed/JV0nZtaRaD0"
-            frameBorder="0"
-            title="GEME décompose les déchets alimentaires en 7 heures - vidéo non coupée"
-            aria-hidden="true"
-          />
-        </>
-      ),
-    },
-
-    {
-      slug: 'what-kinds-of-food-waste-can-i-put',
-      question: 'Quels types de déchets alimentaires puis-je mettre?',
-      answer: (
-        <>
-          <div className="max-w-3xl mx-auto p-6">
-            <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              Presque tous les aliments que vous mangez peuvent être mis dans le
-              composteur GEME.
-            </p>
-            <div className="flex flex-col md:flex-row items-start md:items-center mb-6">
-              <picture>
-                <img
-                  src="https://www.geme.bio/help-center/assets/images/supported-foodwaste-guide-055cef03c7c375f24ce99e1625de5d6f.png"
-                  alt="Déchets alimentaires pris en charge par le composteur GEME"
-                />
-              </picture>
-            </div>
-
-            <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              Il prend également en charge les déchets liquides, comme la soupe.
-              <iframe
-                className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
-                src="https://www.youtube.com/embed/yGkcEaeXlQQ"
-                frameBorder="0"
-                title="Vidéo de présentation du produit"
-                aria-hidden="true"
-              />
-            </p>
-
-            <p className="text-gray-700 text-lg leading-relaxed">
-              Il peut également décomposer les déchets d'animaux, comme les
-              excréments de chien et la litière pour chats.
-            </p>
-            <picture>
-              <img
-                src="/assets/images/geme-terra-2/cat-litter.png"
-                alt="Déchets d'animaux pris en charge par le composteur GEME"
-              />
-            </picture>
-          </div>
-        </>
-      ),
-    },
-    {
-      slug: 'how-long-will-it-take-for-geme-to-turn-my-food-waste-into-compost',
-      question:
-        'Combien de temps faut-il pour que mes déchets alimentaires se transforment en compost?',
-      answer: (
-        <>
-          Pour la plupart des restes quotidiens, cela prend environ 6 à 8 heures
-          pour décomposer les déchets.
-          <br />
-          Regardez cette vidéo non coupée de 7 heures. (
-          <b className="text-gray-500">
-            aucun de nos concurrents n'ose partager de telles vidéos en direct
-            avec le public
-          </b>
-          )
-          <iframe
-            className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
-            src="https://www.youtube.com/embed/asNRoqkC_BA"
-            frameBorder="0"
-            title="GEME décompose les déchets alimentaires en 7 heures - vidéo non coupée"
-            aria-hidden="true"
-          />
-          Cependant, pour certains déchets alimentaires, comme les épluchures
-          d'orange, cela prendra un peu plus de temps en raison de leurs fibres
-          résistantes. Les petits os prennent encore plus de temps.
-          <picture>
-            <img
-              src="https://www.geme.bio/help-center/assets/images/supported-foodwaste-guide-055cef03c7c375f24ce99e1625de5d6f.png"
-              alt="Déchets alimentaires pris en charge par le composteur GEME"
-            />
-          </picture>
-          <strong>Remarque:</strong> Bien qu'il ne faille que quelques heures ou
-          jours pour se transformer en compost, il ne s'agit pas encore de
-          compost fini. Nous recommandons d'attendre au moins 45 jours avant de
-          l'utiliser. Alternativement, vous pouvez mélanger le compost non fini
-          avec du sol dans un rapport de 1:8 pour faire pousser vos plantes.
-        </>
-      ),
-    },
-
-    {
-      slug: 'is-it-smell-how-often-should-i-replace-the-carbon-filter',
-      question:
-        'Est-ce que ça sent ? À quelle fréquence dois-je remplacer le filtre à charbon ?',
-      answer: (
-        <>
-          <div>
-            {`Ça ne sent pas`} car il utilise la{' '}
-            <strong className="text-v2311-primary">
-              technologie d'oxydation catalytique des ions métalliques
-            </strong>{' '}
-            pour neutraliser les odeurs. Contrairement aux composteurs
-            traditionnels, {`il n'utilise pas de filtres à charbon, donc `}
-            <strong className="text-v2311-primary">
-              il n'y a pas besoin de les remplacer
-            </strong>
-            . Le filtre est conçu pour durer toute une vie.
-          </div>
-          <div className="container mx-auto p-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-white rounded-lg shadow-md">
-                <picture>
-                  <img
-                    src="/assets/images/geme-terra-2/odor/1.jpg"
-                    alt="Couche UV photocalytique"
-                    className="w-full h-auto rounded-t-lg"
-                  />
-                </picture>
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold mb-2">Couche 1</h2>
-                  <p className="text-gray-700">
-                    Photocatalyseur et lumière UV pour éliminer les bactéries
-                    nocives.
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-lg shadow-md">
-                <picture>
-                  <img
-                    src="/assets/images/geme-terra-2/odor/2.jpg"
-                    alt="Couche d'oxydation ionique métallique"
-                    className="w-full h-auto rounded-t-lg"
-                  />
-                </picture>
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold mb-2">Couche 2</h2>
-                  <p className="text-gray-700">
-                    Processus d'oxydation catalytique des ions métalliques.
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-lg shadow-md">
-                <picture>
-                  <img
-                    src="/assets/images/geme-terra-2/odor/3.jpg"
-                    alt="Couche d'échange d'air aérobie"
-                    className="w-full h-auto rounded-t-lg"
-                  />
-                </picture>
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold mb-2">Couche 3</h2>
-                  <p className="text-gray-700">
-                    Un puissant système d'échange d'air aérobie pour le contrôle
-                    des odeurs.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </>
-      ),
-    },
-    {
-      slug: 'how-often-should-i-clean-the-bin',
-      question: 'À quelle fréquence dois-je nettoyer le bac?',
-      answer: (
-        <>
-          Techniquement, il n'est pas nécessaire de nettoyer le bac. Cela ne
-          sera peut-être pas esthétique et il pourrait y avoir une légère odeur
-          lorsque vous ouvrez le couvercle, mais une fois fermé, il reste propre
-          et sans odeur. <br />
-          La véritable question que vous pourriez poser est:{' '}
-          <strong>À quelle fréquence dois-je récolter le compost?</strong>
           <div className="container mx-auto p-4">
             <h5 className="text-xl font-semibold text-gray-800 mb-4">
-              {`1. Ne dépassez pas la ligne de limite maximale`}
+              {`1. Ne dépassez pas la limite de remplissage`}
             </h5>
             <p className="text-gray-700 mb-6">
-              Il s'agit d'une limite stricte. Si le bac est plein, retirez le
+              C’est une limite stricte. Si le composteur est plein, enlevez le
               compost dès que possible.
             </p>
 
@@ -1612,21 +1963,21 @@ export const koboldFaqPropsFr: IFaqProps = {
             </h5>
             <p className="text-gray-700 mb-6">
               Chaque fois que vous retirez du compost, laissez-en un peu à la
-              base pour que les bactéries dans le GEME Kobold puissent se
+              base afin que les bactéries dans le GEME Kobold puissent se
               reproduire et continuer à traiter les nouveaux déchets
               alimentaires.
               <strong className="text-v2311-primary">
-                Gardez le niveau du compost aligné avec l'arbre de l'agitateur.
+                Gardez le niveau de compost aligné avec l'arbre de l'agitateur.
               </strong>
             </p>
 
             <h5 className="text-xl font-semibold text-gray-800 mb-4">
-              3. Recommandation: Retirez le compost lorsque la pelle est
-              complètement enterrée
+              3. Recommandation : Retirez le compost lorsque la pale est
+              complètement enfouie
             </h5>
             <p className="text-gray-700 mb-6">
-              Recherchez la ligne jaune dans l'image ci-dessous. Il s'agit d'une
-              bonne pratique qui vous permet de collecter le compost plus
+              Cherchez la ligne jaune dans l’image ci-dessous. C’est une
+              pratique recommandée qui vous permet de récolter le compost plus
               efficacement tout en réduisant la charge de travail de la machine,
               ce qui contribue à prolonger sa durée de vie.
             </p>
@@ -1640,178 +1991,150 @@ export const koboldFaqPropsFr: IFaqProps = {
         </>
       ),
     },
-
     {
-      slug: 'can-i-feed-the-output-compost-to-my-worm-bin',
-      question:
-        'Puis-je nourrir mon bac à vers avec le compost produit par GEME pour le vermicompostage?',
+      slug: 'how-often-should-i-replace-the-kobold',
+      question: 'À quelle fréquence dois-je remplacer le Kobold?',
       answer: (
         <>
-          Oui, vous le pouvez ! Les microbes du{' '}
-          <a href="/geme-kobold">GEME Kobold</a> sont collectés et extraits de
-          la nature. Ils ne sont pas nocifs pour les animaux et sont bons pour
-          le sol. Ils fonctionnent parfaitement avec les vers dans le bac à
-          vers. Le matériau organique non décomposé sera la meilleure nourriture
-          pour les vers, tandis que le matériau décomposé restera riche en
-          nutriments.
+          S'il est bien entretenu, il n'est pas nécessaire de remplacer
+          entièrement le Kobold. Cependant, si vous remarquez que le matériau à
+          l'intérieur du composteur est trop humide ou qu'il est devenu
+          compacté, il est préférable de le remplacer par un nouveau starter.
+          <picture>
+            <img
+              alt="Remplacer le GEME Kobold"
+              src="/assets/images/geme-kobold/faq/geme-kobold-get-rock.png"
+              style={{ maxWidth: '100%', marginTop: '15px' }}
+            />
+          </picture>
+        </>
+      ),
+    },
+
+    {
+      slug: 'how-often-should-i-add-geme-kobold',
+      question: 'À quelle fréquence devrais-je ajouter du GEME Kobold?',
+      answer: (
+        <>
+          <p>
+            Ce processus repose plus sur l'expérience que sur un chiffre fixe.
+            La fréquence à laquelle vous devez ajouter GEME Kobold dépend de la
+            quantité de déchets que vous ajoutez et de la fréquence à laquelle
+            vous enlevez le compost.
+          </p>
+          <br></br>
+
+          <p>
+            Votre appareil GEME est livré avec un pack de démarrage de 1,5 kg de
+            GEME Kobold et des matériaux régulateurs d'humidité. Plus vous
+            ajoutez de déchets et plus vous enlevez souvent du compost, plus
+            vous devrez ajouter fréquemment du nouveau GEME Kobold.
+          </p>
+          <br></br>
+
+          <p>
+            Après l'activation de GEME-Kobold, ajoutez 500g de déchets
+            quotidiennement. Enlevez le compost tous les deux mois, en laissant
+            une partie pour enrichir le GEME-Kobold restant. Ajoutez un petit
+            pack de GEME Kobold toutes les deux semaines.
+          </p>
+          <br></br>
+          <p>
+            Par exemple, une famille de deux personnes ajoutant 100g de déchets
+            par jour n'a besoin de retirer le compost qu'une fois par an.
+            Commencez à ajouter GEME Kobold à ce moment-là. Si la décomposition
+            ralentit, commencez à ajouter du Kobold plus tôt.
+          </p>
+
+          <picture>
+            <img
+              alt="Remplacer GEME Kobold"
+              src="/assets/images/geme-kobold/faq/when-and-how-to-add-kobold.png"
+              style={{ maxWidth: '100%', marginTop: '15px' }}
+            />
+          </picture>
+
+          <p>
+            Pour plus de détails, veuillez consulter l{' '}
+            <a
+              className="text-v2311-primary"
+              href="/help-center/docs/faq/how-to-use/how-often-should-i-add-geme-kobold"
+            >
+              article du centre d'aide
+            </a>
+            .
+          </p>
         </>
       ),
     },
     {
-      slug: 'what-is-the-maintenance-cost-for-keep-the-unit',
+      slug: 'how-often-should-i-replace-the-kobold',
       question:
-        'Quel est le coût de l’électricité pour faire fonctionner l’appareil?',
+        'Étant donné que Kobold contient des bactéries, est-il dangereux pour les humains et les animaux?',
       answer: (
         <>
-          <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              Coûts annuels du composteur GEME : Une analyse détaillée
-            </h2>
+          Non, les bactéries contenues dans GEME Kobold ne sont pas dangereuses.
+          Ce sont des microbes bénéfiques spécifiquement choisis qui jouent un
+          rôle vital dans le compostage. En microbiologie, de nombreuses
+          bactéries sont connues pour soutenir des processus naturels, tels que
+          la décomposition des matières organiques en compost. Ces microbes sont
+          similaires aux bactéries que l'on trouve dans le sol sain ou les
+          aliments fermentés. Ils se concentrent sur la décomposition des
+          déchets alimentaires de manière efficace, sans poser de risque pour
+          les humains, les animaux de compagnie ou l'environnement. Les souches
+          soigneusement sélectionnées garantissent un compostage sûr et
+          efficace. De plus, cela a été bien testé et certifié.
+        </>
+      ),
+    },
 
-            <div className="mb-4">
-              <h3 className="text-xl font-semibold text-gray-700 mb-2">
-                1. Consommation d'énergie quotidienne
-              </h3>
-              <p className="text-gray-700">
-                Le composteur GEME consomme environ{' '}
-                <strong>1,44 kWh par jour</strong>. Cela équivaut à la
-                consommation énergétique quotidienne d'un ordinateur portable
-                fonctionnant en continu.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <h3 className="text-xl font-semibold text-gray-700 mb-2">
-                2. Consommation d'énergie annuelle
-              </h3>
-              <p className="text-gray-700">
-                Étant donné que l'appareil fonctionne 24 heures par jour, la
-                consommation totale d'énergie sur une année peut être calculée
-                comme suit :
-              </p>
-              <p className="text-gray-700 font-mono bg-gray-100 p-2 rounded-lg">
-                1,44 kWh/jour × 365 jours/an = 525,6 kWh/an
-              </p>
-              <p className="text-gray-700">
-                Cela signifie qu'au cours d'une année, le composteur GEME
-                utilise un total de <strong>525,6 kWh</strong>.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <h3 className="text-xl font-semibold text-gray-700 mb-2">
-                3. Coût de l'électricité
-              </h3>
-              <p className="text-gray-700">
-                Le coût moyen de l'électricité aux États-Unis est d'environ{' '}
-                <strong>$0,13 par kWh</strong>. Par conséquent, le coût annuel
-                de fonctionnement du composteur GEME peut être calculé comme
-                suit :
-              </p>
-              <p className="text-gray-700 font-mono bg-gray-100 p-2 rounded-lg">
-                525,6 kWh/an × $0,13/kWh = $68,33/an
-              </p>
-              <p className="text-gray-700">
-                Cette calcul montre que le coût de l’électricité pour le
-                composteur GEME s'élève à environ <strong>$68,33 par an</strong>
-                .
-              </p>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold text-gray-700 mb-2">
-                4. Conclusion
-              </h3>
-              <p className="text-gray-700">
-                Le coût annuel de fonctionnement du composteur GEME, en tenant
-                compte uniquement de l'électricité, est relativement faible, à{' '}
-                <strong>$68,33</strong>. Cela en fait un choix économique pour
-                ceux qui souhaitent réduire les déchets alimentaires et produire
-                du compost tout en maintenant de faibles frais de
-                fonctionnement.
-              </p>
-            </div>
-
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              Comparaison des coûts annuels d'électricité
-            </h2>
-            <div className="overflow-x-auto">
-              <table className="min-w-full bg-white border border-gray-300">
-                <thead>
-                  <tr>
-                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
-                      Appareil
-                    </th>
-                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
-                      Consommation d'énergie quotidienne (kWh)
-                    </th>
-                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
-                      Consommation d'énergie annuelle (kWh)
-                    </th>
-                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
-                      Coût moyen de l'électricité ($/kWh)
-                    </th>
-                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
-                      Coût annuel de l'électricité ($)
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="bg-gray-50">
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      Composteur GEME
-                    </td>
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      1,44
-                    </td>
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      525,6
-                    </td>
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      $0,13
-                    </td>
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      $68,33
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      Réfrigérateur
-                    </td>
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      1,5
-                    </td>
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      547,5
-                    </td>
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      $0,13
-                    </td>
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      $71,18
-                    </td>
-                  </tr>
-                  <tr className="bg-gray-50">
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      Climatisation
-                    </td>
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      5,0 (en été)
-                    </td>
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      600
-                    </td>
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      $0,13
-                    </td>
-                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
-                      $78,00
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+    {
+      slug: 'how-often-should-i-replace-the-kobold',
+      question: 'Puis-je utiliser GEME Kobold en dehors du GEME Composteur?',
+      answer: (
+        <>
+          Non, GEME Kobold est spécifiquement conçu pour une utilisation dans le
+          composteur GEME. Les microbes de GEME Kobold nécessitent un
+          environnement contrôlé, comme celui du composteur GEME, où des
+          conditions telles que la température, l'humidité et la circulation de
+          l'air sont optimisées pour un compostage efficace. L'utilisation de
+          GEME Kobold en dehors de cet environnement pourrait ne pas donner les
+          résultats souhaités car les conditions nécessaires à la croissance et
+          à la décomposition microbienne ne sont pas présentes.
+          <br />
+          <br />
+          <b>Remarque</b> : Si vous achetez et utilisez Kobold sans le
+          composteur GEME, GEME n'est pas responsable du résultat.
+        </>
+      ),
+    },
+    {
+      slug: 'how-often-should-i-replace-the-kobold',
+      question:
+        'Puis-je utiliser d’autres matériaux de démarrage de compost dans le composteur GEME?',
+      answer: (
+        <>
+          Bien que d'autres matériaux de démarrage de compost puissent
+          fonctionner dans différents systèmes de compostage, GEME Kobold est
+          spécifiquement conçu pour le composteur GEME. Son mélange unique de
+          microbes garantit une décomposition optimale dans l'environnement
+          contrôlé de la machine. L'utilisation d'autres matériaux de démarrage
+          peut ne pas donner les mêmes résultats efficaces, car ils ne sont pas
+          adaptés au processus spécifique de GEME.
+          <br />
+          <br />
+          <b>Remarque</b> : Si vous utilisez d'autres matériaux de démarrage
+          avec le composteur GEME, GEME n'est pas responsable du résultat.
+        </>
+      ),
+    },
+    {
+      slug: 'where-can-i-buy-more-kobold',
+      question: 'Où puis-je acheter plus de Kobold?',
+      answer: (
+        <>
+          Ici, sur cette page. Faites défiler vers le haut pour commander
+          maintenant.
         </>
       ),
     },
