@@ -74,42 +74,207 @@ export const koboldFaqPropsEn: IFaqProps = {
       question: 'How does it work?',
       answer: (
         <>
-          <h4>
-            ✅ <strong>Simulates a compost pile in a box</strong>, ❌
-            <del>not just dehydration and heat</del>
-          </h4>
-          GEME Composters are home appliances that provide and maintain{' '}
-          <strong>an ideal environment</strong> for {`GEME's`} special microbes
-          (GEME Kobold) to break down bio-waste. Terra 2 works on the same
-          principle.
-          <br />
-          <ul>
-            <li>
-              <strong>The Machine</strong>: It simulates a compost pile in a
-              contained environment, ensuring that it will not smell.
-              <br />
-              <picture>
-                <img
-                  alt="How electric composter works"
-                  src="/assets/images/how-it-works/how-geme-composter-works.jpg"
-                />
-              </picture>
-            </li>
-            <li>
-              <strong>The Kobold</strong>: Microbes perform most of the work.
-              They reproduce quickly and absorb energy from the food waste. Just
-              like worms consume food, microbes break down waste and produce
-              compost.
-              <picture>
-                <img
-                  alt="How microbes grow"
-                  src="/assets/images/geme-terra-2/microbes-grow.png"
-                />
-              </picture>
-              Under ideal conditions, some bacterial species can divide every
-              10–15 minutes, doubling the population at these intervals.
-            </li>
-          </ul>
+          <div className="mb-8">
+            <h2
+              // className="bold"
+              style={{
+                fontWeight: 'bold',
+                // marginBottom: '20px'
+              }}
+            >
+              How Does the GEME Composter Work?
+            </h2>
+
+            <h3
+              style={{
+                fontWeight: '600',
+                // marginTop: '20px',
+                // marginBottom: '10px',
+              }}
+            >
+              1. Simulating a Compost Pile in a Controlled Environment
+            </h3>
+            <p>
+              GEME Composters create the perfect environment for composting, not
+              just relying on dehydration and heat . They replicate the
+              conditions of a compost pile while keeping everything contained
+              and odor-free.
+            </p>
+
+            <h4
+              style={{
+                fontWeight: '500',
+                // marginTop: '20px',
+                // marginBottom: '10px',
+              }}
+            >
+              The Technology Behind GEME Composters
+            </h4>
+            <p>
+              GEME Composters are designed to maintain an{' '}
+              <strong>ideal environment</strong> for the special microbes (GEME
+              Kobold) to break down bio-waste. This environment mimics the
+              natural composting process but speeds it up and keeps it
+              contained.
+            </p>
+
+            <div className="overflow-x-auto">
+              <table className="min-w-full bg-white border border-gray-300">
+                <thead>
+                  <tr>
+                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                      Features
+                    </th>
+                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                      GEME Composter
+                    </th>
+                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                      Other Lomi-like Dehydrators
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="bg-gray-50">
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Hot Composting Temperature
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">{`✅Yes(45°C < 85°C)}`}</td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">{`❌No(120°C+, Good bacteria killed)`}</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Moisture Control
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      ✅Yes
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      ❌No
+                    </td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Aerobic Exchange
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      ✅Yes
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      ❌No
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Stirring
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      ✅Yes(Gently Turning)
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      ❌No(Blade Cutting and Grinding)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Filter System
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Metal ion catalytic oxidation,
+                      <br />
+                      No need to replace
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Carbon filter,
+                      <br />
+                      Replace every 3 months
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3
+              style={{
+                fontWeight: '600',
+                // marginTop: '30px',
+                // marginBottom: '10px',
+              }}
+            >
+              2. The Machine: Containing the Composting Process
+            </h3>
+            <p>
+              The machine acts like a compost pile inside a box. It ensures that
+              the bio-waste breaks down efficiently without producing any odors.
+              This is achieved through the control of moisture, temperature, and
+              airflow, all optimized for microbial activity.
+            </p>
+            <picture>
+              <img
+                alt="How electric composter works"
+                src="/assets/images/how-it-works/how-geme-composter-works.jpg"
+                style={{ maxWidth: '100%', marginTop: '15px' }}
+              />
+            </picture>
+
+            <h3
+              style={{
+                fontWeight: '600',
+                // marginTop: '30px',
+                // marginBottom: '10px',
+              }}
+            >
+              3. The Microbes: The Real Workhorses
+            </h3>
+            <p>
+              The heart of the composting process lies with{' '}
+              <strong>GEME Kobold</strong> – a carefully selected set of
+              microbes. These microbes act like the “worms” of traditional
+              composting, but they work faster and more efficiently. They
+              reproduce rapidly, feeding on the food waste and turning it into
+              nutrient-rich compost.
+            </p>
+
+            <h4
+              style={{
+                fontWeight: '500',
+                // marginTop: '20px',
+                // marginBottom: '10px',
+              }}
+            >
+              Microbial Growth and Activity
+            </h4>
+            <p>
+              Under ideal conditions, certain bacterial species can divide every
+              10-15 minutes, doubling their population in a very short period.
+              This exponential growth is key to the efficiency of GEME
+              Composters, as it accelerates the breakdown of organic material
+              into compost.
+            </p>
+            <picture>
+              <img
+                alt="How microbes grow"
+                src="/assets/images/geme-terra-2/microbes-grow.png"
+                style={{ maxWidth: '100%', marginTop: '15px' }}
+              />
+            </picture>
+
+            <h4
+              style={{
+                fontWeight: '500',
+                // marginTop: '30px',
+                // marginBottom: '10px',
+              }}
+            >
+              Conclusion
+            </h4>
+            <p>
+              In summary, GEME Composters replicate the natural composting
+              process in a closed, efficient, and odor-free environment. By
+              leveraging advanced microbial technology, these devices provide a
+              practical and environmentally friendly solution for managing
+              household food waste.
+            </p>
+          </div>
         </>
       ),
     },
