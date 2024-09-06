@@ -101,6 +101,14 @@ export const koboldFaqPropsEn: IFaqProps = {
               and odor-free.
             </p>
 
+            <iframe
+              className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
+              src="https://www.youtube.com/embed/asNRoqkC_BA"
+              frameBorder="0"
+              title="GEME zersetzt Lebensmittelabfälle in 7 Stunden - ungeschnittenes Video"
+              aria-hidden="true"
+            />
+
             <h4
               style={{
                 fontWeight: '500',
