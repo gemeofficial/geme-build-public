@@ -510,45 +510,196 @@ export const koboldFaqPropsEn: IFaqProps = {
       slug: 'what-is-the-difference-between-the-starter-kobold-and-the-refill-kobold',
       question:
         'What\'s the difference between the GEME Kobold and other electric "composter" additive like Lomi Pod?',
-      answer: <>It's like</>,
+      answer: (
+        <>
+          The GEME Kobold contains a mix of microorganisms, including bacteria,
+          fungi, and heat-resistant strains, designed to efficiently break down
+          food waste. It also includes lignin and moisture regulators, acting as
+          carbon supplements for balancing the carbon-to-nitrogen ratio in
+          compost. The rapid reproduction of these microbes drives the
+          decomposition process. In contrast, Lomi Pod function mainly as{' '}
+          <strong>placebos</strong>, where the decomposition is largely achieved
+          through high heat and grinding, operating on a completely different
+          principle.
+        </>
+      ),
     },
-    // {
-    //   slug: 'what-is-the-difference-between-big-bag-kobold-and-small-bag-kobold',
-    //   question:
-    //     'When can I start harvesting the compost and how much should I need to Leave in GEME?',
-    //   answer: <></>,
-    // },
+    {
+      slug: 'what-is-the-difference-between-big-bag-kobold-and-small-bag-kobold',
+      question:
+        'When can I start harvesting the compost and how much should I need to Leave in GEME?',
+      answer: (
+        <>
+          <div className="container mx-auto p-4">
+            <h5 className="text-xl font-semibold text-gray-800 mb-4">
+              {`1. Don't exceed the full limit line`}
+            </h5>
+            <p className="text-gray-700 mb-6">
+              This is a hard limit. If it gets full, remove the compost as soon
+              as possible.
+            </p>
 
+            <h5 className="text-xl font-semibold text-gray-800 mb-4">
+              2. Do not empty all of the compost
+            </h5>
+            <p className="text-gray-700 mb-6">
+              Every time you remove compost, leave some at the base so that the
+              bacteria in the GEME Kobold can reproduce and continue processing
+              new food waste.
+              <strong className="text-v2311-primary">
+                Keep the compost level aligned with the agitator shaft.
+              </strong>
+            </p>
+
+            <h5 className="text-xl font-semibold text-gray-800 mb-4">
+              3. Recommended: Remove compost when the paddle is fully buried
+            </h5>
+            <p className="text-gray-700 mb-6">
+              Look for the yellow line in the picture below. This is a best
+              practice that allows you to collect compost more efficiently while
+              reducing the machine’s workload, helping to extend its lifespan.
+            </p>
+          </div>
+          <picture>
+            <img
+              src="/assets/images/geme-terra-2/harvest-compost/best-practice-removal.png"
+              alt="Best practice to remove GEME compost"
+            />
+          </picture>
+        </>
+      ),
+    },
     {
       slug: 'how-often-should-i-replace-the-kobold',
       question: 'How often should I replace the Kobold?',
-      answer: <></>,
+      answer: (
+        <>
+          If properly maintained, there is no need to replace the entire Kobold.
+          However, if you notice that the material inside the composter is too
+          wet or has become compacted, it’s better to replace it with a new
+          starter.
+          <picture>
+            <img
+              alt="Replace GEME Kobold"
+              src="/assets/images/geme-kobold/faq/geme-kobold-get-rock.png"
+              style={{ maxWidth: '100%', marginTop: '15px' }}
+            />
+          </picture>
+        </>
+      ),
     },
 
     {
       slug: 'how-often-should-i-add-geme-kobold',
       question: 'How often should I add GEME Kobold?',
-      answer: <></>,
+      answer: (
+        <>
+          <p>
+            This process is more based on experience rather than a fixed number.
+            How often you need to add GEME Kobold depends on the amount of waste
+            you put in and how frequently you remove the compost.
+          </p>
+          <br></br>
+
+          <p>
+            Your GEME device comes with a 1.5kg starter pack of GEME Kobold and
+            moisture-adjusting materials. The more waste you add and the more
+            often you remove compost, the more frequently you’ll need to add new
+            GEME Kobold.
+          </p>
+          <br></br>
+
+          <p>
+            After activating GEME-Kobold, add 500g of waste daily. Remove the
+            compost every two months, leaving some to enrich the remaining
+            GEME-Kobold. Add one small pack of GEME Kobold every two weeks.
+          </p>
+          <br></br>
+          <p>
+            For example, a family of two adding 100g of waste daily only needs
+            to remove compost once a year. Start adding GEME Kobold then. If the
+            decomposition slows, start adding Kobold earlier.
+          </p>
+
+          <picture>
+            <img
+              alt="Replace GEME Kobold"
+              src="/assets/images/geme-kobold/faq/when-and-how-to-add-kobold.png"
+              style={{ maxWidth: '100%', marginTop: '15px' }}
+            />
+          </picture>
+
+          <p>
+            More detail please refer to{' '}
+            <a
+              className="text-v2311-primary"
+              href="/help-center/docs/faq/how-to-use/how-often-should-i-add-geme-kobold"
+            >
+              Help Center Article
+            </a>
+            .
+          </p>
+        </>
+      ),
     },
 
     {
       slug: 'how-often-should-i-replace-the-kobold',
       question:
         'Since Kobold contains bacteria, Is it harmful to human and animals?',
-      answer: <></>,
+      answer: (
+        <>
+          No, the bacteria in GEME Kobold are not harmful. They are specifically
+          chosen beneficial microbes that play a vital role in composting. In
+          microbiology, many bacteria are known to support natural processes,
+          such as breaking down organic materials into compost. These microbes
+          are similar to the bacteria found in healthy soil or fermented foods.
+          They focus on decomposing food waste efficiently, without posing any
+          risk to humans, pets, or the environment. The carefully selected
+          strains ensure safe and effective composting. And it is well tested
+          and get certificate to produce in production.
+        </>
+      ),
     },
 
     {
       slug: 'how-often-should-i-replace-the-kobold',
       question: 'Can I use GEME Kobold outside GEME Composter?',
-      answer: <></>,
+      answer: (
+        <>
+          No, GEME Kobold is specifically designed for use within the GEME
+          Composter. The microbes in GEME Kobold require a controlled
+          environment, such as the GEME Composter, where conditions like
+          temperature, moisture, and airflow are optimized for effective
+          composting. Using GEME Kobold outside of this environment may not
+          yield the desired results because it won't provide the necessary
+          conditions for microbial growth and decomposition.
+          <br />
+          <br />
+          <b>Note</b>: If you purchase and use Kobold without GEME Composter,
+          GEME is not responsible for the result.
+        </>
+      ),
     },
 
     {
       slug: 'how-often-should-i-replace-the-kobold',
       question:
         'Can I use other composting starter material inside GEME Composter?',
-      answer: <></>,
+      answer: (
+        <>
+          While other composting starters may work in different composting
+          systems, GEME Kobold is specifically designed for the GEME Composter.
+          Its unique blend of microbes ensures optimal decomposition inside the
+          controlled environment of the machine. Using other starter materials
+          may not yield the same efficient results, as they are not tailored to
+          GEME's specific process.
+          <br />
+          <br />
+          <b>Note</b>: If you use other starters or material with GEME
+          Composter, GEME is not responsible for the result.
+        </>
+      ),
     },
 
     {
