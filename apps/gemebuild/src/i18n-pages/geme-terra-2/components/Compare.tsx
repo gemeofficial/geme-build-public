@@ -19,7 +19,7 @@ export default function Compare({ description, title, items }: ICompareProps) {
         {description}
       </SectionDescription>
 
-      <ul className="grid grid-cols-3 md:grid-cols-6 gap-8">
+      <ul className="mt-6 md:mt-8 grid grid-cols-3 md:grid-cols-6 gap-8">
         {items.map((item, index) => (
           <li className="relative grayscale" key={index}>
             <Image
@@ -30,7 +30,8 @@ export default function Compare({ description, title, items }: ICompareProps) {
               className="object-contain w-full h-full"
             />
             <div className="text-center md:text-lg lg:text-xl">
-              {item.title}
+              {/* {item.title} */}
+              {'Brand' + (index + 1)}
             </div>
           </li>
         ))}
