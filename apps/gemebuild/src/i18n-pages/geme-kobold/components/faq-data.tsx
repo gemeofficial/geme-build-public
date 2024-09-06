@@ -282,7 +282,228 @@ export const koboldFaqPropsEn: IFaqProps = {
       slug: 'what-is-the-difference-between-the-starter-kobold-and-the-refill-kobold',
       question:
         "What's the difference between the starter Kobold and the refill Kobold?",
-      answer: <></>,
+      answer: (
+        <>
+          <h3
+            style={{
+              fontWeight: 'bold',
+            }}
+          >
+            The Starter(Big Bag Kobold)
+          </h3>
+          <p>
+            Big Bag Kobold, usually refer to the 2kg/1.5kg bag of GEME Kobold.
+            Which is used to be the compost starter. It supposed to be used all
+            at one time in the <strong>setup phase</strong>.
+          </p>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'flex-start',
+              alignItems: 'flex-start',
+              // marginTop: '10px',
+            }}
+          >
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <h3>Starter 2kg </h3>
+              <img
+                src="/assets/images/geme-kobold/faq/geme-kobold-old.png"
+                alt="Chickens eating scraps"
+              />
+              <p>Classic Kobold (2022.01 ~ 2023.10)</p>
+            </div>
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <h3>Starter 1.5kg(latest)</h3>
+              <img
+                src="/assets/images/geme-kobold/product-image-max.jpg"
+                alt="Worms in worm bin"
+              />
+
+              <p>Upgraded Kobold (2023.10 ~)</p>
+            </div>
+          </div>
+          <h3
+            style={{
+              fontWeight: 'bold',
+            }}
+          >
+            The Refill Packs(Small Bag Kobold)
+          </h3>
+          <p>
+            Small bag of Kobold, also called refill pack. Is a small and purer
+            version of GEME Kobold and it is not the starter, but the refill
+            ones. It supposed to be supplied periodically(2 or 3 weeks) after
+            the starter setup and use for a while. When the first batch removed,
+            around 60 days later.
+          </p>
+
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'flex-start',
+              alignItems: 'flex-start',
+              // marginTop: '10px',
+            }}
+          >
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <img
+                src="/assets/images/geme-kobold/product-image-back-garden.jpg"
+                alt="One Refill Pack of GEME Kobold"
+              />
+              <p>Refill Kobold(Single)</p>
+            </div>
+
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <img
+                src="/assets/images/geme-kobold/product-image-6.jpg"
+                alt="One Refill Pack of GEME Kobold"
+              />
+              <p>Refill Kobold(Quarterly)</p>
+            </div>
+
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <img
+                src="/assets/images/geme-kobold/product-image-12.jpg"
+                alt="12 Refill Packs of GEME Kobold"
+              />
+
+              <p>Refill Kobold(Half-Year)</p>
+            </div>
+
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <img
+                src="/assets/images/geme-kobold/product-image-24.jpg"
+                alt="24 Refill Packs of GEME Kobold"
+              />
+              <p>Refill Kobold(Full-Year)</p>
+            </div>
+          </div>
+
+          <h3
+            style={{
+              fontWeight: 'bold',
+            }}
+          >
+            Quick Spec Compare
+          </h3>
+          <div className="overflow-x-auto">
+            <table className="min-w-full bg-white border border-gray-300">
+              <thead>
+                <tr>
+                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                    Types
+                  </th>
+                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                    Name
+                  </th>
+                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                    Weight
+                  </th>
+                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                    Description
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Starter
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Classic GEME Kobold Starter{' '}
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    2kg
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Since 2022 to 2023-10
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Starter
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Upgrade GEME Kobold Starter{' '}
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    1.5kg
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Since 2023-10
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Refill
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Refill Pack
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    20g
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Like a small coffee bag
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Refill
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Refill Quarterly
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    -
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Refill Pack x 6
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Refill
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Refill Half-Year
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    -
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Refill Pack x 12
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Refill
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Refill Full-Year
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    -
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Refill Pack x 24
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            More detail please refer to{' '}
+            <a
+              className="text-v2311-primary"
+              href="/help-center/docs/faq/geme-kobold/what-is-the-difference-between-big-bag-kobold-and-small-bag-kobold"
+            >
+              Help Center Article
+            </a>
+          </p>
+        </>
+      ),
     },
 
     {
