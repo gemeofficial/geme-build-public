@@ -1,20 +1,4 @@
-export const addAboutJsonLd = () => {
-  return {
-    __html: `
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "ROKH SRL",
-        "url": "https://www.geme.bio/about",
-        "logo": "https://www.geme.bio/logo-112x112.png",
-        "sameAs": [
-          "https://twitter.com/geme_hi",
-          "https://www.youtube.com/@geme_composter"
-        ]
-      }
-    `,
-  }
-}
+
 
 export const manualJsonLd = () => {
   return {
