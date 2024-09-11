@@ -2,7 +2,6 @@ import {
   IInlinePalyerType,
   InlinePlayer,
   type IOxygenCycleProps,
-  ReviewsScoreHeader,
   ScrollTriggeredAnimatedOxygenCycle,
   SvgFoodWaste,
   SvgMicrobe,
@@ -20,6 +19,7 @@ import {
   IExaminingReportProps,
   ExaminingReport,
 } from './components'
+import { ReviewsScoreHeader } from '../pdp/components/reviews-score-header'
 
 import { ILinkComponent } from '../../contexts/link-context'
 import { FC } from 'react'

@@ -11,12 +11,12 @@ import {
   IPdpTabsProps,
   IPdpUserStoryTeamSectionsProps,
   LocaleType,
-  ReviewsScoreHeader,
 } from 'ui'
 import { ReviewsSectionModule } from '../../../components/reviews-section-module'
 import Compare, { IPdpCompareProps } from './Compare'
 import { IProductProps } from '../en'
 import { getPdpFaqProps } from './faq-data'
+import { ReviewsScoreHeader } from './reviews-score-header'
 
 export interface IPdpTabsText {
   intro: ReactNode

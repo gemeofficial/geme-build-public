@@ -3,7 +3,6 @@ import {
   IInlinePalyerType,
   InlinePlayer,
   type IOxygenCycleProps,
-  ReviewsScoreHeader,
   ScrollTriggeredAnimatedOxygenCycle,
   SvgFoodWaste,
   SvgMicrobe,
@@ -21,6 +20,7 @@ import {
   IExaminingReportProps,
   ExaminingReport,
 } from './components'
+import { ReviewsScoreHeader } from '../pdp/components/reviews-score-header'
 import { IHowItWorksProps } from './en'
 
 // page静态页面的内容 配置文件 Fr版
