@@ -1,9 +1,5 @@
 import clsx from 'clsx'
-import {
-  SectionContainer,
-  SectionDescription,
-  SectionTitle,
-} from '../ui-components'
+import { SectionContainer, SectionDescription, SectionTitle } from 'ui'
 import Image from 'next/image'
 import { getImageProps } from 'next/image'
 import { ReactNode } from 'react'

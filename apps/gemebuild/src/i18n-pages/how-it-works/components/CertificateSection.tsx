@@ -1,9 +1,5 @@
 import Image from 'next/image'
-import {
-  SectionContainer,
-  SectionDescription,
-  SectionTitle,
-} from '../ui-components'
+import { SectionContainer, SectionDescription, SectionTitle } from 'ui'
 
 export interface ICertificateSectionProps {
   title: string

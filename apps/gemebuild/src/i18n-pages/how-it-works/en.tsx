@@ -1,10 +1,7 @@
 import {
-  ExaminingReport,
-  IExaminingReportProps,
   IInlinePalyerType,
   InlinePlayer,
   type IOxygenCycleProps,
-  IUseCompostContrastProps,
   ReviewsScoreHeader,
   ScrollTriggeredAnimatedOxygenCycle,
   SvgFoodWaste,
@@ -13,14 +10,21 @@ import {
   SvgTemperature,
   SvgWaterDrop,
   SvgWood,
-  UseCompostContrast,
 } from 'ui'
 
-import { ShortVideo, IShortVideoProps } from 'ui/src/how-it-works/ShortVideo'
+import {
+  ShortVideo,
+  IShortVideoProps,
+  IUseCompostContrastProps,
+  UseCompostContrast,
+  IExaminingReportProps,
+  ExaminingReport,
+} from './components'
+
 import { ILinkComponent } from '../../contexts/link-context'
 import { FC } from 'react'
 
-export interface IPdpIntroProps {
+export interface IHowItWorksProps {
   ReviewsComponent: FC<{}>
   PrefetchLink?: ILinkComponent
 }
@@ -324,7 +328,7 @@ const inlinePlayerProps: IInlinePalyerType = {
   mixpanelFrom: 'Product page inline player',
 }
 
-function HowItWorksEn({ ReviewsComponent }: IPdpIntroProps) {
+function HowItWorksEn({ ReviewsComponent }: IHowItWorksProps) {
   return (
     <>
       <div className="py-8 lg:pt-6 lg:pb-16">

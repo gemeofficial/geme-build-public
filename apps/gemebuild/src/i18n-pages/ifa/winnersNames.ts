@@ -1,4 +1,4 @@
-import { IWinnersNamesTickerItem } from 'ui'
+import { IWinnersNamesTickerItem } from "./components";
 
 export const winnersNames: IWinnersNamesTickerItem[] = [
   {

@@ -1,11 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import {
-  ExaminingReport,
-  IExaminingReportProps,
   IInlinePalyerType,
   InlinePlayer,
   type IOxygenCycleProps,
-  IUseCompostContrastProps,
   ReviewsScoreHeader,
   ScrollTriggeredAnimatedOxygenCycle,
   SvgFoodWaste,
@@ -14,17 +11,17 @@ import {
   SvgTemperature,
   SvgWaterDrop,
   SvgWood,
-  UseCompostContrast,
 } from 'ui'
 
-import { ShortVideo, IShortVideoProps } from 'ui/src/how-it-works/ShortVideo'
-import { ILinkComponent } from '../../contexts/link-context'
-import { FC } from 'react'
-
-export interface IPdpIntroProps {
-  ReviewsComponent: FC<{}>
-  PrefetchLink?: ILinkComponent
-}
+import {
+  ShortVideo,
+  IShortVideoProps,
+  IUseCompostContrastProps,
+  UseCompostContrast,
+  IExaminingReportProps,
+  ExaminingReport,
+} from './components'
+import { IHowItWorksProps } from './en'
 
 // page静态页面的内容 配置文件 Fr版
 // 短视频工作过程section
@@ -346,7 +343,7 @@ const inlinePlayerProps: IInlinePalyerType = {
   mixpanelFrom: 'Lecteur intégré de la page produit',
 }
 
-function HowItWorksFr({ ReviewsComponent }: IPdpIntroProps) {
+function HowItWorksFr({ ReviewsComponent }: IHowItWorksProps) {
   return (
     <>
       <div className="py-8 lg:pt-6 lg:pb-16">

@@ -1,11 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import {
-  ExaminingReport,
-  IExaminingReportProps,
   IInlinePalyerType,
   InlinePlayer,
   type IOxygenCycleProps,
-  IUseCompostContrastProps,
   ReviewsScoreHeader,
   ScrollTriggeredAnimatedOxygenCycle,
   SvgFoodWaste,
@@ -14,17 +11,17 @@ import {
   SvgTemperature,
   SvgWaterDrop,
   SvgWood,
-  UseCompostContrast,
 } from 'ui'
 
-import { ShortVideo, IShortVideoProps } from 'ui/src/how-it-works/ShortVideo'
-import { ILinkComponent } from '../../contexts/link-context'
-import { FC } from 'react'
-
-export interface IPdpIntroProps {
-  ReviewsComponent: FC<{}>
-  PrefetchLink?: ILinkComponent
-}
+import {
+  ShortVideo,
+  IShortVideoProps,
+  IUseCompostContrastProps,
+  UseCompostContrast,
+  IExaminingReportProps,
+  ExaminingReport,
+} from './components'
+import { IHowItWorksProps } from './en'
 
 // page静态页面的内容 配置文件 De版
 // 短视频工作过程section
@@ -316,7 +313,6 @@ const examiningReportProps: IExaminingReportProps = {
   ),
 }
 
-
 // before vs after
 const useCompostContrastProps: IUseCompostContrastProps = {
   title: 'Vor und nach der Anwendung von GEME-Kompost',
@@ -332,13 +328,16 @@ const useCompostContrastProps: IUseCompostContrastProps = {
   },
 }
 
-
 // YouTube 视频播放器
 const inlinePlayerProps: IInlinePalyerType = {
   title: 'Sehen heißt glauben',
   description: (
     <>
-      <strong>Zerlegen Sie 2 kg Abfall in 7 Stunden</strong>! Dieses ungeschnittene 7-Stunden-Video mag langweilig erscheinen, bietet aber einen tiefen Einblick in die reale Leistung des GEME Komposters. Wenn Sie die ersten 3 Minuten mit den letzten 10 Minuten vergleichen, werden Sie erstaunt sein.
+      <strong>Zerlegen Sie 2 kg Abfall in 7 Stunden</strong>! Dieses
+      ungeschnittene 7-Stunden-Video mag langweilig erscheinen, bietet aber
+      einen tiefen Einblick in die reale Leistung des GEME Komposters. Wenn Sie
+      die ersten 3 Minuten mit den letzten 10 Minuten vergleichen, werden Sie
+      erstaunt sein.
     </>
   ),
 
@@ -347,8 +346,7 @@ const inlinePlayerProps: IInlinePalyerType = {
   mixpanelFrom: 'Produktseite Inline-Player',
 }
 
-
-function HowItWorksDe({ ReviewsComponent }: IPdpIntroProps) {
+function HowItWorksDe({ ReviewsComponent }: IHowItWorksProps) {
   return (
     <>
       <div className="py-8 lg:pt-6 lg:pb-16">

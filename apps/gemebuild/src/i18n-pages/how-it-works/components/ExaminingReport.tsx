@@ -1,11 +1,7 @@
-import React, { memo, ReactNode } from 'react'
-import {
-  SectionContainer,
-  SectionDescription,
-  SectionTitle,
-} from '../ui-components'
+import { ReactNode } from 'react'
+import { SectionContainer, SectionDescription, SectionTitle } from 'ui'
 import Image from 'next/image'
-import { Image as IImageType } from '../client-components/BeforeAfterSlider'
+import { Image as IImageType } from 'ui/src/client-components/BeforeAfterSlider'
 
 export interface IExaminingReportProps {
   title: string

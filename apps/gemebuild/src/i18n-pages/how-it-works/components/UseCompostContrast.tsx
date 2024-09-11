@@ -1,13 +1,10 @@
 import { ReactNode } from 'react'
+
+import { SectionContainer, SectionDescription, SectionTitle } from 'ui'
 import {
   BeforeAfterSlider,
   Image,
-} from '../client-components/BeforeAfterSlider'
-import {
-  SectionContainer,
-  SectionDescription,
-  SectionTitle,
-} from '../ui-components'
+} from 'ui/src/client-components/BeforeAfterSlider'
 
 export interface IUseCompostContrastProps {
   title: ReactNode
