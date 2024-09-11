@@ -1,5 +1,5 @@
 import { SectionDescription, SectionTitle } from '../ui-components'
-import PlayerComponent, { IPlayerComponentType } from './PlayerComponent'
+import { PlayerComponent, IPlayerComponentType } from './PlayerComponent'
 
 export interface IInlinePalyerType extends IPlayerComponentType {
   title?: string

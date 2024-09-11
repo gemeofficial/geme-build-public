@@ -9,11 +9,11 @@ import {
   SvgTemperature,
   SvgWaterDrop,
   SvgWood,
+  ImgAndTextSection,
+  IImgAndTextSectionProps,
 } from 'ui'
 
 import {
-  ShortVideo,
-  IShortVideoProps,
   IUseCompostContrastProps,
   UseCompostContrast,
   IExaminingReportProps,
@@ -31,7 +31,7 @@ export interface IHowItWorksProps {
 
 // page静态页面的内容 配置文件 En版
 // 短视频工作过程section
-const shortVideoProps: IShortVideoProps = {
+const shortVideoProps: IImgAndTextSectionProps = {
   title: 'Compost Pile in A Box',
   description: (
     <>
@@ -63,7 +63,7 @@ const shortVideoProps: IShortVideoProps = {
 }
 
 // 图文section
-const imageTextProps: IShortVideoProps = {
+const imageTextProps: IImgAndTextSectionProps = {
   title: 'Microbes, Not Dehydrate',
   description: (
     <>
@@ -332,8 +332,8 @@ function HowItWorksEn({ ReviewsComponent }: IHowItWorksProps) {
   return (
     <>
       <div className="py-8 lg:pt-6 lg:pb-16">
-        <ShortVideo {...shortVideoProps} />
-        <ShortVideo {...imageTextProps} />
+        <ImgAndTextSection {...shortVideoProps} />
+        <ImgAndTextSection {...imageTextProps} />
         <InlinePlayer {...inlinePlayerProps} />
         <ExaminingReport {...gemeComposterImageProps} />
         <ExaminingReport {...gemeKoboldImageProps} />

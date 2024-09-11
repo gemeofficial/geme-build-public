@@ -1,10 +1,10 @@
 import clsx from 'clsx'
-import { SectionContainer, SectionDescription, SectionTitle } from 'ui'
+import { SectionContainer, SectionDescription, SectionTitle } from '../index'
 import Image from 'next/image'
 import { getImageProps } from 'next/image'
 import { ReactNode } from 'react'
 
-export interface IShortVideoProps {
+export interface IImgAndTextSectionProps {
   title: ReactNode
   description: ReactNode
   imageUrl?: string
@@ -15,7 +15,7 @@ export interface IShortVideoProps {
   compact?: boolean
 }
 
-export function ShortVideo({
+export function ImgAndTextSection({
   title,
   description,
   imageUrl,
@@ -24,7 +24,7 @@ export function ShortVideo({
   videoSrcUrl,
   isReverse,
   compact,
-}: IShortVideoProps) {
+}: IImgAndTextSectionProps) {
   let videoPosterSrc: undefined | string
   if (videoPosterUrl != null) {
     videoPosterSrc = getImageProps({

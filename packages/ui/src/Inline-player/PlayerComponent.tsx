@@ -16,7 +16,7 @@ export interface IPlayerComponentType {
   videoIsAutoPlay?: boolean
 }
 
-export default function PlayerComponent({
+export function PlayerComponent({
   videoPosterUrl,
   type,
   videoSrcUrlOrVidioId,
