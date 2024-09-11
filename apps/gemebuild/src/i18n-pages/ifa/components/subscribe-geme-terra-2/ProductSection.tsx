@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import Image from 'next/image'
-import ImageZoomViewer from '../client-components/ImageZoomViewer'
-import { SectionTitle } from '../ui-components'
+import { SectionTitle } from 'ui'
+import ImageZoomViewer from 'ui/src/client-components/ImageZoomViewer'
 
 export interface IGemeTerra2ProductSection {
   productSectionTitle: string

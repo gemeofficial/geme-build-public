@@ -1,19 +1,20 @@
 /* eslint-disable react/no-unescaped-entities */
 import {
+  ComposterSurvey,
   IComposterSurveyProps,
   IFAHeroSection,
   IIFAHeroSectionProps,
   ISubscribeGemeTerra2Props,
+  IVideoList,
   IWinnersNamesTickerProps,
+  LocationSection,
   SubscribeGemeTerra2,
-} from 'ui'
+  VideoList,
+} from './components'
 
 import { ILinkComponent } from '../../contexts/link-context'
 import { winnersNames } from './winnersNames'
-import { VideoList, IVideoList } from 'ui'
 import { FC } from 'react'
-import { LocationSection } from 'ui'
-import { ComposterSurvey } from 'ui'
 
 // Hero Section  En
 const IFAHeroSectionProps: IIFAHeroSectionProps = {

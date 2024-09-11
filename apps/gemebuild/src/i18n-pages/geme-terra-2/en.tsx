@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import HeroSection, { IHeroSectionProps } from './components/HeroSection'
 import LogoCloud, { ILogoCloudProps } from './components/LogoCloud'
-import { Faq, IShortVideoProps, ShortVideo } from 'ui'
+import { Faq, IImgAndTextSectionProps, ImgAndTextSection } from 'ui'
 import Reviews, { IReviewsProps } from './components/Reviews'
 import Subscribe, {
   ISubscribeComponent,
@@ -64,7 +64,7 @@ const logoCloudProps: ILogoCloudProps = {
 }
 
 // 图文section1
-const shortVideoProps: IShortVideoProps = {
+const shortVideoProps: IImgAndTextSectionProps = {
   title: 'Real Composting',
   description: (
     <>
@@ -88,7 +88,7 @@ const shortVideoProps: IShortVideoProps = {
 }
 
 // 图文section2
-const imageTextProps: IShortVideoProps = {
+const imageTextProps: IImgAndTextSectionProps = {
   title: 'Smaller but Stronger',
   description: (
     <>
@@ -108,7 +108,7 @@ const imageTextProps: IShortVideoProps = {
 }
 
 // 图文section3
-const imageTextProps2: IShortVideoProps = {
+const imageTextProps2: IImgAndTextSectionProps = {
   title: 'Smarter than Ever',
   description: (
     <>
@@ -408,9 +408,9 @@ export function GemeTerra2PageEn({ SubscribeComponent }: IGemeTerra2PageProps) {
       />
       <LogoCloud {...logoCloudProps} />
 
-      <ShortVideo {...shortVideoProps} compact />
-      <ShortVideo {...imageTextProps} compact />
-      <ShortVideo {...imageTextProps2} compact />
+      <ImgAndTextSection {...shortVideoProps} compact />
+      <ImgAndTextSection {...imageTextProps} compact />
+      <ImgAndTextSection {...imageTextProps2} compact />
 
       <Compare {...compareProps} />
       <Reviews {...reviewsProps} />

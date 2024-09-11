@@ -1,6 +1,6 @@
 import clsx from 'clsx'
-import { SectionContainer } from '../ui-components'
-import { ILinkComponent } from '../../../../apps/gemebuild/src/contexts/link-context'
+import { SectionContainer } from 'ui'
+import { ILinkComponent } from '../../../contexts/link-context'
 
 export interface IComposterSurveyProps {
   title: string

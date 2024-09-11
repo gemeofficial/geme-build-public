@@ -5,14 +5,14 @@ import {
   IFAHeroSection,
   IIFAHeroSectionProps,
   ISubscribeGemeTerra2Props,
+  IVideoList,
   IWinnersNamesTickerProps,
   LocationSection,
   SubscribeGemeTerra2,
-} from 'ui'
-
-import { winnersNames } from './winnersNames'
-import { VideoList, IVideoList } from 'ui'
+  VideoList,
+} from './components'
 import { IIFAPageProps } from './en'
+import { winnersNames } from './winnersNames'
 
 // Hero Section  De
 const IFAHeroSectionProps: IIFAHeroSectionProps = {

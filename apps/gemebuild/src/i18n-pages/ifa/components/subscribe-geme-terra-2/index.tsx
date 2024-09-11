@@ -1,9 +1,5 @@
 import { FC, ReactNode } from 'react'
-import {
-  SectionContainer,
-  SectionDescription,
-  SectionTitle,
-} from '../ui-components'
+import { SectionContainer, SectionDescription, SectionTitle } from 'ui'
 import ProductSection, { IGemeTerra2ProductSection } from './ProductSection'
 
 export interface ISubscribeGemeTerra2Props extends IGemeTerra2ProductSection {

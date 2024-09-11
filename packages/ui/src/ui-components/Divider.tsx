@@ -11,7 +11,7 @@ export const Divider: React.FC<DividerProps> = ({
   color = '#fff',
   height = '24px',
   width = '2px',
-  className
+  className,
 }) => {
   return (
     <span

@@ -1,4 +1,4 @@
-import { LocaleType } from '../index'
+import { LocaleType } from 'ui'
 import StarIcon from './StarIcon'
 
 const mutilLanguageTextInfo = {
