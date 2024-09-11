@@ -67,9 +67,9 @@ export default function HomeHeroSectionSwiper({
           containerClassName="-translate-y-28"
         />
       </SwiperSlide>
-      <SwiperSlide className="w-full h-full">
+      {/* <SwiperSlide className="w-full h-full">
         <SwiperItem2 {...section2} LinkComponent={LinkComponent} />
-      </SwiperSlide>
+      </SwiperSlide> */}
       <SwiperSlide className="w-full h-full">
         <SwiperItem3 {...section3} LinkComponent={LinkComponent} />
       </SwiperSlide>
