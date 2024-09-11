@@ -143,37 +143,43 @@ const compareProps: ICompareProps = {
     {
       title: 'Lomi',
       imageUrl: '/assets/images/geme-terra-2/compare/lomi.png',
-      alt: '',
+      alt: 'Lomi composter',
+      hoverTitle: 'Lomi composter',
     },
     // {
     //   title: 'Vitamix Food Cycler',
     //   imageUrl: '/assets/images/geme-terra-2/compare/vitamix.png',
-    //   alt: '',
+    //   alt: 'Vitamix Food Cycler',
     // },
     {
       title: 'Airthereal',
       imageUrl: '/assets/images/geme-terra-2/compare/airthereal.png',
       alt: 'Airthereal Electric Kitchen Composter',
+      hoverTitle: 'Airthereal composter',
     },
     {
       title: 'Fylecen',
       imageUrl: '/assets/images/geme-terra-2/compare/fylecen.png',
       alt: 'Fylecen 4L Electric Composter',
+      hoverTitle: 'Fylecen composter',
     },
     {
       title: 'Moreborn',
       imageUrl: '/assets/images/geme-terra-2/compare/moreborn.png',
       alt: 'Moreborn composter',
+      hoverTitle: 'Moreborn composter',
     },
     {
       title: 'Mill',
       imageUrl: '/assets/images/compare-section/compare-section-mill.png',
       alt: 'Mill Composter',
+      hoverTitle: 'Mill composter',
     },
     {
       title: 'Soilkind',
       imageUrl: '/assets/images/geme-terra-2/compare/soilkind.png',
-      alt: 'soilkind Komposter',
+      alt: 'Soilkind Komposter',
+      hoverTitle: 'Soilkind composter',
     },
   ],
 }

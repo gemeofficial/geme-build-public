@@ -8,6 +8,7 @@ export interface ICompareProps {
     title: string
     imageUrl: string
     alt: string
+    hoverTitle: string
   }[]
 }
 
@@ -28,6 +29,7 @@ export default function Compare({ description, title, items }: ICompareProps) {
               width={300}
               height={300}
               className="object-contain w-full h-full"
+              title={item.hoverTitle}
             />
             <div className="text-center md:text-lg lg:text-xl">
               {/* {item.title} */}
