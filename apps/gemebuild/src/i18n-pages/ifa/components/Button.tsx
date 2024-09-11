@@ -1,10 +1,10 @@
 'use client'
 
 import DefaultLink from 'next/link'
-import { ILinkComponent } from '../../../../apps/gemebuild/src/contexts/link-context'
-import { hasMixpanel } from '../lib'
 import mixpanel from 'mixpanel-browser'
 import clsx from 'clsx'
+import { hasMixpanel } from 'ui'
+import { ILinkComponent } from '../../../contexts/link-context'
 
 export function Button({
   className,

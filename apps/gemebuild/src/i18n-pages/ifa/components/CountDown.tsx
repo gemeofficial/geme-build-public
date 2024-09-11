@@ -2,9 +2,8 @@
 
 import { PropsWithChildren, useEffect, useState } from 'react'
 import Countdown, { zeroPad } from 'react-countdown'
-import { LocaleType } from '../reviews'
 import moment from 'moment'
-import { Divider } from '../divider'
+import { Divider, LocaleType } from 'ui'
 
 interface ImultiLanguageText {
   days: string[]

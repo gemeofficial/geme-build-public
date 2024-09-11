@@ -1,18 +1,14 @@
 'use client'
 
 import { useState } from 'react'
-import { ILinkComponent } from '../../../../apps/gemebuild/src/contexts/link-context'
-import {
-  SectionContainer,
-  SectionDescription,
-  SectionTitle,
-} from '../ui-components'
+import { SectionContainer, SectionDescription, SectionTitle } from 'ui'
 import Video from './Video'
 import {
   IWinnersNamesTickerProps,
   WinnersNamesTicker,
 } from './WinnersNamesTicker'
 import { Button } from './Button'
+import { ILinkComponent } from '../../../contexts/link-context'
 
 export interface IVideoList {
   title: string

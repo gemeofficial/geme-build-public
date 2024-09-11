@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import ImageZoomViewer from '../client-components/ImageZoomViewer'
+import ImageZoomViewer from 'ui/src/client-components/ImageZoomViewer'
 
 export function LocationSection() {
   return (

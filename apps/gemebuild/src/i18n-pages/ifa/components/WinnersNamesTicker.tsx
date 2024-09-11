@@ -1,8 +1,8 @@
 import clsx from 'clsx'
-import { SectionTitle } from '../ui-components'
 import DefaultLink from 'next/link'
-import { ILinkComponent } from '../../../../apps/gemebuild/src/contexts/link-context'
-import ImageZoomViewer from '../client-components/ImageZoomViewer'
+import { ILinkComponent } from '../../../contexts/link-context'
+import { SectionTitle } from 'ui'
+import ImageZoomViewer from 'ui/src/client-components/ImageZoomViewer'
 
 export interface IWinnersNamesTickerItem {
   name: string

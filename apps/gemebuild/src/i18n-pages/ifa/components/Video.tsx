@@ -4,10 +4,9 @@ import { Dialog, Transition } from '@headlessui/react'
 import React, { Fragment, useState } from 'react'
 import { XCircleIcon } from '@heroicons/react/24/solid'
 
-import { hasMixpanel } from '../lib'
 import mixpanel from 'mixpanel-browser'
-import { PlayIcon } from '../video-inline-player'
 import clsx from 'clsx'
+import { hasMixpanel, PlayIcon } from 'ui'
 
 export interface IVideoProps {
   videoConfig: React.DetailedHTMLProps<
