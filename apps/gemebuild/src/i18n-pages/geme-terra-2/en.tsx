@@ -82,7 +82,7 @@ const shortVideoProps: IImgAndTextSectionProps = {
       </ul>
     </>
   ),
-  videoPosterUrl: '/assets/images/geme-terra-2/product-s2-jpg',
+  videoPosterUrl: '/assets/images/geme-terra-2/product-s2.jpg',
   videoSrcUrl:
     'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/0902-geme-terra-2-8s-480p.mp4',
 }
