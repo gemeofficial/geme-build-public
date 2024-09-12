@@ -1,6 +1,6 @@
 // components/Section2.tsx
 import Image from 'next/image'
-import { ReactNode } from 'react'
+import { Fragment, ReactNode } from 'react'
 import { SectionContainer, SectionDescription, SectionTitle } from 'ui'
 
 interface IImage {
@@ -30,7 +30,7 @@ export default function Section3({
 
       <div className="flex items-center justify-between mt-6 md:mt-8">
         {imageList.map((item, index) => (
-          <>
+          <Fragment key={index}>
             <div>
               <Image
                 width={800}
@@ -56,7 +56,7 @@ export default function Section3({
                 ></path>
               </svg>
             )}
-          </>
+          </Fragment>
         ))}
       </div>
     </SectionContainer>

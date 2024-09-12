@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { IAlternativeSideBySideWithImagesProps } from '../../components/feature-sections'
 import { IWithSquareImagesProps } from '../../components/product-features'
 import CurrentStatus from './components/CurrentStatus'
-import { IGKHeroSectionProps } from './components/HeroSection'
+import HeroSection, { IGKHeroSectionProps } from './components/HeroSection'
 import TheLongTermDependence from './components/TheLongTermDependence'
 import OrganicWaste from './components/OrganicWaste'
 import { IThreeColumnWithDescriptionProps } from '../../components/category-previews'
@@ -11,15 +11,9 @@ import SoilImprovement from './components/SoilImprovement'
 import EmpiricalComparison, {
   IEmpiricalComparisonProps,
 } from './components/EmpiricalComparison'
-import HeroSection, {
-  type IHeroSectionProps,
-} from './new-components/HeroSection'
-import Section1, { ISection1Props } from './new-components/Section1'
-import Section2, { ISection2Props } from './new-components/Section2'
-import Section3, { ISection3Props } from './new-components/Section3'
 
 // 第1部分配置文件 En版
-const gkHeroSectionProps: IHeroSectionProps = {
+const gkHeroSectionProps: IGKHeroSectionProps = {
   title: 'GK Resource Recycling Technology',
   highlightTitle: 'Orderly cycle that follows the laws of nature',
   description: (
@@ -37,88 +31,7 @@ const gkHeroSectionProps: IHeroSectionProps = {
       </p>
     </>
   ),
-  imageUrl: '/assets/images/gk/new/hero-bg.jpg',
   imageAlt: 'GK Resource Recycling Technology',
-}
-
-const section1Props: ISection1Props = {
-  title: 'Our Target',
-  description: (
-    <>
-      <p className="mt-4">
-        Since 2020, our GK technology has provided organic fertilizer to 300,000
-        agricultural and garden plants, greatly increasing yields and improving
-        soils. By 2030, we expect the number of communities we serve to rise to
-        one million, contributing to regenerative agriculture.
-      </p>
-    </>
-  ),
-  stats: [
-    {
-      percentage: '300,000+',
-      text: 'Since 2020, our GK technology has provided organic fertilizer to 300,000 agricultural and garden plants, greatly increasing yields and improving soils.',
-    },
-    {
-      percentage: '1,000,000+',
-      text: 'By 2030, we expect the number of communities we serve to rise to one million, contributing to regenerative agriculture.',
-    },
-  ],
-}
-
-const section2Props: ISection2Props = {
-  title: 'The long-term dependence on fertilizers on arable land has led to',
-  description: '',
-  imageList: [
-    {
-      title: 'Soil Acidification',
-      src: '/assets/images/gk/s1-1.png',
-      alt: 'Soil Acidification',
-    },
-    {
-      title: 'Secondary Salinization',
-      src: '/assets/images/gk/s1-2.png',
-      alt: 'Secondary Salinization',
-    },
-    {
-      title: 'Soil is Poor and Degraded',
-      src: '/assets/images/gk/s1-3.png',
-      alt: 'Soil is Poor and Degraded',
-    },
-  ],
-}
-
-const section3Props: ISection3Props = {
-  title: 'Organic waste is the highest quality organic matter resource',
-  description: (
-    <>
-      <p>
-        Bio-waste, especially kitchen waste, is the highest quality organic
-        matter resource
-      </p>
-      <p>
-        The protein contained in every 50 million tons of kitchen waste is
-        equivalent to the protein output of 3.3 million acres of soybeans per
-        year
-      </p>
-    </>
-  ),
-  imageList: [
-    {
-      title: 'Bio-waste',
-      src: '/assets/images/gk/new/fruit-and-vegetable-waste.jpg',
-      alt: 'Bio-waste',
-    },
-    {
-      title: 'GEME & GEME-Kobold',
-      src: '/assets/images/gk/s4-2.png',
-      alt: 'GEME & GEME-Kobold',
-    },
-    {
-      title: 'Organic Fertilizer',
-      src: '/assets/images/gk/s4-3.png',
-      alt: 'Organic Fertilizer',
-    },
-  ],
 }
 
 // 第2部分配置文件 En版
@@ -409,13 +322,23 @@ const empiricalComparison2Props: IEmpiricalComparisonProps = {
   ],
 }
 
-export function GKPageNew() {
+export function GKPageEn() {
   return (
     <>
       <HeroSection {...gkHeroSectionProps} />
-      <Section2 {...section2Props} />
-      <Section3 {...section3Props} />
-      <Section1 {...section1Props} />
+      <TheLongTermDependence {...theLongTermDependenceProps} />
+      <CurrentStatus {...currentStatusProps} />
+      <OrganicWaste {...organicWasteProps} />
+      <SoilImprovement {...soilImprovementProps} />
+      <EmpiricalComparison
+        {...empiricalComparisonProps}
+        grayBackground={false}
+      />
+      <EmpiricalComparison
+        {...empiricalComparison2Props}
+        grayBackground={true}
+        gridClassName="grid-cols-1 lg:grid-cols-2"
+      />
     </>
   )
 }
