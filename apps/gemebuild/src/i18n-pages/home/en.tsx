@@ -130,7 +130,7 @@ const contentSection2Props: IContentSection2Props = {
 
 // 首页第三部分的内容数据配置 En
 const contentSection3Props: IContentSection3Props = {
-  title: 'Food Waste to Plant Feed Home Composter',
+  title: 'Food Waste to Plant Feed',
   items: [
     {
       id: 1,

@@ -132,7 +132,7 @@ const contentSection2Props: IContentSection2Props = {
 
 // 首页第三部分的内容数据配置 Fr
 const contentSection3Props: IContentSection3Props = {
-  title: 'Déchets alimentaires en engrais pour plantes Composteur domestique',
+  title: 'Déchets alimentaires en nourriture pour plantes',
   items: [
     {
       id: 1,
