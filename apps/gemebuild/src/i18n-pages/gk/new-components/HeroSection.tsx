@@ -18,19 +18,16 @@ export default function HeroSection({
   return (
     <section className="relative w-full h-[80vh]">
       <Image
+        priority
         width={1920}
         height={1080}
         src={imageUrl}
         alt="Hero Image"
-        className="w-full object-cover absolute inset-0 h-[80vh] z-[-1]"
+        className="w-full object-cover absolute inset-0 h-[80vh] "
       />
-      <div className="bg-black/50 absolute inset-0 h-[80vh] z-[-1]"></div>
+      <div className="bg-black/50 absolute inset-0 h-[80vh] z-[1]"></div>
 
-      <div className="absolute right-20 bottom-10 top-10 max-w-sm">
-        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl"></h1>
-      </div>
-
-      <div className="text-center lg:text-left w-full h-full flex justify-end items-center">
+      <div className="text-center lg:text-left w-full h-full flex justify-end items-center relative z-[1]">
         <div className="xl:mr-[10%] max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
             <span className="block xl:inline">{title}</span>{' '}
