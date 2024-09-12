@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { GKPageEn, GKPageDe, GKPageFr } from './index'
+import { GKPageEn, GKPageDe, GKPageFr, GKPageNew } from './index'
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -23,4 +23,9 @@ export const Fr: Story = {
 export const De: Story = {
   name: 'de',
   render: () => <GKPageDe />,
+}
+
+export const New: Story = {
+  name: 'new',
+  render: () => <GKPageNew />,
 }
