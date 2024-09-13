@@ -3,9 +3,9 @@
 import clsx from 'clsx'
 import { ILinkComponent } from '../../../../apps/gemebuild/src/contexts/link-context'
 import DefaultLink from 'next/link'
-import { PropsWithChildren } from 'react'
+import { ComponentProps, PropsWithChildren } from 'react'
 
-export interface IPrimaryButton {
+export interface IPrimaryButton extends ComponentProps<typeof DefaultLink> {
   href: string
   PrefetchLink?: ILinkComponent
   className?: string
