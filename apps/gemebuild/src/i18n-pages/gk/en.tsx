@@ -21,7 +21,6 @@ import BgContentSection, {
   IBgContentSectionProps,
 } from './new-components/BgContentSection'
 
-// 第1部分配置文件 En版
 const gkHeroSectionProps: IHeroSectionProps = {
   title: 'GK Resource Recycling Technology',
   highlightTitle: 'Orderly cycle that follows the laws of nature',
@@ -50,17 +49,17 @@ const jeopardizeSectionProps: IJeopardizeSectionProps = {
   imageList: [
     {
       title: 'Soil Acidification',
-      src: '/assets/images/gk/s1-1.png',
+      src: '/assets/images/gk/new/j1.png',
       alt: 'Soil Acidification',
     },
     {
       title: 'Secondary Salinization',
-      src: '/assets/images/gk/s1-2.png',
+      src: '/assets/images/gk/new/j2.png',
       alt: 'Secondary Salinization',
     },
     {
       title: 'Soil is Poor and Degraded',
-      src: '/assets/images/gk/s1-3.png',
+      src: '/assets/images/gk/new/j3.png',
       alt: 'Soil is Poor and Degraded',
     },
   ],
