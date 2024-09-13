@@ -9,6 +9,7 @@ import { IImgAndTextSectionProps, ImgAndTextSection } from 'ui'
 import CompareSection, {
   ICompareSectionProps,
 } from './new-components/CompareSection'
+import Section4, { ISection4Props } from './new-components/Section4'
 
 // 第1部分配置文件 En版
 const gkHeroSectionProps: IHeroSectionProps = {
@@ -191,6 +192,35 @@ const compareSectionProps: ICompareSectionProps = {
     'Right picture: Control group using conventional plantation method',
 }
 
+const section4Props: ISection4Props = {
+  title: 'Sustainable biotechnology innovation',
+  bgSrc: '/assets/images/gk/new/section4-bg.jpg',
+  bgAlt: 'The ripe rice',
+
+  lists: [
+    {
+      title: 'Soil, a non-renewable resource',
+      iconSrc: '/assets/images/gk/new/icon1.webp',
+      iconAlt: 'Icon for soil, a non-renewable resource',
+    },
+    {
+      title: 'Fine cultivation: Need to increase plant-root interaction',
+      iconSrc: '/assets/images/gk/new/icon2.webp',
+      iconAlt: 'Icon for fine cultivation',
+    },
+    {
+      title: 'How to do it? Comprehensive microbial model',
+      iconSrc: '/assets/images/gk/new/icon3.webp',
+      iconAlt: 'Icon for microbial model',
+    },
+    {
+      title: 'Select bacterial strains for intensive agriculture',
+      iconSrc: '/assets/images/gk/new/icon4.webp',
+      iconAlt: 'Icon for bacterial strains in agriculture',
+    },
+  ],
+}
+
 export function GKPageEn() {
   return (
     <>
@@ -201,6 +231,7 @@ export function GKPageEn() {
       <div className="bg-v2311-bg-light-green">
         <CompareSection {...compareSectionProps} />
       </div>
+      <Section4 {...section4Props} />
       <Section1 {...section1Props} />
     </>
   )
