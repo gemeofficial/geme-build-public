@@ -10,6 +10,10 @@ import CompareSection, {
   ICompareSectionProps,
 } from './new-components/CompareSection'
 import Section4, { ISection4Props } from './new-components/Section4'
+import BlogsSection, {
+  Blog,
+  IBlogsSectionPropS,
+} from './new-components/BlogsSection'
 
 // 第1部分配置文件 En版
 const gkHeroSectionProps: IHeroSectionProps = {
@@ -221,7 +225,14 @@ const section4Props: ISection4Props = {
   ],
 }
 
-export function GKPageEn() {
+const blogsSectionProps: IBlogsSectionPropS = {
+  title: 'Our news',
+  buttonText: 'Read more',
+}
+
+export function GKPageEn({ blogs }: { blogs?: Blog[] }) {
+  blogsSectionProps.blogs = blogs
+  
   return (
     <>
       <HeroSection {...gkHeroSectionProps} />
@@ -231,8 +242,10 @@ export function GKPageEn() {
       <div className="bg-v2311-bg-light-green">
         <CompareSection {...compareSectionProps} />
       </div>
-      <Section4 {...section4Props} />
       <Section1 {...section1Props} />
+
+      <Section4 {...section4Props} />
+      <BlogsSection {...blogsSectionProps} />
     </>
   )
 }
