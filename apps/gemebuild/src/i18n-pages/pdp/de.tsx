@@ -40,7 +40,7 @@ const introProps: IPdpIntroProps = {
     bgImageSrc:
       '/assets/images/pdp-v2311/dividers/geme-with-compost-background-min.jpg',
     comparisonText: {
-      brfore: 'Vorher',
+      before: 'Vorher',
       after: 'Nachher',
     },
     bottomItems: [

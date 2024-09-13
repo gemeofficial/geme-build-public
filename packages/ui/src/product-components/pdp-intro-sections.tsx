@@ -13,7 +13,7 @@ interface IPdpIntroSection1Props {
   title?: ReactNode
   description?: ReactNode
   bgImageSrc?: string
-  comparisonText?: { brfore: string; after: string }
+  comparisonText?: { before: string; after: string }
   bottomItems?: [
     {
       id: number
@@ -70,7 +70,7 @@ function PdpIntroSection1({
         </div>
         <div className=" pb-4 sm:pb-0 md:pb-[12px] xl:pb-[12px] flex-1 flex items-end justify-around xl:gap-[320px] xl:justify-center v2311-font-h2 md:v2311-font-body xl:v2311-font-h2 text-v2311-primary text-center">
           <div>
-            {comparisonText?.brfore || 'Before'}
+            {comparisonText?.before || 'Before'}
             <br />
             100%
           </div>
