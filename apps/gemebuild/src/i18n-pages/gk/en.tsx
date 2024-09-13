@@ -228,17 +228,18 @@ const section4Props: ISection4Props = {
 const blogsSectionProps: IBlogsSectionPropS = {
   title: 'Our news',
   buttonText: 'Read more',
+  locale: 'en',
 }
 
 export function GKPageEn({ blogs }: { blogs?: Blog[] }) {
   blogsSectionProps.blogs = blogs
-  
+
   return (
     <>
       <HeroSection {...gkHeroSectionProps} />
       <Section2 {...section2Props} />
       <Section3 {...section3Props} />
-      <ImgAndTextSection {...imageTextProps} />
+      <ImgAndTextSection {...imageTextProps} compact />
       <div className="bg-v2311-bg-light-green">
         <CompareSection {...compareSectionProps} />
       </div>

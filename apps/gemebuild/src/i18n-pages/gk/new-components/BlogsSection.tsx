@@ -1,7 +1,10 @@
+import moment from 'moment'
 import Image from 'next/image'
 import Link from 'next/link'
-import { SectionContainer, SectionTitle } from 'ui'
+import { LocaleType, SectionContainer, SectionTitle } from 'ui'
 import PrimaryButton from 'ui/src/ui-components/PrimaryButton'
+import 'moment/locale/fr'
+import 'moment/locale/de'
 
 interface NewsCardProps {
   date: string
@@ -39,54 +42,71 @@ export interface Blog {
 export interface IBlogsSectionPropS {
   title: string
   buttonText: string
+  locale: LocaleType
   blogs?: Blog[]
+}
+
+function parseDate(dateString: string, locale: LocaleType) {
+  moment.locale(locale)
+
+  const date = moment(dateString)
+  const month = date.format('MMM').replace('.', '') // 获取缩写版月份
+  const day = date.format('DD') // 获取日期
+  return { month, day }
 }
 
 export default function BlogsSection({
   title,
   blogs,
   buttonText,
+  locale,
 }: IBlogsSectionPropS) {
   return (
     <SectionContainer compact>
       <SectionTitle className="mb-8">{title}</SectionTitle>
 
-      <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
+      <div className="mt-12 grid gap-6 gap-x-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {blogs?.map((blog) => (
-          <div key={blog.title} className="flex flex-col overflow-hidden">
-            <div className="flex-shrink-0 relative">
+          <div key={blog.title} className="flex flex-col overflow-hidden group">
+            <div className="flex-shrink-0 relative overflow-hidden">
               <Image
-                className="h-48 xl:h-64 w-full object-cover"
+                className="h-48 xl:h-64 w-full object-cover group-hover:scale-110 transition-all duration-500"
                 src={blog.coverImage}
                 alt={blog.title}
-                width={1920}
-                height={1080}
-                quality={80}
+                width={1080}
+                height={720}
               />
               {/* 左上角的日期显示 */}
-              <div className="absolute top-0 left-6 bg-green-600 text-white py-2 px-3 text-center">
-                <span className="block text-2xl font-bold text-black">
-                  {'25'}
+              <div className="absolute top-0 left-6 bg-v2311-primary text-white py-2 px-5 text-center">
+                <span className="block text-xl xl:text-2xl font-bold text-[#222] font-serif !leading-none">
+                  {parseDate(blog.runPublishAt, locale).day}
                 </span>
-                <span className="block text-sm">{'Mar'}</span>
+                <span className="block text-xs xl:text-sm font-mono !leading-none">
+                  {parseDate(blog.runPublishAt, locale).month}
+                </span>
               </div>
             </div>
 
-            <div className="flex flex-1 flex-col justify-between bg-white p-6 w-[80%] mx-auto relative -top-10">
+            <div className="flex flex-1 flex-col justify-between bg-white p-6 w-[80%] mx-auto relative -top-10 group-hover:-top-20 transition-all duration-500">
               <div className="flex-1">
-                <p className="text-xl font-semibold text-gray-900">
+                <Link
+                  target="_blank"
+                  href={`/blogs/${blog.URLSlug}`}
+                  className="block text-lg xl:text-xl font-semibold text-gray-900 hover:text-v2311-primary transition-all"
+                >
                   {blog.title}
-                </p>
+                </Link>
                 {blog.introduction != null && (
-                  <p className="mt-3 text-base text-gray-500">
+                  <p className="mt-3 text-sm xl:text-base text-gray-500 line-clamp-5 text-ellipsis">
                     {blog.introduction}
                   </p>
                 )}
               </div>
-              <div className="mt-4 text-center">
+              <div className="mt-6 text-center">
                 <PrimaryButton
+                  target="_blank"
                   href={`/blogs/${blog.URLSlug}`}
-                  className="!bg-white !text-black !py-2 !px-6 !rounded-lg !border !border-v2311-primary !font-semibold hover:!bg-2311border-v2311-primary hover:!text-white !transition"
+                  className="!bg-white !text-black !py-2 !px-6 xl:!py-3 xl:!px-10 !rounded-full !border-2 !text-base xl:!text-lg !border-v2311-primary !font-semibold hover:!bg-v2311-primary hover:!text-white transition-all"
                 >
                   {buttonText}
                 </PrimaryButton>
