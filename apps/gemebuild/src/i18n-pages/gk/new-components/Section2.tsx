@@ -30,9 +30,12 @@ export default function Section2({
         </SectionDescription>
       )}
 
-      <ul className="grid grid-cols-3 gap-8 mt-6 md:mt-8">
+      <ul className="flex items-center gap-5 lg:gap-8 mt-6 md:mt-8 overflow-auto snap-x snap-mandatory no-scrollbar">
         {imageList.map((item, index) => (
-          <li key={index} className="relative rounded-lg overflow-hidden">
+          <li
+            key={index}
+            className="relative rounded-lg overflow-hidden flex-shrink-0 md:flex-1 scroll-mx-4 md:scroll-mx-0 snap-center"
+          >
             <Image
               width={500}
               height={500}
@@ -41,7 +44,7 @@ export default function Section2({
               className="object-cover w-full h-full"
             />
             <div className="absolute inset-x-0 bottom-0 bg-black bg-opacity-60 flex items-center justify-center">
-              <h3 className="text-white text-lg font-semibold py-2">
+              <h3 className="text-white text-sm lg:text-lg font-semibold py-2">
                 {item.title}
               </h3>
             </div>

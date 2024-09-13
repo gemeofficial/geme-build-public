@@ -28,7 +28,7 @@ export default function CompareSection({
         {description}
       </SectionDescription>
 
-      <div className="grid grid-cols-4 gap-4 mt-6 md:mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mt-6 md:mt-8">
         {features.map((item, index) => (
           <div
             key={index}

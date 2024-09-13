@@ -1,4 +1,5 @@
 // components/Section2.tsx
+import clsx from 'clsx'
 import Image from 'next/image'
 import { Fragment, ReactNode } from 'react'
 import { SectionContainer, SectionDescription, SectionTitle } from 'ui'
@@ -22,28 +23,30 @@ export default function Section3({
 }: ISection3Props) {
   return (
     <SectionContainer className="relative py-16 bg-white" compact>
-      {/* 标题 */}
       <SectionTitle>{title}</SectionTitle>
       <SectionDescription className="mt-4 md:mt-6">
         {description}
       </SectionDescription>
 
-      <div className="flex items-center justify-between mt-6 md:mt-8">
+      <div className="flex flex-col md:flex-row items-center justify-between mt-6 md:mt-8">
         {imageList.map((item, index) => (
           <Fragment key={index}>
-            <div>
+            <div className='w-full md:w-auto'>
               <Image
                 width={800}
                 height={800}
                 src={item.src}
                 alt={item.alt}
-                className="object-cover w-full h-full xl:w-[320px] xl:h-[320px]  rounded-lg"
+                className={clsx(
+                  ' w-full h-56 md:w-[144px] md:h-[144px] lg:w-60 lg:h-60 xl:w-80 xl:h-80 rounded-lg mx-auto',
+                  index === 1 ? 'object-contain' : 'object-cover',
+                )}
               />
-              <h3 className="text-lg py-2 text-center">{item.title}</h3>
+              <h3 className="lg:text-lg py-2 text-center">{item.title}</h3>
             </div>
             {index < imageList.length - 1 && (
               <svg
-                className="w-20 text-v2311-primary"
+                className="w-12 lg:w-16 xl:w-20 text-v2311-primary rotate-90 md:rotate-0 my-4 md:my-0"
                 viewBox="0 0 1024 1024"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
