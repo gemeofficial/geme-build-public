@@ -1,4 +1,3 @@
-// components/Section2.tsx
 import Image from 'next/image'
 import { ReactNode } from 'react'
 import { SectionContainer, SectionDescription, SectionTitle } from 'ui'
@@ -9,17 +8,17 @@ interface IImage {
   title: string
 }
 
-export interface ISection2Props {
+export interface IJeopardizeSectionProps {
   title: string
   description?: ReactNode
   imageList: IImage[]
 }
 
-export default function Section2({
+export default function JeopardizeSection({
   description,
   title,
   imageList,
-}: ISection2Props) {
+}: IJeopardizeSectionProps) {
   return (
     <SectionContainer className="relative py-16 bg-white" compact>
       {/* 标题 */}

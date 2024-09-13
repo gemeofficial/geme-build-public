@@ -3,10 +3,11 @@ import { getImageProps } from 'next/image'
 import { SectionContainer, SectionTitle } from 'ui'
 import PrimaryButton from 'ui/src/ui-components/PrimaryButton'
 
-export interface ISection4Props {
+export interface IBgContentSectionProps {
   title: string
   bgSrc: string
   bgAlt: string
+  buttonText: string
 
   lists: {
     iconSrc: string
@@ -27,12 +28,13 @@ function getBackgroundImage(srcSet = '') {
   return `image-set(${imageSet})`
 }
 
-export default function Section4({
+export default function BgContentSection({
   bgAlt,
   bgSrc,
   lists,
   title,
-}: ISection4Props) {
+  buttonText,
+}: IBgContentSectionProps) {
   const {
     props: { srcSet },
   } = getImageProps({
@@ -69,10 +71,7 @@ export default function Section4({
 
                 <ul className="mt-4 md:mt-6 lg:mt-14 mx-auto space-y-8">
                   {lists.map((item, index) => (
-                    <li
-                      className="flex items-center gap-8"
-                      key={index}
-                    >
+                    <li className="flex items-center gap-8" key={index}>
                       <picture>
                         <img
                           src={item.iconSrc}
@@ -96,7 +95,7 @@ export default function Section4({
                     href="/about"
                     className="!bg-white !text-black hover:underline !px-24 !py-3 !text-lg"
                   >
-                    About
+                    {buttonText}
                   </PrimaryButton>
                 </div>
               </div>
@@ -128,7 +127,7 @@ export default function Section4({
             href="/about"
             className="!bg-white !text-black !py-2 !px-6 !rounded-full !border-2 !text-base !border-v2311-primary !font-semibold hover:!bg-v2311-primary hover:!text-white transition-all"
           >
-            About
+            {buttonText}
           </PrimaryButton>
         </div>
       </SectionContainer>

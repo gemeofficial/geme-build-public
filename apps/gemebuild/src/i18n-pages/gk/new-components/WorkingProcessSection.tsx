@@ -10,17 +10,17 @@ interface IImage {
   title: string
 }
 
-export interface ISection3Props {
+export interface IWorkingProcessSectionProps {
   title: string
   description: ReactNode
   imageList: IImage[]
 }
 
-export default function Section3({
+export default function WorkingProcessSection({
   description,
   title,
   imageList,
-}: ISection3Props) {
+}: IWorkingProcessSectionProps) {
   return (
     <SectionContainer className="relative py-16 bg-white" compact>
       <SectionTitle>{title}</SectionTitle>
@@ -31,7 +31,7 @@ export default function Section3({
       <div className="flex flex-col md:flex-row items-center justify-between mt-6 md:mt-8">
         {imageList.map((item, index) => (
           <Fragment key={index}>
-            <div className='w-full md:w-auto'>
+            <div className="w-full md:w-auto">
               <Image
                 width={800}
                 height={800}

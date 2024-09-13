@@ -2,18 +2,24 @@
 import HeroSection, {
   type IHeroSectionProps,
 } from './new-components/HeroSection'
-import Section1, { ISection1Props } from './new-components/Section1'
-import Section2, { ISection2Props } from './new-components/Section2'
-import Section3, { ISection3Props } from './new-components/Section3'
 import { IImgAndTextSectionProps, ImgAndTextSection } from 'ui'
 import CompareSection, {
   ICompareSectionProps,
 } from './new-components/CompareSection'
-import Section4, { ISection4Props } from './new-components/Section4'
 import BlogsSection, {
   Blog,
   IBlogsSectionPropS,
 } from './new-components/BlogsSection'
+import StatsSection, { IStatsSectionProps } from './new-components/StatsSection'
+import WorkingProcessSection, {
+  IWorkingProcessSectionProps,
+} from './new-components/WorkingProcessSection'
+import JeopardizeSection, {
+  IJeopardizeSectionProps,
+} from './new-components/JeopardizeSection'
+import BgContentSection, {
+  IBgContentSectionProps,
+} from './new-components/BgContentSection'
 
 // 第1部分配置文件 En版
 const gkHeroSectionProps: IHeroSectionProps = {
@@ -38,31 +44,7 @@ const gkHeroSectionProps: IHeroSectionProps = {
   imageAlt: 'GK Resource Recycling Technology',
 }
 
-const section1Props: ISection1Props = {
-  title: 'Our Target',
-  description: (
-    <>
-      <p className="mt-4">
-        Since 2020, our GK technology has provided organic fertilizer to 300,000
-        agricultural and garden plants, greatly increasing yields and improving
-        soils. By 2030, we expect the number of communities we serve to rise to
-        one million, contributing to regenerative agriculture.
-      </p>
-    </>
-  ),
-  stats: [
-    {
-      percentage: '300,000+',
-      text: 'Since 2020, our GK technology has provided organic fertilizer to 300,000 agricultural and garden plants, greatly increasing yields and improving soils.',
-    },
-    {
-      percentage: '1,000,000+',
-      text: 'By 2030, we expect the number of communities we serve to rise to one million, contributing to regenerative agriculture.',
-    },
-  ],
-}
-
-const section2Props: ISection2Props = {
+const jeopardizeSectionProps: IJeopardizeSectionProps = {
   title: 'The long-term dependence on fertilizers on arable land has led to',
   description: '',
   imageList: [
@@ -84,7 +66,7 @@ const section2Props: ISection2Props = {
   ],
 }
 
-const section3Props: ISection3Props = {
+const workingProcessSectionProps: IWorkingProcessSectionProps = {
   title: 'Organic waste is the highest quality organic matter resource',
   description: (
     <>
@@ -196,11 +178,35 @@ const compareSectionProps: ICompareSectionProps = {
     'Right picture: Control group using conventional plantation method',
 }
 
-const section4Props: ISection4Props = {
+const statsSectionProps: IStatsSectionProps = {
+  title: 'Our Target',
+  description: (
+    <>
+      <p className="mt-4">
+        Since 2020, our GK technology has provided organic fertilizer to 300,000
+        agricultural and garden plants, greatly increasing yields and improving
+        soils. By 2030, we expect the number of communities we serve to rise to
+        one million, contributing to regenerative agriculture.
+      </p>
+    </>
+  ),
+  stats: [
+    {
+      percentage: '300,000+',
+      text: 'Since 2020, our GK technology has provided organic fertilizer to 300,000 agricultural and garden plants, greatly increasing yields and improving soils.',
+    },
+    {
+      percentage: '1,000,000+',
+      text: 'By 2030, we expect the number of communities we serve to rise to one million, contributing to regenerative agriculture.',
+    },
+  ],
+}
+
+const bgContentSectionProps: IBgContentSectionProps = {
   title: 'Sustainable biotechnology innovation',
   bgSrc: '/assets/images/gk/new/section4-bg.jpg',
   bgAlt: 'The ripe rice',
-
+  buttonText: 'About',
   lists: [
     {
       title: 'Soil, a non-renewable resource',
@@ -237,15 +243,15 @@ export function GKPageEn({ blogs }: { blogs?: Blog[] }) {
   return (
     <>
       <HeroSection {...gkHeroSectionProps} />
-      <Section2 {...section2Props} />
-      <Section3 {...section3Props} />
+      <JeopardizeSection {...jeopardizeSectionProps} />
+      <WorkingProcessSection {...workingProcessSectionProps} />
       <ImgAndTextSection {...imageTextProps} compact />
       <div className="bg-v2311-bg-light-green">
         <CompareSection {...compareSectionProps} />
       </div>
-      <Section1 {...section1Props} />
+      <StatsSection {...statsSectionProps} />
 
-      <Section4 {...section4Props} />
+      <BgContentSection {...bgContentSectionProps} />
       <BlogsSection {...blogsSectionProps} />
     </>
   )

@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import { SectionContainer, SectionDescription, SectionTitle } from 'ui'
 
-export interface ISection1Props {
+export interface IStatsSectionProps {
   title: string
   description: ReactNode
   stats: {
@@ -9,11 +9,7 @@ export interface ISection1Props {
     text: ReactNode
   }[]
 }
-export default function Section1({
-  description,
-  stats,
-  title,
-}: ISection1Props) {
+export default function StatsSection({ description, stats, title }: IStatsSectionProps) {
   return (
     <SectionContainer compact>
       <SectionTitle>{title}</SectionTitle>
@@ -28,7 +24,9 @@ export default function Section1({
             key={index}
             className="bg-v2311-primary text-white p-6 rounded-lg text-center"
           >
-            <h3 className="text-2xl md:text-3xl xl:text-4xl font-bold mb-4">{stat.percentage}</h3>
+            <h3 className="text-2xl md:text-3xl xl:text-4xl font-bold mb-4">
+              {stat.percentage}
+            </h3>
             <p>{stat.text}</p>
           </div>
         ))}
