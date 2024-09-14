@@ -75,6 +75,7 @@ export default function LogoCloud({
   return (
     <SectionContainer compact>
       <SectionTitle>{title}</SectionTitle>
+      
       <div
         className={clsx(
           'mt-4 md:mt-6 mx-auto grid max-w-lg items-center sm:max-w-xl lg:mx-0 lg:max-w-none',
@@ -86,23 +87,14 @@ export default function LogoCloud({
             {canRedirect && (
               <a
                 href={item.link}
+                target="_blank"
                 className={clsx(index === 2 ? 'md:col-span-2' : '')}
               >
-                <ImageComponents
-                  item={item}
-                  index={index}
-                  canRedirect={canRedirect}
-                />
+                <ImageComponents item={item} />
               </a>
             )}
 
-            {!canRedirect && (
-              <ImageComponents
-                item={item}
-                index={index}
-                canRedirect={canRedirect}
-              />
-            )}
+            {!canRedirect && <ImageComponents item={item} />}
           </Fragment>
         ))}
       </div>
@@ -110,18 +102,9 @@ export default function LogoCloud({
   )
 }
 
-function ImageComponents({
-  item,
-  index,
-  canRedirect,
-}: {
-  item: TItem
-  index: number
-  canRedirect?: boolean
-}) {
+function ImageComponents({ item }: { item: TItem }) {
   return (
     <Image
-      key={index}
       alt={item.alt}
       src={item.src}
       width={312}
