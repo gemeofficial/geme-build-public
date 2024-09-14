@@ -368,7 +368,7 @@ export function GemeTerra2PageFr({ SubscribeComponent }: IGemeTerra2PageProps) {
         {...heroSectionProps}
         SubscribeComponent={SubscribeComponent}
       />
-      <LogoCloud locale='fr' />
+      <LogoCloud locale='en' />
 
       <ImgAndTextSection {...shortVideoProps} compact />
       <ImgAndTextSection {...imageTextProps} compact />

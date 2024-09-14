@@ -1,21 +1,22 @@
 import clsx from 'clsx'
 import Image from 'next/image'
 import { LocaleType, SectionContainer, SectionTitle } from '../index'
+import { Fragment } from 'react'
 
-type TImages = {
+type TItem = {
   alt: string
   src: string
   link: string
-}[]
+}
 
 const titleTextInfo = {
   en: 'Press Mentions',
-  de: 'Press Mentions',
-  fr: 'Press Mentions',
+  de: 'Erwähnungen in der Presse',
+  fr: 'Mentions dans la presse',
 }
 
 // Logo cloud
-const logoCloudImages: TImages = [
+const logoCloudImages: TItem[] = [
   {
     src: '/assets/images/geme-terra-2/press/europa-press.png',
     alt: 'Europa Press',
@@ -65,10 +66,10 @@ const logoCloudImages: TImages = [
 
 export default function LogoCloud({
   locale,
-  isCanRedirect,
+  canRedirect,
 }: {
   locale: LocaleType
-  isCanRedirect?: boolean
+  canRedirect?: boolean // 是否能点击跳转到文章地址
 }) {
   const title = titleTextInfo[locale]
   return (
@@ -76,26 +77,56 @@ export default function LogoCloud({
       <SectionTitle>{title}</SectionTitle>
       <div
         className={clsx(
-          'mt-4 md:mt-6 mx-auto grid max-w-lg items-center sm:max-w-xl sm:gap-8 lg:gap-10 lg:gap-y-14 lg:mx-0 lg:max-w-none',
-          'grid-cols-3 md:grid-cols-5 gap-4',
+          'mt-4 md:mt-6 mx-auto grid max-w-lg items-center sm:max-w-xl lg:mx-0 lg:max-w-none',
+          'grid-cols-3 md:grid-cols-5 gap-4 gap-y-6 sm:gap-8 lg:gap-10 lg:gap-y-14',
         )}
       >
         {logoCloudImages.map((item, index) => (
-          <Image
-            key={index}
-            alt={item.alt}
-            src={item.src}
-            width={312}
-            height={96}
-            className={clsx(
-              'min-h-8 max-h-8 md:max-h-12 w-full object-contain',
-              isCanRedirect ? 'cursor-pointer' : '',
-              index === 2 ? 'md:col-span-2' : '',
+          <Fragment key={index}>
+            {canRedirect && (
+              <a
+                href={item.link}
+                className={clsx(index === 2 ? 'md:col-span-2' : '')}
+              >
+                <ImageComponents
+                  item={item}
+                  index={index}
+                  canRedirect={canRedirect}
+                />
+              </a>
             )}
-            onClick={() => isCanRedirect && item.link && window.open(item.link)}
-          />
+
+            {!canRedirect && (
+              <ImageComponents
+                item={item}
+                index={index}
+                canRedirect={canRedirect}
+              />
+            )}
+          </Fragment>
         ))}
       </div>
     </SectionContainer>
+  )
+}
+
+function ImageComponents({
+  item,
+  index,
+  canRedirect,
+}: {
+  item: TItem
+  index: number
+  canRedirect?: boolean
+}) {
+  return (
+    <Image
+      key={index}
+      alt={item.alt}
+      src={item.src}
+      width={312}
+      height={96}
+      className="min-h-8 max-h-8 md:max-h-12 w-full object-contain"
+    />
   )
 }

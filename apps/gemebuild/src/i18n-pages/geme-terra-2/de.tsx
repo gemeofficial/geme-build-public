@@ -369,7 +369,7 @@ export function GemeTerra2PageDe({ SubscribeComponent }: IGemeTerra2PageProps) {
         {...heroSectionProps}
         SubscribeComponent={SubscribeComponent}
       />
-      <LogoCloud locale='de' />
+      <LogoCloud locale='en' />
 
       <ImgAndTextSection {...shortVideoProps} compact />
       <ImgAndTextSection {...imageTextProps} compact />
