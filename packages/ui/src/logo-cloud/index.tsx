@@ -20,32 +20,32 @@ const logoCloudImages: TItem[] = [
   {
     src: '/assets/images/geme-terra-2/press/europa-press.png',
     alt: 'Europa Press',
-    link: '',
+    link: 'https://www.europapress.es/comunicados/internacional-00907/noticia-comunicado-revolucionando-sostenibilidad-hogar-geme-presenta-futuro-compostaje-ifa-berlin-2024-20240830060937.html',
   },
   {
     src: '/assets/images/geme-terra-2/press/adnkronos.svg',
     alt: 'Adn Kronos',
-    link: '',
+    link: 'https://www.adnkronos.com/immediapress/rivoluzionare-la-sostenibilita-domestica-geme-presenta-il-futuro-del-compostaggio-alledizione-2024-di-ifa-a-berlino_6MKcoIpt8YP0E5h7SoRmIg',
   },
   {
     src: '/assets/images/geme-terra-2/press/bolsamania.png',
     alt: 'Bolsamania',
-    link: '',
+    link: 'https://www.bolsamania.com/nota-de-prensa/mercados/revolucionando-la-sostenibilidad-del-hogar-geme-presenta-el-futuro-del-compostaje-en-ifa-berlin-2024--17375550.html',
   },
   {
     src: '/assets/images/geme-terra-2/press/wallstreet-online-horizontal.svg',
     alt: 'Reform',
-    link: '',
+    link: 'https://www.wallstreet-online.de/nachricht/18438137-geme-revolutioniert-nachhaltigkeit-haushalt-stellt-ifa-berlin-2024-zukunft-kompostierung',
   },
   {
     src: '/assets/images/geme-terra-2/press/yahoo-finance.png',
     alt: 'Yahoo Finance',
-    link: '',
+    link: 'https://consent.yahoo.com/v2/collectConsent?sessionId=4_cc-session_2208ea75-58aa-459e-ac89-0cf35164b34c',
   },
   {
     src: '/assets/images/geme-terra-2/press/advfn.png',
     alt: 'ADVFN',
-    link: '',
+    link: 'https://www.advfn.com/stock-market/stock-news/94437900/revolutionizing-home-sustainability-geme-debuts-th',
   },
   {
     src: '/assets/images/geme-terra-2/press/IFA.svg',
