@@ -7,6 +7,7 @@ import {
   AboutContentSection4,
   AboutContentSection6,
   AboutHeroSection,
+  AboutLogoCloud,
 } from 'ui'
 
 import type {
@@ -16,6 +17,7 @@ import type {
   IAboutContentSection4,
   IAboutContentSection6,
   IAboutHeroSection,
+  IAboutLogoCloudProps,
 } from 'ui'
 
 // about page静态页面的内容 配置文件 Fr版
@@ -172,6 +174,12 @@ const aboutContentSection2Props: IAboutContentSection2 = {
   ],
 }
 
+// Logo Cloud Props Fr版
+const aboutLogoCloudProps: IAboutLogoCloudProps = {
+  mTitle: 'Notre présence médiatique',
+  title: 'Petit progrès, grand impact',
+}
+
 // 第五部分 Fr版
 const aboutContentSection4Props: IAboutContentSection4 = {
   mTitle: 'Nos Jalons',
@@ -272,6 +280,7 @@ function AboutPageFr() {
         <AboutContentSection1 {...aboutContentSection1Props} />
         <AboutContentSection15 {...aboutContentSection15Props} />
         <AboutContentSection2 {...aboutContentSection2Props} />
+        <AboutLogoCloud {...aboutLogoCloudProps} />
         <AboutContentSection4 {...aboutContentSection4Props} />
         <AboutContentSection6 {...aboutContentSection6Props} />
       </div>

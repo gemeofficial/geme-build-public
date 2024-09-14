@@ -5,6 +5,7 @@ import {
   AboutContentSection4,
   AboutContentSection6,
   AboutHeroSection,
+  AboutLogoCloud,
 } from 'ui'
 
 import type {
@@ -14,6 +15,7 @@ import type {
   IAboutContentSection4,
   IAboutContentSection6,
   IAboutHeroSection,
+  IAboutLogoCloudProps,
 } from 'ui'
 
 // about page静态页面的内容 配置文件 De版
@@ -170,6 +172,12 @@ const aboutContentSection2Props: IAboutContentSection2 = {
   ],
 }
 
+// Logo Cloud Props De版
+const aboutLogoCloudProps: IAboutLogoCloudProps = {
+  mTitle: 'Unsere Medienpräsenz',
+  title: 'Kleine Fortschritte, große Wirkung',
+}
+
 // 第五部分 De版
 const aboutContentSection4Props: IAboutContentSection4 = {
   mTitle: 'Unsere Meilensteine',
@@ -269,6 +277,7 @@ function AboutPageDe() {
         <AboutContentSection1 {...aboutContentSection1Props} />
         <AboutContentSection15 {...aboutContentSection15Props} />
         <AboutContentSection2 {...aboutContentSection2Props} />
+        <AboutLogoCloud {...aboutLogoCloudProps} />
         <AboutContentSection4 {...aboutContentSection4Props} />
         <AboutContentSection6 {...aboutContentSection6Props} />
       </div>

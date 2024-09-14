@@ -32,6 +32,7 @@ import { IHomePageProps } from './en'
 import HomeHeroSectionSwiper, {
   IHomeHeroSectionSwiperProps,
 } from './components/HomeHeroSectionSwiper'
+import { LogoCloud } from 'ui'
 
 // 首页video部分的内容数据配置 Fr
 const heroSection1Props: IHeroSection1Props = {
@@ -531,6 +532,9 @@ function HomePageFr({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
 
       {/*<ContentSection2 {...contentSection2Props} />*/}
       <ContentSection3 {...contentSection3Props} />
+
+      <LogoCloud canRedirect locale="fr" />
+
       <ContentSection4 {...contentSection4Props} />
 
       <SecondLife {...secondLifeProps} />
