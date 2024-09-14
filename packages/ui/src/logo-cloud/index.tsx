@@ -64,7 +64,7 @@ const logoCloudImages: TItem[] = [
   },
 ]
 
-export default function LogoCloud({
+export function LogoCloud({
   locale,
   canRedirect,
 }: {
@@ -75,41 +75,68 @@ export default function LogoCloud({
   return (
     <SectionContainer compact>
       <SectionTitle>{title}</SectionTitle>
-      
-      <div
-        className={clsx(
-          'mt-4 md:mt-6 mx-auto grid max-w-lg items-center sm:max-w-xl lg:mx-0 lg:max-w-none',
-          'grid-cols-3 md:grid-cols-5 gap-4 gap-y-6 sm:gap-8 lg:gap-10 lg:gap-y-14',
-        )}
-      >
-        {logoCloudImages.map((item, index) => (
-          <Fragment key={index}>
-            {canRedirect && (
-              <a
-                href={item.link}
-                target="_blank"
-                className={clsx(index === 2 ? 'md:col-span-2' : '')}
-              >
-                <ImageComponents item={item} />
-              </a>
-            )}
 
-            {!canRedirect && <ImageComponents item={item} />}
-          </Fragment>
-        ))}
-      </div>
+      <LogoCloudComponent canRedirect={canRedirect} />
     </SectionContainer>
   )
 }
 
-function ImageComponents({ item }: { item: TItem }) {
+export function LogoCloudComponent({
+  canRedirect,
+  className,
+}: {
+  canRedirect?: boolean
+  className?: string
+}) {
+  return (
+    <div
+      className={clsx(
+        'mt-4 md:mt-6 grid items-center grid-cols-3 md:grid-cols-5',
+        'gap-4 gap-y-6 sm:gap-8 lg:gap-10 lg:gap-y-14',
+        className,
+      )}
+    >
+      {logoCloudImages.map((item, index) => (
+        <Fragment key={index}>
+          {canRedirect && (
+            <a
+              href={item.link}
+              target="_blank"
+              className={clsx(index === 2 ? 'md:col-span-2' : '')}
+            >
+              <ImageComponents item={item} />
+            </a>
+          )}
+
+          {!canRedirect && (
+            <ImageComponents
+              item={item}
+              className={clsx(index === 2 ? 'md:col-span-2' : '')}
+            />
+          )}
+        </Fragment>
+      ))}
+    </div>
+  )
+}
+
+function ImageComponents({
+  item,
+  className,
+}: {
+  item: TItem
+  className?: string
+}) {
   return (
     <Image
       alt={item.alt}
       src={item.src}
       width={312}
       height={96}
-      className="min-h-8 max-h-8 md:max-h-12 w-full object-contain"
+      className={clsx(
+        'min-h-8 max-h-8 md:max-h-12 w-full object-contain',
+        className,
+      )}
     />
   )
 }

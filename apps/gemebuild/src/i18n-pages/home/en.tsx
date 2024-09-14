@@ -32,7 +32,7 @@ import { ReviewsSectionModule } from '../../components/reviews-section-module'
 import HomeHeroSectionSwiper, {
   IHomeHeroSectionSwiperProps,
 } from './components/HomeHeroSectionSwiper'
-import LogoCloud from 'ui/src/logo-cloud'
+import { LogoCloud } from 'ui'
 
 // 首页video部分的内容数据配置 En
 const heroSection1Props: IHeroSection1Props = {

@@ -32,7 +32,7 @@ import { IHomePageProps } from './en'
 import HomeHeroSectionSwiper, {
   IHomeHeroSectionSwiperProps,
 } from './components/HomeHeroSectionSwiper'
-import LogoCloud from 'ui/src/logo-cloud'
+import { LogoCloud } from 'ui'
 
 // 首页video部分的内容数据配置 Fr
 const heroSection1Props: IHeroSection1Props = {

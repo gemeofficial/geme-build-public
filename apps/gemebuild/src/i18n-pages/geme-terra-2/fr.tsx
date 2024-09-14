@@ -5,7 +5,7 @@ import Subscribe, { ISubscribeProps } from './components/Subscribe'
 import Compare, { ICompareProps } from './components/Compare'
 import { gemeTerra2FaqProps } from './components/faq-data'
 import { IGemeTerra2PageProps } from './en'
-import LogoCloud from 'ui/src/logo-cloud'
+import { LogoCloud } from 'ui'
 
 // Hero section
 const heroSectionProps: IHeroSectionProps = {
