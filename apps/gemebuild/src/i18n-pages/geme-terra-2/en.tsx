@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import HeroSection, { IHeroSectionProps } from './components/HeroSection'
-import LogoCloud, { ILogoCloudProps } from './components/LogoCloud'
 import { Faq, IImgAndTextSectionProps, ImgAndTextSection } from 'ui'
 import Reviews, { IReviewsProps } from './components/Reviews'
 import Subscribe, {
@@ -9,6 +8,7 @@ import Subscribe, {
 } from './components/Subscribe'
 import Compare, { ICompareProps } from './components/Compare'
 import { gemeTerra2FaqProps } from './components/faq-data'
+import LogoCloud from 'ui/src/logo-cloud'
 
 // Hero section
 const heroSectionProps: IHeroSectionProps = {
@@ -30,37 +30,6 @@ const heroSectionProps: IHeroSectionProps = {
   submitButtonLabel: 'Notify Me',
   heroBgImagePc: '/assets/images/geme-terra-2/hero-bg-desktop.png',
   heroBgImageMobile: '/assets/images/geme-terra-2/hero-bg-mobile.png',
-}
-
-// Logo cloud
-const logoCloudProps: ILogoCloudProps = {
-  title: 'Press Mentions',
-  images: [
-    {
-      src: '/assets/images/geme-terra-2/press/europa-press.png',
-      alt: 'Europa Press',
-    },
-    {
-      src: '/assets/images/geme-terra-2/press/adnkronos.svg',
-      alt: 'Adn Kronos',
-    },
-    {
-      src: '/assets/images/geme-terra-2/press/bolsamania.png',
-      alt: 'Bolsamania',
-    },
-    {
-      src: '/assets/images/geme-terra-2/press/wallstreet-online-horizontal.svg',
-      alt: 'Reform',
-    },
-    {
-      src: '/assets/images/geme-terra-2/press/yahoo-finance.png',
-      alt: 'Yahoo Finance',
-    },
-    {
-      src: '/assets/images/geme-terra-2/press/advfn.png',
-      alt: 'ADVFN',
-    },
-  ],
 }
 
 // 图文section1
@@ -406,7 +375,7 @@ export function GemeTerra2PageEn({ SubscribeComponent }: IGemeTerra2PageProps) {
         {...heroSectionProps}
         SubscribeComponent={SubscribeComponent}
       />
-      <LogoCloud {...logoCloudProps} />
+      <LogoCloud locale="en" />
 
       <ImgAndTextSection {...shortVideoProps} compact />
       <ImgAndTextSection {...imageTextProps} compact />
