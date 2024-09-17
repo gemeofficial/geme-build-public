@@ -823,7 +823,7 @@ export const gemeTerra2FaqProps: IFaqProps = {
     {
       slug: 'when-will-it-be-on-sale? and-what-is-the-price',
       question: 'When will it go on sale, and what will the price be?',
-      answer: `he final testing is almost complete, and the estimated timeline for sales is early next year. The price will be less than $600.`,
+      answer: `The final testing is almost complete, and the estimated timeline for sales is early next year. The price will be less than $600.`,
     },
   ],
 }
