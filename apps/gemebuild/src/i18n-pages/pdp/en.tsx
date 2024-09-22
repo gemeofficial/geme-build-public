@@ -130,7 +130,7 @@ const introProps: IPdpIntroProps = {
     title: 'Microorganism Breakdown, Not Electrical Heating',
     description: (
       <>
-        🔥&nbsp;&nbsp;Not dehydrating, it's real composting <br />
+        🔥&nbsp;&nbsp;Not dehydrating, it's <a href='/blog/how-does-a-real-electric-composter-work'>real composting</a> <br />
         🚰&nbsp;&nbsp;Not shredding, no more clogged sink
         <br />
         🌿&nbsp;&nbsp;Not green washing, true eco-friendly solution
