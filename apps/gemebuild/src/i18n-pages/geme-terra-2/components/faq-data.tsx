@@ -521,7 +521,7 @@ export const gemeTerra2FaqProps: IFaqProps = {
           the waste.
           <br />
           Check out this uncut 7-hour video. (
-          <b className="text-gray-500">
+          <b className="text-amber-500">
             none of our competitors dare to share such live videos with the
             public
           </b>
