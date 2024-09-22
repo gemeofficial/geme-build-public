@@ -95,19 +95,21 @@ const introProps: IPdpIntroProps = {
 
   // Introduction 第4部分 En
   pdpIntroSection5Props: {
-    title: 'Almost All Of Waste Can Go into GEME',
+    title: 'Almost All Bio Waste Can Go into GEME',
     leftNotes: (
       <>
-        <strong>400+</strong>
-        <br />
-        kinds of waste
+        <a href='/help-center/docs/faq/supported-foods/what-kinds-of-food-waste-can-i-put-into-what-can-not'>
+          <strong>400+</strong>
+          <br />
+          kinds of waste
+        </a>
       </>
     ),
   },
 
   // Introduction 第5部分 En
   contentSection21Props: {
-    title: 'No Daily Cleaning Required, Take Months to Fill',
+    title: 'No Daily Cleaning Errand, Take Months to Fill',
     description: (
       <>
         🫳&nbsp;&nbsp;Add waste at anytime <br />
