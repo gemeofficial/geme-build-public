@@ -44,8 +44,16 @@ const introProps: IPdpIntroProps = {
   // Introduction 第1部分 En
   pdpIntroSection1Props: {
     title: "World's First Bio Waste Composter",
-    description:
-      'Use microbiota to breakdown food waste quickly, 100x faster than traditional composting, completely different than countertop dehydrating electric "composters".',
+    description: (
+      <>
+        Use microbiota to breakdown food waste quickly,{' '}
+        <a href="/blog/traditional-composting-vs-geme-composter">
+          1000x faster than traditional composting
+        </a>
+        , completely different than countertop dehydrating electric
+        "composters".
+      </>
+    ),
     bgImageSrc:
       '/assets/images/pdp-v2311/dividers/geme-with-compost-background-min.jpg',
     comparisonText: {
@@ -62,9 +70,15 @@ const introProps: IPdpIntroProps = {
   // Introduction 第2部分 En
   contentSection71Props: {
     title: 'From Waste To Wonder',
-    description:
-      "Let's dive into the tiny superheroes that create a significant impact: microbes (GEME Kobold). Similar to the good bacteria aiding digestion in your gut, with ideal conditions and regular rotation mixing, they quickly transform food scraps into organic compost.",
-
+    description: (
+      <>
+        Let's dive into the tiny superheroes that create a significant impact:
+        microbes (<a href="/geme-kobold">GEME Kobold</a>). Similar to the good
+        bacteria aiding digestion in your gut, with ideal conditions and regular
+        rotation mixing, they quickly transform food scraps into organic
+        compost.
+      </>
+    ),
     withImageOrVideo: {
       type: 'video',
       videoProps: {
@@ -98,7 +112,7 @@ const introProps: IPdpIntroProps = {
     title: 'Almost All Bio Waste Can Go into GEME',
     leftNotes: (
       <>
-        <a href='/help-center/docs/faq/supported-foods/what-kinds-of-food-waste-can-i-put-into-what-can-not'>
+        <a href="/help-center/docs/faq/supported-foods/what-kinds-of-food-waste-can-i-put-into-what-can-not">
           <strong>400+</strong>
           <br />
           kinds of waste
@@ -130,10 +144,17 @@ const introProps: IPdpIntroProps = {
     title: 'Microorganism Breakdown, Not Electrical Heating',
     description: (
       <>
-        🔥&nbsp;&nbsp;Not dehydrating, it's <a href='/blog/how-does-a-real-electric-composter-work'>real composting</a> <br />
+        🔥&nbsp;&nbsp;Not dehydrating, it's{' '}
+        <a href="/blog/how-does-a-real-electric-composter-work">
+          real composting
+        </a>{' '}
+        <br />
         🚰&nbsp;&nbsp;Not shredding, no more clogged sink
         <br />
-        🌿&nbsp;&nbsp;Not green washing, true eco-friendly solution
+        🌿&nbsp;&nbsp;{' '}
+        <a href="/blog/geme-is-calling-for-industry-standards-for-composters">
+          Not green washing, true eco-friendly solution
+        </a>
       </>
     ),
     imageSrc: '/assets/images/pdp-v2311/introduction/geme-garbage-disposal.jpg',
