@@ -3,9 +3,9 @@ import {
   ThreeColumnWithDescription,
 } from '../../../components/category-previews'
 
-export interface IGeemDailyUsageProps
+export interface IGemeDailyUsageProps
   extends IThreeColumnWithDescriptionProps {}
 
-export default function GeemDailyUsage(props: IGeemDailyUsageProps) {
+export default function GemeDailyUsage(props: IGemeDailyUsageProps) {
   return <ThreeColumnWithDescription {...props} greyBackground={true} />
 }
