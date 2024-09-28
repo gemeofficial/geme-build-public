@@ -1,9 +1,13 @@
-import { LocaleType } from "ui";
+import { IMultiLanguageConfig, LocaleType } from "ui";
 import { ISiteHelpTabsProps } from "../../components/tabs";
 import { ETabsId } from "../../components/tabs/type";
 
-// 静态页面的navBar内容 配置文件 En版
-const tabsMultiLanguage = {
+interface ITabsItem {
+  title: string
+  id: ETabsId
+}
+// 静态页面的navBar内容 配置文件
+const tabsMultiLanguage: IMultiLanguageConfig<ITabsItem[]> = {
   en: [
     {
       title: 'Terms and Conditions of Service Agreement',
@@ -79,6 +83,32 @@ const tabsMultiLanguage = {
     },
     {
       title: 'Programme de fidélité GEME Dots',
+      id: ETabsId.GemeDotsLoyaltyProgram,
+    },
+  ],
+  it: [
+    {
+      title: 'Termini e Condizioni del Contratto di Servizio',
+      id: ETabsId.TermsAndConditions,
+    },
+    {
+      title: 'Garanzia',
+      id: ETabsId.Warranty,
+    },
+    {
+      title: 'Estensione della Garanzia',
+      id: ETabsId.WarrantyExtend,
+    },
+    {
+      title: 'Politica di Reso',
+      id: ETabsId.ReturnPolicy,
+    },
+    {
+      title: 'Politica sulla Privacy',
+      id: ETabsId.PrivacyPolicy,
+    },
+    {
+      title: 'Programma di Fedeltà GEME Dots',
       id: ETabsId.GemeDotsLoyaltyProgram,
     },
   ],

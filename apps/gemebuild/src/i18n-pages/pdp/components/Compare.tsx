@@ -1,8 +1,12 @@
 import Image from 'next/image'
-import { SectionContainer, SectionDescription, SectionTitle } from 'ui'
+import {
+  LocaleType,
+  SectionContainer,
+  SectionDescription,
+  SectionTitle,
+} from 'ui'
 import clsx from 'clsx'
 import { PropsWithChildren } from 'react'
-import { LocaleType } from 'ui/src/reviews'
 
 export interface IPdpCompareProps {
   compareSectionProps: ICompareSectionProps
@@ -112,7 +116,11 @@ function Content({
         <div
           className={clsx(
             'md:h-36 xl:h-40 flex flex-col text-left overflow-hidden',
-            locale === 'de' ? 'h-36' : locale === 'fr' ? 'h-40' : 'h-32',
+            locale === 'de' || locale === 'it'
+              ? 'h-36'
+              : locale === 'fr'
+                ? 'h-40'
+                : 'h-32',
           )}
           key={iten.title}
         >

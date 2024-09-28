@@ -1,5 +1,6 @@
 import { ReactNode } from 'react'
 import {
+  IMultiLanguageConfig,
   IReviewsSectionConfig,
   ReviewsSection,
   SectionDescription,
@@ -8,12 +9,6 @@ import {
 import { LocaleType } from 'ui'
 import { ILinkComponent } from '../../i18n-pages'
 import DefaultLink from 'next/link'
-
-interface IMutilLanguageTextInfo {
-  en: ITextInfo
-  de: ITextInfo
-  fr: ITextInfo
-}
 
 interface ITextInfo {
   title: string
@@ -28,7 +23,7 @@ export interface IReviewsSectionModuleProps {
   PrefetchLink?: ILinkComponent
 }
 
-const mutilLanguageTextInfo: IMutilLanguageTextInfo = {
+const multiLanguageTextInfo: IMultiLanguageConfig<ITextInfo> = {
   en: {
     title: 'What Real Users Say',
     description: `You might want to click and see the detail review, to see how our customers feel about our product, you can see the real product review and our customer service as well.`,
@@ -40,6 +35,10 @@ const mutilLanguageTextInfo: IMutilLanguageTextInfo = {
   fr: {
     title: 'Ce que disent les vrais utilisateurs',
     description: `Ne faites pas trop attention aux avis des influenceurs, dont beaucoup sont des publicités payées. Écoutez plutôt les gens ordinaires comme vous qui partagent leurs expériences honnêtes avec nous, même s'ils n'ont pas laissé de commentaires en ligne.`,
+  },
+  it: {
+    title: 'Cosa dicono i veri utenti',
+    description: `Potresti voler cliccare e vedere la recensione dettagliata, per vedere cosa pensano i nostri clienti del nostro prodotto. Puoi anche vedere le vere recensioni del prodotto e il nostro servizio clienti.`,
   },
 }
 
@@ -56,7 +55,7 @@ export function ReviewsSectionModule({
   title,
   PrefetchLink,
 }: IReviewsSectionModuleProps) {
-  const defaultTextInfo = mutilLanguageTextInfo[locale]
+  const defaultTextInfo = multiLanguageTextInfo[locale]
   const currentTitle = title || defaultTextInfo.title
   const currentDescription = description || defaultTextInfo.description
 

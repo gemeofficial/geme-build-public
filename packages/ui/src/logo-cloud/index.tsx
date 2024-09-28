@@ -1,6 +1,11 @@
 import clsx from 'clsx'
 import Image from 'next/image'
-import { LocaleType, SectionContainer, SectionTitle } from '../index'
+import {
+  IMultiLanguageConfig,
+  LocaleType,
+  SectionContainer,
+  SectionTitle,
+} from '../index'
 import { Fragment } from 'react'
 
 type TItem = {
@@ -9,10 +14,11 @@ type TItem = {
   link: string
 }
 
-const titleTextInfo = {
+const titleTextInfo: IMultiLanguageConfig<string> = {
   en: 'Press Mentions',
   de: 'Erwähnungen in der Presse',
   fr: 'Mentions dans la presse',
+  it: 'Menioni sulla Stampa',
 }
 
 // Logo cloud

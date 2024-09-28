@@ -11,8 +11,7 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import './styles.css'
-
-export type LocaleType = 'en' | 'de' | 'fr'
+import { LocaleType } from '..'
 
 export interface IReviewsSectionConfig {
   reviewsList: IReviewsItem[]

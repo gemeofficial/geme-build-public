@@ -1,7 +1,7 @@
 import StarIcon from './StarIcon'
 import ImageZoomViewer from '../client-components/ImageZoomViewer'
-import { LocaleType } from './ReviewsSection'
 import clsx from 'clsx'
+import { IMultiLanguageConfig, LocaleType } from '..'
 
 export interface IReviewsItem {
   content: string //文本内容
@@ -29,10 +29,11 @@ const defaultBgImageUrls = [
   'https://images.unsplash.com/photo-1717226263533-d48d50759764?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDIwfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D',
 ]
 
-const clickTextMultiLang = {
+const clickTextMultiLang: IMultiLanguageConfig<string> = {
   en: 'Click to View More',
   de: 'Klicken Sie hier, um mehr zu sehen',
   fr: 'Cliquez pour voir plus',
+  it: 'Clicca per vedere di più',
 }
 
 export default function ReviewsItem({

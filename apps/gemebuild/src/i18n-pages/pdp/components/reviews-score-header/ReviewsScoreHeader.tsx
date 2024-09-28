@@ -1,7 +1,14 @@
-import { LocaleType } from 'ui'
+import { IMultiLanguageConfig, LocaleType } from 'ui'
 import StarIcon from './StarIcon'
+import { ReactNode } from 'react'
 
-const mutilLanguageTextInfo = {
+interface ITextInfo {
+  score: string
+  unit: string
+  title: ReactNode
+}
+
+const multiLanguageTextInfo: IMultiLanguageConfig<ITextInfo> = {
   en: {
     score: '4.78',
     unit: `Rated`,
@@ -32,10 +39,20 @@ const mutilLanguageTextInfo = {
       </>
     ),
   },
+  it: {
+    score: '4,78',
+    unit: 'Valutato',
+    title: (
+      <>
+        Fidato e Amato <br />
+        da oltre 10.000 Cucine
+      </>
+    ),
+  },
 }
 
 export function ReviewsScoreHeader({ locale }: { locale: LocaleType }) {
-  const defaultTextInfo = mutilLanguageTextInfo[locale]
+  const defaultTextInfo = multiLanguageTextInfo[locale]
   return (
     <div className="flex flex-col max-w-[450px] lg:max-w-screen-sm mx-auto items-center gap-y-3 rounded-xl py-5 px-8">
       <div className="flex gap-x-1">
@@ -83,7 +100,7 @@ export function ReviewsScoreHeader({ locale }: { locale: LocaleType }) {
 
       <div className="flex items-center mt-2 text-sm lg:text-base">
         <span className="font-bold">{defaultTextInfo.score}</span>
-        <span className='ml-1'>{defaultTextInfo.unit}</span>
+        <span className="ml-1">{defaultTextInfo.unit}</span>
       </div>
 
       <p className=" text-base lg:text-xl text-balance text-center text-v2311-primary">
