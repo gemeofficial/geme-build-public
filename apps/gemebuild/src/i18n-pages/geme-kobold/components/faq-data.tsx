@@ -2140,3 +2140,708 @@ export const koboldFaqPropsFr: IFaqProps = {
     },
   ],
 }
+
+export const koboldFaqPropsIt: IFaqProps = {
+  title: 'Domande Frequenti',
+  description: '',
+  faqs: [
+    {
+      slug: 'what-is-geme-kobold',
+      question: 'Che cos’è GEME Kobold?',
+      answer: (
+        <>
+          <p>
+            GEME Kobold è un prodotto che contiene un set di microbi. Questi
+            microbi sono il fattore chiave nella decomposizione dei rifiuti
+            alimentari e dei rifiuti biologici. Quando applicati ai rifiuti
+            organici, inizia il rapido processo di compostaggio. I microbi
+            formano un microbiota e si rigenerano rapidamente. I rifiuti
+            alimentari fungono da nutrimento perfetto per questi microbi,
+            permettendo loro di consumare e replicarsi. Questi microbi sono
+            accuratamente selezionati da fonti naturali complesse e finemente
+            regolati attraverso una serie di processi di ingegneria dei
+            microrganismi.
+          </p>
+
+          <p className="mt-4">
+            Per comprendere meglio il ruolo di GEME Kobold, considera questi
+            esempi: proprio come i polli in una fattoria consumano gli scarti
+            della cucina, e i vermi in un contenitore di vermi decompongono i
+            rifiuti alimentari, i microbi di GEME Kobold decompongono i rifiuti
+            alimentari nel compostatore GEME. Ognuno svolge un ruolo unico nella
+            riduzione dei rifiuti, utilizzando processi naturali per riciclare
+            materiali organici.
+          </p>
+
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'flex-start',
+              alignItems: 'flex-start',
+              marginTop: '20px',
+            }}
+          >
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <h3>Polli</h3>
+              <img
+                src="/assets/images/geme-kobold/faq/chicken-farm.png"
+                alt="Polli che mangiano scarti"
+              />
+              <p>Scarti nella fattoria</p>
+            </div>
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <h3>Vermi</h3>
+              <img
+                src="/assets/images/geme-kobold/faq/worm-bin.png"
+                alt="Vermi nei contenitori"
+              />
+              <p>Cibo nei contenitori di vermi</p>
+            </div>
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <h3>Microbi Kobold</h3>
+              <img
+                src="/assets/images/geme-kobold/faq/geme-composter.jpg"
+                alt="Microbi Kobold nel compostatore"
+              />
+              <p>Rifiuti nel compostatore GEME</p>
+            </div>
+          </div>
+        </>
+      ),
+    },
+
+    {
+      slug: 'how-it-works',
+      question: 'Come funziona?',
+      answer: (
+        <>
+          <div className="mb-8">
+            <h2
+              style={{
+                fontWeight: 'bold',
+              }}
+            >
+              Come funziona il compostatore GEME?
+            </h2>
+
+            <h3
+              style={{
+                fontWeight: '600',
+              }}
+            >
+              1. Simulazione di un cumulo di compost in un ambiente controllato
+            </h3>
+            <p>
+              I compostatori GEME creano l'ambiente perfetto per il
+              compostaggio, non si affidano solo alla disidratazione e al
+              calore. Riproducono le condizioni di un cumulo di compost
+              mantenendo tutto contenuto e privo di odori.
+            </p>
+
+            <iframe
+              className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
+              src="https://www.youtube.com/embed/asNRoqkC_BA"
+              frameBorder="0"
+              title="GEME zersetzt Lebensmittelabfälle in 7 Stunden - ungeschnittenes Video"
+              aria-hidden="true"
+            />
+
+            <h4
+              style={{
+                fontWeight: '500',
+              }}
+            >
+              La tecnologia dietro i compostatori GEME
+            </h4>
+            <p>
+              I compostatori GEME sono progettati per mantenere un{' '}
+              <strong>ambiente ideale</strong> per i microbi speciali (GEME
+              Kobold) che scompongono i rifiuti organici. Questo ambiente imita
+              il processo di compostaggio naturale ma lo accelera e lo mantiene
+              contenuto.
+            </p>
+
+            <div className="overflow-x-auto">
+              <table className="min-w-full bg-white border border-gray-300">
+                <thead>
+                  <tr>
+                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                      Caratteristiche
+                    </th>
+                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                      Compostatore GEME
+                    </th>
+                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                      Altri disidratatori simili a Lomi
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="bg-gray-50">
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Temperatura di compostaggio a caldo
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">{`✅Sì (45°C < 85°C)`}</td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">{`❌No (120°C+, uccide i batteri buoni)`}</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Controllo dell'umidità
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      ✅Sì
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      ❌No
+                    </td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Scambio aerobico
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      ✅Sì
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      ❌No
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Mescolamento
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      ✅Sì (Movimento delicato)
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      ❌No (Taglio e macinatura con lame)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Sistema di filtraggio
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Ossidazione catalitica a ioni metallici,
+                      <br />
+                      Nessuna necessità di sostituzione
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Filtro a carboni attivi,
+                      <br />
+                      Sostituzione ogni 3 mesi
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3
+              style={{
+                fontWeight: '600',
+              }}
+            >
+              2. La macchina: contenere il processo di compostaggio
+            </h3>
+            <p>
+              La macchina funziona come un cumulo di compost all'interno di una
+              scatola. Garantisce che i rifiuti organici si scompongano
+              efficacemente senza produrre odori. Questo è ottenuto attraverso
+              il controllo di umidità, temperatura e flusso d'aria, tutto
+              ottimizzato per l'attività microbica.
+            </p>
+            <picture>
+              <img
+                alt="Come funziona un compostatore elettrico"
+                src="/assets/images/how-it-works/how-geme-composter-works.jpg"
+                style={{ maxWidth: '100%', marginTop: '15px' }}
+              />
+            </picture>
+
+            <h3
+              style={{
+                fontWeight: '600',
+              }}
+            >
+              3. I microbi: i veri protagonisti
+            </h3>
+            <p>
+              Il cuore del processo di compostaggio è il{' '}
+              <strong>GEME Kobold</strong> – un set di microbi accuratamente
+              selezionati. Questi microbi agiscono come i "vermi" del
+              compostaggio tradizionale, ma lavorano più velocemente ed
+              efficacemente. Si riproducono rapidamente, nutrendosi dei rifiuti
+              alimentari e trasformandoli in compost ricco di nutrienti.
+            </p>
+
+            <h4
+              style={{
+                fontWeight: '500',
+              }}
+            >
+              Crescita e attività microbica
+            </h4>
+            <p>
+              In condizioni ideali, alcune specie batteriche possono dividersi
+              ogni 10-15 minuti, raddoppiando la loro popolazione in un breve
+              periodo. Questa crescita esponenziale è la chiave per l'efficienza
+              dei compostatori GEME, poiché accelera la scomposizione dei
+              materiali organici in compost.
+            </p>
+            <picture>
+              <img
+                alt="Come crescono i microbi"
+                src="/assets/images/geme-terra-2/microbes-grow.png"
+                style={{ maxWidth: '100%', marginTop: '15px' }}
+              />
+            </picture>
+
+            <h4
+              style={{
+                fontWeight: '500',
+              }}
+            >
+              Conclusione
+            </h4>
+            <p>
+              In sintesi, i compostatori GEME replicano il processo di
+              compostaggio naturale in un ambiente chiuso, efficiente e privo di
+              odori. Sfruttando la tecnologia microbica avanzata, questi
+              dispositivi offrono una soluzione pratica ed ecologica per la
+              gestione dei rifiuti alimentari domestici.
+            </p>
+          </div>
+        </>
+      ),
+    },
+
+    {
+      slug: 'what-is-the-difference-between-the-starter-kobold-and-the-refill-kobold',
+      question:
+        'Qual è la differenza tra il Kobold di avvio e il Kobold di ricarica?',
+      answer: (
+        <>
+          <h3
+            style={{
+              fontWeight: 'bold',
+            }}
+          >
+            Lo Starter (Big Bag Kobold)
+          </h3>
+          <p>
+            Il Big Bag Kobold, di solito si riferisce al sacchetto da 2kg/1,5kg
+            di GEME Kobold, utilizzato come starter per il compostaggio.
+            Dovrebbe essere usato tutto in una volta nella{' '}
+            <strong>fase di configurazione</strong>.
+          </p>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'flex-start',
+              alignItems: 'flex-start',
+            }}
+          >
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <h3>Starter 2kg</h3>
+              <img
+                src="/assets/images/geme-kobold/faq/geme-kobold-old.png"
+                alt="Vecchio modello di Kobold"
+              />
+              <p>Kobold Classico (2022.01 ~ 2023.10)</p>
+            </div>
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <h3>Starter 1,5kg (ultimo modello)</h3>
+              <img
+                src="/assets/images/geme-kobold/product-image-max.jpg"
+                alt="Nuovo modello di Kobold"
+              />
+              <p>Kobold Aggiornato (dal 2023.10)</p>
+            </div>
+          </div>
+          <h3
+            style={{
+              fontWeight: 'bold',
+            }}
+          >
+            I Refill (Small Bag Kobold)
+          </h3>
+          <p>
+            Il piccolo sacchetto di Kobold, chiamato anche pacchetto refill, è
+            una versione più piccola e pura del GEME Kobold e non è lo starter,
+            ma i refill. Dovrebbe essere fornito periodicamente (ogni 2 o 3
+            settimane) dopo la configurazione dello starter e usato per un po'.
+            Quando la prima ricarica viene rimossa, circa 60 giorni dopo.
+          </p>
+
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'flex-start',
+              alignItems: 'flex-start',
+            }}
+          >
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <img
+                src="/assets/images/geme-kobold/product-image-back-garden.jpg"
+                alt="Un Pacchetto di Refill di GEME Kobold"
+              />
+              <p>Refill Kobold (Singolo)</p>
+            </div>
+
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <img
+                src="/assets/images/geme-kobold/product-image-6.jpg"
+                alt="Pacchetto trimestrale di Refill GEME Kobold"
+              />
+              <p>Refill Kobold (Trimestrale)</p>
+            </div>
+
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <img
+                src="/assets/images/geme-kobold/product-image-12.jpg"
+                alt="12 Pacchetti di Refill di GEME Kobold"
+              />
+              <p>Refill Kobold (Semestrale)</p>
+            </div>
+
+            <div style={{ flex: '1', textAlign: 'left', padding: '10px' }}>
+              <img
+                src="/assets/images/geme-kobold/product-image-24.jpg"
+                alt="24 Pacchetti di Refill di GEME Kobold"
+              />
+              <p>Refill Kobold (Annuale)</p>
+            </div>
+          </div>
+          <h3
+            style={{
+              fontWeight: 'bold',
+            }}
+          >
+            Confronto rapido delle specifiche
+          </h3>
+          <div className="overflow-x-auto">
+            <table className="min-w-full bg-white border border-gray-300">
+              <thead>
+                <tr>
+                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                    Tipi
+                  </th>
+                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                    Nome
+                  </th>
+                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                    Peso
+                  </th>
+                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                    Descrizione
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Starter
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Starter Classico
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    2kg
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Dal 2022 al 2023-10
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Starter
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Starter Aggiornato
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    1,5kg
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Dal 2023-10
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Refill
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Refill Pack
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    20g
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Come un piccolo sacchetto di caffè
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Refill
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Refill Trimestrale
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    -
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Refill Pack x 6
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Refill
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Refill Semestrale
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    -
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Refill Pack x 12
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Refill
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Refill Annuale
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    -
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    GEME Kobold Refill Pack x 24
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            Per maggiori dettagli, fare riferimento a{' '}
+            <a
+              className="text-v2311-primary"
+              href="/help-center/docs/faq/geme-kobold/what-is-the-difference-between-big-bag-kobold-and-small-bag-kobold"
+            >
+              Articolo del Centro Assistenza
+            </a>
+          </p>
+        </>
+      ),
+    },
+
+    {
+      slug: 'what-is-the-difference-between-the-starter-kobold-and-the-refill-kobold',
+      question:
+        'Qual è la differenza tra GEME Kobold e altri additivi per "composter" elettrici come Lomi Pod?',
+      answer: (
+        <>
+          Il GEME Kobold contiene una miscela di microrganismi, tra cui batteri,
+          funghi e ceppi resistenti al calore, progettati per degradare
+          efficacemente i rifiuti alimentari. Include anche lignina e regolatori
+          di umidità, che fungono da supplementi di carbonio per bilanciare il
+          rapporto carbonio-azoto nel compost. La rapida riproduzione di questi
+          microrganismi guida il processo di decomposizione. Al contrario, i Lomi
+          Pod funzionano principalmente come{' '}
+          <strong>placebo</strong>, dove la decomposizione viene ottenuta
+          principalmente attraverso il calore elevato e la macinazione, operando
+          su un principio completamente diverso.
+        </>
+      ),
+    },
+    {
+      slug: 'what-is-the-difference-between-big-bag-kobold-and-small-bag-kobold',
+      question:
+        'Quando posso iniziare a raccogliere il compost e quanto devo lasciare nel GEME?',
+      answer: (
+        <>
+          <div className="container mx-auto p-4">
+            <h5 className="text-xl font-semibold text-gray-800 mb-4">
+              {`1. Non superare la linea limite completa`}
+            </h5>
+            <p className="text-gray-700 mb-6">
+              Questo è un limite rigido. Se si riempie, rimuovi il compost il
+              prima possibile.
+            </p>
+    
+            <h5 className="text-xl font-semibold text-gray-800 mb-4">
+              2. Non svuotare tutto il compost
+            </h5>
+            <p className="text-gray-700 mb-6">
+              Ogni volta che rimuovi il compost, lascia un po' alla base in modo
+              che i batteri nel GEME Kobold possano riprodursi e continuare a
+              processare i nuovi rifiuti alimentari. 
+              <strong className="text-v2311-primary">
+                Mantieni il livello del compost allineato con l'asse dell'agitatore.
+              </strong>
+            </p>
+    
+            <h5 className="text-xl font-semibold text-gray-800 mb-4">
+              3. Consigliato: Rimuovi il compost quando la pala è completamente
+              sepolta
+            </h5>
+            <p className="text-gray-700 mb-6">
+              Cerca la linea gialla nell'immagine qui sotto. Questa è una pratica
+              consigliata che ti consente di raccogliere il compost in modo più
+              efficiente riducendo il carico di lavoro della macchina, aiutandola a
+              prolungarne la durata.
+            </p>
+          </div>
+          <picture>
+            <img
+              src="/assets/images/geme-terra-2/harvest-compost/best-practice-removal.png"
+              alt="Pratica migliore per rimuovere il compost GEME"
+            />
+          </picture>
+        </>
+      ),
+    },
+    {
+      slug: 'how-often-should-i-replace-the-kobold',
+      question: 'Quanto spesso devo sostituire il Kobold?',
+      answer: (
+        <>
+          Se mantenuto correttamente, non è necessario sostituire completamente il
+          Kobold. Tuttavia, se noti che il materiale all'interno del composter è
+          troppo umido o è diventato compatto, è meglio sostituirlo con un nuovo
+          starter.
+          <picture>
+            <img
+              alt="Sostituire GEME Kobold"
+              src="/assets/images/geme-kobold/faq/geme-kobold-get-rock.png"
+              style={{ maxWidth: '100%', marginTop: '15px' }}
+            />
+          </picture>
+        </>
+      ),
+    },
+    
+
+    {
+      slug: 'how-often-should-i-add-geme-kobold',
+      question: 'Quanto spesso devo aggiungere GEME Kobold?',
+      answer: (
+        <>
+          <p>
+            Questo processo si basa più sull'esperienza che su un numero fisso.
+            La frequenza con cui devi aggiungere GEME Kobold dipende dalla quantità
+            di rifiuti che inserisci e dalla frequenza con cui rimuovi il compost.
+          </p>
+          <br></br>
+    
+          <p>
+            Il tuo dispositivo GEME viene fornito con un pacchetto starter di
+            1,5 kg di GEME Kobold e materiali per la regolazione dell'umidità.
+            Più rifiuti aggiungi e più spesso rimuovi il compost, più frequentemente
+            dovrai aggiungere nuovo GEME Kobold.
+          </p>
+          <br></br>
+    
+          <p>
+            Dopo aver attivato GEME-Kobold, aggiungi 500g di rifiuti al giorno.
+            Rimuovi il compost ogni due mesi, lasciandone un po' per arricchire
+            il GEME-Kobold rimanente. Aggiungi un piccolo pacchetto di GEME Kobold
+            ogni due settimane.
+          </p>
+          <br></br>
+          <p>
+            Ad esempio, una famiglia di due persone che aggiunge 100g di rifiuti al
+            giorno deve rimuovere il compost solo una volta all'anno. Inizia ad
+            aggiungere GEME Kobold in quel momento. Se la decomposizione rallenta,
+            inizia ad aggiungere Kobold prima.
+          </p>
+    
+          <picture>
+            <img
+              alt="Sostituisci GEME Kobold"
+              src="/assets/images/geme-kobold/faq/when-and-how-to-add-kobold.png"
+              style={{ maxWidth: '100%', marginTop: '15px' }}
+            />
+          </picture>
+    
+          <p>
+            Per maggiori dettagli, fare riferimento a{' '}
+            <a
+              className="text-v2311-primary"
+              href="/help-center/docs/faq/how-to-use/how-often-should-i-add-geme-kobold"
+            >
+              Articolo del Centro Assistenza
+            </a>
+            .
+          </p>
+        </>
+      ),
+    },
+    {
+      slug: 'how-often-should-i-replace-the-kobold',
+      question: 'Poiché il Kobold contiene batteri, è dannoso per gli esseri umani e gli animali?',
+      answer: (
+        <>
+          No, i batteri presenti nel GEME Kobold non sono dannosi. Sono
+          microrganismi benefici scelti appositamente che svolgono un ruolo vitale
+          nel compostaggio. In microbiologia, molti batteri sono noti per supportare
+          processi naturali, come la decomposizione dei materiali organici in compost.
+          Questi microrganismi sono simili ai batteri presenti nel terreno sano o
+          negli alimenti fermentati. Si concentrano sulla decomposizione efficiente
+          dei rifiuti alimentari, senza rappresentare un rischio per gli esseri umani,
+          gli animali domestici o l'ambiente. I ceppi selezionati con cura garantiscono
+          un compostaggio sicuro ed efficace. È stato testato a fondo e certificato
+          per la produzione.
+        </>
+      ),
+    },
+    
+
+    {
+      slug: 'how-often-should-i-replace-the-kobold',
+      question: 'Posso usare GEME Kobold al di fuori del GEME Composter?',
+      answer: (
+        <>
+          No, GEME Kobold è progettato specificamente per l'uso all'interno del
+          GEME Composter. I microrganismi nel GEME Kobold richiedono un ambiente
+          controllato, come quello del GEME Composter, dove condizioni come
+          temperatura, umidità e flusso d'aria sono ottimizzate per un compostaggio
+          efficace. Usare GEME Kobold al di fuori di questo ambiente potrebbe non
+          produrre i risultati desiderati perché non fornirebbe le condizioni
+          necessarie per la crescita microbica e la decomposizione.
+          <br />
+          <br />
+          <b>Nota</b>: Se acquisti e usi Kobold senza GEME Composter, GEME non
+          è responsabile per il risultato.
+        </>
+      ),
+    },
+    {
+      slug: 'how-often-should-i-replace-the-kobold',
+      question: `Posso usare altri materiali starter per compostaggio all'interno del GEME Composter?`,
+      answer: (
+        <>
+          Mentre altri starter per compostaggio possono funzionare in diversi sistemi
+          di compostaggio, GEME Kobold è progettato specificamente per il GEME
+          Composter. La sua miscela unica di microrganismi garantisce una
+          decomposizione ottimale all'interno dell'ambiente controllato della
+          macchina. Usare altri materiali starter potrebbe non fornire gli stessi
+          risultati efficienti, poiché non sono adattati al processo specifico del GEME.
+          <br />
+          <br />
+          <b>Nota</b>: Se usi altri starter o materiali con GEME Composter, GEME
+          non è responsabile per il risultato.
+        </>
+      ),
+    },
+    {
+      slug: 'where-can-i-buy-more-kobold',
+      question: 'Dove posso acquistare più Kobold?',
+      answer: <>Qui, in questa pagina. Scorri verso l'alto per ordinare ora.</>,
+    },
+    
+  ],
+}

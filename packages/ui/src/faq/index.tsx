@@ -10,7 +10,7 @@ export interface IFaqProps {
   title: string
   description?: string
   faqs: {
-    slug: string
+    slug: string // 目前是没有用到的 可以找个时间干掉他
     question: string
     answer: React.ReactNode
   }[]
@@ -26,7 +26,7 @@ export function Faq({ faqs, title, description, titleClassName }: IFaqProps) {
       {description && <SectionDescription>{description}</SectionDescription>}
       <dl className="mt-10 space-y-6 divide-y divide-gray-900/10 max-w-4xl mx-auto">
         {faqs.map((faq, index) => (
-          <Disclosure as="div" key={faq.question} className="pt-6">
+          <Disclosure as="div" key={faq.question + index} className="pt-6">
             {({ open }) => (
               <>
                 <dt>
