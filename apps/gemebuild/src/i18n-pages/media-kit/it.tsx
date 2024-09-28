@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import HeroSection, { IHeroSection } from './components/HeroSection'
 import DownLoadMediaKit, {
   IDownLoadMediaKitProps,
@@ -12,25 +14,26 @@ const heroSectionProps: IHeroSection = {
   description: (
     <div className="flex flex-col gap-2 md:gap-4 md:text-xl">
       <p>
-        Welcome to the GEME Media Center! Here you can find a variety of
-        resources, including high-resolution logos, product images, and brand
-        stories to help you learn more about GEME and incorporate our brand into
-        your media coverage, marketing campaigns, and more.
+        Benvenuti nel Media Center di GEME! Qui potete trovare una varietà di
+        risorse, inclusi loghi ad alta risoluzione, immagini dei prodotti e
+        storie di marca per aiutarvi a conoscere meglio GEME e integrare il
+        nostro marchio nelle vostre campagne mediatiche, campagne di marketing e
+        altro ancora.
       </p>
       <p>
-        Feel free to download and use these resources to help promote
-        sustainable living.
+        Sentitevi liberi di scaricare e utilizzare queste risorse per promuovere
+        uno stile di vita sostenibile.
       </p>
       <p>
-        Want to make use of our marks in a way not covered by these guidelines?
-        Contact us at{' '}
+        Vuoi utilizzare i nostri marchi in un modo non coperto da queste linee
+        guida? Contattaci all'indirizzo{' '}
         <a
           href="mailto:info@geme.bio"
           className="text-v2311-primary underline underline-offset-[6px] inline-block"
         >
           info@geme.bio
         </a>{' '}
-        and include a visual mockup of intended use.
+        e includi un mockup visivo dell'uso previsto.
       </p>
     </div>
   ),
@@ -39,21 +42,21 @@ const heroSectionProps: IHeroSection = {
 const downloadMediaKitProps: IDownLoadMediaKitProps = {
   downLoadItems: [
     {
-      title: 'Logo Kit',
-      desc: 'GEME Logo Library: Access a variety of GEME logos in different sizes and resolutions to suit your specific needs.',
-      buttonText: 'Download',
+      title: 'Kit Loghi',
+      desc: 'Libreria di Loghi GEME: Accedi a una varietà di loghi GEME in diverse dimensioni e risoluzioni per soddisfare le tue specifiche esigenze.',
+      buttonText: 'Scarica',
       href: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/media-kit/GEME_LOGO.zip',
     },
     {
-      title: 'GEME Products Media Kit',
-      desc: 'GEME Product Media Kit: Download high-quality product images, detailed product PDFs, and more to enhance your marketing materials.',
-      buttonText: 'Download',
+      title: 'Kit Media Prodotti GEME',
+      desc: 'Kit Media Prodotti GEME: Scarica immagini di alta qualità dei prodotti, PDF dettagliati e altro ancora per migliorare i tuoi materiali di marketing.',
+      buttonText: 'Scarica',
       href: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/media-kit/GEME_Product_Guiding.zip',
     },
     {
-      title: 'GEME Brand Center',
-      desc: 'Learn about all the elements of the Slack brand, including logo, color, typography, text, illustrations and more, in our comprehensive online property and guide center.',
-      buttonText: 'Enter',
+      title: 'Centro Brand GEME',
+      desc: 'Scopri tutti gli elementi del marchio GEME, inclusi logo, colori, tipografia, testo, illustrazioni e altro nel nostro centro guida e proprietà online completo.',
+      buttonText: 'Entra',
       href: '/brand-hq',
     },
   ],
@@ -62,20 +65,20 @@ const downloadMediaKitProps: IDownLoadMediaKitProps = {
 const termsOfService: ITermsOfServiceProps = {
   textInfo: (
     <>
-      By using the GEME marks you agree to follow these guidelines as well as
-      our{' '}
+      Utilizzando i marchi GEME accetti di seguire queste linee guida così come
+      la nostra{' '}
       <Link
         href="/privacy-policy"
         target="_blank"
         rel="noopener noreferrer"
         className="text-v2311-primary underline underline-offset-[6px] inline-block"
       >
-        Privacy Policy
+        Politica sulla Privacy
       </Link>{' '}
-      and all our rules and policies. GEME reserves the right to cancel, modify,
-      or change the permission in these guidelines at any time at its sole
-      discretion. For further information about use of the GEME name and
-      trademarks, please contact{' '}
+      e tutte le nostre regole e politiche. GEME si riserva il diritto di
+      cancellare, modificare o cambiare il permesso in queste linee guida in
+      qualsiasi momento a sua esclusiva discrezione. Per ulteriori informazioni
+      sull'uso del nome e dei marchi GEME, contatta{' '}
       <a
         href="mailto:info@geme.bio"
         className="text-v2311-primary underline underline-offset-[6px] inline-block"
@@ -87,7 +90,7 @@ const termsOfService: ITermsOfServiceProps = {
   ),
 }
 
-export function MediaKitPageEn() {
+export function MediaKitPageIt() {
   return (
     <>
       <div className="bg-[#F4EDE4] mb-14 md:py-14 lg:py-20 xl:pt-8 xl:pb-14">
