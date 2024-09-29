@@ -1,7 +1,7 @@
 import { SectionDescription, SectionTitle } from '../ui-components'
 import PlayerComponent, { IPlayerComponentType } from './PlayerComponent'
 
-export interface IInlinePalyerType extends IPlayerComponentType {
+export interface IInlinePlayerType extends IPlayerComponentType {
   title?: string
   description?: React.ReactNode
 }
@@ -14,7 +14,7 @@ export function InlinePlayer({
   videoSrcUrlOrVidioId,
   mixpanelFrom,
   videoIsAutoPlay,
-}: IInlinePalyerType) {
+}: IInlinePlayerType) {
   const playerComponentProps = {
     type,
     videoPosterUrl,
