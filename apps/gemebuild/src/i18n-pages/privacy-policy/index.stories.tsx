@@ -1,6 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { PrivacyPolicyPageDe, PrivacyPolicyPageEn,PrivacyPolicyPageFr } from '.'
+import {
+  PrivacyPolicyPageDe,
+  PrivacyPolicyPageEn,
+  PrivacyPolicyPageFr,
+  PrivacyPolicyPageIt,
+} from '.'
 
 const meta = {
   title: 'Pages/privacy-policy',
@@ -22,4 +27,9 @@ export const Fr: Story = {
 export const De: Story = {
   name: 'de',
   render: () => <PrivacyPolicyPageDe />,
+}
+
+export const It: Story = {
+  name: 'it',
+  render: () => <PrivacyPolicyPageIt />,
 }
