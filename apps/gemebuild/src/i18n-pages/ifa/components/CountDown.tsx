@@ -3,7 +3,7 @@
 import { PropsWithChildren, useEffect, useState } from 'react'
 import Countdown, { zeroPad } from 'react-countdown'
 import moment from 'moment'
-import { Divider, LocaleType } from 'ui'
+import { Divider, IMultiLanguageConfig, LocaleType } from 'ui'
 
 interface ImultiLanguageText {
   days: string[]
@@ -13,7 +13,7 @@ interface ImultiLanguageText {
   sec: string
 }
 
-const multiLanguageText = {
+const multiLanguageText: IMultiLanguageConfig<ImultiLanguageText> = {
   en: {
     days: ['DAY', 'DAYS'],
     drawing: 'The lottery is being drawn...',
@@ -32,6 +32,13 @@ const multiLanguageText = {
     days: ['JOUR', 'JOURS'],
     drawing: 'Le tirage au sort est en cours...',
     hour: 'HEURE',
+    min: 'MIN',
+    sec: 'SEC',
+  },
+  it: {
+    days: ['GIORNO', 'GIORNI'],
+    drawing: 'La lotteria è in corso...',
+    hour: 'ORA',
     min: 'MIN',
     sec: 'SEC',
   },
@@ -226,7 +233,10 @@ function TimeCard({
       className="text-white tracking-wide font-sans font-semibold"
       suppressHydrationWarning
     >
-      <p className="text-lg md:text-2xl xl:text-3xl 3xl:text-4xl" suppressHydrationWarning>
+      <p
+        className="text-lg md:text-2xl xl:text-3xl 3xl:text-4xl"
+        suppressHydrationWarning
+      >
         {children}
       </p>
       <p
