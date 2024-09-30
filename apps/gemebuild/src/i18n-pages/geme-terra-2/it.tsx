@@ -22,7 +22,7 @@ const heroSectionProps: IHeroSectionProps = {
     'https://www.youtube.com/embed/Z1w2SCmlGYU?si=sIMyLuSyi8Ai4-wA',
   videoProps: {
     src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/product-video/geme-terra-2-3d-360p.mp4',
-    posterUrl: '/assets/images/geme-terra-2/video-poster.png',
+    posterUrl: '/assets/images/geme-terra-2/video-poster.jpg',
   },
   inputPlaceholder: 'Enter your email',
   submitButtonLabel: 'Notify Me',
