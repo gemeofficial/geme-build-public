@@ -182,8 +182,8 @@ const oxygenCycleProps: IOxygenCycleProps = {
           <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
             GEME Kobold is a set of microbiota, which is the world's only
             previously discovered and validated high-temperature resistant
-            composite microbiota. It works 100x faster than ordinary bacteria in
-            natural.
+            composite microbiota. It works 1000x faster than ordinary bacteria
+            in natural.
           </p>
         </>
       ),

@@ -69,16 +69,16 @@ const logoCloudImages: TItem[] = [
     alt: 'Reform',
     link: 'https://www.wallstreet-online.de/nachricht/18438137-geme-revolutioniert-nachhaltigkeit-haushalt-stellt-ifa-berlin-2024-zukunft-kompostierung',
   },
-  {
-    src: '/assets/images/logo-cloud/yahoo-finance.png',
-    alt: 'Yahoo Finance',
-    link: 'https://consent.yahoo.com/v2/collectConsent?sessionId=4_cc-session_2208ea75-58aa-459e-ac89-0cf35164b34c',
-  },
   // {
-  //   src: '/assets/images/logo-cloud/advfn.png',
-  //   alt: 'ADVFN',
-  //   link: 'https://www.advfn.com/stock-market/stock-news/94437900/revolutionizing-home-sustainability-geme-debuts-th',
+  //   src: '/assets/images/logo-cloud/yahoo-finance.png',
+  //   alt: 'Yahoo Finance',
+  //   link: 'https://consent.yahoo.com/v2/collectConsent?sessionId=4_cc-session_2208ea75-58aa-459e-ac89-0cf35164b34c',
   // },
+  {
+    src: '/assets/images/logo-cloud/advfn.png',
+    alt: 'ADVFN',
+    link: 'https://www.advfn.com/stock-market/stock-news/94437900/revolutionizing-home-sustainability-geme-debuts-th',
+  },
 ]
 
 export function LogoCloud({
