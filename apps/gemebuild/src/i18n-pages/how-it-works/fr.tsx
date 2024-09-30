@@ -346,6 +346,10 @@ const inlinePlayerProps: IInlinePlayerType = {
 function HowItWorksFr({ ReviewsComponent }: IHowItWorksProps) {
   return (
     <>
+      <h1 className="sr-only">
+        Comment fonctionne le composteur GEME : Transformer les déchets
+        alimentaires en compost riche en nutriments
+      </h1>
       <div className="py-8 lg:pt-6 lg:pb-16">
         <ImgAndTextSection {...shortVideoProps} />
         <ImgAndTextSection {...imageTextProps} />

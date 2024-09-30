@@ -179,8 +179,8 @@ const oxygenCycleProps: IOxygenCycleProps = {
             Il compostaggio aerobico decompone la materia organica utilizzando
             ossigeno (O2), richiedendo microrganismi aerobi per decomporre i
             materiali in vapore acqueo, calore e humus ricco di nutrienti. Il
-            compostiera GEME semplifica questo processo con un efficiente sistema
-            di aerazione, ottimizzando il flusso d'ossigeno per una
+            compostiera GEME semplifica questo processo con un efficiente
+            sistema di aerazione, ottimizzando il flusso d'ossigeno per una
             decomposizione efficace.
           </p>
           <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base">
@@ -339,6 +339,10 @@ const useCompostContrastProps: IUseCompostContrastProps = {
 function HowItWorksIt({ ReviewsComponent }: IHowItWorksProps) {
   return (
     <>
+      <h1 className="sr-only">
+        Come funziona il Compostatore GEME: Trasformazione dei rifiuti
+        alimentari in compost ricco di nutrienti
+      </h1>
       <div className="py-8 lg:pt-6 lg:pb-16">
         <ImgAndTextSection {...shortVideoProps} />
         <ImgAndTextSection {...imageTextProps} />

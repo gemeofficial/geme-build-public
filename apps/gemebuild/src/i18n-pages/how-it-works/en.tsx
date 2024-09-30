@@ -331,6 +331,10 @@ const inlinePlayerProps: IInlinePlayerType = {
 function HowItWorksEn({ ReviewsComponent }: IHowItWorksProps) {
   return (
     <>
+      <h1 className="sr-only">
+        How GEME Composter Works: Transforming Food Waste into Nutrient-Rich
+        Compost
+      </h1>
       <div className="py-8 lg:pt-6 lg:pb-16">
         <ImgAndTextSection {...shortVideoProps} />
         <ImgAndTextSection {...imageTextProps} />
