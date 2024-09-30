@@ -58,11 +58,11 @@ const featuresWithVideos: IFeaturesWithVideos = {
     {
       name: 'Attenzioni',
       description:
-        "Utilizzare il composter GEME con cautela, basta prestare un po' di attenzione.",
+        "Utilizzare il compostiera GEME con cautela, basta prestare un po' di attenzione.",
       icon: featureIcon(2),
       videoUrl: 'https://www.youtube.com/embed/f09NNpAnyTQ',
       videoImageSrc: '/assets/images/manual/video-cover-cautions.png',
-      videoImageAlt: "Precauzioni per l'uso del composter GEME",
+      videoImageAlt: "Precauzioni per l'uso del compostiera GEME",
     },
     {
       name: 'Attivare i Microbi',
