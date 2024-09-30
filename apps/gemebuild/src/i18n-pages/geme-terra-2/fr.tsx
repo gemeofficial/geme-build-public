@@ -18,11 +18,12 @@ const heroSectionProps: IHeroSectionProps = {
     </>
   ),
 
-  fullScreenVideoUrl: 'https://www.youtube.com/embed/ROJYZBp0jcM',
-  videoProps: {
-    src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
-    posterUrl: '/assets/images/home-v2311/hero-blurred.webp',
-  },
+  fullScreenVideoUrl:
+  'https://www.youtube.com/embed/Z1w2SCmlGYU?si=sIMyLuSyi8Ai4-wA',
+videoProps: {
+  src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/product-video/geme-terra-2-3d-360p.mp4',
+  posterUrl: '/assets/images/geme-terra-2/video-poster.png',
+},
   inputPlaceholder: 'Enter your email',
   submitButtonLabel: 'Notify Me',
   heroBgImagePc: '/assets/images/geme-terra-2/hero-bg-desktop.png',
