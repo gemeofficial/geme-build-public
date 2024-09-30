@@ -7,7 +7,7 @@ import FeaturesWithVideos, {
   featureIcon,
   IFeaturesWithVideos,
 } from './components/FeaturesWithVideos'
-import GeemDailyUsage from './components/GemeDailyUsage'
+import GemeDailyUsage from './components/GemeDailyUsage'
 import HeroSection, { IManualHeroSectionProps } from './components/HeroSection'
 
 export interface IManualsPageProps {
@@ -138,7 +138,7 @@ const featuresWithVideos: IFeaturesWithVideos = {
 }
 
 // 第3部分配置文件 En版
-const geemDailyUsageProps = {
+const gemeDailyUsageProps = {
   title: 'Daily Usage',
   description:
     'No need to push any buttons, no need to adjust the carbon-nitrogen ratio of the compost, no need to turn the compost, no need to replace the filter. Put your waste in at anytime, pick the compost out at any time you want. Nothing special.',
@@ -219,7 +219,7 @@ export function ManualsPageEn({
         WhatsAppBusinessAccountURL={WhatsAppBusinessAccountURL}
       />
       <FeaturesWithVideos {...featuresWithVideos} />
-      <GeemDailyUsage {...geemDailyUsageProps} />
+      <GemeDailyUsage {...gemeDailyUsageProps} />
       <CanNotCompostItems {...canNotCompostItemsProps} />
     </>
   )

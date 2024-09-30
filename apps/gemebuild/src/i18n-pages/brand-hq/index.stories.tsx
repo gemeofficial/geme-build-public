@@ -1,6 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { BrandHqPageEn, BrandHqPageDe, BrandHqPageFr } from './index'
+import {
+  BrandHqPageEn,
+  BrandHqPageDe,
+  BrandHqPageFr,
+  BrandHqPageIt,
+} from './index'
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -23,4 +28,9 @@ export const Fr: Story = {
 export const De: Story = {
   name: 'de',
   render: () => <BrandHqPageDe />,
+}
+
+export const It: Story = {
+  name: 'it',
+  render: () => <BrandHqPageIt />,
 }

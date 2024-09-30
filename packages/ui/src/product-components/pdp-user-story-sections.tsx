@@ -10,7 +10,7 @@ import { Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import clsx from 'clsx'
-import { LocaleType } from '../reviews'
+import { LocaleType } from '..'
 
 interface IPdpUserStoryTeamSectionsExampleProps {
   title?: ReactNode
@@ -233,7 +233,7 @@ function PdpUserStoryTeamSections({
                   idx % 2 === 0 ? 'flex-row-reverse' : '',
                 )}
               >
-                <ImageCompoent image={person.image} className='w-[30%]'/>
+                <ImageCompoent image={person.image} className="w-[30%]" />
                 <div
                   className={clsx(
                     'flex flex-col justify-between gap-4 overflow-hidden',
@@ -262,7 +262,7 @@ function PdpUserStoryTeamSections({
 
               <div className="swiper-slide-box lg:hidden h-full flex flex-col justify-between gap-4 overflow-hidden">
                 <div className="flex items-stretch flex-row gap-4 md:gap-8">
-                <ImageCompoent image={person.image} className='w-32 h-40'/>
+                  <ImageCompoent image={person.image} className="w-32 h-40" />
 
                   <div className="flex-auto">
                     <h3 className="v2311-font-h2 text-v2311-fg-dark-black">
@@ -296,7 +296,13 @@ function PdpUserStoryTeamSections({
   )
 }
 
-function ImageCompoent({ image,className }: { image?: IImgProps,className?:string }) {
+function ImageCompoent({
+  image,
+  className,
+}: {
+  image?: IImgProps
+  className?: string
+}) {
   return (
     <>
       {image?.src?.startsWith('https') ? (
@@ -304,7 +310,7 @@ function ImageCompoent({ image,className }: { image?: IImgProps,className?:strin
           src={image?.src || ''}
           alt={image?.alt || ''}
           loading="lazy"
-          className={clsx("rounded-xl object-cover",className)}
+          className={clsx('rounded-xl object-cover', className)}
         />
       ) : (
         <Image
@@ -312,7 +318,7 @@ function ImageCompoent({ image,className }: { image?: IImgProps,className?:strin
           alt={image?.alt || ''}
           width={400}
           height={500}
-          className={clsx("rounded-xl object-cover",className)}
+          className={clsx('rounded-xl object-cover', className)}
         />
       )}
     </>

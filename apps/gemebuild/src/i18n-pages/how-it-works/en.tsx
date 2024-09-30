@@ -1,5 +1,5 @@
 import {
-  IInlinePalyerType,
+  IInlinePlayerType,
   InlinePlayer,
   type IOxygenCycleProps,
   ScrollTriggeredAnimatedOxygenCycle,
@@ -312,7 +312,7 @@ const useCompostContrastProps: IUseCompostContrastProps = {
 }
 
 // YouTube 视频播放器
-const inlinePlayerProps: IInlinePalyerType = {
+const inlinePlayerProps: IInlinePlayerType = {
   title: 'Seeing is Believing',
   description: (
     <>

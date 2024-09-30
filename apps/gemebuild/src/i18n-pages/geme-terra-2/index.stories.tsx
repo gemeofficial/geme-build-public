@@ -1,6 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { GemeTerra2PageDe, GemeTerra2PageEn, GemeTerra2PageFr } from '.'
+import {
+  GemeTerra2PageDe,
+  GemeTerra2PageEn,
+  GemeTerra2PageFr,
+  GemeTerra2PageIt,
+} from '.'
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -23,4 +28,9 @@ export const Fr: Story = {
 export const De: Story = {
   name: 'de',
   render: () => <GemeTerra2PageDe />,
+}
+
+export const It: Story = {
+  name: 'it',
+  render: () => <GemeTerra2PageIt />,
 }

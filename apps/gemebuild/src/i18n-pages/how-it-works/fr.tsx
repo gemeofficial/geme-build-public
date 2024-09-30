@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import {
-  IInlinePalyerType,
+  IInlinePlayerType,
   InlinePlayer,
   type IOxygenCycleProps,
   ScrollTriggeredAnimatedOxygenCycle,
@@ -327,7 +327,7 @@ const useCompostContrastProps: IUseCompostContrastProps = {
 }
 
 // YouTube 视频播放器
-const inlinePlayerProps: IInlinePalyerType = {
+const inlinePlayerProps: IInlinePlayerType = {
   title: `Voir, c'est croire`,
   description: (
     <>

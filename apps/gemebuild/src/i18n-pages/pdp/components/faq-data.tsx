@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import { IFaqProps, LocaleType } from 'ui'
+import { IFaqProps, IMultiLanguageConfig, LocaleType } from 'ui'
 
 // Faqs
 const pdpFaqPropsEn: IFaqProps = {
@@ -1768,11 +1768,692 @@ const pdpFaqPropsFr: IFaqProps = {
   ],
 }
 
+const pdpFaqPropsIt: IFaqProps = {
+  title: 'Domande Frequenti',
+  description: '',
+  faqs: [
+    {
+      slug: 'how-it-works',
+      question: 'Come funziona?',
+      answer: (
+        <>
+          <h4>
+            ✅ <strong>Simula un cumulo di compost in una scatola</strong>, ❌
+            <del>non solo disidratazione e calore</del>
+          </h4>
+          I compostatori GEME sono elettrodomestici che forniscono e mantengono{' '}
+          <strong>un ambiente ideale</strong> per i microbi speciali di GEME
+          (GEME Kobold) per decomporre i rifiuti biologici. Terra 2 funziona
+          secondo lo stesso principio.
+          <br />
+          <ul>
+            <li>
+              <strong>La Macchina</strong>: Simula un cumulo di compost in un
+              ambiente chiuso, assicurando che non ci saranno odori.
+              <br />
+              <picture>
+                <img
+                  alt="Come funziona un compostatore elettrico"
+                  src="/assets/images/how-it-works/how-geme-composter-works.jpg"
+                />
+              </picture>
+            </li>
+            <li>
+              <strong>Il Kobold</strong>: I microbi svolgono la maggior parte
+              del lavoro. Si riproducono rapidamente e assorbono energia dai
+              rifiuti alimentari. Proprio come i vermi consumano cibo, i microbi
+              decompongono i rifiuti e producono compost.
+              <picture>
+                <img
+                  alt="Come crescono i microbi"
+                  src="/assets/images/geme-terra-2/microbes-grow.png"
+                />
+              </picture>
+              In condizioni ideali, alcune specie batteriche possono dividersi
+              ogni 10–15 minuti, raddoppiando la popolazione in questi
+              intervalli.
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      slug: 'what-is-the-difference-between-other-electric-composters-like-lomi',
+      question:
+        'Qual è la differenza tra altri compostatori elettrici come Lomi?',
+      answer: (
+        <>
+          <div className="overflow-x-auto">
+            <table className="min-w-full bg-white border border-gray-300">
+              <thead>
+                <tr>
+                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                    Caratteristiche
+                  </th>
+                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                    GEME Terra 2
+                  </th>
+                  <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                    Disidratatori simili a Lomi
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Prezzo
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">{`< 600$`}</td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">{`150$ < x < 500$`}</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Dimensioni
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    14L
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    3L - 4L
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Modalità di lavoro
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Compostaggio continuo
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Macinatura e disidratazione periodica
+                  </td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Risultato finale
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Compost vero
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Rifiuti disidratati e cotti
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Interazione
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Aggiungi rifiuti in qualsiasi momento
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Aspetta che il ciclo sia completato
+                  </td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Sistema di filtraggio
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Filtro permanente,
+                    <br />
+                    Nessuna necessità di sostituzione
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Filtro a carbone,
+                    <br />
+                    Sostituire ogni 3 mesi
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Pulizia
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Nessuna necessità di pulizia
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Facilmente intasato
+                  </td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Tempo per riempire
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    45 giorni+
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">{`1 giorno`}</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Livello di rumore
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    25dB a 40dB
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    60dB+
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Costo energetico
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    1.2~1.7 kWh/giorno
+                    <br />
+                    Simile a un MacBook Pro
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    500W+ Potenza
+                    <br />
+                    Simile a un forno
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Spazio
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Pavimento, piano di lavoro
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Solo piano di lavoro
+                  </td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Come iniziare
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Inserisci i rifiuti e chiudi il coperchio
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Allineare attentamente il coperchio
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Rifiuti liquidi
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Sì
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    No
+                  </td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Carne
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Sì
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    No
+                  </td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Supporta rifiuti animali
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Sì
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    No
+                  </td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Fino a 3kg
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    Sì
+                  </td>
+                  <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                    No
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <iframe
+            className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
+            src="https://www.youtube.com/embed/-qkjLB3GcKo"
+            frameBorder="0"
+            title="Video panoramico del prodotto"
+            aria-hidden="true"
+          />
+        </>
+      ),
+    },
+
+    {
+      slug: 'can-I-add-food-waste-when-it-is-running',
+      question: 'Posso aggiungere rifiuti alimentari mentre è in funzione?',
+      answer: `Sì`,
+    },
+    {
+      slug: 'how-much-food-waste-can-i-add-at-once',
+      question: 'Quanti rifiuti alimentari posso aggiungere alla volta?',
+      answer: (
+        <>
+          Puoi aggiungere <strong>fino a 2kg</strong> alla volta. Puoi
+          aggiungere rifiuti alimentari più volte in un giorno, ma{' '}
+          <strong>per favore non superare i 5kg</strong> in un solo giorno.
+          <br />
+          <br />
+          <em>Nota:</em> Il contenitore può contenere fino a{' '}
+          <strong>19L</strong>, ma questo {'non significa'} che puoi riempirlo
+          completamente in una volta.
+          <br />
+          <br />
+          Aggiungere <strong>5kg di rifiuti alla volta</strong> è possibile e ha
+          superato i test di riferimento in fabbrica, ma non è{' '}
+          <strong>raccomandato per l'uso quotidiano</strong>.
+          <iframe
+            className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
+            src="https://www.youtube.com/embed/JV0nZtaRaD0"
+            frameBorder="0"
+            title="GEME scompone i rifiuti alimentari in 7 ore - video integrale"
+            aria-hidden="true"
+          />
+        </>
+      ),
+    },
+
+    {
+      slug: 'what-kinds-of-food-waste-can-i-put',
+      question: 'Che tipo di rifiuti alimentari posso mettere?',
+      answer: (
+        <>
+          <div className="max-w-3xl mx-auto p-6">
+            <p className="text-gray-700 text-lg leading-relaxed mb-6">
+              Quasi tutto il cibo che mangi può essere messo nel compostatore
+              GEME.
+            </p>
+            <div className="flex flex-col md:flex-row items-start md:items-center mb-6">
+              <picture>
+                <img
+                  src="https://www.geme.bio/help-center/assets/images/supported-foodwaste-guide-055cef03c7c375f24ce99e1625de5d6f.png"
+                  alt="Rifiuti alimentari supportati dal compostatore GEME"
+                />
+              </picture>
+            </div>
+
+            <p className="text-gray-700 text-lg leading-relaxed mb-6">
+              Supporta anche i rifiuti liquidi, come la zuppa.
+              <iframe
+                className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
+                src="https://www.youtube.com/embed/yGkcEaeXlQQ"
+                frameBorder="0"
+                title="Video panoramico del prodotto"
+                aria-hidden="true"
+              />
+            </p>
+
+            <p className="text-gray-700 text-lg leading-relaxed">
+              Può anche scomporre i rifiuti animali, come le feci di cane e la
+              lettiera per gatti.
+            </p>
+            <picture>
+              <img
+                src="/assets/images/geme-terra-2/cat-litter.png"
+                alt="Rifiuti animali supportati dal compostatore GEME"
+              />
+            </picture>
+          </div>
+        </>
+      ),
+    },
+    {
+      slug: 'how-long-will-it-take-for-geme-to-turn-my-food-waste-into-compost',
+      question:
+        'Quanto tempo ci vorrà per trasformare i miei rifiuti alimentari in compost?',
+      answer: (
+        <>
+          Per la maggior parte degli avanzi quotidiani, ci vogliono circa 6-8
+          ore per decomporre i rifiuti.
+          <br />
+          Guarda questo video non tagliato di 7 ore. (
+          <b className="text-amber-500">
+            nessuno dei nostri concorrenti osa condividere tali video in diretta
+            con il pubblico
+          </b>
+          )
+          <iframe
+            className="w-full aspect-[16/9] self-stretch md:min-h-[500px]"
+            src="https://www.youtube.com/embed/asNRoqkC_BA"
+            frameBorder="0"
+            title="GEME scompone i rifiuti alimentari in 7 ore - video integrale"
+            aria-hidden="true"
+          />
+          Tuttavia, per alcuni rifiuti alimentari, come le bucce d'arancia, ci
+          vorrà un po' più di tempo a causa delle loro fibre dure. Le piccole
+          ossa richiedono ancora più tempo.
+          <picture>
+            <img
+              src="https://www.geme.bio/help-center/assets/images/supported-foodwaste-guide-055cef03c7c375f24ce99e1625de5d6f.png"
+              alt="Rifiuti alimentari supportati dal compostatore GEME"
+            />
+          </picture>
+          <strong>Nota:</strong> Sebbene ci vogliano alcune ore o giorni per
+          decomporre i rifiuti in compost, questo non è ancora compost finito.
+          Consigliamo di attendere almeno 45 giorni prima di utilizzarlo. In
+          alternativa, puoi mescolare il compost non finito con il terreno in un
+          rapporto di 1:8 per coltivare le tue piante.
+        </>
+      ),
+    },
+
+    {
+      slug: 'is-it-smell-how-often-should-i-replace-the-carbon-filter',
+      question:
+        'Ha odore? Quanto spesso dovrei sostituire il filtro al carbone?',
+      answer: (
+        <>
+          <div>
+            {`Non ha odore`} perché utilizza{' '}
+            <strong className="text-v2311-primary">
+              tecnologia di ossidazione catalitica degli ioni metallici
+            </strong>{' '}
+            per neutralizzare gli odori. A differenza dei compostatori
+            tradizionali, {`non utilizza filtri al carbone, quindi non c'è `}
+            <strong className="text-v2311-primary">
+              necessità di sostituirli
+            </strong>
+            . Il filtro è progettato per durare tutta la vita.
+          </div>
+          <div className="container mx-auto p-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-white rounded-lg shadow-md">
+                <picture>
+                  <img
+                    src="/assets/images/geme-terra-2/odor/1.jpg"
+                    alt="Strato di fotocatalizzatore UV"
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                </picture>
+                <div className="p-4">
+                  <h2 className="text-xl font-semibold mb-2">Strato 1</h2>
+                  <p className="text-gray-700">
+                    Fotocatalizzatore e luce UV che eliminano i batteri dannosi.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg shadow-md">
+                <picture>
+                  <img
+                    src="/assets/images/geme-terra-2/odor/2.jpg"
+                    alt="Strato di ossidazione degli ioni metallici"
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                </picture>
+                <div className="p-4">
+                  <h2 className="text-xl font-semibold mb-2">Strato 2</h2>
+                  <p className="text-gray-700">
+                    Processo di ossidazione catalitica degli ioni metallici.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg shadow-md">
+                <picture>
+                  <img
+                    src="/assets/images/geme-terra-2/odor/3.jpg"
+                    alt="Strato di scambio d'aria aerobico"
+                    className="w-full h-auto rounded-t-lg"
+                  />
+                </picture>
+                <div className="p-4">
+                  <h2 className="text-xl font-semibold mb-2">Strato 3</h2>
+                  <p className="text-gray-700">
+                    Un potente sistema di scambio d'aria aerobico per il
+                    controllo degli odori.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      ),
+    },
+    {
+      slug: 'how-often-should-i-clean-the-bin',
+      question: 'Quanto spesso dovrei pulire il contenitore?',
+      answer: (
+        <>
+          Tecnicamente, non è necessario pulire il contenitore. Potrebbe non
+          sembrare bello, e potrebbe esserci un leggero odore quando si apre il
+          coperchio, ma una volta chiuso, rimane pulito e inodore. <br />
+          La vera domanda che potresti voler fare è:{' '}
+          <strong>Quanto spesso dovrei raccogliere il compost?</strong>
+          <div className="container mx-auto p-4">
+            <h5 className="text-xl font-semibold text-gray-800 mb-4">
+              {`1. Non superare la linea di limite massimo`}
+            </h5>
+            <p className="text-gray-700 mb-6">
+              Questo è un limite rigido. Se si riempie, rimuovi il compost il
+              prima possibile.
+            </p>
+
+            <h5 className="text-xl font-semibold text-gray-800 mb-4">
+              2. Non svuotare tutto il compost
+            </h5>
+            <p className="text-gray-700 mb-6">
+              Ogni volta che rimuovi il compost, lascia un po' alla base in modo
+              che i batteri nel GEME Kobold possano riprodursi e continuare a
+              processare i nuovi rifiuti alimentari.
+              <strong className="text-v2311-primary">
+                Mantieni il livello del compost allineato con l'albero
+                dell'agitatore.
+              </strong>
+            </p>
+
+            <h5 className="text-xl font-semibold text-gray-800 mb-4">
+              3. Consigliato: Rimuovi il compost quando la pala è completamente
+              sepolta
+            </h5>
+            <p className="text-gray-700 mb-6">
+              Guarda la linea gialla nell'immagine sottostante. Questa è una
+              pratica consigliata che ti permette di raccogliere il compost in
+              modo più efficiente riducendo il carico di lavoro della macchina,
+              contribuendo a prolungarne la durata.
+            </p>
+          </div>
+          <picture>
+            <img
+              src="/assets/images/geme-terra-2/harvest-compost/best-practice-removal.png"
+              alt="Migliore pratica per rimuovere il compost GEME"
+            />
+          </picture>
+        </>
+      ),
+    },
+
+    {
+      slug: 'can-i-feed-the-output-compost-to-my-worm-bin',
+      question:
+        'Posso dare il compost prodotto da GEME al mio lombricompost per il compostaggio di vermi?',
+      answer: (
+        <>
+          Sì, puoi! I microbi presenti nel{' '}
+          <a href="/geme-kobold">GEME Kobold</a> sono raccolti ed estratti dalla
+          natura. Non sono dannosi per gli animali e fanno bene al suolo.
+          Possono lavorare perfettamente con i lombrichi nel lombricompost. Il
+          materiale organico non completamente decomposto sarà il miglior cibo
+          per i vermi, mentre il materiale decomposto rimane altamente
+          nutriente.
+        </>
+      ),
+    },
+    {
+      slug: 'what-is-the-maintenance-cost-for-keep-the-unit',
+      question: `Qual è il costo dell'energia elettrica per mantenere l'unità in funzione?`,
+      answer: (
+        <>
+          <div className="max-w-4xl mx-auto p-6 bg-white shadow-md rounded-lg">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">
+              GEME Composter: Costi Annuali Dettagliati
+            </h2>
+
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                1. Consumo energetico giornaliero
+              </h3>
+              <p className="text-gray-700">
+                Il compostatore GEME consuma circa{' '}
+                <strong>1,44 kWh al giorno</strong>. Questo è paragonabile al
+                consumo energetico giornaliero di un laptop standard in funzione
+                continua.
+              </p>
+            </div>
+
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                2. Consumo energetico annuale
+              </h3>
+              <p className="text-gray-700">
+                Poiché l'apparecchio funziona 24 ore al giorno, il consumo
+                energetico totale in un anno può essere calcolato come segue:
+              </p>
+              <p className="text-gray-700 font-mono bg-gray-100 p-2 rounded-lg">
+                1,44 kWh/giorno × 365 giorni/anno = 525,6 kWh/anno
+              </p>
+              <p className="text-gray-700">
+                Questo significa che nel corso di un anno, il compostatore GEME
+                consuma un totale di <strong>525,6 kWh</strong>.
+              </p>
+            </div>
+
+            <div className="mb-4">
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                3. Costo dell'energia elettrica
+              </h3>
+              <p className="text-gray-700">
+                Il costo medio dell'elettricità negli Stati Uniti è di circa{' '}
+                <strong>$0,13 per kWh</strong>. Pertanto, il costo annuale per
+                il funzionamento del compostatore GEME può essere calcolato come
+                segue:
+              </p>
+              <p className="text-gray-700 font-mono bg-gray-100 p-2 rounded-lg">
+                525,6 kWh/anno × $0,13/kWh = $68,33/anno
+              </p>
+              <p className="text-gray-700">
+                Questo calcolo mostra che il costo dell'elettricità del
+                compostatore GEME è di circa <strong>$68,33 all'anno</strong>.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">
+                4. Conclusione
+              </h3>
+              <p className="text-gray-700">
+                Il costo operativo annuale del compostatore GEME, considerando
+                solo il consumo di elettricità, è relativamente basso a{' '}
+                <strong>$68,33</strong>. Questo lo rende una scelta economica
+                per chi cerca di ridurre i rifiuti alimentari e produrre
+                compost, mantenendo al contempo basse le spese operative.
+              </p>
+            </div>
+
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">
+              Confronto del costo annuale dell'elettricità
+            </h2>
+            <div className="overflow-x-auto">
+              <table className="min-w-full bg-white border border-gray-300">
+                <thead>
+                  <tr>
+                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                      Dispositivo
+                    </th>
+                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                      Consumo energetico giornaliero (kWh)
+                    </th>
+                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                      Consumo energetico annuale (kWh)
+                    </th>
+                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                      Costo medio dell'elettricità ($/kWh)
+                    </th>
+                    <th className="py-2 px-4 border-b border-gray-300 text-left text-sm font-semibold text-gray-700">
+                      Costo annuale dell'elettricità ($)
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="bg-gray-50">
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Compostatore GEME
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      1.44
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      525.6
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      $0.13
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      $68.33
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Frigorifero
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      1.5
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      547.5
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      $0.13
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      $71.18
+                    </td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      Condizionatore d'aria
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      5.0 (durante l'estate)
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      600
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      $0.13
+                    </td>
+                    <td className="py-3 px-4 border-b border-gray-300 text-sm text-gray-700">
+                      $78.00
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </>
+      ),
+    },
+  ],
+}
+
 export function getPdpFaqProps(locale: LocaleType) {
-  const props = {
+  const props: IMultiLanguageConfig<IFaqProps> = {
     en: pdpFaqPropsEn,
     de: pdpFaqPropsDe,
     fr: pdpFaqPropsFr,
+    it: pdpFaqPropsIt,
   }
 
   return props[locale]

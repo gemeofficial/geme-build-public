@@ -7,7 +7,7 @@ import FeaturesWithVideos, {
   featureIcon,
   IFeaturesWithVideos,
 } from './components/FeaturesWithVideos'
-import GeemDailyUsage from './components/GemeDailyUsage'
+import GemeDailyUsage from './components/GemeDailyUsage'
 import HeroSection, { IManualHeroSectionProps } from './components/HeroSection'
 import { IManualsPageProps } from './en'
 
@@ -151,7 +151,7 @@ const featuresWithVideos: IFeaturesWithVideos = {
 }
 
 // 第3部分配置文件 Fr版
-const geemDailyUsageProps = {
+const gemeDailyUsageProps = {
   title: 'Utilisation quotidienne simplifiée', // 简化的日常使用
   description:
     "Avec GEME, pas besoin d'ajuster le rapport carbone-azote, de retourner le compost ou de remplacer les filtres. Ajoutez vos déchets organiques à tout moment et récoltez le compost quand il est prêt. Son axe rotatif interne mélange efficacement les déchets sans que vous ayez à intervenir. GEME n'est pas un composteur rotatif traditionnel, mais une solution de compostage innovante et sans complications !", // 使用GEME，无需调整碳氮比，翻堆或更换过滤器。随时添加有机废物，在堆肥准备好时收获。其内部旋转轴有效混合废物，无需您的干预。GEME不是传统的旋转堆肥箱，而是一种创新的、无复杂操作的堆肥解决方案！
@@ -240,7 +240,7 @@ export function ManualsPageFr({
         WhatsAppBusinessAccountURL={WhatsAppBusinessAccountURL}
       />
       <FeaturesWithVideos {...featuresWithVideos} />
-      <GeemDailyUsage {...geemDailyUsageProps} />
+      <GemeDailyUsage {...gemeDailyUsageProps} />
       <CanNotCompostItems {...canNotCompostItemsProps} />
     </>
   )

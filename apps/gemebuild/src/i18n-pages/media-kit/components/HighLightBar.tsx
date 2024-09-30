@@ -15,7 +15,7 @@ const props = {
   },
 }
 
-export default function HignLightBar() {
+export default function HighLightBar() {
   const { bar1, bar2 } = props
   return (
     <>

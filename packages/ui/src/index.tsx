@@ -1,5 +1,13 @@
 import './styles.css'
 
+export interface IMultiLanguageConfig<T> {
+  en: T
+  de: T
+  fr: T
+  it: T
+}
+export type LocaleType = 'en' | 'de' | 'fr' | 'it'
+
 export { Button, type ButtonProps } from './button'
 export * from './fonts'
 export * from './lib'
