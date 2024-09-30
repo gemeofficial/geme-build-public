@@ -65,14 +65,14 @@ export default function HeroSection({
             )}
           </div>
 
-          {/* <HeroSectionVideo
+          <HeroSectionVideo
             fullScreenVideoUrl={fullScreenVideoUrl}
             videoProps={videoProps}
             mixpanelStatPayload={{
               title: 'Watch video',
               payload: { From: 'Geme Terra 2 hero video' },
             }}
-          /> */}
+          />
         </div>
       </div>
     </div>

@@ -18,17 +18,17 @@ const heroSectionProps: IHeroSectionProps = {
     </>
   ),
 
-  fullScreenVideoUrl: 'https://www.youtube.com/embed/ROJYZBp0jcM',
+  fullScreenVideoUrl:
+    'https://www.youtube.com/embed/Z1w2SCmlGYU?si=sIMyLuSyi8Ai4-wA',
   videoProps: {
-    src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/hero-banner-window-video-19s-480p.mp4',
-    posterUrl: '/assets/images/home-v2311/hero-blurred.webp',
+    src: 'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/product-video/geme-terra-2-3d-360p.mp4',
+    posterUrl: '/assets/images/geme-terra-2/video-poster.jpg',
   },
   inputPlaceholder: 'Enter your email',
   submitButtonLabel: 'Notify Me',
   heroBgImagePc: '/assets/images/geme-terra-2/hero-bg-desktop.png',
   heroBgImageMobile: '/assets/images/geme-terra-2/hero-bg-mobile.png',
 }
-
 
 // 图文section1
 const shortVideoProps: IImgAndTextSectionProps = {
@@ -369,7 +369,7 @@ export function GemeTerra2PageDe({ SubscribeComponent }: IGemeTerra2PageProps) {
         {...heroSectionProps}
         SubscribeComponent={SubscribeComponent}
       />
-      <LogoCloud locale='en' />
+      <LogoCloud locale="en" />
 
       <ImgAndTextSection {...shortVideoProps} compact />
       <ImgAndTextSection {...imageTextProps} compact />
