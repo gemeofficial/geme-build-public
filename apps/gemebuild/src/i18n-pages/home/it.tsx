@@ -99,7 +99,7 @@ const heroSectionSwiperProps: IHomeHeroSectionSwiperProps = {
     description: (
       <>
         <div className="mt-10 xl:mt-20 3xl:mt-44 text-2xl md:text-5xl lg:text-6xl xl:text-4xl 3xl:text-6xl md:leading-none">
-          NUOVA GENERAZIONE DI COMPOSTER GEME
+          NUOVA GENERAZIONE DI COMPOSTIERA GEME
         </div>
         <div className="text-2xl md:text-5xl lg:text-6xl xl:text-4xl 3xl:text-6xl md:leading-none">
           PROSSIMO RILASCIO

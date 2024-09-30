@@ -53,7 +53,7 @@ const featuresWithVideos: IFeaturesWithVideos = {
       icon: featureIcon(1),
       videoUrl: 'https://www.youtube.com/embed/izYVDd6KwO8',
       videoImageSrc: '/assets/images/manual/video-cover-unboxing.png',
-      videoImageAlt: 'Disimballaggio del GEME Composter',
+      videoImageAlt: 'Disimballaggio del GEME Compostiera',
     },
     {
       name: 'Attenzioni',
@@ -81,7 +81,7 @@ const featuresWithVideos: IFeaturesWithVideos = {
       icon: featureIcon(4),
       videoUrl: 'https://www.youtube.com/embed/mi8fwlJdt68',
       videoImageSrc: '/assets/images/manual/video-cover-daily-usage.png',
-      videoImageAlt: 'Demo di utilizzo quotidiano del GEME Composter',
+      videoImageAlt: 'Demo di utilizzo quotidiano del GEME Compostiera',
     },
     {
       name: 'Utilizzo del Sottoprodotto (Compost)',
@@ -91,7 +91,7 @@ const featuresWithVideos: IFeaturesWithVideos = {
       videoUrl: 'https://www.youtube.com/embed/qHo9WgCKUsw',
       videoImageSrc: '/assets/images/manual/video-cover-by-product-usage.png',
       videoImageAlt:
-        'Come utilizzare il sottoprodotto (compost organico) del GEME Composter',
+        'Come utilizzare il sottoprodotto (compost organico) del GEME Compostiera',
     },
     {
       name: 'Come rendere stabile GEME',
@@ -100,7 +100,7 @@ const featuresWithVideos: IFeaturesWithVideos = {
       icon: featureIcon(6),
       videoUrl: 'https://www.youtube.com/embed/rthDSasoOrY',
       videoImageSrc: '/assets/images/manual/video-cover-make-steady.png',
-      videoImageAlt: 'Come rendere stabile la macchina GEME Composter',
+      videoImageAlt: 'Come rendere stabile la macchina GEME Compostiera',
     },
     {
       name: 'Uso del pannello di controllo e risoluzione dei problemi',
@@ -111,7 +111,7 @@ const featuresWithVideos: IFeaturesWithVideos = {
       videoImageSrc:
         '/assets/images/manual/video-cover-control-panel-usage.png',
       videoImageAlt:
-        'Come risolvere i problemi con il pannello di controllo del GEME Composter',
+        'Come risolvere i problemi con il pannello di controllo del GEME Compostiera',
     },
     {
       name: 'Come cambiare la lampada UV',
@@ -120,7 +120,7 @@ const featuresWithVideos: IFeaturesWithVideos = {
       icon: featureIcon(8),
       videoUrl: 'https://www.youtube.com/embed/VdAtQfpSQ_E',
       videoImageSrc: '/assets/images/manual/video-cover-change-uv-lamp.png',
-      videoImageAlt: 'Come cambiare la lampada UV del GEME Composter',
+      videoImageAlt: 'Come cambiare la lampada UV del GEME Compostiera',
     },
     {
       name: 'Cosa si può e cosa non si può fare',
@@ -130,7 +130,7 @@ const featuresWithVideos: IFeaturesWithVideos = {
       videoUrl: 'https://www.youtube.com/embed/2DSFcxFRSos',
       videoImageSrc: '/assets/images/manual/video-cover-can-and-can-not.png',
       videoImageAlt:
-        'Cosa si può mettere e cosa non si può mettere nel GEME Composter',
+        'Cosa si può mettere e cosa non si può mettere nel GEME Compostiera',
     },
   ],
 }

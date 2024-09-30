@@ -471,7 +471,7 @@ const specProps: IPdpSpecProps = {
     features: [
       {
         name: '1',
-        title: 'Composter GEME',
+        title: 'Compostiera GEME',
         description: 'La macchina a compostaggio rapido per rifiuti biologici',
         imageSrc: '/assets/images/geme-whats-in-box/q2.png',
         imageAlt: 'GEME compostiera rapida per rifiuti biologici',

@@ -236,7 +236,7 @@ const aboutContentSection6Props: IAboutContentSection6 = {
         <>
           Sentiti bene, fai del bene, vivi in modo sostenibile. Sostituisci il
           tuo smaltitore di rifiuti con{' '}
-          <a href="/product/geme">GEME Composter</a>.
+          <a href="/product/geme">GEME Compostiera</a>.
         </>
       ),
     },
