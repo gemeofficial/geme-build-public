@@ -100,6 +100,14 @@ function Content({
   buttonText: string
   locale?: LocaleType
 }) {
+  const linkMap = [
+    { href: '/how-it-works', text: 'Learn more' },
+    { href: '/blog/lomi-vs-geme-composter', text: 'Detailed Compare' },
+    { href: '/#', text: 'Detailed Compare' },
+    { href: '/#', text: 'Detailed Compare' },
+  ]
+  const link = linkMap[index] || linkMap[0]
+
   return (
     <>
       <Image
@@ -109,9 +117,13 @@ function Content({
         width={350}
         height={200}
       />
-      <h4 className="text-lg md:text-xl xl:text-2xl text-[#333] mb-10 mt-6 font-bold px-5">
+      <h4 className="text-lg md:text-xl xl:text-2xl text-[#333] mb-2 mt-6 font-bold px-5">
         {item.devicename}
       </h4>
+      <p className="text-sm md:text-base xl:text-lg text-gray-600 mb-8 px-5">
+        <a href={link.href}>{link.text}</a>
+      </p>
+
       {item.compareItems.map((iten) => (
         <div
           className={clsx(
@@ -119,8 +131,8 @@ function Content({
             locale === 'de' || locale === 'it'
               ? 'h-36'
               : locale === 'fr'
-                ? 'h-40'
-                : 'h-32',
+              ? 'h-40'
+              : 'h-32',
           )}
           key={iten.title}
         >
