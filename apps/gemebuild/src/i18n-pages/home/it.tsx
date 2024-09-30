@@ -36,18 +36,18 @@ import { LogoCloud } from 'ui'
 
 // 首页video部分的内容数据配置 It
 const heroSection1Props: IHeroSection1Props = {
-  title: `Il primo composter di rifiuti biologici al mondo`,
+  title: `Il primo compostiera  di rifiuti biologici al mondo`,
   description: (
     <>
       <span className=" hidden xl:inline ">
-        Incontra GEME, il moderno composter elettrico per la casa
+        Incontra GEME, il moderno compostiera  elettrico per la casa
         <br />
         Trasforma i tuoi rifiuti alimentari quotidiani in compost organico
         <br />
         Meno discariche, più terreno da giardino.
       </span>
       <span className=" xl:hidden ">
-        Incontra GEME, il moderno composter elettrico per la casa
+        Incontra GEME, il moderno compostiera  elettrico per la casa
         <br />
         Trasforma i tuoi rifiuti alimentari quotidiani in compost organico
         <br />
@@ -99,7 +99,7 @@ const heroSectionSwiperProps: IHomeHeroSectionSwiperProps = {
     description: (
       <>
         <div className="mt-10 xl:mt-20 3xl:mt-44 text-2xl md:text-5xl lg:text-6xl xl:text-4xl 3xl:text-6xl md:leading-none">
-          NUOVA GENERAZIONE DI COMPOSTER GEME
+          NUOVA GENERAZIONE DI COMPOSTIERA GEME
         </div>
         <div className="text-2xl md:text-5xl lg:text-6xl xl:text-4xl 3xl:text-6xl md:leading-none">
           PROSSIMO RILASCIO
@@ -143,14 +143,14 @@ const contentSection3Props: IContentSection3Props = {
         </>
       ),
       imageSrc: '/assets/images/home-v2311/put-food-in-geme.jpg',
-      imageAlt: 'inserisci i rifiuti alimentari nel composter GEME',
+      imageAlt: 'inserisci i rifiuti alimentari nel compostiera  GEME',
     },
     {
       id: 2,
       description: (
         <>
           Compostaggio continuo
-          <br />I rifiuti vengono ridotti nel composter GEME
+          <br />I rifiuti vengono ridotti nel compostiera  GEME
         </>
       ),
       imageSrc: '/assets/images/home-v2311/geme-is-running.jpg',

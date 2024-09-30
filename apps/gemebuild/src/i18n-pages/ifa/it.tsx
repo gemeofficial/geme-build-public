@@ -121,7 +121,7 @@ const winnersNamesTickerProps: IWinnersNamesTickerProps = {
 
 // 问卷调查 It版
 const composterSurveyProps: IComposterSurveyProps = {
-  title: 'Sondaggio Composter',
+  title: 'Sondaggio Compostiera',
   desc: 'Dacci qualche idea sulla tua gestione dei rifiuti',
   buttonText: 'Vai alla Pubblicazione',
 }

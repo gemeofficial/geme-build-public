@@ -46,14 +46,14 @@ const returnPolicyCurrentProps: IReturnPolicyCurrentProps = {
         <tr>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">Amazon</td>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">
-            <a href="https://www.amazon.com/dp/B0BV31KTCN" target="_blank">gemecomposter</a>
+            <a href="https://www.amazon.com/dp/B0BV31KTCN" target="_blank">geme compostiera</a>
           </td>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">2023-02-04</td>
         </tr>
         <tr>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">eBay</td>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">
-            <a href="https://www.ebay.com/usr/gemeofficial" target="_blank">gemeofficial</a>
+            <a href="https://www.ebay.com/usr/gemeofficial" target="_blank">geme official</a>
           </td>
           <td class="border border-slate-200 pl-2 pr-2 pb-2 pt-2">2023-09-05</td>
         </tr>

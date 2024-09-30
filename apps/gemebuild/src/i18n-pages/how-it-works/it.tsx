@@ -39,7 +39,7 @@ const shortVideoProps: IImgAndTextSectionProps = {
     <>
       <ul className="list-disc ml-4 mt-4">
         <li className="mt-4">
-          <a href="product/geme">Composter GEME</a> scompone rapidamente gli
+          <a href="product/geme">Compostiera GEME</a> scompone rapidamente gli
           scarti alimentari e i rifiuti degli animali domestici utilizzando
           microbi speciali.
         </li>
@@ -82,7 +82,7 @@ const imageTextProps: IImgAndTextSectionProps = {
       </p>
       <hr className="mt-4 mb-4" />
       <p>
-        Al contrario, il Composter GEME utilizza{' '}
+        Al contrario, il Compostiera GEME utilizza{' '}
         <a href="/geme-kobold">GEME Kobold</a> per accelerare il processo di
         compostaggio.
       </p>
@@ -116,11 +116,11 @@ const inlinePlayerProps: IInlinePlayerType = {
 
 // 工作原理图
 const gemeComposterImageProps: IExaminingReportProps = {
-  title: `Come Funziona il Composter GEME`,
-  description: `Comprendere completamente come funziona la macchina e perché il Composter GEME è il miglior composter domestico con i suoi sottosistemi speciali.`,
+  title: `Come Funziona il Compostiera GEME`,
+  description: `Comprendere completamente come funziona la macchina e perché il Compostiera GEME è il miglior compostiera domestico con i suoi sottosistemi speciali.`,
   imageInfo: {
     imageUrl: '/assets/images/how-it-works/how-geme-composter-works.jpg',
-    alt: 'Schema di funzionamento del Composter GEME',
+    alt: 'Schema di funzionamento del Compostiera GEME',
   },
 }
 
@@ -159,7 +159,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
             e può causare cattivi odori.
           </p>
           <p className="v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base">
-            Il Composter GEME e il GEME Kobold si occuperanno automaticamente
+            Il Compostiera GEME e il GEME Kobold si occuperanno automaticamente
             del rapporto C:N per te.
           </p>
         </>
@@ -179,13 +179,13 @@ const oxygenCycleProps: IOxygenCycleProps = {
             Il compostaggio aerobico decompone la materia organica utilizzando
             ossigeno (O2), richiedendo microrganismi aerobi per decomporre i
             materiali in vapore acqueo, calore e humus ricco di nutrienti. Il
-            composter GEME semplifica questo processo con un efficiente sistema
+            compostiera GEME semplifica questo processo con un efficiente sistema
             di aerazione, ottimizzando il flusso d'ossigeno per una
             decomposizione efficace.
           </p>
           <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base">
             Decompone i rifiuti biologici con l'ossigeno (O2) per ottenere
-            nutrienti preziosi. Il composter GEME semplifica questo con un
+            nutrienti preziosi. Il compostiera GEME semplifica questo con un
             efficiente sistema di aerazione per una decomposizione più rapida.
           </p>
         </>
@@ -236,7 +236,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
           <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base">
             La giusta umidità (40-60%) alimenta i microrganismi che decompongono
             i rifiuti. Troppa umidità (&gt;70%) rallenta il processo, mentre
-            troppa secchezza (&lt;30%) lo blocca. Il composter GEME gestisce
+            troppa secchezza (&lt;30%) lo blocca. Il compostiera GEME gestisce
             automaticamente l'umidità per garantire un compostaggio perfetto.
           </p>
         </>
@@ -306,7 +306,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
 // 证书及测试报告
 const examiningReportProps: IExaminingReportProps = {
   title: `Certificati e Rapporto di Test`,
-  description: `Sia GEME Kobold che GEME Composter sono ben certificati e hanno superato tutti i test condotti da organizzazioni autorevoli.`,
+  description: `Sia GEME Kobold che GEME Compostiera sono ben certificati e hanno superato tutti i test condotti da organizzazioni autorevoli.`,
   imageInfo: {
     imageUrl: '/assets/images/how-it-works/certificates-and-test-report.jpeg',
     alt: 'Certificati e rapporto di test per GEME',

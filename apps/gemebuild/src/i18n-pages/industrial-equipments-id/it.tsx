@@ -9,48 +9,48 @@ import { industrialEquipmentXJsonLd } from '../../lib/serp'
 import { findEquipmentById } from '../../helpers/industrial-equipments/tool'
 import { IEquipmentFeaturesProps } from './components/EquipmentFeatures'
 
-//  productOverviewSplitWithImage组件内容的配置数据  En版
+//  productOverviewSplitWithImage组件内容的配置数据  It版
 const productOverviewSplitWithImageOtherProps: IProductOverviewSplitWithImageOtherProps =
   {
-    firstBreadcrumbsName: 'All equipments',
-    btn1Label: `Let's talk`,
-    btn2Label: `Get in touch`,
+    firstBreadcrumbsName: 'Tutte le attrezzature',
+    btn1Label: `Parliamone`,
+    btn2Label: `Mettiti in contatto`,
   }
 
-//  EquipmentFeatures组件内容的配置数据  En版
+//  EquipmentFeatures组件内容的配置数据  It版
 function generateEquipmentFeaturesProps(
   equipment: TEquipment,
 ): IEquipmentFeaturesProps {
   return {
     equipment,
     tabNames: {
-      baiscParams: 'Parameters',
-      power: 'Modular Power',
-      EquipmentPower: 'Equipment Power',
-      MaterialOfMain: 'Material',
+      baiscParams: 'Parametri',
+      power: 'Potenza Modulare',
+      EquipmentPower: "Potenza dell'Apparecchiatura",
+      MaterialOfMain: 'Materiale',
     },
     tabHeadingAndDescription: {
       baiscParams: {
-        heading: 'Basic Device Parameters',
-        description: `It is a large equipment for processing general kitchen waste and food waste. It adopts intelligent PLC control system and integrates the functions of crushing, sorting, fermentation and waste water treatment. Can be supplied to centralized waste treatment stations in towns, large commercial centers, etc. Remote monitoring and data sharing can be realized.`,
+        heading: 'Parametri di Base del Dispositivo',
+        description: `È un'attrezzatura di grandi dimensioni per il trattamento dei rifiuti da cucina generici e dei rifiuti alimentari. Adotta un sistema di controllo PLC intelligente e integra le funzioni di frantumazione, selezione, fermentazione e trattamento delle acque reflue. Può essere fornito a stazioni centralizzate di trattamento dei rifiuti nei centri urbani, nei grandi centri commerciali, ecc. È possibile realizzare monitoraggio remoto e condivisione dei dati.`,
       },
       power: {
-        heading: 'Modular Power',
+        heading: 'Potenza Modulare',
         description: (
           <>
-            GEME is always looking for the best balance between high performance
-            and low energy consumption. Trying to handle more food waste with
-            less energy consumption.
+            GEME cerca sempre il miglior equilibrio tra alte prestazioni e basso
+            consumo energetico. Tentando di gestire più rifiuti alimentari con
+            un minor consumo di energia.
           </>
         ),
       },
       EquipmentPower: {
-        heading: 'Equipment Power',
-        description: `GEME maximizes the restoration of the entire process of natural composting, using a smart chip to regulate the temperature and save as much energy as possible while providing a suitable environment for the rapid reproduction and decomposition of the microbiota.`,
+        heading: "Potenza dell'Apparecchiatura",
+        description: `GEME massimizza il ripristino dell'intero processo di compostaggio naturale, utilizzando un chip intelligente per regolare la temperatura e risparmiare quanta più energia possibile fornendo al contempo un ambiente adatto per la rapida riproduzione e decomposizione del microbiota.`,
       },
       MaterialOfMain: {
-        heading: 'Material',
-        description: `We have made quality our habit. It's not something that we just strive for - we live by this principle every day. While most of the things about the creative process will be forgotten. The excellence of our products and services will be remembered.`,
+        heading: 'Materiale',
+        description: `Abbiamo fatto della qualità un'abitudine. Non è qualcosa per cui ci sforziamo semplicemente, viviamo seguendo questo principio ogni giorno. Mentre la maggior parte delle cose del processo creativo verrà dimenticata, l'eccellenza dei nostri prodotti e servizi sarà ricordata.`,
       },
     },
   }

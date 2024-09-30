@@ -214,7 +214,7 @@ const introProps: IPdpIntroProps = {
     ),
     imageSrc:
       '/assets/images/pdp-v2311/introduction/geme-composter-size-v2.jpeg',
-    imageAlt: 'Grande dimensione del composter GEME',
+    imageAlt: 'Grande dimensione del compostiera GEME',
     isDisplayTextOnLeft: true,
   },
 
@@ -229,7 +229,7 @@ const introProps: IPdpIntroProps = {
         <br />
         Questa tecnologia è potente e non richiede alcuna sostituzione.
         <br />
-        Altri "composter" devono sostituire il filtro ogni 3 mesi, con costi
+        Altri "compostiera" devono sostituire il filtro ogni 3 mesi, con costi
         nascosti!
         <br />
         <br />
@@ -252,12 +252,12 @@ const introProps: IPdpIntroProps = {
       {
         id: 1,
         imageSrc: '/assets/images/pdp-v2311/introduction/no-smell-before.jpg',
-        imageAlt: 'Odore prima di usare il composter GEME',
+        imageAlt: 'Odore prima di usare il compostiera GEME',
       },
       {
         id: 2,
         imageSrc: '/assets/images/pdp-v2311/introduction/no-smell-after.jpg',
-        imageAlt: 'Nessun odore dopo aver usato il composter GEME',
+        imageAlt: 'Nessun odore dopo aver usato il compostiera GEME',
       },
     ],
   },
@@ -471,7 +471,7 @@ const specProps: IPdpSpecProps = {
     features: [
       {
         name: '1',
-        title: 'Composter GEME',
+        title: 'Compostiera GEME',
         description: 'La macchina a compostaggio rapido per rifiuti biologici',
         imageSrc: '/assets/images/geme-whats-in-box/q2.png',
         imageAlt: 'GEME compostiera rapida per rifiuti biologici',
@@ -573,7 +573,7 @@ const userStoryProps: IPdpUserStoryTeamSectionsProps = {
         </>
       ),
       quote:
-        'Cercavo un composter pulito e facile da usare che potesse stare in cucina, dato che i nostri grandi contenitori per il compostaggio erano troppo lontani. Funziona in modo molto efficiente. Silenzioso e pulito.',
+        'Cercavo un compostiera pulito e facile da usare che potesse stare in cucina, dato che i nostri grandi contenitori per il compostaggio erano troppo lontani. Funziona in modo molto efficiente. Silenzioso e pulito.',
     },
     {
       id: 2,
@@ -594,7 +594,7 @@ const userStoryProps: IPdpUserStoryTeamSectionsProps = {
         </>
       ),
       quote:
-        'Ho cercato su internet e ho visto la vostra pubblicità che diceva che è un composter biologico, ho visto i video e alla fine ho scelto il vostro prodotto. Mi è piaciuto tantissimo. Voglio acquistare i miei compostatori! Sono pronta per altri due, forse tre.',
+        'Ho cercato su internet e ho visto la vostra pubblicità che diceva che è un compostiera biologico, ho visto i video e alla fine ho scelto il vostro prodotto. Mi è piaciuto tantissimo. Voglio acquistare i miei compostatori! Sono pronta per altri due, forse tre.',
       mobileQuote:
         'Voglio acquistare i miei compostatori! Sono pronta per altri due, forse tre.',
     },
