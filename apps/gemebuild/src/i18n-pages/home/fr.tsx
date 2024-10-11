@@ -658,6 +658,13 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
   videos: [
     {
       type: 'youtube',
+      src: 'https://youtu.be/bYzh9ZUJKxs?t=845',
+      coverImageUrl: '/assets/images/user-stories-videos/youtube4.png',
+      coverAlt: 'Review video from bricolou, France',
+      buttonText: '@bricolou',
+    },
+    {
+      type: 'youtube',
       src: 'https://youtu.be/TwCYDZgoUl0?si=w5mzwn4dQJr6x0vD',
       coverImageUrl: '/assets/images/user-stories-videos/youtube.png',
       coverAlt: 'Real life usage reviews from Amazon',

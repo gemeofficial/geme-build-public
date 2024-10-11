@@ -40,14 +40,14 @@ const heroSection1Props: IHeroSection1Props = {
   description: (
     <>
       <span className=" hidden xl:inline ">
-        Incontra GEME, il moderno compostiera  elettrico per la casa
+        Incontra GEME, il moderno compostiera elettrico per la casa
         <br />
         Trasforma i tuoi rifiuti alimentari quotidiani in compost organico
         <br />
         Meno discariche, più terreno da giardino.
       </span>
       <span className=" xl:hidden ">
-        Incontra GEME, il moderno compostiera  elettrico per la casa
+        Incontra GEME, il moderno compostiera elettrico per la casa
         <br />
         Trasforma i tuoi rifiuti alimentari quotidiani in compost organico
         <br />
@@ -150,7 +150,7 @@ const contentSection3Props: IContentSection3Props = {
       description: (
         <>
           Compostaggio continuo
-          <br />I rifiuti vengono ridotti nel compostiera  GEME
+          <br />I rifiuti vengono ridotti nel compostiera GEME
         </>
       ),
       imageSrc: '/assets/images/home-v2311/geme-is-running.jpg',
@@ -461,6 +461,13 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
       coverImageUrl: '/assets/images/user-stories-videos/youtube3.png',
       coverAlt: 'Video di recensione di Benson Chik, Regno Unito',
       buttonText: '@Benson Chik',
+    },
+    {
+      type: 'youtube',
+      src: 'https://youtu.be/bYzh9ZUJKxs?t=845',
+      coverImageUrl: '/assets/images/user-stories-videos/youtube4.png',
+      coverAlt: 'Review video from bricolou, France',
+      buttonText: '@bricolou',
     },
   ],
 }

@@ -473,6 +473,13 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
       coverAlt: 'Review video from Benson Chik, United Kingdom',
       buttonText: '@Benson Chik',
     },
+    {
+      type: 'youtube',
+      src: 'https://youtu.be/bYzh9ZUJKxs?t=845',
+      coverImageUrl: '/assets/images/user-stories-videos/youtube4.png',
+      coverAlt: 'Review video from bricolou, France',
+      buttonText: '@bricolou',
+    },
     // {
     //   type: 'instagram',
     //   src: 'https://www.instagram.com/reel/CxBKZOYRKQN/?utm_source=ig_web_copy_link',
