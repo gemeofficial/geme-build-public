@@ -134,6 +134,7 @@ function ProductOverviewSplitWithImage({
               className="h-full w-full object-cover object-center"
               width={590}
               height={390}
+              priority
             />
           </div>
         </div>

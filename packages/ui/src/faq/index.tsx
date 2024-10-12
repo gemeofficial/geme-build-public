@@ -1,9 +1,9 @@
 'use client'
 
 import { Disclosure, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/24/outline'
+import { ChevronRightIcon } from '@heroicons/react/24/outline'
 import clsx from 'clsx'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { SectionContainer, SectionDescription, SectionTitle } from '../index'
 
 export interface IFaqProps {
@@ -20,6 +20,15 @@ export interface IFaqProps {
 export function Faq({ faqs, title, description, titleClassName }: IFaqProps) {
   const [openIndex, setOpenIndex] = useState(-1)
 
+  useEffect(() => {
+    if (openIndex !== -1) {
+      setTimeout(() => {
+        const el = document.getElementById(`faq-${openIndex}`)
+        el?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      }, 100)
+    }
+  }, [openIndex])
+
   return (
     <SectionContainer compact>
       <SectionTitle className={clsx(titleClassName)}>{title}</SectionTitle>
@@ -31,6 +40,7 @@ export function Faq({ faqs, title, description, titleClassName }: IFaqProps) {
               <>
                 <dt>
                   <Disclosure.Button
+                    id={`faq-${index}`}
                     onClick={() =>
                       setOpenIndex(openIndex === index ? -1 : index)
                     }
@@ -40,11 +50,11 @@ export function Faq({ faqs, title, description, titleClassName }: IFaqProps) {
                       {faq.question}
                     </span>
                     <span className="ml-6 flex h-7 items-center">
-                      <ChevronDownIcon
+                      <ChevronRightIcon
                         className={clsx(
                           'h-4 lg:h-5 w-4 lg:w-5',
                           'transition-all duration-300',
-                          openIndex === index ? 'rotate-180' : '',
+                          openIndex === index ? 'rotate-90' : '',
                         )}
                         aria-hidden="true"
                       />

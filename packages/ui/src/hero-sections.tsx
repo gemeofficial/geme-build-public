@@ -77,7 +77,7 @@ function HeroSection1({
           src={heroImageUrlPc}
           alt="hero background picture"
           priority
-          className="hidden xl:block w-full h-full object-cover"
+          className="hidden xl:block w-full h-full object-cover max-h-screen"
           fill
           // width={1920}
           // height={1080}
@@ -87,7 +87,7 @@ function HeroSection1({
           src={heroImageUrlMobile}
           alt="hero background picture"
           priority
-          className="xl:hidden w-full h-full object-cover"
+          className="xl:hidden w-full h-full object-cover max-h-screen"
           // width={375}
           // height={750}
           fill
