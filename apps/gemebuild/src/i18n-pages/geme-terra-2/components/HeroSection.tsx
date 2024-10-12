@@ -27,8 +27,8 @@ export default function HeroSection({
   return (
     <div className="bg-black min-h-[85vh] xl:min-h-screen relative">
       <Image
-        width={1920}
-        height={1080}
+        // width={1920}
+        // height={1080}
         src={heroBgImagePc}
         alt="hero background picture pc"
         priority
@@ -37,8 +37,8 @@ export default function HeroSection({
         sizes="(min-width: 768px) 60vw,(min-width: 1920px) 80vw,(min-width: 2420px) 100vw, 1vw"
       />
       <Image
-        width={375}
-        height={750}
+        // width={375}
+        // height={750}
         src={heroBgImageMobile}
         alt="hero background picture mobile"
         priority

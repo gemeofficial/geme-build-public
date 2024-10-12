@@ -79,8 +79,8 @@ function HeroSection1({
           priority
           className="hidden xl:block w-full h-full object-cover max-h-screen"
           fill
-          width={1920}
-          height={1080}
+          // width={1920}
+          // height={1080}
           sizes="(max-width: 1280px) 1vw,(min-width: 1281px) 60vw, (min-width: 1920px) 80vw,(min-width: 2420px) 100vw, 1vw"
         />
         <Image
@@ -88,8 +88,8 @@ function HeroSection1({
           alt="hero background picture"
           priority
           className="xl:hidden w-full h-full object-cover max-h-screen"
-          width={375}
-          height={750}
+          // width={375}
+          // height={750}
           fill
           sizes="(max-width: 1280px) 100vw, (min-width: 1281px) 1vw, 1vw"
         />
