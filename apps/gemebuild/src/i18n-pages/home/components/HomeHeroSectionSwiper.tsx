@@ -166,8 +166,8 @@ function SwiperItem3({
           alt="hero background picture 3"
           className="hidden xl:block w-full h-full object-cover max-h-screen"
           fill
-          width={1920}
-          height={1080}
+          // width={1920}
+          // height={1080}
           priority
           sizes="(max-width: 1280px) 1vw,(min-width: 1281px) 60vw, (min-width: 1920px) 80vw,(min-width: 2420px) 100vw, 1vw"
         />
@@ -175,8 +175,8 @@ function SwiperItem3({
           src={heroImageUrlMobile}
           alt="hero background mobile picture 3"
           priority
-          width={720}
-          height={1440}
+          // width={375}
+          // height={750}
           className="xl:hidden w-full h-full object-cover max-h-screen"
           fill
           sizes="(max-width: 1280px) 100vw, (min-width: 1281px) 1vw, 1vw"
