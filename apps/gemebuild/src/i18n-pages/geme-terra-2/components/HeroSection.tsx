@@ -27,18 +27,22 @@ export default function HeroSection({
   return (
     <div className="bg-black min-h-[85vh] xl:min-h-screen relative">
       <Image
+        width={1920}
+        height={1080}
         src={heroBgImagePc}
         alt="hero background picture pc"
         priority
-        className="hidden md:block absolute inset-0 h-full w-full object-cover"
+        className="hidden md:block absolute inset-0 h-full w-full object-cover max-h-screen"
         fill
         sizes="(min-width: 768px) 60vw,(min-width: 1920px) 80vw,(min-width: 2420px) 100vw, 1vw"
       />
       <Image
+        width={375}
+        height={750}
         src={heroBgImageMobile}
         alt="hero background picture mobile"
         priority
-        className="md:hidden absolute inset-0 h-full w-full object-cover"
+        className="md:hidden absolute inset-0 h-full w-full object-cover max-h-screen"
         fill
         sizes="(max-width: 768px) 100vw, 1vw"
       />
