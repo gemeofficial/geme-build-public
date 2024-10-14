@@ -203,21 +203,21 @@ function PdpUserStoryTeamSections({
 
       <Swiper
         className={clsx(
-          'select-none !w-full xl:h-[380px] mt-6 md:mt-8 lg:mt-12 rounded-xl bg-gray-100 transition-all duration-200',
+          'select-none !w-full xl:h-[396px] mt-6 md:mt-8 lg:mt-12 rounded-xl bg-gray-100 transition-all duration-200',
           locale === 'en'
-            ? '!h-[360px] md:!h-[290px] lg:!h-[380px]'
-            : '!h-[400px] md:!h-[320px] lg:!h-[420px]',
+            ? '!h-[376px] md:!h-[326px] lg:!h-[396px]'
+            : '!h-[446px] md:!h-[346px] lg:!h-[456px]',
         )}
         modules={[Pagination]}
         pagination={{
           type: 'bullets',
           renderBullet: (i, className) =>
-            `<span class="${className} !h-8 !w-1 !rounded-sm transition-all duration-500 !my-2 !mr-1 lg:!mr-2"></span>`,
+            `<span class="${className} !h-1 !w-8 !rounded-sm transition-all duration-500"></span>`,
           bulletActiveClass: '!bg-v2311-primary !opacity-100',
           clickable: true,
         }}
         speed={500}
-        direction="vertical"
+        // direction="vertical"
         grabCursor
         // loop
         mousewheel={{
@@ -226,14 +226,14 @@ function PdpUserStoryTeamSections({
       >
         {people?.map((person, idx) => (
           <SwiperSlide key={person.id}>
-            <div className="pl-4 pr-6 py-4 lg:pl-8 lg:pr-12 lg:py-8 h-full">
+            <div className="px-4 pt-4 pb-8 lg:px-8 lg:pt-8 lg:pb-12 h-full">
               <div
                 className={clsx(
                   'hidden lg:flex justify-between items-stretch h-full lg:gap-16 xl:gap-20',
                   idx % 2 === 0 ? 'flex-row-reverse' : '',
                 )}
               >
-                <ImageCompoent image={person.image} className="w-[30%]" />
+                <ImageComponent image={person.image} className="w-[30%]" />
                 <div
                   className={clsx(
                     'flex flex-col justify-between gap-4 overflow-hidden',
@@ -262,7 +262,7 @@ function PdpUserStoryTeamSections({
 
               <div className="swiper-slide-box lg:hidden h-full flex flex-col justify-between gap-4 overflow-hidden">
                 <div className="flex items-stretch flex-row gap-4 md:gap-8">
-                  <ImageCompoent image={person.image} className="w-32 h-40" />
+                  <ImageComponent image={person.image} className="w-32 h-40" />
 
                   <div className="flex-auto">
                     <h3 className="v2311-font-h2 text-v2311-fg-dark-black">
@@ -296,7 +296,7 @@ function PdpUserStoryTeamSections({
   )
 }
 
-function ImageCompoent({
+function ImageComponent({
   image,
   className,
 }: {
