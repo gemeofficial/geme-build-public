@@ -342,7 +342,7 @@ const inlinePlayerProps: IInlinePlayerType = {
   ),
 
   type: 'youtube',
-  videoSrcUrlOrVidioId: 'asNRoqkC_BA',
+  videoSrcUrlOrVideoId: 'asNRoqkC_BA',
   mixpanelFrom: 'Produktseite Inline-Player',
 }
 
