@@ -25,6 +25,7 @@ export * from './ifa'
 export * from './geme-terra-2'
 export * from './media-kit'
 export * from './brand-hq'
+export * from './manual-seo-page'
 
 // contexts
 export * from '../contexts/link-context'

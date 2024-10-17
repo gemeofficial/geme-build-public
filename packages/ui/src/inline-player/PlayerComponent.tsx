@@ -8,9 +8,13 @@ import YouTubePlayer from '../client-components/YouTubePlayer'
 import { hasMixpanel } from '../lib/has-mixpanel'
 import { VideoLoading } from '../loading-components'
 
+// TODO：如何获取VideoId？
+// 去youtube视频页面点击分享 youtu.be/${VideoId}?xxxxxxx
+// eg: https://youtu.be/asNRoqkC_BA?si=iBuiXO5vEINUt5tB  >>  VideoId: asNRoqkC_BA
+
 export interface IPlayerComponentType {
   type: 'mp4' | 'youtube'
-  videoSrcUrlOrVidioId: string
+  videoSrcUrlOrVideoId: string
   videoPosterUrl?: string
   mixpanelFrom?: string
   videoIsAutoPlay?: boolean
@@ -19,7 +23,7 @@ export interface IPlayerComponentType {
 export default function PlayerComponent({
   videoPosterUrl,
   type,
-  videoSrcUrlOrVidioId,
+  videoSrcUrlOrVideoId,
   mixpanelFrom,
   videoIsAutoPlay,
 }: IPlayerComponentType) {
@@ -78,7 +82,7 @@ export default function PlayerComponent({
               className="max-w-full w-full rounded-2xl overflow-hidden object-cover"
               poster={videoPosterUrl}
             >
-              <source src={videoSrcUrlOrVidioId} type="video/mp4" />
+              <source src={videoSrcUrlOrVideoId} type="video/mp4" />
               Your browser does not support HTML5 video.
             </video>
           )}
@@ -89,7 +93,7 @@ export default function PlayerComponent({
                 videoIsAutoPlay={videoIsAutoPlay}
                 readyCallback={onYoutubePlayerReady}
                 playCallback={mixpanelTrackHandle}
-                videoId={videoSrcUrlOrVidioId}
+                videoId={videoSrcUrlOrVideoId}
               />
               {isLoading && <VideoLoading className="absolute inset-0" />}
             </div>

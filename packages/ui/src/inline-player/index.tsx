@@ -11,14 +11,14 @@ export function InlinePlayer({
   description,
   type,
   videoPosterUrl,
-  videoSrcUrlOrVidioId,
+  videoSrcUrlOrVideoId,
   mixpanelFrom,
   videoIsAutoPlay,
 }: IInlinePlayerType) {
   const playerComponentProps = {
     type,
     videoPosterUrl,
-    videoSrcUrlOrVidioId,
+    videoSrcUrlOrVideoId,
     mixpanelFrom,
     videoIsAutoPlay,
   }
