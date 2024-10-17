@@ -2,9 +2,9 @@ import { IInlinePlayerType } from 'ui'
 import ManualSeoPageContent from '../components/ManualSeoPageContent'
 
 const propsIt: IInlinePlayerType = {
-  title: 'GEME Manual - Unboxing',
+  title: 'Disimballaggio',
   description:
-    'This video guides you how to unbox GEME package and basic setup',
+    'Questo video ti guida su come disimballare il pacchetto GEME e la configurazione di base',
   type: 'youtube',
   videoPosterUrl: '/assets/images/manual/video-cover-unboxing.png',
   videoSrcUrlOrVideoId: 'izYVDd6KwO8',

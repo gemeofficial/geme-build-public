@@ -2,15 +2,15 @@ import { IInlinePlayerType } from 'ui'
 import ManualSeoPageContent from '../components/ManualSeoPageContent'
 
 const propsIt: IInlinePlayerType = {
-  title: 'GEME Manual - Unboxing',
+  title: 'Manuale GEME - Uso del sottoprodotto (Compost)',
   description:
-    'This video guides you how to unbox GEME package and basic setup',
+    'Togli il sottoprodotto e mescolalo con il terreno, poi vai avanti e nutri le tue piante',
   type: 'youtube',
-  videoPosterUrl: '/assets/images/manual/video-cover-unboxing.png',
-  videoSrcUrlOrVideoId: 'izYVDd6KwO8',
-  mixpanelFrom: 'Manual SEO Page - Unboxing',
+  videoPosterUrl: '/assets/images/manual/video-cover-by-product-usage.png',
+  videoSrcUrlOrVideoId: 'qHo9WgCKUsw',
+  mixpanelFrom: 'Manual SEO Page - By-Product(Compost) Usage',
 }
 
-export function UnboxingPageIt() {
+export function CompostUsagePageIt() {
   return <ManualSeoPageContent {...propsIt} />
 }

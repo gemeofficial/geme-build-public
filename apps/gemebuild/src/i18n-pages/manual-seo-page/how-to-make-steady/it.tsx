@@ -2,15 +2,15 @@ import { IInlinePlayerType } from 'ui'
 import ManualSeoPageContent from '../components/ManualSeoPageContent'
 
 const propsIt: IInlinePlayerType = {
-  title: 'GEME Manual - Unboxing',
+  title: 'Manuale GEME - Come renderlo stabile',
   description:
-    'This video guides you how to unbox GEME package and basic setup',
+    'Sollevare leggermente GEME e avvitare uno dei piedi per renderlo stabile',
   type: 'youtube',
-  videoPosterUrl: '/assets/images/manual/video-cover-unboxing.png',
-  videoSrcUrlOrVideoId: 'izYVDd6KwO8',
-  mixpanelFrom: 'Manual SEO Page - Unboxing',
+  videoPosterUrl: '/assets/images/manual/video-cover-make-steady.png',
+  videoSrcUrlOrVideoId: 'rthDSasoOrY',
+  mixpanelFrom: 'Manual SEO Page - How to Make Steady',
 }
 
-export function UnboxingPageIt() {
+export function HowToMakeSteadyPageIt() {
   return <ManualSeoPageContent {...propsIt} />
 }

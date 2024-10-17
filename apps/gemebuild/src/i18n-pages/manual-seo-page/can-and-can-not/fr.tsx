@@ -2,15 +2,15 @@ import { IInlinePlayerType } from 'ui'
 import ManualSeoPageContent from '../components/ManualSeoPageContent'
 
 const propsFr: IInlinePlayerType = {
-  title: 'GEME Manuel - Déballage',
+  title: "Manuel GEME - Ce qu'on peut et ne peut pas",
   description:
-    'This video guides you how to unbox GEME package and basic setup',
+    "Jusqu'à 90% des déchets organiques peuvent être mis dans le GEME. Cependant, il y a certains déchets que le GEME ne peut pas bien traiter.",
   type: 'youtube',
-  videoPosterUrl: '/assets/images/manual/video-cover-unboxing.png',
-  videoSrcUrlOrVideoId: 'izYVDd6KwO8',
-  mixpanelFrom: 'Manual SEO Page - Unboxing',
+  videoPosterUrl: '/assets/images/manual/video-cover-can-and-can-not.png',
+  videoSrcUrlOrVideoId: '2DSFcxFRSos',
+  mixpanelFrom: 'Manual SEO Page - Can & Can Not',
 }
 
-export function UnboxingPageFr() {
+export function CanAndCanNotPageFr() {
   return <ManualSeoPageContent {...propsFr} />
 }

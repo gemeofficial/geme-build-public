@@ -1,16 +1,16 @@
 import { IInlinePlayerType } from 'ui'
 import ManualSeoPageContent from '../components/ManualSeoPageContent'
 
-const propsEn: IInlinePlayerType = {
-  title: 'GEME Manual - Unboxing',
+const propsDe: IInlinePlayerType = {
+  title: 'GEME Handbuch - Mikrobiota aktivieren',
   description:
-    'This video guides you how to unbox GEME package and basic setup',
+    '1. GEME-Kobold in den Behälter legen; 2. 800ml Wasser einfüllen; 3. Mindestens 6 Stunden warten',
   type: 'youtube',
-  videoPosterUrl: '/assets/images/manual/video-cover-unboxing.png',
-  videoSrcUrlOrVideoId: 'izYVDd6KwO8',
-  mixpanelFrom: 'Manual SEO Page - Unboxing',
+  videoPosterUrl: '/assets/images/manual/video-cover-activate-microbiota.png',
+  videoSrcUrlOrVideoId: 'hSpq48ymKrA',
+  mixpanelFrom: 'Manual SEO Page - Activate Microbiota',
 }
 
-export function UnboxingPageDe() {
-  return <ManualSeoPageContent {...propsEn} />
+export function ActivateMicrobiotaPageDe() {
+  return <ManualSeoPageContent {...propsDe} />
 }

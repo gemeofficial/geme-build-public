@@ -1,16 +1,16 @@
 import { IInlinePlayerType } from 'ui'
 import ManualSeoPageContent from '../components/ManualSeoPageContent'
 
-const propsEn: IInlinePlayerType = {
-  title: 'GEME Manual - Unboxing',
+const propsDe: IInlinePlayerType = {
+  title: 'GEME Handbuch - Vorsichtsmaßnahmen',
   description:
-    'This video guides you how to unbox GEME package and basic setup',
+    'GEME Komposter Vorsichtsmaßnahmen, es muss nur ein wenig Aufmerksamkeit geschenkt werden.',
   type: 'youtube',
-  videoPosterUrl: '/assets/images/manual/video-cover-unboxing.png',
-  videoSrcUrlOrVideoId: 'izYVDd6KwO8',
-  mixpanelFrom: 'Manual SEO Page - Unboxing',
+  videoPosterUrl: '/assets/images/manual/video-cover-cautions.png',
+  videoSrcUrlOrVideoId: 'f09NNpAnyTQ',
+  mixpanelFrom: 'Manual SEO Page - Cautions',
 }
 
-export function UnboxingPageDe() {
-  return <ManualSeoPageContent {...propsEn} />
+export function CautionsPageDe() {
+  return <ManualSeoPageContent {...propsDe} />
 }

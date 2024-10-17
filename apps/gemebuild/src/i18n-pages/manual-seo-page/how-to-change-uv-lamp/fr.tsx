@@ -2,15 +2,15 @@ import { IInlinePlayerType } from 'ui'
 import ManualSeoPageContent from '../components/ManualSeoPageContent'
 
 const propsFr: IInlinePlayerType = {
-  title: 'GEME Manuel - Déballage',
+  title: 'Manuel GEME - Comment changer la lampe UV',
   description:
-    'This video guides you how to unbox GEME package and basic setup',
+    'GEME utilise une lampe UV pour désinfecter, elle peut fonctionner pendant plus de 15 000 heures. Cependant, vous pouvez la changer si elle est cassée.',
   type: 'youtube',
-  videoPosterUrl: '/assets/images/manual/video-cover-unboxing.png',
-  videoSrcUrlOrVideoId: 'izYVDd6KwO8',
-  mixpanelFrom: 'Manual SEO Page - Unboxing',
+  videoPosterUrl: '/assets/images/manual/video-cover-change-uv-lamp.png',
+  videoSrcUrlOrVideoId: 'VdAtQfpSQ_E',
+  mixpanelFrom: 'Manual SEO Page - How to Change UV Lamp',
 }
 
-export function UnboxingPageFr() {
+export function HowToChangeUvLampPageFr() {
   return <ManualSeoPageContent {...propsFr} />
 }
