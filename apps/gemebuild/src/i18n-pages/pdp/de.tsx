@@ -508,7 +508,7 @@ const warrantyProps = {
       icon: TruckIcon,
     },
     {
-      name: 'Ein Jahr Garantie',
+      name: 'Zwei Jahre Garantie',
       description: `Wir übernehmen die Reparatur oder den kostenlosen Austausch defekter Teile, wenn der ursprüngliche Defekt während der Garantiezeit auftritt.`,
       href: '/warranty',
       icon: ShieldCheckIcon,

@@ -516,7 +516,7 @@ Il tuo denaro non sarà sprecato; si trasformerà in uno stile di vita migliore 
       icon: TruckIcon,
     },
     {
-      name: 'Garanzia di 1 anno',
+      name: 'Garanzia di 2 anni',
       description:
         'Ripareremo o sostituiremo gratuitamente le parti difettose se il difetto iniziale si verifica durante il periodo di garanzia.',
       href: '/warranty',
