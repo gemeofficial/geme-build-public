@@ -49,7 +49,7 @@ const warrantyProps: IWarrantyProps = {
         <li class="mb-5">
         Il periodo di garanzia del COMPOSTATORE BIO-RIFIUTI GEME inizia dalla data di acquisto da parte del consumatore. Il periodo di garanzia è di 12 mesi, quando e solo quando la garanzia viene utilizzata gratuitamente come descritto nel presente documento durante l'uso domestico.
         <br /> <br />
-        Il periodo di garanzia di 1 anno è sospeso durante la riparazione o la sostituzione. Al termine di questo periodo, il consumatore non ha diritto a una nuova garanzia di 1 anno, ma il periodo di garanzia già iniziato viene ripristinato a partire dal momento della sostituzione o dal completamento della riparazione.
+        Il periodo di garanzia di 2 anni è sospeso durante la riparazione o la sostituzione. Al termine di questo periodo, il consumatore non ha diritto a una nuova garanzia di 2 anni, ma il periodo di garanzia già iniziato viene ripristinato a partire dal momento della sostituzione o dal completamento della riparazione.
         </li>
         <li>
         Per le apparecchiature commerciali, il periodo di garanzia è regolato dai termini del contratto di vendita.
