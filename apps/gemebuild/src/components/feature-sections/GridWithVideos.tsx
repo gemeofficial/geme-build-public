@@ -56,14 +56,13 @@ export default function GridWithVideos({
                 <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8">
                   <div className="mt-4">
                     {LinkComponent && feature.link ? (
-                      <>
-                        <LinkComponent href={feature.link}>
-                          <FeatureItemName name={feature.name} />
-                        </LinkComponent>
-                        <LinkComponent href={feature.link}>
-                          <FeatureItemName name={feature.description} />
-                        </LinkComponent>
-                      </>
+                      <LinkComponent href={feature.link}>
+                        <FeatureItemName name={feature.name} />
+
+                        <FeatureItemDescription
+                          description={feature.description}
+                        />
+                      </LinkComponent>
                     ) : (
                       <>
                         <FeatureItemName name={feature.name} />

@@ -15,7 +15,7 @@ export default function ManualSeoPageContent({
     videoPosterUrl,
     videoSrcUrlOrVideoId,
     mixpanelFrom,
-    videoIsAutoPlay,
+    videoIsAutoPlay: videoIsAutoPlay || true,
   }
   return (
     <SectionContainer>

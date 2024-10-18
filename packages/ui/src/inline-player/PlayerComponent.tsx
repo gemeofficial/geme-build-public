@@ -67,7 +67,11 @@ export default function PlayerComponent({
             quality={60}
             sizes="(max-width: 1280px) 80vw, (min-width: 1281px) 1000px, 1vw"
           />
-          <PlayIcon className="relative z-[2] group-hover:scale-110 group-hover:cursor-pointer transition-all duration-300" />
+          <PlayIcon
+            size="small"
+            className="md:hidden relative z-[2] group-hover:scale-110 group-hover:cursor-pointer transition-all duration-300"
+          />
+          <PlayIcon className="hidden md:block relative z-[2] group-hover:scale-110 group-hover:cursor-pointer transition-all duration-300" />
         </div>
       )}
 
