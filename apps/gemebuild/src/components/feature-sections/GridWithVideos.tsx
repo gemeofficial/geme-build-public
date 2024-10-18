@@ -5,6 +5,7 @@
 import React, { ReactNode } from 'react'
 import Image from 'next/image'
 import { VideoInlinePlayer } from 'ui'
+import { ILinkComponent } from '../../i18n-pages'
 
 export interface IGridWithVideosProps {
   heading?: string
@@ -20,7 +21,9 @@ export interface IGridWithVideosProps {
       | React.ComponentType<React.ComponentPropsWithRef<'svg'>>
       | React.ComponentType<React.ComponentProps<'img'>>
       | ReactNode
+    link?: string
   }[]
+  LinkComponent?: ILinkComponent
 }
 
 export default function GridWithVideos({
@@ -28,6 +31,7 @@ export default function GridWithVideos({
   title,
   description,
   features,
+  LinkComponent,
 }: IGridWithVideosProps) {
   return (
     <div className="relative bg-white py-16 sm:py-24 lg:py-32">
@@ -51,12 +55,23 @@ export default function GridWithVideos({
               <div key={feature.name} className="pt-6 flex">
                 <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8">
                   <div className="mt-4">
-                    <h3 className="mt-8 text-lg font-medium tracking-tight text-gray-900">
-                      {feature.name}
-                    </h3>
-                    <p className="mt-5 text-base text-gray-500">
-                      {feature.description}
-                    </p>
+                    {LinkComponent && feature.link ? (
+                      <>
+                        <LinkComponent href={feature.link}>
+                          <FeatureItemName name={feature.name} />
+                        </LinkComponent>
+                        <LinkComponent href={feature.link}>
+                          <FeatureItemName name={feature.description} />
+                        </LinkComponent>
+                      </>
+                    ) : (
+                      <>
+                        <FeatureItemName name={feature.name} />
+                        <FeatureItemDescription
+                          description={feature.description}
+                        />
+                      </>
+                    )}
                   </div>
                   <div className="mt-5 relative w-[300px] h-[200px]">
                     {feature.videoUrl != null && (
@@ -84,4 +99,16 @@ export default function GridWithVideos({
       </div>
     </div>
   )
+}
+
+function FeatureItemName({ name }: { name: string }) {
+  return (
+    <h3 className="mt-8 text-lg font-medium tracking-tight text-gray-900">
+      {name}
+    </h3>
+  )
+}
+
+function FeatureItemDescription({ description }: { description: string }) {
+  return <p className="mt-5 text-base text-gray-500">{description}</p>
 }
