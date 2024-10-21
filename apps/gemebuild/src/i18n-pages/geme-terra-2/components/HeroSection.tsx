@@ -23,6 +23,7 @@ export default function HeroSection({
   inputPlaceholder,
   submitButtonLabel,
   SubscribeComponent,
+  subscribeOrigin,
 }: IHeroSectionProps) {
   return (
     <div className="bg-black min-h-[85vh] xl:min-h-screen relative">
@@ -60,6 +61,7 @@ export default function HeroSection({
 
             {SubscribeComponent && (
               <SubscribeComponent
+                subscribeOrigin={subscribeOrigin}
                 inputPlaceholder={inputPlaceholder}
                 submitButtonLabel={submitButtonLabel}
                 formClassName="flex-col md:flex-row gap-y-4 !mx-0"

@@ -28,6 +28,7 @@ const heroSectionProps: IHeroSectionProps = {
   submitButtonLabel: 'Notify Me',
   heroBgImagePc: '/assets/images/geme-terra-2/hero-bg-desktop.png',
   heroBgImageMobile: '/assets/images/geme-terra-2/hero-bg-mobile.png',
+  subscribeOrigin: 'Geme V2 Page - Top',
 }
 
 // 图文section1
@@ -360,6 +361,7 @@ const subscribeProps: ISubscribeProps = {
   productImage: '/assets/images/geme-v2-product/geme-v2-1-color.png',
   inputPlaceholder: 'Enter your email',
   submitButtonLabel: 'Notify Me',
+  subscribeOrigin: 'Geme V2 Page - Bottom',
 }
 
 export function GemeTerra2PageDe({ SubscribeComponent }: IGemeTerra2PageProps) {

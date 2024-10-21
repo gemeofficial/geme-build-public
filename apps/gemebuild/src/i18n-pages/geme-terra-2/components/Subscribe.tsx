@@ -4,6 +4,7 @@ import { FC, ReactNode } from 'react'
 export interface ISubscribeComponent {
   inputPlaceholder: string
   submitButtonLabel: string
+  subscribeOrigin: 'Geme V2 Page - Top' | 'Geme V2 Page - Bottom'
   inputClassName?: string
   buttonClassName?: string
   formClassName?: string
@@ -23,6 +24,7 @@ export default function Subscribe({
   inputPlaceholder,
   submitButtonLabel,
   SubscribeComponent,
+  subscribeOrigin,
 }: ISubscribeProps) {
   return (
     <div className="relative isolate overflow-hidden bg-v2311-bg-dark-green py-16 sm:py-24">
@@ -38,6 +40,7 @@ export default function Subscribe({
             <div className="mt-6">
               {SubscribeComponent && (
                 <SubscribeComponent
+                  subscribeOrigin={subscribeOrigin}
                   inputPlaceholder={inputPlaceholder}
                   submitButtonLabel={submitButtonLabel}
                   inputClassName="text-v2311-fg-dark-black border-solid border-2 border-white rounded-xl !py-3 focus:border-v2311-bg-light-green focus:ring-v2311-bg-light-green"
