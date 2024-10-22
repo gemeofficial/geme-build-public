@@ -104,7 +104,7 @@ function Content({
     { href: '/how-it-works', text: 'Learn more' },
     { href: '/blog/lomi-vs-geme-composter', text: 'Detailed Compare' },
     { href: '/blog/mill-vs-geme-composter', text: 'Detailed Compare' },
-    { href: '#', text: 'Detailed Compare' },
+    { href: '/blog/reencle-vs-geme-composter', text: 'Detailed Compare' },
   ]
   const link = linkMap[index] || linkMap[0]
 
