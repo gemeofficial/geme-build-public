@@ -59,11 +59,11 @@ const logoCloudImages: TItem[] = [
     alt: 'Housedigest',
     link: 'https://www.housedigest.com/1660656/ifa-2024-these-home-garden-innovations-offer-a-high-tech-twist/',
   },
-  {
-    src: '/assets/images/logo-cloud/digitaltrends.jpg',
-    alt: 'Digitaltrends',
-    link: 'https://www.digitaltrends.com/home/ifa-2024-best-smart-home/',
-  },
+  // {
+  //   src: '/assets/images/logo-cloud/digitaltrends.jpg',
+  //   alt: 'Digitaltrends',
+  //   link: 'https://www.digitaltrends.com/home/ifa-2024-best-smart-home/',
+  // },
   {
     src: '/assets/images/logo-cloud/wallstreet-online-horizontal.svg',
     alt: 'Reform',
