@@ -121,9 +121,9 @@ const heroSectionSwiperProps: IHomeHeroSectionSwiperProps = {
     link: '/news',
     linkText: 'Neuigkeiten ansehen',
     videoUrlPc:
-      'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/videos/news-swiper-video-de-pc.mp4',
+      'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/videos/news-swiper-video-en-pc.mp4',
     videoUrlMobile:
-      'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/videos/news-swiper-video-de-mobile.mp4',
+      'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/videos/news-swiper-video-en-mobile.mp4',
   },
 }
 
