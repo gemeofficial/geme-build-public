@@ -8,12 +8,14 @@ import clsx from 'clsx'
 import { ILinkComponent } from '../../../contexts/link-context'
 import { HeroSection1, IHeroSection1Props } from 'ui'
 import HeroSectionsButton from 'ui/src/client-components/HeroSectionsButton'
+import DefaultLink from 'next/link'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
 export interface IVideoSectionProps {
   link: string
+  linkText: string
   videoUrlPc: string
   videoUrlMobile: string
   LinkComponent?: ILinkComponent
@@ -229,9 +231,16 @@ function SwiperItem3({
 }
 
 // Terra 2 Swiper
-function SwiperItem4({ link, videoUrlPc, videoUrlMobile }: IVideoSectionProps) {
+function SwiperItem4({
+  link,
+  linkText,
+  videoUrlPc,
+  videoUrlMobile,
+  LinkComponent,
+}: IVideoSectionProps) {
+  const Link = LinkComponent || DefaultLink
   return (
-    <div className="h-screen ">
+    <div className="h-screen">
       {/* 大屏视频层 */}
       <div className="overflow-hidden h-full relative">
         <video
@@ -250,6 +259,12 @@ function SwiperItem4({ link, videoUrlPc, videoUrlMobile }: IVideoSectionProps) {
           muted
           playsInline
         />
+        <Link
+          href={link}
+          className="block h-screen absolute inset-y-0 inset-x-0 xl:right-[40%] opacity-0"
+        >
+          {linkText}
+        </Link>
       </div>
     </div>
   )

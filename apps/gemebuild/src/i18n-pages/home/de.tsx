@@ -119,6 +119,7 @@ const heroSectionSwiperProps: IHomeHeroSectionSwiperProps = {
   },
   section4: {
     link: '/news',
+    linkText: 'Neuigkeiten ansehen',
     videoUrlPc:
       'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/videos/news-swiper-video-de-pc.mp4',
     videoUrlMobile:
@@ -528,6 +529,7 @@ const newsltterProps: INewsletterProps = {
 
 function HomePageDe({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
   heroSection1Props.LinkComponent = PrefetchLink
+  heroSectionSwiperProps.LinkComponent = PrefetchLink
   const isOpenSwiperContent =
     process.env.NEXT_PUBLIC_HOME_HERO_SWIPER &&
     process.env.NEXT_PUBLIC_HOME_HERO_SWIPER == 'true'
