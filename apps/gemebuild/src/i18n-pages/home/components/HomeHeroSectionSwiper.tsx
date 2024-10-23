@@ -230,7 +230,7 @@ function SwiperItem3({
   )
 }
 
-// Terra 2 Swiper
+// News Module Swiper
 function SwiperItem4({
   link,
   linkText,
@@ -261,7 +261,7 @@ function SwiperItem4({
         />
         <Link
           href={link}
-          className="block h-screen absolute inset-y-0 inset-x-0 xl:right-[40%] opacity-0"
+          className="block absolute top-0 bottom-[40%] inset-x-0 xl:right-[40%] xl:inset-y-0 opacity-0"
         >
           {linkText}
         </Link>
