@@ -111,6 +111,15 @@ const heroSectionSwiperProps: IHomeHeroSectionSwiperProps = {
     heroImageUrlPc: '/assets/images/home-v2311/hero-bg-3.jpg',
     heroImageUrlMobile: '/assets/images/home-v2311/hero-bg-mobile-3.jpg',
   },
+
+  section4: {
+    link: '/news',
+    linkText: 'Visualizza i dettagli delle notizie',
+    videoUrlPc:
+      'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/videos/news-swiper-video-en-pc.mp4',
+    videoUrlMobile:
+      'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/videos/news-swiper-video-en-mobile.mp4',
+  },
 }
 
 // 首页第二部分的内容数据配置 It
@@ -515,6 +524,7 @@ export function HomePageIt({
   reviewsSectionConfig,
 }: IHomePageProps) {
   heroSection1Props.LinkComponent = PrefetchLink
+  heroSectionSwiperProps.LinkComponent = PrefetchLink
 
   // const isOpenSwiperContent = true
   const isOpenSwiperContent =
