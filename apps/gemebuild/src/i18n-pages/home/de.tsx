@@ -117,6 +117,13 @@ const heroSectionSwiperProps: IHomeHeroSectionSwiperProps = {
     heroImageUrlPc: '/assets/images/home-v2311/hero-bg-3.jpg',
     heroImageUrlMobile: '/assets/images/home-v2311/hero-bg-mobile-3.jpg',
   },
+  section4: {
+    link: '/news',
+    videoUrlPc:
+      'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/videos/news-swiper-video-de-pc.mp4',
+    videoUrlMobile:
+      'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/videos/news-swiper-video-de-mobile.mp4',
+  },
 }
 
 // 首页第二部分的内容数据配置 De

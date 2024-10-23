@@ -12,6 +12,13 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
+export interface IVideoSectionProps {
+  link: string
+  videoUrlPc: string
+  videoUrlMobile: string
+  LinkComponent?: ILinkComponent
+}
+
 export interface ISwiperSectionProps {
   title: ReactNode
   description: ReactNode
@@ -26,6 +33,7 @@ export interface IHomeHeroSectionSwiperProps {
   section1: IHeroSection1Props
   section2: ISwiperSectionProps
   section3: ISwiperSectionProps
+  section4: IVideoSectionProps
   LinkComponent?: ILinkComponent
 }
 
@@ -33,6 +41,7 @@ export default function HomeHeroSectionSwiper({
   section1,
   section2,
   section3,
+  section4,
   LinkComponent,
 }: IHomeHeroSectionSwiperProps) {
   return (
@@ -73,10 +82,14 @@ export default function HomeHeroSectionSwiper({
       <SwiperSlide className="w-full h-full">
         <SwiperItem3 {...section3} LinkComponent={LinkComponent} />
       </SwiperSlide>
+      <SwiperSlide className="w-full h-full">
+        <SwiperItem4 {...section4} LinkComponent={LinkComponent} />
+      </SwiperSlide>
     </Swiper>
   )
 }
 
+// IFA Swiper
 function SwiperItem2({
   title,
   description,
@@ -147,6 +160,7 @@ function SwiperItem2({
   )
 }
 
+// Terra 2 Swiper
 function SwiperItem3({
   title,
   description,
@@ -209,6 +223,33 @@ function SwiperItem3({
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  )
+}
+
+// Terra 2 Swiper
+function SwiperItem4({ link, videoUrlPc, videoUrlMobile }: IVideoSectionProps) {
+  return (
+    <div className="h-screen ">
+      {/* 大屏视频层 */}
+      <div className="overflow-hidden h-full relative">
+        <video
+          className="hidden xl:block w-full h-full object-cover max-h-screen"
+          src={videoUrlPc}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+        <video
+          className="xl:hidden w-full h-full object-cover max-h-screen"
+          src={videoUrlMobile}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
       </div>
     </div>
   )

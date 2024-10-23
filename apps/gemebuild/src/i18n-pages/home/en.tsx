@@ -110,6 +110,13 @@ const heroSectionSwiperProps: IHomeHeroSectionSwiperProps = {
     heroImageUrlPc: '/assets/images/home-v2311/hero-bg-3.jpg',
     heroImageUrlMobile: '/assets/images/home-v2311/hero-bg-mobile-3.jpg',
   },
+  section4: {
+    link: '/news',
+    videoUrlPc:
+      'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/videos/news-swiper-video-en-pc.mp4',
+    videoUrlMobile:
+      'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/videos/news-swiper-video-en-mobile.mp4',
+  },
 }
 
 // 首页第二部分的内容数据配置 En
@@ -537,12 +544,12 @@ export interface IHomePageProps {
 function HomePageEn({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
   heroSection1Props.LinkComponent = PrefetchLink
 
-  // const isOpenSwiperContent = true
-  const isOpenSwiperContent =
-    process.env.NEXT_PUBLIC_HOME_HERO_SWIPER &&
-    process.env.NEXT_PUBLIC_HOME_HERO_SWIPER == 'true'
-      ? true
-      : false
+  const isOpenSwiperContent = true
+  // const isOpenSwiperContent =
+  //   process.env.NEXT_PUBLIC_HOME_HERO_SWIPER &&
+  //   process.env.NEXT_PUBLIC_HOME_HERO_SWIPER == 'true'
+  //     ? true
+  //     : false
 
   return (
     <>
