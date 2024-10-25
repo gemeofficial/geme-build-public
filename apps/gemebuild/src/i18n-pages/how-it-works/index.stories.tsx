@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { HowItWorksDe, HowItWorksEn, HowItWorksFr } from '.'
+import { HowItWorksDe, HowItWorksEn, HowItWorksFr, HowItWorksIt } from '.'
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -29,4 +29,9 @@ export const Fr: Story = {
 export const De: Story = {
   name: 'de',
   render: () => <HowItWorksDe ReviewsComponent={ReviewsComponent} />,
+}
+
+export const It: Story = {
+  name: 'it',
+  render: () => <HowItWorksIt ReviewsComponent={ReviewsComponent} />,
 }

@@ -3,28 +3,13 @@ import EquipmentView, {
   IProductOverviewSplitWithImageOtherProps,
 } from './components/EquipmentView'
 
-// 1.翻译其他语言版本需要将Data中的数据一并翻译
-import { items } from '../../helpers/industrial-equipments/data/data-en'
 import type { TEquipment } from '../../helpers/industrial-equipments/data/data-en'
 
 import { industrialEquipmentXJsonLd } from '../../lib/serp'
-import {
-  equipmentCanonicalUrl,
-  findEquipmentById,
-} from '../../helpers/industrial-equipments/tool'
+import { findEquipmentById } from '../../helpers/industrial-equipments/tool'
 import { IEquipmentFeaturesProps } from './components/EquipmentFeatures'
 
-interface IPageParams {
-  locale: string
-  id: string
-}
-
-interface IPageProps {
-  params: IPageParams
-  searchParams?: Record<string, string | undefined>
-}
-
-//  2.productOverviewSplitWithImage组件内容的配置数据  En版
+//  productOverviewSplitWithImage组件内容的配置数据  En版
 const productOverviewSplitWithImageOtherProps: IProductOverviewSplitWithImageOtherProps =
   {
     firstBreadcrumbsName: 'All equipments',
@@ -32,8 +17,10 @@ const productOverviewSplitWithImageOtherProps: IProductOverviewSplitWithImageOth
     btn2Label: `Get in touch`,
   }
 
-//  3.EquipmentFeatures组件内容的配置数据  En版
-function generateEquipmentFeaturesProps(equipment: TEquipment): IEquipmentFeaturesProps {
+//  EquipmentFeatures组件内容的配置数据  En版
+function generateEquipmentFeaturesProps(
+  equipment: TEquipment,
+): IEquipmentFeaturesProps {
   return {
     equipment,
     tabNames: {
@@ -69,18 +56,17 @@ function generateEquipmentFeaturesProps(equipment: TEquipment): IEquipmentFeatur
   }
 }
 
-function IndustrialEquipmentsIdPageEn({ params }: IPageProps) {
-  const equipmentId = params.id
-  const equipment = findEquipmentById(params.id, items)
-
-  if (equipment == null) {
-    throw new Error(`can not find equipment by id: ${equipmentId}`)
-  }
+function IndustrialEquipmentsIdPageEn({
+  equipment,
+}: {
+  equipment: ReturnType<typeof findEquipmentById>
+}) {
+  if (equipment == null) return
 
   const contentProps: IEquipmentViewProps = {
     productOverviewSplitWithImageOtherProps,
     equipment,
-    equipmentFeaturesProps:generateEquipmentFeaturesProps(equipment),
+    equipmentFeaturesProps: generateEquipmentFeaturesProps(equipment),
   }
 
   return (
@@ -89,7 +75,7 @@ function IndustrialEquipmentsIdPageEn({ params }: IPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={industrialEquipmentXJsonLd(
           equipment.name,
-          equipment.id
+          equipment.id,
         )}
         key="industrial-equipment-x-jsonld"
       />

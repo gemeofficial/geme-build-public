@@ -6,7 +6,7 @@ import FeaturesWithVideos, {
   featureIcon,
   IFeaturesWithVideos,
 } from './components/FeaturesWithVideos'
-import GeemDailyUsage from './components/GemeDailyUsage'
+import GemeDailyUsage from './components/GemeDailyUsage'
 import HeroSection, { IManualHeroSectionProps } from './components/HeroSection'
 import { IManualsPageProps } from './en'
 
@@ -133,7 +133,7 @@ const featuresWithVideos: IFeaturesWithVideos = {
 }
 
 // 第3部分配置文件 De版
-const geemDailyUsageProps = {
+const gemeDailyUsageProps = {
   title: 'Tägliche Nutzung',
   description:
     'Sie müssen die Buttons nicht drücken; Sie müssen das Kohlenstoff-Stickstoff-Verhältnis des Komposts nicht einstellen; Sie müssen den Kompost nicht wenden und den Filter nicht wechseln. Sie können Ihre Abfälle jederzeit reinwerfen und den Kompost herausnehmen, wann immer Sie wollen. Nichts Besonderes.',
@@ -221,7 +221,7 @@ export function ManualsPageDe({
         WhatsAppBusinessAccountURL={WhatsAppBusinessAccountURL}
       />
       <FeaturesWithVideos {...featuresWithVideos} />
-      <GeemDailyUsage {...geemDailyUsageProps} />
+      <GemeDailyUsage {...gemeDailyUsageProps} />
       <CanNotCompostItems {...canNotCompostItemsProps} />
     </>
   )

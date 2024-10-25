@@ -32,6 +32,7 @@ import { IHomePageProps } from './en'
 import HomeHeroSectionSwiper, {
   IHomeHeroSectionSwiperProps,
 } from './components/HomeHeroSectionSwiper'
+import { LogoCloud } from 'ui'
 
 // 首页video部分的内容数据配置 De
 const heroSection1Props: IHeroSection1Props = {
@@ -112,9 +113,17 @@ const heroSectionSwiperProps: IHomeHeroSectionSwiperProps = {
       </>
     ),
     linkText: 'Mehr erfahren',
-    linkUrl: '/geme-v2',
+    linkUrl: '/geme-terra-2',
     heroImageUrlPc: '/assets/images/home-v2311/hero-bg-3.jpg',
     heroImageUrlMobile: '/assets/images/home-v2311/hero-bg-mobile-3.jpg',
+  },
+  section4: {
+    link: '/news',
+    linkText: 'Neuigkeiten ansehen',
+    videoUrlPc:
+      'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/videos/news-swiper-video-en-pc.mp4',
+    videoUrlMobile:
+      'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/videos/news-swiper-video-en-mobile.mp4',
   },
 }
 
@@ -442,6 +451,13 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
   videos: [
     {
       type: 'youtube',
+      src: 'https://youtu.be/bYzh9ZUJKxs?t=845',
+      coverImageUrl: '/assets/images/user-stories-videos/youtube4.png',
+      coverAlt: 'Review video from bricolou, France',
+      buttonText: '@bricolou',
+    },
+    {
+      type: 'youtube',
       src: 'https://youtu.be/TwCYDZgoUl0?si=w5mzwn4dQJr6x0vD',
       coverImageUrl: '/assets/images/user-stories-videos/youtube.png',
       coverAlt: 'Real life usage reviews from Amazon',
@@ -455,12 +471,19 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
       buttonText: '@Mister and Miss Ginger Jones',
     },
     {
-      type: 'instagram',
-      src: 'https://www.instagram.com/reel/CxBKZOYRKQN/?utm_source=ig_web_copy_link',
-      coverImageUrl: '/assets/images/user-stories-videos/instagram.png',
-      coverAlt: 'Real use video from twin brothers',
-      buttonText: '@Messitttwins',
+      type: 'youtube',
+      src: 'https://youtu.be/CVoDNDONFAk?t=979',
+      coverImageUrl: '/assets/images/user-stories-videos/youtube3.png',
+      coverAlt: 'Review video from Benson Chik, United Kingdom',
+      buttonText: '@Benson Chik',
     },
+    // {
+    //   type: 'instagram',
+    //   src: 'https://www.instagram.com/reel/CxBKZOYRKQN/?utm_source=ig_web_copy_link',
+    //   coverImageUrl: '/assets/images/user-stories-videos/instagram.png',
+    //   coverAlt: 'Real use video from twin brothers',
+    //   buttonText: '@Messitttwins',
+    // },
     // {
     //   type: 'tiktok',
     //   src: 'https://www.tiktok.com/@kc_smithwrites/video/7312898892079697198',
@@ -506,6 +529,7 @@ const newsltterProps: INewsletterProps = {
 
 function HomePageDe({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
   heroSection1Props.LinkComponent = PrefetchLink
+  heroSectionSwiperProps.LinkComponent = PrefetchLink
   const isOpenSwiperContent =
     process.env.NEXT_PUBLIC_HOME_HERO_SWIPER &&
     process.env.NEXT_PUBLIC_HOME_HERO_SWIPER == 'true'
@@ -521,6 +545,9 @@ function HomePageDe({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
 
       {/*<ContentSection2 {...contentSection2Props} />*/}
       <ContentSection3 {...contentSection3Props} />
+
+      <LogoCloud canRedirect locale="de" />
+
       <ContentSection4 {...contentSection4Props} />
 
       <SecondLife {...secondLifeProps} />

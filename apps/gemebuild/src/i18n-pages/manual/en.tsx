@@ -7,7 +7,7 @@ import FeaturesWithVideos, {
   featureIcon,
   IFeaturesWithVideos,
 } from './components/FeaturesWithVideos'
-import GeemDailyUsage from './components/GemeDailyUsage'
+import GemeDailyUsage from './components/GemeDailyUsage'
 import HeroSection, { IManualHeroSectionProps } from './components/HeroSection'
 
 export interface IManualsPageProps {
@@ -58,6 +58,7 @@ const featuresWithVideos: IFeaturesWithVideos = {
       videoUrl: 'https://www.youtube.com/embed/izYVDd6KwO8',
       videoImageSrc: '/assets/images/manual/video-cover-unboxing.png',
       videoImageAlt: 'GEME Composter Unboxing',
+      link: '/manual/unboxing',
     },
     {
       name: 'Cautions',
@@ -67,6 +68,7 @@ const featuresWithVideos: IFeaturesWithVideos = {
       videoUrl: 'https://www.youtube.com/embed/f09NNpAnyTQ',
       videoImageSrc: '/assets/images/manual/video-cover-cautions.png',
       videoImageAlt: 'GEME Composter Use Cautions',
+      link: '/manual/cautions',
     },
     {
       name: 'Activate Microbiota',
@@ -77,6 +79,7 @@ const featuresWithVideos: IFeaturesWithVideos = {
       videoImageSrc:
         '/assets/images/manual/video-cover-activate-microbiota.png',
       videoImageAlt: 'GEME Composter How to Activate GEME-Kobold(Microbiota)',
+      link: '/manual/activate-microbiota',
     },
     {
       name: 'Daily Usage',
@@ -86,6 +89,7 @@ const featuresWithVideos: IFeaturesWithVideos = {
       videoUrl: 'https://www.youtube.com/embed/mi8fwlJdt68',
       videoImageSrc: '/assets/images/manual/video-cover-daily-usage.png',
       videoImageAlt: 'GEME Composter Daily Usage Demo',
+      link: '/manual/daily-usage',
     },
     {
       name: 'By-Product(Compost) Usage',
@@ -96,6 +100,7 @@ const featuresWithVideos: IFeaturesWithVideos = {
       videoImageSrc: '/assets/images/manual/video-cover-by-product-usage.png',
       videoImageAlt:
         'GEME Composter How to Use the By-Product(Organic Compost)',
+      link: '/manual/compost-usage',
     },
     {
       name: 'How to Make Steady',
@@ -105,6 +110,7 @@ const featuresWithVideos: IFeaturesWithVideos = {
       videoUrl: 'https://www.youtube.com/embed/rthDSasoOrY',
       videoImageSrc: '/assets/images/manual/video-cover-make-steady.png',
       videoImageAlt: 'GEME Composter How to Make Machine Steady',
+      link: '/manual/how-to-make-steady',
     },
     {
       name: 'Control Panel Usage & Troubleshooting',
@@ -115,6 +121,7 @@ const featuresWithVideos: IFeaturesWithVideos = {
       videoImageSrc:
         '/assets/images/manual/video-cover-control-panel-usage.png',
       videoImageAlt: 'GEME Composter How to troubleshoot via the Control Panel',
+      link: '/manual/control-panel-usage',
     },
     {
       name: 'How to Change UV Lamp',
@@ -124,6 +131,7 @@ const featuresWithVideos: IFeaturesWithVideos = {
       videoUrl: 'https://www.youtube.com/embed/VdAtQfpSQ_E',
       videoImageSrc: '/assets/images/manual/video-cover-change-uv-lamp.png',
       videoImageAlt: 'GEME Composter How to Change UV Lamp',
+      link: '/manual/how-to-change-uv-lamp',
     },
     {
       name: 'Can & Can Not',
@@ -133,12 +141,13 @@ const featuresWithVideos: IFeaturesWithVideos = {
       videoUrl: 'https://www.youtube.com/embed/2DSFcxFRSos',
       videoImageSrc: '/assets/images/manual/video-cover-can-and-can-not.png',
       videoImageAlt: 'GEME Composter What Can Put and What Can Not',
+      link: '/manual/can-and-can-not',
     },
   ],
 }
 
 // 第3部分配置文件 En版
-const geemDailyUsageProps = {
+const gemeDailyUsageProps = {
   title: 'Daily Usage',
   description:
     'No need to push any buttons, no need to adjust the carbon-nitrogen ratio of the compost, no need to turn the compost, no need to replace the filter. Put your waste in at anytime, pick the compost out at any time you want. Nothing special.',
@@ -211,6 +220,7 @@ export function ManualsPageEn({
   PrefetchLink,
   WhatsAppBusinessAccountURL,
 }: IManualsPageProps) {
+  featuresWithVideos.LinkComponent = PrefetchLink
   return (
     <>
       <HeroSection
@@ -219,7 +229,7 @@ export function ManualsPageEn({
         WhatsAppBusinessAccountURL={WhatsAppBusinessAccountURL}
       />
       <FeaturesWithVideos {...featuresWithVideos} />
-      <GeemDailyUsage {...geemDailyUsageProps} />
+      <GemeDailyUsage {...gemeDailyUsageProps} />
       <CanNotCompostItems {...canNotCompostItemsProps} />
     </>
   )

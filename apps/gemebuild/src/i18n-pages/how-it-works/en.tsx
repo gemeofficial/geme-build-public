@@ -1,11 +1,7 @@
 import {
-  ExaminingReport,
-  IExaminingReportProps,
-  IInlinePalyerType,
+  IInlinePlayerType,
   InlinePlayer,
   type IOxygenCycleProps,
-  IUseCompostContrastProps,
-  ReviewsScoreHeader,
   ScrollTriggeredAnimatedOxygenCycle,
   SvgFoodWaste,
   SvgMicrobe,
@@ -13,21 +9,29 @@ import {
   SvgTemperature,
   SvgWaterDrop,
   SvgWood,
-  UseCompostContrast,
+  ImgAndTextSection,
+  IImgAndTextSectionProps,
 } from 'ui'
 
-import { ShortVideo, IShortVideoProps } from 'ui/src/how-it-works/ShortVideo'
+import {
+  IUseCompostContrastProps,
+  UseCompostContrast,
+  IExaminingReportProps,
+  ExaminingReport,
+} from './components'
+import { ReviewsScoreHeader } from '../pdp/components/reviews-score-header'
+
 import { ILinkComponent } from '../../contexts/link-context'
 import { FC } from 'react'
 
-export interface IPdpIntroProps {
+export interface IHowItWorksProps {
   ReviewsComponent: FC<{}>
   PrefetchLink?: ILinkComponent
 }
 
 // page静态页面的内容 配置文件 En版
 // 短视频工作过程section
-const shortVideoProps: IShortVideoProps = {
+const shortVideoProps: IImgAndTextSectionProps = {
   title: 'Compost Pile in A Box',
   description: (
     <>
@@ -59,7 +63,7 @@ const shortVideoProps: IShortVideoProps = {
 }
 
 // 图文section
-const imageTextProps: IShortVideoProps = {
+const imageTextProps: IImgAndTextSectionProps = {
   title: 'Microbes, Not Dehydrate',
   description: (
     <>
@@ -308,7 +312,7 @@ const useCompostContrastProps: IUseCompostContrastProps = {
 }
 
 // YouTube 视频播放器
-const inlinePlayerProps: IInlinePalyerType = {
+const inlinePlayerProps: IInlinePlayerType = {
   title: 'Seeing is Believing',
   description: (
     <>
@@ -320,16 +324,20 @@ const inlinePlayerProps: IInlinePalyerType = {
   ),
 
   type: 'youtube',
-  videoSrcUrlOrVidioId: 'asNRoqkC_BA',
+  videoSrcUrlOrVideoId: 'asNRoqkC_BA',
   mixpanelFrom: 'Product page inline player',
 }
 
-function HowItWorksEn({ ReviewsComponent }: IPdpIntroProps) {
+function HowItWorksEn({ ReviewsComponent }: IHowItWorksProps) {
   return (
     <>
+      <h1 className="sr-only">
+        How GEME Composter Works: Transforming Food Waste into Nutrient-Rich
+        Compost
+      </h1>
       <div className="py-8 lg:pt-6 lg:pb-16">
-        <ShortVideo {...shortVideoProps} />
-        <ShortVideo {...imageTextProps} />
+        <ImgAndTextSection {...shortVideoProps} />
+        <ImgAndTextSection {...imageTextProps} />
         <InlinePlayer {...inlinePlayerProps} />
         <ExaminingReport {...gemeComposterImageProps} />
         <ExaminingReport {...gemeKoboldImageProps} />

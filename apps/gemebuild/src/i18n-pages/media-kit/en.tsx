@@ -2,7 +2,6 @@ import HeroSection, { IHeroSection } from './components/HeroSection'
 import DownLoadMediaKit, {
   IDownLoadMediaKitProps,
 } from './components/DownLoadMediaKit'
-import HignLightBar from './components/HignLightBar'
 import TermsOfService, {
   ITermsOfServiceProps,
 } from './components/TermsOfService'
@@ -38,7 +37,7 @@ const heroSectionProps: IHeroSection = {
 }
 
 const downloadMediaKitProps: IDownLoadMediaKitProps = {
-  downLoadItmes: [
+  downLoadItems: [
     {
       title: 'Logo Kit',
       desc: 'GEME Logo Library: Access a variety of GEME logos in different sizes and resolutions to suit your specific needs.',
@@ -95,7 +94,7 @@ export function MediaKitPageEn() {
         <HeroSection {...heroSectionProps} />
       </div>
       <DownLoadMediaKit {...downloadMediaKitProps} />
-      {/* <HignLightBar /> */}
+      {/* <HighLightBar /> */}
       <TermsOfService {...termsOfService} />
     </>
   )

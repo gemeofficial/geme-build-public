@@ -3,8 +3,11 @@ import {
   GridWithVideos,
   IGridWithVideosProps,
 } from '../../../components/feature-sections'
+import { ILinkComponent } from '../../../contexts/link-context'
 
-export interface IFeaturesWithVideos extends IGridWithVideosProps {}
+export interface IFeaturesWithVideos extends IGridWithVideosProps {
+  LinkComponent?: ILinkComponent
+}
 
 export function featureIcon(num: number) {
   return (

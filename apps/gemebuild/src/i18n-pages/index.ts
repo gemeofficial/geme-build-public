@@ -23,9 +23,11 @@ export * from './customer-service'
 export * from './geme-care'
 export * from './reviews'
 export * from './ifa'
+export * from './geme-terra-2'
 export * from './media-kit'
 export * from './brand-hq'
 export * from './compost-recycle'
+export * from './manual-seo-page'
 
 // contexts
 export * from '../contexts/link-context'

@@ -28,12 +28,16 @@ export default function VideosItem({ item }: { item: IVideosItemProps }) {
       />
       <div className="absolute bottom-[12%] inset-x-6 flex justify-center group-hover:scale-105 transition-all duration-300">
         <div className="flex p-2 pr-4 items-center justify-center gap-x-2 bg-gray-200 rounded-full">
-          <button className="bg-v2311-bg-dark-green p-2 rounded-full">
+          <button
+            className="bg-v2311-bg-dark-green p-2 rounded-full"
+            aria-label="Play video"
+          >
             <svg
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4 text-white"
+              aria-hidden="true"
             >
               <path
                 d="M16.6742 12.8437L8.53688 18.022C7.87115 18.4456 7 17.9674 7 17.1783V6.82169C7 6.0326 7.87115 5.55439 8.53688 5.97803L16.6742 11.1564C17.2917 11.5493 17.2917 12.4507 16.6742 12.8437Z"

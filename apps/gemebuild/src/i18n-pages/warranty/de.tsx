@@ -55,7 +55,7 @@ const warrantyProps: IWarrantyProps = {
         <li class="mb-5">
         Die Garantiezeit für den GEME BIO-WASTE COMPOSTER beginnt ab dem Kaufdatum durch den Verbraucher. Die Garantiezeit beträgt 12 Monate, wenn und nur wenn die Garantie während der häuslichen Nutzung kostenlos in Anspruch genommen wird, wie hierin beschrieben.
         <br /> <br />
-        Die einjährige Garantiezeit wird während der Reparatur oder des Austauschs ausgesetzt. Am Ende dieses Zeitraums hat der Verbraucher keinen Anspruch auf eine neue einjährige Garantie, aber die begonnene Garantiezeit wird ab dem Zeitpunkt des Austauschs oder Abschlusses der Reparatur wieder aufgenommen.
+        Die zweijährige Garantiezeit wird während der Reparatur oder des Austauschs ausgesetzt. Am Ende dieses Zeitraums hat der Verbraucher keinen Anspruch auf eine neue zweijährige Garantie, aber die begonnene Garantiezeit wird ab dem Zeitpunkt des Austauschs oder Abschlusses der Reparatur wieder aufgenommen.
         </li>
         <li>
         Für gewerbliche Geräte richtet sich die Garantiezeit nach den Bedingungen des Kaufvertrags.

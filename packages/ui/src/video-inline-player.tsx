@@ -5,6 +5,7 @@ import { MouseEventHandler, PropsWithChildren, useState, Fragment } from 'react'
 import { XCircleIcon } from '@heroicons/react/24/solid'
 import classNames from './lib/classNames'
 import mixpanel from 'mixpanel-browser'
+import { hasMixpanel } from './lib'
 
 export function PlayIcon({
   size = 'large',
@@ -52,7 +53,7 @@ export function VideoInlinePlayer({
 
   // 向后台发送统计信息
   function mixpanelStatHandler() {
-    if (mixpanelStatPayload) {
+    if (mixpanelStatPayload && hasMixpanel()) {
       mixpanel.track(
         mixpanelStatPayload.title,
         mixpanelStatPayload?.payload || {},

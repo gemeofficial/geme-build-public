@@ -32,6 +32,7 @@ import { ReviewsSectionModule } from '../../components/reviews-section-module'
 import HomeHeroSectionSwiper, {
   IHomeHeroSectionSwiperProps,
 } from './components/HomeHeroSectionSwiper'
+import { LogoCloud } from 'ui'
 
 // 首页video部分的内容数据配置 En
 const heroSection1Props: IHeroSection1Props = {
@@ -105,9 +106,17 @@ const heroSectionSwiperProps: IHomeHeroSectionSwiperProps = {
       </>
     ),
     linkText: 'KNOW MORE',
-    linkUrl: '/geme-v2',
+    linkUrl: '/geme-terra-2',
     heroImageUrlPc: '/assets/images/home-v2311/hero-bg-3.jpg',
     heroImageUrlMobile: '/assets/images/home-v2311/hero-bg-mobile-3.jpg',
+  },
+  section4: {
+    link: '/news',
+    linkText: 'View news Details',
+    videoUrlPc:
+      'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/videos/news-swiper-video-en-pc.mp4',
+    videoUrlMobile:
+      'https://www-geme-bio-us.s3.us-west-1.amazonaws.com/media/videos/news-swiper-video-en-mobile.mp4',
   },
 }
 
@@ -130,7 +139,7 @@ const contentSection2Props: IContentSection2Props = {
 
 // 首页第三部分的内容数据配置 En
 const contentSection3Props: IContentSection3Props = {
-  title: 'Food Waste to Plant Feed Home Composter',
+  title: 'Food Waste to Plant Feed',
   items: [
     {
       id: 1,
@@ -305,7 +314,9 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep1,
       description: (
         <>
-          no slow waiting time
+          <a href="/blog/how-long-does-a-real-composter-take-to-turn-food-waste-into-compost">
+            no slow waiting time
+          </a>
           <br />
           easy maintenance
         </>
@@ -316,7 +327,10 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep2,
       description: (
         <>
-          no mess and smell <br />
+          <a href="/blog/how-to-compost-withou-attracting-rats">
+            no mess and smell
+          </a>
+          <br />
           clean and odorless
         </>
       ),
@@ -326,7 +340,10 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
       Icon: CompostStep3,
       description: (
         <>
-          no need to turn over <br />
+          <a href="/blog/traditional-composting-vs-geme-composter">
+            no need to turn over
+          </a>
+          <br />
           work in any weather
         </>
       ),
@@ -338,8 +355,10 @@ const contentSection6FixedProps: IContentSection6FixedProps = {
 const contentSection1Props2: IContentSection1Props = {
   title: (
     <>
-      Real Compost <br />
-      Not Dehydrated Waste
+      <a href="/blog/geme-is-calling-for-industry-standards-for-composters">
+        Real Compost <br />
+        Not Dehydrated Waste
+      </a>
     </>
   ),
   description: (
@@ -349,8 +368,11 @@ const contentSection1Props2: IContentSection1Props = {
       <br />
       they simply cook and dry the food into pieces that look like soil.
       <br />
-      In contrast, GEME uses microbe bio-technology to enhance natural aerobic
-      fermentation, making it a genuine composting process.
+      In contrast, GEME uses microbe bio-technology to enhance natural{' '}
+      <a href="blog/how-does-a-real-electric-composter-work">
+        aerobic fermentation
+      </a>
+      , making it a genuine composting process.
     </>
   ),
   imageSrc: '/assets/images/home-v2311/the-man-get-compost-from-geme.jpg',
@@ -361,7 +383,7 @@ const contentSection1Props2: IContentSection1Props = {
 const contentSection1Props3: IContentSection1Props = {
   title: (
     <>
-      Powered by BioTech
+      <a href="/how-it-works">Powered by BioTech</a>
       <br />
       and Modern Manufacture
     </>
@@ -370,7 +392,8 @@ const contentSection1Props3: IContentSection1Props = {
     <>
       Our science team has tested this technology extensively over the past 50
       years in treating biowaste, soil, and polluted water. They have refined
-      the core technology, leading to the creation of GEME Kobold.
+      the core technology, leading to the creation of{' '}
+      <a href="/geme-kobold">GEME Kobold</a>.
       <br />
       <br />
       Our engineering team possesses extensive experience in designing and
@@ -392,7 +415,11 @@ const contentSection5Props: IContentSection5Props = {
     <>
       GEME Kobold is a microorganism reproducing when well fed.
       <br />
-      It breaks down your food waste, no matter how salty or acidic.
+      It{' '}
+      <a href="/blog/the-shocking-truth-about-lignin-how-natures-toughest-material-breaks-down">
+        breaks down your food waste
+      </a>
+      , no matter how salty or acidic.
       <br />
       The result? Ready-to-use, homemade organic compost for plants.
     </>
@@ -448,12 +475,26 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
       buttonText: '@Mister and Miss Ginger Jones',
     },
     {
-      type: 'instagram',
-      src: 'https://www.instagram.com/reel/CxBKZOYRKQN/?utm_source=ig_web_copy_link',
-      coverImageUrl: '/assets/images/user-stories-videos/instagram.png',
-      coverAlt: 'Real use video from twin brothers',
-      buttonText: '@Messitttwins',
+      type: 'youtube',
+      src: 'https://youtu.be/CVoDNDONFAk?t=979',
+      coverImageUrl: '/assets/images/user-stories-videos/youtube3.png',
+      coverAlt: 'Review video from Benson Chik, United Kingdom',
+      buttonText: '@Benson Chik',
     },
+    {
+      type: 'youtube',
+      src: 'https://youtu.be/bYzh9ZUJKxs?t=845',
+      coverImageUrl: '/assets/images/user-stories-videos/youtube4.png',
+      coverAlt: 'Review video from bricolou, France',
+      buttonText: '@bricolou',
+    },
+    // {
+    //   type: 'instagram',
+    //   src: 'https://www.instagram.com/reel/CxBKZOYRKQN/?utm_source=ig_web_copy_link',
+    //   coverImageUrl: '/assets/images/user-stories-videos/instagram.png',
+    //   coverAlt: 'Real use video from twin brothers',
+    //   buttonText: '@Messitttwins',
+    // },
     // {
     //   type: 'tiktok',
     //   src: 'https://www.tiktok.com/@kc_smithwrites/video/7312898892079697198',
@@ -503,7 +544,7 @@ export interface IHomePageProps {
 
 function HomePageEn({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
   heroSection1Props.LinkComponent = PrefetchLink
-
+  heroSectionSwiperProps.LinkComponent = PrefetchLink
   // const isOpenSwiperContent = true
   const isOpenSwiperContent =
     process.env.NEXT_PUBLIC_HOME_HERO_SWIPER &&
@@ -520,6 +561,8 @@ function HomePageEn({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
 
       {/*<ContentSection2 {...contentSection2Props} />*/}
       <ContentSection3 {...contentSection3Props} />
+
+      <LogoCloud canRedirect locale="en" />
       <ContentSection4 {...contentSection4Props} />
 
       <SecondLife {...secondLifeProps} />

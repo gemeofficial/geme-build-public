@@ -4,28 +4,13 @@ import EquipmentView, {
   IProductOverviewSplitWithImageOtherProps,
 } from './components/EquipmentView'
 
-// 1.翻译其他语言版本需要将Data中的数据一并翻译
-import { items } from '../../helpers/industrial-equipments/data/data-fr'
 import type { TEquipment } from '../../helpers/industrial-equipments/data/data-fr'
 
 import { industrialEquipmentXJsonLd } from '../../lib/serp'
-import {
-  equipmentCanonicalUrl,
-  findEquipmentById,
-} from '../../helpers/industrial-equipments/tool'
+import { findEquipmentById } from '../../helpers/industrial-equipments/tool'
 import { IEquipmentFeaturesProps } from './components/EquipmentFeatures'
 
-interface IPageParams {
-  locale: string
-  id: string
-}
-
-interface IPageProps {
-  params: IPageParams
-  searchParams?: Record<string, string | undefined>
-}
-
-//  2.productOverviewSplitWithImage组件内容的配置数据  Fr版
+// productOverviewSplitWithImage组件内容的配置数据  Fr版
 const productOverviewSplitWithImageOtherProps: IProductOverviewSplitWithImageOtherProps =
   {
     firstBreadcrumbsName: 'Tous les équipements',
@@ -33,7 +18,7 @@ const productOverviewSplitWithImageOtherProps: IProductOverviewSplitWithImageOth
     btn2Label: `Entrer en contact`,
   }
 
-//  3.EquipmentFeatures组件内容的配置数据  Fr版
+// EquipmentFeatures组件内容的配置数据  Fr版
 function generateEquipmentFeaturesProps(
   equipment: TEquipment,
 ): IEquipmentFeaturesProps {
@@ -72,15 +57,12 @@ function generateEquipmentFeaturesProps(
   }
 }
 
-function IndustrialEquipmentsIdPageFr({ params }: IPageProps) {
-  const equipmentId = params.id
-  const equipment = findEquipmentById(params.id, items)
-
-  if (equipment == null) {
-    throw new Error(
-      `impossible de trouver l'équipement par identifiant: ${equipmentId}`,
-    )
-  }
+function IndustrialEquipmentsIdPageFr({
+  equipment,
+}: {
+  equipment: ReturnType<typeof findEquipmentById>
+}) {
+  if (equipment == null) return
 
   const contentProps: IEquipmentViewProps = {
     productOverviewSplitWithImageOtherProps,

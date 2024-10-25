@@ -1,5 +1,13 @@
 import './styles.css'
 
+export interface IMultiLanguageConfig<T> {
+  en: T
+  de: T
+  fr: T
+  it: T
+}
+export type LocaleType = 'en' | 'de' | 'fr' | 'it'
+
 export { Button, type ButtonProps } from './button'
 export * from './fonts'
 export * from './lib'
@@ -22,16 +30,13 @@ export * from './newsletter-sections'
 export * from './dialogs'
 export * from './about'
 export * from './reviews'
-export * from './reviews-score-header'
-export * from './Inline-player'
+export * from './inline-player'
 export * from './ui-components'
 export * from './product-components'
-export * from './how-it-works'
-export * from './compare-section'
 export * from './waterfall-flow'
-export * from './ifa'
-export * from './divider'
-export * from './subscribe-geme-v2'
 export * from './user-stories-videos'
 export * from './loading-components'
 export * from './faq'
+export * from './hero-section-video'
+export * from './img-and-text-section'
+export * from './logo-cloud'

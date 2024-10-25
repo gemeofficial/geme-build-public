@@ -8,9 +8,18 @@ import clsx from 'clsx'
 import { ILinkComponent } from '../../../contexts/link-context'
 import { HeroSection1, IHeroSection1Props } from 'ui'
 import HeroSectionsButton from 'ui/src/client-components/HeroSectionsButton'
+import DefaultLink from 'next/link'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+
+export interface IVideoSectionProps {
+  link: string
+  linkText: string
+  videoUrlPc: string
+  videoUrlMobile: string
+  LinkComponent?: ILinkComponent
+}
 
 export interface ISwiperSectionProps {
   title: ReactNode
@@ -26,6 +35,7 @@ export interface IHomeHeroSectionSwiperProps {
   section1: IHeroSection1Props
   section2: ISwiperSectionProps
   section3: ISwiperSectionProps
+  section4: IVideoSectionProps
   LinkComponent?: ILinkComponent
 }
 
@@ -33,6 +43,7 @@ export default function HomeHeroSectionSwiper({
   section1,
   section2,
   section3,
+  section4,
   LinkComponent,
 }: IHomeHeroSectionSwiperProps) {
   return (
@@ -67,16 +78,20 @@ export default function HomeHeroSectionSwiper({
           containerClassName="-translate-y-28"
         />
       </SwiperSlide>
-      <SwiperSlide className="w-full h-full">
+      {/* <SwiperSlide className="w-full h-full">
         <SwiperItem2 {...section2} LinkComponent={LinkComponent} />
-      </SwiperSlide>
+      </SwiperSlide> */}
       <SwiperSlide className="w-full h-full">
         <SwiperItem3 {...section3} LinkComponent={LinkComponent} />
+      </SwiperSlide>
+      <SwiperSlide className="w-full h-full">
+        <SwiperItem4 {...section4} LinkComponent={LinkComponent} />
       </SwiperSlide>
     </Swiper>
   )
 }
 
+// IFA Swiper
 function SwiperItem2({
   title,
   description,
@@ -94,15 +109,20 @@ function SwiperItem2({
         <Image
           src={heroImageUrlPc}
           alt="hero background picture 2"
-          className="hidden xl:block w-full h-full object-cover"
+          className="hidden xl:block w-full h-full object-cover max-h-screen"
           fill
+          priority
+          // width={1920}
+          // height={1080}
           sizes="(max-width: 1280px) 1vw,(min-width: 1281px) 60vw, (min-width: 1920px) 80vw,(min-width: 2420px) 100vw, 1vw"
         />
         <Image
           src={heroImageUrlMobile}
           alt="hero background mobile picture 2"
           priority
-          className="xl:hidden w-full h-full object-cover"
+          // width={375}
+          // height={750}
+          className="xl:hidden w-full h-full object-cover max-h-screen"
           fill
           sizes="(max-width: 1280px) 100vw, (min-width: 1281px) 1vw, 1vw"
         />
@@ -142,6 +162,7 @@ function SwiperItem2({
   )
 }
 
+// Terra 2 Swiper
 function SwiperItem3({
   title,
   description,
@@ -159,15 +180,20 @@ function SwiperItem3({
         <Image
           src={heroImageUrlPc}
           alt="hero background picture 3"
-          className="hidden xl:block w-full h-full object-cover"
+          className="hidden xl:block w-full h-full object-cover max-h-screen"
           fill
+          // width={1920}
+          // height={1080}
+          priority
           sizes="(max-width: 1280px) 1vw,(min-width: 1281px) 60vw, (min-width: 1920px) 80vw,(min-width: 2420px) 100vw, 1vw"
         />
         <Image
           src={heroImageUrlMobile}
           alt="hero background mobile picture 3"
           priority
-          className="xl:hidden w-full h-full object-cover"
+          // width={375}
+          // height={750}
+          className="xl:hidden w-full h-full object-cover max-h-screen"
           fill
           sizes="(max-width: 1280px) 100vw, (min-width: 1281px) 1vw, 1vw"
         />
@@ -187,7 +213,7 @@ function SwiperItem3({
             {title}
           </div>
           {description}
-          {/* <div className="flex justify-center xl:justify-end">
+          <div className="flex justify-center xl:justify-end">
             <div className="max-w-max">
               <HeroSectionsButton
                 mixpanelTitle="Go Geme V2 Page"
@@ -197,8 +223,48 @@ function SwiperItem3({
                 linkUrl={linkUrl}
               />
             </div>
-          </div> */}
+          </div>
         </div>
+      </div>
+    </div>
+  )
+}
+
+// News Module Swiper
+function SwiperItem4({
+  link,
+  linkText,
+  videoUrlPc,
+  videoUrlMobile,
+  LinkComponent,
+}: IVideoSectionProps) {
+  const Link = LinkComponent || DefaultLink
+  return (
+    <div className="h-screen">
+      {/* 大屏视频层 */}
+      <div className="overflow-hidden h-full relative">
+        <video
+          className="hidden xl:block w-full h-full object-cover max-h-screen"
+          src={videoUrlPc}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+        <video
+          className="xl:hidden w-full h-full object-cover max-h-screen"
+          src={videoUrlMobile}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+        <Link
+          href={link}
+          className="block absolute top-0 bottom-[40%] inset-x-0 xl:right-[40%] xl:inset-y-0 opacity-0"
+        >
+          {linkText}
+        </Link>
       </div>
     </div>
   )

@@ -1,6 +1,16 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { IndustrialEquipmentsIdPageDe, IndustrialEquipmentsIdPageEn, IndustrialEquipmentsIdPageFr } from '.'
+import {
+  IndustrialEquipmentsIdPageDe,
+  IndustrialEquipmentsIdPageEn,
+  IndustrialEquipmentsIdPageFr,
+  IndustrialEquipmentsIdPageIt,
+} from '.'
+import { findEquipmentById } from '../../helpers/industrial-equipments/tool'
+import { items } from '../../helpers/industrial-equipments/data/data-en'
+import { items as itemsDe } from '../../helpers/industrial-equipments/data/data-de'
+import { items as itemsFr } from '../../helpers/industrial-equipments/data/data-fr'
+import { items as itemsIt } from '../../helpers/industrial-equipments/data/data-it'
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -10,23 +20,27 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
+const equipment = findEquipmentById('rs-bio-100', items)
+const equipmentDE = findEquipmentById('rs-bio-100', itemsDe)
+const equipmentFr = findEquipmentById('rs-bio-100', itemsFr)
+const equipmentIt = findEquipmentById('rs-bio-100', itemsIt)
+
 export const En: Story = {
   name: 'en',
-  render: () => (
-    <IndustrialEquipmentsIdPageEn params={{ id: 'rs-bio-100', locale: 'en' }} />
-  ),
+  render: () => <IndustrialEquipmentsIdPageEn equipment={equipment} />,
 }
 
 export const Fr: Story = {
   name: 'fr',
-  render: () => (
-    <IndustrialEquipmentsIdPageFr params={{ id: 'rs-bio-100', locale: 'fr' }} />
-  ),
+  render: () => <IndustrialEquipmentsIdPageFr equipment={equipmentFr} />,
 }
 
 export const De: Story = {
   name: 'de',
-  render: () => (
-    <IndustrialEquipmentsIdPageDe params={{ id: 'rs-bio-100', locale: 'de' }} />
-  ),
+  render: () => <IndustrialEquipmentsIdPageDe equipment={equipmentDE} />,
+}
+
+export const It: Story = {
+  name: 'it',
+  render: () => <IndustrialEquipmentsIdPageIt equipment={equipmentIt} />,
 }

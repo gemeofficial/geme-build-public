@@ -1,19 +1,20 @@
 /* eslint-disable react/no-unescaped-entities */
 import {
+  ComposterSurvey,
   IComposterSurveyProps,
   IFAHeroSection,
   IIFAHeroSectionProps,
-  ISubscribeGemeV2Props,
+  ISubscribeGemeTerra2Props,
+  IVideoList,
   IWinnersNamesTickerProps,
-  SubscribeGemeV2,
-} from 'ui'
+  LocationSection,
+  SubscribeGemeTerra2,
+  VideoList,
+} from './components'
 
 import { ILinkComponent } from '../../contexts/link-context'
 import { winnersNames } from './winnersNames'
-import { VideoList, IVideoList } from 'ui'
 import { FC } from 'react'
-import { LocationSection } from 'ui'
-import { ComposterSurvey } from 'ui'
 
 // Hero Section  En
 const IFAHeroSectionProps: IIFAHeroSectionProps = {
@@ -131,7 +132,7 @@ const composterSurveyProps: IComposterSurveyProps = {
 }
 
 // 订阅模块 En
-const subscribeGemeV2Props: ISubscribeGemeV2Props = {
+const subscribeGemeTerra2Props: ISubscribeGemeTerra2Props = {
   title: 'Meet GEME II',
   description: <>Get interested? Join the wasting list!</>,
   emailPlaceholder: 'Enter your email',
@@ -185,8 +186,8 @@ function IFAPageEn({ PrefetchLink, SubscribeComponent }: IIFAPageProps) {
 
       <ComposterSurvey {...composterSurveyProps} PrefetchLink={PrefetchLink} />
 
-      <SubscribeGemeV2
-        {...subscribeGemeV2Props}
+      <SubscribeGemeTerra2
+        {...subscribeGemeTerra2Props}
         SubscribeComponent={SubscribeComponent}
       />
     </>

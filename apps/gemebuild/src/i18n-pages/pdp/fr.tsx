@@ -26,6 +26,7 @@ const tabs: IPdpTabsText = {
   warranty: 'Garantie',
   userStories: `Histoires d'utilisateurs`,
   reviews: 'Avis',
+  faq: 'FAQ',
 }
 
 // ----------------  产品页 Introduction模块内容配置 Fr start  ----------------------
@@ -38,7 +39,7 @@ const introProps: IPdpIntroProps = {
     bgImageSrc:
       '/assets/images/pdp-v2311/dividers/geme-with-compost-background-min.jpg',
     comparisonText: {
-      brfore: 'Avant',
+      before: 'Avant',
       after: 'Après',
     },
     bottomItems: [
@@ -505,7 +506,7 @@ const warrantyProps = {
       icon: TruckIcon,
     },
     {
-      name: `Garantie d'un an`,
+      name: `Garantie de deux ans`,
       description: `Nous nous engageons à réparer ou à remplacer gratuitement les pièces défectueuses si le défaut initial survient pendant la période de garantie.`,
       href: '/warranty',
       icon: ShieldCheckIcon,

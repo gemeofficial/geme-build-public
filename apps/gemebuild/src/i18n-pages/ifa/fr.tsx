@@ -4,15 +4,15 @@ import {
   IComposterSurveyProps,
   IFAHeroSection,
   IIFAHeroSectionProps,
-  ISubscribeGemeV2Props,
+  ISubscribeGemeTerra2Props,
+  IVideoList,
   IWinnersNamesTickerProps,
   LocationSection,
-  SubscribeGemeV2,
-} from 'ui'
-
-import { winnersNames } from './winnersNames'
-import { VideoList, IVideoList } from 'ui'
+  SubscribeGemeTerra2,
+  VideoList,
+} from './components'
 import { IIFAPageProps } from './en'
+import { winnersNames } from './winnersNames'
 
 // Hero Section  Fr
 const IFAHeroSectionProps: IIFAHeroSectionProps = {
@@ -125,7 +125,7 @@ const composterSurveyProps: IComposterSurveyProps = {
 }
 
 // 订阅模块 Fr
-const subscribeGemeV2Props: ISubscribeGemeV2Props = {
+const subscribeGemeTerra2Props: ISubscribeGemeTerra2Props = {
   title: 'Découvrez GEME II',
   description: <>Intéressé ? Rejoignez la liste d'attente !</>,
   emailPlaceholder: 'Entrez votre email',
@@ -171,8 +171,8 @@ function IFAPageFr({ PrefetchLink, SubscribeComponent }: IIFAPageProps) {
 
       <ComposterSurvey {...composterSurveyProps} PrefetchLink={PrefetchLink} />
 
-      <SubscribeGemeV2
-        {...subscribeGemeV2Props}
+      <SubscribeGemeTerra2
+        {...subscribeGemeTerra2Props}
         SubscribeComponent={SubscribeComponent}
       />
     </>

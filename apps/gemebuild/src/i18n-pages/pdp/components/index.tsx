@@ -7,14 +7,16 @@ import { ScrollablePdpTabsWithAnchorOffset } from '../../../components/scrollabl
 import { ReactNode, useMemo } from 'react'
 
 import {
+  Faq,
   IPdpTabsProps,
   IPdpUserStoryTeamSectionsProps,
   LocaleType,
-  ReviewsScoreHeader,
 } from 'ui'
 import { ReviewsSectionModule } from '../../../components/reviews-section-module'
 import Compare, { IPdpCompareProps } from './Compare'
 import { IProductProps } from '../en'
+import { getPdpFaqProps } from './faq-data'
+import { ReviewsScoreHeader } from './reviews-score-header'
 
 export interface IPdpTabsText {
   intro: ReactNode
@@ -23,6 +25,7 @@ export interface IPdpTabsText {
   warranty: ReactNode
   userStories: ReactNode
   reviews: ReactNode
+  faq: ReactNode
 }
 
 export interface IPdpContentProps extends IProductProps {
@@ -106,6 +109,11 @@ function PdpContent(props: IPdpContentProps) {
               <ReviewsComponent />
             </>
           ),
+        },
+        {
+          id: 7,
+          tabLabel: tabs.faq,
+          tabPanel: <Faq {...getPdpFaqProps(locale)} />,
         },
       ],
     }),

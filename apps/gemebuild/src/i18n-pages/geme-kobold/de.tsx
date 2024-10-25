@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Faq } from 'ui'
 import { IGridWithOffsetIconsLiteProps } from '../../components/feature-sections'
 import EnjoyYourLife, { IEnjoyYourLifeProps } from './components/EnjoyYourLife'
+import { koboldFaqPropsDe } from './components/faq-data'
 import Features from './components/Features'
 import FeaturesWithIcons, { FeatureIcon } from './components/FeaturesWithIcons'
 import HeroSection, { IHeroSectionProps } from './components/HeroSection'
@@ -151,6 +153,13 @@ export function GemeKoboldPageDe() {
       <Features {...featuresProps} />
       <FeaturesWithIcons {...featuresWithIconsProps} />
       <EnjoyYourLife {...enjoyYourLifeProps} />
+
+      <div className="bg-gray-50">
+        <Faq
+          titleClassName="!text-xl md:!text-3xl !text-gray-900 !font-bold"
+          {...koboldFaqPropsDe}
+        />
+      </div>
     </>
   )
 }

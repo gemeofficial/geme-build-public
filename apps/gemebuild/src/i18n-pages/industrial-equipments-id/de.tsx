@@ -3,37 +3,24 @@ import EquipmentView, {
   IProductOverviewSplitWithImageOtherProps,
 } from './components/EquipmentView'
 
-// 1.翻译其他语言版本需要将Data中的数据一并翻译
-import { items } from '../../helpers/industrial-equipments/data/data-de'
 import type { TEquipment } from '../../helpers/industrial-equipments/data/data-en'
 
 import { industrialEquipmentXJsonLd } from '../../lib/serp'
-import {
-  equipmentCanonicalUrl,
-  findEquipmentById,
-} from '../../helpers/industrial-equipments/tool'
+import { findEquipmentById } from '../../helpers/industrial-equipments/tool'
 import { IEquipmentFeaturesProps } from './components/EquipmentFeatures'
 
-interface IPageParams {
-  locale: string
-  id: string
-}
+//  productOverviewSplitWithImage组件内容的配置数据  De版
+const productOverviewSplitWithImageOtherProps: IProductOverviewSplitWithImageOtherProps =
+  {
+    firstBreadcrumbsName: 'Alle Geräte',
+    btn1Label: `Lass uns reden`,
+    btn2Label: `Kontakt aufnehmen`,
+  }
 
-interface IPageProps {
-  params: IPageParams
-  searchParams?: Record<string, string | undefined>
-}
-
-//  2.productOverviewSplitWithImage组件内容的配置数据  De版
-const productOverviewSplitWithImageOtherProps: IProductOverviewSplitWithImageOtherProps = {
-  firstBreadcrumbsName: 'Alle Geräte',
-  btn1Label: `Lass uns reden`,
-  btn2Label: `Kontakt aufnehmen`,
-}
-
-
-//  3.EquipmentFeatures组件内容的配置数据  De版
-function generateEquipmentFeaturesProps(equipment: TEquipment): IEquipmentFeaturesProps {
+//  EquipmentFeatures组件内容的配置数据  De版
+function generateEquipmentFeaturesProps(
+  equipment: TEquipment,
+): IEquipmentFeaturesProps {
   return {
     equipment,
     tabNames: {
@@ -51,9 +38,9 @@ function generateEquipmentFeaturesProps(equipment: TEquipment): IEquipmentFeatur
         heading: 'Modulare Leistung',
         description: (
           <>
-            GEME sucht immer nach dem besten Gleichgewicht zwischen hoher Leistung
-            und niedrigem Energieverbrauch. Der Versuch, mit weniger Energieverbrauch
-            mehr Lebensmittelabfälle zu bewältigen.
+            GEME sucht immer nach dem besten Gleichgewicht zwischen hoher
+            Leistung und niedrigem Energieverbrauch. Der Versuch, mit weniger
+            Energieverbrauch mehr Lebensmittelabfälle zu bewältigen.
           </>
         ),
       },
@@ -69,14 +56,12 @@ function generateEquipmentFeaturesProps(equipment: TEquipment): IEquipmentFeatur
   }
 }
 
-
-function IndustrialEquipmentsIdPageDe({ params }: IPageProps) {
-  const equipmentId = params.id
-  const equipment = findEquipmentById(params.id, items)
-
-  if (equipment == null) {
-    throw new Error(`Kann Geräte anhand der ID nicht finden: ${equipmentId}`)
-  }
+function IndustrialEquipmentsIdPageDe({
+  equipment,
+}: {
+  equipment: ReturnType<typeof findEquipmentById>
+}) {
+  if (equipment == null) return
 
   const contentProps: IEquipmentViewProps = {
     productOverviewSplitWithImageOtherProps,
@@ -90,7 +75,7 @@ function IndustrialEquipmentsIdPageDe({ params }: IPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={industrialEquipmentXJsonLd(
           equipment.name,
-          equipment.id
+          equipment.id,
         )}
         key="industrial-equipment-x-jsonld"
       />

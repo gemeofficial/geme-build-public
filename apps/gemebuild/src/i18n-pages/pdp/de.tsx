@@ -26,6 +26,7 @@ const tabs: IPdpTabsText = {
   warranty: 'Garantie',
   userStories: 'Kundenfeedback',
   reviews: 'Bewertungen',
+  faq: 'FAQ',
 }
 
 // ----------------  产品页 Introduction模块内容配置 De start  ----------------------
@@ -39,7 +40,7 @@ const introProps: IPdpIntroProps = {
     bgImageSrc:
       '/assets/images/pdp-v2311/dividers/geme-with-compost-background-min.jpg',
     comparisonText: {
-      brfore: 'Vorher',
+      before: 'Vorher',
       after: 'Nachher',
     },
     bottomItems: [
@@ -88,7 +89,9 @@ const introProps: IPdpIntroProps = {
       <>
         <strong>400+</strong>
         <br />
-        Abfallarten
+        Abfall
+        <br />
+        -arten
       </>
     ),
   },
@@ -505,7 +508,7 @@ const warrantyProps = {
       icon: TruckIcon,
     },
     {
-      name: 'Ein Jahr Garantie',
+      name: 'Zwei Jahre Garantie',
       description: `Wir übernehmen die Reparatur oder den kostenlosen Austausch defekter Teile, wenn der ursprüngliche Defekt während der Garantiezeit auftritt.`,
       href: '/warranty',
       icon: ShieldCheckIcon,
@@ -524,11 +527,7 @@ const warrantyProps = {
 // 产品页 User Stories 模块配置内容 De
 const userStoryProps: IPdpUserStoryTeamSectionsProps = {
   title: 'Entdecken Sie die User-Stories von GEME-Kunden',
-  description: (
-    <>
-      Wie GEME das Leben unserer Kunden verändert hat
-    </>
-  ),
+  description: <>Wie GEME das Leben unserer Kunden verändert hat</>,
   people: [
     {
       id: 1,

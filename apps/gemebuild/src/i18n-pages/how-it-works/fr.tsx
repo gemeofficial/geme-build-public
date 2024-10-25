@@ -1,12 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import {
-  ExaminingReport,
-  IExaminingReportProps,
-  IInlinePalyerType,
+  IInlinePlayerType,
   InlinePlayer,
   type IOxygenCycleProps,
-  IUseCompostContrastProps,
-  ReviewsScoreHeader,
   ScrollTriggeredAnimatedOxygenCycle,
   SvgFoodWaste,
   SvgMicrobe,
@@ -14,21 +10,22 @@ import {
   SvgTemperature,
   SvgWaterDrop,
   SvgWood,
-  UseCompostContrast,
+  ImgAndTextSection,
+  IImgAndTextSectionProps,
 } from 'ui'
 
-import { ShortVideo, IShortVideoProps } from 'ui/src/how-it-works/ShortVideo'
-import { ILinkComponent } from '../../contexts/link-context'
-import { FC } from 'react'
-
-export interface IPdpIntroProps {
-  ReviewsComponent: FC<{}>
-  PrefetchLink?: ILinkComponent
-}
+import {
+  IUseCompostContrastProps,
+  UseCompostContrast,
+  IExaminingReportProps,
+  ExaminingReport,
+} from './components'
+import { ReviewsScoreHeader } from '../pdp/components/reviews-score-header'
+import { IHowItWorksProps } from './en'
 
 // page静态页面的内容 配置文件 Fr版
 // 短视频工作过程section
-const shortVideoProps: IShortVideoProps = {
+const shortVideoProps: IImgAndTextSectionProps = {
   title: 'Tas de compost dans une boîte',
   description: (
     <>
@@ -62,7 +59,7 @@ const shortVideoProps: IShortVideoProps = {
 }
 
 // 图文section
-const imageTextProps: IShortVideoProps = {
+const imageTextProps: IImgAndTextSectionProps = {
   title: 'Microbes, pas déshydrater',
   description: (
     <>
@@ -330,7 +327,7 @@ const useCompostContrastProps: IUseCompostContrastProps = {
 }
 
 // YouTube 视频播放器
-const inlinePlayerProps: IInlinePalyerType = {
+const inlinePlayerProps: IInlinePlayerType = {
   title: `Voir, c'est croire`,
   description: (
     <>
@@ -342,16 +339,20 @@ const inlinePlayerProps: IInlinePalyerType = {
   ),
 
   type: 'youtube',
-  videoSrcUrlOrVidioId: 'asNRoqkC_BA',
+  videoSrcUrlOrVideoId: 'asNRoqkC_BA',
   mixpanelFrom: 'Lecteur intégré de la page produit',
 }
 
-function HowItWorksFr({ ReviewsComponent }: IPdpIntroProps) {
+function HowItWorksFr({ ReviewsComponent }: IHowItWorksProps) {
   return (
     <>
+      <h1 className="sr-only">
+        Comment fonctionne le composteur GEME : Transformer les déchets
+        alimentaires en compost riche en nutriments
+      </h1>
       <div className="py-8 lg:pt-6 lg:pb-16">
-        <ShortVideo {...shortVideoProps} />
-        <ShortVideo {...imageTextProps} />
+        <ImgAndTextSection {...shortVideoProps} />
+        <ImgAndTextSection {...imageTextProps} />
         <ExaminingReport {...gemeComposterImageProps} />
         <ExaminingReport {...gemeKoboldImageProps} />
         <ScrollTriggeredAnimatedOxygenCycle {...oxygenCycleProps} />
