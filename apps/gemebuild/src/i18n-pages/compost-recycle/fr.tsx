@@ -1,4 +1,4 @@
-import { FaqListSection, IFaqListSectionProps } from 'ui'
+import { Faq, IFaqProps } from 'ui'
 import CardSection, { ICardSectionProps } from './components/CardSection'
 import HeroSection, { IHeroSection } from './components/HeroSection'
 import RecycleSection, {
@@ -88,7 +88,7 @@ const recycleSectionProps: IRecycleSectionProps = {
 }
 
 // Faqs
-const faqListSectionProps: IFaqListSectionProps = {
+const faqListSectionProps: IFaqProps = {
   title: 'Frequently asked questions',
   description: '',
   faqs: [
@@ -191,7 +191,7 @@ export function CompostRecyclePageFr({
       <CardSection2 {...cardSectionProps2} />
       <RecycleSection {...recycleSectionProps} />
       <div className="bg-[#FCFCFC]">
-        <FaqListSection {...faqListSectionProps} />
+        <Faq {...faqListSectionProps} />
       </div>
     </>
   )
