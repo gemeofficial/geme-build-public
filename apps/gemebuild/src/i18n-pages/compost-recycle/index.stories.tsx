@@ -10,6 +10,8 @@ import {
   CompostRecycleWatingListPageEn,
   CompostRecycleWatingListPageFr,
   CompostRecycleWatingListPageDe,
+  CompostRecycleLocationsPageIt,
+  CompostRecycleWatingListPageIt,
 } from './index'
 import { ILocationsCardSectionProps } from './locations-page/components/LocationsCardSection'
 
@@ -102,6 +104,14 @@ export const LocationsDe: Story = {
     />
   ),
 }
+export const LocationsIt: Story = {
+  name: 'locations-it',
+  render: () => (
+    <CompostRecycleLocationsPageIt
+      compostRecycleCitys={compostRecycleCitysExample}
+    />
+  ),
+}
 
 const exampleCityItem = {
   title: 'Denver, Colorado',
@@ -110,16 +120,21 @@ const exampleCityItem = {
 }
 
 export const WatingListEn: Story = {
-  name: 'watiung-list-en',
+  name: 'wating-list-en',
   render: () => <CompostRecycleWatingListPageEn cityItem={exampleCityItem} />,
 }
 
 export const WatingListFr: Story = {
-  name: 'watiung-list-fr',
+  name: 'wating-list-fr',
   render: () => <CompostRecycleWatingListPageFr cityItem={exampleCityItem} />,
 }
 
 export const WatingListDe: Story = {
-  name: 'watiung-list-de',
+  name: 'wating-list-de',
   render: () => <CompostRecycleWatingListPageDe cityItem={exampleCityItem} />,
+}
+
+export const WatingListIt: Story = {
+  name: 'wating-list-it',
+  render: () => <CompostRecycleWatingListPageIt cityItem={exampleCityItem} />,
 }

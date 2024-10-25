@@ -13,7 +13,7 @@ import WatingListSection, {
 import { ICompostRecycleWatingListPageProps } from './en'
 
 // hero Section
-const heroSectionprops: IHeroSectionProps = {
+const heroSectionProps: IHeroSectionProps = {
   city: '',
   bgImageUrl: '/assets/images/compost-recycle/citys/Whistler.jpg',
   title: 'Finally {city}! A local food waste recycling program',
@@ -139,12 +139,12 @@ export function CompostRecycleWatingListPageDe({
   WatingListFC,
   cityItem,
 }: ICompostRecycleWatingListPageProps) {
-  heroSectionprops.city = cityItem.title
-  heroSectionprops.bgImageUrl = cityItem.imageUrl
+  heroSectionProps.city = cityItem.title
+  heroSectionProps.bgImageUrl = cityItem.imageUrl
   watingListSectionProps.city = cityItem.title
   return (
     <>
-      <HeroSection {...heroSectionprops} PrefetchLink={PrefetchLink} />
+      <HeroSection {...heroSectionProps} PrefetchLink={PrefetchLink} />
       <WatingListSection
         {...watingListSectionProps}
         WatingListFC={WatingListFC}

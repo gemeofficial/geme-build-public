@@ -134,7 +134,7 @@ const reviewsProps: IReviewsProps = {
   ],
 }
 
-export function CompostRecycleWatingListPageFr({
+export function CompostRecycleWatingListPageIt({
   PrefetchLink,
   WatingListFC,
   cityItem,
