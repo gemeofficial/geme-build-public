@@ -1,4 +1,4 @@
-import 'ui/src/css/ui-global.css'
+import 'ui/css/ui-global.css'
 import type { Preview } from '@storybook/react'
 
 const preview: Preview = {
