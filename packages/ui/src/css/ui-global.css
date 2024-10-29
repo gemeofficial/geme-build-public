@@ -1,0 +1,14 @@
+@import 'tailwindcss/base';
+@import './fonts-poppins/fonts.css';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+@layer components {
+}
+
+html,
+body {
+  font-family: 'Poppins', 'system-ui', 'inter' !important;
+}

@@ -21,10 +21,10 @@ export function ComposterSurvey({
         compact
       >
         <div className="md:text-center lg:text-left">
-          <div className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl text-white font-bold font-v2311">
+          <div className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl text-white font-bold font-poppins">
             {title}
           </div>
-          <div className="lg:text-2xl text-white font-bold font-v2311 mt-4">
+          <div className="lg:text-2xl text-white font-bold font-poppins mt-4">
             {desc}
           </div>
         </div>

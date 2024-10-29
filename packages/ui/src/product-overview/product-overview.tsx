@@ -153,7 +153,7 @@ function ProductOverviewV2311({
 
           <div className="mt-4 md:mt-8 xl:order-1">
             <p className="flex items-center justify-center xl:justify-start">
-              <span className="font-v2311 text-[28px] md:text-[48px] xl:text-[64px] font-bold leading-none text-white xl:text-v2311-primary bg-[#047857] xl:bg-white rounded-lg mx-auto xl:m-0 py-1 md:py-2 xl:py-0 px-8 md:px-16 xl:px-0 ">
+              <span className="font-poppins text-[28px] md:text-[48px] xl:text-[64px] font-bold leading-none text-white xl:text-v2311-primary bg-[#047857] xl:bg-white rounded-lg mx-auto xl:m-0 py-1 md:py-2 xl:py-0 px-8 md:px-16 xl:px-0 ">
                 {productOption?.price}
               </span>
             </p>

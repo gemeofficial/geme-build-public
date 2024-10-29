@@ -424,9 +424,9 @@ function ContentSection5({
               key={id}
               className=" w-full relative xl:flex xl:flex-col xl:items-start xl:even:pt-24"
             >
-              <div className="absolute top-4 md:top-8 left-4 md:left-8 w-7 md:w-16 h-7 md:h-16 flex items-center justify-center bg-v2311-bg-dark-green  border-2 border-v2311-bg-dark-green rounded-full text-center  font-v2311 font-bold text-white text-[24px] md:text-[48px] xl:static xl:rounded-none xl:w-auto xl:h-auto xl:bg-transparent xl:border-none xl:text-v2311-primary xl:text-[64px] xl:font-bold">
+              <div className="absolute top-4 md:top-8 left-4 md:left-8 w-7 md:w-16 h-7 md:h-16 flex items-center justify-center bg-v2311-bg-dark-green  border-2 border-v2311-bg-dark-green rounded-full text-center  font-poppins font-bold text-white text-[24px] md:text-[48px] xl:static xl:rounded-none xl:w-auto xl:h-auto xl:bg-transparent xl:border-none xl:text-v2311-primary xl:text-[64px] xl:font-bold">
                 {id}
-                <span className="whitespace-nowrap absolute invisible xl:visible ml-4 -mb-4 flex align-bottom rounded-full font-v2311 text-white text-[28px] xl:static xl:w-auto xl:h-auto xl:bg-transparent xl:text-[#808080]">
+                <span className="whitespace-nowrap absolute invisible xl:visible ml-4 -mb-4 flex align-bottom rounded-full font-poppins text-white text-[28px] xl:static xl:w-auto xl:h-auto xl:bg-transparent xl:text-[#808080]">
                   {' '}
                   {stepText}
                 </span>

@@ -47,7 +47,7 @@ function CompareSection({
   className?: string
 }) {
   return (
-    <div className={clsx('bg-[#f8f8f8] font-v2311 font-medium', className)}>
+    <div className={clsx('bg-[#f8f8f8] font-poppins font-medium', className)}>
       <SectionContainer>
         <SectionTitle>{title}</SectionTitle>
         <SectionDescription className="my-4">{description}</SectionDescription>

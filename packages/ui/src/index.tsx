@@ -1,4 +1,4 @@
-import './styles.css'
+import './css/ui-global.css'
 
 export interface IMultiLanguageConfig<T> {
   en: T

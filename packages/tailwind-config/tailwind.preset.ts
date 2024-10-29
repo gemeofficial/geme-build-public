@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss'
-import defaultTheme from 'tailwindcss/defaultTheme'
 import typography from '@tailwindcss/typography'
 import aspectRatio from '@tailwindcss/aspect-ratio'
 import forms from '@tailwindcss/forms'
@@ -10,7 +9,8 @@ const tailwindPreset: Config = {
   theme: {
     extend: {
       fontFamily: {
-        v2311: ['SourceHanSansCN', ...defaultTheme.fontFamily?.sans],
+        // 配置字体样式类 使用方法：className="font-poppins"
+        poppins: ['Poppins', 'system-ui', 'inter']
       },
       colors: {
         v2311: {

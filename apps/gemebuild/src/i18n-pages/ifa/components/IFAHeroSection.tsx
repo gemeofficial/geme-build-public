@@ -48,7 +48,7 @@ export function IFAHeroSection({
   locale,
 }: IIFAHeroSectionProps) {
   return (
-    <div className="relative h-[1100px] md:h-[1300px] lg:h-[1400px] xl:h-[800px] 2xl:h-screen font-v2311">
+    <div className="relative h-[1100px] md:h-[1300px] lg:h-[1400px] xl:h-[800px] 2xl:h-screen font-poppins">
       <Image
         src={bgImageUrl}
         height={1080}
