@@ -1,5 +1,5 @@
 @import 'tailwindcss/base';
-@import './fonts-poppins/fonts.css';
+@import './fonts-loader.css';
 
 @import 'tailwindcss/components';
 
