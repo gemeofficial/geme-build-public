@@ -451,7 +451,7 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
   videos: [
     {
       type: 'youtube',
-      src: 'https://youtu.be/AO2PrNd2cKs', // 法国老铁视频德语版
+      src: 'https://youtu.be/_OHEA7YgZ04', // 法国老铁视频德语版
       coverImageUrl: '/assets/images/user-stories-videos/youtube4.png',
       coverAlt: 'Bewertungsvideo von bricolou, Frankreich',
       buttonText: '@bricolou',
