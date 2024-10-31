@@ -47,13 +47,13 @@ function ProductOptions({
             <>
               <RadioGroup.Label
                 as="h3"
-                className=" v2311-font-body font-bold text-v2311-fg-dark-black"
+                className=" v2311-body-large font-bold text-v2311-fg-dark-black"
               >
                 {productOpt.title}
               </RadioGroup.Label>
               <RadioGroup.Description
                 as="div"
-                className="mt-1 v2311-font-img-desc text-[#999] "
+                className="mt-1 v2311-body-medium text-[#999] "
               >
                 {productOpt.description}
               </RadioGroup.Description>

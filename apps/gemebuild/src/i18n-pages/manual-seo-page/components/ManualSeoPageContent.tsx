@@ -19,7 +19,7 @@ export default function ManualSeoPageContent({
   }
   return (
     <SectionContainer>
-      <h1 className="v2311-font-h1 text-v2311-primary text-left xl:text-center">
+      <h1 className="v2311-title-h2 text-v2311-primary text-left xl:text-center">
         {title}
       </h1>
       <SectionDescription className="mt-4 md:mt-8">

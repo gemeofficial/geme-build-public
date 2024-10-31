@@ -12,7 +12,7 @@ export function SectionTitle({
   return (
     <h2
       className={clsx(
-        'v2311-font-h1 text-v2311-primary text-left xl:text-center',
+        'v2311-title-h2 text-v2311-primary text-left xl:text-center',
         className,
       )}
     >

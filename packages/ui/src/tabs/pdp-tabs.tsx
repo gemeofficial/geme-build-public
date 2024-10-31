@@ -49,7 +49,7 @@ function PdpTabs({ tabs }: IPdpTabsProps) {
   return (
     <Tab.Group>
       <div className="bg-[#047857]">
-        <Tab.List className=" v2311-font-h3 md:v2311-font-link-selected xl:v2311-font-body text-white py-2 px-1 md:py-6 md:px-8 flex flex-row space-x-4 md:space-x-6 xl:space-x-12 xl:max-w-7xl xl:mx-auto">
+        <Tab.List className=" v2311-title-h5 md:v2311-button-large-selected xl:v2311-body-large text-white py-2 px-1 md:py-6 md:px-8 flex flex-row space-x-4 md:space-x-6 xl:space-x-12 xl:max-w-7xl xl:mx-auto">
           {tabs.map((tab) => (
             <Tab key={tab.id}>
               {({ selected }) => (

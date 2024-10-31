@@ -68,7 +68,7 @@ function PdpIntroSection1({
             </SectionDescription>
           )}
         </div>
-        <div className=" pb-4 sm:pb-0 md:pb-[12px] xl:pb-[12px] flex-1 flex items-end justify-around xl:gap-[320px] xl:justify-center v2311-font-h2 md:v2311-font-body xl:v2311-font-h2 text-v2311-primary text-center">
+        <div className=" pb-4 sm:pb-0 md:pb-[12px] xl:pb-[12px] flex-1 flex items-end justify-around xl:gap-[320px] xl:justify-center v2311-title-h3 md:v2311-body-large xl:v2311-title-h3 text-v2311-primary text-center">
           <div>
             {comparisonText?.before || 'Before'}
             <br />
@@ -86,7 +86,7 @@ function PdpIntroSection1({
               return (
                 <div
                   key={item.id}
-                  className="v2311-font-img-desc text-white bg-v2311-fg-dark-black px-2 py-1 md:px-4 md:py-2 rounded-xl text-center"
+                  className="v2311-body-medium text-white bg-v2311-fg-dark-black px-2 py-1 md:px-4 md:py-2 rounded-xl text-center"
                 >
                   {item.description}
                 </div>
@@ -110,7 +110,7 @@ function PdpIntroSection3({ title }: IPdpIntroSection3Props) {
   return (
     <div className="px-4 pb-8 md:px-8 md:pb-16 flex flex-col justify-center items-center w-full">
       <SvgGreenArrow />
-      <p className=" v2311-font-h2 text-v2311-primary ">{title}</p>
+      <p className=" v2311-title-h3 text-v2311-primary ">{title}</p>
     </div>
   )
 }
@@ -175,13 +175,13 @@ function PdpIntroSection5({ title, leftNotes }: IPdpIntroSection5Props) {
         <div className=" absolute z-10 inset-0 flex flex-col items-center justify-end xl:max-w-7xl  xl:mx-auto">
           <div className=" w-full mb-16 pl-8 md:mb-24 md:pl-20 lg:mb-72 xl:mb-32 xl:pl-80">
             {leftNotes && (
-              <p className=" v2311-font-img-desc xl:v2311-font-h3 text-white text-center bg-[#047857] rounded-full w-20 h-20 md:w-28 md:h-28 xl:w-32 xl:h-32 py-3 px-3 ">
+              <p className=" v2311-body-medium xl:v2311-title-h5 text-white text-center bg-[#047857] rounded-full w-20 h-20 md:w-28 md:h-28 xl:w-32 xl:h-32 py-3 px-3 ">
                 {leftNotes}
               </p>
             )}
           </div>
           <div className=" p-4 xl:p-8 ">
-            {title && <h2 className=" v2311-font-h2 text-white ">{title}</h2>}
+            {title && <h2 className=" v2311-title-h3 text-white ">{title}</h2>}
           </div>
         </div>
       </div>
@@ -278,7 +278,7 @@ function PdpIntroSection6({
     >
       {title && <SectionTitle>{title}</SectionTitle>}
       {description && (
-        <SectionDescription className=" mt-4 md:mt-8 xl:mt-4 hidden xl:block xl:v2311-font-h3 xl:font-normal">
+        <SectionDescription className=" mt-4 md:mt-8 xl:mt-4 hidden xl:block xl:v2311-title-h5 xl:font-normal">
           {description}
         </SectionDescription>
       )}
@@ -302,8 +302,8 @@ function PdpIntroSection6({
                   className={classNames(
                     'text-center',
                     item.featured
-                      ? 'v2311-font-h2'
-                      : 'v2311-font-body text-v2311-text-gary xl:text-white mt-4',
+                      ? 'v2311-title-h3'
+                      : 'v2311-body-large text-v2311-text-gary xl:text-white mt-4',
                   )}
                 >
                   {item.title}
@@ -342,10 +342,10 @@ function PdpIntroSection6({
                 {item?.features && (
                   <ul
                     className={classNames(
-                      'v2311-font-body xl:v2311-font-h3 xl:font-normal',
+                      'v2311-body-large xl:v2311-title-h5 xl:font-normal',
                       item.featured
                         ? 'flex-1'
-                        : ' md:v2311-font-img-desc xl:v2311-font-body mr-2 md:mr-4 flex-[3] text-v2311-text-gary xl:text-white',
+                        : ' md:v2311-body-medium xl:v2311-body-large mr-2 md:mr-4 flex-[3] text-v2311-text-gary xl:text-white',
                     )}
                   >
                     {item.features.map((feature, idx) => {
@@ -433,10 +433,10 @@ function PdpIntroSection7({
           <div className="hidden xl:block xl:flex-1"></div>
           <div className=" px-14 pt-8 md:px-8 md:pt-16 xl:px-0 xl:pt-[12%] text-center xl:text-left xl:flex-1">
             {title && (
-              <h2 className="v2311-font-h1 text-v2311-primary">{title}</h2>
+              <h2 className="v2311-title-h2 text-v2311-primary">{title}</h2>
             )}
             {description && (
-              <p className="v2311-font-h2 xl:v2311-font-h3 xl:font-normal text-v2311-primary mt-4 md:mt-8 xl:mt-4">
+              <p className="v2311-title-h3 xl:v2311-title-h5 xl:font-normal text-v2311-primary mt-4 md:mt-8 xl:mt-4">
                 {description}
               </p>
             )}
@@ -447,7 +447,7 @@ function PdpIntroSection7({
                 return (
                   <li
                     key={`${feature}_${idx}`}
-                    className="v2311-font-body text-v2311-primary"
+                    className="v2311-body-large text-v2311-primary"
                   >
                     {feature}
                   </li>
@@ -594,7 +594,7 @@ function PdpIntroSection8({
                           className="w-12 h-12 md:w-16 md:h-16"
                         />
 
-                        <p className=" v2311-font-body text-v2311-fg-black xl:text-v2311-fg-dark-black">
+                        <p className=" v2311-body-large text-v2311-fg-black xl:text-v2311-fg-dark-black">
                           {feature.feature}
                         </p>
                       </li>
@@ -605,7 +605,7 @@ function PdpIntroSection8({
               <div className="mt-4">
                 {linkText && linkUrl && (
                   <a
-                    className=" v2311-font-h2 bg-[#047857] text-white w-full xl:w-auto flex items-center justify-center mt-4 md:mt-8 rounded-xl xl:rounded-full py-2 md:py-3 xl:px-8 xl:inline-flex"
+                    className=" v2311-title-h3 bg-[#047857] text-white w-full xl:w-auto flex items-center justify-center mt-4 md:mt-8 rounded-xl xl:rounded-full py-2 md:py-3 xl:px-8 xl:inline-flex"
                     href={linkUrl}
                   >
                     {linkText}

@@ -2,6 +2,9 @@ import { PluginCreator } from 'tailwindcss/types/config'
 
 const v2311FontsPlugin: PluginCreator = ({ addComponents }) => {
   addComponents({
+    '.v2311-title-h0': {
+      '@apply font-poppins font-semibold text-[72px] leading-[1.15]': {}, // 特大标题
+    },
     '.v2311-title-h1': {
       '@apply font-poppins font-semibold text-[58px] leading-[1.15]': {}, // 页面主标题、大型展示标题
     },
@@ -52,6 +55,9 @@ const v2311FontsPlugin: PluginCreator = ({ addComponents }) => {
     },
     '.v2311-label': {
       '@apply font-poppins font-medium text-[12px] leading-[1.25]': {}, // 标签、表单标题
+    },
+    '.v2311-font-link-selected': {
+      '@apply font-poppins font-bold text-[18px]': {}, // 选中状态的链接文字
     },
   })
 }

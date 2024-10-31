@@ -12,7 +12,7 @@ export function AboutTitle({
   return (
     <h2
       className={clsx(
-        'tracking-tight text-emerald-600 v2311-font-h1',
+        'tracking-tight text-emerald-600 v2311-title-h2',
         className,
       )}
     >

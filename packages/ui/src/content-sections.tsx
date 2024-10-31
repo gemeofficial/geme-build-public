@@ -504,7 +504,7 @@ function ContentSection6({ steps }: IContentSection6Props): JSX.Element {
       {steps?.map((step) => (
         <div key={step.id} className=" flex-1 flex flex-col items-center ">
           <step.Icon className=" w-[80px] h-[80px] md:w-[172px] md:h-[172px] xl:w-[144px] xl:h-[144px] " />
-          <p className="v2311-font-img-desc text-v2311-fg-black text-center mt-4 md:mt-8 xl:mt-4">
+          <p className="v2311-body-medium text-v2311-fg-black text-center mt-4 md:mt-8 xl:mt-4">
             {step.description}
           </p>
         </div>
@@ -624,7 +624,7 @@ function ContentSection6Fixed({
       </div>
       <div className=" xl:flex-1 w-full">
         {title && (
-          <h2 className=" v2311-font-h1 text-v2311-primary hidden xl:block">
+          <h2 className=" v2311-title-h2 text-v2311-primary hidden xl:block">
             {title}
           </h2>
         )}
@@ -733,12 +733,12 @@ function ContentSection7({
       </div>
       <div className=" xl:flex-1 w-full ">
         {title && (
-          <h2 className=" v2311-font-h1 text-v2311-primary hidden xl:block">
+          <h2 className=" v2311-title-h2 text-v2311-primary hidden xl:block">
             {title}
           </h2>
         )}
         {description && (
-          <p className=" mt-4 md:mt-8 v2311-font-body text-v2311-fg-black hidden xl:block">
+          <p className=" mt-4 md:mt-8 v2311-body-large text-v2311-fg-black hidden xl:block">
             {description}
           </p>
         )}
@@ -812,7 +812,7 @@ function ContentSection8({
         })}
       </div>
       {description && (
-        <p className="v2311-font-body text-v2311-primary  text-center mt-8 hidden xl:block">
+        <p className="v2311-body-large text-v2311-primary  text-center mt-8 hidden xl:block">
           {description}
         </p>
       )}

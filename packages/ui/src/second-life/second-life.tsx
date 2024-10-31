@@ -45,7 +45,7 @@ function UiSectionsSecondLife({
         <h2 className="sr-only">
           {titleLeftPart} {titleRightPart}
         </h2>
-        <p aria-hidden="true" className="v2311-font-h0 text-[#5c2f13]">
+        <p aria-hidden="true" className="v2311-title-h1 text-[#5c2f13]">
           <ScrollTriggeredAnimatedHeadlineTop
             titleLeftPart={titleLeftPart}
             titleRightPart={titleRightPart}
@@ -62,7 +62,7 @@ function UiSectionsSecondLife({
           </div>
         </div>
         <div className="container !w-auto">
-          <p className=" v2311-font-body text-[#5c2f13] font-medium">{description}</p>
+          <p className=" v2311-body-large text-[#5c2f13] font-medium">{description}</p>
         </div>
       </div>
       <div className="articles xl:max-w-7xl xl:mx-auto !px-4 !py-8 md:!px-8 md:!py-16 xl:!py-[80px]">
@@ -77,10 +77,10 @@ function UiSectionsSecondLife({
               <picture className="ui-fragments-image isLoaded b-r">
                 <Img {...image} />
               </picture>
-              <h3 className="v2311-font-h2 text-v2311-fg-dark-black">
+              <h3 className="v2311-title-h3 text-v2311-fg-dark-black">
                 {title}
               </h3>
-              <div className="v2311-font-body text-v2311-fg-dark-black">
+              <div className="v2311-body-large text-v2311-fg-dark-black">
                 <p>{description}</p>
               </div>
             </article>
@@ -101,7 +101,7 @@ function UiSectionsEnd({
         <h2 className="sr-only">
           {endTitleLeftPart} {endTitleRightPart}
         </h2>
-        <p aria-hidden="true" className="v2311-font-h0 text-[#F5CB53]">
+        <p aria-hidden="true" className="v2311-title-h1 text-[#F5CB53]">
           <ScrollTriggeredAnimatedHeadlineBottom
             endTitleLeftPart={endTitleLeftPart}
             endTitleRightPart={endTitleRightPart}

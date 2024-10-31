@@ -40,9 +40,9 @@ function NewsletterCenteredCard({
   return (
     <div className="bg-v2311-bg-dark-green ">
       <section className=" px-4 md:px-8 py-8 mx-auto md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center text-center">
-        {title && <h2 className="v2311-font-h1 text-white">{title}</h2>}
+        {title && <h2 className="v2311-title-h2 text-white">{title}</h2>}
         {description && (
-          <p className="v2311-font-body text-white mt-4 md:mt-8">
+          <p className="v2311-body-large text-white mt-4 md:mt-8">
             {description}
           </p>
         )}
@@ -55,7 +55,7 @@ function NewsletterCenteredCard({
             {emailLabel}
           </label>
           <input
-            className="w-full flex-auto v2311-font-body xl:v2311-font-h3 xl:font-normal text-v2311-fg-dark-black border-solid border-2 border-white rounded-xl py-1 md:py-2 xl:px-4  focus:border-v2311-bg-light-green focus:ring-v2311-bg-light-green"
+            className="w-full flex-auto v2311-body-large xl:v2311-title-h5 xl:font-normal text-v2311-fg-dark-black border-solid border-2 border-white rounded-xl py-1 md:py-2 xl:px-4  focus:border-v2311-bg-light-green focus:ring-v2311-bg-light-green"
             id="email-address"
             name={emailInputName}
             type="email"
@@ -64,7 +64,7 @@ function NewsletterCenteredCard({
             required
           />
           <button
-            className=" v2311-font-body font-bold xl:v2311-font-h3 text-white border-solid border-2 border-white rounded-xl px-4 py-1 md:py-2  focus:border-v2311-bg-light-green focus:ring-v2311-bg-light-green"
+            className=" v2311-body-large font-bold xl:v2311-title-h5 text-white border-solid border-2 border-white rounded-xl px-4 py-1 md:py-2  focus:border-v2311-bg-light-green focus:ring-v2311-bg-light-green"
             type="submit"
           >
             {submitButtonLabel}

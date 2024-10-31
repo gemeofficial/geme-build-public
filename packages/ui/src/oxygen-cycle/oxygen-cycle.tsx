@@ -19,10 +19,10 @@ const exampleOxygenCycleProps: IOxygenCycleProps = {
       content: (
         <>
           <SvgOxygen className="w-8 h-8 md:w-16 md:h-16" />
-          <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+          <h3 className=" v2311-body-large md:v2311-title-h5 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Plenty of oxygen Step 1 O2
           </h3>
-          <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
+          <p className=" v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 ">
             How to get the right recipe? By giving air to microbes! First, mix
             the organic material with a carbon source, such as wood chips. Then
             they are arranged and worked mechanically, allowing air to circulate
@@ -36,10 +36,10 @@ const exampleOxygenCycleProps: IOxygenCycleProps = {
       content: (
         <>
           <SvgOxygen className="w-8 h-8 md:w-16 md:h-16" />
-          <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+          <h3 className=" v2311-body-large md:v2311-title-h5 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Plenty of oxygen Step 2 water
           </h3>
-          <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
+          <p className=" v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 ">
             How to get the right recipe? By giving air to microbes! First, mix
             the organic material with a carbon source, such as wood chips. Then
             they are arranged and worked mechanically, allowing air to circulate
@@ -53,10 +53,10 @@ const exampleOxygenCycleProps: IOxygenCycleProps = {
       content: (
         <>
           <SvgOxygen className="w-8 h-8 md:w-16 md:h-16" />
-          <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+          <h3 className=" v2311-body-large md:v2311-title-h5 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Plenty of oxygen Step 3 gabage
           </h3>
-          <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
+          <p className=" v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 ">
             How to get the right recipe? By giving air to microbes! First, mix
             the organic material with a carbon source, such as wood chips. Then
             they are arranged and worked mechanically, allowing air to circulate
@@ -70,10 +70,10 @@ const exampleOxygenCycleProps: IOxygenCycleProps = {
       content: (
         <>
           <SvgOxygen className="w-8 h-8 md:w-16 md:h-16" />
-          <h3 className=" v2311-font-body md:v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+          <h3 className=" v2311-body-large md:v2311-title-h5 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Plenty of oxygen 4 DONE!
           </h3>
-          <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 ">
+          <p className=" v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 ">
             How to get the right recipe? By giving air to microbes! First, mix
             the organic material with a carbon source, such as wood chips. Then
             they are arranged and worked mechanically, allowing air to circulate
