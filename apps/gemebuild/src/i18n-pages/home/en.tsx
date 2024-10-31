@@ -462,7 +462,7 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
   videos: [
     {
       type: 'youtube',
-      src: 'https://youtu.be/Q4CMry3ZYNo', // 美国小哥广告片英语版
+      src: 'https://youtu.be/qK1Jqo2LmiA?si=tB5oh4czkGyETsv8', // 美国小哥广告片英语版
       coverImageUrl: '/assets/images/user-stories-videos/@Ted.png',
       coverAlt:
         'Realize composting at home without odor and perfectly solve the problem of Winter composting.',
@@ -546,12 +546,12 @@ export interface IHomePageProps {
 function HomePageEn({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
   heroSection1Props.LinkComponent = PrefetchLink
   heroSectionSwiperProps.LinkComponent = PrefetchLink
-  const isOpenSwiperContent = true
-  // const isOpenSwiperContent =
-  //   process.env.NEXT_PUBLIC_HOME_HERO_SWIPER &&
-  //   process.env.NEXT_PUBLIC_HOME_HERO_SWIPER == 'true'
-  //     ? true
-  //     : false
+  // const isOpenSwiperContent = true
+  const isOpenSwiperContent =
+    process.env.NEXT_PUBLIC_HOME_HERO_SWIPER &&
+    process.env.NEXT_PUBLIC_HOME_HERO_SWIPER == 'true'
+      ? true
+      : false
 
   return (
     <>
