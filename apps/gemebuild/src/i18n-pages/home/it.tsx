@@ -452,28 +452,28 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
   videos: [
     {
       type: 'youtube',
-      src: 'https://youtu.be/TwCYDZgoUl0?si=w5mzwn4dQJr6x0vD',
+      src: 'https://youtu.be/EVLtoHGCQyc', // 英国小哥广告片意大利语版
       coverImageUrl: '/assets/images/user-stories-videos/youtube.png',
-      coverAlt: "Recensioni sull'uso reale da Amazon",
-      buttonText: '@Mister and Miss Ginger Jones',
+      coverAlt: "Real composter vs other dehydrate food recyclers",
+      buttonText: '@GEME',
     },
     {
       type: 'youtube',
-      src: 'https://youtu.be/-qkjLB3GcKo',
+      src: 'https://youtu.be/X1vxkVKDjxA', // 亚马逊测评意大利语版
       coverImageUrl: '/assets/images/user-stories-videos/youtube2.png',
-      coverAlt: 'Compostatore reale vs altri riciclatori di cibo disidratato',
+      coverAlt: 'Real life usage reviews from Amazon',
       buttonText: '@Mister and Miss Ginger Jones',
     },
     {
       type: 'youtube',
-      src: 'https://youtu.be/CVoDNDONFAk?t=979',
+      src: 'https://youtu.be/qeCBFk9pBwk', // 英国老铁测评意大利语版
       coverImageUrl: '/assets/images/user-stories-videos/youtube3.png',
       coverAlt: 'Video di recensione di Benson Chik, Regno Unito',
       buttonText: '@Benson Chik',
     },
     {
       type: 'youtube',
-      src: 'https://youtu.be/bYzh9ZUJKxs?t=845',
+      src: 'https://youtu.be/AO2PrNd2cKs', // 法国老铁视频意大利语版
       coverImageUrl: '/assets/images/user-stories-videos/youtube4.png',
       coverAlt: 'Review video from bricolou, France',
       buttonText: '@bricolou',

@@ -667,28 +667,28 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
   videos: [
     {
       type: 'youtube',
-      src: 'https://youtu.be/bYzh9ZUJKxs?t=845',
+      src: 'https://youtu.be/whY_sbmAbAI', // 法国老铁视频法语版
       coverImageUrl: '/assets/images/user-stories-videos/youtube4.png',
       coverAlt: 'Review video from bricolou, France',
       buttonText: '@bricolou',
     },
     {
       type: 'youtube',
-      src: 'https://youtu.be/TwCYDZgoUl0?si=w5mzwn4dQJr6x0vD',
+      src: 'https://youtu.be/_OHEA7YgZ04', // 英国小哥广告片法语版
       coverImageUrl: '/assets/images/user-stories-videos/youtube.png',
+      coverAlt: 'Real composter vs other dehydrate food recyclers',
+      buttonText: '@GEME',
+    },
+    {
+      type: 'youtube',
+      src: 'https://youtu.be/zZxdMNS7Ok4', // 亚马逊测评法语版
+      coverImageUrl: '/assets/images/user-stories-videos/youtube2.png',
       coverAlt: 'Real life usage reviews from Amazon',
       buttonText: '@Mister and Miss Ginger Jones',
     },
     {
       type: 'youtube',
-      src: 'https://youtu.be/-qkjLB3GcKo',
-      coverImageUrl: '/assets/images/user-stories-videos/youtube2.png',
-      coverAlt: 'Real composter vs other dehydrate food recyclers',
-      buttonText: '@Mister and Miss Ginger Jones',
-    },
-    {
-      type: 'youtube',
-      src: 'https://youtu.be/CVoDNDONFAk?t=979',
+      src: 'https://youtu.be/czKitvFRXv8', // 英国老铁测评法语版
       coverImageUrl: '/assets/images/user-stories-videos/youtube3.png',
       coverAlt: 'Review video from Benson Chik, United Kingdom',
       buttonText: '@Benson Chik',
