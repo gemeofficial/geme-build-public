@@ -462,29 +462,30 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
   videos: [
     {
       type: 'youtube',
-      src: 'https://youtu.be/TwCYDZgoUl0?si=w5mzwn4dQJr6x0vD',
-      coverImageUrl: '/assets/images/user-stories-videos/youtube.png',
+      src: 'https://youtu.be/Q4CMry3ZYNo', // 美国小哥广告片英语版
+      coverImageUrl: '/assets/images/user-stories-videos/@Ted.png',
+      coverAlt:
+        'Realize composting at home without odor and perfectly solve the problem of Winter composting.',
+      buttonText: '@Ted',
+    },
+    {
+      type: 'youtube',
+      src: 'https://youtu.be/pY4T7Z0zNSQ', // 亚马逊测评英语版
+      coverImageUrl: '/assets/images/user-stories-videos/youtube2.png',
       coverAlt: 'Real life usage reviews from Amazon',
       buttonText: '@Mister and Miss Ginger Jones',
     },
     {
       type: 'youtube',
-      src: 'https://youtu.be/-qkjLB3GcKo',
-      coverImageUrl: '/assets/images/user-stories-videos/youtube2.png',
-      coverAlt: 'Real composter vs other dehydrate food recyclers',
-      buttonText: '@Mister and Miss Ginger Jones',
-    },
-    {
-      type: 'youtube',
-      src: 'https://youtu.be/CVoDNDONFAk?t=979',
+      src: 'https://youtu.be/N8NrsyyuaCo', // 英国老铁测评英语版
       coverImageUrl: '/assets/images/user-stories-videos/youtube3.png',
       coverAlt: 'Review video from Benson Chik, United Kingdom',
       buttonText: '@Benson Chik',
     },
     {
       type: 'youtube',
-      src: 'https://youtu.be/bYzh9ZUJKxs?t=845',
-      coverImageUrl: '/assets/images/user-stories-videos/youtube4.png',
+      src: 'https://youtu.be/m4I87rysnQQ', // 法国老铁视频英语版
+      coverImageUrl: '/assets/images/user-stories-videos/@bricolou.png',
       coverAlt: 'Review video from bricolou, France',
       buttonText: '@bricolou',
     },
