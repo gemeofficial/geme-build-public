@@ -674,7 +674,7 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
     },
     {
       type: 'youtube',
-      src: 'https://youtu.be/uldYKsAt1iI', // 美国小哥广告片法语版
+      src: 'https://youtu.be/uldYKsAt1iI?si=3zt2WgW_o-4_pwyU', // 美国小哥广告片法语版
       coverImageUrl: '/assets/images/user-stories-videos/@Ted.png',
       coverAlt: 'Réaliser le compostage à la maison sans odeur et résoudre parfaitement le problème du compostage en hiver.',
       buttonText: '@Ted',
