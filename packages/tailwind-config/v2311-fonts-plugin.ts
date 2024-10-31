@@ -33,16 +33,16 @@ const v2311FontsPlugin: PluginCreator = ({ addComponents }) => {
       '@apply font-poppins font-medium text-[14px] leading-[1.5]': {}, // 辅助性小标题
     },
     '.v2311-body-large': {
-      '@apply font-poppins font-regular text-[16px] leading-[1.5]': {}, // 正文内容，主要用于段落
+      '@apply font-poppins font-normal text-[16px] leading-[1.5]': {}, // 正文内容，主要用于段落
     },
     '.v2311-body-medium': {
-      '@apply font-poppins font-regular text-[14px] leading-[1.5]': {}, // 次要正文内容
+      '@apply font-poppins font-normal text-[14px] leading-[1.5]': {}, // 次要正文内容
     },
     '.v2311-body-small': {
-      '@apply font-poppins font-regular text-[12px] leading-[1.5]': {}, // 辅助信息、小段文字
+      '@apply font-poppins font-normal text-[12px] leading-[1.5]': {}, // 辅助信息、小段文字
     },
     '.v2311-caption': {
-      '@apply font-poppins font-regular text-[10px] leading-[1.3]': {}, // 图注、图片说明、辅助性信息
+      '@apply font-poppins font-normal text-[10px] leading-[1.3]': {}, // 图注、图片说明、辅助性信息
     },
     '.v2311-button-large': {
       '@apply font-poppins font-semibold text-[16px] leading-[1.25]': {}, // 主要按钮文字

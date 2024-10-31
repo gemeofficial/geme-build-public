@@ -452,30 +452,30 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
   videos: [
     {
       type: 'youtube',
-      src: 'https://youtu.be/TwCYDZgoUl0?si=w5mzwn4dQJr6x0vD',
-      coverImageUrl: '/assets/images/user-stories-videos/youtube.png',
-      coverAlt: "Recensioni sull'uso reale da Amazon",
-      buttonText: '@Mister and Miss Ginger Jones',
+      src: 'https://youtu.be/EVLtoHGCQyc', // 美国小哥广告片意大利语版
+      coverImageUrl: '/assets/images/user-stories-videos/@Ted.png',
+      coverAlt: "Realizzare il compostaggio a casa senza odori e risolvere perfettamente il problema del compostaggio invernale.",
+      buttonText: '@Ted',
     },
     {
       type: 'youtube',
-      src: 'https://youtu.be/-qkjLB3GcKo',
+      src: 'https://youtu.be/X1vxkVKDjxA', // 亚马逊测评意大利语版
       coverImageUrl: '/assets/images/user-stories-videos/youtube2.png',
-      coverAlt: 'Compostatore reale vs altri riciclatori di cibo disidratato',
+      coverAlt: 'Recensioni di utilizzo reale da Amazon',
       buttonText: '@Mister and Miss Ginger Jones',
     },
     {
       type: 'youtube',
-      src: 'https://youtu.be/CVoDNDONFAk?t=979',
+      src: 'https://youtu.be/qeCBFk9pBwk', // 英国老铁测评意大利语版
       coverImageUrl: '/assets/images/user-stories-videos/youtube3.png',
       coverAlt: 'Video di recensione di Benson Chik, Regno Unito',
       buttonText: '@Benson Chik',
     },
     {
       type: 'youtube',
-      src: 'https://youtu.be/bYzh9ZUJKxs?t=845',
-      coverImageUrl: '/assets/images/user-stories-videos/youtube4.png',
-      coverAlt: 'Review video from bricolou, France',
+      src: 'https://youtu.be/AO2PrNd2cKs', // 法国老铁视频意大利语版
+      coverImageUrl: '/assets/images/user-stories-videos/@bricolou.png',
+      coverAlt: 'Video di recensione di bricolou, Francia',
       buttonText: '@bricolou',
     },
   ],
