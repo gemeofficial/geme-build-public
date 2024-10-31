@@ -46,7 +46,7 @@ function ContentSection1({
       )}
     >
       <div className="xl:flex-1 w-full">
-        {title && <SectionTitle className="!text-left">{title}</SectionTitle>}
+        {title && <SectionTitle className="!text-left xl:!v2311-title-h4">{title}</SectionTitle>}
         {description && (
           <SectionDescription className="!text-left mt-4 md:mt-6 xl:mt-8">
             {description}
@@ -422,11 +422,11 @@ function ContentSection5({
           return (
             <div
               key={id}
-              className=" w-full relative xl:flex xl:flex-col xl:items-start xl:even:pt-24"
+              className=" w-full relative xl:flex xl:flex-col xl:items-start"
             >
-              <div className="absolute top-4 md:top-8 left-4 md:left-8 w-7 md:w-16 h-7 md:h-16 flex items-center justify-center bg-v2311-bg-dark-green  border-2 border-v2311-bg-dark-green rounded-full text-center  font-poppins font-bold text-white text-[24px] md:text-[48px] xl:static xl:rounded-none xl:w-auto xl:h-auto xl:bg-transparent xl:border-none xl:text-v2311-primary xl:text-[64px] xl:font-bold">
+              <div className="absolute top-4 md:top-8 left-4 md:left-8 w-7 md:w-16 h-7 md:h-16 flex items-center justify-center bg-v2311-bg-dark-green  border-2 border-v2311-bg-dark-green rounded-full text-center  font-poppins font-bold text-white text-[24px] md:text-[48px] xl:static xl:rounded-none xl:w-auto xl:h-auto xl:bg-transparent xl:border-none xl:text-v2311-text-primary xl:text-[64px] xl:font-bold">
                 {id}
-                <span className="whitespace-nowrap absolute invisible xl:visible ml-4 -mb-4 flex align-bottom rounded-full font-poppins text-white text-[28px] xl:static xl:w-auto xl:h-auto xl:bg-transparent xl:text-[#808080]">
+                <span className="whitespace-nowrap absolute invisible xl:visible ml-4 -mb-4 flex align-bottom rounded-full font-poppins text-white text-[28px] xl:static xl:w-auto xl:h-auto xl:bg-transparent xl:text-v2311-text-primary">
                   {' '}
                   {stepText}
                 </span>
@@ -604,7 +604,9 @@ function ContentSection6Fixed({
       )}
     >
       <div className="xl:hidden">
-        {title && <SectionTitle>{title}</SectionTitle>}
+        {title && (
+          <SectionTitle className="!v2311-title-h4">{title}</SectionTitle>
+        )}
       </div>
       <div className="mt-4 md:mt-6 w-full xl:mt-0 xl:flex-1">
         {videoSrcUrl && videoPosterSrc && (
@@ -623,7 +625,11 @@ function ContentSection6Fixed({
         )}
       </div>
       <div className=" xl:flex-1 w-full">
-        {title && <SectionTitle className='!text-left hidden xl:block'>{title}</SectionTitle>}
+        {title && (
+          <SectionTitle className="!text-left hidden xl:block xl:!v2311-title-h4">
+            {title}
+          </SectionTitle>
+        )}
 
         <div className="mt-4 md:mt-6 xl:mt-8 flex items-start">
           {steps?.map((step, index) => (

@@ -38,7 +38,7 @@ export default function HeroSectionsButton({
     <>
       {linkText && linkUrl && LinkComponent == null && (
         <a
-          className="v2311-button-large bg-[#fdfdfd] text-v2311-text-primary hover:text-white shadow-lg xl:w-auto flex items-center justify-center mt-[80px] md:mt-[160px] xl:mt-16 border-solid border-2 border-white rounded-lg py-1 md:py-2 px-16 md:px-32 xl:px-8 group hover:bg-white/10"
+          className="v2311-button-large bg-v2311-bg-button-white text-v2311-text-primary hover:text-white shadow-lg xl:w-auto flex items-center justify-center mt-[80px] md:mt-[160px] xl:mt-16 border-solid border-2 border-white rounded-lg py-1 md:py-2 px-16 md:px-32 xl:px-8 group hover:bg-white/10"
           href={linkUrl}
           onClick={linkClickedTrack}
         >
@@ -49,7 +49,7 @@ export default function HeroSectionsButton({
       {linkText && linkUrl && LinkComponent && (
         <span onClick={linkClickedTrack}>
           <LinkComponent
-            className="v2311-button-large bg-[#fdfdfd] text-v2311-text-primary hover: shadow-lg xl:w-auto flex items-center justify-center mt-[80px] md:mt-[160px] xl:mt-16 border-solid border-2 border-white rounded-lg py-1 md:py-2 px-16 md:px-32 xl:px-8 group hover:bg-white/10"
+            className="v2311-button-large bg-v2311-bg-button-white text-v2311-text-primary hover: shadow-lg xl:w-auto flex items-center justify-center mt-[80px] md:mt-[160px] xl:mt-16 border-solid border-2 border-white rounded-lg py-1 md:py-2 px-16 md:px-32 xl:px-8 group hover:bg-white/10"
             href={newLinkUrl}
           >
             {linkText}

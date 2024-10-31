@@ -42,20 +42,20 @@ function NewsletterCenteredCard({
       <section className=" px-4 md:px-8 py-8 mx-auto md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center text-center">
         {title && <h2 className="v2311-title-h2 text-white">{title}</h2>}
         {description && (
-          <p className="v2311-body-large text-white mt-4 md:mt-8">
+          <p className="v2311-body-large text-white mt-4 md:mt-6 xl:mt-8">
             {description}
           </p>
         )}
 
         <form
           onSubmit={onSubmit}
-          className="w-full max-w-sm md:max-w-lg lg:max-w-2xl flex items-center justify-center gap-x-2 md:gap-x-4 mt-4 md:mt-8 py-1 md:py-2 xl:px-4"
+          className="w-full max-w-sm md:max-w-lg lg:max-w-2xl flex items-center justify-center gap-x-2 md:gap-x-4 mt-4 md:mt-6 xl:mt-8 py-1 md:py-2 xl:px-4"
         >
           <label className="sr-only" htmlFor="email-address">
             {emailLabel}
           </label>
           <input
-            className="w-full flex-auto v2311-body-large xl:v2311-title-h5 xl:font-normal text-v2311-fg-dark-black border-solid border-2 border-white rounded-xl py-1 md:py-2 xl:px-4  focus:border-v2311-bg-light-green focus:ring-v2311-bg-light-green"
+            className="w-full flex-auto v2311-body-large text-v2311-fg-dark-black border-solid border-2 border-white rounded-lg py-1 md:py-3 xl:px-4  focus:border-v2311-bg-light-green focus:ring-v2311-bg-light-green"
             id="email-address"
             name={emailInputName}
             type="email"
@@ -64,7 +64,7 @@ function NewsletterCenteredCard({
             required
           />
           <button
-            className=" v2311-body-large font-bold xl:v2311-title-h5 text-white border-solid border-2 border-white rounded-xl px-4 py-1 md:py-2  focus:border-v2311-bg-light-green focus:ring-v2311-bg-light-green"
+            className="v2311-button-large text-v2311-text-primary bg-v2311-bg-button-white border-solid border-2 border-white hover:scale-105 transition-all duration-300 rounded-lg px-4 py-1 md:py-3"
             type="submit"
           >
             {submitButtonLabel}

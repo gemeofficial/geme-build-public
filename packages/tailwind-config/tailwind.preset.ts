@@ -23,6 +23,7 @@ const tailwindPreset: Config = {
           bg: {
             'light-green': '#D2E7DB',
             'dark-green': '#3B7F6F',
+            'button-white': '#FDFDFD',
           },
           text: {
             gary: 'rgb(75, 85, 99)',

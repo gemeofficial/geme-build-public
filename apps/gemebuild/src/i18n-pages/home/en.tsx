@@ -389,20 +389,20 @@ const contentSection1Props3: IContentSection1Props = {
     </>
   ),
   description: (
-    <>
-      Our science team has tested this technology extensively over the past 50
-      years in treating biowaste, soil, and polluted water. They have refined
-      the core technology, leading to the creation of{' '}
-      <a href="/geme-kobold">GEME Kobold</a>.
-      <br />
-      <br />
-      Our engineering team possesses extensive experience in designing and
-      manufacturing trash compactors. They have recently developed the GEME
-      Composter.
-      <br />
-      <br />
-      GEME Kobold and GEME Composter ignite a revolution.
-    </>
+    <div className="space-y-3">
+      <p>
+        Our science team has tested this technology extensively over the past 50
+        years in treating biowaste, soil, and polluted water. They have refined
+        the core technology, leading to the creation of{' '}
+        <a href="/geme-kobold">GEME Kobold</a>.
+      </p>
+      <p>
+        Our engineering team possesses extensive experience in designing and
+        manufacturing trash compactors. They have recently developed the GEME
+        Composter.{' '}
+      </p>
+      <p>GEME Kobold and GEME Composter ignite a revolution.</p>
+    </div>
   ),
   imageSrc: '/assets/images/home-v2311/observe-the-plants.jpg',
   imageAlt: 'observe the plants',

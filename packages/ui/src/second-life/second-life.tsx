@@ -81,7 +81,7 @@ function UiSectionsSecondLife({
               <picture className="ui-fragments-image isLoaded b-r">
                 <Img {...image} />
               </picture>
-              <h3 className="v2311-title-h3 text-v2311-fg-dark-black">
+              <h3 className="v2311-title-h4 text-v2311-fg-dark-black">
                 {title}
               </h3>
               <div className="v2311-body-large text-v2311-fg-dark-black">

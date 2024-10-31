@@ -27,7 +27,7 @@ export default function VideosItem({ item }: { item: IVideosItemProps }) {
         alt={item.coverAlt}
       />
       <div className="absolute bottom-[12%] inset-x-6 flex justify-center group-hover:scale-105 transition-all duration-300">
-        <div className="flex p-2 pr-4 items-center justify-center gap-x-2 bg-gray-200 rounded-full">
+        <div className="flex p-2 pr-4 items-center justify-center gap-x-2 bg-v2311-bg-button-white rounded-full">
           <button
             className="bg-v2311-bg-dark-green p-2 rounded-full"
             aria-label="Play video"
@@ -45,7 +45,7 @@ export default function VideosItem({ item }: { item: IVideosItemProps }) {
               ></path>
             </svg>
           </button>
-          <p className="text-v2311-primary text-sm xl:text-base">
+          <p className="text-v2311-text-primary v2311-button-large">
             {item.buttonText}
           </p>
         </div>
