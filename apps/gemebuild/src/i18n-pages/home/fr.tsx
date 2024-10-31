@@ -669,44 +669,30 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
       type: 'youtube',
       src: 'https://youtu.be/whY_sbmAbAI', // 法国老铁视频法语版
       coverImageUrl: '/assets/images/user-stories-videos/youtube4.png',
-      coverAlt: 'Review video from bricolou, France',
+      coverAlt: 'Vidéo de critique de bricolou, France',
       buttonText: '@bricolou',
     },
     {
       type: 'youtube',
-      src: 'https://youtu.be/_OHEA7YgZ04', // 英国小哥广告片法语版
-      coverImageUrl: '/assets/images/user-stories-videos/youtube.png',
-      coverAlt: 'Real composter vs other dehydrate food recyclers',
-      buttonText: '@GEME',
+      src: 'https://youtu.be/_OHEA7YgZ04', // 美国小哥广告片法语版
+      coverImageUrl: '/assets/images/user-stories-videos/@Ted.png',
+      coverAlt: 'Réaliser le compostage à la maison sans odeur et résoudre parfaitement le problème du compostage en hiver.',
+      buttonText: '@Ted',
     },
     {
       type: 'youtube',
       src: 'https://youtu.be/zZxdMNS7Ok4', // 亚马逊测评法语版
       coverImageUrl: '/assets/images/user-stories-videos/youtube2.png',
-      coverAlt: 'Real life usage reviews from Amazon',
+      coverAlt: 'Avis d’utilisation réelle d’Amazon',
       buttonText: '@Mister and Miss Ginger Jones',
     },
     {
       type: 'youtube',
       src: 'https://youtu.be/czKitvFRXv8', // 英国老铁测评法语版
       coverImageUrl: '/assets/images/user-stories-videos/youtube3.png',
-      coverAlt: 'Review video from Benson Chik, United Kingdom',
+      coverAlt: 'Vidéo de critique de Benson Chik, Royaume-Uni',
       buttonText: '@Benson Chik',
     },
-    // {
-    //   type: 'instagram',
-    //   src: 'https://www.instagram.com/reel/CxBKZOYRKQN/?utm_source=ig_web_copy_link',
-    //   coverImageUrl: '/assets/images/user-stories-videos/instagram.png',
-    //   coverAlt: 'Real use video from twin brothers',
-    //   buttonText: '@Messitttwins',
-    // },
-    // {
-    //   type: 'tiktok',
-    //   src: 'https://www.tiktok.com/@kc_smithwrites/video/7312898892079697198',
-    //   coverImageUrl: '/assets/images/user-stories-videos/tiktok2.png',
-    //   coverAlt: 'Users from tiktok use videos',
-    //   buttonText: '@kc_smithwrites',
-    // },
   ],
 }
 

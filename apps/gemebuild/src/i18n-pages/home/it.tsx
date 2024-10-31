@@ -452,16 +452,16 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
   videos: [
     {
       type: 'youtube',
-      src: 'https://youtu.be/EVLtoHGCQyc', // 英国小哥广告片意大利语版
-      coverImageUrl: '/assets/images/user-stories-videos/youtube.png',
-      coverAlt: "Real composter vs other dehydrate food recyclers",
-      buttonText: '@GEME',
+      src: 'https://youtu.be/EVLtoHGCQyc', // 美国小哥广告片意大利语版
+      coverImageUrl: '/assets/images/user-stories-videos/@Ted.png',
+      coverAlt: "Realizzare il compostaggio a casa senza odori e risolvere perfettamente il problema del compostaggio invernale.",
+      buttonText: '@Ted',
     },
     {
       type: 'youtube',
       src: 'https://youtu.be/X1vxkVKDjxA', // 亚马逊测评意大利语版
       coverImageUrl: '/assets/images/user-stories-videos/youtube2.png',
-      coverAlt: 'Real life usage reviews from Amazon',
+      coverAlt: 'Recensioni di utilizzo reale da Amazon',
       buttonText: '@Mister and Miss Ginger Jones',
     },
     {
@@ -475,7 +475,7 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
       type: 'youtube',
       src: 'https://youtu.be/AO2PrNd2cKs', // 法国老铁视频意大利语版
       coverImageUrl: '/assets/images/user-stories-videos/youtube4.png',
-      coverAlt: 'Review video from bricolou, France',
+      coverAlt: 'Video di recensione di bricolou, Francia',
       buttonText: '@bricolou',
     },
   ],

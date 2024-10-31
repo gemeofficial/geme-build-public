@@ -462,16 +462,17 @@ const userStoriesVideosProps: IUserStoriesVideoProps = {
   videos: [
     {
       type: 'youtube',
-      src: 'https://youtu.be/Q4CMry3ZYNo', // 英国小哥广告片英语版
-      coverImageUrl: '/assets/images/user-stories-videos/youtube.png',
-      coverAlt: 'Real life usage reviews from Amazon',
-      buttonText: '@GEME',
+      src: 'https://youtu.be/Q4CMry3ZYNo', // 美国小哥广告片英语版
+      coverImageUrl: '/assets/images/user-stories-videos/@Ted.png',
+      coverAlt:
+        'Realize composting at home without odor and perfectly solve the problem of Winter composting.',
+      buttonText: '@Ted',
     },
     {
       type: 'youtube',
       src: 'https://youtu.be/pY4T7Z0zNSQ', // 亚马逊测评英语版
       coverImageUrl: '/assets/images/user-stories-videos/youtube2.png',
-      coverAlt: 'Real composter vs other dehydrate food recyclers',
+      coverAlt: 'Real life usage reviews from Amazon',
       buttonText: '@Mister and Miss Ginger Jones',
     },
     {
