@@ -12,7 +12,7 @@ export function PrevButton({ className }: { className?: string }) {
       )}
     >
       <svg
-        className="!h-4 !w-4 md:!h-6 md:!w-6 text-v2311-bg-dark-green group-hover:text-white transition-all duration-500"
+        className="!h-4 !w-4 md:!h-6 md:!w-6 text-v2311-text-primary group-hover:text-white transition-all duration-500"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ export function NextButton({ className }: { className?: string }) {
       )}
     >
       <svg
-        className="!h-4 !w-4 md:!h-6 md:!w-6 text-v2311-bg-dark-green group-hover:text-white transition-all duration-500"
+        className="!h-4 !w-4 md:!h-6 md:!w-6 text-v2311-text-primary group-hover:text-white transition-all duration-500"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

@@ -21,10 +21,12 @@ function UiSectionsDecomposition() {
         <div className="dot"></div>
         <div className="dot"></div>
         <div className="dot"></div>
+  
+        {/* 减少点的数量 */}
+        {/* <div className="dot"></div>
         <div className="dot"></div>
         <div className="dot"></div>
-        <div className="dot"></div>
-        <div className="dot"></div>
+        <div className="dot"></div> */}
       </div>
     </section>
   )
@@ -41,7 +43,7 @@ function UiSectionsSecondLife({
       className="ui-sections-second-life bg--green-2"
       data-anchor="les-resultats"
     >
-      <div className="ui-fragments-title xl:max-w-7xl xl:mx-auto !px-4 !py-8 md:!px-8 md:!py-16 xl:!py-[80px]">
+      <div className="ui-fragments-title xl:max-w-7xl xl:mx-auto !px-4 !py-8 md:!px-8 ">
         <h2 className="sr-only">
           {titleLeftPart} {titleRightPart}
         </h2>
@@ -52,7 +54,7 @@ function UiSectionsSecondLife({
           />
         </p>
       </div>
-      <div className="ui-fragments-headline xl:max-w-7xl xl:mx-auto !px-4 !py-8 md:!px-8 md:!py-16 xl:!py-[80px]">
+      <div className="ui-fragments-headline xl:max-w-7xl xl:mx-auto !px-4 !py-8 md:!px-8 ">
         <div className="line !w-auto">
           <div className="ui-fragments-line rtl animate">
             <div className="line-container text-[#5c2f13]">
@@ -62,16 +64,18 @@ function UiSectionsSecondLife({
           </div>
         </div>
         <div className="container !w-auto">
-          <p className=" v2311-body-large text-[#5c2f13] font-medium">{description}</p>
+          <p className=" v2311-body-large text-[#5c2f13] font-medium">
+            {description}
+          </p>
         </div>
       </div>
-      <div className="articles xl:max-w-7xl xl:mx-auto !px-4 !py-8 md:!px-8 md:!py-16 xl:!py-[80px]">
+      <div className="articles xl:max-w-7xl xl:mx-auto !px-4 !py-8 md:!px-8">
         {articles?.map(({ id, title, description, image }, index) => {
           return (
             <article
               key={id}
               className={`ui-second-life-article isShown ${
-                index === 1 ? `flex items-end flex-col` : ''
+                index === 1 ? `flex items-end flex-col text-right` : ''
               }`}
             >
               <picture className="ui-fragments-image isLoaded b-r">

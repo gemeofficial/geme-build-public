@@ -38,25 +38,34 @@ export default function HeroSectionsButton({
     <>
       {linkText && linkUrl && LinkComponent == null && (
         <a
-          className="text-sm md:text-lg xl:text-2xl font-bold text-white xl:w-auto flex items-center justify-center mt-[80px] md:mt-[160px] xl:mt-16 border-solid border-2 border-white rounded-xl py-1 md:py-2 px-16 md:px-32 xl:px-8 group hover:bg-white/10"
+          className="v2311-button-large bg-[#fdfdfd] text-v2311-text-primary hover:text-white shadow-lg xl:w-auto flex items-center justify-center mt-[80px] md:mt-[160px] xl:mt-16 border-solid border-2 border-white rounded-lg py-1 md:py-2 px-16 md:px-32 xl:px-8 group hover:bg-white/10"
           href={linkUrl}
           onClick={linkClickedTrack}
         >
           {linkText}
-          <IconCycleArrow className="inline-block ml-4 md:ml-8 xl:ml-4 w-5 md:w-10 xl:w-12 h-5 md:h-10 xl:h-12 group-hover:translate-x-1.5 transition-all" />
+          <MyIconCycleArrow />
         </a>
       )}
       {linkText && linkUrl && LinkComponent && (
         <span onClick={linkClickedTrack}>
           <LinkComponent
-            className="text-sm md:text-lg xl:text-2xl font-bold text-white xl:w-auto flex items-center justify-center mt-[80px] md:mt-[160px] xl:mt-16 border-solid border-2 border-white rounded-xl py-1 md:py-2 px-16 md:px-32 xl:px-8 group hover:bg-white/10"
+            className="v2311-button-large bg-[#fdfdfd] text-v2311-text-primary hover: shadow-lg xl:w-auto flex items-center justify-center mt-[80px] md:mt-[160px] xl:mt-16 border-solid border-2 border-white rounded-lg py-1 md:py-2 px-16 md:px-32 xl:px-8 group hover:bg-white/10"
             href={newLinkUrl}
           >
             {linkText}
-            <IconCycleArrow className="inline-block ml-4 md:ml-8 xl:ml-4 w-5 md:w-10 xl:w-12 h-5 md:h-10 xl:h-12 group-hover:translate-x-1.5 transition-all" />
+            <MyIconCycleArrow />
           </LinkComponent>
         </span>
       )}
     </>
+  )
+}
+
+function MyIconCycleArrow() {
+  return (
+    <IconCycleArrow
+      stroke="currentColor"
+      className="text-v2311-text-primary group-hover:text-white inline-block ml-4 md:ml-8 xl:ml-4 w-5 md:w-8 h-5 md:h-8 group-hover:translate-x-1.5 transition-all"
+    />
   )
 }

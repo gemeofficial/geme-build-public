@@ -33,7 +33,7 @@ export function CertificateSection({
       </div>
 
       {subDescription && (
-        <div className="text-v2311-bg-dark-green mt-4">{subDescription}</div>
+        <div className="text-v2311-text-primary mt-4">{subDescription}</div>
       )}
     </SectionContainer>
   )

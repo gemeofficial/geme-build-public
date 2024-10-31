@@ -68,7 +68,7 @@ function ScrollTriggeredAnimatedHeadlineBottom({
   return (
     <ScrollTrigger
       start="top bottom-=10%"
-      end="top top+=20%"
+      end="top top+=60%"
       scrub={true}
       markers={false}
     >

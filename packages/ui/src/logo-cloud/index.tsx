@@ -108,7 +108,7 @@ export function LogoCloudComponent({
   return (
     <div
       className={clsx(
-        'mt-4 md:mt-6 grid items-center grid-cols-3 md:grid-cols-5',
+        'mt-4 md:mt-6 xl:mt-8 grid items-center grid-cols-3 md:grid-cols-5',
         'gap-4 gap-y-6 sm:gap-8 lg:gap-10 lg:gap-y-14',
         className,
       )}

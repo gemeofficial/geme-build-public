@@ -14,7 +14,7 @@ const tailwindPreset: Config = {
       },
       colors: {
         v2311: {
-          primary: '#058669',
+          primary: '#058469',
           fg: {
             'light-black': '#999999',
             black: '#666666',
@@ -22,11 +22,12 @@ const tailwindPreset: Config = {
           },
           bg: {
             'light-green': '#D2E7DB',
-            'dark-green': '#3B806F',
+            'dark-green': '#3B7F6F',
           },
           text: {
             gary: 'rgb(75, 85, 99)',
-            yellow: '#E5BE51'
+            yellow: '#E5BE51',
+            primary: '#3B7F6F',
           }
         }
       },

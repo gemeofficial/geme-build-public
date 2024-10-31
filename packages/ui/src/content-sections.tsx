@@ -48,12 +48,12 @@ function ContentSection1({
       <div className="xl:flex-1 w-full">
         {title && <SectionTitle className="!text-left">{title}</SectionTitle>}
         {description && (
-          <SectionDescription className="!text-left mt-4 md:mt-8">
+          <SectionDescription className="!text-left mt-4 md:mt-6 xl:mt-8">
             {description}
           </SectionDescription>
         )}
       </div>
-      <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">
+      <div className="mt-4 md:mt-6 w-full xl:mt-0 xl:flex-1">
         {imageSrc && (
           <Image
             className=" max-w-full w-full rounded-2xl"
@@ -108,12 +108,12 @@ function ContentSection2({
       <div className="md:flex-1 w-full">
         {title && <SectionTitle className="!text-left">{title}</SectionTitle>}
         {description && (
-          <SectionDescription className="!text-left mt-4 md:mt-8">
+          <SectionDescription className="!text-left mt-4 md:mt-6 xl:mt-8">
             {description}
           </SectionDescription>
         )}
       </div>
-      <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">
+      <div className="mt-4 md:mt-6 w-full xl:mt-0 xl:flex-1">
         {imageSrc && (
           <Image
             className=" max-w-full w-full rounded-2xl h-full"
@@ -212,11 +212,11 @@ function ContentSection3({
     <section className="px-4 mx-auto pt-8 md:px-8 md:pt-12 md:pb-0 xl:pt-14 xl:pb-0 xl:max-w-7xl ">
       {title && <SectionTitle>{title}</SectionTitle>}
       {description && (
-        <SectionDescription className="mt-4 md:mt-8">
+        <SectionDescription className="mt-4 md:mt-6 xl:mt-8">
           {description}
         </SectionDescription>
       )}
-      <div className="mt-4 md:mt-8 xl:mt-12 grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-8">
+      <div className="mt-4 md:mt-6 xl:mt-8 grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-8">
         {items?.map((item) => {
           return (
             <div key={item.id}>
@@ -229,7 +229,7 @@ function ContentSection3({
                 quality={60}
                 sizes="(max-width: 1280px) 40vw, (min-width: 1281px) 250px, 1vw"
               />
-              <SectionDescription className="!text-[14px] md:!16px lg:!18px mt-2 md:mt-4">
+              <SectionDescription className="v2311-body-large mt-2 md:mt-4">
                 {item.description}
               </SectionDescription>
             </div>
@@ -293,18 +293,18 @@ function ContentSection4({
   return (
     <section
       className={classNames(
-        'px-4 mx-auto md:px-8 pt-8 md:py-12 xl:pt-14 xl:pb-0 xl:max-w-7xl flex flex-col items-center',
+        'px-4 mx-auto md:px-8 xl:max-w-7xl flex flex-col items-center',
       )}
     >
       <div className="xl:flex-1 w-full">
         {title && <SectionTitle>{title}</SectionTitle>}
         {description && (
-          <SectionDescription className="mt-4 md:mt-8">
+          <SectionDescription className="mt-4 md:mt-6 xl:mt-8">
             {description}
           </SectionDescription>
         )}
       </div>
-      <div className="mt-4 w-full md:mt-8 xl:flex-1">
+      <div className="mt-4 md:mt-6 xl:mt-8 w-full xl:flex-1">
         {withMp4VideoOrYoutubeVideo?.type === 'mp4' &&
           withMp4VideoOrYoutubeVideo?.videoSrcUrl != null && (
             <video
@@ -413,7 +413,7 @@ function ContentSection5({
     <section className="mt-4 md:mt-8 xl:mt-14 px-4 py-8 mx-auto md:px-8 md:py-12 xl:py-14 xl:max-w-7xl">
       {title && <SectionTitle>{title}</SectionTitle>}
       {description && (
-        <SectionDescription className=" mt-4 md:mt-8">
+        <SectionDescription className="mt-4 md:mt-6 xl:mt-8">
           {description}
         </SectionDescription>
       )}
@@ -445,7 +445,7 @@ function ContentSection5({
         })}
       </div>
       {bottomDescription && (
-        <SectionDescription className="mt-4 md:mt-8 xl:hidden">
+        <SectionDescription className="mt-4 md:mt-6 xl:mt-8 xl:hidden">
           {bottomDescription}
         </SectionDescription>
       )}
@@ -606,7 +606,7 @@ function ContentSection6Fixed({
       <div className="xl:hidden">
         {title && <SectionTitle>{title}</SectionTitle>}
       </div>
-      <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">
+      <div className="mt-4 md:mt-6 w-full xl:mt-0 xl:flex-1">
         {videoSrcUrl && videoPosterSrc && (
           <video
             preload="none"
@@ -623,13 +623,9 @@ function ContentSection6Fixed({
         )}
       </div>
       <div className=" xl:flex-1 w-full">
-        {title && (
-          <h2 className=" v2311-title-h2 text-v2311-primary hidden xl:block">
-            {title}
-          </h2>
-        )}
+        {title && <SectionTitle className='!text-left hidden xl:block'>{title}</SectionTitle>}
 
-        <div className="mt-8 md:mt-16 xl:mt-8 flex items-start">
+        <div className="mt-4 md:mt-6 xl:mt-8 flex items-start">
           {steps?.map((step, index) => (
             <div key={step.id} className=" flex-1 flex flex-col items-center">
               {/* 将SVG组件修改为img渲染 */}
@@ -706,12 +702,12 @@ function ContentSection7({
       <div className="w-full xl:hidden ">
         {title && <SectionTitle>{title}</SectionTitle>}
         {description && (
-          <SectionDescription className=" mt-4 md:mt-8">
+          <SectionDescription className="mt-4 md:mt-6 xl:mt-8">
             {description}
           </SectionDescription>
         )}
       </div>
-      <div className="mt-4 w-full md:mt-8 xl:mt-0 xl:flex-1">
+      <div className="mt-4 md:mt-6 xl:mt-8 w-full  xl:mt-0 xl:flex-1">
         {withImageOrVideo?.type === 'image' &&
           withImageOrVideo?.imageSrc != null && (
             <Image
@@ -732,15 +728,11 @@ function ContentSection7({
           )}
       </div>
       <div className=" xl:flex-1 w-full ">
-        {title && (
-          <h2 className=" v2311-title-h2 text-v2311-primary hidden xl:block">
-            {title}
-          </h2>
-        )}
+        {title && <SectionTitle>{title}</SectionTitle>}
         {description && (
-          <p className=" mt-4 md:mt-8 v2311-body-large text-v2311-fg-black hidden xl:block">
+          <SectionDescription className="mt-4 md:mt-6 xl:mt-8">
             {description}
-          </p>
+          </SectionDescription>
         )}
 
         {bottomContent && (
@@ -792,7 +784,7 @@ function ContentSection8({
     <section className="px-4 py-8 mx-auto md:px-8 md:py-16 xl:py-[80px] xl:max-w-7xl ">
       {title && <SectionTitle>{title}</SectionTitle>}
       {description && (
-        <SectionDescription className="mt-4 md:mt-8 xl:hidden">
+        <SectionDescription className="mt-4 md:mt-6 xl:mt-8 xl:hidden">
           {description}
         </SectionDescription>
       )}

@@ -22,7 +22,7 @@ function Footprints({
     <div className={grayBackground ? 'bg-gray-50' : 'bg-white'}>
       <div className="mx-auto max-w-2xl pt-8 px-4 lg:pt-14 sm:px-6 lg:max-w-7xl lg:px-8">
         <SectionTitle>{title}</SectionTitle>
-        <SectionDescription className="mt-4">{description}</SectionDescription>
+        <SectionDescription className="mt-4 md:mt-6 xl:mt-8">{description}</SectionDescription>
 
         <div className="mt-6">
           <ProportionalSymbolMap {...proportionalSymbolMapProps} />

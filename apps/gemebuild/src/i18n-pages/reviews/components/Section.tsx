@@ -68,7 +68,7 @@ export default function Section({
               className={clsx(
                 ' mt-4 lg:mt-8',
                 index === 0
-                  ? '!text-v2311-bg-dark-green'
+                  ? '!text-v2311-text-primary'
                   : index === 1
                     ? '!text-v2311-text-yellow'
                     : '!text-[#eda152]',

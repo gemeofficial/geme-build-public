@@ -115,7 +115,7 @@ function HeroSection1({
           <h1 className="v2311-title-h1 text-white xl:mt-12">{title}</h1>
         )}
         {description && (
-          <p className="v2311-title-h3 font-normal text-white mt-4 md:mt-12 xl:mt-12">
+          <p className="v2311-subtitle-large text-white mt-4 md:mt-12 xl:mt-12">
             {description}
           </p>
         )}
