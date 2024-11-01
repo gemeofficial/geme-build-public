@@ -24,7 +24,9 @@ export const FontsStory: StoryObj<typeof FontsV2311> = {
 export const StoryPrimaryButton: StoryObj<typeof PrimaryButton> = {
   render: (props) => (
     <div className="w-[300px] flex flex-col gap-10">
-      <PrimaryButton {...props}>PrimaryButton</PrimaryButton>
+      <PrimaryButton {...props} href="/geme-kobold">
+        PrimaryButton
+      </PrimaryButton>
       <LinkButton {...props}>LinkButton</LinkButton>
       <TransparentButton {...props}>TransparentButton</TransparentButton>
       <div className="bg-gray-500 w-[500px] h-[200px] flex items-center justify-center">

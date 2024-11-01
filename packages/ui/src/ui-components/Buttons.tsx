@@ -9,13 +9,17 @@ type TButtonType = 'button' | 'link' | 'transparent' | 'white'
 type TButtonSize = 'large' | 'medium' | 'small'
 //  extends ComponentProps<typeof DefaultLink>
 export interface IButtonProps {
-  href?: string // href如果传入 说明需要的是一个link button，会默认进行url跳转；如href为传入，说明需要一个button做自定义事件，此时，内部会自动阻止Link的默认事件然后执行onClick
+  href?: string // href如果传入，渲染为Link标签，否则渲染为button标签
   prefetch?: boolean
   PrefetchLink?: ILinkComponent
   className?: string
   type?: TButtonType
   size?: TButtonSize
-  onClick?: (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void
+  onClick?: (
+    event:
+      | React.MouseEvent<HTMLAnchorElement, MouseEvent>
+      | React.MouseEvent<HTMLButtonElement, MouseEvent>,
+  ) => void
 }
 
 // 网站主按钮
@@ -73,22 +77,31 @@ export function PrimaryButton({
   }
 
   return (
-    <Link
-      href={href || ''}
-      onClick={(e) => {
-        if (!href && onClick) {
-          e.preventDefault()
-          onClick(e)
-          return
-        }
+    <>
+      {href && (
+        <Link
+          href={href}
+          onClick={(e) => {
+            onClick && onClick(e)
+          }}
+          prefetch={prefetch || false}
+          className={buttonClass}
+        >
+          {children}
+        </Link>
+      )}
 
-        onClick && onClick(e)
-      }}
-      prefetch={prefetch || false}
-      className={buttonClass}
-    >
-      {children}
-    </Link>
+      {!href && (
+        <button
+          className={buttonClass}
+          onClick={(e) => {
+            onClick && onClick(e)
+          }}
+        >
+          {children}
+        </button>
+      )}
+    </>
   )
 }
 

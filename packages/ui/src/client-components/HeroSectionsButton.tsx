@@ -4,6 +4,7 @@ import { ILinkComponent } from '../../../../apps/gemebuild/src/contexts/link-con
 import { IconCycleArrow } from '../icons'
 import mixpanel from 'mixpanel-browser'
 import { hasMixpanel } from '../lib'
+import { WhiteButton } from '../ui-components'
 
 interface IHeroSectionsButtonProps {
   linkText?: string
@@ -28,36 +29,16 @@ export default function HeroSectionsButton({
     }
   }
 
-  // 修复在bio中传入自定义的Prefetch Link 时多语言路径不正确问题
-  let newLinkUrl = ''
-  if (LinkComponent) {
-    newLinkUrl = linkUrl?.replace('/de', '').replace('/fr', '') as string
-  }
-
   return (
-    <>
-      {linkText && linkUrl && LinkComponent == null && (
-        <a
-          className="v2311-button-large bg-v2311-bg-button-white text-v2311-text-primary hover:text-white shadow-lg xl:w-auto flex items-center justify-center mt-[80px] md:mt-[160px] xl:mt-16 border-solid border-2 border-white rounded-lg py-1 md:py-2 px-16 md:px-32 xl:px-8 group hover:bg-white/10"
-          href={linkUrl}
-          onClick={linkClickedTrack}
-        >
-          {linkText}
-          <MyIconCycleArrow />
-        </a>
-      )}
-      {linkText && linkUrl && LinkComponent && (
-        <span onClick={linkClickedTrack}>
-          <LinkComponent
-            className="v2311-button-large bg-v2311-bg-button-white text-v2311-text-primary hover: shadow-lg xl:w-auto flex items-center justify-center mt-[80px] md:mt-[160px] xl:mt-16 border-solid border-2 border-white rounded-lg py-1 md:py-2 px-16 md:px-32 xl:px-8 group hover:bg-white/10"
-            href={newLinkUrl}
-          >
-            {linkText}
-            <MyIconCycleArrow />
-          </LinkComponent>
-        </span>
-      )}
-    </>
+    <WhiteButton
+      href={linkUrl}
+      onClick={linkClickedTrack}
+      PrefetchLink={LinkComponent}
+      className="mt-[80px] md:mt-[160px] xl:mt-16 !px-16 md:!px-32 xl:!px-8"
+    >
+      {linkText}
+      {/* <MyIconCycleArrow /> */}
+    </WhiteButton>
   )
 }
 
