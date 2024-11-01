@@ -15,7 +15,7 @@ export interface ICompareProps {
 
 export default function Compare({ description, title, items }: ICompareProps) {
   return (
-    <SectionContainer compact>
+    <SectionContainer >
       <SectionTitle>{title}</SectionTitle>
       <SectionDescription className="mt-4 md:mt-6">
         {description}

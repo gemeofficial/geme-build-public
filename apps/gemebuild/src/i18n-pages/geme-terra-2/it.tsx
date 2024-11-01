@@ -373,9 +373,9 @@ export function GemeTerra2PageIt({ SubscribeComponent }: IGemeTerra2PageProps) {
       />
       <LogoCloud locale="en" />
 
-      <ImgAndTextSection {...shortVideoProps} compact />
-      <ImgAndTextSection {...imageTextProps} compact />
-      <ImgAndTextSection {...imageTextProps2} compact />
+      <ImgAndTextSection {...shortVideoProps}  />
+      <ImgAndTextSection {...imageTextProps}  />
+      <ImgAndTextSection {...imageTextProps2}  />
 
       <Compare {...compareProps} />
       <Reviews {...reviewsProps} />

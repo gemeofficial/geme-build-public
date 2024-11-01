@@ -4,7 +4,11 @@ import classNames from './lib/classNames'
 import { IImgProps } from './image'
 import { IVideoPlayerProps, VideoPlayer } from './video'
 import Image, { getImageProps } from 'next/image'
-import { SectionDescription, SectionTitle } from './ui-components'
+import {
+  SectionContainer,
+  SectionDescription,
+  SectionTitle,
+} from './ui-components'
 import { VideoInlinePlayer } from './video-inline-player'
 
 interface IContentSection1Props {
@@ -46,7 +50,11 @@ function ContentSection1({
       )}
     >
       <div className="xl:flex-1 w-full">
-        {title && <SectionTitle className="!text-left xl:!v2311-title-h4">{title}</SectionTitle>}
+        {title && (
+          <SectionTitle className="!text-left xl:!v2311-title-h4">
+            {title}
+          </SectionTitle>
+        )}
         {description && (
           <SectionDescription className="!text-left mt-4 md:mt-6 xl:mt-8">
             {description}
@@ -209,7 +217,7 @@ function ContentSection3({
   items,
 }: IContentSection3Props): JSX.Element {
   return (
-    <section className="px-4 mx-auto pt-8 md:px-8 md:pt-12 md:pb-0 xl:pt-14 xl:pb-0 xl:max-w-7xl ">
+    <SectionContainer noBottomPadding>
       {title && <SectionTitle>{title}</SectionTitle>}
       {description && (
         <SectionDescription className="mt-4 md:mt-6 xl:mt-8">
@@ -236,7 +244,7 @@ function ContentSection3({
           )
         })}
       </div>
-    </section>
+    </SectionContainer>
   )
 }
 
@@ -291,10 +299,10 @@ function ContentSection4({
   withMp4VideoOrYoutubeVideo,
 }: IContentSection4Props): JSX.Element {
   return (
-    <section
-      className={classNames(
-        'px-4 mx-auto md:px-8 xl:max-w-7xl flex flex-col items-center',
-      )}
+    <SectionContainer
+      className="flex flex-col items-center"
+      noTopPadding
+      noBottomPadding
     >
       <div className="xl:flex-1 w-full">
         {title && <SectionTitle>{title}</SectionTitle>}
@@ -350,7 +358,7 @@ function ContentSection4({
             </div>
           )}
       </div>
-    </section>
+    </SectionContainer>
   )
 }
 
@@ -597,9 +605,10 @@ function ContentSection6Fixed({
   }
 
   return (
-    <section
+    <SectionContainer
+      noBottomPadding
       className={classNames(
-        'px-4 py-8 mx-auto md:px-8 md:pt-12 md:pb-0 xl:pt-14 xl:pb-0 xl:max-w-7xl flex flex-col xl:gap-16 ',
+        'flex flex-col xl:gap-16 ',
         isDisplayTextOnLeft ? 'xl:flex-row-reverse' : 'xl:flex-row',
       )}
     >
@@ -650,7 +659,7 @@ function ContentSection6Fixed({
           ))}
         </div>
       </div>
-    </section>
+    </SectionContainer>
   )
 }
 

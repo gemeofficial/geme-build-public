@@ -15,7 +15,7 @@ export default function DownLoadMediaKit({
 }: IDownLoadMediaKitProps) {
   return (
     <SectionContainer
-      compact
+      
       className="flex flex-col lg:flex-row items-start gap-4 lg:gap-6 !pt-0"
     >
       {downLoadItems.map((item, index) => (

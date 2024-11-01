@@ -7,7 +7,7 @@ export interface IHeroSection {
 }
 export default function HeroSection({ description, title }: IHeroSection) {
   return (
-    <SectionContainer className="flex flex-col gap-4 xl:gap-6" compact>
+    <SectionContainer className="flex flex-col gap-4 xl:gap-6" >
       <SectionTitle className="!text-black/90 text-3xl md:text-4xl xl:!text-6xl 2xl:!text-7xl !font-black md:!text-center">
         {title}
       </SectionTitle>

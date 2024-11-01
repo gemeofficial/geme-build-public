@@ -90,7 +90,7 @@ export function LogoCloud({
 }) {
   const title = titleTextInfo[locale]
   return (
-    <SectionContainer compact>
+    <SectionContainer >
       <SectionTitle>{title}</SectionTitle>
 
       <LogoCloudComponent canRedirect={canRedirect} />

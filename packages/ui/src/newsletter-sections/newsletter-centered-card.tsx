@@ -39,7 +39,7 @@ function NewsletterCenteredCard({
 }: INewsletterCenteredCardProps) {
   return (
     <div className="bg-v2311-bg-dark-green ">
-      <section className=" px-4 md:px-8 py-8 mx-auto md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center text-center">
+      <section className=" px-4 md:px-10 py-8 mx-auto md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center text-center">
         {title && <h2 className="v2311-title-h2 text-white">{title}</h2>}
         {description && (
           <p className="v2311-body-large text-white mt-4 md:mt-6 xl:mt-8">

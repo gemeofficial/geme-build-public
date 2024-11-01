@@ -22,7 +22,7 @@ export default function HighLightBar() {
       <div className="bg-v2311-bg-dark-green">
         <SectionContainer
           className="flex flex-col lg:flex-row gap-4 items-center justify-between"
-          compact
+          
         >
           <div className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl text-white font-bold font-poppins">
             {bar1.title}

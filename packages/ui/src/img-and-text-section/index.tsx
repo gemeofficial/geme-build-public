@@ -12,7 +12,6 @@ export interface IImgAndTextSectionProps {
   videoPosterUrl?: string
   videoSrcUrl?: string
   isReverse?: boolean
-  compact?: boolean
 }
 
 export function ImgAndTextSection({
@@ -23,7 +22,6 @@ export function ImgAndTextSection({
   videoPosterUrl,
   videoSrcUrl,
   isReverse,
-  compact,
 }: IImgAndTextSectionProps) {
   let videoPosterSrc: undefined | string
   if (videoPosterUrl != null) {
@@ -36,7 +34,7 @@ export function ImgAndTextSection({
   }
 
   return (
-    <SectionContainer className="flex flex-col lg:flex-row" compact={compact}>
+    <SectionContainer className="flex flex-col lg:flex-row">
       {/* mobile title-desc */}
       <div className="lg:hidden">
         <SectionTitle>{title}</SectionTitle>
