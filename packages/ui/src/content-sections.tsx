@@ -10,6 +10,7 @@ import {
   SectionTitle,
 } from './ui-components'
 import { VideoInlinePlayer } from './video-inline-player'
+import clsx from 'clsx'
 
 interface IContentSection1Props {
   title?: ReactNode
@@ -17,6 +18,7 @@ interface IContentSection1Props {
   imageSrc?: string
   imageAlt?: string
   isDisplayTextOnLeft?: boolean
+  className?: string
 }
 
 const contentSection1Props: IContentSection1Props = {
@@ -41,12 +43,14 @@ function ContentSection1({
   imageSrc,
   imageAlt,
   isDisplayTextOnLeft,
+  className,
 }: IContentSection1Props): JSX.Element {
   return (
     <section
-      className={classNames(
+      className={clsx(
         'px-4 py-4 mx-auto md:px-8 md:pt-12 md:pb-0 xl:pt-14 xl:pb-0 xl:max-w-7xl flex flex-col items-center xl:gap-16 ',
         isDisplayTextOnLeft ? 'xl:flex-row' : 'xl:flex-row-reverse',
+        className,
       )}
     >
       <div className="xl:flex-1 w-full">
@@ -56,7 +60,7 @@ function ContentSection1({
           </SectionTitle>
         )}
         {description && (
-          <SectionDescription className="!text-left mt-4 md:mt-6 xl:mt-8">
+          <SectionDescription className="!text-left v2311-p-space-by-title">
             {description}
           </SectionDescription>
         )}
@@ -640,7 +644,7 @@ function ContentSection6Fixed({
           </SectionTitle>
         )}
 
-        <div className="mt-4 md:mt-6 xl:mt-8 flex items-start">
+        <div className="v2311-p-space-by-title flex items-start">
           {steps?.map((step, index) => (
             <div key={step.id} className=" flex-1 flex flex-col items-center">
               {/* 将SVG组件修改为img渲染 */}

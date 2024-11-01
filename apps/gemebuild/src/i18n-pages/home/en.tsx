@@ -570,8 +570,15 @@ function HomePageEn({ PrefetchLink, reviewsSectionConfig }: IHomePageProps) {
 
       <div>
         <ContentSection6Fixed {...contentSection6FixedProps} />
-        <ContentSection1 {...contentSection1Props2} isDisplayTextOnLeft />
-        <ContentSection1 {...contentSection1Props3} />
+        <ContentSection1
+          {...contentSection1Props2}
+          isDisplayTextOnLeft
+          // className="xl:!items-start"
+        />
+        <ContentSection1
+          {...contentSection1Props3}
+          // className="xl:!items-start"
+        />
       </div>
 
       <div className=" bg-v2311-bg-light-green">

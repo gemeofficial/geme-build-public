@@ -59,6 +59,12 @@ const v2311FontsPlugin: PluginCreator = ({ addComponents }) => {
     '.v2311-font-link-selected': {
       '@apply font-poppins font-bold text-[18px]': {}, // 选中状态的链接文字
     },
+    '.v2311-p-space-by-title': {
+      '@apply mt-[18px]': {}, // 段落与标题之间的间距
+    },
+    '.v2311-p-space-by-p': {
+      '@apply mt-[12px]': {}, // 段落与段落之间的间距
+    },
   })
 }
 
