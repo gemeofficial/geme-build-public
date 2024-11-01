@@ -1,4 +1,12 @@
-export default function StarIcon({ score }: { score: number }) {
+import clsx from 'clsx'
+
+export default function StarIcon({
+  score,
+  className,
+}: {
+  score: number
+  className?: string
+}) {
   const paragraphs: JSX.Element[] = []
   for (let i = 0; i < score; i++) {
     paragraphs.push(
@@ -18,7 +26,9 @@ export default function StarIcon({ score }: { score: number }) {
   }
 
   return (
-    <div className="flex items-center mb-9 gap-2 text-amber-500">
+    <div
+      className={clsx('flex items-center mb-9 gap-2 text-amber-500', className)}
+    >
       {paragraphs}
     </div>
   )

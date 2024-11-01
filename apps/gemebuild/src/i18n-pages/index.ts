@@ -1,3 +1,4 @@
+
 // i18n pages
 export * from './home'
 export * from './pdp'
@@ -25,7 +26,9 @@ export * from './ifa'
 export * from './geme-terra-2'
 export * from './media-kit'
 export * from './brand-hq'
+export * from './compost-recycle'
 export * from './manual-seo-page'
 
 // contexts
 export * from '../contexts/link-context'
+
