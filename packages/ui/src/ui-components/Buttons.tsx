@@ -37,7 +37,7 @@ export function PrimaryButton({
 
   const buttonCommonClass = (size: TButtonSize) => {
     return clsx(
-      'rounded-[4px] cursor-pointer inline-flex items-center justify-center',
+      'rounded-v2311 cursor-pointer inline-flex items-center justify-center',
       'transition-all duration-300 ease-[cubic-bezier(0.23,1,0.32,1)] select-none w-full ',
       'hover:shadow-lg hover:translate-y-[-2px] active:shadow-none active:translate-y-0',
       size === 'large' ? 'v2311-button-large' : 'v2311-button-medium',

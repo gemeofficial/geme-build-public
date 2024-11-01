@@ -40,6 +40,9 @@ const tailwindPreset: Config = {
         '3xl': '1920px',
         '4xl': '2380px',
       },
+      borderRadius: {
+        'v2311': '4px',
+      },
     },
   },
   plugins: [

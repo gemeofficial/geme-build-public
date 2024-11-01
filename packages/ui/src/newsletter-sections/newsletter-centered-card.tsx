@@ -55,7 +55,7 @@ function NewsletterCenteredCard({
             {emailLabel}
           </label>
           <input
-            className="w-full flex-auto v2311-body-large text-v2311-fg-dark-black border-solid border-2 border-white rounded-lg py-1 md:py-3 xl:px-4  focus:border-v2311-bg-light-green focus:ring-v2311-bg-light-green"
+            className="w-full flex-auto v2311-body-large text-v2311-fg-dark-black border-solid border-2 border-white rounded-v2311 py-1 md:py-3 xl:px-4  focus:border-v2311-bg-light-green focus:ring-v2311-bg-light-green"
             id="email-address"
             name={emailInputName}
             type="email"
@@ -64,7 +64,7 @@ function NewsletterCenteredCard({
             required
           />
           <button
-            className="v2311-button-large text-v2311-text-primary bg-v2311-bg-button-white border-solid border-2 border-white hover:scale-105 transition-all duration-300 rounded-lg px-4 py-1 md:py-3"
+            className="v2311-button-large text-v2311-text-primary bg-v2311-bg-button-white border-solid border-2 border-white hover:scale-105 transition-all duration-300 rounded-v2311 px-4 py-1 md:py-3"
             type="submit"
           >
             {submitButtonLabel}

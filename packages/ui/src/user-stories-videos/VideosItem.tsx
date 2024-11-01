@@ -18,7 +18,7 @@ export interface IVideosItemProps {
 
 export default function VideosItem({ item }: { item: IVideosItemProps }) {
   return (
-    <div className="w-[60vw] md:w-full h-[400px] xl:h-[512px] rounded-2xl overflow-hidden cursor-pointer relative group">
+    <div className="w-[60vw] md:w-full h-[400px] xl:h-[512px] rounded-v2311 overflow-hidden cursor-pointer relative group">
       <Image
         src={item.coverImageUrl}
         width={390}
@@ -27,9 +27,9 @@ export default function VideosItem({ item }: { item: IVideosItemProps }) {
         alt={item.coverAlt}
       />
       <div className="absolute bottom-[12%] inset-x-6 flex justify-center group-hover:scale-105 transition-all duration-300">
-        <div className="flex p-2 pr-4 items-center justify-center gap-x-2 bg-v2311-bg-button-white rounded-full">
+        <div className="flex p-2 pr-4 items-center justify-center gap-x-2 bg-v2311-bg-button-white rounded-v2311">
           <button
-            className="bg-v2311-bg-dark-green p-2 rounded-full"
+            className="bg-v2311-bg-dark-green p-2 rounded-v2311"
             aria-label="Play video"
           >
             <svg
