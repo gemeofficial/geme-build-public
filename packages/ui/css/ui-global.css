@@ -1,0 +1,21 @@
+@import 'tailwindcss/base';
+
+/* 加载字体包css */
+@import './fonts-loader.css';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+@layer components {
+}
+
+/* 由于主站与gemebuild和workshop都是基于ui目录的组件进行展示的
+    所以在这里设置全局的html和body的字体为Poppins，并设置权重。
+    -- 若需要单独更改字体，可以在集成字体包与配置@font-face后，
+       在tailwind.preset.ts中配置需要的字体样式，并使用时添加上!important
+*/
+html,
+body {
+  font-family: 'Poppins', 'system-ui', 'inter' !important;
+}

@@ -30,7 +30,7 @@ export function Faq({ faqs, title, description, titleClassName }: IFaqProps) {
   }, [openIndex])
 
   return (
-    <SectionContainer compact>
+    <SectionContainer >
       <SectionTitle className={clsx(titleClassName)}>{title}</SectionTitle>
       {description && <SectionDescription>{description}</SectionDescription>}
       <dl className="mt-10 space-y-6 divide-y divide-gray-900/10 max-w-4xl mx-auto">

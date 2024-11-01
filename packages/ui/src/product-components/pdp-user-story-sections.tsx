@@ -241,20 +241,20 @@ function PdpUserStoryTeamSections({
                   )}
                 >
                   <div className="flex flex-col gap-2">
-                    <h3 className=" v2311-font-h2 text-v2311-fg-dark-black">
+                    <h3 className=" v2311-title-h3 text-v2311-fg-dark-black">
                       {person.name}
                     </h3>
-                    <p className=" v2311-font-h3 text-v2311-fg-black">
+                    <p className=" v2311-title-h5 text-v2311-fg-black">
                       {person.role}
                     </p>
 
                     {person.quote && (
-                      <p className=" v2311-font-body text-gray-400">
+                      <p className=" v2311-body-large text-gray-400">
                         "{person.quote}"
                       </p>
                     )}
                   </div>
-                  <p className=" v2311-font-body text-v2311-fg-black">
+                  <p className=" v2311-body-large text-v2311-fg-black">
                     {person.bio}
                   </p>
                 </div>
@@ -265,15 +265,15 @@ function PdpUserStoryTeamSections({
                   <ImageComponent image={person.image} className="w-32 h-40" />
 
                   <div className="flex-auto">
-                    <h3 className="v2311-font-h2 text-v2311-fg-dark-black">
+                    <h3 className="v2311-title-h3 text-v2311-fg-dark-black">
                       {person.name}
                     </h3>
-                    <p className="!text-[14px] my-2 v2311-font-h3 text-v2311-fg-black">
+                    <p className="!text-[14px] my-2 v2311-title-h5 text-v2311-fg-black">
                       {person.role}
                     </p>
 
                     {person.quote && (
-                      <p className="!text-[14px] v2311-font-body text-gray-400">
+                      <p className="!text-[14px] v2311-body-large text-gray-400">
                         <span className="md:hidden">
                           "{person.mobileQuote || person.quote}"
                         </span>
@@ -284,7 +284,7 @@ function PdpUserStoryTeamSections({
                     )}
                   </div>
                 </div>
-                <p className="v2311-font-body !text-[14px] text-v2311-fg-black">
+                <p className="v2311-body-large !text-[14px] text-v2311-fg-black">
                   {person.bio}
                 </p>
               </div>

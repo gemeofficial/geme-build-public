@@ -9,7 +9,7 @@ const meta = {
 
 const ReviewsComponent = () => (
   <div className=" h-96 bg-v2311-bg-light-green  flex justify-center items-center ">
-    <h2 className=" v2311-font-h2 text-v2311-primary ">Reviews Placeholder</h2>
+    <h2 className=" v2311-title-h3 text-v2311-primary ">Reviews Placeholder</h2>
   </div>
 )
 

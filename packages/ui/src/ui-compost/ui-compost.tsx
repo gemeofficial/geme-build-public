@@ -72,7 +72,8 @@ const UiCompost = forwardRef(function UiCompost(
         }
       >
         <div className="container mx-auto xl:!max-w-7xl">
-          <div
+          {/* 取消盆栽的白色背景 */}
+          {/* <div
             className="circle"
             style={{
               // progress: 0
@@ -90,7 +91,7 @@ const UiCompost = forwardRef(function UiCompost(
                   : 1)
               })`,
             }}
-          />
+          /> */}
           <div
             ref={uiFragmentsSpriteRef}
             className="ui-fragments-sprite 2xl:!scale-[0.35]"

@@ -26,15 +26,15 @@ function ActionSection1({
   return (
     <div className="bg-v2311-bg-dark-green ">
       <section className=" px-4 md:px-8 py-8 mx-auto md:py-16 xl:py-[80px] xl:max-w-7xl flex flex-col items-center text-center">
-        {title && <h2 className="v2311-font-h1 text-white">{title}</h2>}
+        {title && <h2 className="v2311-title-h2 text-white">{title}</h2>}
         {description && (
-          <p className="v2311-font-body text-white mt-4 md:mt-8">
+          <p className="v2311-body-large text-white mt-4 md:mt-8">
             {description}
           </p>
         )}
         {linkText && linkUrl && (
           <a
-            className=" v2311-font-h2 text-white w-full xl:w-auto flex items-center justify-center mt-4 md:mt-8 border-solid border-2 border-white rounded-xl py-1 md:py-2 xl:px-4"
+            className=" v2311-title-h3 text-white w-full xl:w-auto flex items-center justify-center mt-4 md:mt-8 border-solid border-2 border-white rounded-xl py-1 md:py-2 xl:px-4"
             href={linkUrl}
           >
             {linkText}

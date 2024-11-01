@@ -329,7 +329,8 @@
 .ui-second-life-article .ui-fragments-image {
   opacity: 0;
   transform: scale(0);
-  transition: transform 0.75s cubic-bezier(0.32, 0.94, 0.6, 1),
+  transition:
+    transform 0.75s cubic-bezier(0.32, 0.94, 0.6, 1),
     opacity 0.75s cubic-bezier(0.32, 0.94, 0.6, 1);
 }
 
@@ -338,7 +339,8 @@
 .ui-second-life-article h3 {
   opacity: 0;
   transform: translateY(50px);
-  transition: transform 0.75s cubic-bezier(0.32, 0.94, 0.6, 1),
+  transition:
+    transform 0.75s cubic-bezier(0.32, 0.94, 0.6, 1),
     opacity 0.75s cubic-bezier(0.32, 0.94, 0.6, 1);
 }
 
@@ -457,7 +459,6 @@
   }
 }
 
-
 .uiFragmentsSvg {
   display: block;
 }
@@ -488,7 +489,7 @@
   left: 50%;
   pointer-events: none;
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 50%);
 }
 
 .ui-fragments-dots .dot {
@@ -592,10 +593,6 @@
   position: relative;
 }
 
-.ui-sections-decomposition .ui-fragments-dots {
-  bottom: -13.8888888889vw;
-}
-
 .ui-sections-decomposition .outro {
   padding: 4.1666666667vw 11.9212962963vw;
   position: relative;
@@ -605,188 +602,184 @@
   .ui-sections-decomposition .outro {
     padding: 8vw;
   }
-
-  .ui-sections-decomposition .ui-fragments-dots {
-    bottom: -13.3333333333vw;
-  }
 }
 
 @media (min-width: 100px) {
   .ui-sections-decomposition {
-    padding-bottom: 380vw;
+    padding-bottom: 190vw;
   }
 }
 
 @media (min-width: 150px) {
   .ui-sections-decomposition {
-    padding-bottom: 300vw;
+    padding-bottom: 150vw;
   }
 }
 
 @media (min-width: 200px) {
   .ui-sections-decomposition {
-    padding-bottom: 210vw;
+    padding-bottom: 105vw;
   }
 }
 
 @media (min-width: 280px) {
   .ui-sections-decomposition {
-    padding-bottom: 150vw;
+    padding-bottom: 75vw;
   }
 }
 
 @media (min-width: 375px) {
   .ui-sections-decomposition {
-    padding-bottom: 110vw;
+    padding-bottom: 55vw;
   }
 }
 
 @media (min-width: 414px) {
   .ui-sections-decomposition {
-    padding-bottom: 100vw;
+    padding-bottom: 50vw;
   }
 }
 
 @media (min-width: 450px) {
   .ui-sections-decomposition {
-    padding-bottom: 90vw;
+    padding-bottom: 45vw;
   }
 }
 
 @media (min-width: 500px) {
   .ui-sections-decomposition {
-    padding-bottom: 80vw;
+    padding-bottom: 40vw;
   }
 }
 
 @media (min-width: 550px) {
   .ui-sections-decomposition {
-    padding-bottom: 75vw;
+    padding-bottom: 38vw;
   }
 }
 
 @media (min-width: 600px) {
   .ui-sections-decomposition {
-    padding-bottom: 70vw;
+    padding-bottom: 35vw;
   }
 }
 
 @media (min-width: 650px) {
   .ui-sections-decomposition {
-    padding-bottom: 65vw;
+    padding-bottom: 33vw;
   }
 }
 
 @media (min-width: 700px) {
   .ui-sections-decomposition {
-    padding-bottom: 60vw;
+    padding-bottom: 30vw;
   }
 }
 
 @media (min-width: 750px) {
   .ui-sections-decomposition {
-    padding-bottom: 55vw;
+    padding-bottom: 28vw;
   }
 }
 
 @media (min-width: 800px) {
   .ui-sections-decomposition {
-    padding-bottom: 50vw;
+    padding-bottom: 25vw;
   }
 }
 
 @media (min-width: 850px) {
   .ui-sections-decomposition {
-    padding-bottom: 45vw;
+    padding-bottom: 23vw;
   }
 }
 
 @media (min-width: 900px) {
   .ui-sections-decomposition {
-    padding-bottom: 40vw;
+    padding-bottom: 20vw;
   }
 }
 
 @media (min-width: 1000px) {
   .ui-sections-decomposition {
-    padding-bottom: 35vw;
+    padding-bottom: 18vw;
   }
 }
 
 @media (min-width: 1100px) {
   .ui-sections-decomposition {
-    padding-bottom: 30vw;
+    padding-bottom: 15vw;
   }
 }
 
 @media (min-width: 1300px) {
   .ui-sections-decomposition {
-    padding-bottom: 25vw;
+    padding-bottom: 13vw;
   }
 }
 
 @media (min-width: 1400px) {
   .ui-sections-decomposition {
-    padding-bottom: 20vw;
+    padding-bottom: 10vw;
   }
 }
 
 @media (min-width: 1500px) {
   .ui-sections-decomposition {
-    padding-bottom: 18vw;
+    padding-bottom: 9vw;
   }
 }
 
 @media (min-width: 1600px) {
   .ui-sections-decomposition {
-    padding-bottom: 15vw;
+    padding-bottom: 8vw;
   }
 }
 
 @media (min-width: 1800px) {
   .ui-sections-decomposition {
-    padding-bottom: 12.5vw;
+    padding-bottom: 6vw;
   }
 }
 
 @media (min-width: 2000px) {
   .ui-sections-decomposition {
-    padding-bottom: 10vw;
+    padding-bottom: 5vw;
   }
 }
 
 @media (min-width: 2200px) {
   .ui-sections-decomposition {
-    padding-bottom: 8vw;
+    padding-bottom: 4vw;
   }
 }
 
 @media (min-width: 2400px) {
   .ui-sections-decomposition {
-    padding-bottom: 6vw;
+    padding-bottom: 3vw;
   }
 }
 
 @media (min-width: 2700px) {
   .ui-sections-decomposition {
-    padding-bottom: 4vw;
+    padding-bottom: 2vw;
   }
 }
 
 @media (min-width: 2900px) {
   .ui-sections-decomposition {
-    padding-bottom: 2vw;
+    padding-bottom: 1vw;
   }
 }
 
 @media (min-width: 3000px) {
   .ui-sections-decomposition {
-    padding-bottom: 1vw;
+    padding-bottom: 0.5vw;
   }
 }
 
 @media (min-width: 3100px) {
   .ui-sections-decomposition {
-    padding-bottom: 1vw;
+    padding-bottom: 0.5vw;
   }
 }

@@ -22,9 +22,9 @@ export default function HighLightBar() {
       <div className="bg-v2311-bg-dark-green">
         <SectionContainer
           className="flex flex-col lg:flex-row gap-4 items-center justify-between"
-          compact
+          
         >
-          <div className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl text-white font-bold font-v2311">
+          <div className="text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl text-white font-bold font-poppins">
             {bar1.title}
           </div>
           <Button
@@ -37,7 +37,7 @@ export default function HighLightBar() {
 
       <div className="bg-v2311-text-yellow mt-8 md:mt-12 lg:mt-20">
         <SectionContainer className="flex flex-col items-center justify-between gap-4 lg:gap-8 md:!py-10 xl:!py-12">
-          <div className="italic text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl text-white font-bold font-v2311 text-center">
+          <div className="italic text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl text-white font-bold font-poppins text-center">
             {bar2.title}
           </div>
           <Button

@@ -12,7 +12,7 @@ export function SectionDescription({
   return (
     <div
       className={clsx(
-        'v2311-font-body text-v2311-text-gary text-left xl:text-center',
+        'v2311-body-large text-v2311-text-gary text-left xl:text-center',
         className,
       )}
     >

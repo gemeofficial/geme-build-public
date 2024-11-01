@@ -112,10 +112,10 @@ function HeroSection1({
           quality={100}
         />
         {title && (
-          <h1 className="v2311-font-h0 text-white xl:mt-12">{title}</h1>
+          <h1 className="v2311-title-h1 text-white xl:mt-12 xl:max-w-2xl">{title}</h1>
         )}
         {description && (
-          <p className="v2311-font-h2 font-normal text-white mt-4 md:mt-12 xl:mt-12">
+          <p className="v2311-subtitle-large text-white mt-4 md:mt-12 xl:mt-12">
             {description}
           </p>
         )}

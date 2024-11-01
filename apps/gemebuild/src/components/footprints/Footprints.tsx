@@ -3,7 +3,7 @@
 import { ReactNode } from 'react'
 import { ProportionalSymbolMap } from '../map-charts'
 import type { IProportionalSymbolMapProps } from '../map-charts'
-import { SectionDescription, SectionTitle } from 'ui'
+import { SectionContainer, SectionDescription, SectionTitle } from 'ui'
 
 interface IFootprintsProps {
   grayBackground?: boolean
@@ -20,14 +20,16 @@ function Footprints({
 }: IFootprintsProps) {
   return (
     <div className={grayBackground ? 'bg-gray-50' : 'bg-white'}>
-      <div className="mx-auto max-w-2xl pt-8 px-4 lg:pt-14 sm:px-6 lg:max-w-7xl lg:px-8">
+      <SectionContainer noBottomPadding>
         <SectionTitle>{title}</SectionTitle>
-        <SectionDescription className="mt-4">{description}</SectionDescription>
+        <SectionDescription className="mt-4 md:mt-6 xl:mt-8">
+          {description}
+        </SectionDescription>
 
         <div className="mt-6">
           <ProportionalSymbolMap {...proportionalSymbolMapProps} />
         </div>
-      </div>
+      </SectionContainer>
     </div>
   )
 }

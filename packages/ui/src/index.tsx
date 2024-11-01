@@ -1,4 +1,4 @@
-import './styles.css'
+import '../css/ui-global.css'
 
 export interface IMultiLanguageConfig<T> {
   en: T
@@ -8,7 +8,6 @@ export interface IMultiLanguageConfig<T> {
 }
 export type LocaleType = 'en' | 'de' | 'fr' | 'it'
 
-export { Button, type ButtonProps } from './button'
 export * from './fonts'
 export * from './lib'
 export * from './colors'

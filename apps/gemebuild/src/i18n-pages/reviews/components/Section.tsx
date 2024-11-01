@@ -28,7 +28,7 @@ export default function Section({
     <>
       {/* Header Tabs */}
       <div className="sticky top-0 bg-[#047857] z-[49] transition-all duration-300">
-        <ul className="overflow-auto v2311-font-h3 md:v2311-font-link-selected xl:v2311-font-body text-white py-2 px-1 md:py-[14px] md:px-8 flex justify-center space-x-4 md:space-x-6 xl:space-x-12 xl:max-w-7xl xl:mx-auto">
+        <ul className="overflow-auto v2311-title-h5 md:v2311-button-large-selected xl:v2311-body-large text-white py-2 px-1 md:py-[14px] md:px-8 flex justify-center space-x-4 md:space-x-6 xl:space-x-12 xl:max-w-7xl xl:mx-auto">
           {titles.map((tab) => (
             <li key={tab.id}>
               <Link
@@ -68,7 +68,7 @@ export default function Section({
               className={clsx(
                 ' mt-4 lg:mt-8',
                 index === 0
-                  ? '!text-v2311-bg-dark-green'
+                  ? '!text-v2311-text-primary'
                   : index === 1
                     ? '!text-v2311-text-yellow'
                     : '!text-[#eda152]',

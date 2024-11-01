@@ -120,22 +120,22 @@ const oxygenCycleProps: IOxygenCycleProps = {
       content: (
         <>
           <SvgFoodWaste className="w-8 h-8 md:w-16 md:h-16" />
-          <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+          <h3 className=" v2311-body-large !text-[11px] md:!text-[24px] md:!v2311-title-h5 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Nutriments (déchets alimentaires)
           </h3>
-          <p className="hidden md:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base">
+          <p className="hidden md:block v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base">
             Les micro-organismes ont besoin de C, N, phosphore (P) et potassium
             (K) comme nutriments principaux. Le rapport C:N des matières
             premières est important. Le rapport C:N optimal des matières
             premières se situe entre 25:1 et 30:1.
           </p>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base">
+          <p className="hidden lg:block v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base">
             Lorsque le rapport est trop élevé, la croissance des
             micro-organismes est limitée, ce qui entraîne un temps de compostage
             plus long. Un rapport C:N plus faible conduit à une sous-utilisation
             de N et peut poser des problèmes d'odeur.
           </p>
-          <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className=" v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Le composteur GEME et GEME Kobold s'occuperont automatiquement du
             rapport C:N pour vous.
           </p>
@@ -147,12 +147,12 @@ const oxygenCycleProps: IOxygenCycleProps = {
       content: (
         <>
           <SvgOxygen className="w-8 h-8 md:w-16 md:h-16" />
-          <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+          <h3 className=" v2311-body-large !text-[11px] md:!text-[24px] md:!v2311-title-h5 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Compostage aérobie :
             <br />
             cycle naturel des nutriments
           </h3>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Le compostage aérobie décompose la matière organique en utilisant de
             l'oxygène (O₂), nécessitant des microbes aérobies pour décomposer
             les matériaux en vapeur d'eau, chaleur et humus riche en nutriments.
@@ -160,7 +160,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
             ventilation efficace, optimisant le flux d'oxygène pour une
             décomposition efficace.
           </p>
-          <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="lg:hidden v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Décompose les bio-déchets avec de l'oxygène (O₂) pour des nutriments
             précieux. Le composteur GEME simplifie cela avec un système d'air
             efficace pour une décomposition plus rapide.
@@ -173,11 +173,11 @@ const oxygenCycleProps: IOxygenCycleProps = {
       content: (
         <>
           <SvgWood className="w-8 h-8 md:w-16 md:h-16" />
-          <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+          <h3 className=" v2311-body-large !text-[11px] md:!text-[24px] md:!v2311-title-h5 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Matériaux bruns dans le compostage : garantir des conditions
             optimales
           </h3>
-          <p className="hidden lg:block  v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block  v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Les matériaux bruns, riches en carbone, jouent un rôle crucial dans
             le compostage en équilibrant le rapport carbone-azote (C:N),
             essentiel pour l'activité microbienne. Leur structure améliore la
@@ -186,7 +186,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
             assure un rapport C:N équilibré et des conditions de compostage
             optimales.
           </p>
-          <p className="lg:hidden  v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="lg:hidden  v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Les matériaux bruns, riches en carbone, équilibrent le rapport C:N
             pour les microbes. Leur structure favorise le flux d'air. Le
             démarreur GEME Kobold fournit ces matériaux bruns pour des
@@ -200,12 +200,12 @@ const oxygenCycleProps: IOxygenCycleProps = {
       content: (
         <>
           <SvgWaterDrop className="w-8 h-8 md:w-16 md:h-16" />
-          <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+          <h3 className=" v2311-body-large !text-[11px] md:!text-[24px] md:!v2311-title-h5 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Humidité : le secret du
             <br />
             compostage rapide
           </h3>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             L'humidité est essentielle dans le compostage, influençant la façon
             dont les microbes décomposent les matériaux. La plage idéale ?
             40-60%. Cela favorise la croissance microbienne, accélérant la
@@ -213,13 +213,13 @@ const oxygenCycleProps: IOxygenCycleProps = {
             la décomposition. La sécheresse (&lt;30%) entrave les microbes,
             ralentissant le processus.
           </p>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Le composteur GEME simplifie la gestion de l'humidité. Son contrôle
             intelligent à une touche ajuste automatiquement, garantissant la
             plage parfaite de 40-60% pour un compost efficace et de haute
             qualité.
           </p>
-          <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="lg:hidden v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             La bonne humidité (40-60%) favorise les microbes qui décomposent les
             déchets. Trop humide (plus de 70%) crée des odeurs et ralentit la
             décomposition. Trop sec (moins de 30%) rend les microbes paresseux.
@@ -233,12 +233,12 @@ const oxygenCycleProps: IOxygenCycleProps = {
       content: (
         <>
           <SvgTemperature className="w-8 h-8 md:w-16 md:h-16" />
-          <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+          <h3 className=" v2311-body-large !text-[11px] md:!text-[24px] md:!v2311-title-h5 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Compostage :
             <br />
             une danse de température
           </h3>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Le compostage transforme les déchets en sol riche en nutriments
             grâce à des changements de température dus à l'activité microbienne.
             Initialement, les microbes chauffent le compost à 40-50°C. Pendant
@@ -246,11 +246,11 @@ const oxygenCycleProps: IOxygenCycleProps = {
             une décomposition rapide. À mesure que le compost mûrit, il se
             refroidit à 30-40°C.
           </p>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Le composteur GEME optimise ce processus en régulant la température
             à chaque étape, assurant un compostage efficace et de haute qualité.
           </p>
-          <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="lg:hidden v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Le compostage transforme les déchets en sol riche en nutriments
             grâce à des changements de température dus à l'activité microbienne.
             Initialement, les microbes chauffent le compost à 40-50°C. Pendant
@@ -268,12 +268,12 @@ const oxygenCycleProps: IOxygenCycleProps = {
       content: (
         <>
           <SvgMicrobe className="w-8 h-8 md:w-16 md:h-16" />
-          <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+          <h3 className=" v2311-body-large !text-[11px] md:!text-[24px] md:!v2311-title-h5 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Microbes
             <br />
             (GEME Kobold)
           </h3>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Le compostage est un processus naturel entraîné par des microbes qui
             décomposent les déchets organiques en amendements du sol riches en
             nutriments. Les champignons s'attaquent aux matériaux difficiles
@@ -281,7 +281,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
             d'autres matières organiques. GEME Kobold, une équipe microbienne
             unique résistante à la chaleur, accélère le compostage.
           </p>
-          <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="lg:hidden v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Recycleurs naturels : les microbes décomposent les déchets en
             amendements du sol riches en nutriments. Les champignons s'attaquent
             aux matériaux difficiles, tandis que d'autres microbes décomposent

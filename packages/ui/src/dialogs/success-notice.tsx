@@ -69,12 +69,12 @@ function SuccessNotice({
                   <div className="mt-3 text-center sm:mt-5">
                     <Dialog.Title
                       as="h3"
-                      className=" v2311-font-h2 text-v2311-fg-dark-black"
+                      className=" v2311-title-h3 text-v2311-fg-dark-black"
                     >
                       {title}
                     </Dialog.Title>
                     <div className="mt-2">
-                      <p className="v2311-font-body text-v2311-fg-light-black">
+                      <p className="v2311-body-large text-v2311-fg-light-black">
                         {description}
                       </p>
                     </div>

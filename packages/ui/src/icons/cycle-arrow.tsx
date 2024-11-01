@@ -7,7 +7,7 @@ const IconCycleArrow = (props: SVGProps<SVGSVGElement>) => (
     fill="none"
     {...props}
   >
-    <g stroke="#fff" strokeWidth={2}>
+    <g stroke={props.stroke || '#fff'} strokeWidth={2}>
       <path
         strokeMiterlimit={10}
         d="M10 18.143a8.143 8.143 0 1 0 0-16.286 8.143 8.143 0 0 0 0 16.286Z"

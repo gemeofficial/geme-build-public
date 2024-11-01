@@ -119,20 +119,20 @@ const oxygenCycleProps: IOxygenCycleProps = {
       content: (
         <>
           <SvgFoodWaste className="w-8 h-8 md:w-16 md:h-16" />
-          <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+          <h3 className=" v2311-body-large !text-[11px] md:!text-[24px] md:!v2311-title-h5 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Nutrients(Food Waste)
           </h3>
-          <p className="hidden md:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base">
+          <p className="hidden md:block v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base">
             Micro-organisms require C, N, phosphorus (P) and potassium (K) as
             the primary nutrients. C:N ratio of raw materials is important. The
             optimal C:N ratio of raw materials is between 25:1 and 30:1.
           </p>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base">
+          <p className="hidden lg:block v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base">
             Where the ratio is too high, the growth of micro-organisms is
             limited, resulting in a longer composting time. A less C:N ratio
             leads to underutilization of N and odour can be a problem.
           </p>
-          <p className=" v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className=" v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             GEME Composter and GEME Kobold will take care of the C:N ratio
             automatically for you.
           </p>
@@ -144,19 +144,19 @@ const oxygenCycleProps: IOxygenCycleProps = {
       content: (
         <>
           <SvgOxygen className="w-8 h-8 md:w-16 md:h-16" />
-          <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+          <h3 className=" v2311-body-large !text-[11px] md:!text-[24px] md:!v2311-title-h5 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Aerobic Composting:
             <br />
             Nature Nutrient Cycle
           </h3>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Aerobic composting breaks down organic matter using oxygen ( O
             <sub>2</sub> ), requiring aerobic microbes to decompose materials
             into water vapor, heat, and nutrient-rich humus. The GEME composter
             simplifies this process with an efficient aeration system,
             optimizing oxygen flow for effective decomposition.
           </p>
-          <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="lg:hidden v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Breaks down biowaste with oxygen ( O<sub>2</sub> ) for valuable
             nutrients. GEME composter simplifies this with an efficient air
             system for faster decomposition.
@@ -169,10 +169,10 @@ const oxygenCycleProps: IOxygenCycleProps = {
       content: (
         <>
           <SvgWood className="w-8 h-8 md:w-16 md:h-16" />
-          <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+          <h3 className=" v2311-body-large !text-[11px] md:!text-[24px] md:!v2311-title-h5 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Brown Materials in Composting: Ensuring Optimal Conditions
           </h3>
-          <p className="hidden lg:block  v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block  v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Brown materials, rich in carbon, play a crucial role in composting
             by balancing the carbon-to-nitrogen (C:N) ratio, essential for
             microbial activity. Their structure enhances porosity, promoting
@@ -180,7 +180,7 @@ const oxygenCycleProps: IOxygenCycleProps = {
             curated brown materials, ensures a balanced C:N ratio and optimal
             composting conditions.
           </p>
-          <p className="lg:hidden  v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="lg:hidden  v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Brown materials, rich in carbon, balance the C:N ratio for microbes.
             Their structure promotes air flow. GEME Kobold starter provides
             these brown materials for perfect conditions
@@ -193,24 +193,24 @@ const oxygenCycleProps: IOxygenCycleProps = {
       content: (
         <>
           <SvgWaterDrop className="w-8 h-8 md:w-16 md:h-16" />
-          <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+          <h3 className=" v2311-body-large !text-[11px] md:!text-[24px] md:!v2311-title-h5 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Moisture: The Secret to
             <br />
             Fast Composting
           </h3>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Moisture is king in composting, impacting how microbes break down
             materials. The sweet spot? 40-60%. This fuels microbial growth,
             speeding up decomposition. Too much (&gt;70%) creates odors and
             slows breakdown. Dryness (&lt;30%) hinders microbes, stalling the
             process.
           </p>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             The GEME composter simplifies moisture management. Its one-touch
             smart control automatically adjusts, ensuring the perfect 40-60%
             range for efficient, high-quality compost.
           </p>
-          <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="lg:hidden v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Right moisture (40-60%) fuels microbes that break down waste. Too
             wet (over 70%) creates odors and slows things down. Too dry (under
             30%) makes microbes sluggish. GEME manages moisture for perfect
@@ -224,23 +224,23 @@ const oxygenCycleProps: IOxygenCycleProps = {
       content: (
         <>
           <SvgTemperature className="w-8 h-8 md:w-16 md:h-16" />
-          <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+          <h3 className=" v2311-body-large !text-[11px] md:!text-[24px] md:!v2311-title-h5 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Composting:
             <br />A Temperature Dance
           </h3>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Composting transforms waste into nutrient-rich soil through
             temperature changes driven by microbial activity. Initially,
             microbes heat the compost to 40-50°C. During peak decomposition,
             temperatures rise to 50-65°C for rapid breakdown. As the compost
             matures, it cools to 30-40°C.
           </p>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             The GEME composter optimizes this process by regulating temperature
             at each stage, ensuring efficient composting and high-quality
             compost.
           </p>
-          <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="lg:hidden v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Composting turns waste into nutrient-rich soil through temperature
             shifts caused by microbial activity. The GEME composter enhances
             this by controlling temperatures throughout, ensuring efficient and
@@ -254,19 +254,19 @@ const oxygenCycleProps: IOxygenCycleProps = {
       content: (
         <>
           <SvgMicrobe className="w-8 h-8 md:w-16 md:h-16" />
-          <h3 className=" v2311-font-body !text-[11px] md:!text-[24px] md:!v2311-font-h3 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
+          <h3 className=" v2311-body-large !text-[11px] md:!text-[24px] md:!v2311-title-h5 text-v2311-primary font-bold text-center mt-2 md:mt-4 ">
             Microbes
             <br />
             (GEME Kobold)
           </h3>
-          <p className="hidden lg:block v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="hidden lg:block v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Composting is a natural process driven by microbes that break down
             organic waste into nutrient-rich soil amendments. Fungi tackle tough
             materials like cellulose, while other microbes decompose other
             organics. GEME Kobold, a unique heat-resistant microbial team,
             accelerates composting.
           </p>
-          <p className="lg:hidden v2311-font-img-desc md:v2311-font-body text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
+          <p className="lg:hidden v2311-body-medium md:v2311-body-large text-v2311-primary mt-1 md:mt-2 text-xs !text-[10px] md:!text-base ">
             Nature recyclers: Microbes break down waste into nutrient-rich soil
             improvers. Fungi tackle tough materials, while others handle the
             rest. GEME Kobold, a heat-resistant microbial team, speeds up

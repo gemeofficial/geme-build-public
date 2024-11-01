@@ -146,14 +146,14 @@ function ProductOverviewV2311({
 
         <div className=" px-4 md:px-8 xl:px-0 py-8 md:py-16 xl:py-0 flex flex-col">
           <div className="">
-            <h2 className=" v2311-font-h1 text-v2311-fg-dark-black text-center xl:text-left ">
+            <h2 className=" v2311-title-h2 text-v2311-fg-dark-black text-center xl:text-left ">
               {title}
             </h2>
           </div>
 
           <div className="mt-4 md:mt-8 xl:order-1">
             <p className="flex items-center justify-center xl:justify-start">
-              <span className="font-v2311 text-[28px] md:text-[48px] xl:text-[64px] font-bold leading-none text-white xl:text-v2311-primary bg-[#047857] xl:bg-white rounded-lg mx-auto xl:m-0 py-1 md:py-2 xl:py-0 px-8 md:px-16 xl:px-0 ">
+              <span className="font-poppins text-[28px] md:text-[48px] xl:text-[64px] font-bold leading-none text-white xl:text-v2311-primary bg-[#047857] xl:bg-white rounded-lg mx-auto xl:m-0 py-1 md:py-2 xl:py-0 px-8 md:px-16 xl:px-0 ">
                 {productOption?.price}
               </span>
             </p>
@@ -168,7 +168,7 @@ function ProductOverviewV2311({
           </div>
 
           <div className="mt-4 md:mt-8 xl:mt-4">
-            <p className="v2311-font-body text-v2311-fg-dark-black text-center xl:text-left">
+            <p className="v2311-body-large text-v2311-fg-dark-black text-center xl:text-left">
               {description}
             </p>
           </div>
@@ -177,12 +177,12 @@ function ProductOverviewV2311({
           <div className="mt-4 md:mt-8 xl:order-2">
             <div className="flex gap-2 md:gap-4 xl:gap-4 flex-col xl:flex-row">
               <button
-                className=" v2311-font-btn xl:text-2xl bg-[#047857] text-white text-center rounded-lg py-2 md:py-4 xl:py-6 flex items-center justify-center xl:flex-1"
+                className=" v2311-body-large xl:text-2xl bg-[#047857] text-white text-center rounded-lg py-2 md:py-4 xl:py-6 flex items-center justify-center xl:flex-1"
                 {...primaryButtonProps}
               />
               {secondaryButtonProps && (
                 <button
-                  className=" v2311-font-btn xl:text-2xl bg-[#6E8780] text-white text-center rounded-lg py-2 md:py-4 xl:py-6 flex items-center justify-center xl:flex-1"
+                  className=" v2311-body-large xl:text-2xl bg-[#6E8780] text-white text-center rounded-lg py-2 md:py-4 xl:py-6 flex items-center justify-center xl:flex-1"
                   {...secondaryButtonProps}
                 />
               )}
@@ -193,14 +193,14 @@ function ProductOverviewV2311({
           <div className="mt-4 md:mt-8 xl:order-1">
             <div className="flex gap-2 md:gap-4 flex-row items-center">
               <label
-                className="v2311-font-body text-v2311-fg-dark-black"
+                className="v2311-body-large text-v2311-fg-dark-black"
                 htmlFor="ship-to"
               >
                 {deliverySelectorLabel}
               </label>
               <div className="flex-1">
                 <select
-                  className=" v2311-font-body color-[#666] w-full h-[26px] md:h-[41px] border border-[#666] rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-transparent"
+                  className=" v2311-body-large color-[#666] w-full h-[26px] md:h-[41px] border border-[#666] rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-transparent"
                   value={deliveryOption?.code}
                   onChange={(evt) =>
                     onDeliveryOptionChanged != null &&
@@ -219,7 +219,7 @@ function ProductOverviewV2311({
 
           {/* Estimate Delivery Time */}
           <div className="mt-4 md:mt-8 xl:mt-4 xl:order-1">
-            <p className=" v2311-font-body text-v2311-fg-dark-black font-bold text-center xl:text-left">
+            <p className=" v2311-body-large text-v2311-fg-dark-black font-bold text-center xl:text-left">
               {deliveryOption?.estimateDeliveryTimeText}
             </p>
           </div>

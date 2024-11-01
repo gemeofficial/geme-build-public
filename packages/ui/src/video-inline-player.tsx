@@ -8,7 +8,7 @@ import mixpanel from 'mixpanel-browser'
 import { hasMixpanel } from './lib'
 
 export function PlayIcon({
-  size = 'large',
+  size,
   className,
 }: {
   size?: 'icon' | 'small' | 'medium' | 'large'
@@ -17,12 +17,12 @@ export function PlayIcon({
   return (
     <svg
       className={classNames(
-        ' text-v2311-primary ',
+        ' text-v2311-primary w-14 h-14 md:w-16 md:h-16 xl:w-20 xl:h-20',
         className != null ? className : '',
-        size === 'icon' ? 'h-6 w-6' : '',
-        size === 'small' ? 'h-12 w-12' : '',
-        size === 'medium' ? 'h-16 w-16' : '',
-        size === 'large' ? 'h-20 w-20' : '',
+        size === 'icon' ? '!h-6 !w-6' : '',
+        size === 'small' ? '!h-12 !w-12' : '',
+        size === 'medium' ? '!h-16 !w-16' : '',
+        size === 'large' ? '!h-20 !w-20' : '',
       )}
       fill="currentColor"
       viewBox="0 0 84 84"
@@ -141,12 +141,12 @@ function PlayButton({
 
       {!hiddenPlayIcon && (
         <span
-          className="absolute inset-0 flex h-full w-full items-center justify-center"
+          className="absolute inset-0 flex h-full w-full items-center justify-center cursor-pointer"
           aria-hidden="true"
         >
           <PlayIcon
             size={size}
-            className="opacity-80 group-focus:opacity-100 group-hover:opacity-100 group-active:opacity-100 xl:opacity-50 xl:group-hover:opacity-100 transition-opacity"
+            className="opacity-80 group-focus:opacity-100 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-300"
           />
         </span>
       )}

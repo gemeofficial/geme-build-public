@@ -12,7 +12,7 @@ export interface IUserStoriesVideoProps {
 
 export function UserStoriesVideos({ title, videos }: IUserStoriesVideoProps) {
   return (
-    <SectionContainer className="!pt-10 xl:!pt-14 !pb-10">
+    <SectionContainer>
       <SectionTitle>{title}</SectionTitle>
       <div className="mt-4 md:mt-8 flex items-center gap-4 xl:gap-8 overflow-auto snap-x snap-mandatory no-scrollbar">
         {videos.map((item) => (

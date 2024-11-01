@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss'
-import defaultTheme from 'tailwindcss/defaultTheme'
 import typography from '@tailwindcss/typography'
 import aspectRatio from '@tailwindcss/aspect-ratio'
 import forms from '@tailwindcss/forms'
@@ -10,11 +9,12 @@ const tailwindPreset: Config = {
   theme: {
     extend: {
       fontFamily: {
-        v2311: ['SourceHanSansCN', ...defaultTheme.fontFamily?.sans],
+        // 配置字体样式类 使用方法：className="font-poppins"
+        poppins: ['Poppins', 'system-ui', 'inter']
       },
       colors: {
         v2311: {
-          primary: '#058669',
+          primary: '#058469',
           fg: {
             'light-black': '#999999',
             black: '#666666',
@@ -22,11 +22,14 @@ const tailwindPreset: Config = {
           },
           bg: {
             'light-green': '#D2E7DB',
-            'dark-green': '#3B806F',
+            'dark-green': '#3B7F6F',
+            'button-white': '#FDFDFD',
+            'rose-red': '#EA3C58',
           },
           text: {
             gary: 'rgb(75, 85, 99)',
-            yellow: '#E5BE51'
+            yellow: '#E5BE51',
+            primary: '#3B7F6F',
           }
         }
       },
@@ -36,6 +39,9 @@ const tailwindPreset: Config = {
       screens: {
         '3xl': '1920px',
         '4xl': '2380px',
+      },
+      borderRadius: {
+        'v2311': '4px',
       },
     },
   },
